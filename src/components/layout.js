@@ -7,7 +7,10 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+<<<<<<< Updated upstream
 import Navbar from "./home/navbar"
+=======
+>>>>>>> Stashed changes
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,9 +25,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
+<<<<<<< Updated upstream
       <Navbar />
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       {/* <div
+=======
+      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
+      <div
+>>>>>>> Stashed changes
         style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
