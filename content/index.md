@@ -80,17 +80,14 @@ home:
           title: "Doc Accessibility"
           description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
           page: ""
-          CTA: "read more.."
       - listItem:
           id: "2"
           img: ""
           title: "Web Accessibility"
           description: "We offers a variety of services to help you make your new or existing website accessible to users ..."
           page: ""
-          CTA: "read more.."
   contactUs24x7:
-    backgroundImage: ""
-    personImage: ""
+    personsImage: ""
     title: "CONTACT US 24/7"
     description: "Have any idea or project for in your mind call us or schedule a appointment. Our representative will reply you shortly."
     CTA: "Contact Us"
