@@ -4,7 +4,7 @@ import logo from "../../images/trendsoftlogo.svg"
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between px-20">
+    <div className="flex items-center justify-between">
       <div className="flex items-center space-x-14 ">
         <img src={logo} alt="logo" width="75.74px" height="60px" />
         <div className="text-base flex space-x-8">
@@ -15,9 +15,9 @@ const Navbar = () => {
           <h1>Careers</h1>
         </div>
       </div>
-      <>
-        <h1 className="border-2 border-black px-6 py-2 rounded-2xl">Contact</h1>
-      </>
+      <button className="border-2 border-black px-6 py-2 rounded-2xl">
+        Contact
+      </button>
     </div>
   )
 }

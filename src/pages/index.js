@@ -9,6 +9,7 @@ import AccessibilityServices from "../components/home/AccessibilityServices"
 import WorkingProcess from "../components/home/WorkingProcess"
 import AboutOurCompany from "../components/home/AboutOurCompany"
 import Footer from "../components/home/Footer"
+import Banner from "../components/home/Banner"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -35,13 +36,14 @@ const Index = () => {
   console.log(servicesProvide)
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
+      <Banner banner={banner} />
       <BannerItems bannerItem={bannerItem} />
+      <AboutOurCompany aboutOurCompany={aboutOurCompany} />
       <ServicesProvide servicesProvide={servicesProvide} />
       <AccessibilityServices accessibilityServices={accessibilityServices} />
-      <WorkingProcess workingProcess={workingProcess} /> */}
-      {/* <AboutOurCompany aboutOurCompany={aboutOurCompany} /> */}
-      <Footer img={data.img} />
+      {/* <WorkingProcess workingProcess={workingProcess} /> */}
+      {/* <Footer img={data.img} /> */}
     </div>
   )
 }

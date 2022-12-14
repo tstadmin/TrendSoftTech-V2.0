@@ -1,7 +1,7 @@
 ---
 home:
   banner:
-    headers: "We Increase your Business Success"
+    headers: "We Increase your <br/> Business Success"
     title: "Use the modern technology and It Services"
     CTA: "contact"
   bannerItems:
@@ -44,35 +44,35 @@ home:
           title: "E-Commerce Development"
           description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."
           page: ""
-          CTA: "read more.."
+          CTA: "read more..."
       - listItem:
           id: "3"
           img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Product Development"
           description: "We proudly say we are among the best software product development companies because we have a best-in-class.."
           page: ""
-          CTA: "read more.."
+          CTA: "read more..."
       - listItem:
           id: "4"
           img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Mobile Development"
           description: "we offer full-cycle of mobile app development services including planning, design, integration, and management.."
           page: ""
-          CTA: "read more.."
+          CTA: "read more..."
       - listItem:
           id: "5"
           img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "UI/UX Design"
           description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design,"
           page: ""
-          CTA: "read more.."
+          CTA: "read more..."
       - listItem:
           id: "6"
           img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Digital Marketing"
           description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
           page: ""
-          CTA: "read more.."
+          CTA: "read more..."
   accessibilityServices:
     list:
       - listItem:

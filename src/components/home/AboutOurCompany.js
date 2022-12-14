@@ -2,11 +2,11 @@ import React from "react"
 
 const AboutOurCompany = props => {
   return (
-    <div>
-      <div className="flex space-x-32 justify-center">
+    <div className="mt-48">
+      <div className="flex space-x-72  justify-between px-20">
         <img src={props.aboutOurCompany.img} alt="retget" />
 
-        <div className="w-[575px] space-y-5 relative">
+        <div className=" space-y-5 relative">
           <div className="absolute left-28 -top-3">
             <img className="" src={props.aboutOurCompany.imgDot} alt="" />
           </div>
