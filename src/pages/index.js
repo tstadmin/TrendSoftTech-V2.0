@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import ServicesProvide from "../components/home/ServicesProvide"
 import Navbar from "../components/home/navbar"
 import AccessibilityServices from "../components/home/AccessibilityServices"
+import Banner from "../components/home/Banner"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -30,9 +31,10 @@ const Index = () => {
   console.log(servicesProvide)
   return (
     <div>
-      {/* <Navbar /> */}
-      <BannerItems bannerItem={bannerItem} />
-      <ServicesProvide servicesProvide={servicesProvide} />
+      <Navbar />
+      <Banner banner={banner} />
+      {/* <BannerItems bannerItem={bannerItem} /> */}
+      {/* <ServicesProvide servicesProvide={servicesProvide} /> */}
       {/*   <AccessibilityServices accessibilityServices={accessibilityServices} /> */}
     </div>
   )
