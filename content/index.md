@@ -21,11 +21,12 @@ home:
         title: "Best Security Practices"
         description: "High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices."
   aboutOurCompany:
-    img: ""
+    img: "/img/about_Frame.svg"
+    imgDot: "/img/Vector1.svg"
     title: "ABOUT US"
     header: "About Our Company"
     description: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. <br/> <br/> Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions. <br/> <br/> With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals."
-    CTA: "learn more"
+    CTA: "Learn more"
   servicesWeProvide:
     title: SERVICES
     subTitle: Services We Provide
@@ -77,13 +78,13 @@ home:
       - listItem:
           id: "1"
           img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
-          title: "Doc Accessibility"
+          access: "Doc Accessibility"
           description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
           page: ""
       - listItem:
           id: "2"
           img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
-          title: "Web Accessibility"
+          access: "Web Accessibility"
           description: "We offers a variety of services to help you make your new or existing website accessible to users ..."
           page: ""
   contactUs24x7:
@@ -116,4 +117,6 @@ home:
           num: "4."
           title: "Deployment"
           description: "One the product is accepted by the client we move towards deployment. Our support teams..."
+  footer:
+    img: "/img/trendsoftlogo.svg"
 ---

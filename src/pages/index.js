@@ -6,6 +6,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import ServicesProvide from "../components/home/ServicesProvide"
 import Navbar from "../components/home/navbar"
 import AccessibilityServices from "../components/home/AccessibilityServices"
+import WorkingProcess from "../components/home/WorkingProcess"
+import AboutOurCompany from "../components/home/AboutOurCompany"
+import Footer from "../components/home/Footer"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -17,6 +20,7 @@ const Index = () => {
   const [servicesProvide, setServicesProvide] = useState([])
   const [accessibilityServices, setAccessibilityServices] = useState([])
   const [workingProcess, setWorkingProcess] = useState([])
+  const [footer, setFooter] = useState([])
   useEffect(() => {
     setBannerItem(data.bannerItems)
     setServicesProvide(data.servicesWeProvide.list)
@@ -24,16 +28,20 @@ const Index = () => {
     setBanner(data.banner)
     setAboutOurCompany(data.aboutOurCompany)
     setContactUs24x7(data.contactUs24x7)
-    setWorkingProcess(data.workingProcess)
+    setWorkingProcess(data.workingProcess.list)
+    setFooter(data.footer)
   })
 
   console.log(servicesProvide)
   return (
     <div>
-      {/* <Navbar /> */}
+      {/* <Navbar />
       <BannerItems bannerItem={bannerItem} />
       <ServicesProvide servicesProvide={servicesProvide} />
-      {/*   <AccessibilityServices accessibilityServices={accessibilityServices} /> */}
+      <AccessibilityServices accessibilityServices={accessibilityServices} />
+      <WorkingProcess workingProcess={workingProcess} /> */}
+      {/* <AboutOurCompany aboutOurCompany={aboutOurCompany} /> */}
+      <Footer img={data.img} />
     </div>
   )
 }
@@ -62,6 +70,7 @@ const dataQuery = graphql`
               }
               aboutOurCompany {
                 img
+                imgDot
                 header
                 title
                 description
@@ -86,7 +95,7 @@ const dataQuery = graphql`
                   listItem {
                     id
                     img
-                    title
+                    access
                     page
                     description
                   }
@@ -110,6 +119,9 @@ const dataQuery = graphql`
                     description
                   }
                 }
+              }
+              footer {
+                img
               }
             }
           }
