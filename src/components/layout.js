@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
   `)
 
   return <></>
+  return <></>
 }
 
 export default Layout
