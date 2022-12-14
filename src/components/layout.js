@@ -7,7 +7,8 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Home from "./home/Home.js"
+
+import Card from "./common/Card.js"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,11 +21,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
-    <>
-      <Home />
-    </>
-  )
+  return <></>
 }
 
 export default Layout

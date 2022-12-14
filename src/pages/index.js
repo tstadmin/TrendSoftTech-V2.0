@@ -1,16 +1,44 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+import BannerItems from "../components/home/BannerItems"
 
 import Layout from "../components/layout"
+import { useStaticQuery, graphql } from "gatsby"
+import ServicesProvide from "../components/home/ServicesProvide"
+import Navbar from "../components/home/navbar"
+import AccessibilityServices from "../components/home/AccessibilityServices"
 
-const index = () => {
+const Index = () => {
+  const query = useStaticQuery(dataQuery)
+  const data = query.allMarkdownRemark.edges[0].node.frontmatter.home
+  const [banner, setBanner] = useState([])
+  const [bannerItem, setBannerItem] = useState([])
+  const [aboutOurCompany, setAboutOurCompany] = useState([])
+  const [contactUs24x7, setContactUs24x7] = useState([])
+  const [servicesProvide, setServicesProvide] = useState([])
+  const [accessibilityServices, setAccessibilityServices] = useState([])
+  const [workingProcess, setWorkingProcess] = useState([])
+  useEffect(() => {
+    setBannerItem(data.bannerItems)
+    setServicesProvide(data.servicesWeProvide.list)
+    setAccessibilityServices(data.accessibilityServices.list)
+    setBanner(data.banner)
+    setAboutOurCompany(data.aboutOurCompany)
+    setContactUs24x7(data.contactUs24x7)
+    setWorkingProcess(data.workingProcess)
+  })
+
+  console.log(servicesProvide)
   return (
     <div>
-      <Layout />
+      {/* <Navbar /> */}
+      <BannerItems bannerItem={bannerItem} />
+      <ServicesProvide servicesProvide={servicesProvide} />
+      {/*   <AccessibilityServices accessibilityServices={accessibilityServices} /> */}
     </div>
   )
 }
 
-export default index
+export default Index
 
 const dataQuery = graphql`
   query {

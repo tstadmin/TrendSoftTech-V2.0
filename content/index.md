@@ -7,17 +7,17 @@ home:
   bannerItems:
     - card:
         id: "1"
-        img: ""
+        img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
         title: "Agile Process"
         description: "We develop enterprise-grade applications employing Agile and Scrum that enables the delivery of  high-priority feature first..."
     - card:
         id: "2"
-        img: ""
+        img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
         title: "Flexibility in Team Scaling"
         description: "Ramp up your team or reduce the number of resources - designers, developers or QAs - anytime as per your needs."
     - card:
         id: "3"
-        img: ""
+        img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
         title: "Best Security Practices"
         description: "High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices."
   aboutOurCompany:
@@ -32,42 +32,42 @@ home:
     list:
       - listItem:
           id: "1"
-          img: ""
+          img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Web Development"
           description: "A strong base in the field of website designing development services and made us one of  best Web  Development Company spanned across India."
           page: ""
           CTA: "read more.."
       - listItem:
           id: "2"
-          img: ""
+          img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "E-Commerce Development"
           description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."
           page: ""
           CTA: "read more.."
       - listItem:
           id: "3"
-          img: ""
+          img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Product Development"
           description: "We proudly say we are among the best software product development companies because we have a best-in-class.."
           page: ""
           CTA: "read more.."
       - listItem:
           id: "4"
-          img: ""
+          img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Mobile Development"
           description: "we offer full-cycle of mobile app development services including planning, design, integration, and management.."
           page: ""
           CTA: "read more.."
       - listItem:
           id: "5"
-          img: ""
+          img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "UI/UX Design"
           description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design,"
           page: ""
           CTA: "read more.."
       - listItem:
           id: "6"
-          img: ""
+          img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Digital Marketing"
           description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
           page: ""
@@ -76,13 +76,13 @@ home:
     list:
       - listItem:
           id: "1"
-          img: ""
+          img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Doc Accessibility"
           description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
           page: ""
       - listItem:
           id: "2"
-          img: ""
+          img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
           title: "Web Accessibility"
           description: "We offers a variety of services to help you make your new or existing website accessible to users ..."
           page: ""
