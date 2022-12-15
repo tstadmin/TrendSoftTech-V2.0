@@ -2,7 +2,7 @@
 home:
   banner:
     headers: "We Increase your <br/> Business Success"
-    title: "Use the modern technology and It Services"
+    title: "Use the modern technology and I Services"
     CTA: "contact"
   bannerItems:
     - card:
