@@ -8,15 +8,17 @@ const AccessibilityServices = props => {
         <p className="text-lg  text-blue-400 ">OUR</p>
         <p className="text-[36px] font-bold  ">Accessibility Services</p>
       </div>
-      <div className="md:grid-cols-2 gap-5 sm:grid ">
+
+      <div className="xl:flex md:grid gap-7  px-12  ">
         {props.accessibilityServices.map((item, id) => (
-          <Card
-            img={item.listItem.img}
-            key={id}
-            description={item.listItem.description}
-            CTA={item.listItem.CTA}
-            access={item.listItem.access}
-          />
+          <div className="flex space-x-11 shadow-2xl xl:min-w-[600px] sm:min-w- min-h-[170px] lg:min-w-[480px] p-7  shadow-blue-100 hover:shadow-none  hover:bg-blue-50">
+            <img src={item.listItem.img} className="w-[85px] h-[85px]" />
+            <div className="grid">
+              <p className="text-3xl font-semibold">{item.listItem.title}</p>
+
+              <p className="text-lg font-normal">{item.listItem.description}</p>
+            </div>
+          </div>
         ))}
       </div>
     </div>

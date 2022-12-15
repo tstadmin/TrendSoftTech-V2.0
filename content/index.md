@@ -78,17 +78,17 @@ home:
       - listItem:
           id: "1"
           img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
-          access: "Doc Accessibility"
+          title: "Doc Accessibility"
           description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
           page: ""
       - listItem:
           id: "2"
           img: "https://trendsofttech.netlify.app/img/HomeImage/agile.png"
-          access: "Web Accessibility"
+          title: "Web Accessibility"
           description: "We offers a variety of services to help you make your new or existing website accessible to users ..."
           page: ""
   contactUs24x7:
-    personsImage: ""
+    personsImage: "/img/contact_Frame.svg"
     title: "CONTACT US 24/7"
     description: "Have any idea or project for in your mind call us or schedule a appointment. Our representative will reply you shortly."
     CTA: "Contact Us"
@@ -117,6 +117,4 @@ home:
           num: "4."
           title: "Deployment"
           description: "One the product is accepted by the client we move towards deployment. Our support teams..."
-  footer:
-    img: "/img/trendsoftlogo.svg"
 ---

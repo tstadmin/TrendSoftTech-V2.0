@@ -8,8 +8,11 @@ import Navbar from "../components/home/navbar"
 import AccessibilityServices from "../components/home/AccessibilityServices"
 import WorkingProcess from "../components/home/WorkingProcess"
 import AboutOurCompany from "../components/home/AboutOurCompany"
-import Footer from "../components/home/Footer"
+
 import Banner from "../components/home/Banner"
+import ContactUs from "../components/home/contactUs24x7/ContactUs"
+import ContactSupport from "../components/home/contactUs24x7/ContactSupport"
+import Footer from "../components/home/Footer"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -17,7 +20,7 @@ const Index = () => {
   const [banner, setBanner] = useState([])
   const [bannerItem, setBannerItem] = useState([])
   const [aboutOurCompany, setAboutOurCompany] = useState([])
-  const [contactUs24x7, setContactUs24x7] = useState([])
+  const [contactUs, setContactUs] = useState([])
   const [servicesProvide, setServicesProvide] = useState([])
   const [accessibilityServices, setAccessibilityServices] = useState([])
   const [workingProcess, setWorkingProcess] = useState([])
@@ -28,22 +31,22 @@ const Index = () => {
     setAccessibilityServices(data.accessibilityServices.list)
     setBanner(data.banner)
     setAboutOurCompany(data.aboutOurCompany)
-    setContactUs24x7(data.contactUs24x7)
+    setContactUs(data.contactUs24x7)
     setWorkingProcess(data.workingProcess.list)
-    setFooter(data.footer)
   })
 
-  console.log(servicesProvide)
+  console.log(contactUs)
   return (
-    <div>
-      <Navbar />
+    <div className="bg-red-500 sm:bg-blue-500 md:bg-green-500 lg:bg-yellow-500 xl:bg-violet-500 2xl:bg-pink-500">
+      {/* <Navbar />
       <Banner banner={banner} />
       <BannerItems bannerItem={bannerItem} />
       <AboutOurCompany aboutOurCompany={aboutOurCompany} />
-      <ServicesProvide servicesProvide={servicesProvide} />
+      <ServicesProvide servicesProvide={servicesProvide} />*/}
       <AccessibilityServices accessibilityServices={accessibilityServices} />
       {/* <WorkingProcess workingProcess={workingProcess} /> */}
-      {/* <Footer img={data.img} /> */}
+      {/* <ContactSupport contactUs={contactUs} /> */}
+      {/* <Footer /> */}
     </div>
   )
 }
@@ -97,7 +100,7 @@ const dataQuery = graphql`
                   listItem {
                     id
                     img
-                    access
+                    title
                     page
                     description
                   }
@@ -121,9 +124,6 @@ const dataQuery = graphql`
                     description
                   }
                 }
-              }
-              footer {
-                img
               }
             }
           }
