@@ -4,20 +4,15 @@ import Tilt from "react-parallax-tilt"
 
 const WorkingProcess = props => {
   return (
-    <div className="lg:flex justify-center gap-4 ">
+    <div className="lg:flex justify-center gap-4 340Screen:px-8 ">
       <Tilt
-        glareEnable={true}
-        glareMaxOpacity={0.2}
-        glareColor="#009EFF"
-        glarePosition="all"
-        glareBorderRadius="5px"
         tiltMaxAngleX={2}
         tiltMaxAngleY={2}
         className="border 2xl:w-[22%] xl:w-[27%] lg:w-[34%] md:w-full sm:text-center lg:text-start  space-y-12 p-12 mt-16 rounded-md border-blue-400 "
       >
         <h1 className="text-xl font-medium">WORKING PROCESS</h1>
 
-        <h1 className="text-4xl font-semibold lg:text-4xl">
+        <h1 className="440Screen:text-4xl text-2xl font-semibold lg:text-4xl ">
           Our Working Process - How We Work For Our Customers
         </h1>
 

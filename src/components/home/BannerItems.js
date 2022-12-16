@@ -4,7 +4,7 @@ import Card from "../common/Card"
 const BannerItems = props => {
   return (
     <div>
-      <div className="md:flex sm:grid gap-5 justify-center">
+      <div className="lg:flex grid gap-5 justify-center xl:px-12 lg:px-2 540Screen:px-4 440Screen:px-8 340Screen:px-8 px-4 mt-36 ">
         {props.bannerItem.map((item, id) => (
           <Card
             key={id}
