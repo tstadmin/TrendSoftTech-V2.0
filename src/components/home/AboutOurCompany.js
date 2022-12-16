@@ -3,7 +3,7 @@ import React from "react"
 const AboutOurCompany = props => {
   return (
     <div
-      className="lg:flex grid
+      className="lg:flex grid mt-24
         2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 540Screen:space-y-20
         440Screen:space-y-0 340Screen:space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20 340Screen:px-10 px-5 "
     >
