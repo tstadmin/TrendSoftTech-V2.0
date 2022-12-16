@@ -57,6 +57,7 @@ const Index = () => {
       <ContactSupport contactUs={contactUs} />
       <WorkingProcess workingProcess={workingProcess} />
       <Footer img={data.img} />
+      <Footer img={data.img} />
     </div>
   )
 }

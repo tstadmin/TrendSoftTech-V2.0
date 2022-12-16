@@ -9,10 +9,7 @@ import logo from "../../../static/img/trendsoftlogo.svg"
 const Footer = () => {
   return (
     <div className="">
-      <div
-        className="md:flex sm:grid px-8 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:jest my-20 
-        "
-      >
+      <div className="md:flex sm:grid px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:jest my-20">
         <div className=" basis-1/3 ">
           <img src={logo} className="h-32" />
           <p>
