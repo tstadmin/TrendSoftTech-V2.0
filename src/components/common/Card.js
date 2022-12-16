@@ -17,7 +17,7 @@ const Card = props => {
           ${props.CTA ? "  gap-5 " : "none"}
           ${props.CTA ? " min-h-[300px]" : " min-h-[300px] "}
           ${props.CTA ? "justify-items-start" : "justify-items-center"}
-          p-8  bg-white
+          2xl:p-8 xl:p-5 lg:p-7 md:p-6 sm:p-3 540Screen:p-7 440Screen:p-8 340Screen:p-5 p-5 bg-white
           `}
         >
           <img src={props.img} className="w-[85px] h-[85px]" />
@@ -27,9 +27,11 @@ const Card = props => {
               props.access ? "text-start " : "text-center"
             }  grid`}
           >
-            <p className="text-3xl font-semibold">{props.title}</p>
+            <p className="2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
+              {props.title}
+            </p>
 
-            <p className="text-lg font-normal">{props.description}</p>
+            <p className=" text-lg font-normal">{props.description}</p>
             {props.CTA ? (
               <p className="text-lg font-normal ">{props.CTA}</p>
             ) : (

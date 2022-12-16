@@ -8,7 +8,7 @@ const ServicesProvide = props => {
         <p className="text-lg  text-blue-400 ">SERVICES</p>
         <p className="text-[36px] font-bold  ">Services we provide</p>
       </div>
-      <div className="grid grid-cols-3 place-items-center gap-5 px-12">
+      <div className="2xl:grid 2xl:grid-cols-3 xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 540Screen:grid 540Screen:grid-cols-1 grid grid-cols-1  440Screen:grid 440Screen:grid-cols-1 340Screen:grid 340Screen:grid-cols-1 place-items-center 2xl:gap-5 xl:gap-5 540Screen:gap-5 440Screen:gap-5 340Screen:gap-4 gap-3  2xl:px-12 sm:px-7 540Screen:px-8 440Screen:px-6 340Screen:px-3 px-2">
         {props.servicesProvide.map((item, id) => (
           <Card
             img={item.listItem.img}

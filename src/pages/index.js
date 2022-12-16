@@ -56,7 +56,7 @@ const Index = () => {
       {/* <ServicesProvide servicesProvide={servicesProvide} /> */}
       {/* <AccessibilityServices accessibilityServices={accessibilityServices} /> */}
       {/* <WorkingProcess workingProcess={workingProcess} /> */}
-      {/* <Footer img={data.img} /> */}
+      <Footer img={data.img} />
     </div>
   )
 }
