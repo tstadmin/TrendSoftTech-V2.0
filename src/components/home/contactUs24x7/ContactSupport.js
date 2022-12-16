@@ -4,8 +4,8 @@ import Counter from "./Counter"
 
 const ContactSupport = props => {
   return (
-    <div className="px-12  grid justify-items-center">
-      <ContactUs contactUs={props.contactUs} />
+    <div className="">
+      {/* <ContactUs contactUs={props.contactUs} /> */}
       <Counter />
     </div>
   )
