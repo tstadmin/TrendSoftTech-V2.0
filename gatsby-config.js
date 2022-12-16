@@ -16,7 +16,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    "gatsby-plugin-postcss",
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

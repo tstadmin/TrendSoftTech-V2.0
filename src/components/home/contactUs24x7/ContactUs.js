@@ -4,10 +4,9 @@ import Counter from "./Counter"
 const ContactUs = props => {
   return (
     <div className="relative ">
-      <div className="lg:flex md:grid w-full  bg-blue-100 gap-24 p-10 items-center  ">
-        <div>
-          <img src={props.contactUs.personsImage} alt="image" />
-        </div>
+      <div className="lg:flex md:grid justify-center w-full  bg-blue-100 gap-24 p-10 items-center  ">
+        <img src={props.contactUs.personsImage} alt="image" />
+
         <div className="space-y-8 text-center">
           <p className="text-[36px] font-bold ">{props.contactUs.title}</p>
           <p className="text-[20px] font-[600] ">

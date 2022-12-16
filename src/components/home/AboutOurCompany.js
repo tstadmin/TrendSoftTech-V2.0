@@ -1,17 +1,22 @@
 import React from "react"
+import tw from "twin.macro"
 
 const AboutOurCompany = props => {
   return (
     <div className="mt-48 ">
-      <div className="lg:flex md:grid sm:grid  2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 540Screen:space-y-20 440Screen:space-y-0 340Screen:space-y-10  justify-between 2xl:px-20 lg:px-20 md:px-20 340Screen:px-10 px-5">
-        <img
-          src={props.aboutOurCompany.img}
-          className="2xl:w-[600px] lg:w-[400px] md:w-[400px]  sm:w-[400px] "
-          alt="retget"
-        />
+      <div
+        className="lg:flex grid
+        2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 540Screen:space-y-20
+        440Screen:space-y-0 340Screen:space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20 340Screen:px-10 px-5 "
+      >
+        <img src={props.aboutOurCompany.img} className=" " alt="retget" />
 
         <div className=" space-y-5 relative">
-          <div className="absolute 2xl:left-28 xl:left-28 lg:left-28 md:left-28 sm:left-24 left-24 2xl:-top-3 xl:-top-3 lg:top-2 md:-top-3 sm:-top-7  540Screen:-top-8 440Screen:-top-5 340Screen:-top-4 340Screen:-top-2 -top-1">
+          <div
+            className="absolute
+           2xl:left-28 xl:left-28 lg:left-28 md:left-28 sm:left-24 440Screen:left-20 340Screen:left-20 left-24
+           2xl:-top-3 xl:-top-3 lg:top-2 md:-top-3 sm:-top-7  540Screen:-top-2 440Screen:-top-1   340Screen:top-2 top-4"
+          >
             <img
               className="2xl:w-[500px] xl:w-[500px] lg:w-[280px]  "
               src={props.aboutOurCompany.imgDot}

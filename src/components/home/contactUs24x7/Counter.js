@@ -1,10 +1,12 @@
 import React from "react"
+import tw from "twin.macro"
+import styled from "@emotion/styled/macro"
 
 const Counter = () => {
   return (
-    <div className="md:flex md:justify-center grid justify-items-center gap-24 shadow-xl md:gap-20  p-6 bg-white">
+    <div className="md:flex md:justify-center grid justify-items-center gap-24 shadow-xl md:gap-56  p-6 bg-white">
       <div>
-        <p className="text-[50px] font-bold">100+</p>
+        <h1 className="text-[50px] font-bold">100+</h1>
         <p className="text-[20px] font-[400]">Happy Clients</p>
       </div>
       <div>
