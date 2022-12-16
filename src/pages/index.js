@@ -49,14 +49,15 @@ const Index = () => {
     440Screen:bg-fuchsia-600 
     540Screen:bg-blue-900"
     >
-      {/* <Navbar /> */}
+      <Navbar />
       <Banner banner={banner} />
       <BannerItems bannerItem={bannerItem} />
-      {/* <AboutOurCompany aboutOurCompany={aboutOurCompany} /> */}
-      {/* <ServicesProvide servicesProvide={servicesProvide} /> */}
-      {/* <AccessibilityServices accessibilityServices={accessibilityServices} /> */}
-      {/* <WorkingProcess workingProcess={workingProcess} /> */}
-      <Footer img={data.img} />
+      <AboutOurCompany aboutOurCompany={aboutOurCompany} />
+      <ServicesProvide servicesProvide={servicesProvide} />
+      <AccessibilityServices accessibilityServices={accessibilityServices} />
+      <ContactSupport contactUs={contactUs} />
+      <WorkingProcess workingProcess={workingProcess} />
+      {/* <Footer img={data.img} /> */}
     </div>
   )
 }
