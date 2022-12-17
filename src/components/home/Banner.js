@@ -2,8 +2,8 @@ import React from "react"
 
 const Banner = props => {
   return (
-    <div className=" lg:flex relative">
-      <div className="space-y-14 bg-white py-24 lg:w-[60vw]  lg:h-[95vh] h-[60vh] sm:pl-20 lg:pl-48 240Screen:pl-8 lg:pt-48">
+    <div className=" lg:flex relative shadow-2xl shadow-black/40">
+      <div className="space-y-14 bg-black text-white py-24 lg:w-[60vw]  lg:h-[95vh] h-[60vh] sm:pl-20 lg:pl-48 240Screen:pl-8 lg:pt-48">
         <h1
           data-sal="slide-up"
           data-sal-delay="500"
@@ -34,14 +34,16 @@ const Banner = props => {
           data-sal-delay="1000"
           data-sal-easing="ease-in-out"
           className="
-        text-2xl border-2 
+        text-2xl border 
         border-blue-500 
         text-blue-500 
         hover:bg-blue-500 
         hover:text-white 
+        font-semibold
         duration-75 
         px-14 
-        py-3 
+        py-2
+        mb-1
         rounded-full"
         >
           {props.banner.CTA}
