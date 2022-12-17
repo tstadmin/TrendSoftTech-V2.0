@@ -1,13 +1,17 @@
 import React from "react"
+import tw from "twin.macro"
 
 const AboutOurCompany = props => {
+  // const Div = tw.div`lg:flex grid mt-24
+  //       2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 540Screen:space-y-20
+  //       440Screen:space-y-0 340Screen:space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20 340Screen:px-10 px-5 `
   return (
     <div
       className="lg:flex grid mt-24
-        2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 540Screen:space-y-20
-        440Screen:space-y-0 340Screen:space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20 340Screen:px-10 px-5 "
+      2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 540Screen:space-y-20
+      440Screen:space-y-0 340Screen:space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20 340Screen:px-10 px-5 "
     >
-      <img src={props.aboutOurCompany.img} className=" " alt="retget" />
+      <img src={props.aboutOurCompany.img} alt="retget" />
 
       <div className=" space-y-5 relative">
         <div
@@ -21,22 +25,22 @@ const AboutOurCompany = props => {
             alt=""
           />
         </div>
-        <p className="2xl:text-xl lg:text-xl 340Screen:text-sm 440Screen:text-sm sm:text-lg font-bold  text-blue-500">
+        <h1 className="2xl:text-xl lg:text-xl 340Screen:text-sm 440Screen:text-sm sm:text-lg font-bold  text-blue-500">
           {props.aboutOurCompany.title}
-        </p>
+        </h1>
 
-        <p className="2xl:text-[36px] lg:text-[36px] md:text-[36px] 540Screen:text-[26px] 440Screen:text-[20px] font-bold">
+        <h1 className="2xl:text-[36px] lg:text-[36px] md:text-[36px] 540Screen:text-[26px] 440Screen:text-[20px] font-bold">
           {props.aboutOurCompany.header}
-        </p>
+        </h1>
 
-        <p className="text-[16px] from-neutral-400">
+        <h1 className="text-[16px] from-neutral-400">
           {" "}
           <div
             dangerouslySetInnerHTML={{
               __html: props.aboutOurCompany.description,
             }}
           />
-        </p>
+        </h1>
         <button className="bg-blue-600 hover:bg-white font-medium border-blue-400 hover:border  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text=[16px]">
           {props.aboutOurCompany.CTA}
         </button>

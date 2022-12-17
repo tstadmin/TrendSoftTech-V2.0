@@ -2,10 +2,8 @@ import React from "react"
 
 const Card = props => {
   return (
-    <div>
-      <div className="">
-        <div
-          className={`
+    <div
+      className={`
           ${props.CTA ? "flex" : "grid"}
        
           ${props.CTA ? "none" : " shadow-blue-400"}
@@ -19,26 +17,20 @@ const Card = props => {
           ${props.CTA ? "justify-items-start" : "justify-items-center"}
           2xl:p-5 xl:p-5 lg:p-7 md:p-6 sm:p-3 540Screen:p-7 440Screen:p-8 340Screen:p-5 p-5 bg-white
           `}
-        >
-          <img src={props.img} className="w-[85px] h-[85px]" />
+    >
+      <img src={props.img} className="w-[85px] h-[85px]" />
 
-          <div
-            className={`  ${props.CTA ? "text-start " : "text-center"}  ${
-              props.access ? "text-start " : "text-center"
-            }  grid`}
-          >
-            <p className="2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
-              {props.title}
-            </p>
+      <div
+        className={`  ${props.CTA ? "text-start " : "text-center"}  ${
+          props.access ? "text-start " : "text-center"
+        }  grid`}
+      >
+        <p className="2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
+          {props.title}
+        </p>
 
-            <p className=" text-lg font-normal">{props.description}</p>
-            {props.CTA ? (
-              <p className="text-lg font-normal font-medium ">{props.CTA}</p>
-            ) : (
-              ""
-            )}
-          </div>
-        </div>
+        <p className=" text-lg font-normal">{props.description}</p>
+        {props.CTA ? <p className="text-lg  font-medium ">{props.CTA}</p> : ""}
       </div>
     </div>
   )

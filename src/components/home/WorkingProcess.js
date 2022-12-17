@@ -23,7 +23,10 @@ const WorkingProcess = props => {
 
       <div className="mt-16 md:grid md:grid-cols-2 gap-4 w-full lg:w-[60%] md:w-full ">
         {props.workingProcess.map((i, idx) => (
-          <div className="border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]">
+          <div
+            key={i.listItem.id}
+            className="border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]"
+          >
             <h1 className="text-5xl text-blue-600 font-semibold">
               {i.listItem.id}
             </h1>

@@ -4,7 +4,7 @@ import logo from "../../images/trendsoftlogo.svg"
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between  px-24 bg-white  ">
+    <div className="flex items-center justify-between  lg:px-48 sm:px-20 px-8 bg-white  ">
       <div className="flex items-center space-x-14 ">
         <img src={logo} alt="logo" width="75.74px" height="60px" />
 

@@ -1,21 +1,25 @@
 import React from "react"
-
+import tw from "twin.macro"
 const Counter = () => {
+  const Header = tw.h1`text-[50px] font-bold`
+  const Description = tw.p`text-[20px] font-[400]`
+  const Div = tw.div`md:flex md:justify-center grid justify-items-center gap-24 md:gap-56  p-6 bg-white`
   return (
-    <div className="md:flex md:justify-center grid justify-items-center gap-24 md:gap-56  p-6 bg-white">
+    <Div>
       <div>
-        <h1 className="text-[50px] font-bold">100+</h1>
-        <p className="text-[20px] font-[400]">Happy Clients</p>
+        <Header>100+</Header>
+        <Description>Happy Clients</Description>
       </div>
       <div>
-        <p className="text-[50px] font-bold">50+</p>
-        <p className="text-[20px] font-[400]">Happy Clients</p>
+        <Header>50+</Header>
+        <Description>Happy Clients</Description>
       </div>
       <div>
-        <p className="text-[50px] font-bold">100+</p>
-        <p className="text-[20px] font-[400]">Happy Clients</p>
+        <Header>100+</Header>
+
+        <Description>Happy Clients</Description>
       </div>
-    </div>
+    </Div>
   )
 }
 

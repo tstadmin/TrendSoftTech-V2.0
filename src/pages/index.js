@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import BannerItems from "../components/home/BannerItems"
 
-import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import ServicesProvide from "../components/home/ServicesProvide"
 import Navbar from "../components/home/navbar"
@@ -10,7 +9,7 @@ import WorkingProcess from "../components/home/WorkingProcess"
 import AboutOurCompany from "../components/home/AboutOurCompany"
 
 import Banner from "../components/home/Banner"
-import ContactUs from "../components/home/contactUs24x7/ContactUs"
+
 import ContactSupport from "../components/home/contactUs24x7/ContactSupport"
 import Footer from "../components/home/Footer"
 
