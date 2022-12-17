@@ -1,24 +1,28 @@
 import React from "react"
-import Counter from "./Counter"
 
+import tw from "twin.macro"
 const ContactUs = props => {
+  const Div = tw.div`relative`
+  const Header = tw.h1`text-[36px] font-bold text-black`
+  const ContactInfo = tw.div`space-y-8 text-center`
+  const Description = tw.p`text-[20px] font-[400]`
+  const Button = tw.button`bg-blue-600 hover:bg-white font-medium border-blue-400 hover:border  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[142px] text-[16px]`
+  const Contact = tw.div`lg:flex md:grid justify-center w-full  bg-blue-100 gap-24 p-10 items-center`
   return (
-    <div className="relative ">
-      <div className="lg:flex md:grid justify-center w-full  bg-blue-100 gap-24 p-10 items-center  ">
+    <Div>
+      <Contact>
         <img src={props.contactUs.personsImage} alt="image" />
 
-        <div className="space-y-8 text-center">
-          <p className="text-[36px] font-bold ">{props.contactUs.title}</p>
-          <p className="text-[20px] font-[600] ">
+        <ContactInfo>
+          <Header>{props.contactUs.title}</Header>
+          <Description>
             Have any idea or project for in your mind call us or schedule a
             appointment. Our representative will reply you shortly.
-          </p>
-          <button className="bg-blue-600 hover:bg-white font-medium border-blue-400 hover:border  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[142px] text=[16px]">
-            Contact Us
-          </button>
-        </div>
-      </div>
-    </div>
+          </Description>
+          <Button>Contact Us</Button>
+        </ContactInfo>
+      </Contact>
+    </Div>
   )
 }
 

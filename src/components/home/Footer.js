@@ -7,14 +7,25 @@ import { BiLink } from "react-icons/bi"
 import logo from "../../../static/img/trendsoftlogo.svg"
 import tw from "twin.macro"
 const Footer = () => {
-  // const Div = tw.div`md:flex sm:grid px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:jest my-20`
-  const Description = tw.p`text-[20px] font-[400]`
-  const Title = tw.p`text-[34px]   font-semibold`
+  const Description = tw.p`text-[16px] font-[400]`
+  const Title = tw.p`text-[34px]   font-semibold text-blue-600`
   const Icon = tw.div`flex mt-4 gap-5`
+  const Hr = tw.hr`border-black border`
+  const WebLink = tw.p`flex gap-2 text-start`
+  const WebMail = tw.p`flex gap-2 text-start`
+  const Address = tw.p`flex gap-2 text-start`
+  const FaceBookIcon = tw.p` text-blue-500 text-center hover:text-white  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl`
+  const Footer = tw.div`md:flex sm:grid px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`
+  const TrendInfo = tw.div` basis-1/3`
+  const ServicesInfo = tw.div`space-y-3 basis-1/4`
+  const ContactInfo = tw.div`space-y-3  basis-1/4`
+  const Iconinfo = tw.div`text-2xl`
+  const Ul = tw.div` space-y-3 text-[16px] font-[400]`
+
   return (
-    <div className="">
-      <div className="md:flex sm:grid px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:jest my-20">
-        <div className=" basis-1/3 ">
+    <div>
+      <Footer>
+        <TrendInfo>
           <img src={logo} className="h-32" />
           <Description>
             At Trendsoft Quality is our ultimate business plan. We consider
@@ -22,46 +33,65 @@ const Footer = () => {
             intellectual property protections.
           </Description>
           <Icon>
-            <FaFacebookF className=" text-blue-500 text-center hover:text-white  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl" />
-            <TiSocialLinkedin className="  text-blue-500 text-center hover:text-white bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl" />
+            <FaceBookIcon>
+              <FaFacebookF />
+            </FaceBookIcon>
+            <FaceBookIcon>
+              <TiSocialLinkedin />
+            </FaceBookIcon>
           </Icon>
-        </div>
-        <div className="space-y-3 basis-1/4">
+        </TrendInfo>
+        <ServicesInfo>
           <Title>IT Services</Title>
-          <ul className="text-[16px] space-y-3">
-            <li>Web Development</li>
-            <li>Ecommerce Development</li>
-            <li>Product Development</li>
-            <li>Mobile Development</li>
-            <li>Digital Marketing</li>
-            <li>Ui/UX Design</li>
-          </ul>
-        </div>
 
-        <div className="space-y-3  basis-1/4">
+          <ul>
+            <Ul>
+              <li>Web Development</li>
+              <li>Ecommerce Development</li>
+              <li>Product Development</li>
+              <li>Mobile Development</li>
+              <li>Digital Marketing</li>
+              <li>Ui/UX Design</li>
+            </Ul>
+          </ul>
+        </ServicesInfo>
+
+        <ContactInfo>
           <Title>Contact Info</Title>
-          <div className="flex gap-2 text-start">
-            <SlLocationPin className="text-4xl" />
-            <p>
+
+          <Address>
+            <Iconinfo>
+              <SlLocationPin />
+            </Iconinfo>
+
+            <Description>
               Trendsoft Technologies Pvt. Ltd,Flat #302, 2nd Floor, PKR
               Complex,Road No. 1, KPHB Colony, Kukatpally, Hyderabad – 500072
-            </p>
-          </div>
-          <div className="flex gap-2 text-start">
-            <AiOutlineMail className="text-2xl" />
-            <p>
+            </Description>
+          </Address>
+
+          <WebMail>
+            <Iconinfo>
+              <AiOutlineMail />
+            </Iconinfo>
+
+            <Description>
               info@trendsofttech.com
               <br /> service@trendsofttech.com
-            </p>
-          </div>
-          <div className="flex gap-2 text-start">
-            <BiLink className="text-2xl" />
-            <p>www.trendsofttech.com</p>
-          </div>
-        </div>
-      </div>
+            </Description>
+          </WebMail>
 
-      <hr className="border-black border " />
+          <WebLink>
+            <Iconinfo>
+              <BiLink />
+            </Iconinfo>
+
+            <Description>www.trendsofttech.com</Description>
+          </WebLink>
+        </ContactInfo>
+      </Footer>
+
+      <Hr />
       <p className="text-center">© 2022 All Rights Reserved.</p>
     </div>
   )
