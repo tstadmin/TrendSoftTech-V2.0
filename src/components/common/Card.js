@@ -11,7 +11,11 @@ const Card = props => {
           ${props.CTA ? "none" : " shadow-blue-400"}
           ${props.CTA ? "hover:shadow-2xl" : "none"}
           ${props.CTA ? "border border-sky-200" : "none"}
-          ${props.CTA ? "hover:border-sky-50" : "none"}
+          ${
+            props.CTA
+              ? "hover:border-sky-50 duration-1000 cursor-pointer"
+              : "none"
+          }
           ${props.CTA ? "hover:shadow-blue-300" : " shadow-md "}
           ${props.CTA ? "  max-w-[530px] " : "max-w-[530px]  "}
           ${props.CTA ? "  gap-5 " : "none"}
@@ -33,7 +37,7 @@ const Card = props => {
 
             <p className=" text-lg font-normal">{props.description}</p>
             {props.CTA ? (
-              <p className="text-lg font-normal font-medium ">{props.CTA}</p>
+              <p className="text-lg font-medium ">{props.CTA}</p>
             ) : (
               ""
             )}

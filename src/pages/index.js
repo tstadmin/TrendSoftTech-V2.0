@@ -13,6 +13,7 @@ import Banner from "../components/home/Banner"
 import ContactUs from "../components/home/contactUs24x7/ContactUs"
 import ContactSupport from "../components/home/contactUs24x7/ContactSupport"
 import Footer from "../components/home/Footer"
+import Seo from "../components/seo"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -48,6 +49,7 @@ const Index = () => {
     // 440Screen:bg-fuchsia-600
     // 540Screen:bg-blue-900"
     >
+      <Seo title="Home" description="TrendSoftTech" />
       <Navbar />
       <Banner banner={banner} />
       <AboutOurCompany aboutOurCompany={aboutOurCompany} />

@@ -13,7 +13,7 @@ const AccessibilityServices = props => {
         {props.accessibilityServices.map((item, id) => (
           <div
             key={id}
-            className="flex xl:space-x-11 md:space-x-11  440Screen:space-x-5  340Screen:space-x-5 space-x-4 shadow-2xl   xl:min-w-[500px] sm:min-w- min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none  hover:bg-blue-50"
+            className="flex xl:space-x-11 md:space-x-11  440Screen:space-x-5  340Screen:space-x-5 space-x-4 shadow-2xl   xl:min-w-[500px] sm:min-w- min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer   hover:bg-blue-50"
           >
             <img
               src={item.listItem.img}
