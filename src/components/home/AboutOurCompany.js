@@ -5,6 +5,9 @@ const AboutOurCompany = props => {
   // const Div = tw.div`lg:flex grid mt-24
   //       2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 540Screen:space-y-20
   //       440Screen:space-y-0 340Screen:space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20 340Screen:px-10 px-5 `
+  //const H2 = tw.h2`2xl:text-xl lg:text-xl 340Screen:text-sm 440Screen:text-sm sm:text-lg font-bold  text-blue-500`
+  const H1 = tw.h1`text-[16px] from-neutral-400`
+  const Button = tw.button`bg-blue-600 hover:bg-white font-medium border-blue-400 hover:border  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`
   return (
     <div
       className="lg:flex grid mt-24
@@ -25,25 +28,23 @@ const AboutOurCompany = props => {
             alt=""
           />
         </div>
-        <h1 className="2xl:text-xl lg:text-xl 340Screen:text-sm 440Screen:text-sm sm:text-lg font-bold  text-blue-500">
+        <h2 className="2xl:text-xl lg:text-xl 340Screen:text-sm 440Screen:text-sm sm:text-lg font-bold  text-blue-500">
           {props.aboutOurCompany.title}
-        </h1>
+        </h2>
 
         <h1 className="2xl:text-[36px] lg:text-[36px] md:text-[36px] 540Screen:text-[26px] 440Screen:text-[20px] font-bold">
           {props.aboutOurCompany.header}
         </h1>
 
-        <h1 className="text-[16px] from-neutral-400">
+        <H1>
           {" "}
           <div
             dangerouslySetInnerHTML={{
               __html: props.aboutOurCompany.description,
             }}
           />
-        </h1>
-        <button className="bg-blue-600 hover:bg-white font-medium border-blue-400 hover:border  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text=[16px]">
-          {props.aboutOurCompany.CTA}
-        </button>
+        </H1>
+        <Button>{props.aboutOurCompany.CTA}</Button>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ const ServicesProvide = props => {
   return (
     <div className="text-center mt-24 ">
       <div className="text-center mb-16">
-        <p className="text-lg  text-blue-400 ">SERVICES</p>
+        <p className="text-lg font-semibold text-blue-500 ">SERVICES</p>
         <p className="text-[36px] font-bold  ">Services we provide</p>
       </div>
       <div

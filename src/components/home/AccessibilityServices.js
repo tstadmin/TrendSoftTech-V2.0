@@ -5,7 +5,7 @@ const AccessibilityServices = props => {
   return (
     <div className=" ">
       <div className="text-center mb-16 mt-24">
-        <p className="text-lg  text-blue-400 ">OUR</p>
+        <p className="text-lg text-blue-500 font-semibold ">OUR</p>
         <p className="text-[36px] font-bold  ">Accessibility Services</p>
       </div>
 
