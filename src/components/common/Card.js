@@ -3,7 +3,7 @@ import React from "react"
 const Card = props => {
   return (
     <div>
-      <div className="">
+      <div>
         <div
           className={`
           ${props.CTA ? "flex" : "grid"}
