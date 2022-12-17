@@ -1,14 +1,19 @@
 import React from "react"
 
 import Card from "../common/Card"
+import tw from "twin.macro"
 
 const AccessibilityServices = props => {
+  const Description = tw.h1`text-lg font-normal`
+  const Title = tw.h1`text-lg text-blue-500 font-semibold`
+  const SubTitle = tw.h2`text-[36px] font-bold`
+  const Div = tw.h1`text-center mb-16 mt-24`
   return (
     <div data-sal="fade" data-sal-delay="100" data-sal-easing="ease-in-out">
-      <div className="text-center mb-16 mt-24">
-        <p className="text-lg text-blue-500 font-semibold ">OUR</p>
-        <p className="text-[36px] font-bold  ">Accessibility Services</p>
-      </div>
+      <Div>
+        <Title>OUR</Title>
+        <SubTitle>Accessibility Services</SubTitle>
+      </Div>
 
       <div className="lg:flex lg:justify-items-center  md:grid gap-7   2xl:px-48 xl:px-32 lg:px-16 md:px-8 px-12 340Screen:px-5  ">
         {props.accessibilityServices.map((item, id) => (
@@ -25,7 +30,7 @@ const AccessibilityServices = props => {
                 {item.listItem.title}
               </p>
 
-              <p className="text-lg font-normal">{item.listItem.description}</p>
+              <Description>{item.listItem.description}</Description>
             </div>
           </div>
         ))}

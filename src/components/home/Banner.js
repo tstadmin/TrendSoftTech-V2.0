@@ -1,8 +1,10 @@
 import React from "react"
-
+import tw from "twin.macro"
 const Banner = props => {
+  const Images = tw.img`object-cover w-[100vw] h-[95vh]`
+
   return (
-    <div className=" lg:flex relative shadow-2xl shadow-black/40">
+    <div className="lg:flex relative shadow-2xl shadow-black/40 ">
       <div className="space-y-14 bg-black text-white py-24 lg:w-[60vw]  lg:h-[95vh] h-[60vh] sm:pl-20 lg:pl-48 240Screen:pl-8 lg:pt-48">
         <h1
           data-sal="slide-up"
@@ -51,8 +53,7 @@ const Banner = props => {
       </div>
 
       <div className="absolute -z-20 340Screen:hidden lg:block">
-        <img
-          className="object-cover w-[100vw] h-[95vh]"
+        <Images
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
           alt="bannerImage"
         />
