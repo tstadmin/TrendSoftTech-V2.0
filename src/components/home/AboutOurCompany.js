@@ -10,6 +10,9 @@ const AboutOurCompany = props => {
   const Button = tw.button`bg-blue-600 hover:bg-white font-medium border-blue-400 hover:border  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`
   return (
     <div
+      data-sal="fade"
+      data-sal-delay="50"
+      data-sal-easing="ease-in-out"
       className="lg:flex grid mt-24
       2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 540Screen:space-y-20
       440Screen:space-y-0 340Screen:space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20 340Screen:px-10 px-5 "

@@ -3,16 +3,19 @@ import BannerItems from "../components/home/BannerItems"
 
 import { useStaticQuery, graphql } from "gatsby"
 import ServicesProvide from "../components/home/ServicesProvide"
-import Navbar from "../components/home/navbar"
 import AccessibilityServices from "../components/home/AccessibilityServices"
 import WorkingProcess from "../components/home/WorkingProcess"
 import AboutOurCompany from "../components/home/AboutOurCompany"
 
 import Banner from "../components/home/Banner"
 
+import Nav from "../components/home/Nav"
+
 import ContactSupport from "../components/home/contactUs24x7/ContactSupport"
 import Footer from "../components/home/Footer"
 import Seo from "../components/seo"
+import MouseFollower from "../components/common/MouseFollower"
+import OnclickTop from "../components/common/OnClickScrollToTop"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -48,8 +51,10 @@ const Index = () => {
     // 440Screen:bg-fuchsia-600
     // 540Screen:bg-blue-900"
     >
+      <MouseFollower />
+      <OnclickTop />
       <Seo title="Home" description="TrendSoftTech" />
-      <Navbar />
+      <Nav />
       <Banner banner={banner} />
       <AboutOurCompany aboutOurCompany={aboutOurCompany} />
       <BannerItems bannerItem={bannerItem} />
