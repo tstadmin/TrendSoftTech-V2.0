@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-14 text-white ">
         <img src={logo} alt="logo" width="75.74px" height="60px" />
 
-        <div className="text-base lg:flex space-x-8 240Screen:hidden">
+        <div className="text-base lg:flex space-x-8 240Screen:hidden text-black">
           <h1>Home</h1>
           <h1>Services</h1>
           <h1>About</h1>

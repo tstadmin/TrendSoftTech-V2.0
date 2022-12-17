@@ -11,10 +11,10 @@ const Footer = () => {
   const Title = tw.p`text-[34px]   font-semibold text-blue-600`
   const Icon = tw.div`flex mt-4 gap-5`
   const Hr = tw.hr`border-black border`
-  const WebLink = tw.p`flex gap-2 text-start`
-  const WebMail = tw.p`flex gap-2 text-start`
-  const Address = tw.p`flex gap-2 text-start`
-  const FaceBookIcon = tw.p` text-blue-500 text-center hover:text-white  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl`
+  const WebLink = tw.h1`flex gap-2 text-start`
+  const WebMail = tw.h1`flex gap-2 text-start`
+  const Address = tw.h1`flex gap-2 text-start`
+  const FaceBookIcon = tw.h1` text-blue-500 text-center hover:text-white  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl`
   const Footer = tw.div`md:flex sm:grid px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`
   const TrendInfo = tw.div` basis-1/3`
   const ServicesInfo = tw.div`space-y-3 basis-1/4`
@@ -92,7 +92,7 @@ const Footer = () => {
       </Footer>
 
       <Hr />
-      <p className="text-center">© 2022 All Rights Reserved.</p>
+      <h1 className="text-center">© 2022 All Rights Reserved.</h1>
     </div>
   )
 }
