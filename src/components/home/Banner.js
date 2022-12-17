@@ -3,7 +3,7 @@ import React from "react"
 const Banner = props => {
   return (
     <div className="lg:flex relative">
-      <div className="space-y-14 bg-white py-24 lg:w-[60vw]  lg:h-[95vh] h-[60vh] 440Screen:pl-20 240Screen:pl-8 lg:pt-48">
+      <div className="space-y-14 bg-white py-24 lg:w-[60vw]  lg:h-[95vh] h-[60vh] sm:pl-20 lg:pl-48 240Screen:pl-8 lg:pt-48">
         <h1 className="2xl:text-8xl xl:text-7xl md:text-5xl 440Screen:text-4xl text-2xl  font-bold ">
           <div dangerouslySetInnerHTML={{ __html: props.banner.headers }} />
         </h1>
