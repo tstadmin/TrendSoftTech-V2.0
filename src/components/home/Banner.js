@@ -1,12 +1,17 @@
 import React from "react"
 import tw from "twin.macro"
 const Banner = props => {
-  const Images = tw.img`object-cover w-[100vw] h-[95vh]`
-
+  const Images = tw.img`object-cover 2xl:h-[100vh]  w-[100vw] h-[95vh]`
+  const Div = tw.div`lg:flex relative shadow-2xl shadow-black/40`
+  const Button = tw.button` text-2xl border  border-blue-500   text-blue-500  hover:bg-blue-500 hover:text-white font-semibold duration-75  px-14 py-2 mb-1 rounded-full`
+  const InfoDiv = tw.div`space-y-14 bg-black text-white py-24 2xl:w-[60vw]  2xl:h-[100vh] lg:w-[60vw]  lg:h-[95vh] md:h-[80vh] h-[80vh] sm:pl-20 lg:pl-48 pl-8 lg:pt-48`
+  const H1 = tw.h1` 2xl:text-8xl xl:text-7xl md:text-5xl sm:text-6xl text-4xl  font-bold`
+  const H2 = tw.h1` 2xl:text-3xl md:text-2xl text-xl font-normal`
+  const ImgeDiv = tw.div`absolute -z-20 hidden  lg:block`
   return (
-    <div className="lg:flex relative shadow-2xl shadow-black/40 ">
-      <div className="space-y-14 bg-black text-white py-24 lg:w-[60vw]  lg:h-[95vh] h-[60vh] sm:pl-20 lg:pl-48 240Screen:pl-8 lg:pt-48">
-        <h1
+    <Div>
+      <InfoDiv>
+        {/* <h1
           data-sal="slide-up"
           data-sal-delay="500"
           data-sal-easing="ease-in-out"
@@ -14,13 +19,16 @@ const Banner = props => {
         2xl:text-8xl 
         xl:text-7xl 
         md:text-5xl 
-        440Screen:text-4xl 
-        text-2xl  
+        
+        text-3xl  
         font-bold "
         >
           <div dangerouslySetInnerHTML={{ __html: props.banner.headers }} />
-        </h1>
-        <h1
+        </h1> */}
+        <H1>
+          <div dangerouslySetInnerHTML={{ __html: props.banner.headers }} />
+        </H1>
+        {/* <h1
           data-sal="slide-up"
           data-sal-delay="700"
           data-sal-easing="ease-in-out"
@@ -30,36 +38,40 @@ const Banner = props => {
         font-normal"
         >
           {props.banner.title}
-        </h1>
-        <button
+        </h1> */}
+        <H2>{props.banner.title}</H2>
+        {/* <button
           data-sal="slide-up"
           data-sal-delay="1000"
           data-sal-easing="ease-in-out"
           className="
-        text-2xl border 
-        border-blue-500 
-        text-blue-500 
-        hover:bg-blue-500 
-        hover:text-white 
-        font-semibold
-        duration-75 
-        px-14 
-        py-2
-        mb-1
-        rounded-full"
+          text-2xl border
+          border-blue-500
+          text-blue-500
+          hover:bg-blue-500
+          hover:text-white
+          font-semibold
+          duration-75
+          px-14
+          py-2
+          mb-1
+          rounded-full"
         >
           {props.banner.CTA}
-        </button>
-      </div>
-
-      <div className="absolute -z-20 340Screen:hidden lg:block">
+        </button> */}
+        <Button>{props.banner.CTA}</Button>
+      </InfoDiv>
+      {/* absolute -z-20 340Screen:hidden lg:block */}
+      <ImgeDiv>
         <Images
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
           alt="bannerImage"
         />
-      </div>
-    </div>
+      </ImgeDiv>
+    </Div>
   )
 }
 
 export default Banner
+
+// space-y-14 bg-black text-white py-24 lg:w-[60vw]  lg:h-[100vh] md:h-[80vh] h-[80vh] sm:pl-20 lg:pl-48 240Screen:pl-8 lg:pt-48

@@ -1,13 +1,17 @@
 import React from "react"
 
-import Card from "../common/Card"
 import tw from "twin.macro"
 
 const AccessibilityServices = props => {
-  const Description = tw.h1`text-lg font-normal`
+  const Description = tw.h6`text-lg font-normal`
   const Title = tw.h1`text-lg text-blue-500 font-semibold`
   const SubTitle = tw.h2`text-[36px] font-bold`
-  const Div = tw.h1`text-center mb-16 mt-24`
+  const Div = tw.div`text-center mb-16 mt-24`
+  const Card = tw.div`lg:flex lg:justify-items-center  grid gap-7   2xl:px-48 xl:px-32 lg:px-14 px-8`
+  const Image = tw.img`2xl:w-[85px] lg:w-[85px] md:w-[80px]  w-[50px] 2xl:h-[85px] lg:h-[85px] md:h-[85px] h-[55px]`
+  const Info = tw.div`grid`
+  const CardTitle = tw.div`xl:text-3xl md:text-3xl  text-xl font-semibold `
+  const CardInfo = tw.div`flex  md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer hover:bg-blue-50`
   return (
     <div data-sal="fade" data-sal-delay="100" data-sal-easing="ease-in-out">
       <Div>
@@ -15,26 +19,18 @@ const AccessibilityServices = props => {
         <SubTitle>Accessibility Services</SubTitle>
       </Div>
 
-      <div className="lg:flex lg:justify-items-center  md:grid gap-7   2xl:px-48 xl:px-32 lg:px-16 md:px-8 px-12 340Screen:px-5  ">
+      <Card>
         {props.accessibilityServices.map((item, id) => (
-          <div
-            key={id}
-            className="flex xl:space-x-11 md:space-x-11  440Screen:space-x-5  340Screen:space-x-5 space-x-4 shadow-2xl   xl:min-w-[500px] sm:min-w- min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer   hover:bg-blue-50"
-          >
-            <img
-              src={item.listItem.img}
-              className="2xl:w-[85px] lg:w-[85px] md:w-[85px] 340Screen:w-[55px] w-[50px] 2xl:h-[85px] lg:h-[85px] md:h-[85px] 340Screen:h-[55px] h-[55px] "
-            />
-            <div className="grid">
-              <p className="xl:text-3xl md:text-3xl 340Screen:text-xl text-xl font-semibold ">
-                {item.listItem.title}
-              </p>
+          <CardInfo key={item.listItem.id}>
+            <Image src={item.listItem.img} alt="Accessibility Images" />
+            <Info>
+              <CardTitle>{item.listItem.title}</CardTitle>
 
               <Description>{item.listItem.description}</Description>
-            </div>
-          </div>
+            </Info>
+          </CardInfo>
         ))}
-      </div>
+      </Card>
     </div>
   )
 }

@@ -6,22 +6,29 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
+import Nav from "./home/Nav"
 
 import Card from "./common/Card.js"
+import Footer from "./home/Footer.js"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return <></>
+  return (
+    <div>
+      <Nav />
+      {children}
+      <Footer />
+    </div>
+  )
 }
 
 export default Layout
+// const data = useStaticQuery(graphql`
+//   query SiteTitleQuery {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//   }
+// `)

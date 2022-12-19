@@ -8,7 +8,7 @@ const Card = props => {
         <div
           className={`${
             props.CTA
-              ? "flex border border-sky-200 max-w-[530px]gap-5 min-h-[300px] justify-items-start"
+              ? "flex border border-sky-300 max-w-[530px]gap-5 min-h-[300px] justify-items-start"
               : "grid  shadow-md shadow-blue-400 max-w-[530px]  min-h-[300px] justify-items-center"
           }
           ${
