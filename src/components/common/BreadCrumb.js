@@ -10,14 +10,14 @@ const BreadCrumb = props => {
   return (
     <div>
       <div>
-        {/* <img
+        <img
           src={props.img}
-          className="relative min-w-full "
+          className="relative w-[100vw] h-[60vh] "
           alt="BreadCrumb about images"
-        /> */}
-        <Images>
-          <img src={props.img} width="100%" />
-        </Images>
+        />
+        {/* <Images>
+          <img src={props.img} />
+        </Images> */}
         <Info>
           <Header>{props.title}</Header>
           <Subheader>
