@@ -14,9 +14,6 @@ const Div = styled.div`
   .btn:hover .icons {
     display: block;
   }
-  btn:hover .chate {
-    display: block;
-  }
 `
 
 const SpeedDial = () => {
