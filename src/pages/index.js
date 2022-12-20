@@ -14,8 +14,8 @@ import Nav from "../components/home/Nav"
 import ContactSupport from "../components/home/contactUs24x7/ContactSupport"
 import Footer from "../components/home/Footer"
 import Seo from "../components/seo"
-import MouseFollower from "../components/common/MouseFollower"
 import OnclickTop from "../components/common/OnClickScrollToTop"
+import Layout from "../components/layout"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -36,34 +36,32 @@ const Index = () => {
     setAboutOurCompany(data.aboutOurCompany)
     setContactUs(data.contactUs24x7)
     setWorkingProcess(data.workingProcess.list)
-  })
+  }, [query])
 
   return (
-    <div
-    //   className="
-    // bg-red-500
-    // sm:bg-blue-500
-    // md:bg-green-500
-    // lg:bg-yellow-500
-    // xl:bg-violet-500
-    // 2xl:bg-pink-200
-    // 340Screen:bg-orange-400
-    // 440Screen:bg-fuchsia-600
-    // 540Screen:bg-blue-900"
-    >
-      <MouseFollower />
-      <OnclickTop />
-      <Seo title="Home" description="TrendSoftTech" />
-      <Nav />
-      <Banner banner={banner} />
-      <AboutOurCompany aboutOurCompany={aboutOurCompany} />
-      <BannerItems bannerItem={bannerItem} />
-      <ServicesProvide servicesProvide={servicesProvide} />
-      <AccessibilityServices accessibilityServices={accessibilityServices} />
-      <ContactSupport contactUs={contactUs} />
-      <WorkingProcess workingProcess={workingProcess} />
-      <Footer img={data.img} />
-    </div>
+    <Layout>
+      <div
+      //   className="
+      // bg-red-500
+      // sm:bg-blue-500
+      // md:bg-green-500
+      // lg:bg-yellow-500
+      // xl:bg-violet-500
+      // 2xl:bg-pink-200
+      // 340Screen:bg-orange-400
+      // 440Screen:bg-fuchsia-600
+      // 540Screen:bg-blue-900"
+      >
+        <Seo title="Home" description="TrendSoftTech" />
+        <Banner banner={banner} />
+        <AboutOurCompany aboutOurCompany={aboutOurCompany} />
+        <BannerItems bannerItem={bannerItem} />
+        <ServicesProvide servicesProvide={servicesProvide} />
+        <AccessibilityServices accessibilityServices={accessibilityServices} />
+        <ContactSupport contactUs={contactUs} />
+        <WorkingProcess workingProcess={workingProcess} />
+      </div>
+    </Layout>
   )
 }
 
