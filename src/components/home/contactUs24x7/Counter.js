@@ -6,7 +6,7 @@ import ScrollTrigger from "react-scroll-trigger"
 const Counter = () => {
   const [counter, setCounter] = useState(false)
   const Header = tw.h1`text-[50px] font-bold text-blue-500`
-  const Description = tw.p`text-[20px] font-[400] font-semibold`
+  const Description = tw.p`text-[20px] font-[400] font-semibold font-mono`
   const Div = tw.div`md:flex md:justify-center grid justify-items-center gap-24 md:gap-56  p-6 bg-white`
   return (
     <ScrollTrigger

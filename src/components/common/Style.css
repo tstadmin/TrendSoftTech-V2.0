@@ -1,0 +1,14 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+
+.main .icons{
+   
+    display: none ;
+}
+
+.main .btn:hover .icons{
+   
+    display: block;
+} */

@@ -8,7 +8,7 @@ import logo from "../../../static/img/HomeImages/trendsoftlogo.svg"
 import tw from "twin.macro"
 const Footer = () => {
   const Div = tw.div`mt-36`
-  const Description = tw.p`text-[16px] font-[400]`
+  const Description = tw.p`text-[16px] font-[400] `
   const Title = tw.p`text-[34px]   font-semibold text-blue-600`
   const Icon = tw.div`flex mt-4 gap-5`
   const Hr = tw.hr`border-black border`

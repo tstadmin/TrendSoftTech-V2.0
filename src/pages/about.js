@@ -3,7 +3,7 @@ import AboutUs from "../components/About/AboutUs"
 import ChooseUs from "../components/About/ChooseUs"
 import OurVision from "../components/About/OurVision"
 import BreadCrumb from "../components/common/BreadCrumb"
-import Onchickhelp from "../components/common/Onchickhelp"
+
 import Layout from "../components/layout"
 
 const about = () => {
@@ -22,7 +22,6 @@ const about = () => {
         //   440Screen:bg-fuchsia-600
         //   540Screen:bg-blue-900"
         >
-          <Onchickhelp />
           <BreadCrumb img="/img/About/BreadCrumbAbout.svg" title="About" />
           <AboutUs />
           <OurVision />

@@ -12,11 +12,13 @@ import Nav from "./home/Nav"
 import Footer from "./home/Footer.js"
 import OnclickTop from "./common/OnClickScrollToTop"
 import MouseFollower from "./common/MouseFollower"
+import SpeedDial from "./common/SpeedDial"
 
 const Layout = ({ children }) => {
   return (
     <div>
       <MouseFollower />
+      <SpeedDial />
       <OnclickTop />
       <Nav />
       {children}
