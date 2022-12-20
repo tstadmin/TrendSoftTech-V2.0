@@ -1,6 +1,6 @@
 import React from "react"
 import tw from "twin.macro"
-import Vision from "../../../static/img/About/OurVision.svg"
+import Vision from "../../../static/img/AboutImages/OurVision.svg"
 const OurVision = () => {
   const Div = tw.div`lg:flex justify-center lg:space-x-5 space-y-10 xl:px-48 lg:px-20  px-12 mt-20`
   const Button = tw.button`border bg-blue-400 text-center text-white p-3 rounded-full`

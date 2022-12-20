@@ -148,3 +148,13 @@ const dataQuery = graphql`
     }
   }
 `
+
+// allFile(filter: { relativeDirectory: { eq: "Home" } }) {
+//   edges {
+//     node {
+//       childImageSharp {
+//         gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+//       }
+//     }
+//   }
+// }

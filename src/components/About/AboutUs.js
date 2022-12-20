@@ -1,6 +1,6 @@
 import React from "react"
 import tw from "twin.macro"
-import About from "../../../static/img/About/AboutUs.svg"
+import About from "../../../static/img/AboutImages/AboutUs.svg"
 const AboutUs = () => {
   const Div = tw.div`lg:flex   justify-center lg:space-x-20 space-y-10 xl:px-48 lg:px-20  px-12 mt-20`
   const Button = tw.button`border  bg-black text-center text-white lg:p-3 p-1 rounded-full`

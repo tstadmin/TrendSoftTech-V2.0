@@ -1,6 +1,6 @@
 import React from "react"
 import tw from "twin.macro"
-import Choose from "../../../static/img/About/Choose.svg"
+import Choose from "../../../static/img/AboutImages/Choose.svg"
 
 const ChooseUs = () => {
   const Div = tw.div`lg:flex   justify-center lg:space-x-20 space-y-10  lg:px-20  px-12 mt-20`

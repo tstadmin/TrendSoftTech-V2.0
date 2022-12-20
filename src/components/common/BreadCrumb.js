@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import tw from "twin.macro"
 
@@ -20,7 +21,11 @@ const BreadCrumb = props => {
         <Info>
           <Header>{props.title}</Header>
           <Subheader>
-            <h1>Trendsoft Tech</h1>
+            <Link to="/">
+              {" "}
+              <h1>Trendsoft Tech</h1>
+            </Link>
+
             <h1>/</h1>
             <h1>{props.title}</h1>
           </Subheader>

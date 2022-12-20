@@ -4,7 +4,7 @@ import { TiSocialLinkedin } from "react-icons/Ti"
 import { SlLocationPin } from "react-icons/sl"
 import { AiOutlineMail } from "react-icons/ai"
 import { BiLink } from "react-icons/bi"
-import logo from "../../../static/img/trendsoftlogo.svg"
+import logo from "../../../static/img/HomeImages/trendsoftlogo.svg"
 import tw from "twin.macro"
 const Footer = () => {
   const Div = tw.div`mt-36`
