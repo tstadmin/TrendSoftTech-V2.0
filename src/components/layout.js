@@ -9,12 +9,15 @@ import * as React from "react"
 // import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./home/Nav"
 
-import Card from "./common/Card.js"
 import Footer from "./home/Footer.js"
+import OnclickTop from "./common/OnClickScrollToTop"
+import MouseFollower from "./common/MouseFollower"
 
 const Layout = ({ children }) => {
   return (
     <div>
+      <MouseFollower />
+      <OnclickTop />
       <Nav />
       {children}
       <Footer />

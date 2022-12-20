@@ -117,4 +117,63 @@ home:
           num: "4."
           title: "Deployment"
           description: "One the product is accepted by the client we move towards deployment. Our support teams..."
+portfolio:
+  projects:
+    list:
+      - listItem:
+          id: 1
+          title: "EA Labs"
+          img: "/img/portfolio/ea.jpg"
+      - listItem:
+          id: 2
+          title: "Vijaya Pickels"
+          img: "/img/portfolio/vijaya.jpg"
+      - listItem:
+          id: 3
+          title: "Auartree Tecgnologies"
+          img: "/img/portfolio/quad.jpg"
+      - listItem:
+          id: 4
+          title: "ProTPD Digital"
+          img: "/img/portfolio/pro.jpg"
+      - listItem:
+          id: 5
+          title: "Lantrans"
+          img: "/img/portfolio/lantrans.jpg"
+      - listItem:
+          id: 6
+          title: "KN Technologies"
+          img: "/img/portfolio/knt.jpg"
+      - listItem:
+          id: 7
+          title: "SS Companies"
+          img: "/img/portfolio/sscom.jpg"
+      - listItem:
+          id: 8
+          title: "Annapurna de Royal"
+          img: "/img/portfolio/annapurna.jpg"
+      - listItem:
+          id: 9
+          title: "Global Pharma Solutions"
+          img: "/img/portfolio/globalpharma.jpg"
+      - listItem:
+          id: 10
+          title: "Chachapoya USA"
+          img: "/img/portfolio/chachapoya.jpg"
+      - listItem:
+          id: 11
+          title: "AL Kasur"
+          img: "/img/portfolio/akkasur.jpg"
+      - listItem:
+          id: 12
+          title: "A1 Event Planner"
+          img: "/img/portfolio/eventplanner.jpg"
+      - listItem:
+          id: 13
+          title: "Kumar Pumps & Motors"
+          img: "/img/portfolio/kumarpumps.jpg"
+      - listItem:
+          id: 14
+          title: "Trendsoft Technologies"
+          img: "/img/portfolio/trendsofttech.jpg"
 ---
