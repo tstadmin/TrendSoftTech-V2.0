@@ -17,8 +17,9 @@ import SpeedDial from "./common/SpeedDial"
 const Layout = ({ children }) => {
   return (
     <div>
+      {/* <SpeedDial /> */}
       <MouseFollower />
-      <SpeedDial />
+
       <OnclickTop />
       <Nav />
       {children}

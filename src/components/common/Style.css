@@ -5,10 +5,41 @@
 
 .main .icons{
    
-    display: none ;
+    display: none ; rcw-widget-container
 }
 
 .main .btn:hover .icons{
    
-    display: block;
+    display: block; rcw-close-widget-container
 } */
+
+
+.rcw-widget-container {
+    left: 0px;
+    width: 80px;
+    padding-left: 20px;
+
+
+}
+
+.rcw-conversation-container .rcw-header {
+    background-color: #35cce6;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: sticky;
+   padding: 15px 0 25px;
+    
+}
+
+@media screen and (max-width: 800px){
+.rcw-launcher {
+    bottom: 0;
+    margin: 20px;
+    position: fixed;
+    left: 0;
+}
+}
+
