@@ -1,7 +1,7 @@
 import React from "react"
 import tw from "twin.macro"
+import { Description } from "./CommonStyle"
 const Card = props => {
-  const Description = tw.p`text-lg font-normal`
   return (
     <div>
       <div>
