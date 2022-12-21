@@ -1,7 +1,12 @@
 import React from "react"
+import ContactInfo from "./ContactInfo"
 
 const Contact = () => {
-  return <div>Contact</div>
+  return (
+    <>
+      <ContactInfo />
+    </>
+  )
 }
 
 export default Contact

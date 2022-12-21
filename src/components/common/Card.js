@@ -9,7 +9,7 @@ const Card = props => {
           className={`${
             props.CTA
               ? "flex border border-sky-300  max-w-[530px]gap-5 min-h-[300px] justify-items-start rounded-lg"
-              : "grid  shadow-md shadow-blue-400 max-w-[530px]  min-h-[300px] justify-items-center"
+              : "grid border border-sky-300 rounded-lg max-w-[530px]  min-h-[300px] justify-items-center"
           }
           ${
             props.CTA
