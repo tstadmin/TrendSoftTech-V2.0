@@ -13,7 +13,7 @@ const Portfolios = props => {
             {i.listItem.title}
           </h1>
           <img
-            className="hide 540Screen:w-[30%] w-[40%] 540Screen:h-[40%] object-top object-cover rounded-3xl border-8 border-black absolute z-10 top-auto"
+            className="hide 540Screen:w-[30%] w-[40%] 540Screen:h-[40%] object-top object-cover rounded-3xl border-8 border-red-400 absolute z-10 top-auto"
             src={i.listItem.img}
             alt="img"
           />

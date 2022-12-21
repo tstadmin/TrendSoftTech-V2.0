@@ -1,5 +1,35 @@
 ---
 home:
+  navbar:
+    logo: "/img/HomeImages/logo.svg"
+    button: contact
+    openMenu: "Menu"
+    closeMenu: "Close"
+    list:
+      - listItem:
+          id: 1
+          title: "Home"
+          link: "/"
+      - listItem:
+          id: 2
+          title: "Services"
+          link: "/services/"
+      - listItem:
+          id: 3
+          title: "About"
+          link: "/about/"
+      - listItem:
+          id: 4
+          title: "Portfolio"
+          link: "/portfolio/"
+      - listItem:
+          id: 5
+          title: "Careers"
+          link: "/careers/"
+      - listItem:
+          id: 6
+          title: "Contact"
+          link: "/contact/"
   banner:
     headers: "We Increase your <br/>Business Success"
     title: "Use the modern technology and IT Services"
