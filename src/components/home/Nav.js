@@ -13,8 +13,6 @@ const Header = props => {
     setNav(!nav)
   }
 
-  console.log(props.data.list)
-
   return (
     <Div>
       <NavBar>
