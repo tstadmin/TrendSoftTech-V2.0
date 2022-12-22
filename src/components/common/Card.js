@@ -30,7 +30,11 @@ const Card = props => {
             </p>
 
             <Description>{props.description}</Description>
-            {props.CTA ? <Description>{props.CTA}</Description> : ""}
+            {props.CTA ? (
+              <Description className="">{props.CTA}</Description>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>
