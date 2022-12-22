@@ -30,7 +30,7 @@ const Header = props => {
           className={
             nav
               ? "fixed z-20 right-0 top-0 bg-blue-400 h-screen w-[100%] pt-24"
-              : "fixed -right-[-160%] "
+              : "fixed -left-[160%] "
           }
         >
           {props.data.list.map((i, idx) => (
