@@ -16,33 +16,29 @@ const ContactForm = () => {
     console.log(data)
   }
   return (
-    <div className="flex gap-6 mb-6 md:grid-cols-2 md:p-14 p-4  w-full ">
-      <form
-        className="md:text-3xl md:space-y-16 space-y-8  m-4"
-        onSubmit={submitHandler}
-      >
-        <div className="flex space-x-16">
+    <div>
+      <form className="md:text-3xl text-lg " onSubmit={submitHandler}>
+        <div className="sm:grid sm:grid-cols-2 grid-cols-0   gap-8 px-8">
           <input
-            className="appearance-none bg-transparent outline-none border-b min-w-full"
-            type="text"
+            className="appearance-none bg-transparent outline-none border-b  "
+            type="name"
             name="Name"
-            placeholder="Full Name *"
-            value={username}
+            placeholder="Name"
+            value={phonenumber}
             onChange={changeHandler}
           />
 
           <input
-            className="appearance-none bg-transparent outline-none border-b min-w-full"
+            className="appearance-none bg-transparent outline-none border-b "
             type="email"
             name="E-mail"
-            placeholder="Phone Number *"
+            placeholder="email"
             value={phonenumber}
             onChange={changeHandler}
           />
-        </div>
-        <div className="flex space-x-16">
+
           <input
-            className="appearance-none bg-transparent outline-none border-b min-w-full"
+            className="appearance-none bg-transparent outline-none border-b "
             type="number"
             name="Phone Number"
             placeholder="Phone Number"
@@ -51,23 +47,23 @@ const ContactForm = () => {
           />
 
           <input
-            className="appearance-none bg-transparent outline-none border-b min-w-full"
+            className="appearance-none bg-transparent outline-none border-b "
             type="text"
             name="findus"
             placeholder="Your website"
             value={findus}
             onChange={changeHandler}
           />
-        </div>
 
-        <textarea
-          className="appearance-none bg-transparent outline-none border-b min-w-full min-h-[20px]"
-          type="text"
-          name="Message"
-          placeholder="Your Message Here"
-          value={project}
-          onChange={changeHandler}
-        />
+          <textarea
+            className="appearance-none bg-transparent outline-none border-b min-w-full col-span-2 "
+            type="text"
+            name="Message"
+            placeholder="Your Message Here"
+            value={project}
+            onChange={changeHandler}
+          />
+        </div>
       </form>
     </div>
   )

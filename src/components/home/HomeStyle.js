@@ -2,10 +2,10 @@ import tw, { styled } from "twin.macro"
 
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h1`
-  ${tw`text-lg text-blue-500 font-semibold`}
+  ${tw`sm:text-lg text-sm text-blue-500 font-semibold`}
 `
 export const SubTitle = styled.h2`
-  ${tw`text-[36px] font-bold`}
+  ${tw`sm:text-[36px] text-xl font-bold`}
 `
 export const Description = styled.h6`
   ${tw`text-lg font-normal`}
