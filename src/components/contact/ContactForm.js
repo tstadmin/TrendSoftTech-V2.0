@@ -2,12 +2,12 @@ import React, { useState } from "react"
 const ContactForm = () => {
   const [data, setData] = useState({
     username: "",
-    phonenumber: "",
+    phoneNumber: "",
     email: "",
-    findus: "",
-    project: "",
+    yourWebsite: "",
+    Message: "",
   })
-  const { username, phonenumber, email, findus, project } = data
+  const { username, phoneNumber, email, yourWebsite, Message } = data
   const changeHandler = e => {
     setData({ ...data, [e.target.name]: e.target.value })
   }
@@ -21,10 +21,10 @@ const ContactForm = () => {
         <div className="sm:grid sm:grid-cols-2 grid-cols-0   gap-8 px-8">
           <input
             className="appearance-none bg-transparent outline-none border-b  "
-            type="name"
-            name="Name"
+            type="text"
+            name="username"
             placeholder="Name"
-            value={phonenumber}
+            value={username}
             onChange={changeHandler}
           />
 
@@ -33,7 +33,7 @@ const ContactForm = () => {
             type="email"
             name="E-mail"
             placeholder="email"
-            value={phonenumber}
+            value={email}
             onChange={changeHandler}
           />
 
@@ -42,16 +42,16 @@ const ContactForm = () => {
             type="number"
             name="Phone Number"
             placeholder="Phone Number"
-            value={email}
+            value={phoneNumber}
             onChange={changeHandler}
           />
 
           <input
             className="appearance-none bg-transparent outline-none border-b "
             type="text"
-            name="findus"
+            name="yourWebsite"
             placeholder="Your website"
-            value={findus}
+            value={yourWebsite}
             onChange={changeHandler}
           />
 
@@ -60,7 +60,7 @@ const ContactForm = () => {
             type="text"
             name="Message"
             placeholder="Your Message Here"
-            value={project}
+            value={Message}
             onChange={changeHandler}
           />
         </div>
