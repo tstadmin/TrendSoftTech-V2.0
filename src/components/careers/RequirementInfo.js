@@ -17,15 +17,26 @@ const RequirementInfo = () => {
       <div className="grid border-2 border-black justify-items-center space-y-8 p-7">
         <h1 className="text-4xl font-semibold ">Apply for this position</h1>
         <form className="grid space-y-2">
-          <label className="text-lg">Full Name *</label>
+          <label className="text-lg" htmlFor="name">
+            Full Name *
+          </label>
           <input className="border border-blue-400 w-[76vw] p-5" />
-          <label className="text-lg">Email *</label>
+          <label className="text-lg" htmlFor="email">
+            Email *
+          </label>
           <input className="border border-blue-400 w-[76vw] p-5" />
-          <label className="text-lg"> Phone *</label>
+          <label className="text-lg" htmlFor="Phone">
+            {" "}
+            Phone *
+          </label>
           <input className="border border-blue-400 w-[76vw] p-5" />
-          <label className="text-lg">Cover Letter *</label>
+          <label className="text-lg" htmlFor="Cover">
+            Cover Letter *
+          </label>
           <input className="border border-blue-400 w-[76vw] p-5" />
-          <label className="text-lg">Upload CV/Resume *</label>
+          <label className="text-lg" htmlFor="upload">
+            Upload CV/Resume *
+          </label>
           <input type="file" id="myfile" name="myfile" />
           <label for="vehicle1"> Allowed Type(s): .pdf, .doc, .docx</label>
         </form>

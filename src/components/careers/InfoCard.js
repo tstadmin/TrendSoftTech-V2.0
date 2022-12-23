@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import { list } from "postcss"
+
 import React from "react"
 
 import { BsArrowRight } from "react-icons/bs"

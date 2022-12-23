@@ -12,7 +12,7 @@ const Careers = () => {
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.careers
   useEffect(() => {
     setCareers(data)
-  })
+  }, [data])
 
   return (
     <Layout>

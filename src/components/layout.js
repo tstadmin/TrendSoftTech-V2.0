@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./home/Nav"
 
@@ -18,25 +18,14 @@ const Layout = ({ children }) => {
 
   const data = query.allMarkdownRemark.edges[1].node.frontmatter.home.navbar
 
-  const [nav, setNav] = useState([])
+  // const [nav, setNav] = useState([])
 
-  useEffect(() => {
-    setNav(data)
-  }, [query])
+  // useEffect(() => {
+  //   setNav(data)
+  // }, [query])
 
   return (
-    <div
-    //   className="
-    // bg-red-500
-    // sm:bg-blue-500
-    // md:bg-green-500
-    // lg:bg-yellow-500
-    // xl:bg-violet-500
-    // 2xl:bg-pink-200
-    // 340Screen:bg-orange-400
-    // 440Screen:bg-fuchsia-600
-    // 540Screen:bg-blue-900"
-    >
+    <div>
       <MouseFollower />
 
       <OnclickTop />
