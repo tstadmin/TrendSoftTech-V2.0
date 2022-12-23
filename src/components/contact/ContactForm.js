@@ -18,7 +18,7 @@ const ContactForm = () => {
   return (
     <div>
       <form className="md:text-3xl text-lg " onSubmit={submitHandler}>
-        <div className="sm:grid sm:grid-cols-2 grid-cols-0   gap-8 px-8">
+        <div className="sm:grid sm:grid-cols-2 grid-cols-0  gap-16 px-8">
           <input
             className="appearance-none bg-transparent outline-none border-b  "
             type="text"

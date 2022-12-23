@@ -1,6 +1,8 @@
 import React from "react"
 import "../Portfolio/portfolio.css"
 
+// import bgImage from "static/img/portfolio/bg.svg"
+
 const Portfolios = props => {
   return (
     <div>

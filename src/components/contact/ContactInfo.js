@@ -19,7 +19,7 @@ const ContactInfo = () => {
       </div>
       <div className="flex space-x-4">
         <IoLocationSharp className="text-4xl" />
-        <div className="space-y-1 sm:w-[550px] w-[200px]">
+        <div className="space-y-1 sm:w-[550px] w-[300px]">
           <h1 className="font-semibold">Address: </h1>
           <h1>
             Flat No.301 3rd Floor MIG-37 Vasavi Srinivasam Apartment KPHB Colony

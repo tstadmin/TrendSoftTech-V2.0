@@ -3,7 +3,7 @@ import tw, { styled } from "twin.macro"
 //-----BreadCrumb component  in Commer Folders-----
 
 export const Image = styled.img`
-  ${tw`relative w-[100vw] h-[60vh]`}
+  ${tw`relative w-[100vw] md:h-[60vh] h-[20vh] `}
 `
 
 export const BreadCrumbSubHeader = styled.h2`
