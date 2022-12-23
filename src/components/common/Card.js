@@ -1,5 +1,4 @@
 import React from "react"
-import tw from "twin.macro"
 import { Description } from "./CommonStyle"
 const Card = props => {
   return (
@@ -18,7 +17,11 @@ const Card = props => {
           }
           2xl:p-5 xl:p-5 lg:p-7 md:p-6 sm:p-3 540Screen:p-7 440Screen:p-8 340Screen:p-5 p-5 bg-white`}
         >
-          <img src={props.img} className="w-[85px] h-[85px]" />
+          <img
+            src={props.img}
+            alt="card-images"
+            className="w-[85px] h-[85px]"
+          />
 
           <div
             className={`  ${

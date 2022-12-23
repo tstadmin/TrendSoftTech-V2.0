@@ -4,7 +4,7 @@ import tw from "twin.macro"
 import styled from "@emotion/styled/macro"
 styled.ul``
 const Header = props => {
-  const Div = tw.div`flex items-center justify-between py-4  lg:px-48 px-24  font-mono sticky top-0 bg-white z-[500]`
+  const Div = tw.div`flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[500]`
   const NavBar = tw.div`flex items-center space-x-14 sticky top-0 z-10`
 
   const [nav, setNav] = useState(false)
@@ -27,13 +27,13 @@ const Header = props => {
         <div
           className={
             nav
-              ? "fixed z-20 right-0 top-0 bg-blue-400 h-screen w-[100%] pt-24"
+              ? "fixed z-20 right-0 top-0 bg-blue-400 h-screen w-[100%] pt-24 "
               : "fixed -left-[160%] "
           }
         >
           {props.data.list.map((i, idx) => (
-            <Link to={i.listItem.link}>
-              <h1 className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6">
+            <Link key={i.listItem.id} to={i.listItem.link}>
+              <h1 className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6 ">
                 {i.listItem.title}
               </h1>
             </Link>
@@ -46,20 +46,21 @@ const Header = props => {
             {props.data.button}
           </button>
         </Link>
-        <div
+        <button
           onClick={handleNav}
+          onKeyDown={handleNav}
           className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400 font-mono"
         >
           {nav ? (
-            <h1 className="text-white z-30 mt-3 absolute cursor-pointer">
+            <h1 className="text-white z-30 absolute cursor-pointer">
               {props.data.closeMenu}
             </h1>
           ) : (
-            <h1 className="text-black mt-2 cursor-pointer">
+            <h1 className="text-black  cursor-pointer">
               {props.data.openMenu}
             </h1>
           )}
-        </div>
+        </button>
       </div>
     </Div>
   )
