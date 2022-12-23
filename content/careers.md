@@ -1,17 +1,16 @@
 ---
 careers:
+  heading: "Careers"
   location: "hyderabad"
   CTA: "More Details"
   list:
     - listItem:
         title: "ReactJs Developer"
-        Role: "ReactJs Developer"   
-  list:
+        Role: "ReactJs Developer"
     - listItem:
         title: "Laravel Developer"
         Role: "Laravel Developer"
-  list:
     - listItem:
-        title: "Laravel Developer"
-        Role: "Laravel Developer"
+        title: "Web Designer"
+        Role: "Web Designer"
 ---
