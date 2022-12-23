@@ -9,17 +9,15 @@ import AboutOurCompany from "../components/home/AboutOurCompany"
 
 import Banner from "../components/home/Banner"
 
-import Nav from "../components/home/Nav"
-
 import ContactSupport from "../components/home/contactUs24x7/ContactSupport"
-import Footer from "../components/home/Footer"
+
 import Seo from "../components/seo"
-import OnclickTop from "../components/common/OnClickScrollToTop"
+
 import Layout from "../components/layout"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
-  const data = query.allMarkdownRemark.edges[0].node.frontmatter.home
+  const data = query.allMarkdownRemark.edges[1].node.frontmatter.home
   const [banner, setBanner] = useState([])
   const [bannerItem, setBannerItem] = useState([])
   const [aboutOurCompany, setAboutOurCompany] = useState([])
@@ -27,7 +25,7 @@ const Index = () => {
   const [servicesProvide, setServicesProvide] = useState([])
   const [accessibilityServices, setAccessibilityServices] = useState([])
   const [workingProcess, setWorkingProcess] = useState([])
-  const [footer, setFooter] = useState([])
+
   useEffect(() => {
     setBannerItem(data.bannerItems)
     setServicesProvide(data.servicesWeProvide.list)

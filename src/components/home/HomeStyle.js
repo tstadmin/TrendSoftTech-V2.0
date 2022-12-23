@@ -102,7 +102,7 @@ export const Accessibility_Info = styled.div`
 `
 
 export const Accessibility_Image = styled.img`
-  ${tw`2xl:w-[85px] lg:w-[85px] md:w-[80px]  w-[50px] 2xl:h-[85px] lg:h-[85px] md:h-[85px] h-[55px]`}
+  ${tw`2xl:w-[85px] lg:w-[85px] md:w-[80px] w-[50px] 2xl:h-[85px] lg:h-[85px] md:h-[85px] h-[55px]`}
 `
 
 ///  ----- Counter component in HomePage Home folder--------------------------------

@@ -10,7 +10,10 @@ const Portfolios = props => {
         Our Projects
       </h1>
       {props.portfolio.map((i, idx) => (
-        <div className="text-4xl md:text-7xl ml-16 group 540Screen:flex grid justify-start 540Screen:space-x-[50%] space-y-20">
+        <div
+          key={i.listItem.id}
+          className="text-4xl md:text-7xl ml-16 group 540Screen:flex grid justify-start 540Screen:space-x-[50%] space-y-20"
+        >
           <h1 className="myDIV duration-1000 hover:skew-y-3 hover:cursor-pointer hover:text-white hover:bg-black font-mono mb-6 hover:scale-75 ">
             {i.listItem.title}
           </h1>

@@ -12,18 +12,17 @@ import Nav from "./home/Nav"
 import Footer from "./home/Footer.js"
 import OnclickTop from "./common/OnClickScrollToTop"
 import MouseFollower from "./common/MouseFollower"
-// import SpeedDial from "./common/SpeedDial"
 
 const Layout = ({ children }) => {
   const query = useStaticQuery(layoutQuery)
 
-  const data = query.allMarkdownRemark.edges[0].node.frontmatter.home.navbar
+  const data = query.allMarkdownRemark.edges[1].node.frontmatter.home.navbar
 
   const [nav, setNav] = useState([])
 
   useEffect(() => {
     setNav(data)
-  }, [])
+  }, [query])
 
   return (
     <div
@@ -38,7 +37,6 @@ const Layout = ({ children }) => {
     // 440Screen:bg-fuchsia-600
     // 540Screen:bg-blue-900"
     >
-      {/* <SpeedDial /> */}
       <MouseFollower />
 
       <OnclickTop />
@@ -52,7 +50,7 @@ const Layout = ({ children }) => {
 export default Layout
 
 const layoutQuery = graphql`
-  query MyQuery {
+  query {
     allMarkdownRemark {
       edges {
         node {
@@ -61,13 +59,13 @@ const layoutQuery = graphql`
               navbar {
                 logo
                 button
-                closeMenu
                 openMenu
+                closeMenu
                 list {
                   listItem {
                     id
-                    title
                     link
+                    title
                   }
                 }
               }
