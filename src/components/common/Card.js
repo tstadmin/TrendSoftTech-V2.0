@@ -8,7 +8,7 @@ const Card = props => {
         <div
           className={`${
             props.CTA
-              ? "flex border border-sky-300  max-w-[530px]gap-5 min-h-[300px] justify-items-start rounded-lg"
+              ? "lg:flex grid border border-sky-300  max-w-[530px] gap-5 min-h-[300px] lg:justify-items-start justify-items-center rounded-lg"
               : "grid border border-sky-300 rounded-lg max-w-[530px]  min-h-[300px] justify-items-center"
           }
           ${
@@ -21,9 +21,9 @@ const Card = props => {
           <img src={props.img} className="w-[85px] h-[85px]" />
 
           <div
-            className={`  ${props.CTA ? "text-start " : "text-center"}  ${
-              props.access ? "text-start " : "text-center"
-            }  grid`}
+            className={`  ${
+              props.CTA ? "lg:text-start text-center " : "text-center"
+            }  ${props.access ? "text-start " : "text-center"}  grid`}
           >
             <p className="2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
               {props.title}

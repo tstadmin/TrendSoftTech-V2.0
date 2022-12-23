@@ -1,5 +1,6 @@
 import React from "react"
 import tw from "twin.macro"
+
 const Banner = props => {
   const Images = tw.img`object-cover 2xl:h-[100vh]  w-[100vw] h-[80vh] brightness-50`
   const Div = tw.div`flex relative shadow-2xl shadow-black/40`
@@ -31,5 +32,3 @@ const Banner = props => {
 }
 
 export default Banner
-
-// space-y-14 bg-black text-white py-24 lg:w-[60vw]  lg:h-[100vh] md:h-[80vh] h-[80vh] sm:pl-20 lg:pl-48 240Screen:pl-8 lg:pt-48
