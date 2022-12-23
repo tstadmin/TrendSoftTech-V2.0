@@ -77,6 +77,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `careers`,
+        path: `${__dirname}/content/`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
