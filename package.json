@@ -12,7 +12,6 @@
     "gatsby-plugin-emotion": "^8.3.0",
     "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-manifest": "^5.3.1",
-    "gatsby-plugin-purgecss": "^6.1.2",
     "gatsby-plugin-react-helmet": "^6.3.0",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^5.2.0",
