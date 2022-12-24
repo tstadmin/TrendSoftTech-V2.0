@@ -1,14 +1,14 @@
 import React from "react"
 
-import { MdOutlineEmail } from "react-icons/md"
-
-import { IoLocationSharp } from "react-icons/io5"
-
 const ContactInfo = () => {
   return (
     <div className="space-y-6 text-sm sm:text-lg  ">
-      <div className="flex  space-x-4  ">
-        <MdOutlineEmail className="text-4xl" />
+      <div className="flex  space-x-4 ">
+        <img
+          src="/img/icons/mail.svg"
+          className="text-4xl w-20 h-20"
+          alt="mail images"
+        />
         <div className="space-y-1 ">
           <h1 className="font-semibold">Email: </h1>
           <h1>info@trendsofttech.com</h1>
@@ -18,7 +18,11 @@ const ContactInfo = () => {
         </div>
       </div>
       <div className="flex space-x-4">
-        <IoLocationSharp className="text-4xl" />
+        <img
+          src="/img/icons/locationpin.svg"
+          className="text-4xl w-20 h-20"
+          alt="mail images"
+        />
         <div className="space-y-1 sm:w-[550px] w-[300px]">
           <h1 className="font-semibold">Address: </h1>
           <h1>

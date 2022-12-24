@@ -1,41 +1,41 @@
 import React from "react"
 import {
-  Accessibility_Services,
+  Accessibility,
   Title,
   SubTitle,
-  Accessibility_Card,
-  Accessibility_CardInfo,
-  Accessibility_CardTitle,
-  Accessibility_Info,
+  AccessibilityCard,
+  AccessibilityCardInfo,
+  AccessibilityCardTitle,
+  AccessibilityInfo,
   Description,
-  Accessibility_Image,
+  AccessibilityImage,
 } from "./HomeStyle"
 
 const AccessibilityServices = props => {
   return (
     <div data-sal="fade" data-sal-delay="100" data-sal-easing="ease-in-out">
-      <Accessibility_Services>
+      <Accessibility>
         <Title>OUR</Title>
         <SubTitle>Accessibility Services</SubTitle>
-      </Accessibility_Services>
+      </Accessibility>
 
-      <Accessibility_Card>
+      <AccessibilityCard>
         {props.accessibilityServices.map((item, id) => (
-          <Accessibility_CardInfo key={item.listItem.id}>
-            <Accessibility_Image
+          <AccessibilityCardInfo key={item.listItem.id}>
+            <AccessibilityImage
               src={item.listItem.img}
               alt="Accessibility Images"
             />
-            <Accessibility_Info>
-              <Accessibility_CardTitle>
+            <AccessibilityInfo>
+              <AccessibilityCardTitle>
                 {item.listItem.title}
-              </Accessibility_CardTitle>
+              </AccessibilityCardTitle>
 
               <Description>{item.listItem.description}</Description>
-            </Accessibility_Info>
-          </Accessibility_CardInfo>
+            </AccessibilityInfo>
+          </AccessibilityCardInfo>
         ))}
-      </Accessibility_Card>
+      </AccessibilityCard>
     </div>
   )
 }

@@ -85,24 +85,24 @@ export const ServicesProvideCard = styled.div`
 
 ///  ----- Accessibility Services component in HomePage Home folder--------------------------------
 
-export const Accessibility_Services = styled.div`
+export const Accessibility = styled.div`
   ${tw`text-center mb-16 mt-24`}
 `
-export const Accessibility_Card = styled.div`
+export const AccessibilityCard = styled.div`
   ${tw`lg:flex lg:justify-items-center  grid gap-7   2xl:px-48 xl:px-32 lg:px-14 px-8`}
 `
-export const Accessibility_CardInfo = styled.div`
+export const AccessibilityCardInfo = styled.div`
   ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
 `
-export const Accessibility_CardTitle = styled.p`
+export const AccessibilityCardTitle = styled.p`
   ${tw`xl:text-3xl md:text-3xl  text-xl font-semibold`}
 `
-export const Accessibility_Info = styled.div`
+export const AccessibilityInfo = styled.div`
   ${tw`xl:text-3xl md:text-3xl  text-xl font-semibold`}
 `
 
-export const Accessibility_Image = styled.img`
-  ${tw`2xl:w-[85px] lg:w-[85px] md:w-[80px]  w-[50px] 2xl:h-[85px] lg:h-[85px] md:h-[85px] h-[55px]`}
+export const AccessibilityImage = styled.img`
+  ${tw`2xl:w-[85px] lg:w-[85px] md:w-[80px] w-[50px] 2xl:h-[85px] lg:h-[85px] md:h-[85px] h-[55px]`}
 `
 
 ///  ----- Counter component in HomePage Home folder--------------------------------
@@ -110,10 +110,10 @@ export const Accessibility_Image = styled.img`
 export const Counte = styled.div`
   ${tw`md:flex md:justify-center grid justify-items-center gap-24 md:gap-56  p-6 bg-white `}
 `
-export const Counter_Number = styled.h1`
+export const CounterNumber = styled.h1`
   ${tw`text-[50px] font-bold text-blue-500`}
 `
-export const Counter_Description = styled.h6`
+export const CounterDescription = styled.h6`
   ${tw`md:text-[20px] font-[400] font-semibold font-mono `}
 `
 ///  ----- ContactUs 24/7 Banner component in HomePage Home  folder--------------------------------
@@ -121,35 +121,35 @@ export const Contact = styled.div`
   ${tw`lg:flex md:grid justify-center w-full  bg-blue-100 gap-24 p-10 items-center`}
 `
 
-export const Contact_Info = styled.div`
+export const ContactInfo = styled.div`
   ${tw`space-y-8 text-center`}
 `
-export const Contact_Description = styled.h6`
+export const ContactDescription = styled.h6`
   ${tw`text-[20px] font-[400] font-mono`}
 `
-export const Contact_Header = styled.h1`
+export const ContactHeader = styled.h1`
   ${tw`text-[36px] font-bold text-black`}
 `
 
 ///  ----- Working Process component in HomePage Home folder--------------------------------
 
-export const Working_Process = styled.div`
+export const Working = styled.div`
   ${tw`lg:flex justify-center gap-4 px-8 `}
 `
-export const Working_Description = styled.p`
+export const WorkingDescription = styled.p`
   ${tw`text-2xl font-semibold lg:text-4xl `}
 `
-export const Working_CardNumber = styled.p`
+export const WorkingCardNumber = styled.p`
   ${tw`text-5xl text-blue-600 font-semibold `}
 `
-export const Working_CardTitle = styled.p`
+export const WorkingCardTitle = styled.p`
   ${tw`lg:text-3xl  md:text-xl  font-semibold `}
 `
-export const Working_Card = styled.div`
+export const WorkingCard = styled.div`
   ${tw`border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]`}
 `
 
-export const Working_Cards = styled.div`
+export const WorkingCards = styled.div`
   ${tw`mt-16 md:grid md:grid-cols-2 gap-4 w-full lg:w-[60%] md:w-full`}
 `
 
@@ -161,31 +161,36 @@ export const Foote = styled.div`
 export const FooterInfo = styled.div`
   ${tw`md:flex sm:grid  px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
 `
-export const Footer_Title = styled.p`
+export const FooterTitle = styled.p`
   ${tw`text-[34px]   font-semibold text-blue-600`}
 `
-export const Footer_TrendInfo = styled.div`
+export const FooterTrendInfo = styled.div`
   ${tw` basis-1/3`}
 `
 
-export const Footer_Info = styled.div`
+export const FooterInfoDiv = styled.div`
   ${tw`space-y-3 basis-1/4`}
 `
+<<<<<<< HEAD
 export const Footer_IconLogo = styled.div`
   ${tw`flex mt-4 gap-5 `}
+=======
+export const FooterIconLogo = styled.div`
+  ${tw`flex mt-4 gap-5`}border-black border
+>>>>>>> 8bea69e740ade508fe5e9a4c92e738ff93a269fd
 `
-export const Footer_Hr = styled.div`
+export const FooterHr = styled.div`
   ${tw`border-black border`}
 `
-export const Footer_IconStyles = styled.div`
+export const FooterIconStyles = styled.div`
   ${tw`text-blue-500 text-center hover:text-white  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl`}
 `
-export const Footer_IconInfo = styled.div`
+export const FooterIconInfo = styled.div`
   ${tw`flex gap-2 text-start`}
 `
 export const IconSize = styled.div`
   ${tw`text-2xl`}
 `
-export const Footer_Ui = styled.p`
+export const FooterUi = styled.p`
   ${tw` space-y-3 text-lg font-[400]`}
 `
