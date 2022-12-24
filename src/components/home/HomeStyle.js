@@ -171,13 +171,8 @@ export const FooterTrendInfo = styled.div`
 export const FooterInfoDiv = styled.div`
   ${tw`space-y-3 basis-1/4`}
 `
-<<<<<<< HEAD
 export const Footer_IconLogo = styled.div`
   ${tw`flex mt-4 gap-5 `}
-=======
-export const FooterIconLogo = styled.div`
-  ${tw`flex mt-4 gap-5`}border-black border
->>>>>>> 8bea69e740ade508fe5e9a4c92e738ff93a269fd
 `
 export const FooterHr = styled.div`
   ${tw`border-black border`}
