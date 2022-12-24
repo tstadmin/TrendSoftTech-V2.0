@@ -9,7 +9,7 @@ const Portfolio = () => {
   const query = useStaticQuery(portfolioQuery)
 
   const data =
-    query.allMarkdownRemark.edges[1].node.frontmatter.portfolio.projects.list
+    query.allMarkdownRemark.edges[2].node.frontmatter.portfolio.projects.list
 
   const [portfolio, setPortfoilo] = useState([])
 

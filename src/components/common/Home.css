@@ -1,16 +1,18 @@
 
-.main{
+ul{
     position: relative;
     
 }
- .main  .subnav {
+ul .main  .subnav  {
     display: none;
-  margin-left: 20%;
-  position: absolute;
-z-index: 999;
+    font-size: 30px;
+ 
 }
-
-.main li:hover  .subnav {
+.subnav li{
+    z-index: 999rem;
+    margin-left: 18px;
+}
+.main:hover  .subnav {
     display: block;
 }
 

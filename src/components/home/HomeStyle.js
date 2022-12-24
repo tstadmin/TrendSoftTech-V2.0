@@ -169,7 +169,7 @@ export const FooterTrendInfo = styled.div`
 export const FooterInfoDiv = styled.div`
   ${tw`space-y-3 basis-1/4`}
 `
-export const Footer_IconLogo = styled.div`
+export const FooterIconInfo = styled.div`
   ${tw`flex mt-4 gap-5 `}
 `
 export const FooterHr = styled.div`
@@ -178,7 +178,7 @@ export const FooterHr = styled.div`
 export const FooterIconStyles = styled.div`
   ${tw`text-blue-500 text-center hover:text-white  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl`}
 `
-export const FooterIconInfo = styled.div`
+export const FooterIconLogo = styled.div`
   ${tw`flex gap-2 text-start`}
 `
 export const IconSize = styled.div`

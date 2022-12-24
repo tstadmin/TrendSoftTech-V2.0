@@ -6,7 +6,7 @@ import Development from "../../components/Services/Development"
 const DigitalMarketing = () => {
   const query = useStaticQuery(DigitalData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.digitalMarketing
+    query.allMarkdownRemark.edges[1].node.frontmatter.services.digitalMarketing
 
   const [digital, setDigital] = useState([])
   useEffect(() => {

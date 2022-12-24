@@ -6,7 +6,7 @@ import Development from "../../components/Services/Development"
 const Testing = () => {
   const query = useStaticQuery(testData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.testing
+    query.allMarkdownRemark.edges[1].node.frontmatter.services.testing
 
   const [test, setTest] = useState([])
   useEffect(() => {

@@ -6,7 +6,7 @@ import Development from "../../components/Services/Development"
 const UiUXDesign = () => {
   const query = useStaticQuery(UiUXDesignData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.uiUXDesign
+    query.allMarkdownRemark.edges[1].node.frontmatter.services.uiUXDesign
 
   const [design, setDesign] = useState([])
   useEffect(() => {

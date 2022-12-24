@@ -6,7 +6,7 @@ import Development from "../../components/Services/Development"
 const MobileDevelopment = () => {
   const query = useStaticQuery(MobileData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.mobileDevelopment
+    query.allMarkdownRemark.edges[1].node.frontmatter.services.mobileDevelopment
 
   const [mobile, setMobile] = useState([])
   useEffect(() => {
