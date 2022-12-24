@@ -1,0 +1,32 @@
+
+.main{
+
+    position: relative;
+}
+ .main  .subnav {
+    display: none;
+  margin-left: 6%;
+
+  
+
+}
+.main:hover  .subnav {
+    display: block;
+}
+
+.subnav .next-nav{
+    display: none;
+    margin-left: 2%;
+}
+.subnav:hover .next-nav{
+    display: block;
+}
+
+
+.next-nav .sub-next{
+    display: none;
+    margin-left: 2%;
+}
+.next-nav:hover .sub-next{
+    display: block;
+}
