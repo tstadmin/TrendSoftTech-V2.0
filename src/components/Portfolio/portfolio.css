@@ -1,8 +1,8 @@
-.hide {
+.hideImg {
     display: none;
   }
   
-  .myDIV:hover + .hide {
+  .myDIV:hover + .hideImg {
     display: block;
     color: red;
   }

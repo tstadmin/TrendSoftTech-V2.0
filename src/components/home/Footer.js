@@ -18,7 +18,7 @@ import {
   FooterIconStyles,
   FooterUi,
   IconSize,
-} from "../home/HomeStyle"
+} from "./HomeStyle"
 
 const Footer = () => {
   return (
@@ -43,7 +43,6 @@ const Footer = () => {
         </FooterTrendInfo>
         <FooterInfoDiv>
           <FooterTitle>IT Services</FooterTitle>
-
           <ul>
             <FooterUi>
               <li>Web Development</li>

@@ -4,8 +4,12 @@ import tw from "twin.macro"
 import styled from "@emotion/styled/macro"
 import Navbardata from "../../Data/NavbarData"
 import "./Home.css"
-styled.ul``
-const Header = props => {
+
+import { Fragment } from "react"
+import { Menu, Transition } from "@headlessui/react"
+import { IoIosArrowForward } from "react-icons/io5"
+
+export default function Header(props) {
   const Div = tw.div`flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[500]`
   const NavBar = tw.div`flex items-center space-x-14 sticky top-0 z-10`
 
@@ -13,6 +17,9 @@ const Header = props => {
 
   const handleNav = () => {
     setNav(!nav)
+  }
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ")
   }
 
   return (
@@ -40,14 +47,14 @@ const Header = props => {
 
                 {item.subtitle.map((subitem, id) => (
                   <ul className="subnav">
-                    <li className="text-2xl  ">
+                    <li className="text-2xl ml-[15%] absolute z-50 flex-shrink-0 ">
                       {subitem.title}
                       {subitem.secondsubtitle.map((i, id) => (
                         <ul>
-                          <li className="text-2xl next-nav ">
+                          <li className="text-2xl next-nav ml-[15%]  ">
                             {i.title}
                             {i.threesubtitle.map((list, id) => (
-                              <ul className="sub-next">
+                              <ul className="sub-next ml-[15%] absolute z-50">
                                 <li className="text-2xl ml-[18%] ">
                                   {list.title}
                                 </li>
@@ -89,5 +96,3 @@ const Header = props => {
     </Div>
   )
 }
-
-export default Header

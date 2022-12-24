@@ -11,7 +11,7 @@ const about = () => {
   return (
     <div>
       <Layout>
-        {/* <div>
+        <div>
           <BreadCrumb
             img="/img/AboutImages/BreadCrumbAbout.svg"
             title="About"
@@ -19,8 +19,7 @@ const about = () => {
           <AboutUs />
           <OurVision />
           <ChooseUs />
-        </div> */}
-        <Tabs />
+        </div>
       </Layout>
     </div>
   )

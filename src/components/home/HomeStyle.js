@@ -2,7 +2,7 @@ import tw, { styled } from "twin.macro"
 
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h1`
-  ${tw`sm:text-lg text-sm text-blue-500 font-semibold`}
+  ${tw`sm:text-lg text-sm text-[#f37c05] font-semibold`}
 `
 export const SubTitle = styled.h2`
   ${tw`sm:text-[36px] text-xl font-bold`}
@@ -11,7 +11,7 @@ export const Description = styled.h6`
   ${tw`text-lg font-normal`}
 `
 export const Button = styled.button`
-  ${tw`bg-blue-600 hover:bg-white font-medium border-blue-400 hover:border hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}
+  ${tw`bg-blue-600 hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}
 `
 
 ///  ----- Banner component in HomePage Home folder--------------------------------
@@ -55,7 +55,7 @@ export const AboutOurH1 = styled.h1`
   ${tw`text-[16px] from-neutral-400`}
 `
 export const AboutOurH2 = styled.h2`
-  ${tw`2xl:text-xl lg:text-xl text-sm sm:text-lg font-bold  text-blue-500`}
+  ${tw`2xl:text-xl lg:text-xl text-sm sm:text-lg font-bold  text-[#f37c05]`}
 `
 
 export const AboutOurDescription = styled.p`
@@ -74,7 +74,7 @@ export const ServicesTitleDiv = styled.div`
   ${tw`text-center mb-16`}
 `
 export const ServicesTitle = styled.h1`
-  ${tw`md:text-lg text-sm font-semibold text-blue-500`}
+  ${tw`md:text-lg text-sm font-semibold text-[#f37c05]`}
 `
 export const ServicesSubTitle = styled.p`
   ${tw`md:text-[36px] text-xl font-bold `}
@@ -125,7 +125,7 @@ export const ContactInfo = styled.div`
   ${tw`space-y-8 text-center`}
 `
 export const ContactDescription = styled.h6`
-  ${tw`text-[20px] font-[400] font-mono`}
+  ${tw`text-[20px] font-[400]`}
 `
 export const ContactHeader = styled.h1`
   ${tw`text-[36px] font-bold text-black`}
@@ -151,9 +151,7 @@ export const WorkingCard = styled.div`
 
 export const WorkingCards = styled.div`
   ${tw`mt-16 md:grid md:grid-cols-2 gap-4 w-full lg:w-[60%] md:w-full`}
-`
-
-///  ----- Footers component in HomePage Home  folder--------------------------------
+` ///  ----- Footers component in HomePage Home  folder--------------------------------
 
 export const Foote = styled.div`
   ${tw`mt-36`}

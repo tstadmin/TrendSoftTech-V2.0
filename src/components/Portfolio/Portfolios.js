@@ -15,13 +15,14 @@ const Portfolios = props => {
           key={i.listItem.id}
           className="text-4xl md:text-7xl ml-16 group 540Screen:flex grid justify-start 540Screen:space-x-[50%] space-y-20"
         >
-          <Link to={i.listItem.link} target="_blank" rel="noopener noreferrer">
-            <h1 className="myDIV duration-1000 hover:skew-y-3 hover:cursor-pointer hover:text-white hover:bg-black font-mono mb-6 hover:scale-75 ">
+          <h1 className="myDIV duration-1000 hover:skew-y-3 hover:cursor-pointer hover:text-white hover:bg-black font-mono mb-6 hover:scale-75 ">
+            <Link to={i.listItem.link} target="_blank">
               {i.listItem.title}
-            </h1>
-          </Link>
+            </Link>
+          </h1>
+
           <img
-            className="hide 540Screen:w-[30%] w-[40%] 540Screen:h-[40%] object-top object-cover rounded-3xl border-8 border-red-400 absolute z-10 top-auto"
+            className="hideImg 540Screen:w-[30%] w-[40%] 540Screen:h-[40%] object-top object-cover rounded-3xl border-8 border-red-500 absolute z-10 top-auto"
             src={i.listItem.img}
             alt="img"
           />

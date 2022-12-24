@@ -7,11 +7,10 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Nav from "./common/Nav"
-
+import Header from "./common/Header"
 import OnclickTop from "./common/OnClickScrollToTop"
 import MouseFollower from "./common/MouseFollower"
-import Footer from "./common/Footer"
+import Footer from "./home/Footer"
 
 const Layout = ({ children }) => {
   const query = useStaticQuery(layoutQuery)
@@ -29,7 +28,7 @@ const Layout = ({ children }) => {
       <MouseFollower />
 
       <OnclickTop />
-      <Nav data={data} />
+      <Header data={data} />
       {children}
       {/* <Footer /> */}
     </div>
