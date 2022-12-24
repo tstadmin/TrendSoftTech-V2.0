@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import React, { useState } from "react"
 import tw from "twin.macro"
-import styled from "@emotion/styled/macro"
+
 import Navbardata from "../../Data/NavbarData"
 import "./Home.css"
-styled.ul``
+
 const Header = props => {
   const Div = tw.div`flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[500]`
   const NavBar = tw.div`flex items-center space-x-14 sticky top-0 z-10`
@@ -35,7 +35,7 @@ const Header = props => {
         >
           <ul>
             {Navbardata.map((item, id) => (
-              <li className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6 main ">
+              <li className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6 main">
                 <Link to={item.page}>{item.title}</Link>
 
                 {item.subtitle.map((subitem, id) => (
