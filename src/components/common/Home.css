@@ -5,12 +5,12 @@
 }
  .main  .subnav {
     display: none;
-  margin-left: 6%;
-
-  
-
+  margin-left: 20%;
+  position: absolute;
+z-index: 999;
 }
-.main:hover  .subnav {
+
+.main li:hover  .subnav {
     display: block;
 }
 
