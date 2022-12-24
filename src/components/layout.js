@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       <OnclickTop />
       <Nav data={data} />
       {children}
-      {/* <Footer />  */}
+      {/* <Footer /> */}
     </div>
   )
 }
