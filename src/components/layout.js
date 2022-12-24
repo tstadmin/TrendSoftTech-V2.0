@@ -7,11 +7,11 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Nav from "./home/Nav"
+import Nav from "./common/Nav"
 
-import Footer from "./home/Footer.js"
 import OnclickTop from "./common/OnClickScrollToTop"
 import MouseFollower from "./common/MouseFollower"
+import Footer from "./common/Footer"
 
 const Layout = ({ children }) => {
   const query = useStaticQuery(layoutQuery)
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
       <OnclickTop />
       <Nav data={data} />
       {children}
-      <Footer />
+      {/* <Footer />  */}
     </div>
   )
 }

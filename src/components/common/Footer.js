@@ -18,7 +18,7 @@ import {
   FooterIconStyles,
   FooterUi,
   IconSize,
-} from "./HomeStyle"
+} from "../home/HomeStyle"
 
 const Footer = () => {
   return (

@@ -154,56 +154,70 @@ portfolio:
           id: 1
           title: "EA Labs"
           img: "/img/portfolio/ea.jpg"
+          link: "https://ealabsipl.com/"
       - listItem:
           id: 2
           title: "Vijaya Pickels"
           img: "/img/portfolio/vijaya.jpg"
+          link: "https://vijayapickles.com/"
       - listItem:
           id: 3
-          title: "Auartree Tecgnologies"
+          title: "Quartree Technologies"
           img: "/img/portfolio/quad.jpg"
+          link: "https://www.quadtreetech.com/"
       - listItem:
           id: 4
           title: "ProTPD Digital"
           img: "/img/portfolio/pro.jpg"
+          link: "https://protpd.com/"
       - listItem:
           id: 5
           title: "Lantrans"
           img: "/img/portfolio/lantrans.jpg"
+          link: "https://lantrans.in/"
       - listItem:
           id: 6
           title: "KN Technologies"
           img: "/img/portfolio/knt.jpg"
+          link: "https://kntech.co.uk/"
       - listItem:
           id: 7
           title: "SS Companies"
           img: "/img/portfolio/sscom.jpg"
+          link: "https://sscompanies.in/"
       - listItem:
           id: 8
           title: "Annapurna de Royal"
           img: "/img/portfolio/annapurna.jpg"
+          link: "https://www.annapurnaderoyal.com/"
       - listItem:
           id: 9
           title: "Global Pharma Solutions"
           img: "/img/portfolio/globalpharma.jpg"
+          link: "https://gpconsultancy.in/"
       - listItem:
           id: 10
           title: "Chachapoya USA"
           img: "/img/portfolio/chachapoya.jpg"
+          link: "https://chachapoyahxm.com/"
       - listItem:
           id: 11
           title: "AL Kasur"
           img: "/img/portfolio/akkasur.jpg"
+          link: "https://alkasur.com/"
       - listItem:
           id: 12
           title: "A1 Event Planner"
           img: "/img/portfolio/eventplanner.jpg"
+          link: ""
       - listItem:
           id: 13
           title: "Kumar Pumps & Motors"
           img: "/img/portfolio/kumarpumps.jpg"
+          link: "https://kumarpumps.co.in/"
       - listItem:
           id: 14
           title: "Trendsoft Technologies"
           img: "/img/portfolio/trendsofttech.jpg"
+          link: "/"
 ---
