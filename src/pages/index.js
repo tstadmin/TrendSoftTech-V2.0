@@ -17,7 +17,7 @@ import Layout from "../components/layout"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
-  const data = query.allMarkdownRemark.edges[2].node.frontmatter.home
+  const data = query.allMarkdownRemark.edges[1].node.frontmatter.home
   const [banner, setBanner] = useState([])
   const [bannerItem, setBannerItem] = useState([])
   const [aboutOurCompany, setAboutOurCompany] = useState([])

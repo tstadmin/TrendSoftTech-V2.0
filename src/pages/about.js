@@ -6,12 +6,13 @@ import BreadCrumb from "../components/common/BreadCrumb"
 import Tabs from "../components/services/Tabs"
 
 import Layout from "../components/layout"
+import Services from "../components/services/Services"
 
 const about = () => {
   return (
     <div>
       <Layout>
-        <div>
+        {/* <div>
           <BreadCrumb
             img="/img/AboutImages/BreadCrumbAbout.svg"
             title="About"
@@ -19,7 +20,8 @@ const about = () => {
           <AboutUs />
           <OurVision />
           <ChooseUs />
-        </div>
+        </div> */}
+        <Services />
       </Layout>
     </div>
   )

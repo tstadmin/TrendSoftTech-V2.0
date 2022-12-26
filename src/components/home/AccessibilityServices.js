@@ -20,7 +20,7 @@ const AccessibilityServices = props => {
       </Accessibility>
 
       <AccessibilityCard>
-        {props.accessibilityServices.map((item, id) => (
+        {props.accessibilityServices?.map((item, id) => (
           <AccessibilityCardInfo key={item.listItem.id}>
             <AccessibilityImage
               src={item.listItem.img}
