@@ -6,7 +6,7 @@ import Development from "../../components/Services/Development"
 const ProductDevelopment = () => {
   const query = useStaticQuery(productData)
   const data =
-    query.allMarkdownRemark.edges[1].node.frontmatter.services
+    query.allMarkdownRemark.edges[2].node.frontmatter.services
       .productDevelopment
 
   const [product, setproduct] = useState([])

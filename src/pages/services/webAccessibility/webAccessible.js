@@ -1,40 +1,39 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
-import Layout from "../../components/layout"
-import Development from "../../components/Services/Development"
-
-const Testing = () => {
-  const query = useStaticQuery(testData)
+import Layout from "../../../components/layout"
+import Accessible from "../../../components/Services/Accessible"
+const WebAccessible = () => {
+  const query = useStaticQuery(WebAccessibleData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.testing
+    query.allMarkdownRemark.edges[1].node.frontmatter.webAccessibility
+      .webAccessibility
 
-  const [test, setTest] = useState([])
+  const [webAccessible, setWebAccessible] = useState([])
   useEffect(() => {
-    setTest(data)
+    setWebAccessible(data)
   }, [data])
   console.log(data)
   return (
     <div>
       <Layout>
-        <Development data={test} />
+        <Accessible data={webAccessible} />
       </Layout>
     </div>
   )
 }
 
-export default Testing
+export default WebAccessible
 
-const testData = graphql`
+const WebAccessibleData = graphql`
   query {
     allMarkdownRemark {
       edges {
         node {
           frontmatter {
-            services {
-              testing {
-                title
+            webAccessibility {
+              webAccessibility {
                 description
-                test {
+                list {
                   listItems {
                     id
                     title

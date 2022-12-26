@@ -17,7 +17,11 @@ import Layout from "../components/layout"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
+<<<<<<< HEAD
   const data = query.allMarkdownRemark.edges[1].node.frontmatter.home
+=======
+  const data = query.allMarkdownRemark.edges[0].node.frontmatter.home
+>>>>>>> 547c706343900dabe4af5182f89011f7c8c6b269
   const [banner, setBanner] = useState([])
   const [bannerItem, setBannerItem] = useState([])
   const [aboutOurCompany, setAboutOurCompany] = useState([])
