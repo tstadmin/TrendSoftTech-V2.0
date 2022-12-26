@@ -6,14 +6,13 @@ import Development from "../../components/Services/Development"
 const EcommerceDevelopment = () => {
   const query = useStaticQuery(ecommercData)
   const data =
-    query.allMarkdownRemark.edges[1].node.frontmatter.services
+    query.allMarkdownRemark.edges[2].node.frontmatter.services
       .ecommerceDevelopment
 
   const [ecommerc, setEcommerc] = useState([])
   useEffect(() => {
     setEcommerc(data)
   }, [data])
-  console.log(data)
 
   return (
     <div>

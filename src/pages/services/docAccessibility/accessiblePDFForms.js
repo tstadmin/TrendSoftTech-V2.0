@@ -1,38 +1,36 @@
+import React, { useState, useEffect } from "react"
+import Layout from "../../../components/layout"
+import Accessible from "../../../components/Services/Accessible"
 import { graphql, useStaticQuery } from "gatsby"
-import React, { useEffect, useState } from "react"
-import Layout from "../../components/layout"
-import Development from "../../components/Services/Development"
-
-const UiUXDesign = () => {
-  const query = useStaticQuery(UiUXDesignData)
+const AccessiblePDFForms = () => {
+  const query = useStaticQuery(accessibleFormQuery)
+  const [accessibleForm, setAccessibleForm] = useState([])
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.uiUXDesign
-
-  const [design, setDesign] = useState([])
+    query.allMarkdownRemark.edges[2].node.frontmatter.accessible
+      .accessiblePDFForms
   useEffect(() => {
-    setDesign(data)
+    setAccessibleForm(data)
   }, [data])
   console.log(data)
-
   return (
     <div>
       <Layout>
-        <Development data={design} />
+        <Accessible data={accessibleForm} />
       </Layout>
     </div>
   )
 }
 
-export default UiUXDesign
+export default AccessiblePDFForms
 
-const UiUXDesignData = graphql`
+const accessibleFormQuery = graphql`
   query {
     allMarkdownRemark {
       edges {
         node {
           frontmatter {
-            services {
-              uiUXDesign {
+            accessible {
+              accessiblePDFForms {
                 description
                 list {
                   listItems {
@@ -42,7 +40,6 @@ const UiUXDesignData = graphql`
                     list {
                       listItems {
                         id
-                        title
                         description
                       }
                     }

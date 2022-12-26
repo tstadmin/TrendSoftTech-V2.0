@@ -1,48 +1,45 @@
+import React, { useState, useEffect } from "react"
+import Accessible from "../../../components/Services/Accessible"
+import Layout from "../../../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
-import React, { useEffect, useState } from "react"
-import Layout from "../../components/layout"
-import Development from "../../components/Services/Development"
-
-const UiUXDesign = () => {
-  const query = useStaticQuery(UiUXDesignData)
+const AccessibleExcel = () => {
+  const query = useStaticQuery(AccessibleData)
+  const [accessibleExcel, setAccessibleExcel] = useState([])
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.uiUXDesign
-
-  const [design, setDesign] = useState([])
+    query.allMarkdownRemark.edges[2].node.frontmatter.accessible.accessibleExcel
   useEffect(() => {
-    setDesign(data)
+    setAccessibleExcel(data)
   }, [data])
-  console.log(data)
 
   return (
     <div>
       <Layout>
-        <Development data={design} />
+        <Accessible data={accessibleExcel} />
       </Layout>
     </div>
   )
 }
 
-export default UiUXDesign
+export default AccessibleExcel
 
-const UiUXDesignData = graphql`
+const AccessibleData = graphql`
   query {
     allMarkdownRemark {
       edges {
         node {
           frontmatter {
-            services {
-              uiUXDesign {
+            accessible {
+              accessibleExcel {
                 description
                 list {
                   listItems {
                     id
                     title
                     description
+                    data
                     list {
                       listItems {
                         id
-                        title
                         description
                       }
                     }

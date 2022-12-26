@@ -3,32 +3,35 @@ ul{
     position: relative;
     
 }
-ul .main  .subnav  {
-    display: none;
-    font-size: 30px;
+.main li  ul li {
+ background-color: red;
+ display: none;
+ position: absolute;
  
 }
-.subnav li{
-    z-index: 999rem;
-    margin-left: 18px;
+.subnav{
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
-.main:hover  .subnav {
+.main li:hover ul li  {
     display: block;
+    background-color: black;
 }
 
-.subnav .next-nav{
+/* .subnav .next-nav{
     display: none;
     margin-left: 2%;
-}
-.subnav:hover .next-nav{
+} */
+/* .subnav:hover .next-nav{
     display: block;
-}
+} */
 
 
-.next-nav .sub-next{
+/* .next-nav .sub-next{
     display: none;
     margin-left: 2%;
 }
 .next-nav:hover .sub-next{
     display: block;
-}
+} */

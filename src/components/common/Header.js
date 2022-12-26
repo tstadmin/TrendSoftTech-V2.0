@@ -36,17 +36,17 @@ export default function Header(props) {
               : "fixed -left-[160%] "
           }
         >
-          <ul>
+          <ul className="main">
             {Navbardata.map((item, id) => (
-              <li className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6 main ">
+              <li className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6  ">
                 <Link to={item.page}>{item.title}</Link>
 
-                {item.subtitle.map((subitem, id) => (
-                  <ul className="">
-                    <li className="subnav">
+                {/* {item.subtitle.map((subitem, id) => (
+                  <>
+                    <li>
                       {subitem.title}
                       {subitem.secondsubtitle.map((i, id) => (
-                        <ul className="next-nav ">
+                        <ul className="next-nav  ">
                           <li>
                             {i.title}
                             {i.threesubtitle.map((list, id) => (
@@ -58,8 +58,8 @@ export default function Header(props) {
                         </ul>
                       ))}
                     </li>
-                  </ul>
-                ))}
+                  </>
+                ))} */}
               </li>
             ))}
           </ul>

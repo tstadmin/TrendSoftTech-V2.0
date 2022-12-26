@@ -15,7 +15,7 @@ import Footer from "./home/Footer"
 const Layout = ({ children }) => {
   const query = useStaticQuery(layoutQuery)
 
-  const data = query.allMarkdownRemark.edges[2].node.frontmatter.home.navbar
+  const data = query.allMarkdownRemark.edges[0].node.frontmatter.home.navbar
 
   // const [nav, setNav] = useState([])
 

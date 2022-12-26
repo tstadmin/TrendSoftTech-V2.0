@@ -9,7 +9,7 @@ const Careers = () => {
   const query = useStaticQuery(Data)
   const [careers, setCareers] = useState([])
 
-  const data = query.allMarkdownRemark.edges[0].node.frontmatter.careers
+  const data = query.allMarkdownRemark.edges[2].node.frontmatter.careers
   useEffect(() => {
     setCareers(data)
   }, [data])

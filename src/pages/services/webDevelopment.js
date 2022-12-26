@@ -6,7 +6,7 @@ import Development from "../../components/Services/Development"
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
   const data =
-    query.allMarkdownRemark.edges[1].node.frontmatter.services.webDevelopment
+    query.allMarkdownRemark.edges[2].node.frontmatter.services.webDevelopment
 
   const [webDevelopment, setWebDevelopment] = useState([])
   useEffect(() => {
