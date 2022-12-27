@@ -1,7 +1,7 @@
 import React from "react"
 import BreadCrumb from "../components/common/BreadCrumb"
 import Layout from "../components/layout"
-import contactImg from "../../static/img/contact/contactBC.svg"
+import contactImg from "../../static/img/contact/contact_Frame.svg"
 import Contact from "../components/contact/Contact"
 
 const contact = () => {

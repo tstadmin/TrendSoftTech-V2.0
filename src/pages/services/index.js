@@ -7,7 +7,10 @@ import Tabs from "../../components/services/Tabs"
 const Services = () => {
   return (
     <Layout>
-      <BreadCrumb title="Services" img="/img/services/ServicesMainFrame.svg" />
+      <BreadCrumb
+        title="Services"
+        img="/img/services/Services_main_frame.svg"
+      />
       <Tabs />
       <ServiceCards />
     </Layout>

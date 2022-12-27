@@ -3,7 +3,7 @@ import tw, { styled } from "twin.macro"
 //-----BreadCrumb component  in Commer Folders-----
 
 export const Image = styled.img`
-  ${tw`relative w-[100vw] md:h-[60vh] h-[20vh] `}
+  ${tw`relative w-[100vw] md:h-[50vh] h-[20vh] `}
 `
 
 export const BreadCrumbSubHeader = styled.h2`
@@ -15,7 +15,7 @@ export const BreadCrumbHeader = styled.h1`
 `
 
 export const BreadCrumbInfo = styled.div`
-  ${tw`absolute xl:top-[35%] lg:top-[25%] md:top-[20%] sm:top-[20%] top-[14%] w-full  text-center md:space-y-3 space-y-2`}
+  ${tw`absolute xl:top-[25%] lg:top-[25%] md:top-[20%] sm:top-[20%] top-[14%] w-full  text-center md:space-y-3 space-y-2`}
 `
 //-----Card component  in Commer Folders-----
 

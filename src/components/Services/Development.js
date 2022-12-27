@@ -2,7 +2,7 @@ import React from "react"
 
 const Development = props => {
   return (
-    <div className="px-28">
+    <div>
       <p className="text-base">
         <div dangerouslySetInnerHTML={{ __html: props.data.description }} />
       </p>

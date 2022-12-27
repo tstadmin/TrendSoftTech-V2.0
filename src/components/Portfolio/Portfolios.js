@@ -10,24 +10,35 @@ const Portfolios = props => {
       <h1 className="text-center md:text-5xl text-2xl my-12 font-mono font-bold">
         Our Projects
       </h1>
-      {props.portfolio.map((i, idx) => (
-        <div
-          key={i.listItem.id}
-          className="text-4xl md:text-7xl ml-16 group 540Screen:flex grid justify-start 540Screen:space-x-[50%] space-y-20"
-        >
-          <h1 className="myDIV duration-1000 hover:skew-y-3 hover:cursor-pointer hover:text-white hover:bg-black font-mono mb-6 hover:scale-75 ">
-            <Link to={i.listItem.link} target="_blank">
+      <div className="grid 2xl:grid-cols-3 440Screen:grid-cols-2 grid-cols-1 lg:px-44 sm:px-24 px-8 gap-4">
+        {props.portfolio.map((i, idx) => (
+          <div
+            key={i.listItem.id}
+            className="
+            h-[70%]
+            md:p-16
+            sm:p-8
+            p-4
+            grid 
+            justify-items-center 
+             bg-blue-300 
+             space-y-8 
+             rounded-3xl 
+             hover:duration-1000 
+             hover:scale-105
+             hover:ease-in-out"
+          >
+            <h1 className="lg:text-xl text-sm font-semibold text-white">
               {i.listItem.title}
-            </Link>
-          </h1>
-
-          <img
-            className="hideImg 540Screen:w-[30%] w-[40%] 540Screen:h-[40%] object-top object-cover rounded-3xl border-8 border-red-500 absolute z-10 top-auto"
-            src={i.listItem.img}
-            alt="img"
-          />
-        </div>
-      ))}
+            </h1>
+            <img
+              className="w-[100%] h-[50%] rounded-3xl object-cover object-top"
+              src={i.listItem.img}
+              alt="portfolio Images"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

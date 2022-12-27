@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import BreadCrumb from "../components/common/BreadCrumb"
 import Layout from "../components/layout"
-import portfoliobreadCrumb from "../../static/img/portfolio/portfolioBC.svg"
+import portfoliobreadCrumb from "../../static/img/portfolio/Portfolio_Frame.svg"
 import { graphql, useStaticQuery } from "gatsby"
 import Portfolios from "../components/Portfolio/Portfolios"
 
@@ -9,7 +9,7 @@ const Portfolio = () => {
   const query = useStaticQuery(portfolioQuery)
 
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.portfolio.projects.list
+    query.allMarkdownRemark.edges[1].node.frontmatter.portfolio.projects.list
 
   const [portfolio, setPortfoilo] = useState([])
 

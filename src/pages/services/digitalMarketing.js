@@ -1,7 +1,10 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
+import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
+import Tabs from "../../components/services/Tabs"
+import ServicesLayout from "../../components/ServicesLayout"
 
 const DigitalMarketing = () => {
   const query = useStaticQuery(DigitalData)
@@ -17,7 +20,11 @@ const DigitalMarketing = () => {
   return (
     <div>
       <Layout>
-        <Development data={digital} />
+        <BreadCrumb />
+        <Tabs />
+        <ServicesLayout>
+          <Development data={digital} />
+        </ServicesLayout>
       </Layout>
     </div>
   )

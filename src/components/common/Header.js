@@ -6,7 +6,7 @@ import Navbardata from "../../Data/NavbarData"
 import "./Home.css"
 
 export default function Header(props) {
-  const Div = tw.div`flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[500]`
+  const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[500]`
   const NavBar = tw.div`flex items-center space-x-14 sticky top-0 z-10`
 
   const [nav, setNav] = useState(false)
@@ -14,9 +14,6 @@ export default function Header(props) {
   const handleNav = () => {
     setNav(!nav)
   }
-  // function classNames(...classes) {
-  //   return classes.filter(Boolean).join(" ")
-  // }
 
   return (
     <Div>
@@ -36,22 +33,24 @@ export default function Header(props) {
               : "fixed -left-[160%] "
           }
         >
-          <ul className="main">
+          <ul className="main-nav">
             {Navbardata.map((item, id) => (
               <li className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6  ">
-                <Link to={item.page}>{item.title}</Link>
+                <Link to={item.page}>
+                  <h1>{item.title}</h1>
+                </Link>
 
-                {/* {item.subtitle.map((subitem, id) => (
+                {item.subtitle.map((subitem, id) => (
                   <>
-                    <li>
+                    <li className="secondlevel-nav  text-xl ">
                       {subitem.title}
                       {subitem.secondsubtitle.map((i, id) => (
-                        <ul className="next-nav  ">
-                          <li>
+                        <ul className="threelevel-nav">
+                          <li className="text-xl">
                             {i.title}
                             {i.threesubtitle.map((list, id) => (
-                              <ul className="sub-next">
-                                <li className="">{list.title}</li>
+                              <ul className="fourlevel-nav">
+                                <li className="text-xl">{list.title}</li>
                               </ul>
                             ))}
                           </li>
@@ -59,7 +58,7 @@ export default function Header(props) {
                       ))}
                     </li>
                   </>
-                ))} */}
+                ))}
               </li>
             ))}
           </ul>

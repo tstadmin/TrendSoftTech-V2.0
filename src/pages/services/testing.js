@@ -1,7 +1,12 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
+import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
+import Tabs from "../../components/services/Tabs"
+import ServicesLayout from "../../components/ServicesLayout"
+
+import TestingImg from "../../../static/img/services/testing.svg"
 
 const Testing = () => {
   const query = useStaticQuery(testData)
@@ -16,7 +21,11 @@ const Testing = () => {
   return (
     <div>
       <Layout>
-        <Development data={test} />
+        <BreadCrumb title="Testing" img={TestingImg} />
+        <Tabs />
+        <ServicesLayout>
+          <Development data={test} />
+        </ServicesLayout>
       </Layout>
     </div>
   )
