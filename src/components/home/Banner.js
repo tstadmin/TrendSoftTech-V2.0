@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import bannerImage from "../../../static/img/HomeImages/banner.svg"
+import bannerImage from "../../../static/img/HomeImages/home_main_frame_2.svg"
 import {
   BannerDiv,
   BannerInfoDiv,
