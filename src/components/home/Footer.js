@@ -7,7 +7,7 @@ import { BiLink } from "react-icons/bi"
 
 import {
   Description,
-  Foote,
+  FooterDiv,
   FooterTitle,
   FooterInfo,
   FooterInfoDiv,
@@ -24,7 +24,7 @@ import { Link } from "gatsby"
 const Footer = props => {
   console.log(props)
   return (
-    <Foote>
+    <FooterDiv>
       <hr />
       <FooterInfo>
         <FooterTrendInfo>
@@ -46,8 +46,8 @@ const Footer = props => {
           <FooterTitle>IT Services</FooterTitle>
           <ul>
             <FooterUi>
-              {props.data.itService?.map(item => (
-                <li className="hover:text-blue-400">
+              {props.data.itService?.map((item, idx) => (
+                <li key={item.listItem.id} className="hover:text-blue-400">
                   <Link to={item.listItem.page}>{item.listItem.title}</Link>
                 </li>
               ))}
@@ -91,7 +91,7 @@ const Footer = props => {
 
       <FooterHr />
       <h1 className="text-center">© 2022 All Rights Reserved.</h1>
-    </Foote>
+    </FooterDiv>
   )
 }
 

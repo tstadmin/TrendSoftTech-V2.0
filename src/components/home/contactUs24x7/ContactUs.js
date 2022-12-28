@@ -15,13 +15,10 @@ const ContactUs = props => {
 
       <ContactInfo>
         <ContactHeader>{props.contactUs.title}</ContactHeader>
-        <ContactDescription>
-          Have any idea or project for in your mind call us or schedule a
-          appointment. Our representative will reply you shortly.
-        </ContactDescription>
+        <ContactDescription>{props.contactUs.description}</ContactDescription>
 
         <Button>
-          <Link to="/contact/">Contact Us</Link>
+          <Link to="/contact/">{props.contactUs.CTA}</Link>
         </Button>
       </ContactInfo>
     </Contact>

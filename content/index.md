@@ -104,6 +104,8 @@ home:
           page: "/services/digitalMarketing/"
           CTA: "read more..."
   accessibilityServices:
+    title: "OUR"
+    subTitle: "Accessibility Services"
     list:
       - listItem:
           id: "1"
@@ -124,7 +126,7 @@ home:
     CTA: "Contact Us"
   workingProcess:
     title: WORKING PROCESS
-    text: "Our Working Process - How We Work For Our Customers"
+    description: "Our Working Process - How We Work For Our Customers"
     CTA: "Contact Us"
     list:
       - listItem:

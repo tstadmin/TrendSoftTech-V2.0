@@ -22,19 +22,19 @@ const WorkingProcess = props => {
         tiltMaxAngleY={2}
         className="border 2xl:w-[22%] xl:w-[27%] lg:w-[34%] md:w-full sm:text-center lg:text-start  space-y-12 p-12 mt-16 rounded-md border-blue-400"
       >
-        <Title>WORKING PROCESS</Title>
+        <Title>{props.workingProcess.title}</Title>
 
         <WorkingDescription>
-          Our Working Process - How We Work For Our Customers
+          {props.workingProcess.description}
         </WorkingDescription>
 
         <Link to="/contact/">
-          <Button>Contact Us</Button>
+          <Button> {props.workingProcess.CTA}</Button>
         </Link>
       </Tilt>
 
       <WorkingCards>
-        {props.workingProcess.map((i, idx) => (
+        {props.workingProcess.list?.map((i, idx) => (
           <WorkingCard key={i.listItem.id}>
             <WorkingCardNumber>{i.listItem.id}</WorkingCardNumber>
 

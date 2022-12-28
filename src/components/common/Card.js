@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Description } from "./CommonStyle"
+import { Description, Hyperlink } from "./CommonStyle"
 const Card = props => {
   return (
     <div>
@@ -29,15 +29,15 @@ const Card = props => {
               props.CTA ? "lg:text-start text-center " : "text-center"
             }  ${props.access ? "text-start " : "text-center"}  grid`}
           >
-            <p className="2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
+            <p className="2xl:text-3xl xl:text-2xl lg:text-xl text-blue-600 sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
               {props.title}
             </p>
 
             <Description>{props.description}</Description>
             {props.CTA ? (
-              <Description>
+              <Hyperlink>
                 <Link to={props.page}>{props.CTA}</Link>{" "}
-              </Description>
+              </Hyperlink>
             ) : (
               ""
             )}

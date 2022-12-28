@@ -30,11 +30,11 @@ const Index = () => {
   useEffect(() => {
     setBannerItem(data.bannerItems)
     setServicesProvide(data.servicesWeProvide.list)
-    setAccessibilityServices(data.accessibilityServices.list)
+    setAccessibilityServices(data.accessibilityServices)
     setBanner(data.banner)
     setAboutOurCompany(data.aboutOurCompany)
     setContactUs(data.contactUs24x7)
-    setWorkingProcess(data.workingProcess.list)
+    setWorkingProcess(data.workingProcess)
   }, [data])
 
   return (
@@ -98,6 +98,8 @@ const dataQuery = graphql`
                 subTitle
               }
               accessibilityServices {
+                title
+                subTitle
                 list {
                   listItem {
                     id
@@ -116,7 +118,7 @@ const dataQuery = graphql`
               }
               workingProcess {
                 title
-                text
+                description
                 CTA
                 list {
                   listItem {
@@ -134,13 +136,3 @@ const dataQuery = graphql`
     }
   }
 `
-
-// allFile(filter: { relativeDirectory: { eq: "Home" } }) {
-//   edges {
-//     node {
-//       childImageSharp {
-//         gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-//       }
-//     }
-//   }
-// }

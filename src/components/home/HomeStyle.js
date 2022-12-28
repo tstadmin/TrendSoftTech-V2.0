@@ -16,24 +16,27 @@ export const Button = styled.button`
 
 ///  ----- Banner component in HomePage Home folder--------------------------------
 
-// export const BannerComponent = styled.div`
-//   ${tw`flex relative shadow-2xl shadow-black/40`}
-// `
-// export const Banner_Info = styled.div`
-//   ${tw`space-y-14  text-white py-24 2xl:w-[60vw]  2xl:h-[100vh] lg:w-[60vw]  lg:h-[95vh] md:h-[80vh] h-[80vh] sm:pl-20 lg:pl-48 pl-8 lg:pt-48`}
-// `
-// export const Banner_Button = styled.div`
-//   ${tw`text-2xl  hover:bg-white   hover:duration-700  text-white hover:text-blue-500  font-mono bg-blue-500 font-semibold duration-75  px-14 py-2 mb-1 rounded-full`}
-// `
-// export const Banner_Header = styled.h1`
-//   ${tw`2xl:text-8xl xl:text-7xl md:text-5xl sm:text-6xl text-4xl  font-bold font-mono`}
-// `
-// export const Banner_subHeader = styled.h2`
-//   ${tw`2xl:text-3xl md:text-2xl text-xl font-normal font-mono`}
-// `
-// export const Banner_Iamge = styled.Div`
-//   ${tw`absolute -z-20`}
-// `
+export const BannerDiv = styled.div`
+  ${tw`flex relative`}
+`
+export const BannerInfoDiv = styled.div`
+  ${tw`sm:space-y-14 space-y-4 sm:py-24 py-12 2xl:w-[70vw]  2xl:h-[100vh] lg:w-[65vw]  lg:h-[95vh] sm:h-[60vh] h-[30vh] sm:pl-20 lg:pl-48 pl-8 lg:pt-48`}
+`
+export const BannerTitle = styled.h1`
+  ${tw`2xl:text-8xl xl:text-7xl md:text-5xl sm:text-6xl text-xl  font-bold font-mono`}
+`
+export const BannerSubTitle = styled.h1`
+  ${tw`2xl:text-3xl md:text-2xl text-sm font-normal font-mono`}
+`
+export const BannerButton = styled.button`
+  ${tw` sm:text-2xl text-sm  hover:bg-white border-2 border-blue-500 hover:border-[#f37c05]   hover:duration-700  text-white hover:text-blue-500  font-mono bg-blue-500 font-semibold duration-75  px-14 py-2 mb-1 rounded-full`}
+`
+export const BannerImageDiv = styled.div`
+  ${tw`absolute -z-20`}
+`
+export const BannerImage = styled.img`
+  ${tw`object-cover w-[100vw] lg:h-[91vh]  sm:h-[60vh] h-[30vh]`}
+`
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
 
@@ -65,13 +68,18 @@ export const AboutOurDotImage = styled.div`
   ${tw`absolute 2xl:left-28 xl:left-28 lg:left-28 md:left-28 sm:left-24  left-20 2xl:-top-3 xl:-top-3 lg:top-2 md:-top-3 sm:-top-7  top-0`}
 `
 
+///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
+export const BannerItemDiv = styled.div`
+  ${tw`lg:flex grid gap-5 justify-center  2xl:px-48 xl:px-28 lg:px-16  px-10 mt-36`}
+`
+
 ///  ----- Services  provide component in HomePage  Home folder--------------------------------
 
 export const Services = styled.div`
-  ${tw`text-center mt-24`}
+  ${tw`text-center mt-24 `}
 `
 export const ServicesTitleDiv = styled.div`
-  ${tw`text-center mb-16`}
+  ${tw`text-center mb-16 space-y-2`}
 `
 export const ServicesTitle = styled.h1`
   ${tw`md:text-lg text-sm font-semibold text-[#f37c05]`}
@@ -86,7 +94,7 @@ export const ServicesProvideCard = styled.div`
 ///  ----- Accessibility Services component in HomePage Home folder--------------------------------
 
 export const Accessibility = styled.div`
-  ${tw`text-center mb-16 mt-24`}
+  ${tw`text-center mb-16 mt-24 space-y-4`}
 `
 export const AccessibilityCard = styled.div`
   ${tw`lg:flex lg:justify-items-center  grid gap-7   2xl:px-48 xl:px-32 lg:px-14 px-8`}
@@ -95,7 +103,7 @@ export const AccessibilityCardInfo = styled.div`
   ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
 `
 export const AccessibilityCardTitle = styled.p`
-  ${tw`xl:text-3xl md:text-3xl  text-xl font-semibold`}
+  ${tw`xl:text-3xl md:text-3xl  text-blue-600  text-xl font-semibold`}
 `
 export const AccessibilityInfo = styled.div`
   ${tw`xl:text-3xl md:text-3xl  text-xl font-semibold`}
@@ -128,7 +136,7 @@ export const ContactDescription = styled.h6`
   ${tw`text-[20px] font-[400]`}
 `
 export const ContactHeader = styled.h1`
-  ${tw`text-[36px] font-bold text-black`}
+  ${tw`text-[36px]   font-bold text-black`}
 `
 
 ///  ----- Working Process component in HomePage Home folder--------------------------------
@@ -140,10 +148,10 @@ export const WorkingDescription = styled.p`
   ${tw`text-2xl font-semibold lg:text-4xl `}
 `
 export const WorkingCardNumber = styled.p`
-  ${tw`text-5xl text-blue-600 font-semibold `}
+  ${tw`text-5xl text-blue-600 text-red-600 font-semibold `}
 `
 export const WorkingCardTitle = styled.p`
-  ${tw`lg:text-3xl  md:text-xl  font-semibold `}
+  ${tw`lg:text-3xl  md:text-xl  text-blue-600 font-semibold `}
 `
 export const WorkingCard = styled.div`
   ${tw`border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]`}
@@ -153,7 +161,7 @@ export const WorkingCards = styled.div`
   ${tw`mt-16 md:grid md:grid-cols-2 gap-4 w-full lg:w-[60%] md:w-full`}
 ` ///  ----- Footers component in HomePage Home  folder--------------------------------
 
-export const Foote = styled.div`
+export const FooterDiv = styled.div`
   ${tw`mt-36`}
 `
 export const FooterInfo = styled.div`
