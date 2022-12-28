@@ -7,7 +7,7 @@ import Layout from "../../components/layout"
 
 const Reactinfo = () => {
   const query = useStaticQuery(ReactData)
-  const data = query.allMarkdownRemark.edges[2].node.frontmatter.careers.ReactJs
+  const data = query.allMarkdownRemark.edges[0].node.frontmatter.careers.ReactJs
   const [react, setReact] = useState([])
   useEffect(() => {
     setReact(data)

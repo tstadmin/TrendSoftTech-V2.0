@@ -7,7 +7,7 @@ import Layout from "../../components/layout"
 
 const Laravel = () => {
   const query = useStaticQuery(LaravelData)
-  const data = query.allMarkdownRemark.edges[2].node.frontmatter.careers.php
+  const data = query.allMarkdownRemark.edges[0].node.frontmatter.careers.php
   const [laravel, setLaravel] = useState([])
   useEffect(() => {
     setLaravel(data)

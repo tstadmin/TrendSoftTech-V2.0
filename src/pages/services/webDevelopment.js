@@ -1,4 +1,3 @@
-import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
@@ -7,24 +6,24 @@ import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import WedDevelopmentImg from "../../../static/img/services/WebDevelopment.svg"
-
+import { graphql, useStaticQuery } from "gatsby"
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.webDevelopment
+    query.allMarkdownRemark.edges[0].node.frontmatter.services.webDevelopment
 
   const [webDevelopment, setWebDevelopment] = useState([])
   useEffect(() => {
     setWebDevelopment(data)
   }, [data])
-
+  console.log(data)
   return (
     <div>
       <Layout>
         <BreadCrumb title="Web Development" img={WedDevelopmentImg} />
-        <Tabs />
+        {/* <Tabs /> */}
         <ServicesLayout>
-          <Development data={webDevelopment} />
+          <Development data={data} />
         </ServicesLayout>
       </Layout>
     </div>
@@ -45,8 +44,8 @@ const webDevelopmentData = graphql`
                 list {
                   listItems {
                     id
-                    description
                     title
+                    description
                     list {
                       listItems {
                         id

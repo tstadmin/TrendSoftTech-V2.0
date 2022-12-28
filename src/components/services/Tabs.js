@@ -5,7 +5,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 const Tabs = () => {
   const query = useStaticQuery(tabsData)
 
-  const data = query.allMarkdownRemark.edges[3].node.frontmatter.tabs
+  const data = query.allMarkdownRemark.edges[0].node.frontmatter.tabs
 
   return (
     <div className="grid xl:grid-cols-4 md:grid-cols-3 540Screen:grid-cols-2 justify-items-center  gap-8 md:px-24 px-6 mt-24 mb-24">
