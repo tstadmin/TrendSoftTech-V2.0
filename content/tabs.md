@@ -33,31 +33,34 @@ tabs:
         id: 8
         title: "Digital Marketing"
         link: "/services/digitalMarketing/"
-serviceCards:
-  CTA: "READ MORE"
+AccessibilityTabs:
   list:
     - listItem:
         id: 1
-        title: "Web Development"
-        description: "A strong base in the field of website designing and development services made us one of the best Web Development Company spanned across."
+        title: "Services"
+        link: "/services/"
     - listItem:
         id: 2
-        title: "Ecommerce Development"
-        description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."
+        title: "Accessibility"
+        link: "/services/accessibility/"
     - listItem:
         id: 3
-        title: "Product Development"
-        description: "We proudly say we are among the best software product development companies because we have a best-in-class.."
+        title: "Accessible PDF/UA"
+        link: "/services/docAccessibility/accessibleExcel"
     - listItem:
         id: 4
-        title: "Mobile App Development"
-        description: "we offer full-cycle of mobile app development services including planning, design, integration, and management.."
+        title: "Accessible PDF Forms"
+        link: "/services/docAccessibility/accessiblePDFForms"
     - listItem:
         id: 5
-        title: "UI/UX Design"
-        description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design,"
+        title: "Accessible Word"
+        link: "/services/docAccessibility/accessiblePDFUA"
     - listItem:
         id: 6
-        title: "Digital Marketing"
-        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
+        title: "Accessible PPT"
+        link: "/services/docAccessibility/accessiblePPT"
+    - listItem:
+        id: 7
+        title: "Accessible Excel"
+        link: "/services/docAccessibility/accessibleWord"
 ---

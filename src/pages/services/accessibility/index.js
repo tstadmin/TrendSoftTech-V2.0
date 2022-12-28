@@ -3,10 +3,10 @@ import React, { useState, useEffect } from "react"
 import BreadCrumb from "../../../components/common/BreadCrumb"
 import AccessibilityServices from "../../../components/home/AccessibilityServices"
 import Layout from "../../../components/layout"
-import Tabs from "../../../components/services/Tabs"
 
 import AccessImg from "../../../../static/img/services/Accessibility2.svg"
 import GrowYourBusinnes from "../../../components/common/GrowYourBusinnes"
+import AccessibilityTabs from "../../../components/services/AccessibilityTabs"
 
 const Accessibility = props => {
   const query = useStaticQuery(queryData)
@@ -20,9 +20,8 @@ const Accessibility = props => {
   return (
     <Layout>
       <BreadCrumb title="Accessibility" img={AccessImg} />
-      <Tabs />
+      <AccessibilityTabs />
       <AccessibilityServices accessibilityServices={accessibilityServices} />
-      <GrowYourBusinnes />
     </Layout>
   )
 }
