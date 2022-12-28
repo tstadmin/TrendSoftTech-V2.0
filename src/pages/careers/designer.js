@@ -8,7 +8,7 @@ import Layout from "../../components/layout"
 const Designer = () => {
   const query = useStaticQuery(designerData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.careers.designer
+    query.allMarkdownRemark.edges[0].node.frontmatter.careers.designer
   const [designer, setDesigner] = useState([])
   useEffect(() => {
     setDesigner(data)

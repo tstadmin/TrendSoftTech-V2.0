@@ -18,7 +18,7 @@ import Brochure from "../components/common/Brochure"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
-  const data = query.allMarkdownRemark.edges[1].node.frontmatter.home
+  const data = query.allMarkdownRemark.edges[0].node.frontmatter.home
   const [banner, setBanner] = useState([])
   const [bannerItem, setBannerItem] = useState([])
   const [aboutOurCompany, setAboutOurCompany] = useState([])
