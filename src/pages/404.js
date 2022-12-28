@@ -1,13 +1,21 @@
 import * as React from "react"
-
-import Layout from "../components/layout"
 import Seo from "../components/seo"
+import errorImage from "../../static/img/404error.svg"
+import { Link } from "gatsby"
 
 const NotFoundPage = () => (
-  <Layout>
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <div className="relative">
+    <img
+      className="h-[100vh] w-full object-cover "
+      src={errorImage}
+      alt="404 page image"
+    />
+    <Link to="/">
+      <h1 className="absolute left-[45%] top-[79%] text-white hover:cursor-pointer ring-4 p-4 ring-white rounded-lg hover:ring-blue-400 hover:text-blue-400 ">
+        Go To Home Page
+      </h1>
+    </Link>
+  </div>
 )
 
 export const Head = () => <Seo title="404: Not Found" />

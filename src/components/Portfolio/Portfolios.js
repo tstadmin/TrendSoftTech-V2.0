@@ -25,7 +25,7 @@ const Portfolios = props => {
              hover:scale-105
              hover:ease-in-out"
           >
-            <h1 className="lg:text-xl text-sm font-semibold text-white underline underline-offset-8">
+            <h1 className="lg:text-xl text-sm font-semibold text-white hover:text-blue-500 underline underline-offset-8">
               <Link to={i.listItem.link} target="_blank">
                 {i.listItem.title}
               </Link>
