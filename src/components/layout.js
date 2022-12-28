@@ -17,6 +17,8 @@ const Layout = ({ children }) => {
 
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.home.navbar
 
+  console.log(data)
+
   // const [nav, setNav] = useState([])
 
   // useEffect(() => {
