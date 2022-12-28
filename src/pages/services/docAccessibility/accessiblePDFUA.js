@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import ServicesLayout from "../../../components/ServicesLayout"
 import BreadCrumb from "../../../components/common/BreadCrumb"
 import AccessibilityTabs from "../../../components/services/AccessibilityTabs"
+import Seo from "../../../components/seo"
 const AccessiblePDFUA = () => {
   const query = useStaticQuery(AccessibleData)
   const [accessibleUA, setAccessibleUA] = useState([])
@@ -17,6 +18,7 @@ const AccessiblePDFUA = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Accessibility-PDF/UA" description="TrendSoftTech" />
         <BreadCrumb />
         <AccessibilityTabs />
         <ServicesLayout>

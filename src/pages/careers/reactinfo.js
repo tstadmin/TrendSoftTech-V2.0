@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import RequirementInfo from "../../components/careers/RequirementInfo"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 
 const Reactinfo = () => {
   const query = useStaticQuery(ReactData)
@@ -16,6 +17,7 @@ const Reactinfo = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Careers" description="TrendSoftTech" />
         <RequirementInfo data={react} />
       </Layout>
     </div>

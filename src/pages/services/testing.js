@@ -7,6 +7,7 @@ import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import TestingImg from "../../../static/img/services/testing.svg"
+import Seo from "../../components/seo"
 
 const Testing = () => {
   const query = useStaticQuery(testData)
@@ -21,6 +22,7 @@ const Testing = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img={TestingImg} />
         <Tabs />
         <ServicesLayout>

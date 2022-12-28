@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 import Development from "../../components/Services/Development"
 import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
@@ -20,6 +21,7 @@ const DigitalMarketing = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Digital-Marketing" description="TrendSoftTech" />
         <BreadCrumb />
         <Tabs />
         <ServicesLayout>

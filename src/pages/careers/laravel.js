@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import RequirementInfo from "../../components/careers/RequirementInfo"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 
 const Laravel = () => {
   const query = useStaticQuery(LaravelData)
@@ -16,6 +17,8 @@ const Laravel = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Careers" description="TrendSoftTech" />
+
         <RequirementInfo data={laravel} />
       </Layout>
     </div>

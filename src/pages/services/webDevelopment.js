@@ -7,6 +7,7 @@ import ServicesLayout from "../../components/ServicesLayout"
 
 import WedDevelopmentImg from "../../../static/img/services/WebDevelopment.svg"
 import { graphql, useStaticQuery } from "gatsby"
+import Seo from "../../components/seo"
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
   const data =
@@ -20,6 +21,7 @@ const WebDevelopment = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Web-Development" description="TrendSoftTech" />
         <BreadCrumb title="Web Development" img={WedDevelopmentImg} />
         <Tabs />
         <ServicesLayout>

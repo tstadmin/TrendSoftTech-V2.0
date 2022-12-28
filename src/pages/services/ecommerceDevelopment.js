@@ -7,6 +7,7 @@ import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import EcommerceDevelopmentImg from "../../../static/img/services/Ecommerce_Development.svg"
+import Seo from "../../components/seo"
 
 const EcommerceDevelopment = () => {
   const query = useStaticQuery(ecommercData)
@@ -22,6 +23,7 @@ const EcommerceDevelopment = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Ecommerce-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Ecommerce Development"
           img={EcommerceDevelopmentImg}

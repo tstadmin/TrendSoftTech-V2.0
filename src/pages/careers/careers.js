@@ -4,6 +4,7 @@ import BreadCrumb from "../../components/common/BreadCrumb"
 
 import Layout from "../../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
+import Seo from "../../components/seo"
 
 const Careers = () => {
   const query = useStaticQuery(Data)
@@ -16,6 +17,7 @@ const Careers = () => {
 
   return (
     <Layout>
+      <Seo title="Careers" description="TrendSoftTech" />
       <BreadCrumb title="Careers" img="/img/careers/career_Frame.svg" />
       <InfoCard careers={careers} />
     </Layout>
