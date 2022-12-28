@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
 import Layout from "../../../components/layout"
+import Seo from "../../../components/seo"
 import Accessible from "../../../components/Services/Accessible"
 const WebAccessible = () => {
   const query = useStaticQuery(WebAccessibleData)
@@ -16,6 +17,7 @@ const WebAccessible = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Web-Accessibility" description="TrendSoftTech" />
         <Accessible data={webAccessible} />
       </Layout>
     </div>

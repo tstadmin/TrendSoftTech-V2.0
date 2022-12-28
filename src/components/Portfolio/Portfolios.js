@@ -1,8 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-import "../Portfolio/portfolio.css"
-
-// import bgImage from "static/img/portfolio/bg.svg"
 
 const Portfolios = props => {
   return (
@@ -10,7 +7,7 @@ const Portfolios = props => {
       <h1 className="text-center md:text-5xl text-2xl my-12 font-mono font-bold">
         Our Projects
       </h1>
-      <div className="grid 2xl:grid-cols-3 440Screen:grid-cols-2 grid-cols-1 lg:px-44 sm:px-24 px-8 gap-4">
+      <div className="grid 2xl:grid-cols-3 440Screen:grid-cols-2 grid-cols-1 lg:px-44 sm:px-24 px-8 gap-16">
         {props.portfolio.map((i, idx) => (
           <div
             key={i.listItem.id}
@@ -18,7 +15,7 @@ const Portfolios = props => {
             h-[70%]
             md:p-16
             sm:p-8
-            p-4
+            p-2
             grid 
             justify-items-center 
              bg-blue-300 
@@ -28,8 +25,10 @@ const Portfolios = props => {
              hover:scale-105
              hover:ease-in-out"
           >
-            <h1 className="lg:text-xl text-sm font-semibold text-white">
-              {i.listItem.title}
+            <h1 className="lg:text-xl text-sm font-semibold text-white underline underline-offset-8">
+              <Link to={i.listItem.link} target="_blank">
+                {i.listItem.title}
+              </Link>
             </h1>
             <img
               className="w-[100%] h-[50%] rounded-3xl object-cover object-top"

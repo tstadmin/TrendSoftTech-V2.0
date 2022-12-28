@@ -7,6 +7,7 @@ import Layout from "../../../components/layout"
 import AccessImg from "../../../../static/img/services/Accessibility2.svg"
 import GrowYourBusinnes from "../../../components/common/GrowYourBusinnes"
 import AccessibilityTabs from "../../../components/services/AccessibilityTabs"
+import Seo from "../../../components/seo"
 
 const Accessibility = props => {
   const query = useStaticQuery(queryData)
@@ -19,6 +20,7 @@ const Accessibility = props => {
 
   return (
     <Layout>
+      <Seo title="Accessibility" description="TrendSoftTech" />
       <BreadCrumb title="Accessibility" img={AccessImg} />
       <AccessibilityTabs />
       <AccessibilityServices accessibilityServices={accessibilityServices} />

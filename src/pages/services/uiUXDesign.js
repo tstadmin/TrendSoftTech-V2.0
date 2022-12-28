@@ -7,6 +7,7 @@ import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import UiUXDesignImg from "../../../static/img/services/Ui_UX_Design.svg"
+import Seo from "../../components/seo"
 
 const UiUXDesign = () => {
   const query = useStaticQuery(UiUXDesignData)
@@ -22,6 +23,7 @@ const UiUXDesign = () => {
   return (
     <div>
       <Layout>
+        <Seo title="UI/UX Design" description="TrendSoftTech" />
         <BreadCrumb title="UiUX Design" img={UiUXDesignImg} />
         <Tabs />
         <ServicesLayout>

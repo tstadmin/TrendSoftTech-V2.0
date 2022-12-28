@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 
 const Brochure = () => {
@@ -8,8 +9,11 @@ const Brochure = () => {
         <p className="text-sm font-semibold">
           Download our company brochure here
         </p>
-        <button className="bg-blue-500 text-white p-3 rounded-md ">
-          DOWNLOAD NOW
+
+        <button className="bg-blue-500 text-white text-sm p-3 rounded-md ">
+          <Link to="../common/pdf/brochure.pdf" target="_blank">
+            DOWNLOAD NOW
+          </Link>
         </button>
       </div>
     </div>

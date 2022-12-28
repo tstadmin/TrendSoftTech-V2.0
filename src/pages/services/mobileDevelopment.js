@@ -7,6 +7,7 @@ import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import MobileDevelopmentImg from "../../../static/img/services/Mobile_Development.svg"
+import Seo from "../../components/seo"
 
 const MobileDevelopment = () => {
   const query = useStaticQuery(MobileData)
@@ -22,6 +23,8 @@ const MobileDevelopment = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Mobile-Development" description="TrendSoftTech" />
+
         <BreadCrumb title="Mobile Development" img={MobileDevelopmentImg} />
         <Tabs />
         <ServicesLayout>

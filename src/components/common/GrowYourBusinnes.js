@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import tw from "twin.macro"
 
@@ -10,7 +11,9 @@ const GrowYourBusinnes = () => {
         <h1 className="text-2xl">
           Grow Your Business and Build Your Website or Software With Us.
         </h1>
-        <Button>Contact US</Button>
+        <Button>
+          <Link to="/contact/">Contact US</Link>
+        </Button>
       </div>
     </div>
   )

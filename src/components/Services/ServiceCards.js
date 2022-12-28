@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import { TabsData } from "../../../data/TabsData"
 
@@ -18,7 +19,9 @@ const Card = ({ data }) => {
     <div className="space-y-4 p-8">
       <h1 className="font-bold">{data.title}</h1>
       <h1>{data.description}</h1>
-      <h1 className="text-blue-500 font-medium">{TabsData.metaData.CTA}</h1>
+      <Link to={data.link}>
+        <h1 className="text-blue-500 font-medium">{TabsData.metaData.CTA}</h1>
+      </Link>
     </div>
   )
 }

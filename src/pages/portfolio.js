@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import portfoliobreadCrumb from "../../static/img/portfolio/Portfolio_Frame.svg"
 import { graphql, useStaticQuery } from "gatsby"
 import Portfolios from "../components/Portfolio/Portfolios"
+import Seo from "../components/seo"
 
 const Portfolio = () => {
   const query = useStaticQuery(portfolioQuery)
@@ -18,6 +19,7 @@ const Portfolio = () => {
   return (
     <div>
       <Layout>
+        <Seo title="Portfolio" description="TrendSoftTech" />
         <BreadCrumb img={portfoliobreadCrumb} title="Portfolio" />
         <Portfolios portfolio={portfolio} />
       </Layout>
