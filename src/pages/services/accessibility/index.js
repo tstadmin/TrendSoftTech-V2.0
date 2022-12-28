@@ -10,7 +10,7 @@ import AccessibilityTabs from "../../../components/services/AccessibilityTabs"
 
 const Accessibility = props => {
   const query = useStaticQuery(queryData)
-  const data = query.allMarkdownRemark.edges[1].node.frontmatter.home
+  const data = query.allMarkdownRemark.edges[0].node.frontmatter.home
   const [accessibilityServices, setAccessibilityServices] = useState([])
 
   useEffect(() => {

@@ -21,7 +21,7 @@ const WebDevelopment = () => {
     <div>
       <Layout>
         <BreadCrumb title="Web Development" img={WedDevelopmentImg} />
-        {/* <Tabs /> */}
+        <Tabs />
         <ServicesLayout>
           <Development data={data} />
         </ServicesLayout>

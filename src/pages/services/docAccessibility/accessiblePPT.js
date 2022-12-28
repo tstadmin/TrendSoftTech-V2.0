@@ -9,7 +9,7 @@ const AccessiblePPT = () => {
   const query = useStaticQuery(accessiblePPTData)
   const [accessiblePPT, setAccessiblePPT] = useState([])
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.accessible.accessiblePPT
+    query.allMarkdownRemark.edges[0].node.frontmatter.accessible.accessiblePPT
   useEffect(() => {
     setAccessiblePPT(data)
   }, [data])

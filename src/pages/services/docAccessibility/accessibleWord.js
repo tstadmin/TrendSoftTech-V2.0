@@ -9,7 +9,7 @@ const AccessibleWord = () => {
   const query = useStaticQuery(AccessibleData)
   const [accessibleWord, setAccessibleWord] = useState([])
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.accessible.accessibleWord
+    query.allMarkdownRemark.edges[0].node.frontmatter.accessible.accessibleWord
   useEffect(() => {
     setAccessibleWord(data)
   }, [data])

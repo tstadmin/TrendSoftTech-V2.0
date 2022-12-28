@@ -11,7 +11,7 @@ import MobileDevelopmentImg from "../../../static/img/services/Mobile_Developmen
 const MobileDevelopment = () => {
   const query = useStaticQuery(MobileData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services.mobileDevelopment
+    query.allMarkdownRemark.edges[0].node.frontmatter.services.mobileDevelopment
 
   const [mobile, setMobile] = useState([])
   useEffect(() => {

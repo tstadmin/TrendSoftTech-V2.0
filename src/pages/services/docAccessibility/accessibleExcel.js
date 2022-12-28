@@ -9,7 +9,7 @@ const AccessibleExcel = () => {
   const query = useStaticQuery(AccessibleData)
   const [accessibleExcel, setAccessibleExcel] = useState([])
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.accessible.accessibleExcel
+    query.allMarkdownRemark.edges[0].node.frontmatter.accessible.accessibleExcel
   useEffect(() => {
     setAccessibleExcel(data)
   }, [data])

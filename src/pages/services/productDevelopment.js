@@ -11,7 +11,7 @@ import ProductDevelopmentImg from "../../../static/img/services/Product_Developm
 const ProductDevelopment = () => {
   const query = useStaticQuery(productData)
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.services
+    query.allMarkdownRemark.edges[0].node.frontmatter.services
       .productDevelopment
 
   const [product, setproduct] = useState([])

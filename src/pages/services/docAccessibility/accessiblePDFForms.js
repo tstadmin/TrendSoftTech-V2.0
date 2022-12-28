@@ -9,7 +9,7 @@ const AccessiblePDFForms = () => {
   const query = useStaticQuery(accessibleFormQuery)
   const [accessibleForm, setAccessibleForm] = useState([])
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.accessible
+    query.allMarkdownRemark.edges[0].node.frontmatter.accessible
       .accessiblePDFForms
   useEffect(() => {
     setAccessibleForm(data)

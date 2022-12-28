@@ -9,7 +9,7 @@ const AccessiblePDFUA = () => {
   const query = useStaticQuery(AccessibleData)
   const [accessibleUA, setAccessibleUA] = useState([])
   const data =
-    query.allMarkdownRemark.edges[2].node.frontmatter.accessible.accessiblePDFUA
+    query.allMarkdownRemark.edges[0].node.frontmatter.accessible.accessiblePDFUA
   useEffect(() => {
     setAccessibleUA(data)
   }, [data])

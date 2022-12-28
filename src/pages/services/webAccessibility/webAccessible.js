@@ -5,7 +5,7 @@ import Accessible from "../../../components/Services/Accessible"
 const WebAccessible = () => {
   const query = useStaticQuery(WebAccessibleData)
   const data =
-    query.allMarkdownRemark.edges[1].node.frontmatter.webAccessibility
+    query.allMarkdownRemark.edges[0].node.frontmatter.webAccessibility
       .webAccessibility
 
   const [webAccessible, setWebAccessible] = useState([])
