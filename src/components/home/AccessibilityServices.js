@@ -15,12 +15,12 @@ const AccessibilityServices = props => {
   return (
     <div data-sal="fade" data-sal-delay="100" data-sal-easing="ease-in-out">
       <Accessibility>
-        <Title>OUR</Title>
-        <SubTitle>Accessibility Services</SubTitle>
+        <Title>{props.accessibilityServices.title}</Title>
+        <SubTitle>{props.accessibilityServices.subTitle}</SubTitle>
       </Accessibility>
 
       <AccessibilityCard>
-        {props.accessibilityServices?.map((item, id) => (
+        {props.accessibilityServices.list?.map((item, id) => (
           <AccessibilityCardInfo key={item.listItem.id}>
             <AccessibilityImage
               src={item.listItem.img}
