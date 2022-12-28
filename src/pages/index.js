@@ -84,18 +84,18 @@ const dataQuery = graphql`
                 CTA
               }
               servicesWeProvide {
-                title
-                subTitle
                 list {
                   listItem {
                     id
-                    img
                     title
-                    page
                     description
+                    img
+                    page
                     CTA
                   }
                 }
+                title
+                subTitle
               }
               accessibilityServices {
                 list {

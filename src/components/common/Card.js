@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import { Description } from "./CommonStyle"
 const Card = props => {
@@ -34,7 +35,9 @@ const Card = props => {
 
             <Description>{props.description}</Description>
             {props.CTA ? (
-              <Description className="">{props.CTA}</Description>
+              <Description>
+                <Link to={props.page}>{props.CTA}</Link>{" "}
+              </Description>
             ) : (
               ""
             )}

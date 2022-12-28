@@ -9,6 +9,7 @@ import {
 } from "./HomeStyle"
 
 const ServicesProvide = props => {
+  console.log(props)
   return (
     <Services>
       <ServicesTitleDiv>
@@ -22,6 +23,7 @@ const ServicesProvide = props => {
             key={id}
             title={item.listItem.title}
             description={item.listItem.description}
+            page={item.listItem.page}
             CTA={item.listItem.CTA}
           />
         ))}

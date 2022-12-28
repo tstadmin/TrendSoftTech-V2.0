@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 
 import Tilt from "react-parallax-tilt"
@@ -27,7 +28,9 @@ const WorkingProcess = props => {
           Our Working Process - How We Work For Our Customers
         </WorkingDescription>
 
-        <Button>Contact us</Button>
+        <Link to="/contact/">
+          <Button>Contact Us</Button>
+        </Link>
       </Tilt>
 
       <WorkingCards>

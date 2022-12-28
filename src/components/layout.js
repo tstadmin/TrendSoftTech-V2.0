@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./common/Header"
 import OnclickTop from "./common/OnClickScrollToTop"
@@ -16,14 +16,14 @@ const Layout = ({ children }) => {
   const query = useStaticQuery(layoutQuery)
 
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.home.navbar
+  const footerData =
+    query.allMarkdownRemark.edges[0].node.frontmatter.home.footer
 
-  console.log(data)
+  const [footer, setFooter] = useState([])
 
-  // const [nav, setNav] = useState([])
-
-  // useEffect(() => {
-  //   setNav(data)
-  // }, [query])
+  useEffect(() => {
+    setFooter(footerData)
+  }, [data])
 
   return (
     <div>
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       <OnclickTop />
       <Header data={data} />
       {children}
-      <Footer />
+      <Footer data={footer} />
     </div>
   )
 }
@@ -58,6 +58,24 @@ const layoutQuery = graphql`
                     title
                   }
                 }
+              }
+              footer {
+                logo
+                description
+                itService {
+                  listItem {
+                    id
+                    page
+                    title
+                  }
+                }
+                contactTitle
+                itTitle
+                local
+                mail
+                mailLink
+                website
+                websiteLink
               }
             }
           }

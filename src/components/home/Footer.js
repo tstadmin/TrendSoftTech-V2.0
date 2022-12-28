@@ -4,7 +4,7 @@ import { TiSocialLinkedin } from "react-icons/Ti"
 import { SlLocationPin } from "react-icons/sl"
 import { AiOutlineMail } from "react-icons/ai"
 import { BiLink } from "react-icons/bi"
-import logo from "../../../static/img/HomeImages/trendsoftlogo.svg"
+
 import {
   Description,
   Foote,
@@ -19,19 +19,20 @@ import {
   FooterUi,
   IconSize,
 } from "./HomeStyle"
+import { Link } from "gatsby"
 
-const Footer = () => {
+const Footer = props => {
+  console.log(props)
   return (
     <Foote>
       <hr />
       <FooterInfo>
         <FooterTrendInfo>
-          <img src={logo} className="h-32" alt="logo" />
-          <Description>
-            At Trendsoft Quality is our ultimate business plan. We consider
-            every aspect which matters to clients' data security and
-            intellectual property protections.
-          </Description>
+          <Link to="/">
+            <img src={props.data.logo} className="h-32" alt="logo" />
+          </Link>
+
+          <Description>{props.data.description}</Description>
           <FooterIconLogo>
             <FooterIconStyles>
               <FaFacebookF />
@@ -45,28 +46,24 @@ const Footer = () => {
           <FooterTitle>IT Services</FooterTitle>
           <ul>
             <FooterUi>
-              <li>Web Development</li>
-              <li>Ecommerce Development</li>
-              <li>Product Development</li>
-              <li>Mobile Development</li>
-              <li>Digital Marketing</li>
-              <li>Ui/UX Design</li>
+              {props.data.itService?.map(item => (
+                <li className="hover:text-blue-400">
+                  <Link to={item.listItem.page}>{item.listItem.title}</Link>
+                </li>
+              ))}
             </FooterUi>
           </ul>
         </FooterInfoDiv>
 
         <FooterInfoDiv>
-          <FooterTitle>Contact Info</FooterTitle>
+          <FooterTitle>{props.data.contactTitle}</FooterTitle>
 
           <FooterIconInfo>
             <IconSize>
               <SlLocationPin />
             </IconSize>
 
-            <Description>
-              Trendsoft Technologies Pvt. Ltd,Flat #302, 2nd Floor, PKR
-              Complex,Road No. 1, KPHB Colony, Kukatpally, Hyderabad – 500072
-            </Description>
+            <Description>{props.data.local}</Description>
           </FooterIconInfo>
 
           <FooterIconInfo>
@@ -75,8 +72,7 @@ const Footer = () => {
             </IconSize>
 
             <Description>
-              info@trendsofttech.com
-              <br /> service@trendsofttech.com
+              <div dangerouslySetInnerHTML={{ __html: props.data.mail }} />
             </Description>
           </FooterIconInfo>
 
@@ -85,7 +81,10 @@ const Footer = () => {
               <BiLink />
             </IconSize>
 
-            <Description>www.trendsofttech.com</Description>
+            <Description>
+              {" "}
+              <div dangerouslySetInnerHTML={{ __html: props.data.website }} />
+            </Description>
           </FooterIconInfo>
         </FooterInfoDiv>
       </FooterInfo>

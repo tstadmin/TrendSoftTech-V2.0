@@ -66,42 +66,42 @@ home:
           img: "/img/icons/WebDevelopment.svg"
           title: "Web Development"
           description: "A strong base in the field of website designing development services and made us one of  best Web  Development Company spanned across India."
-          page: ""
+          page: "/services/webDevelopment/"
           CTA: "read more.."
       - listItem:
           id: "2"
           img: "/img/icons/EcommerceDevelopment.svg"
           title: "E-Commerce Development"
           description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."
-          page: ""
+          page: "/services/ecommerceDevelopment/"
           CTA: "read more..."
       - listItem:
           id: "3"
           img: "/img/icons/ProductDevelopment.svg"
           title: "Product Development"
           description: "We proudly say we are among the best software product development companies because we have a best-in-class.."
-          page: ""
+          page: "/services/productDevelopment/"
           CTA: "read more..."
       - listItem:
           id: "4"
           img: "/img/icons/MobileDevelopment.svg"
           title: "Mobile Development"
           description: "we offer full-cycle of mobile app development services including planning, design, integration, and management.."
-          page: ""
+          page: "/services/mobileDevelopment/"
           CTA: "read more..."
       - listItem:
           id: "5"
           img: "/img/icons/UiUXDesign.svg"
           title: "UI/UX Design"
           description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design,"
-          page: ""
+          page: "/services/uiUXDesign/"
           CTA: "read more..."
       - listItem:
           id: "6"
           img: "/img/icons/DigitalMarketing.svg"
           title: "Digital Marketing"
           description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
-          page: ""
+          page: "/services/digitalMarketing/"
           CTA: "read more..."
   accessibilityServices:
     list:
@@ -147,6 +147,41 @@ home:
           num: "4."
           title: "Deployment"
           description: "One the product is accepted by the client we move towards deployment. Our support teams..."
+  footer:
+    logo: "/img/HomeImages/trendsoftlogo.svg"
+    description: "At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections."
+    itTitle: "IT Services"
+    itService: 
+      - listItem:
+          id: "1"
+          title: "Web Development"   
+          page: "/services/webDevelopment/"
+      - listItem:
+          id: "2"        
+          title: "E-Commerce Development"       
+          page: "/services/ecommerceDevelopment/"
+      - listItem:
+          id: "3"
+          title: "Product Development"       
+          page: "/services/productDevelopment/"
+      - listItem:
+          id: "4"
+          title: "Mobile Development"
+          page: "/services/mobileDevelopment/"
+      - listItem:
+          id: "5"
+          title: "UI/UX Design"
+          page: "/services/uiUXDesign/"
+      - listItem:
+          id: "6"
+          title: "Digital Marketing"
+          page: "/services/digitalMarketing/"
+    contactTitle : "Contact Info"
+    local : "Trendsoft Technologies Pvt. Ltd,Flat #302, 2nd Floor, PKR Complex,Road No. 1, KPHB Colony, Kukatpally, Hyderabad – 500072"
+    mail : "info@trendsofttech.com <br/>service@trendsofttech.com " 
+    mailLink : ""    
+    website : "http://www.trendsofttech.com" 
+    websiteLink : ""
 services:
    webDevelopment:
       description: "A strong base in the field of website designing and development services made us one of the best Web Development Company spanned across India.  At Trendsoft, we keep up the pace with deep knowledge, development, and experience to proffer web solutions that are best suited to your business venture. A business website plays a major role in depicting your intentions and goals. Just a company profile is worthless and so we help you build an informative and impressive website to draw the attention of your valuable customers.

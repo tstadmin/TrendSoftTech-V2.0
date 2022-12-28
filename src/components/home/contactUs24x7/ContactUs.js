@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import {
   Button,
@@ -18,7 +19,10 @@ const ContactUs = props => {
           Have any idea or project for in your mind call us or schedule a
           appointment. Our representative will reply you shortly.
         </ContactDescription>
-        <Button>Contact Us</Button>
+
+        <Button>
+          <Link to="/contact/">Contact Us</Link>
+        </Button>
       </ContactInfo>
     </Contact>
   )

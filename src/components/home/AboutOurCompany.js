@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 
 import {
@@ -36,7 +37,9 @@ const AboutOurCompany = props => {
             }}
           />
         </Description>
-        <Button>{props.aboutOurCompany.CTA}</Button>
+        <Link to="/about/">
+          <Button>{props.aboutOurCompany.CTA}</Button>
+        </Link>
       </AboutOurInfo>
     </AboutOur>
   )

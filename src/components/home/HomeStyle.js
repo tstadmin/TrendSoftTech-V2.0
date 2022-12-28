@@ -11,7 +11,7 @@ export const Description = styled.h6`
   ${tw`text-lg font-normal`}
 `
 export const Button = styled.button`
-  ${tw`bg-blue-600 hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}
+  ${tw`bg-blue-600 hover:bg-white font-medium mt-5 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}
 `
 
 ///  ----- Banner component in HomePage Home folder--------------------------------
@@ -185,5 +185,5 @@ export const IconSize = styled.div`
   ${tw`text-2xl`}
 `
 export const FooterUi = styled.p`
-  ${tw` space-y-3 text-lg font-[400]`}
+  ${tw` space-y-3 text-lg font-[400] `}
 `
