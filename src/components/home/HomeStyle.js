@@ -2,13 +2,13 @@ import tw, { styled } from "twin.macro"
 
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h1`
-  ${tw`sm:text-lg text-sm text-[#f37c05] font-semibold`}
+  ${tw`sm:text-lg text-sm text-[#FF2442] font-semibold`}
 `
 export const SubTitle = styled.h2`
-  ${tw`sm:text-[36px] text-xl font-bold`}
+  ${tw`sm:text-[36px] text-xl text-[#146ABA] font-bold`}
 `
 export const Description = styled.h6`
-  ${tw`text-lg font-normal`}
+  ${tw`text-[16px] text-[#454545] font-normal `}
 `
 export const Button = styled.button`
   ${tw`bg-blue-600 hover:bg-white font-medium mt-5 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}
@@ -58,11 +58,11 @@ export const AboutOurH1 = styled.h1`
   ${tw`text-[16px] from-neutral-400`}
 `
 export const AboutOurH2 = styled.h2`
-  ${tw`2xl:text-xl lg:text-xl text-sm sm:text-lg font-bold  text-[#f37c05]`}
+  ${tw`2xl:text-xl lg:text-xl text-sm sm:text-lg font-bold  text-[#FF2442]`}
 `
 
 export const AboutOurDescription = styled.p`
-  ${tw`2xl:text-[36px] lg:text-[36px] md:text-[36px] text-[22px] font-bold`}
+  ${tw`2xl:text-[36px] lg:text-[36px] md:text-[36px] text-[22px] font-bold text-[#146ABA]`}
 `
 export const AboutOurDotImage = styled.div`
   ${tw`absolute 2xl:left-28 xl:left-28 lg:left-28 md:left-28 sm:left-24  left-20 2xl:-top-3 xl:-top-3 lg:top-2 md:-top-3 sm:-top-7  top-0`}
@@ -70,22 +70,22 @@ export const AboutOurDotImage = styled.div`
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
 export const BannerItemDiv = styled.div`
-  ${tw`lg:flex grid gap-5 justify-center  2xl:px-48 xl:px-28 lg:px-16  px-10 mt-36`}
+  ${tw`lg:flex grid gap-5 justify-center   2xl:px-48 xl:px-28 lg:px-16 py-14 px-10 mt-36`}
 `
 
 ///  ----- Services  provide component in HomePage  Home folder--------------------------------
 
 export const Services = styled.div`
-  ${tw`text-center mt-24 `}
+  ${tw`text-center mt-24 bg-blue-50 py-14`}
 `
 export const ServicesTitleDiv = styled.div`
   ${tw`text-center mb-16 space-y-2`}
 `
 export const ServicesTitle = styled.h1`
-  ${tw`md:text-lg text-sm font-semibold text-[#f37c05]`}
+  ${tw`md:text-lg text-sm font-semibold text-[#FF2442]`}
 `
 export const ServicesSubTitle = styled.p`
-  ${tw`md:text-[36px] text-xl font-bold `}
+  ${tw`md:text-[36px] text-[#146ABA] text-xl font-bold `}
 `
 export const ServicesProvideCard = styled.div`
   ${tw`xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  grid grid-cols-1 gap-5 justify-items-center 2xl:px-48 xl:px-28 lg:px-16  px-8`}
@@ -103,7 +103,7 @@ export const AccessibilityCardInfo = styled.div`
   ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
 `
 export const AccessibilityCardTitle = styled.p`
-  ${tw`xl:text-3xl md:text-3xl  text-blue-600  text-xl font-semibold`}
+  ${tw`xl:text-3xl md:text-3xl text-[#146ABA]  text-blue-600  text-xl font-semibold`}
 `
 export const AccessibilityInfo = styled.div`
   ${tw`xl:text-3xl md:text-3xl  text-xl font-semibold`}
@@ -119,7 +119,7 @@ export const Counte = styled.div`
   ${tw`md:flex md:justify-center grid justify-items-center gap-24 md:gap-56  p-6 bg-white `}
 `
 export const CounterNumber = styled.h1`
-  ${tw`text-[50px] font-bold text-blue-500`}
+  ${tw`text-[50px] font-bold text-[#146ABA]`}
 `
 export const CounterDescription = styled.h6`
   ${tw`md:text-[20px] font-[400] font-semibold font-mono `}
@@ -148,10 +148,10 @@ export const WorkingDescription = styled.p`
   ${tw`text-2xl font-semibold lg:text-4xl `}
 `
 export const WorkingCardNumber = styled.p`
-  ${tw`text-5xl text-blue-600 text-red-600 font-semibold `}
+  ${tw`text-5xl text-blue-600 text-[#FF2442] font-semibold `}
 `
 export const WorkingCardTitle = styled.p`
-  ${tw`lg:text-3xl  md:text-xl  text-blue-600 font-semibold `}
+  ${tw`lg:text-3xl  md:text-xl  text-[#146ABA] font-semibold `}
 `
 export const WorkingCard = styled.div`
   ${tw`border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]`}
@@ -162,7 +162,7 @@ export const WorkingCards = styled.div`
 ` ///  ----- Footers component in HomePage Home  folder--------------------------------
 
 export const FooterDiv = styled.div`
-  ${tw`mt-36`}
+  ${tw`mt-36 bg-blue-50/80  `}
 `
 export const FooterInfo = styled.div`
   ${tw`md:flex sm:grid  px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}

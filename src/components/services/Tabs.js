@@ -4,7 +4,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 
 const Tabs = () => {
   const query = useStaticQuery(tabsData)
-
+  console.log(query)
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.tabs
 
   return (
@@ -30,8 +30,8 @@ const tabsData = graphql`
               list {
                 listItem {
                   id
-                  title
                   link
+                  title
                 }
               }
             }

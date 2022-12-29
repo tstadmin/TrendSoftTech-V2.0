@@ -14,12 +14,15 @@ const AccessibleExcel = () => {
   useEffect(() => {
     setAccessibleExcel(data)
   }, [data])
-
+  console.log(data)
   return (
     <div>
       <Layout>
         <Seo title="Accessibility-Excel" description="TrendSoftTech" />
-        <BreadCrumb />
+        <BreadCrumb
+          img="/img/BreadCrumb/docaccessibility.svg"
+          title="Accessible Excel"
+        />
         <AccessibilityTabs />
         <ServicesLayout>
           <Accessible data={accessibleExcel} />

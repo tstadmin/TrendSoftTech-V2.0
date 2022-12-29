@@ -41,10 +41,10 @@ export default function Header(props) {
                 </Link>
 
                 {item.subtitle.map((subitem, id) => (
-                  <>
-                    <li className="secondlevel-nav  text-xl ">
+                  <ul className="sub-nav">
+                    <li>
                       {subitem.title}
-                      {subitem.secondsubtitle.map((i, id) => (
+                      {/* {subitem.secondsubtitle.map((i, id) => (
                         <ul className="threelevel-nav">
                           <li className="text-xl">
                             {i.title}
@@ -55,9 +55,9 @@ export default function Header(props) {
                             ))}
                           </li>
                         </ul>
-                      ))}
+                      ))} */}
                     </li>
-                  </>
+                  </ul>
                 ))}
               </li>
             ))}

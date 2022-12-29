@@ -25,7 +25,10 @@ const MobileDevelopment = () => {
       <Layout>
         <Seo title="Mobile-Development" description="TrendSoftTech" />
 
-        <BreadCrumb title="Mobile Development" img={MobileDevelopmentImg} />
+        <BreadCrumb
+          title="Mobile Development"
+          img="/img/BreadCrumb/MobileDevelopment.svg"
+        />
         <Tabs />
         <ServicesLayout>
           <Development data={mobile} />

@@ -24,7 +24,7 @@ const UiUXDesign = () => {
     <div>
       <Layout>
         <Seo title="UI/UX Design" description="TrendSoftTech" />
-        <BreadCrumb title="UiUX Design" img={UiUXDesignImg} />
+        <BreadCrumb title="UiUX Design" img="/img/BreadCrumb/UiUXDesign.svg" />
         <Tabs />
         <ServicesLayout>
           <Development data={design} />

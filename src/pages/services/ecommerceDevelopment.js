@@ -6,7 +6,6 @@ import Development from "../../components/Services/Development"
 import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
 
-import EcommerceDevelopmentImg from "../../../static/img/services/Ecommerce_Development.svg"
 import Seo from "../../components/seo"
 
 const EcommerceDevelopment = () => {
@@ -26,7 +25,7 @@ const EcommerceDevelopment = () => {
         <Seo title="Ecommerce-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Ecommerce Development"
-          img={EcommerceDevelopmentImg}
+          img="/img/BreadCrumb/EcommerceDevelopment.svg"
         />
         <Tabs />
         <ServicesLayout>

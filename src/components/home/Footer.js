@@ -22,7 +22,6 @@ import {
 import { Link } from "gatsby"
 
 const Footer = props => {
-  console.log(props)
   return (
     <FooterDiv>
       <hr />

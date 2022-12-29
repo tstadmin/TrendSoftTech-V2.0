@@ -29,7 +29,7 @@ const Index = () => {
 
   useEffect(() => {
     setBannerItem(data.bannerItems)
-    setServicesProvide(data.servicesWeProvide.list)
+    setServicesProvide(data.servicesWeProvide)
     setAccessibilityServices(data.accessibilityServices)
     setBanner(data.banner)
     setAboutOurCompany(data.aboutOurCompany)

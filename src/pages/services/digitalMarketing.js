@@ -22,7 +22,10 @@ const DigitalMarketing = () => {
     <div>
       <Layout>
         <Seo title="Digital-Marketing" description="TrendSoftTech" />
-        <BreadCrumb />
+        <BreadCrumb
+          title="Digital Marketing"
+          img="/img/BreadCrumb/digitalmarketing.svg"
+        />
         <Tabs />
         <ServicesLayout>
           <Development data={digital} />
