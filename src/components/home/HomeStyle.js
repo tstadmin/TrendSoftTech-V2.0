@@ -2,7 +2,7 @@ import tw, { styled } from "twin.macro"
 
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h1`
-  ${tw`sm:text-lg text-sm text-[#FF2442] font-semibold`}
+  ${tw`sm:text-lg text-sm text-orange-400 font-semibold`}
 `
 export const SubTitle = styled.h2`
   ${tw`sm:text-[36px] text-xl text-[#146ABA] font-bold`}
@@ -58,7 +58,7 @@ export const AboutOurH1 = styled.h1`
   ${tw`text-[16px] from-neutral-400`}
 `
 export const AboutOurH2 = styled.h2`
-  ${tw`2xl:text-xl lg:text-xl text-sm sm:text-lg font-bold  text-[#FF2442]`}
+  ${tw`2xl:text-xl lg:text-xl text-sm sm:text-lg font-bold  text-orange-400`}
 `
 
 export const AboutOurDescription = styled.p`
@@ -82,7 +82,7 @@ export const ServicesTitleDiv = styled.div`
   ${tw`text-center mb-16 space-y-2`}
 `
 export const ServicesTitle = styled.h1`
-  ${tw`md:text-lg text-sm font-semibold text-[#FF2442]`}
+  ${tw`md:text-lg text-sm font-semibold text-orange-400`}
 `
 export const ServicesSubTitle = styled.p`
   ${tw`md:text-[36px] text-[#146ABA] text-xl font-bold `}
@@ -148,7 +148,7 @@ export const WorkingDescription = styled.p`
   ${tw`text-2xl font-semibold lg:text-4xl `}
 `
 export const WorkingCardNumber = styled.p`
-  ${tw`text-5xl text-blue-600 text-[#FF2442] font-semibold `}
+  ${tw`text-5xl text-blue-600 text-orange-400 font-semibold `}
 `
 export const WorkingCardTitle = styled.p`
   ${tw`lg:text-3xl  md:text-xl  text-[#146ABA] font-semibold `}
