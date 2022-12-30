@@ -8,7 +8,7 @@ export const SubTitle = styled.h2`
   ${tw`sm:text-[36px] text-xl text-[#146ABA] font-bold`}
 `
 export const Description = styled.h6`
-  ${tw`text-[16px] text-[#454545] font-normal `}
+  ${tw`text-[16px] text-[#454545] font-normal`}
 `
 export const Button = styled.button`
   ${tw`bg-blue-600 hover:bg-white font-medium mt-5 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}

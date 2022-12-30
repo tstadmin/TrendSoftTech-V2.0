@@ -14,7 +14,6 @@ import ContactSupport from "../components/home/contactUs24x7/ContactSupport"
 import Seo from "../components/seo"
 
 import Layout from "../components/layout"
-import Brochure from "../components/common/Brochure"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)

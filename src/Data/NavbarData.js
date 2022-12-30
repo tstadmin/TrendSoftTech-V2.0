@@ -17,6 +17,8 @@ export const Navbardata = [
     id: 3,
     page: "/services/",
     title: "Services",
+    addIcon: "+",
+    subIcon: "-",
     subtitle: [
       {
         id: 1,

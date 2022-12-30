@@ -6,7 +6,7 @@ import Navbardata from "../../Data/NavbarData"
 import "./Home.css"
 
 export default function Header(props) {
-  const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[100]`
+  const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[1]`
   const NavBar = tw.div`flex items-center space-x-14 sticky top-0 z-10`
 
   const [nav, setNav] = useState(false)
@@ -33,23 +33,33 @@ export default function Header(props) {
               : "fixed -left-[160%] "
           }
         >
-          <ul className="main-Menu">
-            {Navbardata.map((item, id) => (
-              <li className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6  ">
+          <ul className="main-Menu group">
+            {Navbardata.map((item, idx) => (
+              <li
+                key={item.id}
+                className="uppercase flex lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6  "
+              >
                 <Link to={item.page}>
                   <h1>{item.title}</h1>
                 </Link>
-                <ul className="Sub-Menu ">
-                  {item.subtitle.map((subitem, id) => (
-                    <li className="lg:text-4xl">
+                <div className="add">
+                  <p>{item.addIcon}</p>
+                </div>
+                <div className="sub">
+                  <p>{item.subIcon}</p>
+                </div>
+
+                <ul className="Sub-Menu font-mono w-[50%] ">
+                  {item.subtitle.map((subitem, idx) => (
+                    <li key={subitem.id} className="lg:text-2xl p-2">
                       <Link to={item.page}>{subitem.title}</Link>
                       <ul className="Nested-Menu">
-                        {subitem.secondsubtitle.map((i, id) => (
-                          <li className="lg:text-4xl">
+                        {subitem.secondsubtitle.map((i, idx) => (
+                          <li key={i.id} className="lg:text-2xl p-2">
                             <Link to={item.page}> {i.title}</Link>
-                            <ul className="Sub-Nested-Menu">
-                              {i.threesubtitle.map((list, id) => (
-                                <li className="text-xl">
+                            <ul className=" Sub-Nested-Menu">
+                              {i.threesubtitle.map((list, idx) => (
+                                <li key={list.id} className="text-2xl p-2">
                                   <Link to={item.page}>{list.title}</Link>
                                 </li>
                               ))}
