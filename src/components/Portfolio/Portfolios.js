@@ -30,7 +30,7 @@ const Portfolios = props => {
               </Link>
             </h1>
             <img
-              className="  object-cover object-top hover:scale-105 rounded-lg "
+              className="  object-cover object-top  rounded-lg "
               src={i.listItem.img}
               width="250px"
               alt="portfolio Images"

@@ -878,7 +878,7 @@ AccessibilityTabs:
     - listItem:
         id: 4
         title: "Accessible PDF/UA"
-        link: "/services/docAccessibility/accessibleExcel"
+        link: "/services/docAccessibility/accessiblePDFUA"
     - listItem:
         id: 5
         title: "Accessible PDF Forms"
@@ -886,7 +886,7 @@ AccessibilityTabs:
     - listItem:
         id: 6
         title: "Accessible Word"
-        link: "/services/docAccessibility/accessiblePDFUA"
+        link: "/services/docAccessibility/accessibleWord"
     - listItem:
         id: 7
         title: "Accessible PPT"
@@ -894,5 +894,5 @@ AccessibilityTabs:
     - listItem:
         id: 8
         title: "Accessible Excel"
-        link: "/services/docAccessibility/accessibleWord"             
+        link: "/services/docAccessibility/accessibleExcel"             
 ---
