@@ -41,40 +41,44 @@ const RequirementInfo = props => {
       <FormDiv>
         <FormHeading>Apply for this position</FormHeading>
         <Form>
-          <label className="text-lg" htmlFor="name">
+          <label className="text-lg " for="name">
             Full Name *
           </label>
           <input placeholder="Full Name" />
-          <label className="text-lg" htmlFor="email">
+          <label className="text-lg" for="email">
             Email *
           </label>
           <input placeholder="Email" />
-          <label className="text-lg" htmlFor="Phone">
+          <label className="text-lg" for="Phone">
             {" "}
             Phone *
           </label>
           <input placeholder="Phone" />
-          <label className="text-lg" htmlFor="Cover">
+          <label className="text-lg" for="Cover">
             Cover Letter *
           </label>
           <input placeholder="Cover Letter" />
-          <label className="text-lg" htmlFor="upload">
+          <label className="text-lg" for="upload">
             Upload CV/Resume *
           </label>
           <input type="file" id="myfile" name="myfile" />
           <label for="vehicle1"> Allowed Type(s): .pdf, .doc, .docx</label>
-          <input
-            type="checkbox"
-            id="vehicle2"
-            name="vehicle2"
-            value="Car"
-            className="text-start"
-          />
-          <p>
-            By using this form you agree with the storage and handling of your
-            data by this website. *
-          </p>
-          <Button>Submit</Button>
+          <div>
+            <div className=" sm:flex grid space-x-2">
+              <input
+                type="checkbox"
+                id="vehicle2"
+                name="vehicle2"
+                value="Car"
+              />
+              <p>
+                By using this form you agree with the storage and handling of
+                your data by this website. *
+              </p>
+            </div>
+
+            <Button>Submit</Button>
+          </div>
         </Form>
       </FormDiv>
     </Requirement>

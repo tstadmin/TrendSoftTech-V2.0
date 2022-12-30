@@ -8,16 +8,19 @@ import {
   CardHanding,
   CardReading,
   CardDescription,
+  ServiceCardDiv,
 } from "./ServicesStyled"
 const ServiceCards = props => {
   return (
-    <ServiceCard>
-      {TabsData.data.map((value, idx) => (
-        <ServiceCardInfo>
-          <Card data={value} />
-        </ServiceCardInfo>
-      ))}
-    </ServiceCard>
+    <ServiceCardDiv>
+      <ServiceCard>
+        {TabsData.data.map((value, idx) => (
+          <ServiceCardInfo>
+            <Card data={value} />
+          </ServiceCardInfo>
+        ))}
+      </ServiceCard>
+    </ServiceCardDiv>
   )
 }
 

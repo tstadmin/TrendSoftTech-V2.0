@@ -7,7 +7,7 @@ const GrowYourBusinnes = () => {
 
   return (
     <div className="mt-28 ">
-      <div className="bg-blue-400/60 rounded-md p-12 space-y-6  px-12">
+      <div className="bg-blue-400/25 rounded-md p-12 space-y-6  px-12">
         <h1 className="text-2xl">
           Grow Your Business and Build Your Website or Software With Us.
         </h1>

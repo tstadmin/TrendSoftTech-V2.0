@@ -43,7 +43,7 @@ export const RequirementInfoheading = styled.h1`
   ${tw`text-2xl font-semibold`}
 `
 export const FormDiv = styled.div`
-  ${tw`grid border-2 border-black justify-items-center space-y-8 p-7`}
+  ${tw`grid border border-black justify-items-center space-y-8 p-7`}
 `
 
 export const FormHeading = styled.div`

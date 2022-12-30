@@ -33,12 +33,20 @@ const Footer = props => {
 
           <Description>{props.data.description}</Description>
           <FooterIconLogo>
-            <FooterIconStyles>
-              <FaFacebookF />
-            </FooterIconStyles>
-            <FooterIconStyles>
-              <TiSocialLinkedin />
-            </FooterIconStyles>
+            <Link to="https://www.facebook.com/trendsofttech/" target="_blank">
+              <FooterIconStyles>
+                <FaFacebookF />
+              </FooterIconStyles>
+            </Link>
+
+            <Link
+              to="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE2hU0J4z4P2gAAAYViiW5grJXhnU1sVxZd3Vt3HX2uebekQCjbXcACP3SqWZ6AlHcr8fcP6WPuusSq3zYfhd6_lHKXkaScAYFVGSvEFtEJdCzMRdWo0-YyL5CNJT_y1QnzvXg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftrendsoft-technologies-192645240"
+              target="_blank"
+            >
+              <FooterIconStyles>
+                <TiSocialLinkedin />
+              </FooterIconStyles>
+            </Link>
           </FooterIconLogo>
         </FooterTrendInfo>
         <FooterInfoDiv>
@@ -71,20 +79,23 @@ const Footer = props => {
             </IconSize>
 
             <Description>
-              <div dangerouslySetInnerHTML={{ __html: props.data.mail }} />
+              <Link to="">
+                <div dangerouslySetInnerHTML={{ __html: props.data.mail }} />{" "}
+              </Link>
             </Description>
           </FooterIconInfo>
+          <Link to="/">
+            <FooterIconInfo>
+              <IconSize>
+                <BiLink />
+              </IconSize>
 
-          <FooterIconInfo>
-            <IconSize>
-              <BiLink />
-            </IconSize>
-
-            <Description>
-              {" "}
-              <div dangerouslySetInnerHTML={{ __html: props.data.website }} />
-            </Description>
-          </FooterIconInfo>
+              <Description>
+                {" "}
+                <div dangerouslySetInnerHTML={{ __html: props.data.website }} />
+              </Description>
+            </FooterIconInfo>
+          </Link>
         </FooterInfoDiv>
       </FooterInfo>
 

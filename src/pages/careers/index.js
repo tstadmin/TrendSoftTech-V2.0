@@ -16,11 +16,13 @@ const Careers = () => {
   }, [data])
 
   return (
-    <Layout>
-      <Seo title="Careers" description="TrendSoftTech" />
-      <BreadCrumb title="Careers" img="/img/careers/career_Frame.svg" />
-      <InfoCard careers={careers} />
-    </Layout>
+    <div>
+      <Layout>
+        <Seo title="Careers" description="TrendSoftTech" />
+        <BreadCrumb title="Careers" img="/img/careers/career_Frame.svg" />
+        <InfoCard careers={careers} />
+      </Layout>
+    </div>
   )
 }
 

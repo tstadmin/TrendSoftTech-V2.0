@@ -873,22 +873,26 @@ AccessibilityTabs:
         link: "/services/accessibility/"
     - listItem:
         id: 3
+        title: "Web Accessibility"
+        link: "/services/webAccessibility/"    
+    - listItem:
+        id: 4
         title: "Accessible PDF/UA"
         link: "/services/docAccessibility/accessibleExcel"
     - listItem:
-        id: 4
+        id: 5
         title: "Accessible PDF Forms"
         link: "/services/docAccessibility/accessiblePDFForms"
     - listItem:
-        id: 5
+        id: 6
         title: "Accessible Word"
         link: "/services/docAccessibility/accessiblePDFUA"
     - listItem:
-        id: 6
+        id: 7
         title: "Accessible PPT"
         link: "/services/docAccessibility/accessiblePPT"
     - listItem:
-        id: 7
+        id: 8
         title: "Accessible Excel"
         link: "/services/docAccessibility/accessibleWord"             
 ---

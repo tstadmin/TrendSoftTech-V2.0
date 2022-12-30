@@ -3,10 +3,10 @@ import React from "react"
 const ContactInfo = () => {
   return (
     <div className="space-y-6 text-sm sm:text-lg  ">
-      <div className="flex  space-x-4 ">
+      <div className="sm:flex  grid sm:space-x-4   ">
         <img
           src="/img/icons/mail.svg"
-          className="text-4xl w-20 h-20"
+          className="text-4xl sm:w-20 w-14  sm:h-20 h-14 "
           alt="mail images"
         />
         <div className="space-y-1 ">
@@ -17,10 +17,10 @@ const ContactInfo = () => {
           <h1>service@trendsofttech.com</h1>
         </div>
       </div>
-      <div className="flex space-x-4">
+      <div className="sm:flex  grid sm:space-x-4  sm:space-y-0 space-y-3">
         <img
           src="/img/icons/locationpin.svg"
-          className="text-4xl w-20 h-20"
+          className="text-4xl sm:w-20 w-14  sm:h-20 "
           alt="mail images"
         />
         <div className="space-y-1 sm:w-[550px] w-[300px]">
