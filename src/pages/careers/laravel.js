@@ -12,7 +12,7 @@ const Laravel = () => {
   const [laravel, setLaravel] = useState([])
   useEffect(() => {
     setLaravel(data)
-  })
+  }, [data])
 
   return (
     <div>

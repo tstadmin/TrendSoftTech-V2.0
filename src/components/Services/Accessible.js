@@ -8,8 +8,8 @@ const Accessible = props => {
       </Description>
       {props.data.list ? (
         <>
-          {props.data.list?.map(item => (
-            <>
+          {props.data.list?.map((item, idx) => (
+            <div key={item.listItems.id}>
               <Title>{item.listItems.title}</Title>
               <Description>
                 <div
@@ -18,21 +18,21 @@ const Accessible = props => {
                   }}
                 />
               </Description>
-              {item.listItems.list?.map(i => (
-                <DescriptionList>{i.listItems.description}</DescriptionList>
+              {item.listItems.list?.map((i, idx) => (
+                <DescriptionList key={i.listItems.id}>
+                  {i.listItems.description}
+                </DescriptionList>
               ))}
               {item.listItems.data ? (
-                <>
-                  <Description>
-                    <div
-                      dangerouslySetInnerHTML={{ __html: item.listItems.data }}
-                    />
-                  </Description>
-                </>
+                <Description>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: item.listItems.data }}
+                  />
+                </Description>
               ) : (
                 ""
               )}
-            </>
+            </div>
           ))}
         </>
       ) : (

@@ -4,13 +4,13 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import { TabsDiv, TabsHeading } from "./ServicesStyled"
 const Tabs = () => {
   const query = useStaticQuery(tabsData)
-  console.log(query)
+
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.tabs
 
   return (
     <TabsDiv>
       {data.list.map((i, idx) => (
-        <TabsHeading>
+        <TabsHeading key={i.listItem.id}>
           <Link to={i.listItem.link}>{i.listItem.title}</Link>
         </TabsHeading>
       ))}

@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import tw, { styled } from "twin.macro"
 import React from "react"
 import { Description, Hyperlink } from "./CommonStyle"
 const Card = props => {

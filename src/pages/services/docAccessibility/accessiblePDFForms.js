@@ -15,7 +15,7 @@ const AccessiblePDFForms = () => {
   useEffect(() => {
     setAccessibleForm(data)
   }, [data])
-  console.log(data)
+
   return (
     <div>
       <Layout>

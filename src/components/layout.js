@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     setFooter(footerData)
-  }, [data])
+  }, [footerData])
 
   return (
     <div>
