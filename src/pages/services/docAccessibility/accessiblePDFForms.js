@@ -20,7 +20,10 @@ const AccessiblePDFForms = () => {
     <div>
       <Layout>
         <Seo title="Accessibility-PDFForms" description="TrendSoftTech" />
-        <BreadCrumb />
+        <BreadCrumb
+          img="/img/BreadCrumb/docaccessibility.svg"
+          title="Accessible PDF Form"
+        />
         <AccessibilityTabs />
         <ServicesLayout>
           <Accessible data={accessibleForm} />

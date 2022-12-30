@@ -19,7 +19,10 @@ const AccessiblePPT = () => {
     <div>
       <Layout>
         <Seo title="Accessibility-PPT" description="TrendSoftTech" />
-        <BreadCrumb />
+        <BreadCrumb
+          img="/img/BreadCrumb/docaccessibility.svg"
+          title="Accessible PPT"
+        />
         <AccessibilityTabs />
         <ServicesLayout>
           <Accessible data={accessiblePPT} />

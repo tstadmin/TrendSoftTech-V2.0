@@ -176,6 +176,10 @@ home:
           page: "/services/uiUXDesign/"
       - listItem:
           id: "6"
+          title: "Testing"
+          page: "/services/testing/"    
+      - listItem:
+          id: "7"
           title: "Digital Marketing"
           page: "/services/digitalMarketing/"
     contactTitle : "Contact Info"

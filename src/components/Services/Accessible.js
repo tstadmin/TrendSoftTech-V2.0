@@ -1,35 +1,33 @@
 import React from "react"
-
+import { Description, DescriptionList, Title } from "./ServicesStyled"
 const Accessible = props => {
   return (
-    <div className="px-32">
-      <p className="text-base">
+    <div>
+      <Description>
         <div dangerouslySetInnerHTML={{ __html: props.data.description }} />
-      </p>
+      </Description>
       {props.data.list ? (
         <>
           {props.data.list?.map(item => (
             <>
-              <p className="text-2xl font-semibold mt-7">
-                {item.listItems.title}
-              </p>
-              <p className="text-base mt-4">
+              <Title>{item.listItems.title}</Title>
+              <Description>
                 <div
                   dangerouslySetInnerHTML={{
                     __html: item.listItems.description,
                   }}
                 />
-              </p>
+              </Description>
               {item.listItems.list?.map(i => (
-                <li className="mt-2 ml-6">{i.listItems.description}</li>
+                <DescriptionList>{i.listItems.description}</DescriptionList>
               ))}
               {item.listItems.data ? (
                 <>
-                  <p className="text-base mt-4">
+                  <Description>
                     <div
                       dangerouslySetInnerHTML={{ __html: item.listItems.data }}
                     />
-                  </p>
+                  </Description>
                 </>
               ) : (
                 ""

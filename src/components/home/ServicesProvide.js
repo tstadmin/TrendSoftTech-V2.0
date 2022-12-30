@@ -13,11 +13,11 @@ const ServicesProvide = props => {
   return (
     <Services>
       <ServicesTitleDiv>
-        <ServicesTitle>SERVICES</ServicesTitle>
-        <ServicesSubTitle>Services we provide</ServicesSubTitle>
+        <ServicesTitle>{props.servicesProvide.title}</ServicesTitle>
+        <ServicesSubTitle>{props.servicesProvide.subTitle}</ServicesSubTitle>
       </ServicesTitleDiv>
       <ServicesProvideCard>
-        {props.servicesProvide.map((item, id) => (
+        {props.servicesProvide.list?.map((item, id) => (
           <Card
             img={item.listItem.img}
             key={id}

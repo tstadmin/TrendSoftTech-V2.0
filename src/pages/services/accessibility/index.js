@@ -15,7 +15,7 @@ const Accessibility = props => {
   const [accessibilityServices, setAccessibilityServices] = useState([])
 
   useEffect(() => {
-    setAccessibilityServices(data.accessibilityServices.list)
+    setAccessibilityServices(data.accessibilityServices)
   }, [data])
 
   return (

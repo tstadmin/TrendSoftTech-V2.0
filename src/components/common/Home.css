@@ -1,47 +1,25 @@
 
-.main-nav { 
-  list-style: none;
-  position: relative;
-  
+
+.main-nav{
+position: relative;
 }
-.secondlevel-nav{
+.main-nav li .sub-nav {
+  display: none;
+ position: relative
+}
+.sub-nav{
   display: flex;
-  width: 250px;
-}
-.main-nav .secondlevel-nav{
-  display: none;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  font-size: 20px;
+  margin-left: 24%;
+  z-index: 999;
   position: absolute;
-
 }
-.main-nav:hover .secondlevel-nav{
+/* .main-nav li:hover .sub-nav{
   display: block;
-}
-
-.secondlevel-nav .threelevel-nav {
-  display: none;
-  position: absolute;
-  top:1.1rem;
-  
-}
-
-.secondlevel-nav li:hover .threelevel-nav {
-  display: block;
- 
-}
-
-.threelevel-nav .fourlevel-nav{
-  display: none;
-  position: absolute;
-}
-
-.threelevel-nav li:hover .fourlevel-nav{
-  display:block;
-
-}
-
-
-
-
+} */
 
 
 

@@ -19,7 +19,10 @@ const AccessibleWord = () => {
     <div>
       <Layout>
         <Seo title="Accessibility-Word" description="TrendSoftTech" />
-        <BreadCrumb />
+        <BreadCrumb
+          img="/img/BreadCrumb/docaccessibility.svg"
+          title="Accessible Word"
+        />
         <AccessibilityTabs />
         <ServicesLayout>
           <Accessible data={accessibleWord} />
