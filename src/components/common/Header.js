@@ -2,6 +2,11 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import tw from "twin.macro"
 
+import { FaFacebookF } from "react-icons/fa"
+import { TiSocialLinkedin } from "react-icons/Ti"
+
+import { FooterIconLogo, FooterIconStyles } from "../home/HomeStyle.js"
+
 import Navbardata from "../../Data/NavbarData"
 import "./Home.css"
 
@@ -73,6 +78,32 @@ export default function Header(props) {
               </li>
             ))}
           </ul>
+          <div className="px-40 mt-40 pt-8 bg-white h-full flex justify-between">
+            <div className="">
+              <FooterIconLogo>
+                <Link
+                  to="https://www.facebook.com/trendsofttech/"
+                  target="_blank"
+                >
+                  <FooterIconStyles>
+                    <FaFacebookF />
+                  </FooterIconStyles>
+                </Link>
+
+                <Link
+                  to="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE2hU0J4z4P2gAAAYViiW5grJXhnU1sVxZd3Vt3HX2uebekQCjbXcACP3SqWZ6AlHcr8fcP6WPuusSq3zYfhd6_lHKXkaScAYFVGSvEFtEJdCzMRdWo0-YyL5CNJT_y1QnzvXg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftrendsoft-technologies-192645240"
+                  target="_blank"
+                >
+                  <FooterIconStyles>
+                    <TiSocialLinkedin />
+                  </FooterIconStyles>
+                </Link>
+              </FooterIconLogo>
+            </div>
+            <div>
+              <h1 className="text-xl">© 2023 All Rights Reserved.</h1>
+            </div>
+          </div>
         </div>
       </NavBar>
       <div className="flex space-x-4 md:space-x-12">

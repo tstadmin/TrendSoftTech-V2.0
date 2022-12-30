@@ -184,7 +184,7 @@ export const FooterHr = styled.div`
   ${tw`border-black border`}
 `
 export const FooterIconStyles = styled.div`
-  ${tw`text-blue-500 text-center hover:text-white  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl`}
+  ${tw`text-blue-500 text-center hover:text-white  shadow-black/50 border-black/10  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl`}
 `
 export const FooterIconLogo = styled.div`
   ${tw`flex gap-2 text-start`}
