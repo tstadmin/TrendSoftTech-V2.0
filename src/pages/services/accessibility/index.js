@@ -21,7 +21,10 @@ const Accessibility = props => {
   return (
     <Layout>
       <Seo title="Accessibility" description="TrendSoftTech" />
-      <BreadCrumb title="Accessibility" img={AccessImg} />
+      <BreadCrumb
+        title="Accessibility"
+        img="/img/BreadCrumb/Accessibility.svg"
+      />
       <AccessibilityTabs />
       <AccessibilityServices accessibilityServices={accessibilityServices} />
     </Layout>
