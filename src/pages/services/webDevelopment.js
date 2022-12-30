@@ -17,7 +17,6 @@ const WebDevelopment = () => {
   useEffect(() => {
     setWebDevelopment(data)
   }, [data])
-  console.log(data)
   return (
     <div>
       <Layout>
