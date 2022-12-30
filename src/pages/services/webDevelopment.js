@@ -16,6 +16,7 @@ const WebDevelopment = () => {
   useEffect(() => {
     setWebDevelopment(data)
   }, [data])
+
   return (
     <div>
       <Layout>
@@ -26,7 +27,7 @@ const WebDevelopment = () => {
         />
         <Tabs />
         <ServicesLayout>
-          <Development data={data} />
+          <Development data={webDevelopment} />
         </ServicesLayout>
       </Layout>
     </div>

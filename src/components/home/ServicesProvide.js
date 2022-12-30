@@ -9,7 +9,6 @@ import {
 } from "./HomeStyle"
 
 const ServicesProvide = props => {
-  console.log(props)
   return (
     <Services>
       <ServicesTitleDiv>

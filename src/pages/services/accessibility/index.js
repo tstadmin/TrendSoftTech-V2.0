@@ -4,8 +4,6 @@ import BreadCrumb from "../../../components/common/BreadCrumb"
 import AccessibilityServices from "../../../components/home/AccessibilityServices"
 import Layout from "../../../components/layout"
 
-import AccessImg from "../../../../static/img/services/Accessibility2.svg"
-import GrowYourBusinnes from "../../../components/common/GrowYourBusinnes"
 import AccessibilityTabs from "../../../components/services/AccessibilityTabs"
 import Seo from "../../../components/seo"
 

@@ -13,7 +13,7 @@ const Designer = () => {
   const [designer, setDesigner] = useState([])
   useEffect(() => {
     setDesigner(data)
-  })
+  }, [data])
 
   return (
     <div>

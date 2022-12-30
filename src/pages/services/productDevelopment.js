@@ -6,7 +6,6 @@ import Development from "../../components/Services/Development"
 import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
 
-import ProductDevelopmentImg from "../../../static/img/services/Product_Development.svg"
 import Seo from "../../components/seo"
 
 const ProductDevelopment = () => {

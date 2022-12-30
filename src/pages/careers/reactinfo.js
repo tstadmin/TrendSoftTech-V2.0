@@ -12,8 +12,8 @@ const Reactinfo = () => {
   const [react, setReact] = useState([])
   useEffect(() => {
     setReact(data)
-  })
-  console.log(react)
+  }, [data])
+
   return (
     <div>
       <Layout>

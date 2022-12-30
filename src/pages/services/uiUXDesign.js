@@ -6,7 +6,6 @@ import Development from "../../components/Services/Development"
 import Tabs from "../../components/services/Tabs"
 import ServicesLayout from "../../components/ServicesLayout"
 
-import UiUXDesignImg from "../../../static/img/services/Ui_UX_Design.svg"
 import Seo from "../../components/seo"
 
 const UiUXDesign = () => {
