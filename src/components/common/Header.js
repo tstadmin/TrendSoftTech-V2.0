@@ -6,7 +6,7 @@ import Navbardata from "../../Data/NavbarData"
 import "./Home.css"
 
 export default function Header(props) {
-  const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[500]`
+  const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[100]`
   const NavBar = tw.div`flex items-center space-x-14 sticky top-0 z-10`
 
   const [nav, setNav] = useState(false)
@@ -33,32 +33,33 @@ export default function Header(props) {
               : "fixed -left-[160%] "
           }
         >
-          <ul className="main-nav">
+          <ul className="main-Menu">
             {Navbardata.map((item, id) => (
               <li className="lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6  ">
                 <Link to={item.page}>
                   <h1>{item.title}</h1>
                 </Link>
-
-                {item.subtitle.map((subitem, id) => (
-                  <ul className="sub-nav">
-                    <li>
-                      {subitem.title}
-                      {/* {subitem.secondsubtitle.map((i, id) => (
-                        <ul className="threelevel-nav">
-                          <li className="text-xl">
-                            {i.title}
-                            {i.threesubtitle.map((list, id) => (
-                              <ul className="fourlevel-nav">
-                                <li className="text-xl">{list.title}</li>
-                              </ul>
-                            ))}
+                <ul className="Sub-Menu ">
+                  {item.subtitle.map((subitem, id) => (
+                    <li className="lg:text-4xl">
+                      <Link to={item.page}>{subitem.title}</Link>
+                      <ul className="Nested-Menu">
+                        {subitem.secondsubtitle.map((i, id) => (
+                          <li className="lg:text-4xl">
+                            <Link to={item.page}> {i.title}</Link>
+                            <ul className="Sub-Nested-Menu">
+                              {i.threesubtitle.map((list, id) => (
+                                <li className="text-xl">
+                                  <Link to={item.page}>{list.title}</Link>
+                                </li>
+                              ))}
+                            </ul>
                           </li>
-                        </ul>
-                      ))} */}
+                        ))}
+                      </ul>
                     </li>
-                  </ul>
-                ))}
+                  ))}
+                </ul>
               </li>
             ))}
           </ul>
@@ -89,8 +90,3 @@ export default function Header(props) {
     </Div>
   )
 }
-
-// text-2xl ml-[15%] absolute z-50 flex-shrink-0
-// text-2xl next-nav ml-[15%]
-// ml-[15%] absolute z-50
-// text-2xl ml-[18%]

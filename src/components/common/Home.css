@@ -1,81 +1,44 @@
-
-
-.main-nav{
-position: relative;
+*{
+    margin: 0%;
+    padding: 0%;
 }
-.main-nav li .sub-nav {
-  display: none;
- position: relative
-}
-.sub-nav{
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  width: 100%;
-  font-size: 20px;
-  margin-left: 24%;
-  z-index: 999;
-  position: absolute;
-}
-/* .main-nav li:hover .sub-nav{
-  display: block;
-} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ul{
-    position: relative;  
-}
-.main li  ul li {
- background-color: red;
- display: none;
- position: absolute;
- 
-}
-.subnav{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
-.main li:hover ul li  {
-    display: block;
-    background-color: black;
-} */
-
-/* .subnav .next-nav{
+.main-Menu li  .Sub-Menu{
     display: none;
-    margin-left: 2%;
-} */
-/* .subnav:hover .next-nav{
-    display: block;
-} */
+    z-index: 200;
+    position: absolute;
+    left: 27%;
+    top: 35%;
 
-
-/* .next-nav .sub-next{
-    display: none;
-    margin-left: 2%;
 }
-.next-nav:hover .sub-next{
+
+.main-Menu li:hover .Sub-Menu{
     display: block;
-} */
+}
+
+.Sub-Menu li .Nested-Menu{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    left: 77%;
+    top: 0%;
+    width: 100%;
+}
+
+.Sub-Menu li:hover .Nested-Menu{
+    display: block;
+}
+
+
+.Nested-Menu li .Sub-Nested-Menu{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    left: 80%;
+    top: 0%;
+    width: 100%;
+}
+
+.Nested-Menu li:hover .Sub-Nested-Menu{
+    display: inline-block;
+}
