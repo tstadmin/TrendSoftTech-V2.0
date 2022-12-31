@@ -28,7 +28,7 @@ const Card = props => {
             {props.title}
           </p>
 
-          <Description>{props.description}</Description>
+          <Description className="font-serif">{props.description}</Description>
           {props.CTA ? (
             <Hyperlink>
               <Link to={props.page}>{props.CTA}</Link>{" "}

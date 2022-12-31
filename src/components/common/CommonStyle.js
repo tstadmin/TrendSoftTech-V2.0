@@ -22,7 +22,7 @@ export const BreadCrumbInfo = styled.div`
 //-----All  Commer style component  in HomePage Commer folder
 
 export const Description = styled.h3`
-  ${tw`text-lg font-normal text-[#454545] `}
+  ${tw`text-lg font-normal text-[#454545]`}
 `
 export const Hyperlink = styled.h3`
   ${tw`text-lg font-normal text-blue-500 hover:text-black hover:font-semibold`}

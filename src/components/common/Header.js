@@ -42,7 +42,7 @@ export default function Header(props) {
             {Navbardata.map((item, idx) => (
               <li
                 key={item.id}
-                className="uppercase flex lg:text-7xl md:text-4xl text-2xl text-white/60 pl-8 lg:pl-36  hover:text-white mt-6  "
+                className="uppercase flex xl:text-7xl lg:text-3xl text-xl text-white/60 pl-8 2xl:pl-36  hover:text-white mt-6  "
               >
                 <Link to={item.page}>
                   <h1>{item.title}</h1>
@@ -56,16 +56,19 @@ export default function Header(props) {
 
                 <ul className="Sub-Menu font-mono w-[50%] ">
                   {item.subtitle.map((subitem, idx) => (
-                    <li key={subitem.id} className="lg:text-2xl p-2">
-                      <Link to={item.page}>{subitem.title}</Link>
+                    <li key={subitem.id} className="xl:text-2xl text-sm p-2">
+                      <Link to={subitem.page}>{subitem.title}</Link>
                       <ul className="Nested-Menu">
                         {subitem.secondsubtitle.map((i, idx) => (
-                          <li key={i.id} className="lg:text-2xl p-2">
-                            <Link to={item.page}> {i.title}</Link>
+                          <li key={i.id} className="xl:text-2xl text-sm p-2">
+                            <Link to={i.page}> {i.title}</Link>
                             <ul className=" Sub-Nested-Menu">
                               {i.threesubtitle.map((list, idx) => (
-                                <li key={list.id} className="text-2xl p-2">
-                                  <Link to={item.page}>{list.title}</Link>
+                                <li
+                                  key={list.id}
+                                  className="xl:text-2xl text-sm p-2"
+                                >
+                                  <Link to={list.page}>{list.title}</Link>
                                 </li>
                               ))}
                             </ul>
@@ -78,7 +81,7 @@ export default function Header(props) {
               </li>
             ))}
           </ul>
-          <div className="px-40 mt-40 pt-8 bg-white h-full flex justify-between">
+          <div className=" px-40 mt-40  bg-white h-full flex justify-between">
             <div className="">
               <FooterIconLogo>
                 <Link
@@ -100,7 +103,7 @@ export default function Header(props) {
                 </Link>
               </FooterIconLogo>
             </div>
-            <div>
+            <div className="mt-8">
               <h1 className="text-xl">© 2023 All Rights Reserved.</h1>
             </div>
           </div>

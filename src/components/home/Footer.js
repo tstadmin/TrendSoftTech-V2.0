@@ -54,7 +54,10 @@ const Footer = props => {
           <ul>
             <FooterUi>
               {props.data.itService?.map((item, idx) => (
-                <li key={item.listItem.id} className="hover:text-blue-400">
+                <li
+                  key={item.listItem.id}
+                  className="hover:text-blue-400 font-serif"
+                >
                   <Link to={item.listItem.page}>{item.listItem.title}</Link>
                 </li>
               ))}

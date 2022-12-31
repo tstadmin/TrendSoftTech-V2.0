@@ -5,7 +5,7 @@ import Choose from "../../../static/img/AboutImages/Choose.svg"
 const ChooseUs = () => {
   const Div = tw.div`lg:flex   justify-center lg:space-x-20 space-y-10  lg:px-20  px-12 mt-20`
   const Button = tw.button`border bg-blue-400 text-center text-white p-3 rounded-full`
-  const Description = tw.h1`text-lg`
+  const Description = tw.h1`text-lg font-serif`
   const Images = tw.img`md:min-w-[500px] min-w-full`
   const Info = tw.div` basis-1/2 space-y-8`
   return (

@@ -4,7 +4,7 @@ import About from "../../../static/img/AboutImages/AboutUs.svg"
 const AboutUs = () => {
   const Div = tw.div`lg:flex   justify-center lg:space-x-20 space-y-10 xl:px-48 lg:px-20  px-12 mt-20`
   const Button = tw.button`border  bg-black text-center text-white lg:p-3 p-1 rounded-full`
-  const Description = tw.h1`text-lg`
+  const Description = tw.h1`text-lg font-serif`
   const Images = tw.img`md:min-w-[500px] min-w-full`
   const Info = tw.div` space-y-8`
   return (

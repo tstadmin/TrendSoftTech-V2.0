@@ -23,13 +23,13 @@ export const CardReading = styled.h1`
   ${tw`text-blue-500 font-medium mt-4`}
 `
 export const CardDescription = styled.h1`
-  ${tw`text-[#454545] text-[16px]`}
+  ${tw`text-[#454545] text-[16px] font-serif`}
 `
 
 //--------- Services Development And Doc Accessibility component in Service page  --------------------------------
 
 export const Description = styled.h1`
-  ${tw`text-[16px] mt-2 `}
+  ${tw`text-[16px] mt-2 font-serif `}
 `
 export const Title = styled.h1`
   ${tw`md:text-3xl sm:text-2xl text-xl font-semibold mt-7 text-[#146ABA] `}
@@ -38,10 +38,10 @@ export const PhasesTitle = styled.h1`
   ${tw`text-xl font-semibold mt-5`}
 `
 export const PhasesDescription = styled.h1`
-  ${tw`text-[16px] mt-2`}
+  ${tw`text-[16px] mt-2 font-serif`}
 `
 export const DescriptionList = styled.li`
-  ${tw`mt-2 text-[16px]  ml-6`}
+  ${tw`mt-2 text-[16px]  ml-6 `}
 `
 //--------- Tabs component in Service page  --------------------------------
 ////540Screen:grid-cols-2
