@@ -29,19 +29,19 @@ export const BannerSubTitle = styled.h1`
   ${tw`2xl:text-3xl md:text-2xl text-sm font-normal font-mono`}
 `
 export const BannerButton = styled.button`
-  ${tw` sm:text-2xl text-sm  hover:bg-white border-2 border-blue-500 hover:border-[#f37c05]   hover:duration-700  text-white hover:text-blue-500  font-mono bg-blue-500 font-semibold duration-75  px-14 py-2 mb-1 rounded-full`}
+  ${tw` sm:text-2xl text-sm  hover:bg-white border-2 border-blue-500 hover:border-[#f37c05]   hover:duration-700  text-white hover:text-blue-500  font-mono bg-blue-500 font-semibold duration-75  sm:px-14 px-8 py-2 mb-1 rounded-full`}
 `
 export const BannerImageDiv = styled.div`
   ${tw`absolute -z-20`}
 `
 export const BannerImage = styled.img`
-  ${tw`object-cover w-[100vw] lg:h-[91vh]  sm:h-[60vh] h-[30vh]`}
+  ${tw`object-cover w-[100vw] lg:h-[91vh]  sm:h-[60vh] h-[38vh]`}
 `
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
 
 export const AboutOur = styled.div`
-  ${tw`lg:flex grid mt-24 2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20  px-8`}
+  ${tw`lg:flex grid mt-28 2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20  px-8`}
 `
 export const AboutOurInfo = styled.div`
   ${tw`space-y-5 relative`}
@@ -70,7 +70,7 @@ export const AboutOurDotImage = styled.div`
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
 export const BannerItemDiv = styled.div`
-  ${tw`lg:flex grid gap-5 justify-center   2xl:px-48 xl:px-28 lg:px-16 py-14 px-10 mt-36`}
+  ${tw`lg:flex grid gap-5 justify-center   2xl:px-48 xl:px-28 lg:px-16 py-14 px-10 mt-20`}
 `
 
 ///  ----- Services  provide component in HomePage  Home folder--------------------------------
