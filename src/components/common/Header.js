@@ -88,7 +88,7 @@ export default function Header(props) {
 
           {/*  Mobile Menu */}
 
-          <div className="uppercase text-lg font-medium text-white ml-2 440Screen:hidden block">
+          <div className="uppercase text-lg font-medium text-white ml-2 440Screen:hidden block ">
             <Link to="/">
               <h1>Home</h1>
             </Link>
