@@ -188,6 +188,21 @@ home:
     mailLink : ""    
     website : "http://www.trendsofttech.com" 
     websiteLink : ""
+    facebookLink: "https://www.facebook.com/trendsofttech/"
+    linkedinLink: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE2hU0J4z4P2gAAAYViiW5grJXhnU1sVxZd3Vt3HX2uebekQCjbXcACP3SqWZ6AlHcr8fcP6WPuusSq3zYfhd6_lHKXkaScAYFVGSvEFtEJdCzMRdWo0-YyL5CNJT_y1QnzvXg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftrendsoft-technologies-192645240"
+    reserved : "© 2022 All Rights Reserved."    
+about:
+    aboutimg: "/img/AboutImages/AboutUs.svg"
+    Visionimg : "/img/AboutImages/OurVision.svg"
+    chooseimg : "/img/AboutImages/Choose.svg"
+    aboutUs: "aboutUs"
+    aboutUsDescription: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and  Cost-Effective Software solutions. Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions.<br/><br/>With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals."
+    ourVision: "Our Vision"
+    ourVisionDescription: "Our vision is to be the best in providing IT solutions and services with customer excellence and sound business practices."
+    ourMission: " Our Mission"
+    ourMissionDescription : "Our mission is to be a customer focus company, serving our business partners and clients to the best of our ability, while adding value to our clients’ businesses."
+    whychoose: "why choose Us?"
+    whychooseDescription : "Vision + Hard work + Consistency <br/><br/>At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections. We believe that transparency is needed to create trust, and so it is integral part or Trendsoft culture. It gives us utmost confidence to provide a visibility regarding the development process to the clients. Being your technology partner, we make sure to deliver right combination of technologies for your need and excellent result of it."    
 services:
    webDevelopment:
       description: "A strong base in the field of website designing and development services made us one of the best Web Development Company spanned across India.  At Trendsoft, we keep up the pace with deep knowledge, development, and experience to proffer web solutions that are best suited to your business venture. A business website plays a major role in depicting your intentions and goals. Just a company profile is worthless and so we help you build an informative and impressive website to draw the attention of your valuable customers.
@@ -607,6 +622,7 @@ webAccessibility:
              description: "WAI provides an international forum for collaboration among industry, disability organizations, accessibility researchers, government, and individuals interested in web accessibility.<br/><br/>Your contributions to improving usable accessibility of the web-through your own work or through WAI -are greatly appreciated."                                                                                            
 portfolio:
   projects:
+    title: "Our Projects"
     list:
       - listItem:
           id: 1
@@ -800,6 +816,18 @@ careers:
       - listItem:
           id: "10"
           description: "Up-to-date with the latest UI trends, techniques, technologies, web and mobile design."   
+contact : 
+    emailimg : "/img/icons/mail.svg"
+    addressimg : "/img/icons/locationpin.svg"
+    title: "Contact Us"
+    emailTitle: "email:"
+    email: "info@trendsofttech.com" 
+    businessMailTitle: "For Business Inquiries:"      
+    businessEmail: "info@trendsofttech.com" 
+    addressOne: "Address 1:"   
+    addressOneInfo: "Flat No.301 3rd Floor MIG-37 Vasavi Srinivasam Apartment KPHB Colony Road No.1 Kukatpally Hyderabad-500072"  
+    addressTwo: "Address 2:"   
+    addressTwoInfo: "Unit No: 301-302 NRT Tech Park Mangalagiri Bypass Amaravati-522503"          
 serviceCards:
   CTA: "READ MORE"
   list:

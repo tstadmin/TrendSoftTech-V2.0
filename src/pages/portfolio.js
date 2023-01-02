@@ -10,7 +10,7 @@ const Portfolio = () => {
   const query = useStaticQuery(portfolioQuery)
 
   const data =
-    query.allMarkdownRemark.edges[0].node.frontmatter.portfolio.projects.list
+    query.allMarkdownRemark.edges[0].node.frontmatter.portfolio.projects
 
   const [portfolio, setPortfoilo] = useState([])
 
@@ -37,6 +37,7 @@ const portfolioQuery = graphql`
           frontmatter {
             portfolio {
               projects {
+                title
                 list {
                   listItem {
                     id

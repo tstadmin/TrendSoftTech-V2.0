@@ -1,5 +1,6 @@
 import React, { useState } from "react"
-import { Button } from "./Contactstyled"
+import { Button, Form, FormDiv } from "./Contactstyled"
+
 const ContactForm = () => {
   const [data, setData] = useState({
     username: "",
@@ -12,14 +13,14 @@ const ContactForm = () => {
   const changeHandler = e => {
     setData({ ...data, [e.target.name]: e.target.value })
   }
-  const submitHandler = e => {
-    e.preventDefault()
-    console.log(data)
-  }
+  // const submitHandler = e => {
+  //   e.preventDefault()
+  //   console.log(data)
+  // }
   return (
     <div>
-      <form className="md:text-3xl text-lg " onSubmit={submitHandler}>
-        <div className="sm:grid sm:grid-cols-2 grid-cols-0  gap-16 sm:space-y-0 space-y-10 ">
+      <Form>
+        <FormDiv>
           <input
             className="appearance-none bg-transparent outline-none border-b  "
             type="text"
@@ -66,8 +67,8 @@ const ContactForm = () => {
           />
 
           <Button>Submit Now</Button>
-        </div>
-      </form>
+        </FormDiv>
+      </Form>
     </div>
   )
 }

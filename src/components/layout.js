@@ -75,7 +75,10 @@ const layoutQuery = graphql`
                 mail
                 mailLink
                 website
+                facebookLink
+                linkedinLink
                 websiteLink
+                reserved
               }
             }
           }
