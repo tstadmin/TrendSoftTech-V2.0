@@ -28,7 +28,7 @@ export const Navbardata = [
           {
             id: 1,
             title: "Doc Accessibility",
-            page: "/services/docAccessibility/",
+            page: "/services/docAccessibility/accessiblePDFUA/",
             threesubtitle: [
               {
                 id: 1,

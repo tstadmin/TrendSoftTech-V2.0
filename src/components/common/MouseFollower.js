@@ -27,6 +27,6 @@ export default class MouseFollower extends React.Component {
       borderRadius: "50%",
       zIndex: "99999",
     }
-    return <div style={styles} className="duration-[800ms] bg-red-500 " />
+    return <div style={styles} className="duration-[300ms] bg-red-500 " />
   }
 }
