@@ -15,7 +15,7 @@ const ServiceCards = props => {
     <ServiceCardDiv>
       <ServiceCard>
         {TabsData.data.map((value, idx) => (
-          <ServiceCardInfo>
+          <ServiceCardInfo key={value.id}>
             <Card data={value} />
           </ServiceCardInfo>
         ))}

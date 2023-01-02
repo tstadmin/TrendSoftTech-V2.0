@@ -33,20 +33,17 @@ const Footer = props => {
 
           <Description>{props.data.description}</Description>
           <FooterIconLogo>
-            <Link to="https://www.facebook.com/trendsofttech/" target="_blank">
+            <a href={props.data.facebookLink} target="_blank" rel="noreferrer">
               <FooterIconStyles>
                 <FaFacebookF />
               </FooterIconStyles>
-            </Link>
+            </a>
 
-            <Link
-              to="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE2hU0J4z4P2gAAAYViiW5grJXhnU1sVxZd3Vt3HX2uebekQCjbXcACP3SqWZ6AlHcr8fcP6WPuusSq3zYfhd6_lHKXkaScAYFVGSvEFtEJdCzMRdWo0-YyL5CNJT_y1QnzvXg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftrendsoft-technologies-192645240"
-              target="_blank"
-            >
+            <a href={props.data.linkedinLink} target="_blank" rel="noreferrer">
               <FooterIconStyles>
                 <TiSocialLinkedin />
               </FooterIconStyles>
-            </Link>
+            </a>
           </FooterIconLogo>
         </FooterTrendInfo>
         <FooterInfoDiv>
@@ -103,7 +100,7 @@ const Footer = props => {
       </FooterInfo>
 
       <FooterHr />
-      <h1 className="text-center">© 2022 All Rights Reserved.</h1>
+      <h1 className="text-center">{props.data.reserved}.</h1>
     </FooterDiv>
   )
 }

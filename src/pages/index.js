@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import BannerItems from "../components/home/BannerItems"
 
-import { useStaticQuery, graphql } from "gatsby"
 import ServicesProvide from "../components/home/ServicesProvide"
 import AccessibilityServices from "../components/home/AccessibilityServices"
 import WorkingProcess from "../components/home/WorkingProcess"
@@ -14,7 +13,7 @@ import ContactSupport from "../components/home/contactUs24x7/ContactSupport"
 import Seo from "../components/seo"
 
 import Layout from "../components/layout"
-
+import { graphql, useStaticQuery } from "gatsby"
 const Index = () => {
   const query = useStaticQuery(dataQuery)
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.home
