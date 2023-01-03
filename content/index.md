@@ -201,7 +201,7 @@ home:
           title: "Digital Marketing"
           page: "/services/digitalMarketing/"
     contactTitle : "Contact Info"
-    local : "Trendsoft Technologies Pvt. Ltd,Flat #302, 2nd Floor, PKR Complex,Road No. 1, KPHB Colony, Kukatpally, Hyderabad – 500072"
+    local : "Trendsoft Technologies Pvt. Ltd,<br/>Flat #302, 2nd Floor, PKR Complex,Road No. 1, KPHB Colony, Kukatpally, Hyderabad – 500072"
     mail : "info@trendsofttech.com <br/>service@trendsofttech.com " 
     mailLink : ""    
     website : "http://www.trendsofttech.com" 

@@ -25,5 +25,5 @@ export const Description = styled.h3`
   ${tw`text-lg font-Poppins text-[#454545]`}
 `
 export const Hyperlink = styled.h3`
-  ${tw`text-lg font-normal text-blue-500 hover:text-black hover:font-semibold`}
+  ${tw`text-lg font-normal text-blue-500 hover:text-black hover:font-semibold hover:underline hover:underline-offset-4`}
 `

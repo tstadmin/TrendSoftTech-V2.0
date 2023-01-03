@@ -29,7 +29,6 @@ const AboutOurCompany = props => {
         </AboutOurDescription>
 
         <Description>
-          {" "}
           <div
             dangerouslySetInnerHTML={{
               __html: props.aboutOurCompany.description,

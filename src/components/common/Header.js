@@ -93,12 +93,12 @@ export default function Header(props) {
 
           {/*  Mobile Menu */}
 
-          <div className="uppercase text-lg font-medium text-white ml-2 440Screen:hidden block ">
+          <ul className="uppercase text-lg font-medium text-white ml-2 440Screen:hidden block ">
             <Link to="/">
-              <h1>Home</h1>
+              <li>Home</li>
             </Link>
             <Link to="/about/">
-              <h1>About</h1>
+              <li>About</li>
             </Link>
             <Disclosure>
               {({ open }) => (
@@ -133,7 +133,7 @@ export default function Header(props) {
                                 <>
                                   <Disclosure.Button className="flex w-full">
                                     <Link to="/services/docAccessibility/accessiblePDFUA/">
-                                      <span>Doc Accessibility</span>
+                                      <li>Doc Accessibility</li>
                                     </Link>
                                     <IoIosArrowDown
                                       className={`${
@@ -143,66 +143,66 @@ export default function Header(props) {
                                   </Disclosure.Button>
                                   <Disclosure.Panel className="px-4 py-2 text-sm text-white space-y-1">
                                     <Link to="/services/docAccessibility/accessiblePDFUA/">
-                                      <h1>Accessible Pdf/ua</h1>
+                                      <li>Accessible Pdf/ua</li>
                                     </Link>
                                     <Link to="/services/docAccessibility/accessiblePDFForms/">
-                                      <h1>Accessible Pdf Forms </h1>
+                                      <li>Accessible Pdf Forms </li>
                                     </Link>
                                     <Link to="/services/docAccessibility/accessibleWord/">
-                                      <h1>Accessible Word </h1>
+                                      <li>Accessible Word </li>
                                     </Link>
                                     <Link to="/services/docAccessibility/accessibleExcel/">
-                                      <h1>Accessible Excel</h1>
+                                      <li>Accessible Excel</li>
                                     </Link>
                                     <Link to="/services/docAccessibility/accessiblePPT/">
-                                      <h1>Accessible Ppt </h1>
+                                      <li>Accessible Ppt </li>
                                     </Link>
                                   </Disclosure.Panel>
                                 </>
                               )}
                             </Disclosure>
                             <Link to="/services/webAccessibility/">
-                              <h1>Web Accessibility</h1>
+                              <li>Web Accessibility</li>
                             </Link>
                           </Disclosure.Panel>
                         </>
                       )}
                     </Disclosure>
                     <Link to="/services/webDevelopment/">
-                      <h1>Web Development</h1>
+                      <li>Web Development</li>
                     </Link>
                     <Link to="/services/ecommerceDevelopment/">
-                      <h1>Ecommerce Development</h1>
+                      <li>Ecommerce Development</li>
                     </Link>
                     <Link to="/services/productDevelopment/">
-                      <h1>Product Development</h1>
+                      <li>Product Development</li>
                     </Link>
                     <Link to="/services/mobileDevelopment/">
-                      <h1>Mobile Development</h1>
+                      <li>Mobile Development</li>
                     </Link>
                     <Link to="/services/uiUXDesign/">
-                      <h1>Ui/Ux Design</h1>
+                      <li>Ui/Ux Design</li>
                     </Link>
                     <Link to="/services/testing/">
-                      <h1>Testing</h1>
+                      <li>Testing</li>
                     </Link>
                     <Link to="/services/digitalMarketing/">
-                      <h1>Digital Marketing</h1>
+                      <li>Digital Marketing</li>
                     </Link>
                   </Disclosure.Panel>
                 </>
               )}
             </Disclosure>
             <Link to="/portfolio/">
-              <h1>Portfolio</h1>
+              <li>Portfolio</li>
             </Link>
             <Link to="/careers/">
-              <h1>Careers</h1>
+              <li>Careers</li>
             </Link>
             <Link to="/contact/">
-              <h1>Contact</h1>
+              <li>Contact</li>
             </Link>
-          </div>
+          </ul>
 
           {/* FooterIcons & content */}
           <div className=" md:px-40 px-8 mt-40 pt-4  bg-white h-full 540Screen:flex justify-between">
@@ -228,9 +228,7 @@ export default function Header(props) {
               </FooterIconLogo>
             </div>
             <div className="mt-8">
-              <h1 className="sm:text-xl text-md ">
-                © 2023 All Rights Reserved.
-              </h1>
+              <p className="sm:text-xl text-md ">© 2023 All Rights Reserved.</p>
             </div>
           </div>
         </div>
@@ -240,24 +238,22 @@ export default function Header(props) {
 
       <div className="flex space-x-4 md:space-x-12">
         <Link to="/contact/">
-          <button className="border-2 text-2xl border-blue-500 hover:scale-105  hover:bg-blue-500 hover:text-white duration-500  px-6 py-2 rounded-full hidden lg:block">
+          <p className="border-2 text-2xl border-blue-500 rounded-full hover:scale-105  hover:bg-blue-500 hover:text-white duration-500  px-6 py-2  hidden lg:block">
             {props.data.button}
-          </button>
+          </p>
         </Link>
-        <button
+        <p
           onClick={handleNav}
           className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400  pr-8"
         >
           {nav ? (
-            <h1 className="text-white z-30 absolute cursor-pointer">
+            <p className="text-white z-30 absolute cursor-pointer">
               {props.data.closeMenu}
-            </h1>
+            </p>
           ) : (
-            <h1 className="text-black  cursor-pointer">
-              {props.data.openMenu}
-            </h1>
+            <p className="text-black  cursor-pointer">{props.data.openMenu}</p>
           )}
-        </button>
+        </p>
       </div>
     </Div>
   )

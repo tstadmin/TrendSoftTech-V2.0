@@ -43,6 +43,7 @@ const queryData = graphql`
                   listItem {
                     id
                     img
+                    alt
                     title
                     page
                     description

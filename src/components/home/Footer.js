@@ -64,43 +64,51 @@ const Footer = props => {
 
         <FooterInfoDiv>
           <FooterTitle>{props.data.contactTitle}</FooterTitle>
+          <ul>
+            <Link
+              to="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
+              target="_blank"
+            >
+              <FooterIconInfo>
+                <IconSize>
+                  <SlLocationPin />
+                </IconSize>
 
-          <FooterIconInfo>
-            <IconSize>
-              <SlLocationPin />
-            </IconSize>
+                <Description>
+                  <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
+                </Description>
+              </FooterIconInfo>
+            </Link>
+            <Link to="service@trendsofttech.com">
+              <FooterIconInfo>
+                <IconSize>
+                  <AiOutlineMail />
+                </IconSize>
 
-            <Description>{props.data.local}</Description>
-          </FooterIconInfo>
+                <Description>
+                  <div dangerouslySetInnerHTML={{ __html: props.data.mail }} />{" "}
+                </Description>
+              </FooterIconInfo>
+            </Link>
+            <Link to="/">
+              <FooterIconInfo>
+                <IconSize>
+                  <BiLink />
+                </IconSize>
 
-          <FooterIconInfo>
-            <IconSize>
-              <AiOutlineMail />
-            </IconSize>
-
-            <Description>
-              <Link to="">
-                <div dangerouslySetInnerHTML={{ __html: props.data.mail }} />{" "}
-              </Link>
-            </Description>
-          </FooterIconInfo>
-          <Link to="/">
-            <FooterIconInfo>
-              <IconSize>
-                <BiLink />
-              </IconSize>
-
-              <Description>
-                {" "}
-                <div dangerouslySetInnerHTML={{ __html: props.data.website }} />
-              </Description>
-            </FooterIconInfo>
-          </Link>
+                <Description>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: props.data.website }}
+                  />
+                </Description>
+              </FooterIconInfo>
+            </Link>
+          </ul>
         </FooterInfoDiv>
       </FooterInfo>
 
       <FooterHr />
-      <h1 className="text-center">{props.data.reserved}.</h1>
+      <p className="text-center">{props.data.reserved}.</p>
     </FooterDiv>
   )
 }

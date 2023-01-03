@@ -31,7 +31,7 @@ const Card = props => {
           <Description>{props.description}</Description>
           {props.CTA ? (
             <Hyperlink>
-              <Link to={props.page}>{props.CTA}</Link>{" "}
+              <Link to={props.page}>{props.CTA}</Link>
             </Hyperlink>
           ) : (
             ""

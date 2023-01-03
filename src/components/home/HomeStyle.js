@@ -7,7 +7,7 @@ export const Title = styled.h1`
 export const SubTitle = styled.h2`
   ${tw`sm:text-[36px] text-xl text-[#146ABA] font-bold font-mono`}
 `
-export const Description = styled.h6`
+export const Description = styled.p`
   ${tw`text-[16px] text-[#454545] font-Poppins `}
 `
 export const Button = styled.button`
@@ -25,7 +25,7 @@ export const BannerInfoDiv = styled.div`
 export const BannerTitle = styled.h1`
   ${tw`2xl:text-8xl xl:text-7xl md:text-5xl sm:text-6xl text-xl font-mono font-bold `}
 `
-export const BannerSubTitle = styled.h1`
+export const BannerSubTitle = styled.p`
   ${tw`2xl:text-3xl md:text-2xl text-sm font-normal font-mono `}
 `
 export const BannerButton = styled.button`
@@ -54,7 +54,7 @@ export const AbourtDotImages = styled.div`
 export const AboutOurImage = styled.img`
   ${tw`2xl:w-[500px] xl:w-[500px] lg:w-[280px]`}
 `
-export const AboutOurH1 = styled.h1`
+export const AboutOurH1 = styled.h2`
   ${tw`text-[16px] from-neutral-400 font-mono`}
 `
 export const AboutOurH2 = styled.h2`
@@ -81,7 +81,7 @@ export const Services = styled.div`
 export const ServicesTitleDiv = styled.div`
   ${tw`text-center mb-16 space-y-2`}
 `
-export const ServicesTitle = styled.h1`
+export const ServicesTitle = styled.h2`
   ${tw`md:text-lg text-sm font-semibold text-orange-400`}
 `
 export const ServicesSubTitle = styled.p`
@@ -118,10 +118,10 @@ export const AccessibilityImage = styled.img`
 export const Counte = styled.div`
   ${tw`md:flex md:justify-center grid justify-items-center gap-24 md:gap-56  p-6 bg-white `}
 `
-export const CounterNumber = styled.h1`
+export const CounterNumber = styled.p`
   ${tw`text-[50px] font-bold text-[#146ABA]`}
 `
-export const CounterDescription = styled.h6`
+export const CounterDescription = styled.p`
   ${tw`md:text-[20px] font-[400] font-semibold  `}
 `
 ///  ----- ContactUs 24/7 Banner component in HomePage Home  folder--------------------------------
@@ -132,10 +132,10 @@ export const Contact = styled.div`
 export const ContactInfo = styled.div`
   ${tw`space-y-8 text-center`}
 `
-export const ContactDescription = styled.h6`
+export const ContactDescription = styled.p`
   ${tw`text-[20px] font-[400]  font-Poppins`}
 `
-export const ContactHeader = styled.h1`
+export const ContactHeader = styled.h2`
   ${tw`text-[36px] font-mono font-semibold text-black`}
 `
 
@@ -150,7 +150,7 @@ export const WorkingDescription = styled.p`
 export const WorkingCardNumber = styled.p`
   ${tw`text-5xl text-blue-600 text-orange-400 font-semibold `}
 `
-export const WorkingCardTitle = styled.p`
+export const WorkingCardTitle = styled.h2`
   ${tw`lg:text-3xl  md:text-xl  text-[#146ABA] font-semibold `}
 `
 export const WorkingCard = styled.div`
@@ -169,7 +169,7 @@ export const FooterDiv = styled.div`
 export const FooterInfo = styled.div`
   ${tw`md:flex sm:grid  px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
 `
-export const FooterTitle = styled.p`
+export const FooterTitle = styled.h2`
   ${tw`text-[34px] font-mono font-semibold text-blue-600`}
 `
 export const FooterTrendInfo = styled.div`
@@ -179,7 +179,7 @@ export const FooterTrendInfo = styled.div`
 export const FooterInfoDiv = styled.div`
   ${tw`space-y-3 basis-1/4`}
 `
-export const FooterIconInfo = styled.div`
+export const FooterIconInfo = styled.li`
   ${tw`sm:flex grid mt-4 gap-5 `}
 `
 export const FooterHr = styled.div`
