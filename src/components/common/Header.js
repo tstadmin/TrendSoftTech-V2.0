@@ -238,11 +238,11 @@ export default function Header(props) {
 
       <div className="flex space-x-4 md:space-x-12">
         <Link to="/contact/">
-          <p className="border-2 text-2xl border-blue-500 rounded-full hover:scale-105  hover:bg-blue-500 hover:text-white duration-500  px-6 py-2  hidden lg:block">
+          <button className="border-2 text-2xl border-blue-500 rounded-full hover:scale-105  hover:bg-blue-500 hover:text-white duration-500  px-6 py-2  hidden lg:block">
             {props.data.button}
-          </p>
+          </button>
         </Link>
-        <p
+        <button
           onClick={handleNav}
           className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400  pr-8"
         >
@@ -253,7 +253,7 @@ export default function Header(props) {
           ) : (
             <p className="text-black  cursor-pointer">{props.data.openMenu}</p>
           )}
-        </p>
+        </button>
       </div>
     </Div>
   )

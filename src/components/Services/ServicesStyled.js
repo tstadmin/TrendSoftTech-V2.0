@@ -50,7 +50,7 @@ export const TabsDiv = styled.div`
 `
 
 export const TabsHeading = styled.h1`
-  ${tw`lg:text-lg  text-sm  font-semibold underline underline-offset-8 hover:text-blue-500 active:text-blue-500 cursor-pointer`}
+  ${tw`lg:text-lg  text-sm  font-semibold underline underline-offset-8 hover:text-blue-500 active:text-blue-500 cursor-pointer hover:scale-125 hover:duration-700`}
   & 
     a[aria-current="page"] {
     color: #0b70e1 !important;
