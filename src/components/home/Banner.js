@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import bannerImage from "../../../static/img/HomeImages/home_main_frame_2.svg"
 import {
   BannerDiv,
   BannerInfoDiv,
@@ -28,7 +27,7 @@ const Banner = props => {
       </BannerInfoDiv>
 
       <BannerImageDiv>
-        <BannerImage src={bannerImage} alt="bannerImage" />
+        <BannerImage src={props.banner.image} alt={props.banner.alt} />
       </BannerImageDiv>
     </BannerDiv>
   )

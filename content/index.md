@@ -2,6 +2,7 @@
 home:
   navbar:
     logo: "/img/HomeImages/logo.svg"
+    alt: "TrendSoftech logo image"
     button: contact
     openMenu: "Menu"
     closeMenu: "Close"
@@ -33,26 +34,33 @@ home:
   banner:
     headers: "We Increase your <br/>Business Success"
     title: "Use the modern technology and IT Services"
+    image: "/img/HomeImages/home_main_frame_2.svg"
+    alt: "banner Image"
     CTA: "contact"
   bannerItems:
     - card:
         id: "1"
         img: "/img/icons/AgileProcess.svg"
+        alt: "AgileProcess Image"
         title: "Agile Process"
         description: "We develop enterprise-grade applications employing Agile and Scrum that enables the delivery of  high-priority feature first..."
     - card:
         id: "2"
         img: "/img/icons/FlexibilityinTeamScaling.svg"
+        alt: "Flexibilityin Team Scaling Image"
         title: "Flexibility in Team Scaling"
         description: "Ramp up your team or reduce the number of resources - designers, developers or QAs - anytime as per your needs."
     - card:
         id: "3"
         img: "/img/icons/BestSecurityPractices.svg"
+        alt: "Best Security Practices Image"
         title: "Best Security Practices"
         description: "High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices."
   aboutOurCompany:
     img: "/img/HomeImages/about_Frame.svg"
     imgDot: "/img/HomeImages/Vector1.svg"
+    alt: "about Frame image"
+    altDot: "Vector image"
     title: "ABOUT US"
     header: "About Our Company"
     description: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. <br/> <br/> Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions. <br/> <br/> With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals."
@@ -64,6 +72,7 @@ home:
       - listItem:
           id: "1"
           img: "/img/icons/WebDevelopment.svg"
+          alt: "Web Development Image"
           title: "Web Development"
           description: "A strong base in the field of website designing development services and made us one of  best Web  Development Company spanned across India."
           page: "/services/webDevelopment/"
@@ -71,6 +80,7 @@ home:
       - listItem:
           id: "2"
           img: "/img/icons/EcommerceDevelopment.svg"
+          alt: "Ecommerce Development Image"
           title: "E-Commerce Development"
           description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."
           page: "/services/ecommerceDevelopment/"
@@ -78,6 +88,7 @@ home:
       - listItem:
           id: "3"
           img: "/img/icons/ProductDevelopment.svg"
+          alt: "Product Development Image"
           title: "Product Development"
           description: "We proudly say we are among the best software product development companies because we have a best-in-class.."
           page: "/services/productDevelopment/"
@@ -85,6 +96,7 @@ home:
       - listItem:
           id: "4"
           img: "/img/icons/MobileDevelopment.svg"
+          alt: "Mobile Development Image"
           title: "Mobile Development"
           description: "we offer full-cycle of mobile app development services including planning, design, integration, and management.."
           page: "/services/mobileDevelopment/"
@@ -92,6 +104,7 @@ home:
       - listItem:
           id: "5"
           img: "/img/icons/UiUXDesign.svg"
+          alt: "Ui UX Design Development Image"
           title: "UI/UX Design"
           description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design,"
           page: "/services/uiUXDesign/"
@@ -99,6 +112,7 @@ home:
       - listItem:
           id: "6"
           img: "/img/icons/DigitalMarketing.svg"
+          alt: "Digital Marketing Development Image"
           title: "Digital Marketing"
           description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
           page: "/services/digitalMarketing/"
@@ -110,17 +124,20 @@ home:
       - listItem:
           id: "1"
           img: "/img/icons/Docaccessibility.svg"
+          alt: "Doc Accessibility Image"
           title: "Doc Accessibility"
           description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
           page: ""
       - listItem:
           id: "2"
           img: "/img/icons/webaccessibility.svg"
+          alt: "Web Accessibility Image"
           title: "Web Accessibility"
           description: "We offers a variety of services to help you make your new or existing website accessible to users ..."
           page: ""
   contactUs24x7:
-    personsImage: "/img/HomeImages/contactFrame.svg"
+    personsImage: "/img/HomeImages/contactus2.svg"
+    alt: "contact Frame image "
     title: "CONTACT US 24/7"
     description: "Have any idea or project for in your mind call us or schedule a appointment. Our representative will reply you shortly."
     CTA: "Contact Us"
@@ -151,6 +168,7 @@ home:
           description: "One the product is accepted by the client we move towards deployment. Our support teams..."
   footer:
     logo: "/img/HomeImages/trendsoftlogo.svg"
+    alt: "logo image"
     description: "At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections."
     itTitle: "IT Services"
     itService: 
@@ -193,8 +211,11 @@ home:
     reserved : "© 2022 All Rights Reserved."    
 about:
     aboutimg: "/img/AboutImages/AboutUs.svg"
+    altAbout: "AboutUs Image "
     Visionimg : "/img/AboutImages/OurVision.svg"
+    altVision: "Our Vision Image"
     chooseimg : "/img/AboutImages/Choose.svg"
+    altChoose: "why choose image"
     aboutUs: "aboutUs"
     aboutUsDescription: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and  Cost-Effective Software solutions. Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions.<br/><br/>With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals."
     ourVision: "Our Vision"
@@ -628,71 +649,85 @@ portfolio:
           id: 1
           title: "EA Labs"
           img: "/img/portfolio/ea.jpg"
+          alt: "images"
           link: "https://ealabsipl.com/"
       - listItem:
           id: 2
           title: "Vijaya Pickels"
           img: "/img/portfolio/vijaya.jpg"
+          alt: "images"
           link: "https://vijayapickles.com/"
       - listItem:
           id: 3
           title: "Quartree Technologies"
           img: "/img/portfolio/quad.jpg"
+          alt: "images"
           link: "https://www.quadtreetech.com/"
       - listItem:
           id: 4
           title: "ProTPD Digital"
           img: "/img/portfolio/pro.jpg"
+          alt: "images"
           link: "https://protpd.com/"
       - listItem:
           id: 5
           title: "Lantrans"
           img: "/img/portfolio/lantrans.jpg"
+          alt: "images"
           link: "https://lantrans.in/"
       - listItem:
           id: 6
           title: "KN Technologies"
           img: "/img/portfolio/knt.jpg"
+          alt: "images"
           link: "https://kntech.co.uk/"
       - listItem:
           id: 7
           title: "SS Companies"
           img: "/img/portfolio/sscom.jpg"
+          alt: "images"
           link: "https://sscompanies.in/"
       - listItem:
           id: 8
           title: "Annapurna de Royal"
           img: "/img/portfolio/annapurna.jpg"
+          alt: "images"
           link: "https://www.annapurnaderoyal.com/"
       - listItem:
           id: 9
           title: "Global Pharma Solutions"
           img: "/img/portfolio/globalpharma.jpg"
+          alt: "images"
           link: "https://gpconsultancy.in/"
       - listItem:
           id: 10
           title: "Chachapoya USA"
           img: "/img/portfolio/chachapoya.jpg"
+          alt: "images"
           link: "https://chachapoyahxm.com/"
       - listItem:
           id: 11
           title: "AL Kasur"
           img: "/img/portfolio/akkasur.jpg"
+          alt: "images"
           link: "https://alkasur.com/"
       - listItem:
           id: 12
           title: "A1 Event Planner"
           img: "/img/portfolio/eventplanner.jpg"
+          alt: "images"
           link: ""
       - listItem:
           id: 13
           title: "Kumar Pumps & Motors"
           img: "/img/portfolio/kumarpumps.jpg"
+          alt: "images"
           link: "https://kumarpumps.co.in/"
       - listItem:
           id: 14
           title: "Trendsoft Technologies"
           img: "/img/portfolio/trendsofttech.jpg"
+          alt: "images"
           link: "/"
 careers:
   heading: "Careers"
@@ -818,7 +853,9 @@ careers:
           description: "Up-to-date with the latest UI trends, techniques, technologies, web and mobile design."   
 contact : 
     emailimg : "/img/icons/mail.svg"
+    altEmail: "mail images"
     addressimg : "/img/icons/locationpin.svg"
+    altAddress: "Address images"
     title: "Contact Us"
     emailTitle: "email:"
     email: "info@trendsofttech.com" 

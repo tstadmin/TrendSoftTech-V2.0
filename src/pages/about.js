@@ -41,8 +41,11 @@ const dataQuery = graphql`
           frontmatter {
             about {
               aboutimg
+              altAbout
               Visionimg
+              altVision
               chooseimg
+              altChoose
               aboutUs
               aboutUsDescription
               ourMission

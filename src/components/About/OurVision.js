@@ -26,7 +26,7 @@ const OurVision = props => {
         </Description>
       </VisionInfo>
 
-      <Image src={props.data.Visionimg} alt="about images" />
+      <Image src={props.data.Visionimg} alt={props.data.altVision} />
     </Div>
   )
 }

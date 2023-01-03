@@ -62,6 +62,8 @@ const dataQuery = graphql`
             home {
               banner {
                 headers
+                image
+                alt
                 title
                 CTA
               }
@@ -69,13 +71,16 @@ const dataQuery = graphql`
                 card {
                   id
                   img
+                  alt
                   title
                   description
                 }
               }
               aboutOurCompany {
                 img
+                alt
                 imgDot
+                altDot
                 header
                 title
                 description
@@ -88,6 +93,7 @@ const dataQuery = graphql`
                     title
                     description
                     img
+                    alt
                     page
                     CTA
                   }
@@ -102,6 +108,7 @@ const dataQuery = graphql`
                   listItem {
                     id
                     img
+                    alt
                     title
                     page
                     description
@@ -111,6 +118,7 @@ const dataQuery = graphql`
               contactUs24x7 {
                 title
                 personsImage
+                alt
                 description
                 CTA
               }

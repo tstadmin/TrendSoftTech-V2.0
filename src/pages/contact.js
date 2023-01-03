@@ -11,7 +11,7 @@ const Contact = () => {
   const [contact, setContact] = useState([])
   useEffect(() => {
     setContact(data)
-  },[data])
+  }, [data])
 
   return (
     <Layout>
@@ -32,7 +32,9 @@ const dataQuery = graphql`
           frontmatter {
             contact {
               emailimg
+              altEmail
               addressimg
+              altAddress
               addressOne
               addressOneInfo
               addressTwo

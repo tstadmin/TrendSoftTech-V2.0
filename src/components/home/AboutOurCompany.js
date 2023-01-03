@@ -14,12 +14,12 @@ import {
 const AboutOurCompany = props => {
   return (
     <AboutOur>
-      <img src={props.aboutOurCompany.img} alt="retget" />
+      <img src={props.aboutOurCompany.img} alt={props.aboutOurCompany.alt} />
       <AboutOurInfo>
         <AboutOurDotImage>
           <AboutOurImage
             src={props.aboutOurCompany.imgDot}
-            alt="aboutUs Image"
+            alt={props.aboutOurCompany.altDot}
           />
         </AboutOurDotImage>
         <AboutOurH2>{props.aboutOurCompany.title}</AboutOurH2>

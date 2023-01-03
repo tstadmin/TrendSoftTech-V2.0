@@ -28,7 +28,7 @@ const Footer = props => {
       <FooterInfo>
         <FooterTrendInfo>
           <Link to="/">
-            <img src={props.data.logo} className="h-32" alt="logo" />
+            <img src={props.data.logo} className="h-32" alt={props.data.alt} />
           </Link>
 
           <Description>{props.data.description}</Description>

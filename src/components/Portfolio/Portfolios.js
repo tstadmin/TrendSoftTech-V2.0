@@ -19,7 +19,7 @@ const Portfolios = props => {
                 {i.listItem.title}
               </Link>
             </CardTitle>
-            <Image src={i.listItem.img} width="250px" alt="portfolio Images" />
+            <Image src={i.listItem.img} width="250px" alt={i.listItem.alt} />
           </PortfoloCard>
         ))}
       </PortfoloDiv>

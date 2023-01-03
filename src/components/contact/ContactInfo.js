@@ -11,7 +11,7 @@ const ContactInfo = props => {
   return (
     <ContactInfoDiv>
       <Info>
-        <Image src={props.data.emailimg} alt="mail images" />
+        <Image src={props.data.emailimg} alt={props.data.altEmail} />
         <EmailInfo>
           <ContactTitle>{props.data.emailTitle} </ContactTitle>
           <h1>{props.data.email} </h1>
@@ -21,7 +21,7 @@ const ContactInfo = props => {
         </EmailInfo>
       </Info>
       <Info>
-        <Image src={props.data.addressimg} alt="mail images" />
+        <Image src={props.data.addressimg} alt={props.data.altAddress} />
         <AdderssInfo>
           <ContactTitle>{props.data.addressOne} </ContactTitle>
           <h1>{props.data.addressOneInfo}</h1>

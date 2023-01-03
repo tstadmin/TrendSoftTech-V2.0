@@ -4,7 +4,7 @@ import { Button, Description, Image, Div, AboutUsInfo } from "./AboutStyle"
 const AboutUs = props => {
   return (
     <Div>
-      <Image src={props.data.aboutimg} alt="about image" />
+      <Image src={props.data.aboutimg} alt={props.data.altAbout} />
       <AboutUsInfo>
         <Button>{props.data.aboutUs}</Button>
         <Description>

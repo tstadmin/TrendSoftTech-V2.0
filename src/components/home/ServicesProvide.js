@@ -19,6 +19,7 @@ const ServicesProvide = props => {
         {props.servicesProvide.list?.map((item, id) => (
           <Card
             img={item.listItem.img}
+            alt={item.listItem.alt}
             key={id}
             title={item.listItem.title}
             description={item.listItem.description}

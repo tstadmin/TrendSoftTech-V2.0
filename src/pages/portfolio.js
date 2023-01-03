@@ -43,6 +43,7 @@ const portfolioQuery = graphql`
                     id
                     title
                     img
+                    alt
                     link
                   }
                 }

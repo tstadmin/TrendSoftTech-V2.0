@@ -24,7 +24,7 @@ const AccessibilityServices = props => {
           <AccessibilityCardInfo key={item.listItem.id}>
             <AccessibilityImage
               src={item.listItem.img}
-              alt="Accessibility Images"
+              alt={item.listItem.alt}
             />
             <AccessibilityInfo>
               <AccessibilityCardTitle>

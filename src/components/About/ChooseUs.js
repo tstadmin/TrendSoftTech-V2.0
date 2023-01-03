@@ -5,9 +5,9 @@ import { Button, Description, Image, Div, ChooseInfo } from "./AboutStyle"
 const ChooseUs = props => {
   return (
     <Div>
-      <Image src={props.data.chooseimg} alt="about image" />
+      <Image src={props.data.chooseimg} alt={props.data.altChoose} />
       <ChooseInfo>
-        <Button>{props.data.ChooseUs}</Button>
+        <Button>{props.data.whychoose}</Button>
 
         <Description>
           <div

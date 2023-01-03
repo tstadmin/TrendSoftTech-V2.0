@@ -61,6 +61,7 @@ const layoutQuery = graphql`
               }
               footer {
                 logo
+                alt
                 description
                 itService {
                   listItem {
