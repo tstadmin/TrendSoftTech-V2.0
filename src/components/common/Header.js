@@ -58,7 +58,7 @@ export default function Header(props) {
                 <div className="sub">
                   <p>{item.subIcon}</p>
                 </div>
-                <ul className="Sub-Menu font-mono w-[50%]">
+                <ul className="Sub-Menu font-mono w-[50%] ">
                   {item.subtitle.map((subitem, idx) => (
                     <li key={subitem.id} className="xl:text-2xl text-sm p-2">
                       <Link to={subitem.page}>{subitem.title}</Link>
