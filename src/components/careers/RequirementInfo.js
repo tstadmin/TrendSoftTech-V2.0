@@ -13,6 +13,7 @@ import {
   FormDiv,
   FormHeading,
   Button,
+  Description,
 } from "./CareersStyle"
 const RequirementInfo = props => {
   return (
@@ -23,7 +24,6 @@ const RequirementInfo = props => {
           December 7, 2022
         </RequirementIcon>
         <RequirementIcon>
-          {" "}
           <MdOutlinePersonOutline />
           admin
         </RequirementIcon>
@@ -35,7 +35,9 @@ const RequirementInfo = props => {
       <RequirementInfoDiv>
         <RequirementInfoheading>{props.data.title}</RequirementInfoheading>
         {props.data.list?.map((item, idx) => (
-          <li key={item.listItem.id}>{item.listItem.description}</li>
+          <Description key={item.listItem.id}>
+            {item.listItem.description}
+          </Description>
         ))}
       </RequirementInfoDiv>
       <FormDiv>

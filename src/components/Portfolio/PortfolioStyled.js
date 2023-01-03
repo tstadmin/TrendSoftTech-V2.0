@@ -3,7 +3,7 @@ import tw, { styled } from "twin.macro"
 //------- Careers InfoCard page style Component  ------------
 
 export const PortfoloHeading = styled.h1`
-  ${tw`text-center md:text-5xl text-2xl my-12 font-mono font-bold`}
+  ${tw`text-center md:text-5xl text-2xl my-12  font-bold`}
 `
 export const PortfoloDiv = styled.div`
   ${tw`grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:px-44 sm:px-24 px-8 gap-16`}

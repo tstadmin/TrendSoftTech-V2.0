@@ -7,11 +7,11 @@ export const Image = styled.img`
 `
 
 export const BreadCrumbSubHeader = styled.h2`
-  ${tw`flex  w-full  justify-center sm:space-x-6 space-x-2 lg:text-[20px]  text-[10px]  font-semibold`}
+  ${tw`flex  w-full  justify-center sm:space-x-6 font-Poppins space-x-2 lg:text-[20px]  text-[10px]  font-medium`}
 `
 
 export const BreadCrumbHeader = styled.h1`
-  ${tw`lg:text-[52px]  sm:text-[22px] text-[10px] font-semibold`}
+  ${tw`lg:text-[52px]  sm:text-[22px] text-[10px] font-semibold font-mono`}
 `
 
 export const BreadCrumbInfo = styled.div`
@@ -22,7 +22,7 @@ export const BreadCrumbInfo = styled.div`
 //-----All  Commer style component  in HomePage Commer folder
 
 export const Description = styled.h3`
-  ${tw`text-lg font-normal text-[#454545]`}
+  ${tw`text-lg font-Poppins text-[#454545]`}
 `
 export const Hyperlink = styled.h3`
   ${tw`text-lg font-normal text-blue-500 hover:text-black hover:font-semibold`}

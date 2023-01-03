@@ -15,13 +15,13 @@ export const CardDiv = styled.div`
   ${tw`space-y-4  hover:shadow-lg shadow-blue-100 hover:duration-500 cursor-pointer bg-black/5 hover:bg-blue-50    min-w-[20%] p-6`}
 `
 export const CardTitle = styled.h1`
-  ${tw`text-xl text-[#146ABA]  font-semibold`}
+  ${tw`text-xl text-[#146ABA]  font-semibold font-mono`}
 `
 export const CardInfoDiv = styled.div`
-  ${tw`space-y-2 text-sm  font-medium`}
+  ${tw`space-y-2 text-sm font-Poppins `}
 `
 export const CardReadDiv = styled.div`
-  ${tw`flex items-center text-[#146ABA]`}
+  ${tw`flex items-center text-[#146ABA] font-Poppins`}
 `
 
 //-------------- Requirement component page form  Careers component --------------------------------
@@ -40,7 +40,10 @@ export const RequirementInfoDiv = styled.div`
   ${tw`space-y-3`}
 `
 export const RequirementInfoheading = styled.h1`
-  ${tw`text-2xl font-semibold`}
+  ${tw`text-2xl font-semibold font-mono`}
+`
+export const Description = styled.li`
+  ${tw`font-Poppins`}
 `
 export const FormDiv = styled.div`
   ${tw`grid border border-black justify-items-center space-y-8 p-7`}

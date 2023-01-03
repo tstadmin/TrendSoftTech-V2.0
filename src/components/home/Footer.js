@@ -47,13 +47,13 @@ const Footer = props => {
           </FooterIconLogo>
         </FooterTrendInfo>
         <FooterInfoDiv>
-          <FooterTitle>IT Services</FooterTitle>
+          <FooterTitle>{props.data.itTitle}</FooterTitle>
           <ul>
             <FooterUi>
               {props.data.itService?.map((item, idx) => (
                 <li
                   key={item.listItem.id}
-                  className="hover:text-blue-400 font-serif"
+                  className="hover:text-blue-400 font-Poppins"
                 >
                   <Link to={item.listItem.page}>{item.listItem.title}</Link>
                 </li>
