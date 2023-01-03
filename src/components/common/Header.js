@@ -53,9 +53,12 @@ export default function Header(props) {
                   <h1>{item.title}</h1>
                 </Link>
 
-                <div className="add">
-                  <p>{item.addIcon}</p>
-                </div>
+                <Link to="">
+                  {" "}
+                  <div className="add">
+                    <p>{item.addIcon}</p>
+                  </div>
+                </Link>
 
                 <div className="sub">
                   <p>{item.subIcon}</p>
