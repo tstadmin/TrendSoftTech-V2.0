@@ -14,7 +14,7 @@ import { Disclosure } from "@headlessui/react"
 import { IoIosArrowDown } from "react-icons/io"
 
 export default function Header(props) {
-  const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8 font-mono sticky top-0 bg-white z-[1] `
+  const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8  sticky top-0 bg-white z-[1] `
   const NavBar = tw.div`flex items-center space-x-14 sticky top-0 z-10`
 
   const [nav, setNav] = useState(false)
@@ -60,7 +60,7 @@ export default function Header(props) {
                 <div className="sub">
                   <p>{item.subIcon}</p>
                 </div>
-                <ul className="Sub-Menu font-mono w-[50%] ">
+                <ul className="Sub-Menu  w-[50%] ">
                   {item.subtitle.map((subitem, idx) => (
                     <li key={subitem.id} className="xl:text-2xl text-sm p-2">
                       <Link to={subitem.page}>{subitem.title}</Link>
@@ -243,7 +243,7 @@ export default function Header(props) {
         </Link>
         <button
           onClick={handleNav}
-          className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400 font-mono pr-8"
+          className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400  pr-8"
         >
           {nav ? (
             <h1 className="text-white z-30 absolute cursor-pointer">

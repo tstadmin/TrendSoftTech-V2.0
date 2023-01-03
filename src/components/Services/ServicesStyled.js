@@ -29,19 +29,19 @@ export const CardDescription = styled.h1`
 //--------- Services Development And Doc Accessibility component in Service page  --------------------------------
 
 export const Description = styled.h1`
-  ${tw`text-[16px] mt-2 font-serif `}
+  ${tw`text-[16px] mt-2 font-Poppins `}
 `
 export const Title = styled.h1`
-  ${tw`md:text-3xl sm:text-2xl text-xl font-semibold mt-7 text-[#146ABA] `}
+  ${tw`md:text-3xl font-mono sm:text-2xl text-xl font-semibold mt-7 text-[#146ABA] `}
 `
 export const PhasesTitle = styled.h1`
-  ${tw`text-xl font-semibold mt-5`}
+  ${tw`text-xl font-semibold mt-5 font-mono`}
 `
 export const PhasesDescription = styled.h1`
-  ${tw`text-[16px] mt-2 font-serif`}
+  ${tw`text-[16px] mt-2  font-Poppins`}
 `
 export const DescriptionList = styled.li`
-  ${tw`mt-2 text-[16px]  ml-6 `}
+  ${tw`mt-2 text-[16px]  ml-6 font-Poppins`}
 `
 //--------- Tabs component in Service page  --------------------------------
 ////540Screen:grid-cols-2

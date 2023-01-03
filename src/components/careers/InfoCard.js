@@ -21,10 +21,9 @@ const InfoCard = props => {
           <CardDiv key={item.listItem.id}>
             <CardTitle>{item.listItem.title}</CardTitle>
             <CardInfoDiv>
-              <div>
-                <h1>{item.listItem.title}</h1>
-                <h1>{props.careers.location}</h1>
-              </div>
+              <h1>{item.listItem.title}</h1>
+              <h1>{props.careers.location}</h1>
+
               <CardReadDiv>
                 <Link to={item.listItem.link}>
                   {" "}

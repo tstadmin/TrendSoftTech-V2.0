@@ -24,11 +24,11 @@ const Card = props => {
             props.CTA ? "lg:text-start text-center " : "text-center"
           }  ${props.access ? "text-start " : "text-center"}  grid`}
         >
-          <p className="2xl:text-2xl xl:text-2xl lg:text-xl text-[#146ABA] sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
+          <p className="font-mono 2xl:text-2xl xl:text-2xl lg:text-xl text-[#146ABA] sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
             {props.title}
           </p>
 
-          <Description className="font-serif">{props.description}</Description>
+          <Description>{props.description}</Description>
           {props.CTA ? (
             <Hyperlink>
               <Link to={props.page}>{props.CTA}</Link>{" "}
