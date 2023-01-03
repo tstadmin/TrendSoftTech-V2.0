@@ -40,7 +40,7 @@ export default function Header(props) {
           className={
             nav
               ? "fixed z-20 right-0 top-0 bg-blue-400 h-screen w-[100%] pt-24 "
-              : "fixed -left-[160%] "
+              : "fixed hidden"
           }
         >
           <ul className="main-Menu group hidden 440Screen:block">
@@ -52,9 +52,11 @@ export default function Header(props) {
                 <Link to={item.page}>
                   <h1>{item.title}</h1>
                 </Link>
+
                 <div className="add">
                   <p>{item.addIcon}</p>
                 </div>
+
                 <div className="sub">
                   <p>{item.subIcon}</p>
                 </div>
@@ -241,7 +243,6 @@ export default function Header(props) {
         </Link>
         <button
           onClick={handleNav}
-          onKeyDown={handleNav}
           className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400 font-mono pr-8"
         >
           {nav ? (

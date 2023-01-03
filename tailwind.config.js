@@ -29,6 +29,9 @@ module.exports = {
 
       "2048Screen": "2048px",
     },
+    fontFamily: {
+      Poppins: "Poppins",
+    },
   },
   plugins: [],
 }
