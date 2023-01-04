@@ -9,13 +9,13 @@ const ChooseUs = props => {
       <ChooseInfo>
         <Button>{props.data.whychoose}</Button>
 
-        <Description>
+        <p>
           <div
             dangerouslySetInnerHTML={{
               __html: props.data.whychooseDescription,
             }}
           />
-        </Description>
+        </p>
       </ChooseInfo>
     </Div>
   )

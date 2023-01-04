@@ -31,7 +31,7 @@ const AccessibilityServices = props => {
                 {item.listItem.title}
               </AccessibilityCardTitle>
 
-              <Description>{item.listItem.description}</Description>
+              <p>{item.listItem.description}</p>
             </AccessibilityInfo>
           </AccessibilityCardInfo>
         ))}

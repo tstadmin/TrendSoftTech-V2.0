@@ -5,9 +5,7 @@ import tw, { styled } from "twin.macro"
 export const Button = styled.button`
   ${tw`border bg-blue-400 text-center text-white p-3 rounded-full`}
 `
-export const Description = styled.h1`
-  ${tw`text-lg font-Poppins`}
-`
+
 export const Image = styled.img`
   ${tw`space-y-5  mt-10`}
 `

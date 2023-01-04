@@ -16,11 +16,11 @@ export const ServiceCardInfo = styled.div`
 export const Cards = styled.div`
   ${tw`space-y-4 p-8`}
 `
-export const CardHanding = styled.h1`
-  ${tw`font-bold text-[#146ABA] sm:text-[22px] text-[20px]`}
+export const CardHanding = styled.h2`
+  ${tw` text-[#146ABA] `}
 `
-export const CardReading = styled.h1`
-  ${tw`text-blue-500 font-medium mt-4`}
+export const CardReading = styled.p`
+  ${tw`text-blue-500  mt-4 hover:text-orange-500`}
 `
 export const CardDescription = styled.h1`
   ${tw`text-[#454545] text-[16px] font-serif`}
@@ -28,17 +28,17 @@ export const CardDescription = styled.h1`
 
 //--------- Services Development And Doc Accessibility component in Service page  --------------------------------
 
-export const Description = styled.h1`
-  ${tw`text-[16px] mt-2 font-Poppins `}
+export const Description = styled.p`
+  ${tw`mt-5`}
 `
-export const Title = styled.h1`
-  ${tw`md:text-3xl font-mono sm:text-2xl text-xl font-semibold mt-7 text-[#146ABA] `}
+export const Title = styled.h3`
+  ${tw` text-[#146ABA] mt-5 `}
 `
-export const PhasesTitle = styled.h1`
-  ${tw`text-xl font-semibold mt-5 font-mono`}
+export const PhasesTitle = styled.h2`
+  ${tw`mt-5`}
 `
-export const PhasesDescription = styled.h1`
-  ${tw`text-[16px] mt-2  font-Poppins`}
+export const PhasesDescription = styled.p`
+  ${tw`mt-2 `}
 `
 export const DescriptionList = styled.li`
   ${tw`mt-2 text-[16px]  ml-6 font-Poppins`}
@@ -49,8 +49,8 @@ export const TabsDiv = styled.div`
   ${tw`grid xl:grid-cols-4  md:grid-cols-3 sm:grid-cols-2 grid-cols-1  justify-items-center  gap-8 md:px-24 px-6 mt-24 mb-24`}
 `
 
-export const TabsHeading = styled.h1`
-  ${tw`lg:text-lg  text-sm  font-semibold underline underline-offset-8 hover:text-blue-500 active:text-blue-500 cursor-pointer hover:scale-125 hover:duration-700`}
+export const TabsHeading = styled.h2`
+  ${tw` underline underline-offset-8 hover:text-blue-500 active:text-blue-500 cursor-pointer hover:scale-125 hover:duration-700`}
   & 
     a[aria-current="page"] {
     color: #0b70e1 !important;

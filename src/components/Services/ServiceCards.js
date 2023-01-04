@@ -28,10 +28,10 @@ const Card = ({ data }) => {
   return (
     <Cards>
       <CardHanding>{data.title}</CardHanding>
-      <CardDescription>{data.description}</CardDescription>
-      <Link to={data.link}>
-        <CardReading>{TabsData.metaData.CTA}</CardReading>
-      </Link>
+      <p>{data.description}</p>
+      <CardReading>
+        <Link to={data.link}>{TabsData.metaData.CTA}</Link>
+      </CardReading>
     </Cards>
   )
 }

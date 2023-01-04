@@ -7,7 +7,7 @@ const Card = props => {
       <div
         className={`${
           props.CTA
-            ? "lg:flex grid border border-sky-300  max-w-[530px] gap-5 min-h-[300px] lg:justify-items-start justify-items-center rounded-lg"
+            ? "lg:flex grid border border-sky-300 max-w-[500px] 2xl:gap-8 gap-4 min-h-[300px] lg:justify-items-start justify-items-center rounded-lg"
             : "grid border border-sky-300 rounded-lg max-w-[530px]  min-h-[300px] justify-items-center"
         }
           ${
@@ -15,20 +15,20 @@ const Card = props => {
               ? "hover:shadow-2xl  hover:border-sky-50 hover:duration-300 hover:cursor-pointer hover:shadow-blue-300"
               : "none"
           }
-          2xl:p-5 xl:p-5 lg:p-7 md:p-6 sm:p-3 540Screen:p-7 440Screen:p-8 340Screen:p-5 p-5 bg-white`}
+            lg:p-8    md:p-8 p-5 bg-white`}
       >
-        <img src={props.img} alt={props.alt} className="w-[85px] h-[85px]" />
+        <img src={props.img} alt="" className="w-[85px] h-[85px]" />
 
         <div
           className={`  ${
-            props.CTA ? "lg:text-start text-center " : "text-center"
-          }  ${props.access ? "text-start " : "text-center"}  grid`}
+            props.CTA
+              ? "lg:text-start text-center 2xl:-space-y-5 md:space-y-3  space-y-5 "
+              : "text-center"
+          }    grid`}
         >
-          <p className="font-mono 2xl:text-2xl xl:text-2xl lg:text-xl text-[#146ABA] sm:text-lg 540Screen:text-xl  440Screen:text-xl 340Screen:text-xl text-lg font-semibold">
-            {props.title}
-          </p>
+          <h2 className="text-[#146ABA]">{props.title}</h2>
 
-          <Description>{props.description}</Description>
+          <p>{props.description}</p>
           {props.CTA ? (
             <Hyperlink>
               <Link to={props.page}>{props.CTA}</Link>

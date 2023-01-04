@@ -168,7 +168,7 @@ home:
           description: "One the product is accepted by the client we move towards deployment. Our support teams..."
   footer:
     logo: "/img/HomeImages/trendsoftlogo.svg"
-    alt: "logo image"
+    alt: "trendsoft tect logo image"
     description: "At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections."
     itTitle: "IT Services"
     itService: 
@@ -201,7 +201,7 @@ home:
           title: "Digital Marketing"
           page: "/services/digitalMarketing/"
     contactTitle : "Contact Info"
-    local : "Trendsoft Technologies Pvt. Ltd,<br/>Flat #302, 2nd Floor, PKR Complex,Road No. 1, KPHB Colony, Kukatpally, Hyderabad – 500072"
+    local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
     mail : "info@trendsofttech.com <br/>service@trendsofttech.com " 
     mailLink : ""    
     website : "http://www.trendsofttech.com" 
@@ -862,7 +862,7 @@ contact :
     businessMailTitle: "For Business Inquiries:"      
     businessEmail: "info@trendsofttech.com" 
     addressOne: "Address 1:"   
-    addressOneInfo: "Flat No.301 3rd Floor MIG-37 Vasavi Srinivasam Apartment KPHB Colony Road No.1 Kukatpally Hyderabad-500072"  
+    addressOneInfo: "MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"  
     addressTwo: "Address 2:"   
     addressTwoInfo: "Unit No: 301-302 NRT Tech Park Mangalagiri Bypass Amaravati-522503"          
 serviceCards:

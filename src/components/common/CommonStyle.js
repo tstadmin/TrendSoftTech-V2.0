@@ -11,7 +11,7 @@ export const BreadCrumbSubHeader = styled.h2`
 `
 
 export const BreadCrumbHeader = styled.h1`
-  ${tw`lg:text-[52px]  sm:text-[22px] text-[10px] font-semibold font-mono`}
+  ${tw`lg:text-[52px]  sm:text-[22px] text-[10px] font-semibold `}
 `
 
 export const BreadCrumbInfo = styled.div`
@@ -21,9 +21,6 @@ export const BreadCrumbInfo = styled.div`
 
 //-----All  Commer style component  in HomePage Commer folder
 
-export const Description = styled.h3`
-  ${tw`text-lg font-Poppins text-[#454545]`}
-`
 export const Hyperlink = styled.h3`
-  ${tw`text-lg font-normal text-blue-500 hover:text-black hover:font-semibold hover:underline hover:underline-offset-4`}
+  ${tw`sm:text-lg text-base font-normal text-blue-500 hover:text-orange-500 hover:font-semibold hover:underline hover:underline-offset-4`}
 `
