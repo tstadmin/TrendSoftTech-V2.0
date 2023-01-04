@@ -5,8 +5,8 @@ import tw from "twin.macro"
 import Navbardata from "../../Data/NavbarData"
 
 export default function Header(props) {
-  const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8  sticky top-0 bg-white z-[1] `
-  const NavBar = tw.div`flex items-center space-x-14 sticky top-0 z-10`
+  const NavBar = tw.div`flex items-center space-x-14 sticky top-6 z-10`
+  const Underline = tw.span`bg-left-bottom bg-gradient-to-r from-orange-500 to-orange-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out`
 
   const [nav, setNav] = useState(false)
 
@@ -15,7 +15,7 @@ export default function Header(props) {
   }
 
   return (
-    <Div>
+    <div className=" flex items-center justify-between py-4  2xl:px-24 440Screen:px-8 px-4 sticky sm:top-6 top-4 bg-white z-[1]">
       <NavBar>
         {/* Logo */}
         <Link to="/">
@@ -26,171 +26,64 @@ export default function Header(props) {
           />
         </Link>
 
-        {/* Desktop Menu */}
+        {/*  Menu bar */}
 
         <div
           className={
             nav
-              ? "fixed z-20 right-0 top-[9.5%] bg-[#0084FF] h-[60%] w-[100%] pt-6"
+              ? "fixed z-20 right-0 1920Screen:top-[12.4%] 2xl:top-[12.8%] sm:top-[13%] top-[11%]  bg-[#0084FF] sm:h-[70vh]  h-[100vh] w-[100%] pt-6"
               : "fixed hidden "
           }
         >
-          <ul className="flex pl-8 2xl:pl-48 space-x-20 ">
+          <ul className="xl:flex 440Screen:pl-10 pl-4 2xl:pl-32 1920Screen:space-x-36  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {Navbardata.map((item, idx) => (
               <li
                 key={item.id}
-                className="uppercase  text-white/60  mt-6 text-lg font-medium "
+                className="uppercase  text-white mt-6 sm:text-2xl text-sm font-medium "
               >
-                {item.title}
-                <ul className="space-y-2 mt-4 text-base font-normal ">
+                <Link to={item.page}>{item.title}</Link>
+                <ul className="space-y-2 mt-4 sm:text-base font-normal ">
                   {item.subtitle.map((subItem, idx) => (
-                    <li className="hover:text-[#FFC93C] ">{subItem.title}</li>
+                    <li className="hover:text-[#FFC93C] text-white/60 sm:text-lg text-xs">
+                      <Link to={subItem.page}>{subItem.title}</Link>
+                    </li>
                   ))}
                 </ul>
               </li>
             ))}
           </ul>
-
-          {/*  Mobile Menu */}
-
-          {/* <ul className="uppercase text-lg font-medium text-white ml-2 440Screen:hidden block ">
-            <Link to="/">
-              <li>Home</li>
-            </Link>
-            <Link to="/about/">
-              <li>About</li>
-            </Link>
-            <Disclosure>
-              {({ open }) => (
-                <>
-                  <Disclosure.Button className="flex w-full">
-                    <Link to="/services/">
-                      <span>Services</span>
-                    </Link>
-                    <IoIosArrowDown
-                      className={`${
-                        open ? "rotate-180 transform" : ""
-                      } h-4 w-4 text-white my-[2%] ml-4`}
-                    />
-                  </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 py-2 text-sm text-white space-y-1">
-                    <Disclosure>
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button className="flex w-full">
-                            <Link to="/services/accessibility/">
-                              <span>Accessibility</span>
-                            </Link>
-                            <IoIosArrowDown
-                              className={`${
-                                open ? "rotate-180 transform" : ""
-                              } h-4 w-4 text-white my-[1%] ml-4 `}
-                            />
-                          </Disclosure.Button>
-                          <Disclosure.Panel className="px-4 py-2  text-sm text-white space-y-1">
-                            <Disclosure>
-                              {({ open }) => (
-                                <>
-                                  <Disclosure.Button className="flex w-full">
-                                    <Link to="/services/docAccessibility/accessiblePDFUA/">
-                                      <li>Doc Accessibility</li>
-                                    </Link>
-                                    <IoIosArrowDown
-                                      className={`${
-                                        open ? "rotate-180 transform" : ""
-                                      } h-4 w-4 text-white my-[1%] ml-4`}
-                                    />
-                                  </Disclosure.Button>
-                                  <Disclosure.Panel className="px-4 py-2 text-sm text-white space-y-1">
-                                    <Link to="/services/docAccessibility/accessiblePDFUA/">
-                                      <li>Accessible Pdf/ua</li>
-                                    </Link>
-                                    <Link to="/services/docAccessibility/accessiblePDFForms/">
-                                      <li>Accessible Pdf Forms </li>
-                                    </Link>
-                                    <Link to="/services/docAccessibility/accessibleWord/">
-                                      <li>Accessible Word </li>
-                                    </Link>
-                                    <Link to="/services/docAccessibility/accessibleExcel/">
-                                      <li>Accessible Excel</li>
-                                    </Link>
-                                    <Link to="/services/docAccessibility/accessiblePPT/">
-                                      <li>Accessible Ppt </li>
-                                    </Link>
-                                  </Disclosure.Panel>
-                                </>
-                              )}
-                            </Disclosure>
-                            <Link to="/services/webAccessibility/">
-                              <li>Web Accessibility</li>
-                            </Link>
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
-                    <Link to="/services/webDevelopment/">
-                      <li>Web Development</li>
-                    </Link>
-                    <Link to="/services/ecommerceDevelopment/">
-                      <li>Ecommerce Development</li>
-                    </Link>
-                    <Link to="/services/productDevelopment/">
-                      <li>Product Development</li>
-                    </Link>
-                    <Link to="/services/mobileDevelopment/">
-                      <li>Mobile Development</li>
-                    </Link>
-                    <Link to="/services/uiUXDesign/">
-                      <li>Ui/Ux Design</li>
-                    </Link>
-                    <Link to="/services/testing/">
-                      <li>Testing</li>
-                    </Link>
-                    <Link to="/services/digitalMarketing/">
-                      <li>Digital Marketing</li>
-                    </Link>
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
-            <Link to="/portfolio/">
-              <li>Portfolio</li>
-            </Link>
-            <Link to="/careers/">
-              <li>Careers</li>
-            </Link>
-            <Link to="/contact/">
-              <li>Contact</li>
-            </Link>
-          </ul> */}
         </div>
       </NavBar>
 
       {/* Contact Button */}
 
-      <div className="flex space-x-4 md:space-x-12">
+      <div className="flex space-x-4 md:space-x-12 ">
         <Link to="/contact/">
-          <p className="text-2xl hover:scale-105 duration-500  px-6 py-2  hidden lg:block">
-            {props.data.button}
+          <p className="text-2xl hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block  group transition">
+            <Underline>{props.data.button}</Underline>
           </p>
         </Link>
         <Link to="/careers/">
-          <p className="text-2xl hover:scale-105 duration-500  px-6 py-2  hidden lg:block">
-            Careers
+          <p className="text-2xl hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block group transition ">
+            <Underline>Careers</Underline>
           </p>
         </Link>
         <button
           onClick={handleNav}
-          className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400 
+          className=" block sm:text-2xl text-md  hover:text-blue-400 
            pr-8"
         >
           {nav ? (
-            <p className="text-black  cursor-pointer">{props.data.closeMenu}</p>
+            <h2 className="cursor-pointer text-[#0084FF] group transition">
+              <Underline>{props.data.closeMenu}</Underline>
+            </h2>
           ) : (
-            <p className="text-black  cursor-pointer">{props.data.openMenu}</p>
+            <h2 className="cursor-pointer text-[#0084FF] group transition">
+              <Underline>{props.data.openMenu}</Underline>
+            </h2>
           )}
         </button>
       </div>
-    </Div>
+    </div>
   )
 }
