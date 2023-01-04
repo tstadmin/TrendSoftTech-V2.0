@@ -38,7 +38,7 @@ export const Navbardata = [
   },
   {
     id: 3,
-    page: "/services/",
+    page: "/services/testing/",
     title: "Testing",
     subtitle: [
       {
@@ -55,13 +55,13 @@ export const Navbardata = [
   },
   {
     id: 4,
-    page: "/services/",
+    page: "/services/accessibility/accessibility/",
     title: "Accessibility",
     subtitle: [
       {
         id: 1,
         title: "Doc Accessibility",
-        page: "/services/docAccessibility/accessibleExcel",
+        page: "/services/docAccessibility/accessibleExcel/",
       },
       {
         id: 2,
