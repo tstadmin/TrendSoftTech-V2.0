@@ -20,18 +20,18 @@ export const BannerDiv = styled.div`
   ${tw`flex relative`}
 `
 export const BannerInfoDiv = styled.div`
-  ${tw`sm:space-y-14 space-y-4 sm:py-24  py-12 2xl:w-[70vw]  2xl:h-[100vh] lg:w-[65vw]  lg:h-[95vh] sm:h-[60vh] h-[30vh] sm:pl-20 lg:pl-48 pl-8 lg:pt-32 `}
+  ${tw`sm:space-y-14 space-y-4 sm:py-24  py-12 2xl:w-[70vw]  2xl:h-[100vh] lg:w-[65vw]   lg:h-[95vh] sm:w-[80vw] sm:h-[60vh] h-[30vh] lg:pl-20 2xl:pl-48 pl-8 lg:pt-32 `}
 `
 export const BannerTitle = styled.h1`
-  ${tw`2xl:text-8xl xl:text-7xl md:text-5xl sm:text-6xl text-xl  font-bold `}
+  ${tw`2xl:text-8xl xl:text-7xl md:text-5xl sm:text-5xl text-2xl text-[#E6202D] font-bold `}
 `
 export const BannerSubTitle = styled.p`
-  ${tw`2xl:text-3xl md:text-2xl text-sm font-normal  `}
+  ${tw`2xl:text-3xl md:text-2xl text-sm font-normal text-[#1D54A8] `}
 `
 export const BannerButton = styled.button`
   ${tw`
-   sm:text-2xl text-sm  hover:bg-white border-2 border-blue-500 hover:border-[#f37c05]   
-   hover:duration-700  text-white hover:text-blue-500   bg-blue-500 font-semibold duration-75
+   sm:text-2xl text-sm  hover:bg-white hover:scale-105 border-2 border-blue-500 hover:border-[#f37c05]   
+   hover:duration-700  text-white hover:text-orange-500   bg-blue-500 font-semibold duration-75
      sm:px-14 mb-1 rounded-full p-3
      
      `}

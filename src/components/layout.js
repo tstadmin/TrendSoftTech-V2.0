@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./common/Header"
 import OnclickTop from "./common/OnClickScrollToTop"
 import Footer from "./home/Footer"
+import TopBar from "./common/TopBar"
 
 const Layout = ({ children }) => {
   const query = useStaticQuery(layoutQuery)
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <div>
+      <TopBar />
       <OnclickTop />
       <Header data={data} />
       {children}
