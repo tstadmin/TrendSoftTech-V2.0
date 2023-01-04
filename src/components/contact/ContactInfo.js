@@ -13,21 +13,21 @@ const ContactInfo = props => {
       <Info>
         <Image src={props.data.emailimg} alt={props.data.altEmail} />
         <EmailInfo>
-          <ContactTitle>{props.data.emailTitle} </ContactTitle>
-          <h1>{props.data.email} </h1>
+          <h2>{props.data.emailTitle} </h2>
+          <p>{props.data.email} </p>
 
-          <ContactTitle>{props.data.businessMailTitle} </ContactTitle>
-          <h1>{props.data.businessEmail} </h1>
+          <h2>{props.data.businessMailTitle} </h2>
+          <p>{props.data.businessEmail} </p>
         </EmailInfo>
       </Info>
       <Info>
         <Image src={props.data.addressimg} alt={props.data.altAddress} />
         <AdderssInfo>
-          <ContactTitle>{props.data.addressOne} </ContactTitle>
-          <h1>{props.data.addressOneInfo}</h1>
+          <h2>{props.data.addressOne} </h2>
+          <p>{props.data.addressOneInfo}</p>
 
-          <ContactTitle>{props.data.addressTwo} </ContactTitle>
-          <h1>{props.data.addressTwoInfo}</h1>
+          <h2>{props.data.addressTwo} </h2>
+          <p>{props.data.addressTwoInfo}</p>
         </AdderssInfo>
       </Info>
     </ContactInfoDiv>

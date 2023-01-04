@@ -4,10 +4,10 @@ import {
   AboutOur,
   AboutOurInfo,
   AboutOurImage,
-  AboutOurH2,
+  AboutOurTitle,
   Description,
   Button,
-  AboutOurDescription,
+  AboutOurSubTitle,
   AboutOurDotImage,
 } from "./HomeStyle"
 
@@ -22,19 +22,17 @@ const AboutOurCompany = props => {
             alt={props.aboutOurCompany.altDot}
           />
         </AboutOurDotImage>
-        <AboutOurH2>{props.aboutOurCompany.title}</AboutOurH2>
+        <AboutOurTitle>{props.aboutOurCompany.title}</AboutOurTitle>
 
-        <AboutOurDescription>
-          {props.aboutOurCompany.header}
-        </AboutOurDescription>
+        <AboutOurSubTitle>{props.aboutOurCompany.header}</AboutOurSubTitle>
 
-        <Description>
+        <p>
           <div
             dangerouslySetInnerHTML={{
               __html: props.aboutOurCompany.description,
             }}
           />
-        </Description>
+        </p>
         <Link to="/about/">
           <Button>{props.aboutOurCompany.CTA}</Button>
         </Link>

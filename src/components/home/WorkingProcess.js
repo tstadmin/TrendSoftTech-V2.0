@@ -40,7 +40,7 @@ const WorkingProcess = props => {
 
             <WorkingCardTitle>{i.listItem.title}</WorkingCardTitle>
 
-            <Description>{i.listItem.description}</Description>
+            <p>{i.listItem.description}</p>
           </WorkingCard>
         ))}
       </WorkingCards>

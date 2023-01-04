@@ -31,7 +31,7 @@ const Footer = props => {
             <img src={props.data.logo} className="h-32" alt={props.data.alt} />
           </Link>
 
-          <Description>{props.data.description}</Description>
+          <p>{props.data.description}</p>
           <FooterIconLogo>
             <a href={props.data.facebookLink} target="_blank" rel="noreferrer">
               <FooterIconStyles>
@@ -74,9 +74,9 @@ const Footer = props => {
                   <SlLocationPin />
                 </IconSize>
 
-                <Description>
+                <p>
                   <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
-                </Description>
+                </p>
               </FooterIconInfo>
             </Link>
             <Link to="service@trendsofttech.com">
@@ -85,9 +85,9 @@ const Footer = props => {
                   <AiOutlineMail />
                 </IconSize>
 
-                <Description>
+                <p>
                   <div dangerouslySetInnerHTML={{ __html: props.data.mail }} />{" "}
-                </Description>
+                </p>
               </FooterIconInfo>
             </Link>
             <Link to="/">
@@ -96,11 +96,11 @@ const Footer = props => {
                   <BiLink />
                 </IconSize>
 
-                <Description>
+                <p>
                   <div
                     dangerouslySetInnerHTML={{ __html: props.data.website }}
                   />
-                </Description>
+                </p>
               </FooterIconInfo>
             </Link>
           </ul>

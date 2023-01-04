@@ -7,23 +7,23 @@ const OurVision = props => {
     <Div>
       <VisionInfo>
         <Button>{props.data.ourVision}</Button>
-        <Description>
+        <p>
           <div
             dangerouslySetInnerHTML={{
               __html: props.data.ourVisionDescription,
             }}
           />
-        </Description>
+        </p>
 
         <Button>{props.data.ourMission}</Button>
-        <Description>
+        <p>
           {" "}
           <div
             dangerouslySetInnerHTML={{
               __html: props.data.ourMissionDescription,
             }}
           />
-        </Description>
+        </p>
       </VisionInfo>
 
       <Image src={props.data.Visionimg} alt={props.data.altVision} />

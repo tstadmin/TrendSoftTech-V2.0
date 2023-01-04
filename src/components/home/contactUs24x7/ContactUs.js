@@ -11,14 +11,10 @@ import {
 const ContactUs = props => {
   return (
     <Contact>
-      <img
-        src={props.contactUs.personsImage}
-        alt={props.contactUs.alt}
-        width="632px"
-      />
+      <img src={props.contactUs.personsImage} alt="" width="632px" />
 
       <ContactInfo>
-        <ContactHeader>{props.contactUs.title}</ContactHeader>
+        <h3>{props.contactUs.title}</h3>
         <ContactDescription>{props.contactUs.description}</ContactDescription>
 
         <Button>

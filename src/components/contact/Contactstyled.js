@@ -21,7 +21,7 @@ export const Image = styled.img`
 export const EmailInfo = styled.div`
   ${tw`space-y-1`}
 `
-export const ContactTitle = styled.h1`
+export const ContactTitle = styled.h2`
   ${tw`font-semibold`}
 `
 export const Info = styled.div`

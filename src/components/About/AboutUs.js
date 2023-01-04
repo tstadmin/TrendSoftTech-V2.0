@@ -7,13 +7,13 @@ const AboutUs = props => {
       <Image src={props.data.aboutimg} alt={props.data.altAbout} />
       <AboutUsInfo>
         <Button>{props.data.aboutUs}</Button>
-        <Description>
+        <p>
           <div
             dangerouslySetInnerHTML={{
               __html: props.data.aboutUsDescription,
             }}
           />
-        </Description>
+        </p>
       </AboutUsInfo>
     </Div>
   )
