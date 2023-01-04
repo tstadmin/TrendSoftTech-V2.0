@@ -1,70 +1,15 @@
 export const Navbardata = [
   {
     id: 1,
-    page: "/",
-    title: "Home",
-
-    subtitle: [],
-  },
-  {
-    id: 2,
     page: "/about/",
-
     title: "About",
     subtitle: [],
   },
   {
-    id: 3,
+    id: 2,
     page: "/services/",
-    title: "Services",
-    addIcon: "+",
-    subIcon: "-",
+    title: "IT Services",
     subtitle: [
-      {
-        id: 1,
-        title: "Accessibility",
-        page: "/services/accessibility/",
-        secondsubtitle: [
-          {
-            id: 1,
-            title: "Doc Accessibility",
-            page: "/services/docAccessibility/accessiblePDFUA/",
-            threesubtitle: [
-              {
-                id: 1,
-                title: "Accessible PDF/UA",
-                page: "/services/docAccessibility/accessiblePDFUA/",
-              },
-              {
-                id: 2,
-                title: "Accessible PDF Forms",
-                page: "/services/docAccessibility/accessiblePDFForms/",
-              },
-              {
-                id: 3,
-                title: "Accessible Word",
-                page: "/services/docAccessibility/accessibleWord/",
-              },
-              {
-                id: 4,
-                title: "Accessible Excel",
-                page: "/services/docAccessibility/accessibleExcel/",
-              },
-              {
-                id: 5,
-                title: "Accessible PPT",
-                page: "/services/docAccessibility/accessiblePPT/",
-              },
-            ],
-          },
-          {
-            id: 2,
-            page: "/services/webAccessibility/",
-            title: "Web Accessibility",
-            threesubtitle: [],
-          },
-        ],
-      },
       {
         id: 2,
         title: " Web Development",
@@ -89,43 +34,65 @@ export const Navbardata = [
         page: "/services/mobileDevelopment/",
         secondsubtitle: [],
       },
+    ],
+  },
+  {
+    id: 3,
+    page: "/services/",
+    title: "Testing",
+    subtitle: [
       {
-        id: 7,
-        title: "Ui/UX  development",
-        page: "/services/uiUXDesign/",
-        secondsubtitle: [],
-      },
-      {
-        id: 6,
-        title: "Testing",
+        id: 1,
+        title: "Manual Testing",
         page: "/services/testing/",
-        secondsubtitle: [],
       },
       {
-        id: 8,
-        title: "Digital Marketing",
-        page: "/services/digitalMarketing/",
-        secondsubtitle: [],
+        id: 2,
+        title: "Automation Testing",
+        page: "/services/testing/",
       },
     ],
   },
   {
     id: 4,
-    page: "/portfolio/",
-    title: "Portfolio",
-    subtitle: [],
+    page: "/services/",
+    title: "Accessibility",
+    subtitle: [
+      {
+        id: 1,
+        title: "Doc Accessibility",
+        page: "/services/docAccessibility/accessibleExcel",
+      },
+      {
+        id: 2,
+        title: "Web Accessibility",
+        page: "/services/webAccessibility/",
+      },
+    ],
   },
   {
     id: 5,
-    page: "/careers/",
-    title: "Careers",
-    subtitle: [],
+    title: "Marketing",
+    page: "/services/digitalMarketing/",
+    subtitle: [
+      {
+        id: 1,
+        title: "Digital Marketing",
+        page: "/services/digitalMarketing/",
+      },
+    ],
   },
   {
     id: 6,
-    page: "/contact/",
-    title: "Contact",
-    subtitle: [],
+    title: "Design",
+    page: "/services/uiUXDesign/",
+    subtitle: [
+      {
+        id: 1,
+        title: "UI/UX Design",
+        page: "/services/uiUXDesign/",
+      },
+    ],
   },
 ]
 export default Navbardata

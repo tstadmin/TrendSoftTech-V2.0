@@ -2,16 +2,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import tw from "twin.macro"
 
-import { FaFacebookF } from "react-icons/fa"
-import { TiSocialLinkedin } from "react-icons/Ti"
-
-import { FooterIconLogo, FooterIconStyles } from "../home/HomeStyle.js"
-
 import Navbardata from "../../Data/NavbarData"
-import "./Home.css"
-
-import { Disclosure } from "@headlessui/react"
-import { IoIosArrowDown } from "react-icons/io"
 
 export default function Header(props) {
   const Div = tw.div`absolute flex items-center justify-between py-4  lg:px-48 sm:px-24 px-8  sticky top-0 bg-white z-[1] `
@@ -26,6 +17,7 @@ export default function Header(props) {
   return (
     <Div>
       <NavBar>
+        {/* Logo */}
         <Link to="/">
           <img
             src={props.data.logo}
@@ -39,52 +31,20 @@ export default function Header(props) {
         <div
           className={
             nav
-              ? "fixed z-20 right-0 top-0 bg-blue-400 h-screen w-[100%] pt-24 "
-              : "fixed hidden"
+              ? "fixed z-20 right-0 top-[9.5%] bg-[#0084FF] h-[60%] w-[100%] pt-6"
+              : "fixed hidden "
           }
         >
-          <ul className="main-Menu group hidden 440Screen:block">
+          <ul className="flex pl-8 2xl:pl-48 space-x-20 ">
             {Navbardata.map((item, idx) => (
               <li
                 key={item.id}
-                className="uppercase flex xl:text-7xl lg:text-3xl text-xl text-white/60 pl-8 2xl:pl-36  hover:text-white mt-6  "
+                className="uppercase  text-white/60  mt-6 text-lg font-medium "
               >
-                <Link to={item.page}>
-                  <h1>{item.title}</h1>
-                </Link>
-
-                <Link to="">
-                  {" "}
-                  <div className="add">
-                    <p>{item.addIcon}</p>
-                  </div>
-                </Link>
-
-                <div className="sub">
-                  <p>{item.subIcon}</p>
-                </div>
-                <ul className="Sub-Menu  w-[50%] ">
-                  {item.subtitle.map((subitem, idx) => (
-                    <li key={subitem.id} className="xl:text-2xl text-sm p-2">
-                      <Link to={subitem.page}>{subitem.title}</Link>
-                      <ul className="Nested-Menu ">
-                        {subitem.secondsubtitle.map((i, idx) => (
-                          <li key={i.id} className="xl:text-2xl text-sm p-2">
-                            <Link to={i.page}> {i.title}</Link>
-                            <ul className=" Sub-Nested-Menu">
-                              {i.threesubtitle.map((list, idx) => (
-                                <li
-                                  key={list.id}
-                                  className="xl:text-2xl text-sm p-2"
-                                >
-                                  <Link to={list.page}>{list.title}</Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
+                {item.title}
+                <ul className="space-y-2 mt-4 text-base font-normal ">
+                  {item.subtitle.map((subItem, idx) => (
+                    <li className="hover:text-[#FFC93C] ">{subItem.title}</li>
                   ))}
                 </ul>
               </li>
@@ -93,7 +53,7 @@ export default function Header(props) {
 
           {/*  Mobile Menu */}
 
-          <ul className="uppercase text-lg font-medium text-white ml-2 440Screen:hidden block ">
+          {/* <ul className="uppercase text-lg font-medium text-white ml-2 440Screen:hidden block ">
             <Link to="/">
               <li>Home</li>
             </Link>
@@ -202,35 +162,7 @@ export default function Header(props) {
             <Link to="/contact/">
               <li>Contact</li>
             </Link>
-          </ul>
-
-          {/* FooterIcons & content */}
-          <div className=" md:px-40 px-8 mt-40 pt-4  bg-white h-full 540Screen:flex justify-between">
-            <div>
-              <FooterIconLogo>
-                <Link
-                  to="https://www.facebook.com/trendsofttech/"
-                  target="_blank"
-                >
-                  <FooterIconStyles>
-                    <FaFacebookF />
-                  </FooterIconStyles>
-                </Link>
-
-                <Link
-                  to="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE2hU0J4z4P2gAAAYViiW5grJXhnU1sVxZd3Vt3HX2uebekQCjbXcACP3SqWZ6AlHcr8fcP6WPuusSq3zYfhd6_lHKXkaScAYFVGSvEFtEJdCzMRdWo0-YyL5CNJT_y1QnzvXg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftrendsoft-technologies-192645240"
-                  target="_blank"
-                >
-                  <FooterIconStyles>
-                    <TiSocialLinkedin />
-                  </FooterIconStyles>
-                </Link>
-              </FooterIconLogo>
-            </div>
-            <div className="mt-8">
-              <p className="sm:text-xl text-md ">© 2023 All Rights Reserved.</p>
-            </div>
-          </div>
+          </ul> */}
         </div>
       </NavBar>
 
@@ -238,18 +170,22 @@ export default function Header(props) {
 
       <div className="flex space-x-4 md:space-x-12">
         <Link to="/contact/">
-          <button className="border-2 text-2xl border-blue-500 rounded-full hover:scale-105  hover:bg-blue-500 hover:text-white duration-500  px-6 py-2  hidden lg:block">
+          <p className="text-2xl hover:scale-105 duration-500  px-6 py-2  hidden lg:block">
             {props.data.button}
-          </button>
+          </p>
+        </Link>
+        <Link to="/careers/">
+          <p className="text-2xl hover:scale-105 duration-500  px-6 py-2  hidden lg:block">
+            Careers
+          </p>
         </Link>
         <button
           onClick={handleNav}
-          className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400  pr-8"
+          className=" block sm:text-2xl text-md underline underline-offset-2 hover:text-blue-400 
+           pr-8"
         >
           {nav ? (
-            <p className="text-white z-30 absolute cursor-pointer">
-              {props.data.closeMenu}
-            </p>
+            <p className="text-black  cursor-pointer">{props.data.closeMenu}</p>
           ) : (
             <p className="text-black  cursor-pointer">{props.data.openMenu}</p>
           )}

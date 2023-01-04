@@ -3,7 +3,7 @@ home:
   navbar:
     logo: "/img/HomeImages/logo.svg"
     alt: "TrendSoftech logo image"
-    button: contact
+    button: contact us
     openMenu: "Menu"
     closeMenu: "Close"
     list:

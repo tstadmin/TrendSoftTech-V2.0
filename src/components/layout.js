@@ -9,7 +9,6 @@ import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./common/Header"
 import OnclickTop from "./common/OnClickScrollToTop"
-import MouseFollower from "./common/MouseFollower"
 import Footer from "./home/Footer"
 
 const Layout = ({ children }) => {
@@ -27,8 +26,6 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <MouseFollower />
-
       <OnclickTop />
       <Header data={data} />
       {children}
