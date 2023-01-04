@@ -53,7 +53,7 @@ const Footer = props => {
               {props.data.itService?.map((item, idx) => (
                 <li
                   key={item.listItem.id}
-                  className="hover:text-blue-400 font-Poppins"
+                  className="hover:text-[#1273EB] font-Poppins"
                 >
                   <Link to={item.listItem.page}>{item.listItem.title}</Link>
                 </li>
@@ -74,9 +74,9 @@ const Footer = props => {
                   <SlLocationPin />
                 </IconSize>
 
-                <p>
+                <li>
                   <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
-                </p>
+                </li>
               </FooterIconInfo>
             </Link>
             <Link to="service@trendsofttech.com">
@@ -85,9 +85,9 @@ const Footer = props => {
                   <AiOutlineMail />
                 </IconSize>
 
-                <p>
+                <li>
                   <div dangerouslySetInnerHTML={{ __html: props.data.mail }} />{" "}
-                </p>
+                </li>
               </FooterIconInfo>
             </Link>
             <Link to="/">
@@ -96,11 +96,11 @@ const Footer = props => {
                   <BiLink />
                 </IconSize>
 
-                <p>
+                <li className="hover:text-[#1273EB]">
                   <div
                     dangerouslySetInnerHTML={{ __html: props.data.website }}
                   />
-                </p>
+                </li>
               </FooterIconInfo>
             </Link>
           </ul>

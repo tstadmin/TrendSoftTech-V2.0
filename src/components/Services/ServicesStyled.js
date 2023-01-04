@@ -17,7 +17,7 @@ export const Cards = styled.div`
   ${tw`space-y-4 p-8`}
 `
 export const CardHanding = styled.h2`
-  ${tw` text-[#146ABA] `}
+  ${tw` text-[#0B70E1] `}
 `
 export const CardReading = styled.p`
   ${tw`text-blue-500  mt-4 hover:text-orange-500`}
@@ -32,7 +32,7 @@ export const Description = styled.p`
   ${tw`mt-5`}
 `
 export const Title = styled.h3`
-  ${tw` text-[#146ABA] mt-5 `}
+  ${tw` text-[#0B70E1] mt-5 `}
 `
 export const PhasesTitle = styled.h2`
   ${tw`mt-5`}

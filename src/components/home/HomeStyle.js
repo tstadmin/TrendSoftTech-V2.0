@@ -5,7 +5,7 @@ export const Title = styled.h2`
   ${tw` text-orange-400 `}
 `
 export const SubTitle = styled.h3`
-  ${tw` text-[#146ABA]  `}
+  ${tw` text-[#0B70E1]  `}
 `
 export const Description = styled.p`
   ${tw`text-[16px] text-[#454545]  `}
@@ -67,7 +67,7 @@ export const AboutOurTitle = styled.h2`
 `
 
 export const AboutOurSubTitle = styled.h3`
-  ${tw` text-[#146ABA]`}
+  ${tw` text-[#0B70E1]`}
 `
 export const AboutOurDotImage = styled.div`
   ${tw`absolute 2xl:left-28 xl:left-28 lg:left-28 md:left-28 sm:left-24  left-20 2xl:-top-3 xl:-top-3 lg:top-2 md:-top-3 sm:-top-7  top-0`}
@@ -90,7 +90,7 @@ export const ServicesTitle = styled.h2`
   ${tw`text-orange-400`}
 `
 export const ServicesSubTitle = styled.h3`
-  ${tw`text-[#146ABA] `}
+  ${tw`text-[#0B70E1] `}
 `
 export const ServicesProvideCard = styled.div`
   ${tw`xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  grid grid-cols-1 gap-5 justify-items-center 2xl:px-48 xl:px-28 lg:px-16  px-8`}
@@ -108,7 +108,7 @@ export const AccessibilityCardInfo = styled.div`
   ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
 `
 export const AccessibilityCardTitle = styled.h3`
-  ${tw`text-[#146ABA] `}
+  ${tw`text-[#0B70E1] `}
 `
 export const AccessibilityInfo = styled.div`
   ${tw`xl:text-3xl md:text-3xl  space-y-2 text-xl font-Poppins`}
@@ -124,21 +124,21 @@ export const Counte = styled.div`
   ${tw`md:flex md:justify-center grid justify-items-center gap-24 md:gap-40  p-6 bg-white `}
 `
 export const CounterNumber = styled.p`
-  ${tw`text-[50px] font-bold text-[#146ABA]`}
+  ${tw`text-[50px] font-bold text-[#0B70E1]`}
 `
 export const CounterDescription = styled.p`
   ${tw`md:text-[20px] font-[400] font-semibold mt-6 `}
 `
 ///  ----- ContactUs 24/7 Banner component in HomePage Home  folder--------------------------------
 export const Contact = styled.div`
-  ${tw`xl:flex grid  w-full  bg-blue-100 gap-24 p-10 xl:items-center justify-items-center `}
+  ${tw` 2xl:px-48  xl:px-28 lg:px-14 px-8 `}
 `
 
 export const ContactInfo = styled.div`
-  ${tw`space-y-8 text-center`}
+  ${tw`space-y-8 text-center p-2 `}
 `
 export const ContactDescription = styled.p`
-  ${tw`sm:text-[20px] text-base font-[400]  font-Poppins`}
+  ${tw`sm:text-[20px] text-base font-[400]  `}
 `
 export const ContactHeader = styled.h2`
   ${tw`text-[36px]  font-semibold text-black`}
@@ -156,7 +156,7 @@ export const WorkingCardNumber = styled.h3`
   ${tw`text-orange-400 `}
 `
 export const WorkingCardTitle = styled.h3`
-  ${tw`  text-[#146ABA]  `}
+  ${tw`  text-[#0B70E1]  `}
 `
 export const WorkingCard = styled.div`
   ${tw`border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]`}
@@ -175,7 +175,7 @@ export const FooterInfo = styled.div`
   ${tw`md:flex sm:grid  px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
 `
 export const FooterTitle = styled.h2`
-  ${tw` text-[#146ABA] `}
+  ${tw` text-[#0B70E1] `}
 `
 export const FooterTrendInfo = styled.div`
   ${tw` basis-1/3`}
@@ -184,7 +184,7 @@ export const FooterTrendInfo = styled.div`
 export const FooterInfoDiv = styled.div`
   ${tw`space-y-3 basis-1/4`}
 `
-export const FooterIconInfo = styled.li`
+export const FooterIconInfo = styled.div`
   ${tw`sm:flex grid mt-4 gap-5 `}
 `
 export const FooterHr = styled.div`

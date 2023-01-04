@@ -12,6 +12,7 @@ import {
   Form,
   FormDiv,
   FormHeading,
+  InputDiv,
   Button,
   Description,
 } from "./CareersStyle"
@@ -35,37 +36,62 @@ const RequirementInfo = props => {
       <RequirementInfoDiv>
         <RequirementInfoheading>{props.data.title}</RequirementInfoheading>
         {props.data.list?.map((item, idx) => (
-          <Description key={item.listItem.id}>
-            {item.listItem.description}
-          </Description>
+          <li key={item.listItem.id}>{item.listItem.description}</li>
         ))}
       </RequirementInfoDiv>
-      <FormDiv>
+
+      <div class="grid   border border-black  space-y-8 sm:p-7 p-2">
         <FormHeading>Apply for this position</FormHeading>
-        <Form>
-          <label className="text-lg " for="name">
-            Full Name *
-          </label>
-          <input placeholder="Full Name" />
-          <label className="text-lg" for="email">
-            Email *
-          </label>
-          <input placeholder="Email" />
-          <label className="text-lg" for="Phone">
-            {" "}
-            Phone *
-          </label>
-          <input placeholder="Phone" />
-          <label className="text-lg" for="Cover">
-            Cover Letter *
-          </label>
-          <input placeholder="Cover Letter" />
-          <label className="text-lg" for="upload">
-            Upload CV/Resume *
-          </label>
-          <input type="file" id="myfile" name="myfile" />
-          <label for="vehicle1"> Allowed Type(s): .pdf, .doc, .docx</label>
-          <div>
+        <div className="grid space-y-6 justify-items-center">
+          <InputDiv>
+            <label for="floatingInput">Full Name</label>
+            <input
+              type="text"
+              className="block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none"
+              id="floatingInput"
+              placeholder="Full Name"
+            />
+          </InputDiv>
+
+          <InputDiv>
+            <label for="floatingInput">Email address</label>
+            <input
+              type="email"
+              className="block w-full p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+          </InputDiv>
+          <InputDiv>
+            <label for="floatingInput">Phone </label>
+            <input
+              type="number"
+              className="block w-full p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
+              id="floatingInput"
+              placeholder="Phone number"
+            />
+          </InputDiv>
+          <InputDiv>
+            <label for="floatingInput">Cover Letter</label>
+            <textarea
+              type="text"
+              className="block w-full  p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
+              id="floatingInput"
+              placeholder="Cover Letter"
+            />
+          </InputDiv>
+          <InputDiv>
+            <label className="text-lg" for="upload">
+              Upload CV/Resume
+            </label>
+            <input
+              type="file"
+              id="myfile"
+              name="myfile"
+              className="block w-full p-3 rounded border-black border-2 text-sm focus:border-blue-600 focus:outline-none"
+            />
+          </InputDiv>
+          <InputDiv>
             <div className=" sm:flex grid space-x-2">
               <input
                 type="checkbox"
@@ -80,9 +106,9 @@ const RequirementInfo = props => {
             </div>
 
             <Button>Submit</Button>
-          </div>
-        </Form>
-      </FormDiv>
+          </InputDiv>
+        </div>
+      </div>
     </Requirement>
   )
 }

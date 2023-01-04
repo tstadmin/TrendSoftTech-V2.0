@@ -21,16 +21,16 @@ const InfoCard = props => {
           <CardDiv key={item.listItem.id}>
             <CardTitle>{item.listItem.title}</CardTitle>
             <CardInfoDiv>
-              <h1>{item.listItem.title}</h1>
-              <h1>{props.careers.location}</h1>
+              <p>{item.listItem.title}</p>
+              <p>{props.careers.location}</p>
 
               <CardReadDiv>
                 <Link to={item.listItem.link}>
                   {" "}
-                  <h1>{props.careers.CTA}</h1>
+                  <p className="text-[#1273EB]">{props.careers.CTA}</p>
                 </Link>
 
-                <BsArrowRight size={20} />
+                <BsArrowRight size={15} />
               </CardReadDiv>
             </CardInfoDiv>
           </CardDiv>

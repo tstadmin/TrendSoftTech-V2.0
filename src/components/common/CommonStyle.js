@@ -21,6 +21,6 @@ export const BreadCrumbInfo = styled.div`
 
 //-----All  Commer style component  in HomePage Commer folder
 
-export const Hyperlink = styled.h3`
-  ${tw`sm:text-lg text-base font-normal text-blue-500 hover:text-orange-500 hover:font-semibold hover:underline hover:underline-offset-4`}
+export const Hyperlink = styled.p`
+  ${tw`text-[#1273EB] hover:text-orange-500 hover:underline hover:underline-offset-4`}
 `
