@@ -15,7 +15,7 @@ export default function Header(props) {
   }
 
   return (
-    <div className=" flex items-center justify-between py-4  2xl:px-24 440Screen:px-8 px-4 sticky sm:top-6 top-4 bg-white z-[1]">
+    <div className=" flex items-center justify-between py-4 1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky sm:top-6 top-4 bg-white z-[1]">
       <NavBar>
         {/* Logo */}
         <Link to="/">
@@ -35,7 +35,7 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <ul className="xl:flex 440Screen:pl-10 pl-4 2xl:pl-32 1920Screen:space-x-36  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <ul className="xl:flex 440Screen:pl-10 pl-4 2xl:pl-32 1920Screen:pl-44 1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {Navbardata.map((item, idx) => (
               <li
                 key={item.id}
@@ -59,12 +59,12 @@ export default function Header(props) {
 
       <div className="flex space-x-4 md:space-x-12 ">
         <Link to="/contact/">
-          <p className="text-2xl hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block  group transition">
+          <p className="text-2xl hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block  group transition ">
             <Underline>{props.data.button}</Underline>
           </p>
         </Link>
         <Link to="/careers/">
-          <p className="text-2xl hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block group transition ">
+          <p className="text-2xl hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block group transition focus:outline-none  ">
             <Underline>Careers</Underline>
           </p>
         </Link>

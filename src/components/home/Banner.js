@@ -19,11 +19,6 @@ const Banner = props => {
         </BannerTitle>
 
         <BannerSubTitle>{props.banner.title}</BannerSubTitle>
-
-        <BannerButton>
-          {" "}
-          <Link to="/contact/">{props.banner.CTA}</Link>
-        </BannerButton>
       </BannerInfoDiv>
 
       <BannerImageDiv>
