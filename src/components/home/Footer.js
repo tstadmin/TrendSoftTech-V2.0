@@ -16,7 +16,7 @@ import {
   FooterIconInfo,
   FooterIconLogo,
   FooterIconStyles,
-  FooterUi,
+  UL,
   IconSize,
 } from "./HomeStyle"
 import { Link } from "gatsby"
@@ -48,18 +48,16 @@ const Footer = props => {
         </FooterTrendInfo>
         <FooterInfoDiv>
           <FooterTitle>{props.data.itTitle}</FooterTitle>
-          <ul>
-            <FooterUi>
-              {props.data.itService?.map((item, idx) => (
-                <li
-                  key={item.listItem.id}
-                  className="hover:text-[#1273EB] font-Poppins"
-                >
-                  <Link to={item.listItem.page}>{item.listItem.title}</Link>
-                </li>
-              ))}
-            </FooterUi>
-          </ul>
+          <UL>
+            {props.data.itService?.map((item, idx) => (
+              <li
+                key={item.listItem.id}
+                className="hover:text-[#1273EB] font-Poppins"
+              >
+                <Link to={item.listItem.page}>{item.listItem.title}</Link>
+              </li>
+            ))}
+          </UL>
         </FooterInfoDiv>
 
         <FooterInfoDiv>

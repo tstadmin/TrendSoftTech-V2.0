@@ -93,7 +93,7 @@ export const ServicesSubTitle = styled.h3`
   ${tw`text-[#0B70E1] `}
 `
 export const ServicesProvideCard = styled.div`
-  ${tw`xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  grid grid-cols-1 gap-5 justify-items-center 2xl:px-48 xl:px-28 lg:px-16  px-8`}
+  ${tw`xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  grid grid-cols-1 gap-5 justify-items-center 2xl:px-48  md:px-16 px-8`}
 `
 
 ///  ----- Accessibility Services component in HomePage Home folder--------------------------------
@@ -199,6 +199,6 @@ export const FooterIconLogo = styled.div`
 export const IconSize = styled.div`
   ${tw`text-2xl`}
 `
-export const FooterUi = styled.p`
+export const UL = styled.ul`
   ${tw` space-y-3  `}
 `

@@ -15,7 +15,7 @@ const Card = props => {
               ? "hover:shadow-2xl  hover:border-sky-50 hover:duration-300 hover:cursor-pointer hover:shadow-blue-300"
               : "none"
           }
-            lg:p-8    md:p-8 p-5 bg-white`}
+            lg:p-6 2xl:px-8   md:p-8 p-5 bg-white`}
       >
         <img src={props.img} alt="" className="w-[85px] h-[85px]" />
 

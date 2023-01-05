@@ -1,13 +1,13 @@
 import React from "react"
 
-import { Button, Description, Image, Div, ChooseInfo } from "./AboutStyle"
+import { Button, ChooseHeading, Image, Div, ChooseInfo } from "./AboutStyle"
 
 const ChooseUs = props => {
   return (
     <Div>
       <Image src={props.data.chooseimg} alt={props.data.altChoose} />
       <ChooseInfo>
-        <Button>{props.data.whychoose}</Button>
+        <ChooseHeading>{props.data.whychoose}</ChooseHeading>
 
         <p>
           <div

@@ -2,10 +2,18 @@ import tw, { styled } from "twin.macro"
 
 //-------- About Page component ----------------------------------------------------
 
-export const Button = styled.button`
-  ${tw`border bg-blue-400 text-center text-white p-3 rounded-full`}
+export const ChooseHeading = styled.h2`
+  ${tw`border bg-blue-400 text-white p-3 rounded-full w-44 text-center`}
 `
-
+export const Heading = styled.h2`
+  ${tw`border bg-blue-400 text-white p-3 rounded-full w-28 text-center`}
+`
+export const VisionHeading = styled.h2`
+  ${tw`border bg-blue-400 text-white p-3 rounded-full w-32 text-center`}
+`
+export const MissionHeading = styled.h2`
+  ${tw`border bg-blue-400 text-white p-3 rounded-full w-36 text-center`}
+`
 export const Image = styled.img`
   ${tw`space-y-5  mt-10`}
 `

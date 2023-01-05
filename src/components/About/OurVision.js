@@ -1,12 +1,19 @@
 import React from "react"
 
-import { Button, Description, Image, Div, VisionInfo } from "./AboutStyle"
+import {
+  Button,
+  VisionHeading,
+  MissionHeading,
+  Image,
+  Div,
+  VisionInfo,
+} from "./AboutStyle"
 
 const OurVision = props => {
   return (
     <Div>
       <VisionInfo>
-        <Button>{props.data.ourVision}</Button>
+        <VisionHeading>{props.data.ourVision}</VisionHeading>
         <p>
           <div
             dangerouslySetInnerHTML={{
@@ -15,7 +22,7 @@ const OurVision = props => {
           />
         </p>
 
-        <Button>{props.data.ourMission}</Button>
+        <MissionHeading>{props.data.ourMission}</MissionHeading>
         <p>
           {" "}
           <div

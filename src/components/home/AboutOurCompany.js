@@ -5,7 +5,6 @@ import {
   AboutOurInfo,
   AboutOurImage,
   AboutOurTitle,
-  Description,
   Button,
   AboutOurSubTitle,
   AboutOurDotImage,
