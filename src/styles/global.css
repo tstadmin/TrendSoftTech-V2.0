@@ -23,3 +23,7 @@ p{
 li{
     @apply sm:text-base  text-sm font-Poppins text-[#454545]
 }
+
+a{
+    @apply focus:underline focus:text-[#1273EB]
+}

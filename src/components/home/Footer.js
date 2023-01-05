@@ -55,7 +55,12 @@ const Footer = props => {
                   key={item.listItem.id}
                   className="hover:text-[#1273EB] font-Poppins"
                 >
-                  <Link to={item.listItem.page}>{item.listItem.title}</Link>
+                  <Link
+                    className=" focus:underline focus:text-[#1273EB]"
+                    to={item.listItem.page}
+                  >
+                    {item.listItem.title}
+                  </Link>
                 </li>
               ))}
             </FooterUi>
@@ -68,6 +73,7 @@ const Footer = props => {
             <Link
               to="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
               target="_blank"
+              className=" focus:underline focus:text-[#1273EB]"
             >
               <FooterIconInfo>
                 <IconSize>
@@ -79,7 +85,10 @@ const Footer = props => {
                 </li>
               </FooterIconInfo>
             </Link>
-            <Link to="service@trendsofttech.com">
+            <Link
+              to="service@trendsofttech.com"
+              className=" focus:underline focus:text-[#1273EB]"
+            >
               <FooterIconInfo>
                 <IconSize>
                   <AiOutlineMail />
@@ -90,7 +99,7 @@ const Footer = props => {
                 </li>
               </FooterIconInfo>
             </Link>
-            <Link to="/">
+            <Link to="/" className=" focus:underline focus:text-[#1273EB]">
               <FooterIconInfo>
                 <IconSize>
                   <BiLink />
