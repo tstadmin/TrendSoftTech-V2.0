@@ -1,8 +1,8 @@
 export const Navbardata = [
   {
     id: 1,
-    page: "/about/",
-    title: "About",
+    page: "/",
+    title: "Home",
     subtitle: [],
   },
   {
