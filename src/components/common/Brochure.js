@@ -10,7 +10,10 @@ const Brochure = () => {
       </p>
 
       <a href="/pdf/brochure.pdf" target="_blank">
-        <button className="bg-blue-500 text-white text-sm p-3 rounded-md mt-4 ">
+        <button
+          className="bg-blue-500 text-white text-sm p-3 rounded-md mt-4 "
+          onClick="/pdf/brochure.pdf"
+        >
           DOWNLOAD NOW
         </button>
       </a>

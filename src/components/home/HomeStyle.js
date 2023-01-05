@@ -74,7 +74,7 @@ export const AboutOurDotImage = styled.div`
 `
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
-export const BannerItemDiv = styled.div`
+export const BannerItemDiv = styled.ul`
   ${tw`lg:flex grid gap-5 justify-center  2xl:px-48 xl:px-28 lg:px-16 py-14 px-10 mt-20`}
 `
 
@@ -92,7 +92,7 @@ export const ServicesTitle = styled.h2`
 export const ServicesSubTitle = styled.h3`
   ${tw`text-[#0B70E1] `}
 `
-export const ServicesProvideCard = styled.div`
+export const ServicesProvideCard = styled.ul`
   ${tw`xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  grid grid-cols-1 gap-5 justify-items-center 2xl:px-48  md:px-16 px-8`}
 `
 
@@ -101,10 +101,10 @@ export const ServicesProvideCard = styled.div`
 export const Accessibility = styled.div`
   ${tw`text-center mb-16 mt-24 space-y-4`}
 `
-export const AccessibilityCard = styled.div`
+export const AccessibilityCard = styled.ul`
   ${tw`lg:flex lg:justify-items-center  grid gap-7   2xl:px-48 xl:px-32 lg:px-14 px-8`}
 `
-export const AccessibilityCardInfo = styled.div`
+export const AccessibilityCardInfo = styled.li`
   ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
 `
 export const AccessibilityCardTitle = styled.h3`
@@ -158,11 +158,11 @@ export const WorkingCardNumber = styled.h3`
 export const WorkingCardTitle = styled.h3`
   ${tw`  text-[#0B70E1]  `}
 `
-export const WorkingCard = styled.div`
+export const WorkingCard = styled.li`
   ${tw`border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]`}
 `
 
-export const WorkingCards = styled.div`
+export const WorkingCards = styled.ul`
   ${tw`mt-16 md:grid md:grid-cols-2 gap-4 w-full lg:w-[60%] md:w-full`}
 `
 

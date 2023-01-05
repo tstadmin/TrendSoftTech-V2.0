@@ -9,7 +9,7 @@ export const ContactHanding = styled.h1`
 export const ContactDiv = styled.div`
   ${tw`xl:flex  justify-center  px-8 md:mt-14 mt-5  sm:space-y-0 space-y-10 2xl:space-x-44 lg:space-x-2`}
 `
-export const ContactInfoDiv = styled.div`
+export const ContactInfoDiv = styled.ul`
   ${tw`space-y-6 text-sm sm:text-lg`}
 `
 export const EmailDiv = styled.div`
@@ -24,7 +24,7 @@ export const EmailInfo = styled.div`
 export const ContactTitle = styled.h2`
   ${tw`font-semibold`}
 `
-export const Info = styled.div`
+export const Info = styled.li`
   ${tw`sm:flex  grid sm:space-x-4 `}
 `
 

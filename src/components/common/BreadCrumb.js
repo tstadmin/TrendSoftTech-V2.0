@@ -14,11 +14,9 @@ const BreadCrumb = props => {
       <Image src={props.img} alt="BreadCrumb about images" />
 
       <BreadCrumbInfo>
-        <BreadCrumbHeader>{props.title}</BreadCrumbHeader>
+        {/* <BreadCrumbHeader>{props.title}</BreadCrumbHeader> */}
         <BreadCrumbSubHeader>
-          <Link to="/">
-            <p>Trendsoft Tech</p>
-          </Link>
+          <Link to="/">Trendsoft Tech</Link>
 
           <p>/</p>
           <p>{props.title}</p>
