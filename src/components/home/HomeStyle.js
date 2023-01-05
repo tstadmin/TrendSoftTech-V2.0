@@ -46,7 +46,7 @@ export const BannerImage = styled.img`
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
 
 export const AboutOur = styled.div`
-  ${tw`lg:flex grid mt-28 2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20  px-8`}
+  ${tw`lg:flex grid sm:mt-16 mt-32 2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20  px-8`}
 `
 export const AboutOurInfo = styled.div`
   ${tw`space-y-5 relative`}
@@ -81,7 +81,7 @@ export const BannerItemDiv = styled.ul`
 ///  ----- Services  provide component in HomePage  Home folder--------------------------------
 
 export const Services = styled.div`
-  ${tw`text-center mt-24 bg-blue-50 py-14`}
+  ${tw`text-center mt-16 bg-blue-50 py-14`}
 `
 export const ServicesTitleDiv = styled.div`
   ${tw`text-center mb-16 space-y-2`}
@@ -99,7 +99,7 @@ export const ServicesProvideCard = styled.ul`
 ///  ----- Accessibility Services component in HomePage Home folder--------------------------------
 
 export const Accessibility = styled.div`
-  ${tw`text-center mb-16 mt-24 space-y-4`}
+  ${tw`text-center mb-16 mt-16 space-y-4`}
 `
 export const AccessibilityCard = styled.ul`
   ${tw`lg:flex lg:justify-items-center  grid gap-7   2xl:px-48 xl:px-32 lg:px-14 px-8`}
@@ -131,11 +131,11 @@ export const CounterDescription = styled.p`
 `
 ///  ----- ContactUs 24/7 Banner component in HomePage Home  folder--------------------------------
 export const Contact = styled.div`
-  ${tw` 2xl:px-48  xl:px-28 lg:px-14 px-8 `}
+  ${tw` 2xl:px-48  xl:px-28 lg:px-14 px-8  `}
 `
 
 export const ContactInfo = styled.div`
-  ${tw`space-y-8 text-center p-2 `}
+  ${tw`space-y-8 text-center p-9 `}
 `
 export const ContactDescription = styled.p`
   ${tw`sm:text-[20px] text-base font-[400]  `}
@@ -163,13 +163,13 @@ export const WorkingCard = styled.li`
 `
 
 export const WorkingCards = styled.ul`
-  ${tw`mt-16 md:grid md:grid-cols-2 gap-4 w-full lg:w-[60%] md:w-full`}
+  ${tw`mt-16 md:grid md:grid-cols-2 gap-4 w-full lg:w-[60%] md:w-full md:space-y-0 space-y-6`}
 `
 
 ///  ----- Footers component in HomePage Home  folder--------------------------------
 
 export const FooterDiv = styled.div`
-  ${tw`mt-36 bg-blue-50/80  `}
+  ${tw`mt-20 bg-blue-50/80 py-4 `}
 `
 export const FooterInfo = styled.div`
   ${tw`md:flex sm:grid  px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}

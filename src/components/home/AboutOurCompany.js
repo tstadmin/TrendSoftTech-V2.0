@@ -13,13 +13,10 @@ import {
 const AboutOurCompany = props => {
   return (
     <AboutOur>
-      <img src={props.aboutOurCompany.img} alt={props.aboutOurCompany.alt} />
+      <img src={props.aboutOurCompany.img} />
       <AboutOurInfo>
         <AboutOurDotImage>
-          <AboutOurImage
-            src={props.aboutOurCompany.imgDot}
-            alt={props.aboutOurCompany.altDot}
-          />
+          <AboutOurImage src={props.aboutOurCompany.imgDot} />
         </AboutOurDotImage>
         <AboutOurTitle>{props.aboutOurCompany.title}</AboutOurTitle>
 
@@ -32,16 +29,20 @@ const AboutOurCompany = props => {
             }}
           />
         </p>
-
-        <Link
-          className="bg-blue-600  hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]"
-          to="/about/"
-        >
-          {props.aboutOurCompany.CTA}
-        </Link>
+        <div>
+          <Link
+            to="/about/"
+            aria-label="About Our Company Learn More"
+            className="bg-blue-600 hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]"
+          >
+            {props.aboutOurCompany.CTA}
+          </Link>
+        </div>
       </AboutOurInfo>
     </AboutOur>
   )
 }
 
 export default AboutOurCompany
+
+/// "

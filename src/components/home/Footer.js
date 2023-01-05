@@ -3,6 +3,8 @@ import { FaFacebookF } from "react-icons/fa"
 import { TiSocialLinkedin } from "react-icons/Ti"
 import { SlLocationPin } from "react-icons/sl"
 import { AiOutlineMail } from "react-icons/ai"
+import { MdOutlineAttachEmail } from "react-icons/md"
+
 import { BiLink } from "react-icons/bi"
 
 import {
@@ -23,7 +25,6 @@ import { Link } from "gatsby"
 const Footer = props => {
   return (
     <FooterDiv>
-      <hr />
       <FooterInfo>
         <FooterTrendInfo>
           <Link to="/">
@@ -32,13 +33,21 @@ const Footer = props => {
 
           <p>{props.data.description}</p>
           <FooterIconLogo>
-            <a href={props.data.facebookLink} target="_blank" rel="noreferrer">
+            <a
+              href={props.data.facebookLink}
+              aria-label="facebook trendsoft tech page "
+              target="_blank"
+            >
               <FooterIconStyles>
                 <FaFacebookF />
               </FooterIconStyles>
             </a>
 
-            <a href={props.data.linkedinLink} target="_blank" rel="noreferrer">
+            <a
+              href={props.data.linkedinLink}
+              target="_blank"
+              aria-label="Linkedin trendsoft tech page "
+            >
               <FooterIconStyles>
                 <TiSocialLinkedin />
               </FooterIconStyles>
@@ -62,53 +71,67 @@ const Footer = props => {
         <FooterInfoDiv>
           <FooterTitle>{props.data.contactTitle}</FooterTitle>
           <ul>
-            <a
-              href="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
-              target="_blank"
-            >
-              <FooterIconInfo>
-                <IconSize>
-                  <SlLocationPin />
-                </IconSize>
+            <FooterIconInfo>
+              <IconSize>
+                <SlLocationPin />
+              </IconSize>
 
-                <li>
+              <li>
+                <a
+                  aria-label="location Trendsoft Technologies Pvt. Ltd,
+                MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
+                  href="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
+                  target="_blank"
+                >
                   <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
-                </li>
-              </FooterIconInfo>
-            </a>
-            <a href="mailto:info@trendsofttech.com">
-              <FooterIconInfo>
-                <IconSize>
-                  <AiOutlineMail />
-                </IconSize>
+                </a>
+              </li>
+            </FooterIconInfo>
 
-                <li>{props.data.mail}</li>
-              </FooterIconInfo>
-            </a>
+            <FooterIconInfo>
+              <IconSize>
+                <AiOutlineMail />
+              </IconSize>
 
-            <a href="mailto:service@trendsofttech.com">
-              <FooterIconInfo>
-                <IconSize>
-                  <AiOutlineMail />
-                </IconSize>
+              <li>
+                {" "}
+                <a
+                  href="mailto:info@trendsofttech.com"
+                  aria-label="company mail info@trendsofttech.com "
+                >
+                  {props.data.mail}
+                </a>
+              </li>
+            </FooterIconInfo>
 
-                <li>{props.data.serviceMail}</li>
-              </FooterIconInfo>
-            </a>
+            <FooterIconInfo>
+              <IconSize>
+                <MdOutlineAttachEmail />
+              </IconSize>
+              <li>
+                <a
+                  href="mailto:service@trendsofttech.com"
+                  aria-label="service mail service@trendsofttech.com "
+                >
+                  {props.data.serviceMail}
+                </a>
+              </li>
+            </FooterIconInfo>
 
-            <Link to="/">
-              <FooterIconInfo>
-                <IconSize>
-                  <BiLink />
-                </IconSize>
+            <FooterIconInfo>
+              <IconSize>
+                <BiLink />
+              </IconSize>
 
-                <li className="hover:text-[#1273EB]">
-                  <div
-                    dangerouslySetInnerHTML={{ __html: props.data.website }}
-                  />
-                </li>
-              </FooterIconInfo>
-            </Link>
+              <li className="hover:text-[#1273EB]">
+                <Link
+                  to="/"
+                  aria-label="websit link http://www.trendsofttech.com"
+                >
+                  {props.data.website}{" "}
+                </Link>
+              </li>
+            </FooterIconInfo>
           </ul>
         </FooterInfoDiv>
       </FooterInfo>

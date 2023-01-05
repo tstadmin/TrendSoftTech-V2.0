@@ -22,10 +22,7 @@ const AccessibilityServices = props => {
       <AccessibilityCard>
         {props.accessibilityServices.list?.map((item, id) => (
           <AccessibilityCardInfo key={item.listItem.id}>
-            <AccessibilityImage
-              src={item.listItem.img}
-              alt={item.listItem.alt}
-            />
+            <AccessibilityImage src={item.listItem.img} />
             <AccessibilityInfo>
               <AccessibilityCardTitle>
                 {item.listItem.title}

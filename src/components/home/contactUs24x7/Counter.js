@@ -13,15 +13,21 @@ const Counter = () => {
     >
       <Counte>
         <div>
-          <CounterNumber>{counter && <CountUp end={100} />}+</CounterNumber>
+          <CounterNumber>
+            {counter && <CountUp end={100} duration={1} />}+
+          </CounterNumber>
           <CounterDescription>Happy Clients</CounterDescription>
         </div>
         <div>
-          <CounterNumber>{counter && <CountUp end={50} />}+</CounterNumber>
+          <CounterNumber>
+            {counter && <CountUp end={50} duration={1} />}+
+          </CounterNumber>
           <CounterDescription>Happy Clients</CounterDescription>
         </div>
         <div>
-          <CounterNumber>{counter && <CountUp end={200} />}+</CounterNumber>
+          <CounterNumber>
+            {counter && <CountUp end={200} duration={1} />}+
+          </CounterNumber>
           <CounterDescription>Happy Clients</CounterDescription>
         </div>
       </Counte>

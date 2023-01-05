@@ -27,10 +27,14 @@ const WorkingProcess = props => {
         <WorkingDescription>
           {props.workingProcess.description}
         </WorkingDescription>
-
-        <Button className="mt-10">
-          <Link to="/contact/"> {props.workingProcess.CTA}</Link>
-        </Button>
+        <div>
+          <Link
+            to="/contact/"
+            className="bg-blue-600  hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]"
+          >
+            {props.workingProcess.CTA}
+          </Link>
+        </div>
       </Tilt>
 
       <WorkingCards>

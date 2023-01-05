@@ -16,7 +16,7 @@ export const EmailDiv = styled.div`
   ${tw`sm:flex  grid sm:space-x-4`}
 `
 export const Image = styled.img`
-  ${tw`text-4xl sm:w-20 w-14  sm:h-20 h-14`}
+  ${tw`text-4xl sm:w-10 h-14`}
 `
 export const EmailInfo = styled.div`
   ${tw`space-y-1`}

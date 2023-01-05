@@ -93,7 +93,7 @@ const dataQuery = graphql`
                     title
                     description
                     img
-                    alt
+                    label
                     page
                     CTA
                   }

@@ -14,7 +14,7 @@ const ContactInfo = props => {
       <Info>
         <Image src={props.data.emailimg} alt={props.data.altEmail} />
         <EmailInfo>
-          <p> {props.data.emailTitle}</p>
+          <h2> {props.data.emailTitle}</h2>
           <Link to="service@trendsofttech.com">
             <p>{props.data.email} </p>
           </Link>

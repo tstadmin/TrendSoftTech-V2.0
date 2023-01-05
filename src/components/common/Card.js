@@ -16,7 +16,7 @@ const Card = props => {
           }
             lg:p-6 2xl:px-8   md:p-8 p-5 bg-white`}
     >
-      <img src={props.img} alt="" className="w-[85px] h-[85px]" />
+      <img src={props.img} className="w-[85px] h-[85px]" />
 
       <div
         className={`  ${
@@ -30,7 +30,9 @@ const Card = props => {
         <p>{props.description}</p>
         {props.CTA ? (
           <Hyperlink>
-            <Link to={props.page}>{props.CTA}</Link>
+            <Link aria-label={props.label} to={props.page}>
+              {props.CTA}
+            </Link>
           </Hyperlink>
         ) : (
           ""
