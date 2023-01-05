@@ -2,7 +2,7 @@
 home:
   navbar:
     logo: "/img/HomeImages/logo.svg"
-    alt: "TrendSoftech logo image"
+    alt: "TrendSoft tech logo"
     button: contact us
     openMenu: "Menu"
     closeMenu: "Close"
@@ -35,32 +35,32 @@ home:
     headers: "We Increase your <br/>Business Success"
     title: "Use the modern technology and IT Services"
     image: "/img/HomeImages/home_main_frame_2.svg"
-    alt: "banner Image"
+    alt: ""
     CTA: "contact"
   bannerItems:
     - card:
         id: "1"
         img: "/img/icons/AgileProcess.svg"
-        alt: "AgileProcess Image"
+        alt: ""
         title: "Agile Process"
         description: "We develop enterprise-grade applications employing Agile and Scrum that enables the delivery of  high-priority feature first..."
     - card:
         id: "2"
         img: "/img/icons/FlexibilityinTeamScaling.svg"
-        alt: "Flexibilityin Team Scaling Image"
+        alt: ""
         title: "Flexibility in Team Scaling"
         description: "Ramp up your team or reduce the number of resources - designers, developers or QAs - anytime as per your needs."
     - card:
         id: "3"
         img: "/img/icons/BestSecurityPractices.svg"
-        alt: "Best Security Practices Image"
+        alt: ""
         title: "Best Security Practices"
         description: "High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices."
   aboutOurCompany:
     img: "/img/HomeImages/about_Frame.svg"
     imgDot: "/img/HomeImages/Vector1.svg"
-    alt: "about Frame image"
-    altDot: "Vector image"
+    alt: ""
+    altDot: ""
     title: "ABOUT US"
     header: "About Our Company"
     description: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. <br/> <br/> Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions. <br/> <br/> With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals."
@@ -72,7 +72,7 @@ home:
       - listItem:
           id: "1"
           img: "/img/icons/WebDevelopment.svg"
-          alt: "Web Development Image"
+          alt: ""
           title: "Web Development"
           description: "A strong base in the field of website designing development services and made us one of  best Web  Development Company spanned across India."
           page: "/services/webDevelopment/"
@@ -80,7 +80,7 @@ home:
       - listItem:
           id: "2"
           img: "/img/icons/EcommerceDevelopment.svg"
-          alt: "Ecommerce Development Image"
+          alt: ""
           title: "E-Commerce Development"
           description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."
           page: "/services/ecommerceDevelopment/"
@@ -88,7 +88,7 @@ home:
       - listItem:
           id: "3"
           img: "/img/icons/ProductDevelopment.svg"
-          alt: "Product Development Image"
+          alt: ""
           title: "Product Development"
           description: "We proudly say we are among the best software product development companies because we have a best-in-class.."
           page: "/services/productDevelopment/"
@@ -96,7 +96,7 @@ home:
       - listItem:
           id: "4"
           img: "/img/icons/MobileDevelopment.svg"
-          alt: "Mobile Development Image"
+          alt: ""
           title: "Mobile Development"
           description: "we offer full-cycle of mobile app development services including planning, design, integration, and management.."
           page: "/services/mobileDevelopment/"
@@ -104,7 +104,7 @@ home:
       - listItem:
           id: "5"
           img: "/img/icons/UiUXDesign.svg"
-          alt: "Ui UX Design Development Image"
+          alt: ""
           title: "UI/UX Design"
           description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design,"
           page: "/services/uiUXDesign/"
@@ -112,7 +112,7 @@ home:
       - listItem:
           id: "6"
           img: "/img/icons/DigitalMarketing.svg"
-          alt: "Digital Marketing Development Image"
+          alt: ""
           title: "Digital Marketing"
           description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
           page: "/services/digitalMarketing/"
@@ -124,14 +124,14 @@ home:
       - listItem:
           id: "1"
           img: "/img/icons/Docaccessibility.svg"
-          alt: "Doc Accessibility Image"
+          alt: ""
           title: "Doc Accessibility"
           description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
           page: ""
       - listItem:
           id: "2"
           img: "/img/icons/webaccessibility.svg"
-          alt: "Web Accessibility Image"
+          alt: ""
           title: "Web Accessibility"
           description: "We offers a variety of services to help you make your new or existing website accessible to users ..."
           page: ""
@@ -168,7 +168,7 @@ home:
           description: "One the product is accepted by the client we move towards deployment. Our support teams..."
   footer:
     logo: "/img/HomeImages/trendsoftlogo.svg"
-    alt: "trendsoft tect logo image"
+    alt: "trendsoft tech logo"
     description: "At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections."
     itTitle: "IT Services"
     itService: 
@@ -202,7 +202,8 @@ home:
           page: "/services/digitalMarketing/"
     contactTitle : "Contact Info"
     local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
-    mail : "info@trendsofttech.com <br/>service@trendsofttech.com " 
+    mail : "info@trendsofttech.com" 
+    serviceMail: " service@trendsofttech.com"
     mailLink : ""    
     website : "http://www.trendsofttech.com" 
     websiteLink : ""

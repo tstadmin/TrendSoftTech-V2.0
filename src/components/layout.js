@@ -28,10 +28,10 @@ const Layout = ({ children }) => {
   return (
     <div>
       <TopBar />
-      <OnclickTop />
       <Header data={data} />
       {children}
       <Footer data={footer} />
+      <OnclickTop />
     </div>
   )
 }
@@ -74,6 +74,7 @@ const layoutQuery = graphql`
                 itTitle
                 local
                 mail
+                serviceMail
                 mailLink
                 website
                 facebookLink

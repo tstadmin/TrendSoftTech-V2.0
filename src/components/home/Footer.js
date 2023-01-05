@@ -6,7 +6,6 @@ import { AiOutlineMail } from "react-icons/ai"
 import { BiLink } from "react-icons/bi"
 
 import {
-  Description,
   FooterDiv,
   FooterTitle,
   FooterInfo,
@@ -63,10 +62,9 @@ const Footer = props => {
         <FooterInfoDiv>
           <FooterTitle>{props.data.contactTitle}</FooterTitle>
           <ul>
-            <Link
-              to="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
+            <a
+              href="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
               target="_blank"
-              className=" focus:underline focus:text-[#1273EB]"
             >
               <FooterIconInfo>
                 <IconSize>
@@ -77,22 +75,28 @@ const Footer = props => {
                   <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
                 </li>
               </FooterIconInfo>
-            </Link>
-            <Link
-              to="service@trendsofttech.com"
-              className=" focus:underline focus:text-[#1273EB]"
-            >
+            </a>
+            <a href="mailto:info@trendsofttech.com">
               <FooterIconInfo>
                 <IconSize>
                   <AiOutlineMail />
                 </IconSize>
 
-                <li>
-                  <div dangerouslySetInnerHTML={{ __html: props.data.mail }} />{" "}
-                </li>
+                <li>{props.data.mail}</li>
               </FooterIconInfo>
-            </Link>
-            <Link to="/" className=" focus:underline focus:text-[#1273EB]">
+            </a>
+
+            <a href="mailto:service@trendsofttech.com">
+              <FooterIconInfo>
+                <IconSize>
+                  <AiOutlineMail />
+                </IconSize>
+
+                <li>{props.data.serviceMail}</li>
+              </FooterIconInfo>
+            </a>
+
+            <Link to="/">
               <FooterIconInfo>
                 <IconSize>
                   <BiLink />

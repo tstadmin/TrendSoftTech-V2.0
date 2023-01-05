@@ -28,9 +28,9 @@ const WorkingProcess = props => {
           {props.workingProcess.description}
         </WorkingDescription>
 
-        <Link to="/contact/">
-          <Button className="mt-10 "> {props.workingProcess.CTA}</Button>
-        </Link>
+        <Button className="mt-10">
+          <Link to="/contact/"> {props.workingProcess.CTA}</Link>
+        </Button>
       </Tilt>
 
       <WorkingCards>

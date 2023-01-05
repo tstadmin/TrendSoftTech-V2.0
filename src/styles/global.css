@@ -25,5 +25,5 @@ li{
 }
 
 a{
-    @apply focus:underline focus:text-[#1273EB]
+    @apply focus:underline focus:text-orange-500
 }
