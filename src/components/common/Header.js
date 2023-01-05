@@ -21,38 +21,10 @@ export default function Header(props) {
         <Link to="/">
           <img
             src={props.data.logo}
-            alt="logo"
+            alt="Trendsoft Tech Logo"
             className="sm:w-[150px] 240Screen:w-[80px] sm:h-[60px]"
           />
         </Link>
-
-        {/*  Menu bar */}
-
-        <div
-          className={
-            nav
-              ? "fixed z-20 right-0 1920Screen:top-[12.4%] 2xl:top-[12.8%] sm:top-[13%] top-[11%]  bg-[#0084FF] sm:h-[70vh]  h-[100vh] w-[100%] pt-6"
-              : "fixed hidden "
-          }
-        >
-          <ul className="xl:flex 440Screen:pl-10 pl-4 2xl:pl-32 1920Screen:pl-44 1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
-            {Navbardata.map((item, idx) => (
-              <li
-                key={item.id}
-                className="uppercase  text-white mt-6 sm:text-2xl text-sm font-medium "
-              >
-                <Link to={item.page}>{item.title}</Link>
-                <ul className="space-y-2 mt-4 sm:text-base font-normal ">
-                  {item.subtitle.map((subItem, idx) => (
-                    <li className="hover:text-[#FFC93C] text-white/60 sm:text-lg text-xs">
-                      <Link to={subItem.page}>{subItem.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </div>
       </NavBar>
 
       {/* Contact Button */}
@@ -74,13 +46,44 @@ export default function Header(props) {
            pr-8"
         >
           {nav ? (
-            <h2 className="cursor-pointer text-[#0084FF] group transition">
-              <Underline>{props.data.closeMenu}</Underline>
-            </h2>
+            <div>
+              <div>
+                <p className="text-2xl cursor-pointer text-[#0084FF] group transition">
+                  <Underline>{props.data.closeMenu}</Underline>
+                </p>
+              </div>
+              {/*  Menu bar */}
+
+              <div
+                className={
+                  nav
+                    ? "fixed z-20 right-0 1920Screen:top-[12.4%] 2xl:top-[12.8%] sm:top-[13%] top-[11%]  bg-[#0084FF] sm:h-[70vh]  h-[100vh] w-[100%] pt-6"
+                    : "fixed hidden "
+                }
+              >
+                <ul className="xl:flex 440Screen:pl-10 pl-4 2xl:pl-32 1920Screen:pl-44 1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+                  {Navbardata.map((item, idx) => (
+                    <li
+                      key={item.id}
+                      className="uppercase  text-white mt-6 sm:text-2xl text-sm font-medium "
+                    >
+                      <Link to={item.page}>{item.title}</Link>
+                      <ul className="space-y-2 mt-4 sm:text-base font-normal ">
+                        {item.subtitle.map((subItem, idx) => (
+                          <li className="hover:text-[#FFC93C] text-white/60 sm:text-lg text-xs">
+                            <Link to={subItem.page}>{subItem.title}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           ) : (
-            <h2 className="cursor-pointer text-[#0084FF] group transition">
+            <p className="text-2xl cursor-pointer text-[#0084FF] group transition">
               <Underline>{props.data.openMenu}</Underline>
-            </h2>
+            </p>
           )}
         </button>
       </div>
