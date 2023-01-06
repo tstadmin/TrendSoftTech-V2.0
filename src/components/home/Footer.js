@@ -24,7 +24,7 @@ import { Link } from "gatsby"
 
 const Footer = props => {
   return (
-    <FooterDiv>
+    <FooterDiv id="footer" role="footer">
       <FooterInfo>
         <FooterTrendInfo>
           <Link to="/">

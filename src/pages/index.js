@@ -37,7 +37,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <div>
+      <div id="content" role="main">
         <Seo title="Home" description="TrendSoftTech" />
         <Banner banner={banner} />
         <AboutOurCompany aboutOurCompany={aboutOurCompany} />
