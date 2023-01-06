@@ -9,10 +9,7 @@ const Brochure = () => {
       </p>
 
       <a href="/pdf/brochure.pdf" target="_blank">
-        <button
-          className="bg-blue-500 text-white text-sm p-3 rounded-md mt-4 flex "
-          onClick="/pdf/brochure.pdf"
-        >
+        <button className="bg-blue-500 text-white text-sm p-3 rounded-md mt-4 flex ">
           DOWNLOAD NOW <AiOutlineFilePdf className="text-white ml-1 text-lg" />
         </button>
       </a>
