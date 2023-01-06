@@ -188,18 +188,6 @@ home:
           id: "4"
           title: "Mobile Development"
           page: "/services/mobileDevelopment/"
-      - listItem:
-          id: "5"
-          title: "UI/UX Design"
-          page: "/services/uiUXDesign/"
-      - listItem:
-          id: "6"
-          title: "Testing"
-          page: "/services/testing/"    
-      - listItem:
-          id: "7"
-          title: "Digital Marketing"
-          page: "/services/digitalMarketing/"
     contactTitle : "Contact Info"
     local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
     mail : "info@trendsofttech.com" 

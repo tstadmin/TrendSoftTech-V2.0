@@ -59,16 +59,19 @@ export default function Header(props) {
           >
             {nav ? (
               <p
-                id="menubutton"
-                role="menubutton"
                 aria-haspopup="true"
-                aria-expanded="true"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                id="navbarDropdown"
                 className="text-5xl  cursor-pointer text-[#0084FF] "
               >
                 <RxCross2 />
               </p>
             ) : (
-              <p className="text-5xl  cursor-pointer text-[#0084FF] ">
+              <p
+                aria-labelledby="navbarDropdown"
+                className="text-5xl  cursor-pointer text-[#0084FF] "
+              >
                 <HiBars3BottomLeft />
               </p>
             )}
