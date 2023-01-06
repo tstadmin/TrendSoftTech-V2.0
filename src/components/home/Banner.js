@@ -12,7 +12,7 @@ import {
 } from "./HomeStyle"
 const Banner = props => {
   return (
-    <BannerDiv>
+    <BannerDiv id="header" role="banner">
       <BannerInfoDiv>
         <BannerTitle>
           <div dangerouslySetInnerHTML={{ __html: props.banner.headers }} />

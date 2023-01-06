@@ -28,6 +28,14 @@ module.exports = {
       "1920Screen": "1920px",
 
       "2048Screen": "2048px",
+
+      "375Screen": "375px",
+
+      "412Screen": "412px",
+
+      "390Screen": "390px",
+
+      "820Screen": "820px",
     },
     fontFamily: {
       Poppins: "Poppins",
