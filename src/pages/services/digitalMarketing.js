@@ -4,7 +4,7 @@ import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Development from "../../components/Services/Development"
-import Tabs from "../../components/services/Tabs"
+
 import ServicesLayout from "../../components/ServicesLayout"
 
 const DigitalMarketing = () => {
@@ -26,7 +26,7 @@ const DigitalMarketing = () => {
           title="Digital Marketing"
           img="/img/BreadCrumb/digitalmarketing.svg"
         />
-        <Tabs />
+        {/* <Tabs /> */}
         <ServicesLayout>
           <Development data={digital} />
         </ServicesLayout>

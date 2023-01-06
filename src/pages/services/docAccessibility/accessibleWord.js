@@ -4,7 +4,7 @@ import Layout from "../../../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
 import ServicesLayout from "../../../components/ServicesLayout"
 import BreadCrumb from "../../../components/common/BreadCrumb"
-import AccessibilityTabs from "../../../components/services/AccessibilityTabs"
+
 import Seo from "../../../components/seo"
 const AccessibleWord = () => {
   const query = useStaticQuery(AccessibleData)
@@ -23,7 +23,7 @@ const AccessibleWord = () => {
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible Word"
         />
-        <AccessibilityTabs />
+        {/* <AccessibilityTabs /> */}
         <ServicesLayout>
           <Accessible data={accessibleWord} />
         </ServicesLayout>

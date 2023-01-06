@@ -10,9 +10,9 @@ export const SubTitle = styled.h3`
 export const Description = styled.p`
   ${tw`text-[16px] text-[#454545]  `}
 `
-export const Button = styled.button`
-  ${tw`bg-blue-600  hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}
-`
+// export const Button = styled.button`
+//   ${tw`bg-blue-600  hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}
+// `
 
 ///  ----- Banner component in HomePage Home folder--------------------------------
 
@@ -46,7 +46,7 @@ export const BannerImage = styled.img`
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
 
 export const AboutOur = styled.div`
-  ${tw`lg:flex grid sm:mt-16 mt-32 2xl:space-x-60 xl:space-x-40 lg:space-x-28 md:space-y-20 space-y-10  justify-center 2xl:px-48 lg:px-20 md:px-20  px-8`}
+  ${tw`lg:flex grid sm:mt-16 mt-32 2xl:space-x-60 xl:space-x-40 lg:space-x-16 md:space-y-20 space-y-10  justify-center 2xl:px-48 md:px-12  px-8`}
 `
 export const AboutOurInfo = styled.div`
   ${tw`space-y-5 relative`}

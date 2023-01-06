@@ -1,27 +1,15 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import {
-  Image,
-  BreadCrumbHeader,
-  BreadCrumbInfo,
-  BreadCrumbSubHeader,
-} from "./CommonStyle"
+import { Image, BreadCrumInfo, BreadCrumbHeader } from "./CommonStyle"
 
 const BreadCrumb = props => {
   return (
-    <div>
-      <Image src={props.img} alt="BreadCrumb about images" />
-
-      <BreadCrumbInfo>
-        {/* <BreadCrumbHeader>{props.title}</BreadCrumbHeader> */}
-        <BreadCrumbSubHeader>
-          <Link to="/">Trendsoft Tech</Link>
-
-          <p>/</p>
-          <p>{props.title}</p>
-        </BreadCrumbSubHeader>
-      </BreadCrumbInfo>
+    <div className="relative">
+      <Image src={props.img} alt="" />
+      <BreadCrumInfo>
+        <BreadCrumbHeader>{props.title}</BreadCrumbHeader>
+      </BreadCrumInfo>
     </div>
   )
 }

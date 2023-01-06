@@ -4,7 +4,6 @@ import BreadCrumb from "../../../components/common/BreadCrumb"
 import AccessibilityServices from "../../../components/home/AccessibilityServices"
 import Layout from "../../../components/layout"
 
-import AccessibilityTabs from "../../../components/services/AccessibilityTabs"
 import Seo from "../../../components/seo"
 
 const Accessibility = props => {
@@ -23,7 +22,7 @@ const Accessibility = props => {
         title="Accessibility"
         img="/img/BreadCrumb/Accessibility.svg"
       />
-      <AccessibilityTabs />
+      {/* <AccessibilityTabs /> */}
       <AccessibilityServices accessibilityServices={accessibilityServices} />
     </Layout>
   )

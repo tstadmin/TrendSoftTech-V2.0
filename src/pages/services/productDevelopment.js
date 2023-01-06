@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
-import Tabs from "../../components/services/Tabs"
+
 import ServicesLayout from "../../components/ServicesLayout"
 
 import Seo from "../../components/seo"
@@ -28,7 +28,7 @@ const ProductDevelopment = () => {
           title="Product Development"
           img="/img/BreadCrumb/ProductDevelopment.svg"
         />
-        <Tabs />
+        {/* <Tabs /> */}
         <ServicesLayout>
           <Development data={product} />
         </ServicesLayout>

@@ -5,10 +5,10 @@ import tw, { styled } from "twin.macro"
 export const ServiceCardDiv = styled.div`
   ${tw` 2xl:px-52 lg:px-36 px-8`}
 `
-export const ServiceCard = styled.div`
+export const ServiceCard = styled.ul`
   ${tw`grid md:grid-cols-2 grid-cols-1 justify-items-center lg:px-0 sm:px-12 gap-8 mt-24`}
 `
-export const ServiceCardInfo = styled.div`
+export const ServiceCardInfo = styled.li`
   ${tw`lg:min-w-[60%]  min-w-[60%] duration-500 bg-blue-50 hover:border-0 rounded-md hover:border-blue-400 hover:shadow-xl hover:shadow-blue-400/50 hover:cursor-pointer hover:scale-105 hover:ease-in-out`}
 `
 //---------  Cards component in Service page  --------------------------------

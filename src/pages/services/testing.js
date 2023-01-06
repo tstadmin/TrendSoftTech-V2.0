@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
-import Tabs from "../../components/services/Tabs"
+
 import ServicesLayout from "../../components/ServicesLayout"
 
 import Seo from "../../components/seo"
@@ -23,7 +23,7 @@ const Testing = () => {
       <Layout>
         <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img="/img/BreadCrumb/testing.svg" />
-        <Tabs />
+        {/* <Tabs /> */}
         <ServicesLayout>
           <Development data={test} />
         </ServicesLayout>

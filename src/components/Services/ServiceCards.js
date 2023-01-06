@@ -1,38 +1,20 @@
-import { Link } from "gatsby"
 import React from "react"
-import { TabsData } from "../../../data/TabsData"
-import {
-  ServiceCard,
-  ServiceCardInfo,
-  Cards,
-  CardHanding,
-  CardReading,
-  CardDescription,
-  ServiceCardDiv,
-} from "./ServicesStyled"
+import Cards from "./Cards"
+
+import { ServiceCard, ServiceCardInfo, ServiceCardDiv } from "./ServicesStyled"
+
 const ServiceCards = props => {
+  console.log(props)
   return (
     <ServiceCardDiv>
       <ServiceCard>
-        {TabsData.data.map((value, idx) => (
+        {props.data.map((value, idx) => (
           <ServiceCardInfo key={value.id}>
-            <Card data={value} />
+            <Cards data={value.listItem} />
           </ServiceCardInfo>
         ))}
       </ServiceCard>
     </ServiceCardDiv>
-  )
-}
-
-const Card = ({ data }) => {
-  return (
-    <Cards>
-      <CardHanding>{data.title}</CardHanding>
-      <p>{data.description}</p>
-      <CardReading>
-        <Link to={data.link}>{TabsData.metaData.CTA}</Link>
-      </CardReading>
-    </Cards>
   )
 }
 

@@ -1,6 +1,5 @@
-import { Link } from "gatsby"
 import React from "react"
-
+import { AiOutlineFilePdf } from "react-icons/ai"
 const Brochure = () => {
   return (
     <div className="bg-blue-400/25 border border-blue-500 space-y-6 p-6 rounded-lg px-12 ">
@@ -11,10 +10,10 @@ const Brochure = () => {
 
       <a href="/pdf/brochure.pdf" target="_blank">
         <button
-          className="bg-blue-500 text-white text-sm p-3 rounded-md mt-4 "
+          className="bg-blue-500 text-white text-sm p-3 rounded-md mt-4 flex "
           onClick="/pdf/brochure.pdf"
         >
-          DOWNLOAD NOW
+          DOWNLOAD NOW <AiOutlineFilePdf className="text-white ml-1 text-lg" />
         </button>
       </a>
     </div>

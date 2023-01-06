@@ -1,10 +1,10 @@
 import React from "react"
 
-import { Heading, Image, Div, AboutUsInfo } from "./AboutStyle"
+import { Heading, Div, AboutUsInfo } from "./AboutStyle"
 const AboutUs = props => {
   return (
     <Div>
-      <Image src={props.data.aboutimg} alt={props.data.altAbout} />
+      <img src={props.data.aboutimg} />
       <AboutUsInfo>
         <Heading className="">{props.data.aboutUs}</Heading>
         <p>

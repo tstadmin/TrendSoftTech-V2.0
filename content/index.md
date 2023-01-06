@@ -217,7 +217,7 @@ about:
     altVision: "Our Vision Image"
     chooseimg : "/img/AboutImages/Choose.svg"
     altChoose: "why choose image"
-    aboutUs: "aboutUs"
+    aboutUs: "AboutUs"
     aboutUsDescription: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and  Cost-Effective Software solutions. Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions.<br/><br/>With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals."
     ourVision: "Our Vision"
     ourVisionDescription: "Our vision is to be the best in providing IT solutions and services with customer excellence and sound business practices."
@@ -867,66 +867,56 @@ contact :
     addressTwo: "Address 2:"   
     addressTwoInfo: "Unit No: 301-302 NRT Tech Park Mangalagiri Bypass Amaravati-522503"          
 serviceCards:
-  CTA: "READ MORE"
   list:
     - listItem:
         id: 1
-        title: "Web Development"
-        description: "A strong base in the field of website designing and development services made us one of the best Web Development Company spanned across."
-    - listItem:
-        id: 2
-        title: "Ecommerce Development"
-        description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."
-    - listItem:
-        id: 3
-        title: "Product Development"
-        description: "We proudly say we are among the best software product development companies because we have a best-in-class.."
-    - listItem:
-        id: 4
-        title: "Mobile App Development"
-        description: "we offer full-cycle of mobile app development services including planning, design, integration, and management.."
-    - listItem:
-        id: 5
-        title: "UI/UX Design"
-        description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design,"
-    - listItem:
-        id: 6
-        title: "Digital Marketing"
-        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
-tabs:
-  list:
-    - listItem:
-        id: 1
-        title: "Accessibility"
-        link: "/services/accessibility/"
-    - listItem:
-        id: 2
         title: "Web Development"
         link: "/services/webDevelopment/"
+        label: "read more Web Development"
+        description: "A strong base in the field of website designing and development services made us one of the best Web Development Company spanned across."
+        CTA: "READ MORE"
     - listItem:
-        id: 3
+        id: 2
         title: "Ecommerce Development"
         link: "/services/ecommerceDevelopment/"
+        label: "read more ecommerce Development"
+        description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."
+        CTA: "READ MORE"
     - listItem:
-        id: 4
+        id: 3
         title: "Product Development"
         link: "/services/productDevelopment/"
+        label: "read more product Development"
+        description: "We proudly say we are among the best software product development companies because we have a best-in-class.."
+        CTA: "READ MORE"
     - listItem:
-        id: 5
+        id: 4
         title: "Mobile Development"
         link: "/services/mobileDevelopment/"
+        label: "read more mobile Development"
+        description: "we offer full-cycle of mobile app development services including planning, design, integration, and management.."
+        CTA: "READ MORE"
     - listItem:
-        id: 6
+        id: 5
         title: "Ui/UX Design"
         link: "/services/uiUXDesign/"
+        label: "read more Ui UX Design"
+        description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design,"
+        CTA: "READ MORE"
     - listItem:
-        id: 7
+        id: 6
         title: "Testing"
         link: "/services/testing/"
+        label: "read more testing"
+        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
+        CTA: "READ MORE"
     - listItem:
-        id: 8
+        id: 7
         title: "Digital Marketing"
         link: "/services/digitalMarketing/"
+        label: "read more Digital Marketing"
+        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
+        CTA: "READ MORE"
 AccessibilityTabs:
   list:
     - listItem:

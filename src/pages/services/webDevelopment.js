@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
-import Tabs from "../../components/services/Tabs"
+
 import ServicesLayout from "../../components/ServicesLayout"
 
 import { graphql, useStaticQuery } from "gatsby"
@@ -25,7 +25,7 @@ const WebDevelopment = () => {
           title="Web Development"
           img="/img/BreadCrumb/WebDevelopment.svg"
         />
-        <Tabs />
+        {/* <Tabs /> */}
         <ServicesLayout>
           <Development data={webDevelopment} />
         </ServicesLayout>

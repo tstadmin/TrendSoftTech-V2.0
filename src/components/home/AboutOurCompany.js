@@ -5,7 +5,6 @@ import {
   AboutOurInfo,
   AboutOurImage,
   AboutOurTitle,
-  Button,
   AboutOurSubTitle,
   AboutOurDotImage,
 } from "./HomeStyle"
@@ -29,11 +28,11 @@ const AboutOurCompany = props => {
             }}
           />
         </p>
-        <div>
+        <div className="pt-5">
           <Link
             to="/about/"
             aria-label="About Our Company Learn More"
-            className="bg-blue-600 hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]"
+            className="bg-blue-600  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]"
           >
             {props.aboutOurCompany.CTA}
           </Link>
@@ -44,5 +43,3 @@ const AboutOurCompany = props => {
 }
 
 export default AboutOurCompany
-
-/// "
