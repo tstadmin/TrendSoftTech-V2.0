@@ -6,14 +6,14 @@ const AboutUs = props => {
     <Div>
       <img src={props.data.aboutimg} />
       <AboutUsInfo>
-        <Heading className="">{props.data.aboutUs}</Heading>
-        <p>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: props.data.aboutUsDescription,
-            }}
-          />
-        </p>
+        <Heading>{props.data.aboutUs}</Heading>
+
+        <div
+          className="space-y-4"
+          dangerouslySetInnerHTML={{
+            __html: props.data.aboutUsDescription,
+          }}
+        />
       </AboutUsInfo>
     </Div>
   )

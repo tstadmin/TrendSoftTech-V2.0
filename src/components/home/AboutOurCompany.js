@@ -21,13 +21,13 @@ const AboutOurCompany = props => {
 
         <AboutOurSubTitle>{props.aboutOurCompany.header}</AboutOurSubTitle>
 
-        <p>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: props.aboutOurCompany.description,
-            }}
-          />
-        </p>
+        <div
+          className="space-y-4"
+          dangerouslySetInnerHTML={{
+            __html: props.aboutOurCompany.description,
+          }}
+        />
+
         <div className="pt-5">
           <Link
             to="/about/"

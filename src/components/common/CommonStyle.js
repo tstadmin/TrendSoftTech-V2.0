@@ -1,5 +1,5 @@
 import tw, { styled } from "twin.macro"
-
+import { Link } from "gatsby"
 //-----BreadCrumb component  in Commer Folders-----
 
 export const Image = styled.img`
@@ -13,10 +13,25 @@ export const BreadCrumInfo = styled.div`
 export const BreadCrumbHeader = styled.div`
   ${tw`lg:text-5xl md:text-3xl font-semibold `}
 `
-//-----Card component  in Commer Folders-----
+//-----Grow Your Businnes component  in Commer Folders-----
+
+export const GrowBusinnes = styled.div`
+  ${tw`bg-blue-400/25 rounded-md p-12 space-y-6  px-12`}
+`
+export const GrowBusinnesHeading = styled.h2`
+  ${tw`text-2xl`}
+`
+//-----Brochure component  in Commer Folders-----
+
+export const BrochureDiv = styled.div`
+  ${tw`bg-blue-400/25 border border-blue-500 text-center space-y-6 p-6 rounded-lg px-12`}
+`
+export const BrochuresHeading = styled.h2`
+  ${tw`text-2xl`}
+`
 
 //-----All  Commer style component  in HomePage Commer folder
 
 export const Hyperlink = styled.p`
-  ${tw`text-[#1273EB] hover:text-orange-500 hover:underline hover:underline-offset-4`}
+  ${tw`text-[#1472E6] hover:text-orange-500 hover:underline hover:underline-offset-4`}
 `

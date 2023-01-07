@@ -9,13 +9,12 @@ const ChooseUs = props => {
       <ChooseInfo>
         <Heading>{props.data.whychoose}</Heading>
 
-        <p>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: props.data.whychooseDescription,
-            }}
-          />
-        </p>
+        <div
+          className="space-y-4"
+          dangerouslySetInnerHTML={{
+            __html: props.data.whychooseDescription,
+          }}
+        />
       </ChooseInfo>
     </Div>
   )

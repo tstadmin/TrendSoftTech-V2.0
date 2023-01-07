@@ -35,7 +35,7 @@ const Footer = props => {
           <FooterIconLogo>
             <a
               href={props.data.facebookLink}
-              aria-label="facebook trendsoft tech page "
+              aria-label="facebook: trendsoft tech page "
               target="_blank"
             >
               <FooterIconStyles>
@@ -46,7 +46,7 @@ const Footer = props => {
             <a
               href={props.data.linkedinLink}
               target="_blank"
-              aria-label="Linkedin trendsoft tech page "
+              aria-label="Linkedin: trendsoft tech page "
             >
               <FooterIconStyles>
                 <TiSocialLinkedin />

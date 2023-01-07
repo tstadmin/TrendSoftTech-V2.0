@@ -133,7 +133,9 @@ export const CounterDescription = styled.p`
 export const Contact = styled.div`
   ${tw` 2xl:px-48  xl:px-28 lg:px-14 px-8  `}
 `
-
+export const ContactDiv = styled.div`
+  ${tw`bg-blue-100 xl:flex grid  xl:items-center justify-items-center rounded-2xl`}
+`
 export const ContactInfo = styled.div`
   ${tw`space-y-8 text-center p-9 `}
 `

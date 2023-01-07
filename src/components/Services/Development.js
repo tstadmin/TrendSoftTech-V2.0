@@ -8,22 +8,24 @@ import {
 const Development = props => {
   return (
     <div>
-      <Description>
-        <div dangerouslySetInnerHTML={{ __html: props.data.description }} />
-      </Description>
+      <div
+        className="space-y-4 mt-5"
+        dangerouslySetInnerHTML={{ __html: props.data.description }}
+      />
+
       {props.data.title ? <Title>{props.data.title}</Title> : ""}
       {props.data.test ? (
         <>
           {props.data.test?.map((item, id) => (
             <div key={item.listItems.id}>
               <PhasesTitle>{item.listItems.title}</PhasesTitle>
-              <PhasesDescription>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: item.listItems.description,
-                  }}
-                />
-              </PhasesDescription>
+
+              <div
+                className="space-y-4 mt-2"
+                dangerouslySetInnerHTML={{
+                  __html: item.listItems.description,
+                }}
+              />
             </div>
           ))}
         </>
@@ -34,16 +36,19 @@ const Development = props => {
       {props.data.list?.map((item, idx) => (
         <div key={item.listItems.id}>
           <Title>{item.listItems.title}</Title>
-          <Description>
-            <div
-              dangerouslySetInnerHTML={{ __html: item.listItems.description }}
-            />
-          </Description>
+
+          <div
+            className="space-y-4 mt-5"
+            dangerouslySetInnerHTML={{ __html: item.listItems.description }}
+          />
 
           {item.listItems.list?.map((i, idx) => (
             <div key={i.listItems.id}>
               <PhasesTitle>{i.listItems.title}</PhasesTitle>
-              <PhasesDescription>{i.listItems.description}</PhasesDescription>
+              <div
+                className="space-y-4 mt-2"
+                dangerouslySetInnerHTML={{ __html: i.listItems.description }}
+              />
             </div>
           ))}
         </div>

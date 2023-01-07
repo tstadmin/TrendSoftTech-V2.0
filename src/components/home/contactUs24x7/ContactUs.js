@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import {
-  Button,
+  ContactDiv,
   Contact,
   ContactDescription,
   ContactHeader,
@@ -11,7 +11,7 @@ import {
 const ContactUs = props => {
   return (
     <Contact>
-      <div className="bg-blue-100 xl:flex grid  xl:items-center justify-items-center rounded-2xl">
+      <ContactDiv>
         <img src={props.contactUs.personsImage} width="632px" />
 
         <ContactInfo>
@@ -26,7 +26,7 @@ const ContactUs = props => {
             </Link>
           </div>
         </ContactInfo>
-      </div>
+      </ContactDiv>
     </Contact>
   )
 }

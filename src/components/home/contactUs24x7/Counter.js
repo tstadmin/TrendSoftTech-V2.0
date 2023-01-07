@@ -22,13 +22,13 @@ const Counter = () => {
           <CounterNumber>
             {counter && <CountUp end={50} duration={1} />}+
           </CounterNumber>
-          <CounterDescription>Happy Clients</CounterDescription>
+          <CounterDescription>Companies</CounterDescription>
         </div>
         <div>
           <CounterNumber>
             {counter && <CountUp end={200} duration={1} />}+
           </CounterNumber>
-          <CounterDescription>Happy Clients</CounterDescription>
+          <CounterDescription>Projects Done</CounterDescription>
         </div>
       </Counte>
     </ScrollTrigger>

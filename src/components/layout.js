@@ -26,7 +26,14 @@ const Layout = ({ children }) => {
   }, [footerData])
 
   return (
-    <div>
+    <div id="">
+      {/*             SKIP MAIN Contact            */}
+      {/* <a
+        className="bg-[#222D65] left-10 absolute p-2 z-40 focus:-z-50"
+        href="#contenter"
+      >
+        Skip main conten t
+      </a> */}
       <TopBar />
       <Header data={data} />
       {children}

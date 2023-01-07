@@ -7,23 +7,20 @@ const OurVision = props => {
     <Div>
       <VisionInfo>
         <Heading>{props.data.ourVision}</Heading>
-        <p>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: props.data.ourVisionDescription,
-            }}
-          />
-        </p>
+
+        <div
+          dangerouslySetInnerHTML={{
+            __html: props.data.ourVisionDescription,
+          }}
+        />
 
         <Heading>{props.data.ourMission}</Heading>
-        <p>
-          {" "}
-          <div
-            dangerouslySetInnerHTML={{
-              __html: props.data.ourMissionDescription,
-            }}
-          />
-        </p>
+
+        <div
+          dangerouslySetInnerHTML={{
+            __html: props.data.ourMissionDescription,
+          }}
+        />
       </VisionInfo>
 
       <img src={props.data.Visionimg} />
