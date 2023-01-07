@@ -14,11 +14,13 @@ const Banner = props => {
   return (
     <BannerDiv id="header" role="banner">
       <BannerInfoDiv>
-        <BannerTitle>
+        <BannerTitle className="1920Screen:pl-20">
           <div dangerouslySetInnerHTML={{ __html: props.banner.headers }} />
         </BannerTitle>
 
-        <BannerSubTitle>{props.banner.title}</BannerSubTitle>
+        <BannerSubTitle className="1920Screen:pl-20">
+          {props.banner.title}
+        </BannerSubTitle>
       </BannerInfoDiv>
 
       <BannerImageDiv>
