@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
-import React, { useState } from "react"
+import React, { useState, Fragment } from "react"
 import tw from "twin.macro"
-import { Disclosure } from "@headlessui/react"
+import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { IoIosArrowDown } from "react-icons/io"
 
 import { RxCross2 } from "react-icons/rx"
@@ -37,6 +37,7 @@ export default function Header(props) {
       </NavBar>
 
       {/* menu items */}
+
       <div>
         <div className="flex space-x-4 md:space-x-12 uppercase  ">
           <p className="md:text-xl text-md  hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block  group transition ">
@@ -52,13 +53,14 @@ export default function Header(props) {
             </Link>
           </p>
 
-          <button
+          <p
+            role="button"
             onClick={handleNav}
-            className=" block sm:text-2xl text-md  hover:text-blue-400 
+            className=" block sm:text-2xl text-md  hover:text-blue-400
            pr-8"
           >
             {nav ? (
-              <p
+              <button
                 aria-haspopup="true"
                 aria-expanded="false"
                 data-bs-toggle="dropdown"
@@ -66,16 +68,16 @@ export default function Header(props) {
                 className="text-5xl  cursor-pointer text-[#0084FF] "
               >
                 <RxCross2 />
-              </p>
+              </button>
             ) : (
-              <p
+              <button
                 aria-labelledby="navbarDropdown"
                 className="text-5xl  cursor-pointer text-[#0084FF] "
               >
                 <HiBars3BottomLeft />
-              </p>
+              </button>
             )}
-          </button>
+          </p>
         </div>
       </div>
 
