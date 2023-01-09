@@ -18,7 +18,7 @@ const Services = () => {
         title=" IT Services"
         img="/img/services/Services_main_frame.svg"
       />
-      {/* <Tabs /> */}
+
       <ServiceCards data={data} />
     </Layout>
   )

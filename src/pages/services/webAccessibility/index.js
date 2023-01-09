@@ -24,7 +24,6 @@ const WebAccessible = () => {
           title="Web Accessibility"
           img="/img/BreadCrumb/Webaccessibility.svg"
         />
-        {/* <AccessibilityTabs /> */}
         <ServicesLayout>
           <Accessible data={webAccessible} />
         </ServicesLayout>
