@@ -11,6 +11,8 @@ import Header from "./common/Header"
 import OnclickTop from "./common/OnClickScrollToTop"
 import Footer from "./home/Footer"
 import TopBar from "./common/TopBar"
+import NavBar from "./common/NavBar"
+import SkipToMainContent from "./common/SkipToMainContent"
 
 const Layout = ({ children }) => {
   const query = useStaticQuery(layoutQuery)
@@ -26,17 +28,11 @@ const Layout = ({ children }) => {
   }, [footerData])
 
   return (
-    <div id="">
-      {/*             SKIP MAIN Contact            */}
-      {/* <a
-        className="bg-[#222D65] left-10 absolute p-2 z-40 focus:-z-50"
-        href="#contenter"
-      >
-        Skip main conten t
-      </a> */}
+    <div>
+      <SkipToMainContent />
       <TopBar />
       <Header data={data} />
-      {children}
+      <div id="mainContent">{children}</div>
       <Footer data={footer} />
       <OnclickTop />
     </div>

@@ -21,7 +21,7 @@ const Card = props => {
       <div
         className={`  ${
           props.CTA
-            ? "lg:text-start text-center 2xl:-space-y-5 md:space-y-3  space-y-5 "
+            ? "lg:text-start text-center 2xl:space-y-4 md:space-y-3  space-y-5 "
             : "text-center"
         }    grid`}
       >

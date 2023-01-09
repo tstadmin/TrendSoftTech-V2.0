@@ -2,7 +2,7 @@ import tw, { styled } from "twin.macro"
 
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h2`
-  ${tw` text-orange-400 `}
+  ${tw` text-[#de1926]`}
 `
 export const SubTitle = styled.h3`
   ${tw` text-[#0B70E1]  `}
@@ -20,27 +20,17 @@ export const BannerDiv = styled.div`
   ${tw`flex relative`}
 `
 export const BannerInfoDiv = styled.div`
-  ${tw`sm:space-y-14 space-y-4 sm:py-24  py-12 2xl:w-[70vw]  2xl:h-[100vh] lg:w-[65vw]   lg:h-[95vh] sm:w-[80vw] sm:h-[60vh] h-[30vh] lg:pl-20 2xl:pl-24  pl-8 lg:pt-56 `}
+  ${tw`absolute z-20 sm:space-y-14 space-y-4  lg:pl-8 2xl:pl-24  pl-8 lg:pt-40 pt-12 h-[100vh] w-[100vw] `}
 `
 export const BannerTitle = styled.h1`
-  ${tw`xl:text-5xl  sm:text-4xl text-2xl text-[#E6202D] font-bold `}
+  ${tw`2xl:text-4xl text-white font-bold `}
 `
 export const BannerSubTitle = styled.p`
-  ${tw`2xl:text-2xl md:text-2xl text-sm font-normal text-[#1D54A8] `}
+  ${tw`2xl:text-2xl sm:text-xl text-sm font-normal text-white `}
 `
-export const BannerButton = styled.button`
-  ${tw`
-   sm:text-2xl text-sm  hover:bg-white hover:scale-105 border-2 border-blue-500 hover:border-[#f37c05]   
-   hover:duration-700  text-white hover:text-orange-500   bg-blue-500 font-semibold duration-75
-     sm:px-14 mb-1 rounded-full p-3
-     
-     `}
-`
-export const BannerImageDiv = styled.div`
-  ${tw`absolute -z-20`}
-`
+
 export const BannerImage = styled.img`
-  ${tw`object-cover w-[100vw] lg:h-[91vh]  sm:h-[60vh] h-[38vh]`}
+  ${tw`object-cover `}
 `
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
@@ -63,7 +53,7 @@ export const AboutOurH1 = styled.h2`
   ${tw`text-[16px] from-neutral-400 `}
 `
 export const AboutOurTitle = styled.h2`
-  ${tw`text-orange-400`}
+  ${tw`text-[#de1926]`}
 `
 
 export const AboutOurSubTitle = styled.h3`
@@ -87,7 +77,7 @@ export const ServicesTitleDiv = styled.div`
   ${tw`text-center mb-16 space-y-2`}
 `
 export const ServicesTitle = styled.h2`
-  ${tw`text-orange-400`}
+  ${tw`text-[#de1926]`}
 `
 export const ServicesSubTitle = styled.h3`
   ${tw`text-[#0B70E1] `}
@@ -102,7 +92,7 @@ export const Accessibility = styled.div`
   ${tw`text-center mb-16 mt-16 space-y-4`}
 `
 export const AccessibilityCard = styled.ul`
-  ${tw`lg:flex lg:justify-items-center  grid gap-7   2xl:px-48 xl:px-32 lg:px-14 px-8`}
+  ${tw`lg:flex lg:justify-items-center  grid gap-7    2xl:px-48 xl:px-32 lg:px-14 px-8`}
 `
 export const AccessibilityCardInfo = styled.li`
   ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
@@ -177,7 +167,7 @@ export const FooterInfo = styled.div`
   ${tw`md:flex sm:grid  px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
 `
 export const FooterTitle = styled.h2`
-  ${tw` text-[#0B70E1] `}
+  ${tw` text-[#1a71d4] `}
 `
 export const FooterTrendInfo = styled.div`
   ${tw` basis-1/3`}

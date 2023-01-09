@@ -32,9 +32,9 @@ home:
           title: "Contact"
           link: "/contact/"
   banner:
-    headers: "We Increase your <br/>Business Success"
+    headers: "<h1>We Increase your Business Success</h1> "
     title: "Use the modern technology and IT Services"
-    image: "/img/HomeImages/home_main_frame_2.svg"
+    image: "/img/HomeImages/bannerImage.svg"
     alt: ""
     CTA: "contact"
   bannerItems:
