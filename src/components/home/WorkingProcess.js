@@ -40,9 +40,10 @@ const WorkingProcess = props => {
       <WorkingCards>
         {props.workingProcess.list?.map((i, idx) => (
           <WorkingCard key={i.listItem.id}>
-            <WorkingCardNumber>{i.listItem.id}</WorkingCardNumber>
-
-            <WorkingCardTitle>{i.listItem.title}</WorkingCardTitle>
+            <WorkingCardTitle>
+              <span className="text-orange-400 ">{i.listItem.id}.</span>
+              {i.listItem.title}
+            </WorkingCardTitle>
 
             <p>{i.listItem.description}</p>
           </WorkingCard>

@@ -36,11 +36,12 @@ export default function OnclickTop() {
             position: "fixed",
             bottom: "40px",
             right: "40px",
-            height: "45px",
-            width: "45px",
           }}
         >
-          <IoArrowUpOutline className="text-white rounded-full bg-[#f37c05] text-6xl p-3  " />
+          <IoArrowUpOutline
+            className="text-white rounded-full bg-[#f37c05] text-6xl p-3 h-[45px]
+            w-[45px] "
+          />
         </button>
       )}
     </div>
