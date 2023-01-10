@@ -9,12 +9,9 @@ import {
   RequirementIcon,
   RequirementInfoDiv,
   RequirementInfoheading,
-  Form,
-  FormDiv,
   FormHeading,
   InputDiv,
   Button,
-  Description,
 } from "./CareersStyle"
 const RequirementInfo = props => {
   return (

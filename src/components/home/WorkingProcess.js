@@ -6,13 +6,10 @@ import Tilt from "react-parallax-tilt"
 import {
   Title,
   Working,
-  Description,
   WorkingDescription,
   WorkingCard,
-  WorkingCardNumber,
   WorkingCardTitle,
   WorkingCards,
-  Button,
 } from "./HomeStyle"
 const WorkingProcess = props => {
   return (

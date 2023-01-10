@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Description, Hyperlink } from "./CommonStyle"
+import { Hyperlink } from "./CommonStyle"
 const Card = props => {
   return (
     <li
@@ -16,7 +16,7 @@ const Card = props => {
           }
             lg:p-6 2xl:px-8   md:p-8 p-5 bg-white`}
     >
-      <img src={props.img} className="w-[85px] h-[85px]" />
+      <img src={props.img} className="w-[85px] h-[85px]" alt="" />
 
       <div
         className={`  ${

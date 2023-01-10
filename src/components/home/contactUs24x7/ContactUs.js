@@ -4,7 +4,6 @@ import {
   ContactDiv,
   Contact,
   ContactDescription,
-  ContactHeader,
   ContactInfo,
 } from "../HomeStyle.js"
 
@@ -12,7 +11,7 @@ const ContactUs = props => {
   return (
     <Contact>
       <ContactDiv>
-        <img src={props.contactUs.personsImage} width="632px" />
+        <img src={props.contactUs.personsImage} width="632px" alt="" />
 
         <ContactInfo>
           <h3>{props.contactUs.title}</h3>

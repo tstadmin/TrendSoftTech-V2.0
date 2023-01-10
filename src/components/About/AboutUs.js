@@ -4,7 +4,7 @@ import { Heading, Div, AboutUsInfo } from "./AboutStyle"
 const AboutUs = props => {
   return (
     <Div>
-      <img src={props.data.aboutimg} />
+      <img src={props.data.aboutimg} alt="" />
       <AboutUsInfo>
         <Heading>{props.data.aboutUs}</Heading>
 

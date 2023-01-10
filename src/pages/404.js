@@ -5,11 +5,7 @@ import { Link } from "gatsby"
 
 const NotFoundPage = () => (
   <div className="relative">
-    <img
-      className="h-[100vh] w-full object-cover"
-      src={errorImage}
-      alt="404 page image"
-    />
+    <img className="h-[100vh] w-full object-cover" src={errorImage} alt="" />
     <Link to="/">
       <h1 className="absolute sm:left-[45%] left-[30%] top-[79%] text-white hover:cursor-pointer ring-4 p-4 ring-white rounded-lg hover:ring-blue-400 hover:text-blue-400 ">
         Go To Home Page

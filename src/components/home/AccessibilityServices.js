@@ -7,7 +7,6 @@ import {
   AccessibilityCardInfo,
   AccessibilityCardTitle,
   AccessibilityInfo,
-  Description,
   AccessibilityImage,
 } from "./HomeStyle"
 
