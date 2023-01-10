@@ -11,7 +11,7 @@ import {
 const Banner = props => {
   return (
     <div id="header" role="banner">
-      <div className="2xl:-mt-24 xl:-mt-36 lg:-mt-48 md:-mt-60 sm:-mt-72 540Screen:-mt-[56%]   440Screen:-mt-[24%] 340Screen:-mt-[37%]   -mt-[26%] font-Poppins">
+      <div className="2xl:-mt-24 xl:-mt-36 lg:-mt-48 md:-mt-60 sm:-mt-72 540Screen:-mt-[56%]   440Screen:-mt-[24%] 340Screen:-mt-[37%] -mt-[26%] font-Poppins">
         <img
           className="min-w-[100vw] 540Screen:min-h-[100vh]  340Screen:h-[399px] h-[300px] "
           src={props.banner.image}

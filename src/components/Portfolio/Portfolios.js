@@ -1,16 +1,9 @@
 import { Link } from "gatsby"
 import React from "react"
-import {
-  PortfoloHeading,
-  PortfoloDiv,
-  PortfoloCard,
-  CardTitle,
-  Image,
-} from "./PortfolioStyled"
+
 const Portfolios = props => {
-  console.log(props)
   return (
-    <div className=" mt-20 p-5 2xl:px-24  bg-blue-200">
+    <div className=" mt-20  2xl:px-24 py-16 bg-blue-200">
       <div className="text-center">
         <h1>Portfolio</h1>
         <h3>Our Works</h3>
@@ -18,13 +11,13 @@ const Portfolios = props => {
 
       <div>
         {props.data.portfolios.map((item, index) => (
-          <div className="relative mt-10 p-5">
+          <div className="relative mt-10 p-6">
             <img
               src={item.listItem.img}
               className="lg:h-[500px] md:h-[400px] h-[300px] md:w-[85%] w-full object-cover  object-left-top "
             />
 
-            <div className="grid justify-center  md:w-72 w-52 h-auto space-y-3 bg-yellow-100 p-5  xl:right-20 lg:right-8 md:right-0 540Screen:right-[25%] sm:right-[30%] 440Screen:right-[23%] 340Screen:right-[12%] right-0 absolute md:top-32  top-52  ">
+            <div className="grid justify-center  md:w-72 w-52 h-auto space-y-3 bg-yellow-100 p-5  xl:right-20 lg:right-8 md:right-0 540Screen:right-[25%] sm:right-[30%]  340Screen:right-[25%] right-12 absolute md:top-32  top-56  ">
               <h2 className="lg:text-lg md:text-sm text-xs">
                 {item.listItem.title}
               </h2>

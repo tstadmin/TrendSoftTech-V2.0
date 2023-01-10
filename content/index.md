@@ -6,31 +6,147 @@ home:
     button: contact us
     openMenu: "Menu"
     closeMenu: "Close"
+    contact: "contact us"
+    careers: "CAREERS"
     list:
       - listItem:
           id: 1
-          title: "Home"
-          link: "/"
+          page: "/services/"
+          title: "IT Services"
+          subTitle: 
+            - listItem:
+                id: 1
+                title: " Web Development"
+                page: "/services/webDevelopment/"
+            - listItem:
+                id: 2
+                title: "Ecommerce Development"
+                page: "/services/ecommerceDevelopment/"
+            - listItem:
+                id: 3
+                title: "Product Development"
+                page: "/services/productDevelopment/"
+            - listItem:
+                id: 4
+                title: "Mobile  Development"
+                page: "/services/mobileDevelopment/"         
       - listItem:
           id: 2
-          title: "Services"
-          link: "/services/"
+          title: "Testing"
+          page: "/services/testing/"
+          subTitle: 
+            - listItem:
+                id: 1
+                title: "Manual Testing"
+                page: "/services/testing/"
+            - listItem:
+                id: 2
+                title: "Automation Testing"
+                page: "/services/testing/"
       - listItem:
           id: 3
-          title: "About"
-          link: "/about/"
+          title: "Accessibility"
+          page: "/services/accessibility/accessibility/"
+          subTitle: 
+            - listItem:
+                id: 1
+                title: "Doc Accessibility"
+                page: "/services/docAccessibility/accessibleExcel/"
+            - listItem:
+                id: 2
+                title: "Web Accessibility"
+                page: "/services/webAccessibility/"
       - listItem:
           id: 4
-          title: "Portfolio"
-          link: "/portfolio/"
+          title: "Marketing"
+          page: "/services/digitalMarketing/"
+          subTitle: 
+            - listItem:
+                id: 1
+                title: "Digital Marketing"
+                page: "/services/digitalMarketing/"
       - listItem:
           id: 5
-          title: "Careers"
-          link: "/careers/careers/"
+          title: "Design"
+          page: "/services/uiUXDesign/"
+          subTitle: 
+            - listItem:
+                id: 1
+                title: "UI/UX Design"
+                page: "/services/uiUXDesign/"
+    mobilelist:
+      - listItem:
+          id: 1
+          title: "Home"
+          page: "/"
+      - listItem:
+          id: 2
+          title: "About"
+          page: "/about/"
+      - listItem:
+          id: 3
+          title: " IT Services"
+          page: "/"
+          mobilesub: 
+            - listItem:
+                id: 1
+                title: " Web Development"
+                page: "/services/webDevelopment/"
+            - listItem:
+                id: 2
+                title: "Ecommerce Development"
+                page: "/services/ecommerceDevelopment/"
+            - listItem:
+                id: 3
+                title: "Product Development"
+                page: "/services/productDevelopment/"
+            - listItem:
+                id: 4
+                title: "Mobile  Development"
+                page: "/services/mobileDevelopment/"
+      - listItem:
+          id: 4
+          title: "Testing"
+          page: "/"
+          mobilesub: 
+            - listItem:
+                id: 1
+                title: "Manual Testing"
+                page: "/services/testing/"
+            - listItem:
+                id: 2
+                title: "Automation Testing"
+                page: "/services/testing/"     
+      - listItem:
+          id: 5
+          title: "Accessibility"
+          page: "/"
+          mobilesub: 
+            - listItem:
+                id: 1
+                title: "Doc Accessibility"
+                page: "/services/docAccessibility/accessibleExcel/"
+            - listItem:
+                id: 2
+                title: "Web Accessibility"
+                page: "/services/webAccessibility/"
       - listItem:
           id: 6
+          title: "Digital Marketing"
+          page: "/"
+          mobilesub: 
+            - listItem:
+                id: 1
+                title: "Digital Marketing"
+                page: "/services/digitalMarketing/"
+      - listItem:
+          id: 7
+          title: "Careers"
+          page: "/"   
+      - listItem:
+          id: 8
           title: "Contact"
-          link: "/contact/"
+          page: "/"      
   banner:
     headers: "<h1>We Increase your Business Success</h1> "
     title: "Use the modern technology and IT Services"
@@ -206,7 +322,7 @@ about:
     chooseimg : "/img/AboutImages/Choose.svg"
     altChoose: "why choose image"
     aboutUs: "AboutUs"
-    aboutUsDescription: "<p>Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and  Cost-Effective Software solutions. Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions.</p><p>With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals.</p>"
+    aboutUsDescription: "<p>Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions.</p><p>With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals.</p>"
     ourVision: "Our Vision"
     ourVisionDescription: "<p>Our vision is to be the best in providing IT solutions and services with customer excellence and sound business practices.</p>"
     ourMission: " Our Mission"
@@ -243,26 +359,26 @@ services:
         - listItem: 
              id: 1
              title: "Quartree Technologies"
-             img: "/img/portfolio/ea.jpg"
-             about: "We believe knowledge is a key to early success in this stage"
+             img: "/img/portfolio/quad.jpg"
+             about: "Quadtree Technologies is a Big Data Analytics company"
              link: "https://ealabsipl.com/"
         - listItem:
              id: 2
              title: "ProTPD Digital"
-             img: "/img/portfolio/vijaya.jpg"
-             about: "Quadtree Technologies is a Big Data Analytics company"
+             img: "/img/portfolio/pro.jpg"
+             about: "Our team developed TPD2 submission tools for multi large organizations across UK and EU since its inception in April-2016."
              link: "https://vijayapickles.com/"
         - listItem:
              id: 3
              title: "KN Technologies"
              img: "/img/portfolio/knt.jpg"
-             about: "Quadtree Technologies is a Big Data Analytics company"
+             about: "In today’s world, it’s not easy to get a well-paid job with a decent employer without putting in the work"
              link: "https://www.quadtreetech.com/"
         - listItem:
              id: 4
              title: "A1 Event Planners"
-             img: "/img/portfolio/pro.jpg"
-             about: "Quadtree Technologies is a Big Data Analytics company"
+             img: "/img/portfolio/eventplanner.jpg"
+             about: "Event Planner Ltd is an event logistics and marketing company which was formed back in year"
              link: "https://protpd.com/"               
    ecommerceDevelopment:
       description: "<p>E-commerce Application development has certainly become a need instead of a means to enterprise greater traffic. We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small and medium enterprises. We are top-notch e-commerce app development company that provides better end to end functionality. Our expert team of developers and designers help you to design and develop online store which converts a visitor into a customer. An e-commerce site will give you wing to your retail business. We use latest technologies to build e-commerce website so that you can easily maintain your store without stirring any code on the back end.</p>"
@@ -293,8 +409,8 @@ services:
              id: 1
              title: "Vijaya Pickles"
              img: "/img/portfolio/Vijaya.jpg"
-             about: "Vijaya Pickles"
-             link: "https://ealabsipl.com/"                                                             
+             about: "Spicy & tasty chicken pickle. Contact us to place the order now!"
+             link: "https://vijayapickles.com/"                                                             
    productDevelopment:
       description: "<p>With over 10+ years of experience in software product development services, we have helped startups, SMEs, ISVs, and enterprises build the best software products from scratch, faster time to market, and scale ahead of their core competitors.</p><p>
       We work exclusively with corporates, businesses, and firms to collect their requirements, study their industry and competitors, conceptualize and strategize the complete software product development roadway to manage risk, reduce cost while delivering a top-quality product.</p><p>We proudly say we are among the best software product development companies because we have a best-in-class product development team that can drive you through technical and functional feasibility to validate software product development.</p>"

@@ -49,14 +49,38 @@ const layoutQuery = graphql`
             home {
               navbar {
                 logo
-                button
                 openMenu
+                alt
+                button
                 closeMenu
+                contact
+                careers
                 list {
                   listItem {
                     id
-                    link
                     title
+                    page
+                    subTitle {
+                      listItem {
+                        id
+                        page
+                        title
+                      }
+                    }
+                  }
+                }
+                mobilelist {
+                  listItem {
+                    id
+                    page
+                    title
+                    mobilesub {
+                      listItem {
+                        id
+                        page
+                        title
+                      }
+                    }
                   }
                 }
               }
