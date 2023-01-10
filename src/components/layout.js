@@ -11,7 +11,6 @@ import Header from "./common/Header"
 import OnclickTop from "./common/OnClickScrollToTop"
 import Footer from "./home/Footer"
 import TopBar from "./common/TopBar"
-import NavBar from "./common/NavBar"
 import SkipToMainContent from "./common/SkipToMainContent"
 
 const Layout = ({ children }) => {
