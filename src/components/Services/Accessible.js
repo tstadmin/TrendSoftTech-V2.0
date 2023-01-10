@@ -1,5 +1,5 @@
 import React from "react"
-import { Description, DescriptionList, Title } from "./ServicesStyled"
+import { DescriptionList, Title } from "./ServicesStyled"
 const Accessible = props => {
   return (
     <div>

@@ -1,5 +1,4 @@
 import tw, { styled } from "twin.macro"
-import { Link } from "gatsby"
 //-----BreadCrumb component  in Commer Folders-----
 
 export const Image = styled.img`

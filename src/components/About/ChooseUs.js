@@ -5,7 +5,7 @@ import { Heading, Div, ChooseInfo } from "./AboutStyle"
 const ChooseUs = props => {
   return (
     <Div>
-      <img src={props.data.chooseimg} />
+      <img src={props.data.chooseimg} alt="" />
       <ChooseInfo>
         <Heading>{props.data.whychoose}</Heading>
 

@@ -37,6 +37,7 @@ const Footer = props => {
               href={props.data.facebookLink}
               aria-label="facebook: trendsoft tech page "
               target="_blank"
+              rel="noreferrer"
             >
               <FooterIconStyles>
                 <FaFacebookF />
@@ -46,6 +47,7 @@ const Footer = props => {
             <a
               href={props.data.linkedinLink}
               target="_blank"
+              rel="noreferrer"
               aria-label="Linkedin: trendsoft tech page "
             >
               <FooterIconStyles>
@@ -82,6 +84,7 @@ const Footer = props => {
                 MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
                   href="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
                 </a>

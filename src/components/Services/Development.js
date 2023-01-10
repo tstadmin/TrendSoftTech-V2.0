@@ -1,11 +1,5 @@
-import { Link } from "gatsby"
 import React from "react"
-import {
-  PhasesTitle,
-  PhasesDescription,
-  Description,
-  Title,
-} from "./ServicesStyled"
+import { PhasesTitle, Title } from "./ServicesStyled"
 const Development = props => {
   return (
     <div>

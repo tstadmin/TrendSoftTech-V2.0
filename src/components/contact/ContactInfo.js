@@ -14,19 +14,19 @@ const ContactInfo = props => {
         <Image src={props.data.emailimg} />
         <EmailInfo>
           <h2> {props.data.emailTitle}</h2>
-          <Link
+          <a
             aria-label="Email service@trendsofttech.com "
-            to="service@trendsofttech.com"
+            href="mailto:info@trendsofttech.com"
           >
             <p>{props.data.email} </p>
-          </Link>
+          </a>
           <h2>{props.data.businessMailTitle} </h2>
-          <Link
+          <a
             aria-label="Business Email service@trendsofttech.com "
-            to="service@trendsofttech.com"
+            href="mailto:service@trendsofttech.com"
           >
             <p>{props.data.businessEmail} </p>
-          </Link>
+          </a>
         </EmailInfo>
       </Info>
       <Info>

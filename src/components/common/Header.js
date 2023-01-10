@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
-import React, { useState, Fragment } from "react"
+import React, { useState } from "react"
 import tw from "twin.macro"
-import { Disclosure, Menu, Transition } from "@headlessui/react"
+import { Disclosure } from "@headlessui/react"
 import { IoIosArrowDown } from "react-icons/io"
 
 import { RxCross2 } from "react-icons/rx"
