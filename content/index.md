@@ -238,7 +238,32 @@ services:
                - listItems:
                      id: "3"
                      title: "Deployment and maintenance:"   
-                     description: "One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>"       
+                     description: "One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>"
+      portfolios:
+        - listItem: 
+             id: 1
+             title: "Quartree Technologies"
+             img: "/img/portfolio/ea.jpg"
+             about: "We believe knowledge is a key to early success in this stage"
+             link: "https://ealabsipl.com/"
+        - listItem:
+             id: 2
+             title: "ProTPD Digital"
+             img: "/img/portfolio/vijaya.jpg"
+             about: "Quadtree Technologies is a Big Data Analytics company"
+             link: "https://vijayapickles.com/"
+        - listItem:
+             id: 3
+             title: "KN Technologies"
+             img: "/img/portfolio/knt.jpg"
+             about: "Quadtree Technologies is a Big Data Analytics company"
+             link: "https://www.quadtreetech.com/"
+        - listItem:
+             id: 4
+             title: "A1 Event Planners"
+             img: "/img/portfolio/pro.jpg"
+             about: "Quadtree Technologies is a Big Data Analytics company"
+             link: "https://protpd.com/"               
    ecommerceDevelopment:
       description: "<p>E-commerce Application development has certainly become a need instead of a means to enterprise greater traffic. We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small and medium enterprises. We are top-notch e-commerce app development company that provides better end to end functionality. Our expert team of developers and designers help you to design and develop online store which converts a visitor into a customer. An e-commerce site will give you wing to your retail business. We use latest technologies to build e-commerce website so that you can easily maintain your store without stirring any code on the back end.</p>"
       list:
@@ -262,7 +287,14 @@ services:
                - listItems:
                      id: "3"
                      title: "Deployment and maintenance:"   
-                     description: "<p>One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>"                                               
+                     description: "<p>One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>" 
+      portfolios:
+        - listItem: 
+             id: 1
+             title: "Vijaya Pickles"
+             img: "/img/portfolio/Vijaya.jpg"
+             about: "Vijaya Pickles"
+             link: "https://ealabsipl.com/"                                                             
    productDevelopment:
       description: "<p>With over 10+ years of experience in software product development services, we have helped startups, SMEs, ISVs, and enterprises build the best software products from scratch, faster time to market, and scale ahead of their core competitors.</p><p>
       We work exclusively with corporates, businesses, and firms to collect their requirements, study their industry and competitors, conceptualize and strategize the complete software product development roadway to manage risk, reduce cost while delivering a top-quality product.</p><p>We proudly say we are among the best software product development companies because we have a best-in-class product development team that can drive you through technical and functional feasibility to validate software product development.</p>"
@@ -636,56 +668,65 @@ portfolio:
     list:
       - listItem:
           id: 1
-          title: "EA Labs"
+          title: "Quartree Technologies"
           img: "/img/portfolio/ea.jpg"
           alt: "images"
+          about: "We believe knowledge is a key to early success in this stage"
           link: "https://ealabsipl.com/"
       - listItem:
           id: 2
-          title: "Vijaya Pickels"
+          title: "ProTPD Digital"
           img: "/img/portfolio/vijaya.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
           alt: "images"
           link: "https://vijayapickles.com/"
       - listItem:
           id: 3
-          title: "Quartree Technologies"
-          img: "/img/portfolio/quad.jpg"
+          title: "KN Technologies"
+          img: "Annapurna de Royal"
+          about: "Quadtree Technologies is a Big Data Analytics company"
           alt: "images"
           link: "https://www.quadtreetech.com/"
       - listItem:
           id: 4
-          title: "ProTPD Digital"
+          title: "A1 Event Planners"
           img: "/img/portfolio/pro.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
           alt: "images"
           link: "https://protpd.com/"
       - listItem:
           id: 5
           title: "Lantrans"
           img: "/img/portfolio/lantrans.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
           alt: "images"
           link: "https://lantrans.in/"
       - listItem:
           id: 6
           title: "KN Technologies"
           img: "/img/portfolio/knt.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
           alt: "images"
           link: "https://kntech.co.uk/"
       - listItem:
           id: 7
           title: "SS Companies"
           img: "/img/portfolio/sscom.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
           alt: "images"
           link: "https://sscompanies.in/"
       - listItem:
           id: 8
           title: "Annapurna de Royal"
           img: "/img/portfolio/annapurna.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
           alt: "images"
           link: "https://www.annapurnaderoyal.com/"
       - listItem:
           id: 9
           title: "Global Pharma Solutions"
           img: "/img/portfolio/globalpharma.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
           alt: "images"
           link: "https://gpconsultancy.in/"
       - listItem:

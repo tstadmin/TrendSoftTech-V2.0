@@ -24,7 +24,7 @@ const WebDevelopment = () => {
   useEffect(() => {
     setWebDevelopment(data)
   }, [data])
-
+  console.log(data)
   return (
     <div>
       <Layout>
@@ -35,7 +35,7 @@ const WebDevelopment = () => {
         />
         <div>
           <div className=" xl:flex justify-center xl:space-x-14 lg:px-48 sm:px-24 px-12">
-            <Development data={webDevelopment} />
+            <Development data={data} />
             <div className="mt-8 space-y-10">
               <PortfoliosButton>
                 <a
@@ -51,7 +51,7 @@ const WebDevelopment = () => {
             </div>
           </div>
           <div id="scroll" className="top-0">
-            <Portfolios />
+            <Portfolios data={data} />
           </div>
         </div>
       </Layout>
@@ -82,6 +82,15 @@ const webDevelopmentData = graphql`
                         description
                       }
                     }
+                  }
+                }
+                portfolios {
+                  listItem {
+                    id
+                    img
+                    title
+                    link
+                    about
                   }
                 }
               }

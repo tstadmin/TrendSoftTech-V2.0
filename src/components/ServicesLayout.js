@@ -24,9 +24,6 @@ const ServicesLayout = ({ children }) => {
           <GrowYourBusinnes />
         </div>
       </div>
-      <div id="scroll" className="top-0">
-        <Portfolios />
-      </div>
     </div>
   )
 }
