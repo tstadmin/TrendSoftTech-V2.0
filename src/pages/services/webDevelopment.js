@@ -5,8 +5,6 @@ import Development from "../../components/Services/Development"
 
 import { FiChevronDown } from "react-icons/fi"
 
-import ServicesLayout from "../../components/ServicesLayout"
-
 import { graphql, useStaticQuery } from "gatsby"
 import Seo from "../../components/seo"
 import Portfolios from "../../components/Portfolio/Portfolios"
@@ -24,7 +22,7 @@ const WebDevelopment = () => {
   useEffect(() => {
     setWebDevelopment(data)
   }, [data])
-  console.log(data)
+
   return (
     <div>
       <Layout>

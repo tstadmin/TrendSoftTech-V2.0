@@ -8,6 +8,7 @@ import { RxCross2 } from "react-icons/rx"
 import { HiBars3BottomLeft } from "react-icons/hi2"
 
 import Navbardata from "../../Data/NavbarData"
+import { data } from "autoprefixer"
 
 export default function Header(props) {
   const NavBar = tw.div`flex items-center space-x-14 sticky top-6 z-10`
@@ -18,6 +19,8 @@ export default function Header(props) {
   const handleNav = () => {
     setNav(!nav)
   }
+
+  console.log(props.data.list)
 
   return (
     <div
@@ -42,14 +45,14 @@ export default function Header(props) {
         <div className="flex space-x-4 md:space-x-12 uppercase  ">
           <p className="md:text-xl text-md  hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block  group transition ">
             <Link to="/contact/">
-              <Underline>{props.data.button}</Underline>
+              <Underline>{props.data.contact}</Underline>
             </Link>
           </p>
 
           <p className="md:text-xl text-md hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block group transition focus:outline-none  ">
             <Link to="/careers/">
               {" "}
-              <Underline>Careers</Underline>{" "}
+              <Underline>{props.data.careers}</Underline>{" "}
             </Link>
           </p>
 
@@ -92,16 +95,19 @@ export default function Header(props) {
         }
       >
         <ul className=" xl:flex 440Screen:pl-10 pl-4 2xl:pl-32 1920Screen:pl-44 1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
-          {Navbardata.map((item, idx) => (
+          {props.data.list.map((item, idx) => (
             <li
               key={item.id}
               className="uppercase  text-white mt-6 sm:text-2xl text-sm font-medium hidden 540Screen:block "
             >
-              <Link to={item.page}>{item.title}</Link>
+              <Link to={item.listItem.page}>{item.listItem.title}</Link>
               <ul className="space-y-2 mt-4 sm:text-base font-normal ">
-                {item.subtitle.map((subItem, idx) => (
-                  <li className="hover:text-[#FFC93C] text-white sm:text-lg text-xs">
-                    <Link to={subItem.page}>{subItem.title}</Link>
+                {item.listItem.subTitle?.map((sub, idx) => (
+                  <li
+                    className="hover:text-[#FFC93C] text-white sm:text-lg text-xs"
+                    key={sub.id}
+                  >
+                    <Link to={sub.listItem.page}>{sub.listItem.title}</Link>
                   </li>
                 ))}
               </ul>
@@ -112,6 +118,13 @@ export default function Header(props) {
         {/*  Mobile Menu */}
 
         <ul className="uppercase font-medium ml-8 540Screen:hidden block space-y-4 ">
+          {/* {
+            props.data.moblelist.map((item,id)=>(
+ <li className="text-lg text-white">
+            <Link to="/">Home</Link>
+          </li>
+            ))
+          } */}
           <li className="text-lg text-white">
             <Link to="/">Home</Link>
           </li>
