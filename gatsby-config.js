@@ -15,6 +15,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-mantine`,
     `gatsby-plugin-image`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-emotion`,
