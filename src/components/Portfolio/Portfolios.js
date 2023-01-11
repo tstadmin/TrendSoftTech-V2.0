@@ -3,29 +3,25 @@ import React from "react"
 
 const Portfolios = props => {
   return (
-    <div className=" mt-20  2xl:px-24 py-16 bg-blue-200">
+    <div className=" mt-10 1920Screen:px-44 2xl:px-24 px-8 md:py-10 py-28 bg-blue-100">
       <div className="text-center">
         <h1>Portfolio</h1>
         <h3>Our Works</h3>
       </div>
 
-      <div>
+      <div className="grid md:grid-cols-2 grid-cols-1 md:space-x-7  space-x-0 md:space-y-10  space-y-20">
         {props.data.portfolios.map((item, index) => (
-          <div className="relative mt-10 p-6">
+          <div className="relative mt-10  ">
             <img
               src={item.listItem.img}
-              className="lg:h-[500px] md:h-[400px] h-[300px] md:w-[85%] w-full object-cover  object-left-top "
+              className="lg:h-[500px] md:h-[400px] h-[300px] md:w-[90%] w-full object-cover  object-left-top "
             />
 
-            <div className="grid justify-center  md:w-72 w-52 h-auto space-y-3 bg-yellow-100 p-5  xl:right-20 lg:right-8 md:right-0 540Screen:right-[25%] sm:right-[30%]  340Screen:right-[25%] right-12 absolute md:top-32  top-56  ">
-              <h2 className="lg:text-lg md:text-sm text-xs">
-                {item.listItem.title}
-              </h2>
-              <span className="lg:text-lg md:text-sm text-xs">
-                {item.listItem.about}
-              </span>
+            <div className="grid justify-center  lg:w-72 w-52 h-auto space-y-3 bg-white shadow-xl lg:p-5 p-2   md:right-0 540Screen:right-[25%] sm:right-[32%]  340Screen:right-[20%] right-12 absolute md:top-32  top-56  ">
+              <h2 className="lg:text-lg  text-xs">{item.listItem.title}</h2>
+              <span className="lg:text-lg  text-xs">{item.listItem.about}</span>
               <Link
-                className="bg-blue-400 p-2 rounded-md text-center lg:text-lg md:text-sm text-xs"
+                className="bg-blue-400 p-2 rounded-md text-center lg:text-lg  text-xs"
                 to={item.listItem.link}
                 target="_blank"
               >

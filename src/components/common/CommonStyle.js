@@ -15,7 +15,7 @@ export const BreadCrumbHeader = styled.div`
 //-----Grow Your Businnes component  in Commer Folders-----
 
 export const GrowBusinnes = styled.div`
-  ${tw`bg-blue-400/25 rounded-md p-12 space-y-6  px-12`}
+  ${tw`bg-blue-400/25  border border-blue-500  rounded-md p-12 space-y-6  px-12`}
 `
 export const GrowBusinnesHeading = styled.h2`
   ${tw`text-2xl`}

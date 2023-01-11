@@ -4,14 +4,17 @@ import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
 import { PortfoliosButton } from "../../components/Services/ServicesStyled"
-
-
+import ServicesLayout from "../../components/ServicesLayout"
 import { FiChevronDown } from "react-icons/fi"
 import Seo from "../../components/seo"
 import Brochure from "../../components/common/Brochure"
 import GrowYourBusinnes from "../../components/common/GrowYourBusinnes"
 import Portfolios from "../../components/Portfolio/Portfolios"
-
+import {
+  DevelopmentDiv,
+  DevelopmentLayout,
+  PortfolioLink,
+} from "../../components/Services/ServicesStyled"
 const EcommerceDevelopment = () => {
   const query = useStaticQuery(ecommercData)
   const data =
@@ -32,30 +35,26 @@ const EcommerceDevelopment = () => {
           img="/img/BreadCrumb/EcommerceDevelopment.svg"
         />
         <div>
-          <div className=" xl:flex justify-center xl:space-x-14 lg:px-48 sm:px-24 px-12">
+          <DevelopmentDiv>
             <Development data={ecommerc} />
-            <div className="mt-8 space-y-10">
+            <DevelopmentLayout>
               <PortfoliosButton>
-                <a
-                  className="hover:bg-blue-700 border-4 border-y-blue-500 border-x-0 duration-700  p-3 rounded-none flex space-x-3 text-2xl justify-center button"
-                  href="#scroll"
-                >
+                <PortfolioLink className="button" href="#scroll">
                   Portfolio <FiChevronDown className="mt-1 text-xl  " />
-                </a>
+                </PortfolioLink>
               </PortfoliosButton>
 
               <Brochure />
               <GrowYourBusinnes />
-            </div>
-          </div>
+            </DevelopmentLayout>
+          </DevelopmentDiv>
           <div id="scroll" className="top-0">
             <Portfolios data={data} />
           </div>
         </div>
 
-        {/* <Tabs /> */}
         {/* <ServicesLayout>
-          <Development data={ecommerc} />
+          <Development data={data} />
         </ServicesLayout> */}
       </Layout>
     </div>

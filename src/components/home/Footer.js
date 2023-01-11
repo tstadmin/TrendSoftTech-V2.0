@@ -57,6 +57,15 @@ const Footer = props => {
           </FooterIconLogo>
         </FooterTrendInfo>
         <FooterInfoDiv>
+          <div>
+            <Link
+              to="/about/"
+              className="text-lg font-semibold text-[#1a71d4] "
+            >
+              About
+            </Link>
+          </div>
+
           <FooterTitle>{props.data.itTitle}</FooterTitle>
           <UL>
             {props.data.itService?.map((item, idx) => (

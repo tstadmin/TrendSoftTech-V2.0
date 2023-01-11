@@ -361,19 +361,19 @@ services:
              id: 2
              title: "ProTPD Digital"
              img: "/img/portfolio/pro.jpg"
-             about: "Our team developed TPD2 submission tools for multi large organizations across UK and EU since its inception in April-2016."
+             about: "Our team developed TPD2 submission tools for multi large organizations "
              link: "https://vijayapickles.com/"
         - listItem:
              id: 3
              title: "KN Technologies"
              img: "/img/portfolio/knt.jpg"
-             about: "In today’s world, it’s not easy to get a well-paid job with a decent employer without putting in the work"
+             about: "In today’s world, it’s not easy to get a well-paid job with a decent employer "
              link: "https://www.quadtreetech.com/"
         - listItem:
              id: 4
              title: "A1 Event Planners"
              img: "/img/portfolio/eventplanner.jpg"
-             about: "Event Planner Ltd is an event logistics and marketing company which was formed back in year"
+             about: "Event Planner Ltd is an event logistics and marketing company "
              link: "https://protpd.com/"               
    ecommerceDevelopment:
       description: "<p>E-commerce Application development has certainly become a need instead of a means to enterprise greater traffic. We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small and medium enterprises. We are top-notch e-commerce app development company that provides better end to end functionality. Our expert team of developers and designers help you to design and develop online store which converts a visitor into a customer. An e-commerce site will give you wing to your retail business. We use latest technologies to build e-commerce website so that you can easily maintain your store without stirring any code on the back end.</p>"
@@ -479,6 +479,73 @@ services:
                      id: "3"
                      title: "Deployment and maintenance:"   
                      description: "<p>One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>" 
+      portfolios:
+        - listItem: 
+             id: 1
+             title: "EA Labs"
+             img: "/img/portfolio/ea.jpg"
+             about: "EA LABS was born in the cloud in 2015. We are one of the only partners solely focused on SAP®SuccessFactors®. "
+             link: "https://ealabsipl.com/"               
+        - listItem: 
+             id: 2
+             title: "Quartree Technologies"
+             img: "/img/portfolio/quad.jpg"
+             about: "Quadtree Technologies is a Big Data Analytics company"
+             link: "https://ealabsipl.com/"
+        - listItem:
+             id: 3
+             title: "ProTPD Digital"
+             img: "/img/portfolio/pro.jpg"
+             about: "Our team developed TPD2 submission tools for multi large organizations across UK and EU since its inception in April-2016."
+             link: "https://vijayapickles.com/"
+        - listItem: 
+             id: 4
+             title: "Lantrans"
+             img: "/img/portfolio/lantrans.jpg"
+             about: "Working with a group of professional translators with 10+ years of experience in meeting the clientele requirements"
+             link: "https://lantrans.in/"
+        - listItem: 
+             id: 5
+             title: "SS Companies"
+             img: "/img/portfolio/sscom.jpg"
+             about: "Stalin Swarna Group of companies was started by its chairman, D.Stalin Babu, a well known first generation enterpreneur"
+             link: "https://sscompanies.in/"
+        - listItem: 
+             id: 6
+             title: "Annapurna de Royal"
+             img: "/img/portfolio/annapurna.jpg"
+             about: "Our hotel signifies warmth and friendliness, simplicity with style, convenience, and affordability for all executives and travelers"
+             link: "https://www.annapurnaderoyal.com/"     
+        - listItem:
+             id: 7
+             title: "KN Technologies"
+             img: "/img/portfolio/knt.jpg"
+             about: "In today’s world, it’s not easy to get a well-paid job with a decent employer without putting in the work"
+             link: "https://www.quadtreetech.com/"
+        - listItem:
+             id: 8
+             title: "A1 Event Planners"
+             img: "/img/portfolio/eventplanner.jpg"
+             about: "Event Planner Ltd is an event logistics and marketing company which was formed back in year"
+             link: "https://protpd.com/"   
+        - listItem: 
+             id: 9
+             title: "Global Pharma Solutions"
+             img: "/img/portfolio/globalpharma.jpg"
+             about: "The organization is a registered firm managed by Vinod.R, an expert in the pharmaceutical profession."
+             link: "https://gpconsultancy.in/"     
+        - listItem:
+             id: 10
+             title: "Chachapoya USA"
+             img: "/img/portfolio/chachapoya.jpg"
+             about: "CHACHAPOYA HXM was born in the cloud in 2015. We are one of the only partners solely focused on SAP®SuccessFactors®"
+             link: "https://chachapoyahxm.com/"
+        - listItem:
+             id: 11
+             title: "Trendsoft Technologies"
+             img: "/img/portfolio/trendsofttech.jpg"
+             about: "Our vision is to be the best in providing IT solutions and services with customer excellence and sound business practices."
+             link: "https://trendsofttech.com/"                    
    testing:                    
       description: "<p>Trendsoft offers independent quality engineering and a wide range of software testing services and solutions for the next generation enterprises across the globe. Our experienced and deep-skilled quality assurance professionals have a hands-on, end-to-end understanding of the challenges faced by enterprises while on the path of digital transformation.</p><p>Whether you have desktop, mobile or next-gen-based applications, our software testing specialists work with a focused approach to help you get more out of your testing efforts and improve time to market, and thus, your ROI.</p>"
       title : "Software Testing and QA Services"
@@ -531,7 +598,6 @@ services:
                      id: "3"
                      title: "Deployment and maintenance:"   
                      description: "<p>One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>"     
-   
 accessible:
    accessiblePDFUA:
       description: "<p>Yes, yes, yes! PDFs also need to be accessible so that people with disabilities using screen reader, speech to text technology or braille displayer get equal access. Providing Accessible PDFs is now a requirement as per Americans with Disabilities Act (ADA), Section 508 & AODA.</p><p>Just because a document is available as a downloadable PDF does not mean that it is an accessible PDF. As we know, PDFs are the go to format for organizations to share information.</p>"
@@ -993,5 +1059,11 @@ AccessibilityTabs:
     - listItem:
         id: 8
         title: "Accessible Excel"
-        link: "/services/docAccessibility/accessibleExcel"             
+        link: "/services/docAccessibility/accessibleExcel"      
+Brochure:
+    description: "Download our company brochure here"
+    button: "Download Now"      
+Grow:
+    description: "Grow Your Business and Build Your Website or Software With Us."
+    button: "Contact Us"      
 ---

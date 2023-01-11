@@ -1,13 +1,20 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
-import BreadCrumb from "../../components/common/BreadCrumb"
+import {
+  DevelopmentDiv,
+  DevelopmentLayout,
+  PortfolioLink,
+} from "../../components/Services/ServicesStyled"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
-
+import { PortfoliosButton } from "../../components/Services/ServicesStyled"
 import ServicesLayout from "../../components/ServicesLayout"
-
+import { FiChevronDown } from "react-icons/fi"
 import Seo from "../../components/seo"
-
+import BreadCrumb from "../../components/common/BreadCrumb"
+import GrowYourBusinnes from "../../components/common/GrowYourBusinnes"
+import Portfolios from "../../components/Portfolio/Portfolios"
+import Brochure from "../../components/common/Brochure"
 const UiUXDesign = () => {
   const query = useStaticQuery(UiUXDesignData)
   const data =
@@ -24,10 +31,29 @@ const UiUXDesign = () => {
       <Layout>
         <Seo title="UI/UX Design" description="TrendSoftTech" />
         <BreadCrumb title="UiUX Design" img="/img/BreadCrumb/UiUXDesign.svg" />
-        {/* <Tabs /> */}
-        <ServicesLayout>
+
+        <div className="mt-10">
+          <DevelopmentDiv>
+            <Development data={design} />
+            <DevelopmentLayout>
+              <PortfoliosButton>
+                <PortfolioLink className="button" href="#scroll">
+                  Portfolio <FiChevronDown className="mt-1 text-xl  " />
+                </PortfolioLink>
+              </PortfoliosButton>
+
+              <Brochure />
+              <GrowYourBusinnes />
+            </DevelopmentLayout>
+          </DevelopmentDiv>
+          <div id="scroll" className="top-0">
+            <Portfolios data={data} />
+          </div>
+        </div>
+
+        {/* <ServicesLayout>
           <Development data={design} />
-        </ServicesLayout>
+        </ServicesLayout> */}
       </Layout>
     </div>
   )
@@ -56,6 +82,15 @@ const UiUXDesignData = graphql`
                         description
                       }
                     }
+                  }
+                }
+                portfolios {
+                  listItem {
+                    id
+                    img
+                    title
+                    link
+                    about
                   }
                 }
               }

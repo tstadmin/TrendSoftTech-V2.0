@@ -4,26 +4,32 @@ import GrowYourBusinnes from "./common/GrowYourBusinnes"
 
 import { FiChevronDown } from "react-icons/fi"
 import { PortfoliosButton } from "./services/ServicesStyled"
-
-const ServicesLayout = ({ children }) => {
+import Portfolios from "./Portfolio/Portfolios"
+import {
+  DevelopmentDiv,
+  DevelopmentLayout,
+  PortfolioLink,
+} from "./services/ServicesStyled"
+const ServicesLayout = ({ children }, props) => {
+  const data = props.data
   return (
     <div>
-      <div className=" xl:flex justify-center xl:space-x-14 lg:px-48 sm:px-24 px-12">
+      <DevelopmentDiv>
         <div>{children}</div>
         <div className="mt-8 space-y-10">
           <PortfoliosButton>
-            <a
-              className="hover:bg-blue-700 border-4 border-y-blue-500 border-x-0 duration-700  p-3 rounded-none flex space-x-3 text-2xl justify-center button"
-              href="#scroll"
-            >
+            <PortfolioLink className=" button" href="#scroll">
               Portfolio <FiChevronDown className="mt-1 text-xl  " />
-            </a>
+            </PortfolioLink>
           </PortfoliosButton>
 
           <Brochure />
           <GrowYourBusinnes />
         </div>
-      </div>
+      </DevelopmentDiv>
+      {/* <div id="scroll" className="top-0">
+        <Portfolios data={data} />
+      </div> */}
     </div>
   )
 }

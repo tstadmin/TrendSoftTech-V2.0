@@ -11,8 +11,11 @@ import Portfolios from "../../components/Portfolio/Portfolios"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Brochure from "../../components/common/Brochure"
 import GrowYourBusinnes from "../../components/common/GrowYourBusinnes"
-import { PortfoliosButton } from "../../components/services/ServicesStyled"
-
+import {  PortfoliosButton } from "../../components/services/ServicesStyled"
+import {
+  DevelopmentDiv,PortfolioLink,
+  DevelopmentLayout,
+} from "../../components/services/ServicesStyled"
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
   const data =
@@ -32,22 +35,19 @@ const WebDevelopment = () => {
           img="/img/BreadCrumb/WebDevelopment.svg"
         />
         <div>
-          <div className=" xl:flex justify-center xl:space-x-14 lg:px-48 sm:px-24 px-12">
+          <DevelopmentDiv>
             <Development data={data} />
-            <div className="mt-8 space-y-10">
+            <DevelopmentLayout>
               <PortfoliosButton>
-                <a
-                  className="hover:bg-blue-700 border-4 border-y-blue-500 border-x-0 duration-700  p-3 rounded-none flex space-x-3 text-2xl justify-center button"
-                  href="#scroll"
-                >
+                <PortfolioLink className=" button" href="#scroll">
                   Portfolio <FiChevronDown className="mt-1 text-xl  " />
-                </a>
+                </PortfolioLink>
               </PortfoliosButton>
 
               <Brochure />
               <GrowYourBusinnes />
-            </div>
-          </div>
+            </DevelopmentLayout>
+          </DevelopmentDiv>
           <div id="scroll" className="top-0">
             <Portfolios data={data} />
           </div>

@@ -102,3 +102,15 @@ export const PortfoliosButton = styled.div`
     padding: 0.9375rem 1.875rem;
   }
 `
+
+///---- Services development style component ------
+
+export const DevelopmentDiv = styled.div`
+  ${tw` xl:flex mt-10 justify-center xl:space-x-14 lg:px-48 sm:px-24 px-12`}
+`
+export const DevelopmentLayout = styled.div`
+  ${tw`mt-8 space-y-10`}
+`
+export const PortfolioLink = styled.a`
+  ${tw`hover:bg-blue-500 border-2 border-blue-500  duration-700  p-3 rounded-none flex space-x-3 text-2xl justify-center `}
+`
