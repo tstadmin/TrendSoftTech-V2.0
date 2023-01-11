@@ -75,19 +75,13 @@ home:
                 title: "UI/UX Design"
                 page: "/services/uiUXDesign/"
     mobilelist:
-      - listItem:
-          id: 1
-          title: "Home"
-          page: "/"
-      - listItem:
-          id: 2
-          title: "About"
-          page: "/about/"
-      - listItem:
-          id: 3
-          title: " IT Services"
-          page: "/"
-          mobilesub: 
+          home: "Home"
+          homePage: "/"
+          about: "About"
+          aboutPage: "/about/"
+          services: "IT Services"
+          servicesPage: "/services/"
+          itServices:
             - listItem:
                 id: 1
                 title: " Web Development"
@@ -103,12 +97,10 @@ home:
             - listItem:
                 id: 4
                 title: "Mobile  Development"
-                page: "/services/mobileDevelopment/"
-      - listItem:
-          id: 4
-          title: "Testing"
-          page: "/"
-          mobilesub: 
+                page: "/services/mobileDevelopment/"  
+          test: "Testing"
+          testPage: "/services/testing/"
+          subTest:
             - listItem:
                 id: 1
                 title: "Manual Testing"
@@ -116,37 +108,40 @@ home:
             - listItem:
                 id: 2
                 title: "Automation Testing"
-                page: "/services/testing/"     
-      - listItem:
-          id: 5
-          title: "Accessibility"
-          page: "/"
-          mobilesub: 
+                page: "/services/testing/"
+          accessibility: "Accessibility"
+          accessibilityPage: "/services/accessibility/"
+          docaccessibility: "Doc Accessibility"
+          docaccessibilityPage: "/services/docAccessibility/accessiblePDFUA/"
+          subaccessibility:
             - listItem:
                 id: 1
-                title: "Doc Accessibility"
-                page: "/services/docAccessibility/accessibleExcel/"
+                title: "Accessible Pdf/ua"
+                page: "/services/docAccessibility/accessiblePDFUA/"
             - listItem:
                 id: 2
-                title: "Web Accessibility"
-                page: "/services/webAccessibility/"
-      - listItem:
-          id: 6
-          title: "Digital Marketing"
-          page: "/"
-          mobilesub: 
+                title: "Accessible Pdf Forms"
+                page: "/services/docAccessibility/accessiblePDFForms/"
             - listItem:
-                id: 1
-                title: "Digital Marketing"
-                page: "/services/digitalMarketing/"
-      - listItem:
-          id: 7
-          title: "Careers"
-          page: "/"   
-      - listItem:
-          id: 8
-          title: "Contact"
-          page: "/"      
+                id: 3
+                title: "Accessible Word"
+                page: "/services/docAccessibility/accessibleWord/"
+            - listItem:
+                id: 4
+                title: "Accessible Excel"
+                page: "/services/docAccessibility/accessibleExcel/"
+            - listItem:
+                id: 5
+                title: "Accessible PPT"
+                page: "/services/docAccessibility/accessiblePPT/"      
+          webaccessibility: "Web Accessibility"
+          webaccessibilityPage: "/services/webAccessibility/"
+          digital: "Digital Marketing"
+          digitalPage: "/services/digitalMarketing/"
+          careers: "Careers"
+          careersPage: "/careers/"
+          contact: "contact"
+          contactPage: "/contact/"
   banner:
     headers: "<h1>We Increase your Business Success</h1> "
     title: "Use the modern technology and IT Services"
@@ -778,103 +773,6 @@ webAccessibility:
              id: "14" 
              title : "PARTICIPATING IN WAI"
              description: "<p>WAI provides an international forum for collaboration among industry, disability organizations, accessibility researchers, government, and individuals interested in web accessibility.</p><p>Your contributions to improving usable accessibility of the web-through your own work or through WAI -are greatly appreciated.</p>"                                                                                            
-portfolio:
-  projects:
-    title: "Our Projects"
-    list:
-      - listItem:
-          id: 1
-          title: "Quartree Technologies"
-          img: "/img/portfolio/ea.jpg"
-          alt: "images"
-          about: "We believe knowledge is a key to early success in this stage"
-          link: "https://ealabsipl.com/"
-      - listItem:
-          id: 2
-          title: "ProTPD Digital"
-          img: "/img/portfolio/vijaya.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          alt: "images"
-          link: "https://vijayapickles.com/"
-      - listItem:
-          id: 3
-          title: "KN Technologies"
-          img: "Annapurna de Royal"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          alt: "images"
-          link: "https://www.quadtreetech.com/"
-      - listItem:
-          id: 4
-          title: "A1 Event Planners"
-          img: "/img/portfolio/pro.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          alt: "images"
-          link: "https://protpd.com/"
-      - listItem:
-          id: 5
-          title: "Lantrans"
-          img: "/img/portfolio/lantrans.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          alt: "images"
-          link: "https://lantrans.in/"
-      - listItem:
-          id: 6
-          title: "KN Technologies"
-          img: "/img/portfolio/knt.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          alt: "images"
-          link: "https://kntech.co.uk/"
-      - listItem:
-          id: 7
-          title: "SS Companies"
-          img: "/img/portfolio/sscom.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          alt: "images"
-          link: "https://sscompanies.in/"
-      - listItem:
-          id: 8
-          title: "Annapurna de Royal"
-          img: "/img/portfolio/annapurna.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          alt: "images"
-          link: "https://www.annapurnaderoyal.com/"
-      - listItem:
-          id: 9
-          title: "Global Pharma Solutions"
-          img: "/img/portfolio/globalpharma.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          alt: "images"
-          link: "https://gpconsultancy.in/"
-      - listItem:
-          id: 10
-          title: "Chachapoya USA"
-          img: "/img/portfolio/chachapoya.jpg"
-          alt: "images"
-          link: "https://chachapoyahxm.com/"
-      - listItem:
-          id: 11
-          title: "AL Kasur"
-          img: "/img/portfolio/akkasur.jpg"
-          alt: "images"
-          link: "https://alkasur.com/"
-      - listItem:
-          id: 12
-          title: "A1 Event Planner"
-          img: "/img/portfolio/eventplanner.jpg"
-          alt: "images"
-          link: ""
-      - listItem:
-          id: 13
-          title: "Kumar Pumps & Motors"
-          img: "/img/portfolio/kumarpumps.jpg"
-          alt: "images"
-          link: "https://kumarpumps.co.in/"
-      - listItem:
-          id: 14
-          title: "Trendsoft Technologies"
-          img: "/img/portfolio/trendsofttech.jpg"
-          alt: "images"
-          link: "/"
 careers:
   heading: "Careers"
   location: "hyderabad"

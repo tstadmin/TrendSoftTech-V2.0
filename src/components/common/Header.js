@@ -118,19 +118,16 @@ export default function Header(props) {
         {/*  Mobile Menu */}
 
         <ul className="uppercase font-medium ml-8 540Screen:hidden block space-y-4 ">
-          {/* {
-            props.data.moblelist.map((item,id)=>(
- <li className="text-lg text-white">
-            <Link to="/">Home</Link>
-          </li>
-            ))
-          } */}
           <li className="text-lg text-white">
-            <Link to="/">Home</Link>
+            <Link to={props.data.mobilelist.homePage}>
+              {props.data.mobilelist.home}
+            </Link>
           </li>
 
           <li className="text-lg text-white">
-            <Link to="/about/">About</Link>
+            <Link to={props.data.mobilelist.aboutPage}>
+              {props.data.mobilelist.about}
+            </Link>
           </li>
 
           {/* IT Services */}
@@ -138,9 +135,9 @@ export default function Header(props) {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full">
-                  <Link to="/services/">
+                  <Link to={props.data.mobilelist.servicesPage}>
                     <li className="text-lg text-white uppercase">
-                      IT Services
+                      {props.data.mobilelist.services}
                     </li>
                   </Link>
                   <IoIosArrowDown
@@ -152,30 +149,12 @@ export default function Header(props) {
 
                 <ul>
                   <Disclosure.Panel className="px-4 text-sm text-white space-y-2 ">
-                    <li className="text-white">
-                      {" "}
-                      <Link to="/services/webDevelopment/">
-                        Web Development{" "}
-                      </Link>
-                    </li>
-
-                    <li className="text-white">
-                      <Link to="/services/ecommerceDevelopment/">
-                        Ecommerce Development
-                      </Link>
-                    </li>
-
-                    <li className="text-white">
-                      <Link to="/services/productDevelopment/">
-                        Product Development
-                      </Link>
-                    </li>
-
-                    <li className="text-white">
-                      <Link to="/services/mobileDevelopment/">
-                        Mobile Development
-                      </Link>
-                    </li>
+                    {props.data.mobilelist.itServices.map(i => (
+                      <li className="text-white">
+                        {" "}
+                        <Link to={i.listItem.page}>{i.listItem.title}</Link>
+                      </li>
+                    ))}
                   </Disclosure.Panel>
                 </ul>
               </>
@@ -187,8 +166,10 @@ export default function Header(props) {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full">
-                  <Link to="/services/testing/">
-                    <li className="text-white text-lg uppercase">Testing</li>
+                  <Link to={props.data.mobilelist.testPage}>
+                    <li className="text-white text-lg uppercase">
+                      {props.data.mobilelist.test}
+                    </li>
                   </Link>
                   <IoIosArrowDown
                     className={`${
@@ -197,13 +178,12 @@ export default function Header(props) {
                   />
                 </Disclosure.Button>
                 <Disclosure.Panel className="px-4 text-white space-y-1">
-                  <li className="text-white">
-                    <Link to="/services/testing/">Manual Testing</Link>
-                  </li>
-
-                  <li className="text-white">
-                    <Link to="/services/testing/">Automation Testing</Link>
-                  </li>
+                  {props.data.mobilelist.subTest.map(i => (
+                    <li className="text-white">
+                      {" "}
+                      <Link to={i.listItem.page}>{i.listItem.title}</Link>
+                    </li>
+                  ))}
                 </Disclosure.Panel>
               </>
             )}
@@ -214,8 +194,10 @@ export default function Header(props) {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full">
-                  <Link to="/services/accessibility/">
-                    <li className="text-white text-lg">Accessibility</li>
+                  <Link to={props.data.mobilelist.accessibilityPage}>
+                    <li className="text-white text-lg">
+                      {props.data.mobilelist.accessibility}
+                    </li>
                   </Link>
                   <IoIosArrowDown
                     className={`${
@@ -228,9 +210,9 @@ export default function Header(props) {
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex w-full">
-                          <Link to="/services/docAccessibility/accessiblePDFUA/">
+                          <Link to={props.data.mobilelist.docaccessibilityPage}>
                             <li className="text-white uppercase">
-                              Doc Accessibility
+                              {props.data.mobilelist.docaccessibility}
                             </li>
                           </Link>
                           <IoIosArrowDown
@@ -240,43 +222,22 @@ export default function Header(props) {
                           />
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 py-2 text-sm text-white space-y-1">
-                          <li className="text-white">
-                            <Link to="/services/docAccessibility/accessiblePDFUA/">
-                              Accessible Pdf/ua{" "}
-                            </Link>
-                          </li>
-
-                          <li className="text-white">
-                            <Link to="/services/docAccessibility/accessiblePDFForms/">
-                              Accessible Pdf Forms
-                            </Link>{" "}
-                          </li>
-
-                          <li className="text-white">
-                            <Link to="/services/docAccessibility/accessibleWord/">
-                              Accessible Word{" "}
-                            </Link>
-                          </li>
-
-                          <li className="text-white">
-                            <Link to="/services/docAccessibility/accessibleExcel/">
-                              Accessible Excel{" "}
-                            </Link>
-                          </li>
-
-                          <li className="text-white">
-                            <Link to="/services/docAccessibility/accessiblePPT/">
-                              Accessible Ppt{" "}
-                            </Link>{" "}
-                          </li>
+                          {props.data.mobilelist.subaccessibility.map(i => (
+                            <li className="text-white">
+                              {" "}
+                              <Link to={i.listItem.page}>
+                                {i.listItem.title}
+                              </Link>
+                            </li>
+                          ))}
                         </Disclosure.Panel>
                       </>
                     )}
                   </Disclosure>
 
                   <li className="text-white">
-                    <Link to="/services/webAccessibility/">
-                      Web Accessibility
+                    <Link to={props.data.mobilelist.webaccessibilityPage}>
+                      {props.data.mobilelist.webaccessibility}
                     </Link>
                   </li>
                 </Disclosure.Panel>
@@ -285,15 +246,21 @@ export default function Header(props) {
           </Disclosure>
 
           <li className="text-white text-lg">
-            <Link to="/services/digitalMarketing/">Digital Marketing</Link>
+            <Link to={props.data.mobilelist.digitalPage}>
+              {props.data.mobilelist.digital}
+            </Link>
           </li>
 
           <li className="text-lg text-white">
-            <Link to="/careers/">Careers</Link>
+            <Link to={props.data.mobilelist.careersPage}>
+              {props.data.mobilelist.careers}
+            </Link>
           </li>
 
           <li className="text-lg text-white">
-            <Link to="/contact/">Contact</Link>
+            <Link to={props.data.mobilelist.contactPage}>
+              {props.data.mobilelist.contact}
+            </Link>
           </li>
         </ul>
       </div>

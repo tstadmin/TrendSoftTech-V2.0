@@ -70,18 +70,47 @@ const layoutQuery = graphql`
                   }
                 }
                 mobilelist {
-                  listItem {
-                    id
-                    page
-                    title
-                    mobilesub {
-                      listItem {
-                        id
-                        page
-                        title
-                      }
+                  home
+                  about
+                  services
+                  itServices {
+                    listItem {
+                      id
+                      page
+                      title
                     }
                   }
+                  subTest {
+                    listItem {
+                      id
+                      page
+                      title
+                    }
+                  }
+                  subaccessibility {
+                    listItem {
+                      id
+                      page
+                      title
+                    }
+                  }
+                  test
+                  accessibility
+                  docaccessibility
+                  webaccessibility
+                  digital
+                  careers
+                  contact
+                  accessibilityPage
+                  aboutPage
+                  servicesPage
+                  webaccessibilityPage
+                  careersPage
+                  contactPage
+                  testPage
+                  digitalPage
+                  docaccessibilityPage
+                  homePage
                 }
               }
               footer {
