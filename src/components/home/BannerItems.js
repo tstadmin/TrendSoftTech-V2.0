@@ -4,7 +4,11 @@ import Card from "../common/Card"
 import { BannerItemDiv } from "./HomeStyle"
 const BannerItems = props => {
   return (
-    <BannerItemDiv>
+    <BannerItemDiv
+      data-sal="slide-right"
+      data-sal-duration="700"
+      data-sal-easing="ease-in-out"
+    >
       {props.bannerItem.map((item, id) => (
         <Card
           key={id}

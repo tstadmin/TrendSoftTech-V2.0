@@ -29,6 +29,7 @@ export default function OnclickTop() {
     <div>
       {scrolled && (
         <button
+          className="animate-bounce"
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
           }}

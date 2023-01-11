@@ -12,7 +12,7 @@ const Card = props => {
           ${
             props.CTA
               ? "hover:shadow-2xl  hover:border-sky-50 hover:duration-300 hover:cursor-pointer hover:shadow-blue-300"
-              : "none"
+              : "shadow-2xl shadow-blue-400/30 hover:scale-105 hover:duration-700 hover:cursor-pointer"
           }
             lg:p-6 2xl:px-8   md:p-8 p-5 bg-white`}
     >
