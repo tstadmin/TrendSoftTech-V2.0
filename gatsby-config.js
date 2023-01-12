@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `TrendSoft Tech`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective...`,
     author: `@gatsbyjs`,
   },
   plugins: [
