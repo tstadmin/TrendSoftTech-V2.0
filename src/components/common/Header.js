@@ -29,7 +29,7 @@ export default function Header(props) {
           <img
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
-            className="md:w-[184px] 240Screen:w-[80px] md:h-[95px]"
+            className="md:w-[184px] 340Screen:w-[100px] 240Screen:w-[80px] md:h-[95px]"
           />
         </Link>
       </NavBar>
@@ -87,11 +87,11 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed z-20 right-0 1920Screen:top-[17.4%] 2xl:top-[20.8%] md:top-[20.4%] top-[14%]  bg-[#0084FF] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
+              ? "fixed z-20 right-0 1920Screen:top-[17.4%] 2xl:top-[21.8%] md:top-[20.4%]  top-[16%]  bg-[#0084FF] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
               : "fixed hidden "
           }
         >
-          <ul className=" xl:flex 440Screen:pl-10 pl-4 2xl:pl-32 1920Screen:pl-44 1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <ul className=" xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <li
                 key={item.id}
