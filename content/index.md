@@ -74,6 +74,10 @@ home:
                 id: 1
                 title: "UI/UX Design"
                 page: "/services/uiUXDesign/"
+      - listItem:
+          id: 6
+          title: "Awards"
+          page: "/"     
     mobilelist:
           home: "Home"
           homePage: "/"
@@ -81,6 +85,8 @@ home:
           aboutPage: "/about/"
           services: "IT Services"
           servicesPage: "/services/"
+          award: "Awards"
+          awardPage: "/"
           itServices:
             - listItem:
                 id: 1
