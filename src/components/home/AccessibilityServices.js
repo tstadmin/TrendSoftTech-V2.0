@@ -12,7 +12,7 @@ import {
 
 const AccessibilityServices = props => {
   return (
-    <div data-sal="fade" data-sal-delay="100" data-sal-easing="ease-in-out">
+    <div>
       <Accessibility>
         <Title>{props.accessibilityServices.title}</Title>
         <SubTitle>{props.accessibilityServices.subTitle}</SubTitle>

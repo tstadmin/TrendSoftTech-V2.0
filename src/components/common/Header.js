@@ -29,7 +29,7 @@ export default function Header(props) {
           <img
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
-            className="md:w-[184px] 340Screen:w-[100px] 240Screen:w-[80px] md:h-[95px]"
+            className="md:w-[184px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px]"
           />
         </Link>
       </NavBar>
@@ -55,7 +55,7 @@ export default function Header(props) {
             role="button"
             onClick={() => setOpened(true)}
             className=" block sm:text-2xl text-md  hover:text-blue-400
-           pr-8"
+           pr-8 pt-2 md:pt-0 "
           >
             {opened ? (
               <button
@@ -63,14 +63,14 @@ export default function Header(props) {
                 aria-expanded="false"
                 data-bs-toggle="dropdown"
                 id="navbarDropdown"
-                className="text-5xl  cursor-pointer text-[#0084FF] "
+                className="md:text-5xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
               >
                 <RxCross2 />
               </button>
             ) : (
               <button
                 aria-labelledby="navbarDropdown"
-                className="text-5xl  cursor-pointer text-[#0084FF] "
+                className="md:text-5xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
               >
                 {/* <span className="sr-only">Test</span> */}
                 <HiBars3BottomLeft />
@@ -87,7 +87,7 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed z-20 right-0 1920Screen:top-[17.4%] 2xl:top-[21.8%] md:top-[20.4%]  top-[16%]  bg-[#0084FF] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
+              ? "fixed z-20 right-0 1920Screen:top-[17.4%] 2xl:top-[21.8%] md:top-[20.4%] 540Screen:top-[13%] 440Screen:top-[12%] 340Screen:top-[11.8%] top-[10.3%]  bg-[#0084FF] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
               : "fixed hidden "
           }
         >

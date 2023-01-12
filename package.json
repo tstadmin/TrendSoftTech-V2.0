@@ -33,6 +33,8 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
     "react-parallax-tilt": "^1.7.76",
+    "react-photo-gallery": "^8.0.0",
+    "react-photo-view": "^1.2.3",
     "react-scroll-trigger": "^0.6.14",
     "react-spinners": "^0.13.7",
     "tailwind.macro": "^0.5.10",

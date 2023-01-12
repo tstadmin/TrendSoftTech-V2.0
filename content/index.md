@@ -332,6 +332,7 @@ about:
     whychooseDescription : "<p>Vision + Hard work + Consistency </p><p>At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections. We believe that transparency is needed to create trust, and so it is integral part or Trendsoft culture. It gives us utmost confidence to provide a visibility regarding the development process to the clients. Being your technology partner, we make sure to deliver right combination of technologies for your need and excellent result of it.</p>"    
 services:
    webDevelopment:
+      slug: "Web-development"
       description: "<p>A strong base in the field of website designing and development services made us one of the best Web Development Company spanned across India.  At Trendsoft, we keep up the pace with deep knowledge, development, and experience to proffer web solutions that are best suited to your business venture. A business website plays a major role in depicting your intentions and goals. Just a company profile is worthless and so we help you build an informative and impressive website to draw the attention of your valuable customers.
      </p> <p>As a leading web development company, our professional expertise comprises skilled and experienced designers and developers flexible in creating business websites according to the demands. We offer custom website development services including WordPress Development, e-Commerce Website Development, Magento Development, Custom Web App Development, Joomla Development, Content Management System, Mobile App Development, Mobile Responsive Website, Internet Marketing & Digital Marketing. Our web specialists are committed to providing the best products and services to ensure a great business ahead.</p>"
       list:
@@ -382,6 +383,7 @@ services:
              about: "Event Planner Ltd is an event logistics and marketing company "
              link: "https://protpd.com/"               
    ecommerceDevelopment:
+      slug: "Ecommerce-development"
       description: "<p>E-commerce Application development has certainly become a need instead of a means to enterprise greater traffic. We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small and medium enterprises. We are top-notch e-commerce app development company that provides better end to end functionality. Our expert team of developers and designers help you to design and develop online store which converts a visitor into a customer. An e-commerce site will give you wing to your retail business. We use latest technologies to build e-commerce website so that you can easily maintain your store without stirring any code on the back end.</p>"
       list:
         - listItems:
