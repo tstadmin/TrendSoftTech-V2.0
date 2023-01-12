@@ -10,8 +10,7 @@ import {
   DevelopmentLayout,
   PortfolioLink,
 } from "./services/ServicesStyled"
-const ServicesLayout = ({ children }, props) => {
-  const data = props.data
+const ServicesLayout = ({ children }) => {
   return (
     <div>
       <DevelopmentDiv>

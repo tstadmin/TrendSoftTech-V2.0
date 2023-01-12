@@ -23,7 +23,7 @@ const Testing = () => {
       <Layout>
         <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img="/img/BreadCrumb/testing.svg" />
-        {/* <Tabs /> */}
+
         <ServicesLayout>
           <Development data={test} />
         </ServicesLayout>

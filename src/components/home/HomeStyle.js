@@ -161,10 +161,10 @@ export const WorkingCards = styled.ul`
 ///  ----- Footers component in HomePage Home  folder--------------------------------
 
 export const FooterDiv = styled.div`
-  ${tw`mt-20 bg-blue-50/80 py-4 `}
+  ${tw`mt-20 bg-blue-50/80 py-4  `}
 `
 export const FooterInfo = styled.div`
-  ${tw`md:flex sm:grid  px-8 xl:px-12 md:px-0 md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
+  ${tw`md:flex sm:grid  px-8 xl:px-12  md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
 `
 export const FooterTitle = styled.h2`
   ${tw` text-[#1a71d4] `}

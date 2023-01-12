@@ -6,6 +6,7 @@ import ServicesLayout from "../../../components/ServicesLayout"
 import BreadCrumb from "../../../components/common/BreadCrumb"
 
 import Seo from "../../../components/seo"
+import Tabs from "../../../components/services/Tabs"
 const AccessiblePDFForms = () => {
   const query = useStaticQuery(accessibleFormQuery)
   const [accessibleForm, setAccessibleForm] = useState([])
@@ -24,10 +25,11 @@ const AccessiblePDFForms = () => {
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible PDF Form"
         />
-        {/* <AccessibilityTabs /> */}
+
         <ServicesLayout>
           <Accessible data={accessibleForm} />
         </ServicesLayout>
+        <Tabs />
       </Layout>
     </div>
   )

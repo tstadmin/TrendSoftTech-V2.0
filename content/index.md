@@ -1030,34 +1030,22 @@ AccessibilityTabs:
   list:
     - listItem:
         id: 1
-        title: "Services"
-        link: "/services/"
-    - listItem:
-        id: 2
-        title: "Accessibility"
-        link: "/services/accessibility/"
-    - listItem:
-        id: 3
-        title: "Web Accessibility"
-        link: "/services/webAccessibility/"    
-    - listItem:
-        id: 4
         title: "Accessible PDF/UA"
         link: "/services/docAccessibility/accessiblePDFUA"
     - listItem:
-        id: 5
+        id: 2
         title: "Accessible PDF Forms"
         link: "/services/docAccessibility/accessiblePDFForms"
     - listItem:
-        id: 6
+        id: 3
         title: "Accessible Word"
         link: "/services/docAccessibility/accessibleWord"
     - listItem:
-        id: 7
+        id: 4
         title: "Accessible PPT"
         link: "/services/docAccessibility/accessiblePPT"
     - listItem:
-        id: 8
+        id: 5
         title: "Accessible Excel"
         link: "/services/docAccessibility/accessibleExcel"      
 Brochure:

@@ -6,6 +6,7 @@ import ServicesLayout from "../../../components/ServicesLayout"
 import BreadCrumb from "../../../components/common/BreadCrumb"
 
 import Seo from "../../../components/seo"
+import Tabs from "../../../components/services/Tabs"
 const AccessibleExcel = () => {
   const query = useStaticQuery(AccessibleData)
   const [accessibleExcel, setAccessibleExcel] = useState([])
@@ -23,10 +24,11 @@ const AccessibleExcel = () => {
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible Excel"
         />
-        {/* <AccessibilityTabs /> */}
+
         <ServicesLayout>
           <Accessible data={accessibleExcel} />
         </ServicesLayout>
+        <Tabs />
       </Layout>
     </div>
   )

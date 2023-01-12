@@ -6,6 +6,7 @@ import ServicesLayout from "../../../components/ServicesLayout"
 import BreadCrumb from "../../../components/common/BreadCrumb"
 
 import Seo from "../../../components/seo"
+import Tabs from "../../../components/services/Tabs"
 const AccessibleWord = () => {
   const query = useStaticQuery(AccessibleData)
   const [accessibleWord, setAccessibleWord] = useState([])
@@ -23,10 +24,11 @@ const AccessibleWord = () => {
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible Word"
         />
-        {/* <AccessibilityTabs /> */}
+
         <ServicesLayout>
           <Accessible data={accessibleWord} />
         </ServicesLayout>
+        <Tabs />
       </Layout>
     </div>
   )

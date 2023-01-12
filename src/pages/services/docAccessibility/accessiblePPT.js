@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import ServicesLayout from "../../../components/ServicesLayout"
 import BreadCrumb from "../../../components/common/BreadCrumb"
 import Seo from "../../../components/seo"
+import Tabs from "../../../components/services/Tabs"
 const AccessiblePPT = () => {
   const query = useStaticQuery(accessiblePPTData)
   const [accessiblePPT, setAccessiblePPT] = useState([])
@@ -22,10 +23,11 @@ const AccessiblePPT = () => {
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible PPT"
         />
-        {/* <AccessibilityTabs /> */}
+
         <ServicesLayout>
           <Accessible data={accessiblePPT} />
         </ServicesLayout>
+        <Tabs />
       </Layout>
     </div>
   )

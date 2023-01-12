@@ -11,11 +11,13 @@ import Portfolios from "../../components/Portfolio/Portfolios"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Brochure from "../../components/common/Brochure"
 import GrowYourBusinnes from "../../components/common/GrowYourBusinnes"
-import {  PortfoliosButton } from "../../components/services/ServicesStyled"
+import { PortfoliosButton } from "../../components/services/ServicesStyled"
 import {
-  DevelopmentDiv,PortfolioLink,
+  DevelopmentDiv,
+  PortfolioLink,
   DevelopmentLayout,
 } from "../../components/services/ServicesStyled"
+import ServicesLayout from "../../components/ServicesLayout"
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
   const data =
@@ -34,6 +36,7 @@ const WebDevelopment = () => {
           title="Web Development"
           img="/img/BreadCrumb/WebDevelopment.svg"
         />
+
         <div>
           <DevelopmentDiv>
             <Development data={data} />

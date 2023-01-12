@@ -99,7 +99,7 @@ export const PortfoliosButton = styled.div`
   }
 
   .button {
-    padding: 0.9375rem 1.875rem;
+    padding: 10px;
   }
 `
 
@@ -113,4 +113,55 @@ export const DevelopmentLayout = styled.div`
 `
 export const PortfolioLink = styled.a`
   ${tw`hover:bg-blue-500 border-2 border-blue-500  duration-700  p-3 rounded-none flex space-x-3 text-2xl justify-center `}
+`
+///------- Tabs style component ----------------
+
+export const TabButton = styled.div`
+  .Tab a[aria-current="page"] {
+    color: #0b70e1 !important;
+  }
+  .Tab {
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    -webkit-transition: border-color 0.35s ease, background 0.35s ease;
+    transition: border-color 0.35s ease, background 0.35s ease;
+  }
+
+  .Tab:before {
+    background-color: white;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all 0.35s ease;
+    transition: all 1.75em ease;
+  }
+
+  .Tab:hover:before {
+    top: 100%;
+  }
+
+  .Tab:hover {
+    color: white;
+    transition: 0.25s;
+  }
+
+  .Tab:after {
+    position: absolute;
+    right: 2.34375rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(50%);
+    -ms-transform: translateY(-50%) translateX(50%);
+    transform: translateY(-50%) translateX(50%);
+    font-size: 1.75em;
+  }
+
+  .Tab {
+    padding: 10px;
+  }
 `

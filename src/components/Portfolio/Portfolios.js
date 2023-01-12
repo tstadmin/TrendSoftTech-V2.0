@@ -4,14 +4,14 @@ import React from "react"
 const Portfolios = props => {
   return (
     <div className=" mt-10 1920Screen:px-44 2xl:px-24 px-8 md:py-10 py-28 bg-blue-100">
-      <div className="text-center">
+      <div className="text-center space-y-2">
         <h1>Portfolio</h1>
         <h3>Our Works</h3>
       </div>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 md:space-x-7  space-x-0 md:space-y-10  space-y-20">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
         {props.data.portfolios.map((item, index) => (
-          <div className="relative mt-10  ">
+          <div className="relative mt-10 py-4 ">
             <img
               src={item.listItem.img}
               className="lg:h-[500px] md:h-[400px] h-[300px] md:w-[90%] w-full object-cover  object-left-top "
