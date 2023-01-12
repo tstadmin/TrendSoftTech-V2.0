@@ -12,6 +12,7 @@ import OnclickTop from "./common/OnClickScrollToTop"
 import Footer from "./home/Footer"
 import TopBar from "./common/TopBar"
 import SkipToMainContent from "./common/SkipToMainContent"
+import BounceLoader from "react-spinners/BounceLoader"
 
 const Layout = ({ children }) => {
   const query = useStaticQuery(layoutQuery)
@@ -21,19 +22,38 @@ const Layout = ({ children }) => {
     query.allMarkdownRemark.edges[0].node.frontmatter.home.footer
 
   const [footer, setFooter] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     setFooter(footerData)
+    setLoading(false)
   }, [footerData])
 
   return (
     <div>
-      <SkipToMainContent />
-      <TopBar />
-      <Header data={data} />
-      <div id="mainContent">{children}</div>
-      <Footer data={footer} />
-      <OnclickTop />
+      <>
+        {loading ? (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: "50vh",
+            }}
+          >
+            <BounceLoader color="#0c62d2" />
+          </div>
+        ) : (
+          <>
+            <SkipToMainContent />
+            <TopBar />
+            <Header data={data} />
+            <div id="mainContent">{children}</div>
+            <Footer data={footer} />
+            <OnclickTop />
+          </>
+        )}
+      </>
     </div>
   )
 }
