@@ -857,16 +857,19 @@ careers:
         title: "ReactJs Developer"
         Role: "ReactJs Developer"
         link: "/careers/reactinfo/"
+        label: "ReactJs Developer more Details"
     - listItem:
         id: "2"
         title: "Laravel Developer"
         Role: "Laravel Developer"
         link: "/careers/laravel/"
+        label: "Laravel Developer more Details"
     - listItem:
         id: "3"
         title: "Web Designer"
         Role: "Web Designer"
         link: "/careers/designer/"
+        label: "Web Designer more Details"
   ReactJs:
     title: "Requirements"
     list:

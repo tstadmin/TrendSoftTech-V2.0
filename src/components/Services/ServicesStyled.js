@@ -31,11 +31,11 @@ export const CardDescription = styled.h1`
 export const Description = styled.p`
   ${tw`mt-5`}
 `
-export const Title = styled.h3`
-  ${tw` text-[#0B70E1] mt-5 `}
+export const Title = styled.h2`
+  ${tw` text-[#0B70E1] mt-5 md:text-3xl text-xl `}
 `
-export const PhasesTitle = styled.h2`
-  ${tw`mt-5`}
+export const PhasesTitle = styled.h3`
+  ${tw`mt-5  md:text-lg  text-sm`}
 `
 export const PhasesDescription = styled.p`
   ${tw`mt-2 `}

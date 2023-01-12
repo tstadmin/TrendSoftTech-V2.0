@@ -15,7 +15,12 @@ const Brochure = () => {
         target="_blank"
         className="bg-blue-500 text-white text-sm p-3 rounded-md flex  justify-center"
       >
-        {data.button} <AiOutlineFilePdf className="text-white ml-1 text-lg" />
+        {data.button}{" "}
+        <AiOutlineFilePdf
+          className="text-white ml-1 text-lg"
+          role="button"
+          aria-label=" company brochure PDF "
+        />
       </a>
     </BrochureDiv>
   )

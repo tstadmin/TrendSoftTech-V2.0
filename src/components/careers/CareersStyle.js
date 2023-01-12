@@ -8,10 +8,10 @@ export const InfoCardDiv = styled.div`
 export const CareersHanding = styled.h2`
   ${tw`text-center sm:text-6xl text-5xl font-semibold`}
 `
-export const InfoCards = styled.div`
+export const InfoCards = styled.ul`
   ${tw`md:flex  justify-center md:space-x-10 md:px-0 px-8 md:space-y-0  space-y-6`}
 `
-export const CardDiv = styled.div`
+export const CardDiv = styled.li`
   ${tw`space-y-4  hover:shadow-lg shadow-blue-100 hover:duration-500 cursor-pointer bg-black/5 hover:bg-blue-50    min-w-[20%] p-6`}
 `
 export const CardTitle = styled.h2`
