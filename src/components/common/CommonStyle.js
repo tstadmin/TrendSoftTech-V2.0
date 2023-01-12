@@ -9,7 +9,7 @@ export const BreadCrumInfo = styled.div`
   ${tw`absolute 2xl:top-[40%] top-[35%] w-full  text-center`}
 `
 
-export const BreadCrumbHeader = styled.div`
+export const BreadCrumbHeader = styled.h1`
   ${tw`lg:text-5xl md:text-3xl font-semibold `}
 `
 //-----Grow Your Businnes component  in Commer Folders-----

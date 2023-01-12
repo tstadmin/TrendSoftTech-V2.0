@@ -41,6 +41,7 @@ const Data = graphql`
                   title
                   Role
                   link
+                  label
                 }
               }
               heading

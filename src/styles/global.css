@@ -8,7 +8,7 @@ body{
     @apply font-Poppins 
 }
 h1{
-    @apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-5xl sm:text-2xl text-lg font-medium
+    @apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-5xl sm:text-2xl text-lg font-Poppins
 }
 h2{
     @apply  md:text-lg  text-sm font-semibold 
@@ -25,5 +25,5 @@ li{
 }
 
 a{
-    @apply focus:underline focus:text-orange-500
+    @apply focus:underline focus:text-orange-500 font-Poppins
 }

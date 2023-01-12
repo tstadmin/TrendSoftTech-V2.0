@@ -15,8 +15,8 @@ const Contact = () => {
 
   return (
     <Layout>
-      <Seo title="Contact" description="TrendSoftTech" />
-      <BreadCrumb title="Contact" img="/img/contact/contact_Frame.svg" />
+      <Seo title="Contact " description="TrendSoftTech" />
+      <BreadCrumb title="Contact Us" img="/img/contact/contact_Frame.svg" />
       <ContactIndex data={contact} />
     </Layout>
   )

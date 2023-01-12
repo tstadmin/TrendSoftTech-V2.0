@@ -15,7 +15,7 @@ import { BsArrowRight } from "react-icons/bs"
 const InfoCard = props => {
   return (
     <InfoCardDiv>
-      <CareersHanding>{props.careers.heading}</CareersHanding>
+      {/* <CareersHanding>{props.careers.heading}</CareersHanding> */}
       <InfoCards>
         {props.careers.list?.map((item, idx) => (
           <CardDiv key={item.listItem.id}>
@@ -25,9 +25,12 @@ const InfoCard = props => {
               <p>{props.careers.location}</p>
 
               <CardReadDiv>
-                <Link to={item.listItem.link}>
-                  {" "}
-                  <p className="text-[#1273EB]">{props.careers.CTA}</p>
+                <Link
+                  to={item.listItem.link}
+                  className="text-[#1273EB] sm:text-base  text-sm"
+                  aria-label={item.listItem.label}
+                >
+                  {props.careers.CTA}
                 </Link>
 
                 <BsArrowRight size={15} />

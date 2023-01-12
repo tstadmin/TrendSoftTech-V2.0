@@ -38,6 +38,7 @@ export default function OnclickTop() {
             bottom: "40px",
             right: "40px",
           }}
+          aria-label="bottom to top "
         >
           <IoArrowUpOutline
             className="text-white rounded-full bg-[#f37c05] text-6xl p-3 h-[45px]
