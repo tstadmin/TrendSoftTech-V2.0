@@ -93,6 +93,8 @@ const layoutQuery = graphql`
                   home
                   about
                   services
+                  award
+                  awardPage
                   itServices {
                     listItem {
                       id

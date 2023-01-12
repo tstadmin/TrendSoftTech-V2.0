@@ -97,7 +97,7 @@ export default function Header(props) {
                 key={item.id}
                 className="uppercase  text-white mt-6 sm:text-2xl text-sm font-medium hidden 540Screen:block "
               >
-                <Link to={item.listItem.page}>{item.listItem.title}</Link>
+                {item.listItem.title}
                 <ul className="space-y-2 mt-4 sm:text-base font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
@@ -132,11 +132,14 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <Link to={props.data.mobilelist.servicesPage}>
+                    <li className="text-lg text-white uppercase">
+                      {props.data.mobilelist.services}
+                    </li>
+                    {/* <Link to={props.data.mobilelist.servicesPage}>
                       <li className="text-lg text-white uppercase">
                         {props.data.mobilelist.services}
                       </li>
-                    </Link>
+                    </Link> */}
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
@@ -163,11 +166,14 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <Link to={props.data.mobilelist.testPage}>
+                    <li className="text-white text-lg uppercase">
+                      {props.data.mobilelist.test}
+                    </li>
+                    {/* <Link to={props.data.mobilelist.testPage}>
                       <li className="text-white text-lg uppercase">
                         {props.data.mobilelist.test}
                       </li>
-                    </Link>
+                    </Link> */}
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
@@ -191,11 +197,13 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <Link to={props.data.mobilelist.accessibilityPage}>
-                      <li className="text-white text-lg">
+                    <li className="text-white text-lg">
+                      {props.data.mobilelist.accessibility}
+                    </li>
+                    {/* <Link to={props.data.mobilelist.accessibilityPage}>
+                     
                         {props.data.mobilelist.accessibility}
-                      </li>
-                    </Link>
+                    </Link> */}
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
@@ -207,13 +215,16 @@ export default function Header(props) {
                       {({ open }) => (
                         <>
                           <Disclosure.Button className="flex w-full">
-                            <Link
+                            <li className="text-white uppercase">
+                              {props.data.mobilelist.docaccessibility}
+                            </li>
+                            {/* <Link
                               to={props.data.mobilelist.docaccessibilityPage}
                             >
                               <li className="text-white uppercase">
                                 {props.data.mobilelist.docaccessibility}
                               </li>
-                            </Link>
+                            </Link> */}
                             <IoIosArrowDown
                               className={`${
                                 open ? "rotate-180 transform" : ""
@@ -259,6 +270,11 @@ export default function Header(props) {
             <li className="text-lg text-white">
               <Link to={props.data.mobilelist.contactPage}>
                 {props.data.mobilelist.contact}
+              </Link>
+            </li>
+            <li className="text-lg text-white">
+              <Link to={props.data.mobilelist.awardPage}>
+                {props.data.mobilelist.award}
               </Link>
             </li>
           </ul>
