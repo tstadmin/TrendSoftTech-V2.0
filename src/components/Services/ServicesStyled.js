@@ -116,7 +116,7 @@ export const PortfolioLink = styled.a`
 `
 ///------- Tabs style component ----------------
 
-export const TabButton = styled.div`
+export const TabButton = styled.li`
   .Tab a[aria-current="page"] {
     color: #0b70e1 !important;
   }

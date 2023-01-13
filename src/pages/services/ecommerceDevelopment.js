@@ -93,6 +93,7 @@ const ecommercData = graphql`
                     title
                     link
                     about
+                    label
                   }
                 }
               }

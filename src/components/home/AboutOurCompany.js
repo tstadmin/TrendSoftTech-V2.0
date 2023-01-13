@@ -15,7 +15,7 @@ const AboutOurCompany = props => {
       <img src={props.aboutOurCompany.img} alt="" />
       <AboutOurInfo>
         <AboutOurDotImage>
-          <AboutOurImage src={props.aboutOurCompany.imgDot} />
+          <AboutOurImage src={props.aboutOurCompany.imgDot} alt="" />
         </AboutOurDotImage>
         <AboutOurTitle>{props.aboutOurCompany.title}</AboutOurTitle>
 

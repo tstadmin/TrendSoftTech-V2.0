@@ -14,7 +14,7 @@ const ContactUs = props => {
         <img src={props.contactUs.personsImage} width="632px" alt="" />
 
         <ContactInfo>
-          <h3>{props.contactUs.title}</h3>
+          <h2 className="md:text-3xl text-xl">{props.contactUs.title}</h2>
           <ContactDescription>{props.contactUs.description}</ContactDescription>
           <div>
             <Link

@@ -25,5 +25,9 @@ li{
 }
 
 a{
-    @apply focus:underline focus:text-orange-500 font-Poppins
+    @apply focus:underline focus:text-orange-500 hover:underline hover:decoration-orange-500 font-Poppins
+}
+
+h4{
+    @apply  md:text-lg  text-sm font-semibold 
 }

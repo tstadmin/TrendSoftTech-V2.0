@@ -11,11 +11,12 @@ const Portfolios = props => {
         <h3>Our Works</h3>
       </div>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-5">
+      <ul className="grid md:grid-cols-2 grid-cols-1 gap-5">
         {props.data.portfolios.map((item, index) => (
-          <div className="relative mt-10 py-4 ">
+          <li className="relative mt-10 py-4 " key={item.listItem.id}>
             <img
               src={item.listItem.img}
+              alt=""
               className="lg:h-[500px] md:h-[400px] h-[300px] md:w-[90%] w-full object-cover  object-left-top "
             />
 
@@ -23,16 +24,17 @@ const Portfolios = props => {
               <h4 className="lg:text-lg  text-xs">{item.listItem.title}</h4>
               <span className="lg:text-lg  text-xs">{item.listItem.about}</span>
               <Link
+                aria-label={item.listItem.label}
                 className="bg-blue-400 p-2 rounded-md text-center lg:text-lg  text-xs"
                 to={item.listItem.link}
                 target="_blank"
               >
-                Expolre
+                Explore
               </Link>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
 
       {/* <div className="relative mt-10 p-5 xl:ml-56 lg:ml-36 md:ml-20 ml-0">
         <div>

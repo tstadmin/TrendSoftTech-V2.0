@@ -6,7 +6,7 @@ export const ChooseHeading = styled.h2`
   ${tw`border bg-blue-400 text-white p-3 rounded-full w-44 text-center`}
 `
 export const Heading = styled.h2`
-  ${tw`text-orange-400 `}
+  ${tw`text-[#de1926] `}
 `
 
 export const AboutUsInfo = styled.div`

@@ -92,6 +92,7 @@ const webDevelopmentData = graphql`
                     title
                     link
                     about
+                    label
                   }
                 }
               }

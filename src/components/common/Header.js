@@ -91,13 +91,12 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <ul className=" xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className=" xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
-              <li
-                key={item.id}
-                className="uppercase  text-white mt-6 sm:text-2xl text-sm font-medium hidden 540Screen:block "
-              >
-                {item.listItem.title}
+              <div key={item.id}>
+                <h2 className="uppercase  text-white mt-6 sm:text-2xl text-sm font-medium hidden 540Screen:block ">
+                  {item.listItem.title}
+                </h2>
                 <ul className="space-y-2 mt-4 sm:text-base font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
@@ -108,9 +107,9 @@ export default function Header(props) {
                     </li>
                   ))}
                 </ul>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
 
           {/*  Mobile Menu */}
 
