@@ -94,9 +94,9 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <ul className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
-              <li
+              <h2
                 key={item.id}
                 className="uppercase  text-white mt-6 sm:text-2xl text-sm sm:font-medium hidden 540Screen:block "
               >
@@ -111,9 +111,9 @@ export default function Header(props) {
                     </li>
                   ))}
                 </ul>
-              </li>
+              </h2>
             ))}
-          </ul>
+          </div>
 
           {/*  Mobile Menu */}
 

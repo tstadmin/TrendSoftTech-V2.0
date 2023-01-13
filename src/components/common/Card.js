@@ -25,7 +25,7 @@ const Card = props => {
             : "text-center"
         }    grid`}
       >
-        <h2 className="text-[#0B70E1]">{props.title}</h2>
+        <h4 className="text-[#0B70E1]">{props.title}</h4>
 
         <p>{props.description}</p>
         {props.CTA ? (

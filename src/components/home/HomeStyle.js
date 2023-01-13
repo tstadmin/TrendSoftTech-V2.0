@@ -4,8 +4,8 @@ import tw, { styled } from "twin.macro"
 export const Title = styled.h2`
   ${tw` text-[#de1926]`}
 `
-export const SubTitle = styled.h3`
-  ${tw` text-[#0B70E1]  `}
+export const SubTitle = styled.h2`
+  ${tw` text-[#0B70E1] md:text-3xl text-xl   `}
 `
 export const Description = styled.p`
   ${tw`text-[16px] text-[#454545]  `}
@@ -98,7 +98,7 @@ export const AccessibilityCardInfo = styled.li`
   ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
 `
 export const AccessibilityCardTitle = styled.h3`
-  ${tw`text-[#0B70E1] `}
+  ${tw`text-[#0B70E1] md:text-3xl text-xl  `}
 `
 export const AccessibilityInfo = styled.div`
   ${tw`xl:text-3xl md:text-3xl  space-y-2 text-xl font-Poppins`}
@@ -141,8 +141,8 @@ export const ContactHeader = styled.h2`
 export const Working = styled.div`
   ${tw`lg:flex justify-center gap-4 px-8 `}
 `
-export const WorkingDescription = styled.h2`
-  ${tw`text-2xl  lg:text-4xl font-Poppins  `}
+export const WorkingDescription = styled.p`
+  ${tw`text-2xl font-semibold text-black lg:text-4xl font-Poppins  `}
 `
 export const WorkingCardNumber = styled.h3`
   ${tw`text-orange-400 `}

@@ -11,7 +11,7 @@ const Tabs = () => {
   console.log(data)
   return (
     <div className="2xl:px-24 px-8 mt-16">
-      <div className="grid 2xl:grid-cols-5 lg:grid-cols-3 gap-3 ">
+      <ul className="grid 2xl:grid-cols-5 lg:grid-cols-3 gap-3 ">
         {data.list.map(item => (
           <TabButton>
             <Link
@@ -22,7 +22,7 @@ const Tabs = () => {
             </Link>
           </TabButton>
         ))}
-      </div>
+      </ul>
     </div>
   )
 }

@@ -91,6 +91,7 @@ const UiUXDesignData = graphql`
                     title
                     link
                     about
+                    label
                   }
                 }
               }
