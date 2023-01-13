@@ -8,7 +8,7 @@ body{
     @apply font-Poppins 
 }
 h1{
-    @apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-5xl sm:text-2xl text-lg font-Poppins
+    @apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-5xl sm:text-2xl 340Screen:text-lg text-sm font-Poppins
 }
 h2{
     @apply  md:text-lg  text-sm font-semibold 

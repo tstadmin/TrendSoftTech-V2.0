@@ -52,19 +52,22 @@ export default function Header(props) {
           </p>
 
           <p
-            role="button"
             onClick={() => setOpened(true)}
             className=" block sm:text-2xl text-md  hover:text-blue-400
            pr-8 pt-2 md:pt-0 "
           >
             {opened ? (
               <button
-                aria-haspopup="true"
-                aria-expanded="false"
-                data-bs-toggle="dropdown"
                 id="navbarDropdown"
                 className="md:text-5xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
               >
+                <span
+                  data-bs-toggle="collapse"
+                  aria-expanded="true"
+                  className="sr-only"
+                >
+                  expanded
+                </span>
                 <RxCross2 />
               </button>
             ) : (
@@ -72,7 +75,7 @@ export default function Header(props) {
                 aria-labelledby="navbarDropdown"
                 className="md:text-5xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
               >
-                {/* <span className="sr-only">Test</span> */}
+                <span className="sr-only">menu button collapsed submenu</span>
                 <HiBars3BottomLeft />
               </button>
             )}
@@ -87,15 +90,15 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed z-20 right-0 1920Screen:top-[17.4%] 2xl:top-[21.8%] md:top-[20.4%] 540Screen:top-[13%] 440Screen:top-[12%] 340Screen:top-[11.8%] top-[10.3%]  bg-[#0084FF] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
+              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[167px] sm:top-[112px] 540Screen:top-[105px] top-[99px] bg-[#0084FF] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
               : "fixed hidden "
           }
         >
-          <ul className=" xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <ul className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <li
                 key={item.id}
-                className="uppercase  text-white mt-6 sm:text-2xl text-sm font-medium hidden 540Screen:block "
+                className="uppercase  text-white mt-6 sm:text-2xl text-sm sm:font-medium hidden 540Screen:block "
               >
                 {item.listItem.title}
                 <ul className="space-y-2 mt-4 sm:text-base font-normal ">
@@ -114,7 +117,7 @@ export default function Header(props) {
 
           {/*  Mobile Menu */}
 
-          <ul className="uppercase font-medium ml-8 540Screen:hidden block space-y-4 ">
+          <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4 space-y-1 pb-24 ">
             <li className="text-lg text-white">
               <Link to={props.data.mobilelist.homePage}>
                 {props.data.mobilelist.home}
