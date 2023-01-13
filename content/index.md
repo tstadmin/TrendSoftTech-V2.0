@@ -77,7 +77,12 @@ home:
       - listItem:
           id: 6
           title: "Awards"
-          page: "/"     
+          page: "/awards/"     
+          subTitle: 
+            - listItem:
+                id: 1
+                title: "Awards"
+                page: "/awards/"
     mobilelist:
           home: "Home"
           homePage: "/"
@@ -86,7 +91,7 @@ home:
           services: "IT Services"
           servicesPage: "/services/"
           award: "Awards"
-          awardPage: "/"
+          awardPage: "/awards/"
           itServices:
             - listItem:
                 id: 1
@@ -174,7 +179,7 @@ home:
         title: "Best Security Practices"
         description: "High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices."
   aboutOurCompany:
-    img: "/img/HomeImages/aboutFrame.svg"
+    img: "/img/HomeImages/AboutushomeFrame.svg"
     imgDot: "/img/HomeImages/Vector1.svg"
     alt: ""
     altDot: ""

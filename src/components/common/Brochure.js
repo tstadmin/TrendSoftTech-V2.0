@@ -13,7 +13,7 @@ const Brochure = () => {
       <a
         href="/pdf/brochure.pdf"
         target="_blank"
-        className="bg-blue-500 text-white text-sm p-3 rounded-md flex  justify-center"
+        className="bg-[#1E6ff5] text-white text-sm p-3 rounded-md flex  justify-center"
       >
         {data.button}
         <AiOutlineFilePdf

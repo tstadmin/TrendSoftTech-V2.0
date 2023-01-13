@@ -60,7 +60,7 @@ const Footer = props => {
           <div>
             <Link
               to="/about/"
-              className="text-lg font-semibold text-[#1a71d4] "
+              className="text-lg font-semibold text-[#1a70d3] "
             >
               About
             </Link>

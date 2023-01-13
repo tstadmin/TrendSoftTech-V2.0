@@ -15,7 +15,7 @@ export const CardDiv = styled.li`
   ${tw`space-y-4  hover:shadow-lg shadow-blue-100 hover:duration-500 cursor-pointer bg-black/5 hover:bg-blue-50    min-w-[20%] p-6`}
 `
 export const CardTitle = styled.h2`
-  ${tw` text-[#0B70E1]  `}
+  ${tw` text-[#346FB2]  `}
 `
 export const CardInfoDiv = styled.div`
   ${tw`space-y-2 text-sm font-Poppins `}

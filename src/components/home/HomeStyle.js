@@ -167,7 +167,7 @@ export const FooterInfo = styled.div`
   ${tw`md:flex sm:grid  px-8 xl:px-12  md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
 `
 export const FooterTitle = styled.h2`
-  ${tw` text-[#1a71d4] `}
+  ${tw` text-[#1a70d3]  `}
 `
 export const FooterTrendInfo = styled.div`
   ${tw` basis-1/3`}

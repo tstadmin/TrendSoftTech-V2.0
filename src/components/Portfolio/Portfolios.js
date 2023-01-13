@@ -25,7 +25,7 @@ const Portfolios = props => {
               <span className="lg:text-lg  text-xs">{item.listItem.about}</span>
               <Link
                 aria-label={item.listItem.label}
-                className="bg-blue-400 p-2 rounded-md text-center lg:text-lg  text-xs"
+                className="bg-[#1E6FF5] p-2 rounded-md text-center lg:text-lg  text-xs text-white"
                 to={item.listItem.link}
                 target="_blank"
               >

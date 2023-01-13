@@ -27,7 +27,7 @@ const InfoCard = props => {
               <CardReadDiv>
                 <Link
                   to={item.listItem.link}
-                  className="text-[#1273EB] sm:text-base  text-sm"
+                  className="text-[#116AD9] sm:text-base  text-sm"
                   aria-label={item.listItem.label}
                 >
                   {props.careers.CTA}

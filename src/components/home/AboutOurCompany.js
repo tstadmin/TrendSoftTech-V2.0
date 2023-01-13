@@ -12,7 +12,12 @@ import {
 const AboutOurCompany = props => {
   return (
     <AboutOur>
-      <img src={props.aboutOurCompany.img} alt="" />
+      <img
+        src={props.aboutOurCompany.img}
+        alt=""
+        width="500px"
+        height="508px"
+      />
       <AboutOurInfo>
         <AboutOurDotImage>
           <AboutOurImage src={props.aboutOurCompany.imgDot} alt="" />
