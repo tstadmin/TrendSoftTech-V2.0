@@ -83,11 +83,8 @@ const dataQuery = graphql`
               }
               aboutOurCompany {
                 img
-                alt
-                imgDot
-                altDot
                 header
-                title
+
                 description
                 CTA
               }
@@ -103,7 +100,6 @@ const dataQuery = graphql`
                     CTA
                   }
                 }
-                title
                 subTitle
               }
               accessibilityServices {

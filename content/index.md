@@ -180,15 +180,10 @@ home:
         description: "High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices."
   aboutOurCompany:
     img: "/img/HomeImages/AboutushomeFrame.svg"
-    imgDot: "/img/HomeImages/Vector1.svg"
-    alt: ""
-    altDot: ""
-    title: "ABOUT US"
     header: "About Our Company"
     description: "<p>Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. </p><p> Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions. </p> <p> With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals.</p>"
     CTA: "Learn more"
   servicesWeProvide:
-    title: SERVICES
     subTitle: Services We Provide
     list:
       - listItem:
@@ -993,6 +988,92 @@ careers:
       - listItem:
           id: "10"
           description: "Up-to-date with the latest UI trends, techniques, technologies, web and mobile design."   
+portfolio:
+    portfolios:
+      - listItem:
+          id: 1
+          title: "Quartree Technologies"
+          img: "/img/portfolio/ea.jpg"
+          about: "We believe knowledge is a key to early success in this stage"
+          link: "https://ealabsipl.com/"
+      - listItem:
+          id: 2
+          title: "ProTPD Digital"
+          img: "/img/portfolio/vijaya.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://vijayapickles.com/"
+      - listItem:
+          id: 3
+          title: "KN Technologies"
+          img: "Annapurna de Royal"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://www.quadtreetech.com/"
+      - listItem:
+          id: 4
+          title: "A1 Event Planners"
+          img: "/img/portfolio/pro.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://protpd.com/"
+      - listItem:
+          id: 5
+          title: "Lantrans"
+          img: "/img/portfolio/lantrans.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://lantrans.in/"
+      - listItem:
+          id: 6
+          title: "KN Technologies"
+          img: "/img/portfolio/knt.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://kntech.co.uk/"
+      - listItem:
+          id: 7
+          title: "SS Companies"
+          img: "/img/portfolio/sscom.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://sscompanies.in/"
+      - listItem:
+          id: 8
+          title: "Annapurna de Royal"
+          img: "/img/portfolio/annapurna.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://www.annapurnaderoyal.com/"
+      - listItem:
+          id: 9
+          title: "Global Pharma Solutions"
+          img: "/img/portfolio/globalpharma.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://gpconsultancy.in/"
+      - listItem:
+          id: 10
+          title: "Chachapoya USA"
+          img: "/img/portfolio/chachapoya.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://chachapoyahxm.com/"
+      - listItem:
+          id: 11
+          title: "AL Kasur"
+          img: "/img/portfolio/akkasur.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://alkasur.com/"
+      - listItem:
+          id: 12
+          title: "A1 Event Planner"
+          img: "/img/portfolio/eventplanner.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://a1eventdecors.com/"
+      - listItem:
+          id: 13
+          title: "Kumar Pumps & Motors"
+          img: "/img/portfolio/kumarpumps.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "https://kumarpumps.co.in/"
+      - listItem:
+          id: 14
+          title: "Trendsoft Technologies"
+          img: "/img/portfolio/trendsofttech.jpg"
+          about: "Quadtree Technologies is a Big Data Analytics company"
+          link: "/"          
 contact : 
     emailimg : "/img/icons/mail.svg"
     altEmail: "mail images"

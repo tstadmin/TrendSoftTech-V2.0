@@ -3,7 +3,6 @@ import Card from "../common/Card"
 import {
   Services,
   ServicesTitleDiv,
-  ServicesTitle,
   ServicesSubTitle,
   ServicesProvideCard,
 } from "./HomeStyle"
@@ -12,7 +11,6 @@ const ServicesProvide = props => {
   return (
     <Services>
       <ServicesTitleDiv>
-        <ServicesTitle>{props.servicesProvide.title}</ServicesTitle>
         <ServicesSubTitle>{props.servicesProvide.subTitle}</ServicesSubTitle>
       </ServicesTitleDiv>
       <ServicesProvideCard>

@@ -46,22 +46,22 @@ export const AbourtDotImages = styled.div`
 
 `}
 `
-export const AboutOurImage = styled.img`
-  ${tw`2xl:w-[500px] xl:w-[500px] lg:w-[280px]`}
-`
+// export const AboutOurImage = styled.img`
+//   ${tw`2xl:w-[500px] xl:w-[500px] lg:w-[280px]`}
+// `
 export const AboutOurH1 = styled.h2`
   ${tw`text-[16px] from-neutral-400 `}
 `
-export const AboutOurTitle = styled.h2`
-  ${tw`text-[#de1926]`}
-`
+// export const AboutOurTitle = styled.h2`
+//   ${tw`text-[#de1926]`}
+// `
 
 export const AboutOurSubTitle = styled.h3`
   ${tw` text-[#0B70E1]`}
 `
-export const AboutOurDotImage = styled.div`
-  ${tw`absolute 2xl:left-28 xl:left-28 lg:left-28 md:left-28 sm:left-24  left-20 2xl:-top-3 xl:-top-3 lg:top-2 md:-top-3 sm:-top-7  top-0`}
-`
+// export const AboutOurDotImage = styled.div`
+//   ${tw`absolute 2xl:left-28 xl:left-28 lg:left-28 md:left-28 sm:left-24  left-20 2xl:-top-3 xl:-top-3 lg:top-2 md:-top-3 sm:-top-7  top-0`}
+// `
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
 export const BannerItemDiv = styled.ul`
@@ -76,9 +76,9 @@ export const Services = styled.div`
 export const ServicesTitleDiv = styled.div`
   ${tw`text-center mb-16 space-y-2`}
 `
-export const ServicesTitle = styled.h2`
-  ${tw`text-[#de1926]`}
-`
+// export const ServicesTitle = styled.h2`
+//   ${tw`text-[#de1926]`}
+// `
 export const ServicesSubTitle = styled.h3`
   ${tw`text-[#0B70E1] `}
 `

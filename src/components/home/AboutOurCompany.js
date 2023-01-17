@@ -19,10 +19,10 @@ const AboutOurCompany = props => {
         height="508px"
       />
       <AboutOurInfo>
-        <AboutOurDotImage>
+        {/* <AboutOurDotImage>
           <AboutOurImage src={props.aboutOurCompany.imgDot} alt="" />
         </AboutOurDotImage>
-        <AboutOurTitle>{props.aboutOurCompany.title}</AboutOurTitle>
+        <AboutOurTitle>{props.aboutOurCompany.title}</AboutOurTitle> */}
 
         <AboutOurSubTitle>{props.aboutOurCompany.header}</AboutOurSubTitle>
 
