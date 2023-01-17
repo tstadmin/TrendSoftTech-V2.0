@@ -11,10 +11,10 @@ h1{
     @apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-5xl sm:text-2xl 340Screen:text-lg text-sm font-Poppins
 }
 h2{
-    @apply  md:text-lg  text-sm font-semibold 
+    @apply  md:text-3xl text-xl font-semibold 
 }
 h3{
-    @apply md:text-3xl text-xl font-semibold
+    @apply md:text-lg  text-sm  font-semibold
 }
 p{
     @apply sm:text-base  text-sm font-Poppins text-[#454545]

@@ -34,7 +34,7 @@ const WebDevelopment = () => {
         <Seo title="Web-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Web Development"
-          img="/img/BreadCrumb/WebDevelop.svg"
+          img="/img/BreadCrumb/WebDevelopment.svg"
         />
 
         <div>
@@ -43,7 +43,7 @@ const WebDevelopment = () => {
             <DevelopmentLayout>
               <PortfoliosButton>
                 <PortfolioLink className=" button " href="#scroll">
-                  Portfolio <FiChevronDown className="mt-1 text-xl  " />
+                  Portfolio <FiChevronDown className="mt-1 text-2xl  " />
                 </PortfolioLink>
               </PortfoliosButton>
 

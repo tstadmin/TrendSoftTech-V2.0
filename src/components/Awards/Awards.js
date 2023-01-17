@@ -3,7 +3,8 @@ import { PhotoProvider, PhotoView } from "react-photo-view"
 
 import "react-photo-view/dist/react-photo-view.css"
 
-const Awards = () => {
+const Awards = props => {
+  console.log(props)
   return (
     <div>
       {/* <center>
@@ -16,17 +17,21 @@ const Awards = () => {
         />
       </center> */}
       <PhotoProvider>
-        <PhotoView src="/img/Awards/TRENDSOFT TECHNOLOGIES PRIVATE LIMITED 9001 - 3737.jpg">
-          <center>
-            <img
-              src="/img/Awards/TRENDSOFT TECHNOLOGIES PRIVATE LIMITED 9001 - 3737.jpg"
-              alt=""
-              width="200px"
-              height="800px"
-              className="mt-8 shadow-2xl"
-            />
-          </center>
-        </PhotoView>
+        <div className="sm:flex grid  justify-center gap-10">
+          {props.data.list.map((item, idx) => (
+            <PhotoView src={item.listItem.img} key={item.listItem.id}>
+              <center>
+                <img
+                  src={item.listItem.img}
+                  alt=""
+                  width="200px"
+                  height="800px"
+                  className="mt-8 shadow-2xl"
+                />
+              </center>
+            </PhotoView>
+          ))}
+        </div>
       </PhotoProvider>
     </div>
   )

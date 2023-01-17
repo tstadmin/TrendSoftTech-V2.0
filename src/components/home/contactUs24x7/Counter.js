@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import CountUp from "react-countup"
 import { Counte, CounterNumber, CounterDescription } from "../HomeStyle"
 import ScrollTrigger from "react-scroll-trigger"
+import { Link } from "gatsby"
 const Counter = () => {
   const [counter, setCounter] = useState(false)
 
@@ -16,19 +17,23 @@ const Counter = () => {
           <CounterNumber>
             {counter && <CountUp end={100} duration={1} />}+
           </CounterNumber>
-          <CounterDescription>Happy Clients</CounterDescription>
+          <CounterDescription> Happy Clients</CounterDescription>
         </div>
         <div>
           <CounterNumber>
             {counter && <CountUp end={50} duration={1} />}+
           </CounterNumber>
-          <CounterDescription>Companies</CounterDescription>
+          <CounterDescription> Companies</CounterDescription>
         </div>
         <div>
           <CounterNumber>
             {counter && <CountUp end={200} duration={1} />}+
           </CounterNumber>
-          <CounterDescription>Projects Done</CounterDescription>
+          <CounterDescription>
+            <Link to="/portfolio/" aria-label="project Done">
+              Projects Done
+            </Link>
+          </CounterDescription>
         </div>
       </Counte>
     </ScrollTrigger>

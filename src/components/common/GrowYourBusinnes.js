@@ -11,7 +11,7 @@ const GrowYourBusinnes = () => {
         <div>
           <Link
             to="/contact/"
-            className=" text-sm  hover:bg-white border-2 bg-[#1E6ff5] hover:border-[#f37c05]   hover:duration-700  text-white hover:text-blue-500   bg-blue-500 font-semibold duration-75 p-3 rounded-md"
+            className=" text-sm hover:bg-white border-2 bg-[#1E6ff5] hover:border-[#f37c05] hover:duration-700 text-white hover:text-blue-500 font-semibold duration-75 p-3 rounded-md"
           >
             {data.button}
           </Link>

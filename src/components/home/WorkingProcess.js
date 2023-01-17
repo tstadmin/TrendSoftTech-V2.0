@@ -17,9 +17,11 @@ const WorkingProcess = props => {
       <Tilt
         tiltMaxAngleX={2}
         tiltMaxAngleY={2}
-        className="border 2xl:w-[22%] xl:w-[27%] lg:w-[34%] md:w-full sm:text-center lg:text-start bg-blue-50 space-y-12 p-12 mt-16 rounded-md border-blue-400"
+        className="border 2xl:w-[22%] xl:w-[27%] lg:w-[34%] md:w-full sm:text-center lg:text-start bg-blue-50 space-y-12 sm:p-12 p-5 mt-16 rounded-md border-blue-400"
       >
-        <Title>{props.workingProcess.title}</Title>
+        <h2 className=" md:text-lg  text-sm font-semibold  text-[#de1926]">
+          {props.workingProcess.title}
+        </h2>
 
         <WorkingDescription>
           {props.workingProcess.description}
@@ -27,7 +29,7 @@ const WorkingProcess = props => {
         <div>
           <Link
             to="/contact/"
-            className="bg-blue-600  hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]"
+            className="bg-blue-600  hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3  text-white hover:text-blue-400 min-w-[122px] text-[16px]"
           >
             {props.workingProcess.CTA}
           </Link>

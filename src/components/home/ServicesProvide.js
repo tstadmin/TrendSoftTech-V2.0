@@ -5,13 +5,14 @@ import {
   ServicesTitleDiv,
   ServicesSubTitle,
   ServicesProvideCard,
+  Title,
 } from "./HomeStyle"
 
 const ServicesProvide = props => {
   return (
     <Services>
       <ServicesTitleDiv>
-        <ServicesSubTitle>{props.servicesProvide.subTitle}</ServicesSubTitle>
+        <Title>{props.servicesProvide.subTitle}</Title>
       </ServicesTitleDiv>
       <ServicesProvideCard>
         {props.servicesProvide.list?.map((item, id) => (
