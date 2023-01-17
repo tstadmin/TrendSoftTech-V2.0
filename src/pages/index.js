@@ -14,7 +14,7 @@ import Seo from "../components/seo"
 
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
-import { Helmet } from "react-helmet"
+
 const Index = () => {
   const query = useStaticQuery(dataQuery)
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.home

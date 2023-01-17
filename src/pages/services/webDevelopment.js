@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
@@ -17,16 +17,16 @@ import {
   PortfolioLink,
   DevelopmentLayout,
 } from "../../components/services/ServicesStyled"
-import ServicesLayout from "../../components/ServicesLayout"
+
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
   const data =
     query.allMarkdownRemark.edges[0].node.frontmatter.services.webDevelopment
 
-  const [webDevelopment, setWebDevelopment] = useState([])
-  useEffect(() => {
-    setWebDevelopment(data)
-  }, [data])
+  // const [webDevelopment, setWebDevelopment] = useState([])
+  // useEffect(() => {
+  //   setWebDevelopment(data)
+  // }, [data])
 
   return (
     <div>
@@ -34,7 +34,7 @@ const WebDevelopment = () => {
         <Seo title="Web-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Web Development"
-          img="/img/BreadCrumb/WebDevelopment.svg"
+          img="/img/BreadCrumb/WebDevelop.svg"
         />
 
         <div>
@@ -42,7 +42,7 @@ const WebDevelopment = () => {
             <Development data={data} />
             <DevelopmentLayout>
               <PortfoliosButton>
-                <PortfolioLink className=" button" href="#scroll">
+                <PortfolioLink className=" button " href="#scroll">
                   Portfolio <FiChevronDown className="mt-1 text-xl  " />
                 </PortfolioLink>
               </PortfoliosButton>

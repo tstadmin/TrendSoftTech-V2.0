@@ -17,7 +17,6 @@ import {
   FooterIconInfo,
   FooterIconLogo,
   FooterIconStyles,
-  UL,
   IconSize,
 } from "./HomeStyle"
 import { Link } from "gatsby"
@@ -67,7 +66,7 @@ const Footer = props => {
           </div>
 
           <FooterTitle>{props.data.itTitle}</FooterTitle>
-          <UL>
+          <ul children=" space-y-3">
             {props.data.itService?.map((item, idx) => (
               <li
                 key={item.listItem.id}
@@ -76,7 +75,7 @@ const Footer = props => {
                 <Link to={item.listItem.page}>{item.listItem.title}</Link>
               </li>
             ))}
-          </UL>
+          </ul>
         </FooterInfoDiv>
 
         <FooterInfoDiv>

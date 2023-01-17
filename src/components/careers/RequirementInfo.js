@@ -37,11 +37,11 @@ const RequirementInfo = props => {
         ))}
       </RequirementInfoDiv>
 
-      <div class="grid   border border-black  space-y-8 sm:p-7 p-2">
+      <div className="grid   border border-black  space-y-8 sm:p-7 p-2">
         <FormHeading>Apply for this position</FormHeading>
         <div className="grid space-y-6 justify-items-center">
           <InputDiv>
-            <label for="floatingInput">Full Name</label>
+            <label>Full Name</label>
             <input
               type="text"
               className="block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none"
@@ -51,7 +51,7 @@ const RequirementInfo = props => {
           </InputDiv>
 
           <InputDiv>
-            <label for="floatingInput">Email address</label>
+            <label>Email address</label>
             <input
               type="email"
               className="block w-full p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
@@ -60,7 +60,7 @@ const RequirementInfo = props => {
             />
           </InputDiv>
           <InputDiv>
-            <label for="floatingInput">Phone </label>
+            <label>Phone </label>
             <input
               type="number"
               className="block w-full p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
@@ -69,7 +69,7 @@ const RequirementInfo = props => {
             />
           </InputDiv>
           <InputDiv>
-            <label for="floatingInput">Cover Letter</label>
+            <label>Cover Letter</label>
             <textarea
               type="text"
               className="block w-full  p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
@@ -78,9 +78,7 @@ const RequirementInfo = props => {
             />
           </InputDiv>
           <InputDiv>
-            <label className="text-lg" for="upload">
-              Upload CV/Resume
-            </label>
+            <label className="text-lg">Upload CV/Resume</label>
             <input
               type="file"
               id="myfile"
