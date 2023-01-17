@@ -6,7 +6,7 @@ import "react-photo-view/dist/react-photo-view.css"
 const Awards = () => {
   return (
     <div>
-      <center>
+      {/* <center>
         <img
           className="mt-20"
           src="/img/ComingSoon.jpg"
@@ -14,12 +14,12 @@ const Awards = () => {
           width="700px"
           height="700px"
         />
-      </center>
-      {/* <PhotoProvider>
-        <PhotoView src="https://img.freepik.com/free-vector/team-happy-employees-winning-award-celebrating-success-business-people-enjoying-victory-getting-gold-cup-trophy-vector-illustration-reward-prize-champions-s_74855-8601.jpg?w=2000">
+      </center> */}
+      <PhotoProvider>
+        <PhotoView src="/img/Awards/TRENDSOFT TECHNOLOGIES PRIVATE LIMITED 9001 - 3737.jpg">
           <center>
             <img
-              src="https://img.freepik.com/free-vector/team-happy-employees-winning-award-celebrating-success-business-people-enjoying-victory-getting-gold-cup-trophy-vector-illustration-reward-prize-champions-s_74855-8601.jpg?w=2000"
+              src="/img/Awards/TRENDSOFT TECHNOLOGIES PRIVATE LIMITED 9001 - 3737.jpg"
               alt=""
               width="200px"
               height="800px"
@@ -27,7 +27,7 @@ const Awards = () => {
             />
           </center>
         </PhotoView>
-      </PhotoProvider> */}
+      </PhotoProvider>
     </div>
   )
 }
