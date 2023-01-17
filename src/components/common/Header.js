@@ -94,14 +94,14 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-16  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.id}
-                className="uppercase  text-white mt-6 sm:text-2xl text-sm sm:font-medium hidden 540Screen:block "
+                className="uppercase text-white mt-6 sm:text-xl text-sm sm:font-medium hidden 540Screen:block "
               >
                 {item.listItem.title}
-                <ul className="space-y-2 mt-4 sm:text-base font-normal ">
+                <ul className="space-y-2 mt-4 sm:text-sm font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
                       className="hover:text-[#FFC93C] text-white sm:text-lg text-xs"

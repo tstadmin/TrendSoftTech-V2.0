@@ -76,12 +76,12 @@ home:
                 page: "/services/uiUXDesign/"
       - listItem:
           id: 6
-          title: "Awards"
+          title: "Awards & Certifications"
           page: "/awards/"     
           subTitle: 
             - listItem:
                 id: 1
-                title: "Awards"
+                title: "Awards & Certifications"
                 page: "/awards/"
     mobilelist:
           home: "Home"
