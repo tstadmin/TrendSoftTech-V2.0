@@ -2,7 +2,7 @@ import tw, { styled } from "twin.macro"
 
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h2`
-  ${tw` text-[#de1926]`}
+  ${tw` text-[#0B70E1]`}
 `
 export const SubTitle = styled.h2`
   ${tw` text-[#0B70E1] md:text-3xl text-xl   `}
@@ -105,7 +105,7 @@ export const AccessibilityInfo = styled.div`
 `
 
 export const AccessibilityImage = styled.img`
-  ${tw`2xl:w-[85px] lg:w-[85px] md:w-[80px] w-[50px] 2xl:h-[85px] lg:h-[85px] md:h-[85px] h-[55px]`}
+  ${tw`2xl:w-[85px] lg:w-[85px] md:w-[80px] w-[50px]  md:h-[85px] h-[55px]`}
 `
 
 ///  ----- Counter component in HomePage Home folder--------------------------------
@@ -142,7 +142,7 @@ export const Working = styled.div`
   ${tw`lg:flex justify-center gap-4 px-8 `}
 `
 export const WorkingDescription = styled.p`
-  ${tw`text-2xl font-semibold text-black lg:text-4xl font-Poppins  `}
+  ${tw`sm:text-2xl text-sm font-semibold text-black lg:text-4xl font-Poppins  `}
 `
 export const WorkingCardNumber = styled.h3`
   ${tw`text-orange-400 `}
@@ -167,7 +167,7 @@ export const FooterInfo = styled.div`
   ${tw`md:flex sm:grid  px-8 xl:px-12  md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
 `
 export const FooterTitle = styled.h2`
-  ${tw` text-[#1a71d4] `}
+  ${tw` md:text-lg  text-sm text-[#1a71d4] `}
 `
 export const FooterTrendInfo = styled.div`
   ${tw` basis-1/3`}
@@ -183,7 +183,7 @@ export const FooterHr = styled.div`
   ${tw`border-black border`}
 `
 export const FooterIconStyles = styled.div`
-  ${tw`text-blue-500 text-center hover:text-white  shadow-black/50 border-black/10  bg-white hover:cursor-pointer hover:bg-blue-600 rounded-full w-9 h-9 p-2 shadow-xl`}
+  ${tw`text-blue-500 text-center hover:text-white focus:text-white shadow-black/50 border-black/10  bg-white focus:bg-blue-600 hover:cursor-pointer hover:bg-blue-600  rounded-full w-9 h-9 p-2 shadow-xl`}
 `
 export const FooterIconLogo = styled.div`
   ${tw`flex gap-2 text-start mt-8`}

@@ -1,5 +1,5 @@
 import React from "react"
-
+import { IoIosArrowForward } from "react-icons/io"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { TabButton } from "./ServicesStyled"
 
@@ -19,6 +19,7 @@ const Tabs = () => {
               href={item.listItem.link}
             >
               {item.listItem.title}
+              <IoIosArrowForward className="mt-1 ml-1 text-xl  " />
             </Link>
           </TabButton>
         ))}

@@ -363,28 +363,28 @@ services:
              title: "Quartree Technologies"
              img: "/img/portfolio/quad.jpg"
              about: "Quadtree Technologies is a Big Data Analytics company"
-             link: "https://ealabsipl.com/"
+             link: "https://www.quadtreetech.com/"
              label: "explore Quartree Technologies website" 
         - listItem:
              id: 2
              title: "ProTPD Digital"
              img: "/img/portfolio/pro.jpg"
              about: "Our team developed TPD2 submission tools for multi large organizations "
-             link: "https://vijayapickles.com/"
+             link: https://protpd.com/"
              label: "explore ProTPD Digital website" 
         - listItem:
              id: 3
              title: "KN Technologies"
              img: "/img/portfolio/knt.jpg"
-             about: "In today’s world, it’s not easy to get a well-paid job with a decent employer "
-             link: "https://www.quadtreetech.com/"
+             about: it’s not easy to get a well-paid job with a decent employer without putting in the work"
+             link: "https://kntech.co.uk/"
              label: "explore KN Technologies website" 
         - listItem:
              id: 4
              title: "A1 Event Planners"
              img: "/img/portfolio/eventplanner.jpg"
              about: "Event Planner Ltd is an event logistics and marketing company "
-             link: "https://protpd.com/"               
+             link: "https://protpd.com/"                 
              label: "explore A1 Event Planners website" 
    ecommerceDevelopment:
       slug: "Ecommerce-development"
@@ -497,7 +497,7 @@ services:
              id: 1
              title: "EA Labs"
              img: "/img/portfolio/ea.jpg"
-             about: "EA LABS was born in the cloud in 2015. We are one of the only partners solely focused on SAP®SuccessFactors®. "
+             about: "We believe knowledge is a key to early success in this stage"
              link: "https://ealabsipl.com/"  
              label: "explore EA Labs website"                  
         - listItem: 
@@ -505,69 +505,68 @@ services:
              title: "Quartree Technologies"
              img: "/img/portfolio/quad.jpg"
              about: "Quadtree Technologies is a Big Data Analytics company"
-             link: "https://ealabsipl.com/"
+             link: "https://www.quadtreetech.com/"
              label: "explore Quartree Technologies website"     
         - listItem:
              id: 3
              title: "ProTPD Digital"
              img: "/img/portfolio/pro.jpg"
-             about: "Our team developed TPD2 submission tools for multi large organizations across UK and EU since its inception in April-2016."
-             link: "https://vijayapickles.com/"
+             about: "Our team developed TPD2 submission tools for multi large organizations"
+             link: "https://protpd.com/"
              label: "explore ProTPD Digital website"     
         - listItem: 
              id: 4
              title: "Lantrans"
              img: "/img/portfolio/lantrans.jpg"
-             about: "Working with a group of professional translators with 10+ years of experience in meeting the clientele requirements"
+             about: "Working with a group of professional translators with 10+ years of experience"
              link: "https://lantrans.in/"
              label: "explore Lantrans website"     
         - listItem: 
              id: 5
              title: "SS Companies"
              img: "/img/portfolio/sscom.jpg"
-             about: "Stalin Swarna Group of companies was started by its chairman, D.Stalin Babu, a well known first generation enterpreneur"
-             link: "https://sscompanies.in/"
+             about: "Stalin Swarna Group of companies was started by its chairman"
              label: "explore SS Companies website"     
         - listItem: 
              id: 6
              title: "Annapurna de Royal"
              img: "/img/portfolio/annapurna.jpg"
-             about: "Our hotel signifies warmth and friendliness, simplicity with style, convenience, and affordability for all executives and travelers"
+             about: "Our hotel signifies warmth and friendliness, simplicity with style for all executives and travelers"
              link: "https://www.annapurnaderoyal.com/"   
              label: "explore Annapurna de Royal website"       
         - listItem:
              id: 7
              title: "KN Technologies"
              img: "/img/portfolio/knt.jpg"
-             about: "In today’s world, it’s not easy to get a well-paid job with a decent employer without putting in the work"
-             link: "https://www.quadtreetech.com/"
+             about: it’s not easy to get a well-paid job with a decent employer without putting in the work"
+             link: "https://kntech.co.uk/"
              label: "explore KN Technologies website"     
         - listItem:
              id: 8
              title: "A1 Event Planners"
              img: "/img/portfolio/eventplanner.jpg"
-             about: "Event Planner Ltd is an event logistics and marketing company which was formed back in year"
+             about: "Event Planner Ltd is an event logistics and marketing company "
              link: "https://protpd.com/"   
              label: "explore A1 Event Planners website"     
         - listItem: 
              id: 9
              title: "Global Pharma Solutions"
              img: "/img/portfolio/globalpharma.jpg"
-             about: "The organization is a registered firm managed by Vinod.R, an expert in the pharmaceutical profession."
+             about: "Global pharma consultancy is a pharmaceutical service company"
              link: "https://gpconsultancy.in/"     
              label: "explore A1 Event Planners website"     
         - listItem:
              id: 10
              title: "Chachapoya USA"
              img: "/img/portfolio/chachapoya.jpg"
-             about: "CHACHAPOYA HXM was born in the cloud in 2015. We are one of the only partners solely focused on SAP®SuccessFactors®"
+             about: "LLC Founded with focus on Digital Transformation Strategies"
              link: "https://chachapoyahxm.com/"
              label: "explore Chachapoya USA website"     
         - listItem:
              id: 11
              title: "Trendsoft Technologies"
              img: "/img/portfolio/trendsofttech.jpg"
-             about: "Our vision is to be the best in providing IT solutions and services with customer excellence and sound business practices."
+             about: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company"
              link: "https://trendsofttech.com/"          
              label: "explore Trendsoft Technologies website"               
    testing:                    
@@ -992,88 +991,102 @@ portfolio:
     portfolios:
       - listItem:
           id: 1
-          title: "Quartree Technologies"
+          title: "EA labs"
           img: "/img/portfolio/ea.jpg"
           about: "We believe knowledge is a key to early success in this stage"
           link: "https://ealabsipl.com/"
+          label: "explore Quartree Technologies website"
       - listItem:
           id: 2
-          title: "ProTPD Digital"
+          title: "vijaya pickles"
           img: "/img/portfolio/vijaya.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "Spicy & tasty chicken pickle. Contact us to place the order now!"
           link: "https://vijayapickles.com/"
+          label: "explore vijaya pickles website"
       - listItem:
           id: 3
-          title: "KN Technologies"
-          img: "Annapurna de Royal"
+          title: "Quartree Technologies"
+          img: "/img/portfolio/quad.jpg"
           about: "Quadtree Technologies is a Big Data Analytics company"
           link: "https://www.quadtreetech.com/"
+          label: "explore Quartree Technologies website"
       - listItem:
           id: 4
-          title: "A1 Event Planners"
+          title: "ProTPD Digital"
           img: "/img/portfolio/pro.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "Our team developed TPD2 submission tools for multi large organizations "
           link: "https://protpd.com/"
+          label: "explore ProTPD Digital website"     
       - listItem:
           id: 5
           title: "Lantrans"
           img: "/img/portfolio/lantrans.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "Working with a group of professional translators with 10+ years of experience "
           link: "https://lantrans.in/"
+          label: "explore Lantrans website"
       - listItem:
           id: 6
           title: "KN Technologies"
           img: "/img/portfolio/knt.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "it’s not easy to get a well-paid job with a decent employer without putting in the work"
           link: "https://kntech.co.uk/"
+          label: "explore KN Technologies website"
       - listItem:
           id: 7
           title: "SS Companies"
           img: "/img/portfolio/sscom.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "Stalin Swarna Group of companies was started by its chairman"
           link: "https://sscompanies.in/"
+          label: "explore SS Companies website"
       - listItem:
           id: 8
           title: "Annapurna de Royal"
           img: "/img/portfolio/annapurna.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "Our hotel signifies warmth and friendliness, simplicity with style for all executives and travelers"
           link: "https://www.annapurnaderoyal.com/"
+          label: "explore Annapurna de Royal website"
       - listItem:
           id: 9
           title: "Global Pharma Solutions"
           img: "/img/portfolio/globalpharma.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "Global pharma consultancy is a pharmaceutical service company"
           link: "https://gpconsultancy.in/"
+          label: "explore Global Pharma Solutions website"
       - listItem:
           id: 10
           title: "Chachapoya USA"
           img: "/img/portfolio/chachapoya.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "LLC Founded with focus on Digital Transformation Strategies"
           link: "https://chachapoyahxm.com/"
+          label: "explore Chachapoya USA website"
       - listItem:
           id: 11
           title: "AL Kasur"
           img: "/img/portfolio/akkasur.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "AL KASUR STEEL WORK AND WELDING WORKSHOP Engraving Services."
           link: "https://alkasur.com/"
+          label: "explore AL Kasur website"
       - listItem:
           id: 12
           title: "A1 Event Planner"
           img: "/img/portfolio/eventplanner.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "Event Planner Ltd is an event logistics and marketing company"
           link: "https://a1eventdecors.com/"
+          label: "explore A1 Event Plannerr website"
       - listItem:
           id: 13
           title: "Kumar Pumps & Motors"
           img: "/img/portfolio/kumarpumps.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
+          about: "Kumar Pumps is the pioneer in the manufacturer of Pumpsets & Electric Motors"
           link: "https://kumarpumps.co.in/"
+          label: "explore Kumar Pumps & Motors website"
       - listItem:
           id: 14
           title: "Trendsoft Technologies"
           img: "/img/portfolio/trendsofttech.jpg"
-          about: "Quadtree Technologies is a Big Data Analytics company"
-          link: "/"          
+          about: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company"
+          link: "https://trendsofttech.com/" 
+          label: "explore Trendsoft Technologies website"         
 contact : 
     emailimg : "/img/icons/mail.svg"
     altEmail: "mail images"
@@ -1166,5 +1179,13 @@ Brochure:
     button: "Download Now"      
 Grow:
     description: "Grow Your Business and Build Your Website or Software With Us."
-    button: "Contact Us"      
+    button: "Contact Us"  
+awards&certifications:    
+  list: 
+    - listItem: 
+        id: 1
+        img: "/img/Awards/TRENDSOFTTECHNOLOGIESPRIVATELIMITED90013737.jpg"       
+    - listItem: 
+        id: 2
+        img: "/img/Awards/UDYAMREGISTREATIONCERTIFICATE.jpg"
 ---

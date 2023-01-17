@@ -11,6 +11,7 @@ import {
   CardReadDiv,
 } from "./CareersStyle"
 import { BsArrowRight } from "react-icons/bs"
+import CareersForm from "./CareersForm"
 
 const InfoCard = props => {
   return (
@@ -39,6 +40,9 @@ const InfoCard = props => {
           </CardDiv>
         ))}
       </InfoCards>
+      <div>
+        <CareersForm />
+      </div>
     </InfoCardDiv>
   )
 }

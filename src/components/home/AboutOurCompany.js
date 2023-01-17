@@ -7,6 +7,7 @@ import {
   AboutOurTitle,
   AboutOurSubTitle,
   AboutOurDotImage,
+  Title,
 } from "./HomeStyle"
 
 const AboutOurCompany = props => {
@@ -24,7 +25,7 @@ const AboutOurCompany = props => {
         </AboutOurDotImage>
         <AboutOurTitle>{props.aboutOurCompany.title}</AboutOurTitle> */}
 
-        <AboutOurSubTitle>{props.aboutOurCompany.header}</AboutOurSubTitle>
+        <Title>{props.aboutOurCompany.header}</Title>
 
         <div
           className="space-y-4"

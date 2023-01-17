@@ -58,5 +58,5 @@ export const Button = styled.button`
 `
 
 export const InputDiv = styled.div`
-  ${tw` sm:w-[50vw] w-full `};
+  ${tw` md:w-[50vw] w-full `};
 `
