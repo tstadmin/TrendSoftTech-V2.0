@@ -94,17 +94,17 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-16  2xl:space-x-16 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-12 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.id}
-                className="uppercase text-white mt-6 sm:text-xl text-sm sm:font-medium hidden 540Screen:block "
+                className="uppercase  text-white mt-6 sm:text-xl text-sm sm:font-medium hidden 540Screen:block "
               >
                 {item.listItem.title}
-                <ul className="space-y-2 mt-4 sm:text-sm font-normal ">
+                <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
-                      className="hover:text-[#FFC93C] text-white sm:text-lg text-xs"
+                      className="hover:text-[#FFC93C] text-white  1920Screen:text-lg text-sm"
                       key={sub.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>
@@ -118,13 +118,13 @@ export default function Header(props) {
           {/*  Mobile Menu */}
 
           <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4 space-y-1 pb-24 ">
-            <li className="text-lg text-white">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.homePage}>
                 {props.data.mobilelist.home}
               </Link>
             </li>
 
-            <li className="text-lg text-white">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.aboutPage}>
                 {props.data.mobilelist.about}
               </Link>
@@ -135,7 +135,7 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <li className="text-lg text-white uppercase">
+                    <li className="text-sm text-white uppercase">
                       {props.data.mobilelist.services}
                     </li>
                     {/* <Link to={props.data.mobilelist.servicesPage}>
@@ -169,7 +169,7 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <li className="text-white text-lg uppercase">
+                    <li className="text-white text-sm uppercase">
                       {props.data.mobilelist.test}
                     </li>
                     {/* <Link to={props.data.mobilelist.testPage}>
@@ -200,7 +200,7 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <li className="text-white text-lg">
+                    <li className="text-white text-sm uppercase">
                       {props.data.mobilelist.accessibility}
                     </li>
                     {/* <Link to={props.data.mobilelist.accessibilityPage}>
@@ -258,24 +258,24 @@ export default function Header(props) {
               )}
             </Disclosure>
 
-            <li className="text-white text-lg">
+            <li className="text-white text-sm">
               <Link to={props.data.mobilelist.digitalPage}>
                 {props.data.mobilelist.digital}
               </Link>
             </li>
 
-            <li className="text-lg text-white">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.careersPage}>
                 {props.data.mobilelist.careers}
               </Link>
             </li>
 
-            <li className="text-lg text-white">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.contactPage}>
                 {props.data.mobilelist.contact}
               </Link>
             </li>
-            <li className="text-lg text-white">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.awardPage}>
                 {props.data.mobilelist.award}
               </Link>

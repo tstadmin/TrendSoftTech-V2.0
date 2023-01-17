@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.0.13",
     "@mantine/core": "^5.10.0",
     "@mantine/hooks": "^5.10.0",
+    "framer-motion": "^8.4.3",
     "gatsby": "^5.2.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-emotion": "^8.3.0",
