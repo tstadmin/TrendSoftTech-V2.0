@@ -12,9 +12,9 @@ const Card = props => {
           ${
             props.CTA
               ? "hover:shadow-2xl  hover:border-sky-50 hover:duration-300 hover:cursor-pointer hover:shadow-blue-300"
-              : "shadow-2xl shadow-blue-400/30 hover:scale-105 hover:duration-700 hover:cursor-pointer"
+              : "shadow-2xl shadow-blue-400/30  hover:border-sky-100 hover:scale-105 hover:duration-700 hover:cursor-pointer"
           }
-            lg:p-6 2xl:px-8 md:p-8 p-5 bg-white`}
+            lg:p-6 2xl:px-8 md:p-8 p-5 bg-white `}
     >
       <img src={props.img} className="w-[60px] h-[60px]" alt="" />
 

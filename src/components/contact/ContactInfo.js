@@ -18,7 +18,7 @@ const ContactInfo = props => {
             aria-label="Email service@trendsofttech.com "
             href="mailto:info@trendsofttech.com"
           >
-            <p>{props.data.email} </p>
+            {props.data.email}
           </a>
           <h2 className="md:text-lg  text-sm">
             {props.data.businessMailTitle}{" "}
@@ -27,7 +27,7 @@ const ContactInfo = props => {
             aria-label="Business Email service@trendsofttech.com "
             href="mailto:service@trendsofttech.com"
           >
-            <p>{props.data.businessEmail} </p>
+            {props.data.businessEmail}
           </a>
         </EmailInfo>
       </Info>
@@ -40,7 +40,7 @@ const ContactInfo = props => {
             to="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
             target="_blank"
           >
-            <p>{props.data.addressOneInfo}</p>
+            {props.data.addressOneInfo}
           </Link>
           <h2 className="md:text-lg  text-sm">{props.data.addressTwo} </h2>
           <Link
@@ -48,7 +48,7 @@ const ContactInfo = props => {
             to="https://goo.gl/maps/rFv1H2FcnZuejCss6"
             target="_blank"
           >
-            <p>{props.data.addressTwoInfo}</p>
+            {props.data.addressTwoInfo}
           </Link>
         </AdderssInfo>
       </Info>

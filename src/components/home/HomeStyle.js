@@ -22,9 +22,41 @@ export const BannerDiv = styled.div`
 export const BannerInfoDiv = styled.div`
   ${tw`absolute z-20 sm:space-y-14 space-y-4  lg:pl-8 2xl:pl-24  pl-8 lg:pt-40 pt-12 h-[100vh] w-[100vw] `}
 `
-export const BannerTitle = styled.h1`
-  ${tw`2xl:text-4xl text-white font-bold `}
-`
+// export const BannerTitle = styled.h1`
+//   .drop-main {
+//     font-family: "Russo One", sans-serif;
+//   }
+//   .d {
+//     animation: drop 0.4s linear forwards;
+//     color: white;
+//   }
+//   .r {
+//     animation: drop 0.4s linear forwards 0.2s;
+//     color: white;
+//   }
+//   @keyframes drop {
+//     0% {
+//         transform: translateY(-200px);
+//         opacity: 0;
+//     }
+//     50% {
+//         transform: translateY(0px);
+//         opacity: 1;
+//     }
+//     65% {
+//         transform: translateY(-17px);
+//         opacity: 1;
+//     }
+//     75% {
+//         transform: translateY(-22px);
+//         opacity: 1;
+//     }
+//     100% {
+//         transform: translateY(0px);
+//         opacity: 1;
+//     }
+// }
+// `
 export const BannerSubTitle = styled.p`
   ${tw`2xl:text-2xl sm:text-xl text-sm font-normal text-white `}
 `
@@ -94,9 +126,9 @@ export const Accessibility = styled.div`
 export const AccessibilityCard = styled.ul`
   ${tw`lg:flex lg:justify-items-center  grid gap-7    2xl:px-48 xl:px-32 lg:px-14 px-8`}
 `
-export const AccessibilityCardInfo = styled.li`
-  ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
-`
+// export const AccessibilityCardInfo = styled.li`
+//   ${tw`flex hover:duration-700 md:space-x-11 space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50`}
+// `
 export const AccessibilityCardTitle = styled.h3`
   ${tw`text-[#0B70E1] md:text-3xl text-xl  `}
 `

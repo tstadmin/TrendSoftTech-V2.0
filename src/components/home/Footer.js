@@ -59,10 +59,7 @@ const Footer = props => {
           <FooterTitle>{props.data.itTitle}</FooterTitle>
           <ul children=" space-y-3">
             {props.data.itService?.map((item, idx) => (
-              <li
-                key={item.listItem.id}
-                className="hover:text-[#1273EB] font-Poppins"
-              >
+              <li key={item.listItem.id} className="hover:text-[#1273EB] ">
                 <Link to={item.listItem.page}>{item.listItem.title}</Link>
               </li>
             ))}
@@ -80,7 +77,7 @@ const Footer = props => {
                 <SlLocationPin />
               </IconSize>
 
-              <li className="hover:text-[#1273EB]">
+              <li>
                 <a
                   aria-label="location Trendsoft Technologies Pvt. Ltd,
                 MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
@@ -98,7 +95,7 @@ const Footer = props => {
                 <AiOutlineMail />
               </IconSize>
 
-              <li className="hover:text-[#1273EB]">
+              <li>
                 {" "}
                 <a
                   href="mailto:info@trendsofttech.com"
@@ -113,7 +110,7 @@ const Footer = props => {
               <IconSize>
                 <MdOutlineAttachEmail />
               </IconSize>
-              <li className="hover:text-[#1273EB]">
+              <li>
                 <a
                   href="mailto:service@trendsofttech.com"
                   aria-label="service mail service@trendsofttech.com "
@@ -128,7 +125,7 @@ const Footer = props => {
                 <BiLink />
               </IconSize>
 
-              <li className="hover:text-[#1273EB]">
+              <li>
                 <Link
                   to="/"
                   aria-label="websit link http://www.trendsofttech.com"

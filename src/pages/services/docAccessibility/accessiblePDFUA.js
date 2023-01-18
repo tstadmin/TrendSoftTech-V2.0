@@ -24,7 +24,7 @@ const AccessiblePDFUA = () => {
         <Seo title="Accessibility-PDF/UA" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"
-          title="Accessible PDF UA"
+          title="Accessible PDF / UA"
         />
 
         <ServicesLayout>

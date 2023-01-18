@@ -7,7 +7,7 @@ export const ContactHanding = styled.h1`
   ${tw`text-center md:text-6xl mt-16 text-2xl font-semibold`}
 `
 export const ContactDiv = styled.div`
-  ${tw`xl:flex  justify-evenly  px-8 md:mt-14 mt-5  sm:space-y-14 space-y-10 2xl:space-x-44 lg:space-x-2`}
+  ${tw`xl:flex  justify-evenly  px-8 md:mt-14 mt-5 sm:space-y-14 space-y-10 2xl:space-x-44  xl:space-y-0 lg:space-y-10 lg:space-x-2`}
 `
 export const ContactInfoDiv = styled.ul`
   ${tw`space-y-6 text-sm sm:text-lg`}

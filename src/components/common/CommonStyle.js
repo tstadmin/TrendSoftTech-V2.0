@@ -32,5 +32,5 @@ export const BrochuresHeading = styled.h2`
 //-----All  Commer style component  in HomePage Commer folder
 
 export const Hyperlink = styled.p`
-  ${tw`text-[#1472E6] hover:text-orange-500 hover:underline hover:underline-offset-4`}
+  ${tw`text-[#1472E6] `}
 `

@@ -191,7 +191,7 @@ home:
           title: "Web Development"
           description: "A strong base in the field of website designing development services and made us one of  best Web  Development Company spanned across India."
           page: "/services/webDevelopment/"
-          CTA: "read more.."
+          CTA: "Read more.."
       - listItem:
           id: "2"
           img: "/img/icons/EcommerceDevelopment.svg"
@@ -199,7 +199,7 @@ home:
           title: "E-Commerce Development"
           description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small."
           page: "/services/ecommerceDevelopment/"
-          CTA: "read more..."
+          CTA: "Read more..."
       - listItem:
           id: "3"
           img: "/img/icons/ProductDevelopment.svg"
@@ -207,7 +207,7 @@ home:
           title: "Product Development"
           description: "We proudly say we are among the best software product development companies because we have a best-in-class."
           page: "/services/productDevelopment/"
-          CTA: "read more..."
+          CTA: "Read more..."
       - listItem:
           id: "4"
           img: "/img/icons/MobileDevelopment.svg"
@@ -215,7 +215,7 @@ home:
           title: "Mobile Development"
           description: "we offer full-cycle of mobile app development services including planning, design, integration, and management."
           page: "/services/mobileDevelopment/"
-          CTA: "read more..."
+          CTA: "Read more..."
       - listItem:
           id: "5"
           img: "/img/icons/UiUXDesign.svg"
@@ -223,7 +223,7 @@ home:
           title: "UI/UX Design"
           description: "No matter how powerful or innovative your application idea is, without a solid, well-thought user interface design."
           page: "/services/uiUXDesign/"
-          CTA: "read more..."
+          CTA: "Read more..."
       - listItem:
           id: "6"
           img: "/img/icons/DigitalMarketing.svg"
@@ -231,10 +231,9 @@ home:
           title: "Digital Marketing"
           description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built."
           page: "/services/digitalMarketing/"
-          CTA: "read more..."
+          CTA: "Read more..."
   accessibilityServices:
-    title: "OUR"
-    subTitle: "Accessibility Services"
+    title: "Our Accessibility Services"
     list:
       - listItem:
           id: "1"
@@ -332,14 +331,14 @@ about:
     altVision: "Our Vision Image"
     chooseimg : "/img/AboutImages/Choose.svg"
     altChoose: "why choose image"
-    aboutUs: "AboutUs"
+    aboutUs: "About Us"
     aboutUsDescription: "<p>Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions.</p><p>With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals.</p>"
     ourVision: "Our Vision"
     ourVisionDescription: "<p>Our vision is to be the best in providing IT solutions and services with customer excellence and sound business practices.</p>"
     ourMission: " Our Mission"
     ourMissionDescription : "<p>Our mission is to be a customer focus company, serving our business partners and clients to the best of our ability, while adding value to our clients’ businesses.</p>"
     whychoose: "why choose Us?"
-    whychooseDescription : "<p>Vision + Hard work + Consistency </p><p>At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections. We believe that transparency is needed to create trust, and so it is integral part or Trendsoft culture. It gives us utmost confidence to provide a visibility regarding the development process to the clients. Being your technology partner, we make sure to deliver right combination of technologies for your need and excellent result of it.</p>"    
+    whychooseDescription : "<p>Vision + Hard work + Consistency </p><p>Price + Quality + Delivery + Reliability + Efficiency </p><p>At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections. We believe that transparency is needed to create trust, and so it is integral part or Trendsoft culture. It gives us utmost confidence to provide a visibility regarding the development process to the clients. Being your technology partner, we make sure to deliver right combination of technologies for your need and excellent result of it.</p>"    
 services:
    webDevelopment:
       slug: "Web-development"
@@ -394,7 +393,7 @@ services:
              title: "A1 Event Planners"
              img: "/img/portfolio/eventplanner.jpg"
              about: "Event Planner Ltd is an event logistics and marketing company "
-             link: "https://protpd.com/"                 
+             link: "https://a1eventdecors.com/"                 
              label: "explore A1 Event Planners website" 
    ecommerceDevelopment:
       slug: "Ecommerce-development"
@@ -425,7 +424,7 @@ services:
         - listItem: 
              id: 1
              title: "Vijaya Pickles"
-             img: "/img/portfolio/Vijaya.jpg"
+             img: "/img/portfolio/vijaya.jpg"
              about: "Spicy & tasty chicken pickle. Contact us to place the order now!"
              link: "https://vijayapickles.com/"         
              label: "explore Vijaya Pickles website"                                                   
@@ -556,7 +555,7 @@ services:
              title: "A1 Event Planners"
              img: "/img/portfolio/eventplanner.jpg"
              about: "Event Planner Ltd is an event logistics and marketing company "
-             link: "https://protpd.com/"   
+             link: "https://a1eventdecors.com/"   
              label: "explore A1 Event Planners website"     
         - listItem: 
              id: 9

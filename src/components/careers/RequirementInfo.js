@@ -13,6 +13,7 @@ import {
   InputDiv,
   Button,
 } from "./CareersStyle"
+import CareersForm from "./CareersForm"
 const RequirementInfo = props => {
   return (
     <Requirement>
@@ -36,6 +37,9 @@ const RequirementInfo = props => {
           <li key={item.listItem.id}>{item.listItem.description}</li>
         ))}
       </RequirementInfoDiv>
+      <div>
+        <CareersForm />
+      </div>
     </Requirement>
   )
 }

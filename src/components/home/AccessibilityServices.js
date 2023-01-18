@@ -14,19 +14,16 @@ const AccessibilityServices = props => {
   return (
     <div>
       <Accessibility>
-        <Title className="text-orange-400 ">
-          {props.accessibilityServices.title}
-        </Title>
-        <SubTitle>{props.accessibilityServices.subTitle}</SubTitle>
+        <Title>{props.accessibilityServices.title}</Title>
       </Accessibility>
 
-      <AccessibilityCard>
+      <ul className="lg:flex lg:justify-items-center  grid gap-7    2xl:px-48 xl:px-32 lg:px-14 px-8">
         {props.accessibilityServices.list?.map((item, id) => (
-          <div
+          <li
             className=" 340Screen:flex  hover:duration-700 md:space-x-11 340Screen:space-x-5 shadow-2xl   xl:min-w-[500px]  min-h-[170px] lg:min-w-[460px]  p-7  shadow-blue-100 hover:shadow-none duration-1000 cursor-pointer  hover:bg-blue-50"
             key={item.listItem.id}
           >
-            <AccessibilityImage src={item.listItem.img} />
+            <AccessibilityImage src={item.listItem.img} alt="" />
             <AccessibilityInfo>
               <AccessibilityCardTitle>
                 {item.listItem.title}
@@ -34,9 +31,9 @@ const AccessibilityServices = props => {
 
               <p>{item.listItem.description}</p>
             </AccessibilityInfo>
-          </div>
+          </li>
         ))}
-      </AccessibilityCard>
+      </ul>
     </div>
   )
 }

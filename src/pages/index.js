@@ -110,7 +110,6 @@ const dataQuery = graphql`
               }
               accessibilityServices {
                 title
-                subTitle
                 list {
                   listItem {
                     id
