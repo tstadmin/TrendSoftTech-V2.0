@@ -4,6 +4,7 @@ import BreadCrumb from "../components/common/BreadCrumb"
 import Layout from "../components/layout"
 import ContactIndex from "../components/contact/ContactIndex"
 import Seo from "../components/seo"
+import TopBar from "../components/common/TopBar"
 
 const Contact = () => {
   const query = useStaticQuery(dataQuery)
@@ -14,11 +15,14 @@ const Contact = () => {
   }, [data])
 
   return (
-    <Layout>
-      <Seo title="Contact " description="TrendSoftTech" />
-      <BreadCrumb title="Contact Us" img="/img/contact/contact_Frame.svg" />
-      <ContactIndex data={contact} />
-    </Layout>
+    <div>
+      <TopBar />
+      <Layout>
+        <Seo title="Contact " description="TrendSoftTech" />
+        <BreadCrumb title="Contact Us" img="/img/contact/contact_Frame.svg" />
+        <ContactIndex data={contact} />
+      </Layout>
+    </div>
   )
 }
 

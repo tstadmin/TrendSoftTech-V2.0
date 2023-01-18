@@ -17,6 +17,7 @@ import {
   PortfolioLink,
   DevelopmentLayout,
 } from "../../components/services/ServicesStyled"
+import TopBar from "../../components/common/TopBar"
 
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
@@ -30,6 +31,7 @@ const WebDevelopment = () => {
 
   return (
     <div>
+      <TopBar />
       <Layout>
         <Seo title="Web-Development" description="TrendSoftTech" />
         <BreadCrumb

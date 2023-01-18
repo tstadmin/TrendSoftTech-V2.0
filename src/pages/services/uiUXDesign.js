@@ -15,6 +15,7 @@ import BreadCrumb from "../../components/common/BreadCrumb"
 import GrowYourBusinnes from "../../components/common/GrowYourBusinnes"
 import Portfolios from "../../components/Portfolio/Portfolios"
 import Brochure from "../../components/common/Brochure"
+import TopBar from "../../components/common/TopBar"
 const UiUXDesign = () => {
   const query = useStaticQuery(UiUXDesignData)
   const data =
@@ -28,9 +29,13 @@ const UiUXDesign = () => {
 
   return (
     <div>
+      <TopBar />
       <Layout>
         <Seo title="UI/UX Design" description="TrendSoftTech" />
-        <BreadCrumb title="UiUX Design" img="/img/BreadCrumb/UiUXDesign.svg" />
+        <BreadCrumb
+          title="UI / UX Design"
+          img="/img/BreadCrumb/UiUXDesign.svg"
+        />
 
         <div className="mt-10">
           <DevelopmentDiv>

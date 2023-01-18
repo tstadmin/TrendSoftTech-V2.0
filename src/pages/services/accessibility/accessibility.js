@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useState, useEffect } from "react"
 import BreadCrumb from "../../../components/common/BreadCrumb"
+import TopBar from "../../../components/common/TopBar"
 import AccessibilityServices from "../../../components/home/AccessibilityServices"
 import Layout from "../../../components/layout"
 
@@ -16,15 +17,18 @@ const Accessibility = props => {
   }, [data])
 
   return (
-    <Layout>
-      <Seo title="Accessibility" description="TrendSoftTech" />
-      <BreadCrumb
-        title="Accessibility"
-        img="/img/BreadCrumb/Accessibility.svg"
-      />
-      {/* <AccessibilityTabs /> */}
-      <AccessibilityServices accessibilityServices={accessibilityServices} />
-    </Layout>
+    <div>
+      <TopBar />
+      <Layout>
+        <Seo title="Accessibility" description="TrendSoftTech" />
+        <BreadCrumb
+          title="Accessibility"
+          img="/img/BreadCrumb/Accessibility.svg"
+        />
+        {/* <AccessibilityTabs /> */}
+        <AccessibilityServices accessibilityServices={accessibilityServices} />
+      </Layout>
+    </div>
   )
 }
 

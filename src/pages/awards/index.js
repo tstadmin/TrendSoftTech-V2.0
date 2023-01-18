@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { useState, useEffect } from "react"
 import Awards from "../../components/Awards/Awards"
 import BreadCrumb from "../../components/common/BreadCrumb"
+import TopBar from "../../components/common/TopBar"
 import Layout from "../../components/layout"
 
 const Index = () => {
@@ -14,6 +15,7 @@ const Index = () => {
   }, [data])
   return (
     <div>
+      <TopBar />
       <Layout>
         <BreadCrumb img="/img/Awards/awardsFrame.svg" title="Awards" />
         <Awards data={awards} />

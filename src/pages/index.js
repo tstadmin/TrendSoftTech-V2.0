@@ -14,6 +14,7 @@ import Seo from "../components/seo"
 
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
+import TopBar from "../components/common/TopBar"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -37,22 +38,27 @@ const Index = () => {
   }, [data])
 
   return (
-    <Layout>
-      <div id="content" role="main">
-        <Seo title="Home" description="TrendSoftTech" />
-        {/* <Helmet>
+    <div>
+      <TopBar />
+      <Layout>
+        <div id="content" role="main">
+          <Seo title="Home" description="TrendSoftTech" />
+          {/* <Helmet>
           <title>Home | TrendSoftTech </title>
           <meta name="description" content="Home | TrendSoftTech" />
         </Helmet> */}
-        <Banner banner={banner} />
-        <AboutOurCompany aboutOurCompany={aboutOurCompany} />
-        <BannerItems bannerItem={bannerItem} />
-        <ServicesProvide servicesProvide={servicesProvide} />
-        <AccessibilityServices accessibilityServices={accessibilityServices} />
-        <ContactSupport contactUs={contactUs} />
-        <WorkingProcess workingProcess={workingProcess} />
-      </div>
-    </Layout>
+          <Banner banner={banner} />
+          <AboutOurCompany aboutOurCompany={aboutOurCompany} />
+          <BannerItems bannerItem={bannerItem} />
+          <ServicesProvide servicesProvide={servicesProvide} />
+          <AccessibilityServices
+            accessibilityServices={accessibilityServices}
+          />
+          <ContactSupport contactUs={contactUs} />
+          <WorkingProcess workingProcess={workingProcess} />
+        </div>
+      </Layout>
+    </div>
   )
 }
 

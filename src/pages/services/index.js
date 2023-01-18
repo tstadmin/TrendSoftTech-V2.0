@@ -5,6 +5,7 @@ import Seo from "../../components/seo"
 import ServiceCards from "../../components/services/ServiceCards"
 
 import { graphql, useStaticQuery } from "gatsby"
+import TopBar from "../../components/common/TopBar"
 const Services = () => {
   const query = useStaticQuery(ServiceData)
 
@@ -12,15 +13,18 @@ const Services = () => {
     query.allMarkdownRemark.edges[0].node.frontmatter.serviceCards.list
 
   return (
-    <Layout>
-      <Seo title="Services" description="TrendSoftTech" />
-      <BreadCrumb
-        title=" IT Services"
-        img="/img/services/Services_main_frame.svg"
-      />
+    <div>
+      <TopBar />
+      <Layout>
+        <Seo title="Services" description="TrendSoftTech" />
+        <BreadCrumb
+          title=" IT Services"
+          img="/img/services/Services_main_frame.svg"
+        />
 
-      <ServiceCards data={data} />
-    </Layout>
+        <ServiceCards data={data} />
+      </Layout>
+    </div>
   )
 }
 

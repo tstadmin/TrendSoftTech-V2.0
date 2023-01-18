@@ -3,6 +3,7 @@ import React from "react"
 import { useEffect } from "react"
 import { useState } from "react"
 import RequirementInfo from "../../components/careers/RequirementInfo"
+import TopBar from "../../components/common/TopBar"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
@@ -16,6 +17,7 @@ const Laravel = () => {
 
   return (
     <div>
+      <TopBar />
       <Layout>
         <Seo title="Careers" description="TrendSoftTech" />
 

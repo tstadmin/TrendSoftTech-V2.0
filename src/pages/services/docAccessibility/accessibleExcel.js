@@ -7,6 +7,7 @@ import BreadCrumb from "../../../components/common/BreadCrumb"
 
 import Seo from "../../../components/seo"
 import Tabs from "../../../components/services/Tabs"
+import TopBar from "../../../components/common/TopBar"
 const AccessibleExcel = () => {
   const query = useStaticQuery(AccessibleData)
   const [accessibleExcel, setAccessibleExcel] = useState([])
@@ -18,6 +19,7 @@ const AccessibleExcel = () => {
   console.log(data)
   return (
     <div>
+      <TopBar />
       <Layout>
         <Seo title="Accessibility-Excel" description="TrendSoftTech" />
         <BreadCrumb

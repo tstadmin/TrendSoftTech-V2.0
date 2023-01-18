@@ -7,6 +7,7 @@ import Development from "../../components/Services/Development"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import Seo from "../../components/seo"
+import TopBar from "../../components/common/TopBar"
 
 const Testing = () => {
   const query = useStaticQuery(testData)
@@ -20,6 +21,7 @@ const Testing = () => {
   console.log(data)
   return (
     <div>
+      <TopBar />
       <Layout>
         <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img="/img/BreadCrumb/testing.svg" />

@@ -22,7 +22,7 @@ const ContactForm = () => {
       <Form>
         <FormDiv>
           <input
-            className="appearance-none bg-transparent outline-none border-b  "
+            className="appearance-none bg-transparent outline-none border-b text-base  text-sm  "
             type="text"
             name="username"
             placeholder="Name"
@@ -31,7 +31,7 @@ const ContactForm = () => {
           />
 
           <input
-            className="appearance-none bg-transparent outline-none border-b "
+            className="appearance-none bg-transparent outline-none border-b  text-base  text-sm "
             type="email"
             name="E-mail"
             placeholder="email"
@@ -40,7 +40,7 @@ const ContactForm = () => {
           />
 
           <input
-            className="appearance-none bg-transparent outline-none border-b "
+            className="appearance-none bg-transparent outline-none border-b text-base  text-sm  "
             type="number"
             name="Phone Number"
             placeholder="Phone Number"
@@ -49,7 +49,7 @@ const ContactForm = () => {
           />
 
           <input
-            className="appearance-none bg-transparent outline-none border-b "
+            className="appearance-none bg-transparent outline-none border-b text-base  text-sm "
             type="text"
             name="yourWebsite"
             placeholder="Your website"
@@ -58,7 +58,7 @@ const ContactForm = () => {
           />
 
           <textarea
-            className="appearance-none bg-transparent outline-none border-b min-w-full col-span-2 "
+            className="appearance-none bg-transparent outline-none border-b min-w-full col-span-2 text-base  text-sm  "
             type="text"
             name="Message"
             placeholder="Your Message Here"

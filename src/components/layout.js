@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./common/Header"
 import OnclickTop from "./common/OnClickScrollToTop"
 import Footer from "./home/Footer"
-import TopBar from "./common/TopBar"
+
 import SkipToMainContent from "./common/SkipToMainContent"
 import BounceLoader from "react-spinners/BounceLoader"
 
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
         ) : (
           <>
             <SkipToMainContent />
-            <TopBar />
+
             <Header data={data} />
             <div id="mainContent">{children}</div>
             <Footer data={footer} />

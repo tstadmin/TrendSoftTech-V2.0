@@ -41,7 +41,7 @@ const WorkingProcess = props => {
           <WorkingCard key={i.listItem.id}>
             <WorkingCardTitle>
               <span className="text-[#de1926] ">{i.listItem.id}.</span>
-              {i.listItem.title}
+              <span className="ml-2">{i.listItem.title}</span>
             </WorkingCardTitle>
 
             <p>{i.listItem.description}</p>

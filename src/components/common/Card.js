@@ -16,7 +16,7 @@ const Card = props => {
           }
             lg:p-6 2xl:px-8 md:p-8 p-5 bg-white`}
     >
-      <img src={props.img} className="w-[85px] h-[85px]" alt="" />
+      <img src={props.img} className="w-[60px] h-[60px]" alt="" />
 
       <div
         className={`  ${

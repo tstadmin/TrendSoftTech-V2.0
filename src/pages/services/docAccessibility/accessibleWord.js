@@ -7,6 +7,7 @@ import BreadCrumb from "../../../components/common/BreadCrumb"
 
 import Seo from "../../../components/seo"
 import Tabs from "../../../components/services/Tabs"
+import TopBar from "../../../components/common/TopBar"
 const AccessibleWord = () => {
   const query = useStaticQuery(AccessibleData)
   const [accessibleWord, setAccessibleWord] = useState([])
@@ -18,6 +19,7 @@ const AccessibleWord = () => {
 
   return (
     <div>
+      <TopBar />
       <Layout>
         <Seo title="Accessibility-Word" description="TrendSoftTech" />
         <BreadCrumb
