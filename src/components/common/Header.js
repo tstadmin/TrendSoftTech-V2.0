@@ -6,6 +6,7 @@ import { IoIosArrowDown } from "react-icons/io"
 
 import { RxCross2 } from "react-icons/rx"
 import { HiBars3BottomLeft } from "react-icons/hi2"
+import { FaHome } from "react-icons/fa"
 
 import { useClickOutside } from "@mantine/hooks"
 
@@ -54,7 +55,7 @@ export default function Header(props) {
           <p
             onClick={() => setOpened(true)}
             className=" block sm:text-2xl text-md  hover:text-blue-400
-           pr-8 pt-2 md:pt-0 "
+           pr-8 pt-0 md:pt-0 "
           >
             {opened ? (
               <button
@@ -80,6 +81,14 @@ export default function Header(props) {
               </button>
             )}
           </p>
+          <p className="pt-4 md:pt-0">
+            <Link
+              to="/"
+              className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
+            >
+              <FaHome />
+            </Link>
+          </p>
         </div>
       </div>
 
@@ -94,13 +103,13 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24  2xl:space-x-12 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-8  2xl:space-x-12 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.id}
                 className="uppercase  text-white mt-6 sm:text-xl text-sm sm:font-medium hidden 540Screen:block "
               >
-                {item.listItem.title}
+                <Link to={item.listItem.page}> {item.listItem.title}</Link>
                 <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
