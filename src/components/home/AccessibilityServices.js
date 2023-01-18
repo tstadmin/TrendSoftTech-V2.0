@@ -14,7 +14,9 @@ const AccessibilityServices = props => {
   return (
     <div>
       <Accessibility>
-        <Title>{props.accessibilityServices.title}</Title>
+        <Title className="text-orange-400 ">
+          {props.accessibilityServices.title}
+        </Title>
         <SubTitle>{props.accessibilityServices.subTitle}</SubTitle>
       </Accessibility>
 
