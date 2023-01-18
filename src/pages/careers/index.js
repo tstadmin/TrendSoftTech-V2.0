@@ -18,7 +18,7 @@ const Careers = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Careers" />
       <Layout>
         <Seo title="Careers" description="TrendSoftTech" />
         <BreadCrumb title="Careers" img="/img/careers/career_Frame.svg" />

@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="About Us" />
       <Layout>
         <div>
           <Seo title="About" description="TrendSoftTech" />

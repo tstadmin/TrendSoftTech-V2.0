@@ -19,7 +19,7 @@ const WebAccessible = () => {
   console.log(data)
   return (
     <div>
-      <TopBar />
+      <TopBar description="Web-Accessibility" />
       <Layout>
         <Seo title="Web-Accessibility" description="TrendSoftTech" />
         <BreadCrumb

@@ -39,7 +39,7 @@ const Index = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description=" India is going to celebrate 73d Republic Day. The Republic Day on 26 January 2023. This date on which the mark of the constitution came into effect in 1950." />
       <Layout>
         <div id="content" role="main">
           <Seo title="Home" description="TrendSoftTech" />

@@ -285,24 +285,36 @@ home:
     logo: "/img/HomeImages/trendsoftlogo.svg"
     alt: "trendsoft tech logo"
     description: "At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections."
-    itTitle: "IT Services"
+    itTitle: "Services"
     itService: 
       - listItem:
-          id: "1"
+          id: 1
           title: "Web Development"   
           page: "/services/webDevelopment/"
       - listItem:
-          id: "2"        
+          id: 2        
           title: "E-Commerce Development"       
           page: "/services/ecommerceDevelopment/"
       - listItem:
-          id: "3"
+          id: 3
           title: "Product Development"       
           page: "/services/productDevelopment/"
       - listItem:
-          id: "4"
+          id: 4
           title: "Mobile Development"
           page: "/services/mobileDevelopment/"
+      - listItem:
+          id: 5
+          title: "UI/UX Development"
+          page: "/services/uiUXDesign/"
+      - listItem:
+          id: 6
+          title: "Testing"
+          page: "/services/testing/"  
+      - listItem:
+          id: 7
+          title: "Digital Marketing"
+          page: "/services/digitalMarketing/"           
     contactTitle : "Contact Info"
     local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
     mail : "info@trendsofttech.com" 
@@ -1094,7 +1106,7 @@ contact :
     emailTitle: "email:"
     email: "info@trendsofttech.com" 
     businessMailTitle: "For Business Inquiries:"      
-    businessEmail: "info@trendsofttech.com" 
+    businessEmail: "service@trendsofttech.com" 
     addressOne: "Address 1:"   
     addressOneInfo: "MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"  
     addressTwo: "Address 2:"   

@@ -17,7 +17,7 @@ const Laravel = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Laravel Developer" />
       <Layout>
         <Seo title="Careers" description="TrendSoftTech" />
 

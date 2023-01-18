@@ -18,7 +18,7 @@ const AccessiblePPT = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Accessibility-PPT" />
       <Layout>
         <Seo title="Accessibility-PPT" description="TrendSoftTech" />
         <BreadCrumb

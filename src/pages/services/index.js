@@ -14,7 +14,7 @@ const Services = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Services" />
       <Layout>
         <Seo title="Services" description="TrendSoftTech" />
         <BreadCrumb

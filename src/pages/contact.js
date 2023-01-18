@@ -16,7 +16,10 @@ const Contact = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar
+        title="service@trendsofttech.com"
+        description="info@trendsofttech.com"
+      />
       <Layout>
         <Seo title="Contact " description="TrendSoftTech" />
         <BreadCrumb title="Contact Us" img="/img/contact/contact_Frame.svg" />

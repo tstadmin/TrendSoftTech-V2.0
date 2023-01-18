@@ -29,7 +29,7 @@ const EcommerceDevelopment = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Ecommerce-Development" />
       <Layout>
         <Seo title="Ecommerce-Development" description="TrendSoftTech" />
         <BreadCrumb

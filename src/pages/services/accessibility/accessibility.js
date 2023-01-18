@@ -18,7 +18,7 @@ const Accessibility = props => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Accessibility-Testing" />
       <Layout>
         <Seo title="Accessibility" description="TrendSoftTech" />
         <BreadCrumb

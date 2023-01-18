@@ -15,7 +15,7 @@ const Index = () => {
   }, [data])
   return (
     <div>
-      <TopBar />
+      <TopBar description="Awards & Certifications" />
       <Layout>
         <BreadCrumb img="/img/Awards/awardsFrame.svg" title="Awards" />
         <Awards data={awards} />

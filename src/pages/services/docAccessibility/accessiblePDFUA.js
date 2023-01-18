@@ -19,7 +19,7 @@ const AccessiblePDFUA = () => {
   console.log(accessibleUA)
   return (
     <div>
-      <TopBar />
+      <TopBar description="Accessibility-PDF/UA" />
       <Layout>
         <Seo title="Accessibility-PDF/UA" description="TrendSoftTech" />
         <BreadCrumb

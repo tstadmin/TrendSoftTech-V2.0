@@ -17,7 +17,7 @@ const Reactinfo = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="ReactJs Developer" />
       <Layout>
         <Seo title="Careers" description="TrendSoftTech" />
         <RequirementInfo data={react} />

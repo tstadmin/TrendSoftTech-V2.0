@@ -18,10 +18,10 @@ const Testing = () => {
   useEffect(() => {
     setTest(data)
   }, [data])
-  console.log(data)
+
   return (
     <div>
-      <TopBar />
+      <TopBar description="Testing" />
       <Layout>
         <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img="/img/BreadCrumb/testing.svg" />

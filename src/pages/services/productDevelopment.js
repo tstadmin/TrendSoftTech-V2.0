@@ -23,14 +23,14 @@ const ProductDevelopment = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Product-Development" />
       <Layout>
         <Seo title="Product-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Product Development"
           img="/img/BreadCrumb/ProductDevelopment.svg"
         />
-        {/* <Tabs /> */}
+
         <ServicesLayout>
           <Development data={product} />
         </ServicesLayout>

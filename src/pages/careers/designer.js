@@ -18,7 +18,7 @@ const Designer = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="UI / UX Designer" />
       <Layout>
         <Seo title="Careers" description="TrendSoftTech" />
         <RequirementInfo data={designer} />

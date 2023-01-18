@@ -12,7 +12,6 @@ import { useClickOutside } from "@mantine/hooks"
 
 export default function Header(props) {
   const NavBar = tw.div`flex items-center space-x-14 sticky top-6 z-10`
-  const Underline = tw.span`bg-left-bottom bg-gradient-to-r from-orange-500 to-orange-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out`
 
   const [opened, setOpened] = useState(false)
   const hide = () => setOpened(false)
@@ -40,16 +39,11 @@ export default function Header(props) {
       <div>
         <div className="flex space-x-4 md:space-x-12 uppercase  ">
           <p className="md:text-xl text-md  hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block  group transition ">
-            <Link to="/contact/">
-              <Underline>{props.data.contact}</Underline>
-            </Link>
+            <Link to="/contact/">{props.data.contact}</Link>
           </p>
 
           <p className="md:text-xl text-md hover:scale-105 duration-500 text-[#0084FF]  px-6 py-2  hidden sm:block group transition focus:outline-none  ">
-            <Link to="/careers/">
-              {" "}
-              <Underline>{props.data.careers}</Underline>{" "}
-            </Link>
+            <Link to="/careers/">{props.data.careers}</Link>
           </p>
 
           <p
@@ -81,12 +75,12 @@ export default function Header(props) {
               </button>
             )}
           </p>
-          <p className="pt-4 md:pt-0">
+          <p>
             <Link
               to="/"
               className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
             >
-              <FaHome />
+              <FaHome className="sm:mt-1 mt-0" />
             </Link>
           </p>
         </div>
@@ -99,21 +93,21 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[167px] sm:top-[112px] 540Screen:top-[105px] top-[99px] bg-[#0084FF] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
+              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[167px] sm:top-[112px] 540Screen:top-[105px] top-[99px] bg-black xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-8  2xl:space-x-12 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-44 md:pl-24 pl-8  1920Screen:space-x-24 2xl:space-x-12 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.id}
                 className="uppercase  text-white mt-6 sm:text-xl text-sm sm:font-medium hidden 540Screen:block "
               >
-                <Link to={item.listItem.page}> {item.listItem.title}</Link>
+                {item.listItem.title}
                 <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
-                      className="hover:text-[#FFC93C] text-white  1920Screen:text-lg text-sm"
+                      className="hover:text-[#FFC93C] text-white/80  1920Screen:text-lg text-sm"
                       key={sub.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>

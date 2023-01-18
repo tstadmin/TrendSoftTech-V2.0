@@ -56,15 +56,6 @@ const Footer = props => {
           </FooterIconLogo>
         </FooterTrendInfo>
         <FooterInfoDiv>
-          <div>
-            <Link
-              to="/about/"
-              className="text-lg font-semibold text-[#1a70d3] "
-            >
-              About
-            </Link>
-          </div>
-
           <FooterTitle>{props.data.itTitle}</FooterTitle>
           <ul children=" space-y-3">
             {props.data.itService?.map((item, idx) => (
@@ -76,6 +67,9 @@ const Footer = props => {
               </li>
             ))}
           </ul>
+          <p>
+            <Link to="/about/">About</Link>
+          </p>
         </FooterInfoDiv>
 
         <FooterInfoDiv>
@@ -86,7 +80,7 @@ const Footer = props => {
                 <SlLocationPin />
               </IconSize>
 
-              <li>
+              <li className="hover:text-[#1273EB]">
                 <a
                   aria-label="location Trendsoft Technologies Pvt. Ltd,
                 MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
@@ -104,7 +98,7 @@ const Footer = props => {
                 <AiOutlineMail />
               </IconSize>
 
-              <li>
+              <li className="hover:text-[#1273EB]">
                 {" "}
                 <a
                   href="mailto:info@trendsofttech.com"
@@ -119,7 +113,7 @@ const Footer = props => {
               <IconSize>
                 <MdOutlineAttachEmail />
               </IconSize>
-              <li>
+              <li className="hover:text-[#1273EB]">
                 <a
                   href="mailto:service@trendsofttech.com"
                   aria-label="service mail service@trendsofttech.com "

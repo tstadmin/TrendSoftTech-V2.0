@@ -19,7 +19,7 @@ const AccessibleExcel = () => {
   console.log(data)
   return (
     <div>
-      <TopBar />
+      <TopBar description="Accessibility-Excel" />
       <Layout>
         <Seo title="Accessibility-Excel" description="TrendSoftTech" />
         <BreadCrumb

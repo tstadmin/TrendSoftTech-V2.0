@@ -29,7 +29,7 @@ const UiUXDesign = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="UI/UX Design" />
       <Layout>
         <Seo title="UI/UX Design" description="TrendSoftTech" />
         <BreadCrumb

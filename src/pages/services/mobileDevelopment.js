@@ -21,7 +21,7 @@ const MobileDevelopment = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Mobile-Development" />
       <Layout>
         <Seo title="Mobile-Development" description="TrendSoftTech" />
 

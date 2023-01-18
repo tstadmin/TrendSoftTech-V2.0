@@ -31,7 +31,7 @@ const WebDevelopment = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Web-Development" />
       <Layout>
         <Seo title="Web-Development" description="TrendSoftTech" />
         <BreadCrumb

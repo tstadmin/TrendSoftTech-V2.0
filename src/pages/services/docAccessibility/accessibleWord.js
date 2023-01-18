@@ -19,7 +19,7 @@ const AccessibleWord = () => {
 
   return (
     <div>
-      <TopBar />
+      <TopBar description="Accessibility-Word" />
       <Layout>
         <Seo title="Accessibility-Word" description="TrendSoftTech" />
         <BreadCrumb
