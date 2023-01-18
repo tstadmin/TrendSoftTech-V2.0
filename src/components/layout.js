@@ -69,10 +69,8 @@ const layoutQuery = graphql`
             home {
               navbar {
                 logo
-                openMenu
                 alt
                 button
-                closeMenu
                 contact
                 careers
                 list {

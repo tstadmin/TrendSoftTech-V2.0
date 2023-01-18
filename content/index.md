@@ -4,8 +4,6 @@ home:
     logo: "/img/HomeImages/logo.svg"
     alt: "TrendSoft tech logo"
     button: contact us
-    openMenu: "Menu"
-    closeMenu: "Close"
     contact: "contact us"
     careers: "CAREERS"
     list:
