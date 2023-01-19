@@ -261,22 +261,22 @@ home:
     CTA: "Contact Us"
     list:
       - listItem:
-          id: "1"
+          id: 1
           num: "1."
           title: "Planning"
           description: "Clients usually have an idea of what they want as the end result, but not what the software should go..."
       - listItem:
-          id: "2"
+          id: 2
           num: "2."
           title: "Implementation"
           description: "All plans are as good as their implementation; At Trendsoft we understand that and our ..."
       - listItem:
-          id: "3"
+          id: 3
           num: "3."
           title: "Testing"
           description: "All plans are as good as their implementation; At Trendsoft we understand that and our software..."
       - listItem:
-          id: "4"
+          id: 4
           num: "4."
           title: "Deployment"
           description: "One the product is accepted by the client we move towards deployment. Our support teams..."
@@ -535,6 +535,7 @@ services:
              title: "SS Companies"
              img: "/img/portfolio/sscom.jpg"
              about: "Stalin Swarna Group of companies was started by its chairman"
+             link: "https://sscompanies.in/"   
              label: "explore SS Companies website"     
         - listItem: 
              id: 6
@@ -673,7 +674,7 @@ accessible:
              title: "How do we ensure that the PDF document is Accessible?"
              description: "<p>At TRENDSOFT TECHNOLOGIES PVT LTD., we take quality seriously. With expertise in PDF/UA & WCAG 2.0 & 2.1, we not only test with the PDF Accessibility Checker in Adobe Professional but also ensure that a manual quality check is thoroughly implemented on the tags and the content. In addition, all our documents are tested by a native Screen Reader User to ensure that it is goes beyond compliance and is usable to people with disabilities.</p>" 
    accessiblePDFForms:
-      description: "<p>An accessible PDF ensures that everyone including people with disabilities can interact with your document and access the content, images, graphs, forms that are present easily.</p><p>Forms can be newsletter subscription, event registration, job application, customer feedback, admission forms, sign up forms etc. Most of the organization use PDF forms to collect and organize data. But it is important to make these forms accessible to gather data efficiently.</p><p>Making a PDF from accessible requires a little more effort as it is more than just dropping form elements into your document. PDF forms have some inherent accessibility limitations and hence it is important to provide a text description that will make the PDF fillable and help a screen reader to access the form easily while navigating through the PDF.</p><p>Challenges generally faced by screen reader users:<li>Form controls not identified</li><br/><li>Labels and instructions not associated with form controls</li><li>Illogical tabbing and reading order</li></p>"
+      description: "<p>An accessible PDF ensures that everyone including people with disabilities can interact with your document and access the content, images, graphs, forms that are present easily.</p><p>Forms can be newsletter subscription, event registration, job application, customer feedback, admission forms, sign up forms etc. Most of the organization use PDF forms to collect and organize data. But it is important to make these forms accessible to gather data efficiently.</p><p>Making a PDF from accessible requires a little more effort as it is more than just dropping form elements into your document. PDF forms have some inherent accessibility limitations and hence it is important to provide a text description that will make the PDF fillable and help a screen reader to access the form easily while navigating through the PDF.</p><p>Challenges generally faced by screen reader users:<li>Form controls not identified</li><li>Labels and instructions not associated with form controls</li><li>Illogical tabbing and reading order</li></p>"
       list:
         - listItems:
              id: "1"   
@@ -1102,7 +1103,7 @@ contact :
     addressimg : "/img/icons/locationpin.svg"
     altAddress: "Address images"
     title: "Contact Us"
-    emailTitle: "email:"
+    emailTitle: "Email:"
     email: "info@trendsofttech.com" 
     businessMailTitle: "For Business Inquiries:"      
     businessEmail: "service@trendsofttech.com" 
@@ -1185,7 +1186,7 @@ AccessibilityTabs:
         link: "/services/docAccessibility/accessibleExcel"      
 Brochure:
     description: "Download our company brochure here"
-    button: "Download Now"      
+    button: "Download Now PDF"      
 Grow:
     description: "Grow Your Business and Build Your Website or Software With Us."
     button: "Contact Us"  
@@ -1193,8 +1194,10 @@ awards&certifications:
   list: 
     - listItem: 
         id: 1
-        img: "/img/Awards/TRENDSOFTTECHNOLOGIESPRIVATELIMITED90013737.jpg"       
+        img: "/img/Awards/TRENDSOFTTECHNOLOGIESPRIVATELIMITED90013737.jpg" 
+        label: "TRENDSOFT TECHNOLOGIES PRIVATE LIMITED CERTIFICATE"      
     - listItem: 
         id: 2
         img: "/img/Awards/UDYAMREGISTREATIONCERTIFICATE.jpg"
+        label: "UDYAMREGISTREATION CERTIFICATE " 
 ---

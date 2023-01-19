@@ -142,7 +142,7 @@ export const AccessibilityImage = styled.img`
 
 ///  ----- Counter component in HomePage Home folder--------------------------------
 
-export const Counte = styled.div`
+export const Counte = styled.ul`
   ${tw`md:flex md:justify-center grid justify-items-center gap-24 md:gap-40  p-6 bg-white `}
 `
 export const CounterNumber = styled.p`
