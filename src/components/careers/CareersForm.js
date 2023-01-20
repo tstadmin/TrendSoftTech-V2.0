@@ -22,7 +22,7 @@ const CareersForm = () => {
               type="email"
               className="block w-full p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
               id="floatingInput"
-              placeholder="name@example.com"
+              placeholder="emailaddress@example.com"
             />
           </InputDiv>
           <InputDiv>

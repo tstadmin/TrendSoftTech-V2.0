@@ -17,7 +17,10 @@ const Index = () => {
     <div>
       <TopBar description="Awards & Certifications" />
       <Layout>
-        <BreadCrumb img="/img/Awards/awardsFrame.svg" title="Awards" />
+        <BreadCrumb
+          img="/img/Awards/awardsFrame.svg"
+          title="Awards & Certifications"
+        />
         <Awards data={awards} />
       </Layout>
     </div>

@@ -1169,7 +1169,7 @@ AccessibilityTabs:
         link: "/services/docAccessibility/accessiblePDFUA"
     - listItem:
         id: 2
-        title: "Accessible PDF Forms"
+        title: "Accessible PDF Form"
         link: "/services/docAccessibility/accessiblePDFForms"
     - listItem:
         id: 3
