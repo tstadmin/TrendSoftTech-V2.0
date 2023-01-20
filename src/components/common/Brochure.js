@@ -13,14 +13,11 @@ const Brochure = () => {
       <a
         href="/pdf/brochure.pdf"
         target="_blank"
+        aria-label=" company brochure PDF "
         className="bg-[#1E6ff5] text-white text-sm p-3 rounded-md flex  justify-center"
       >
         {data.button}
-        <AiOutlineFilePdf
-          className="text-white ml-1 text-lg"
-          role="button"
-          aria-label=" company brochure PDF "
-        />
+        {/* <AiOutlineFilePdf className="text-white ml-1 text-lg" role="button" /> */}
       </a>
     </BrochureDiv>
   )

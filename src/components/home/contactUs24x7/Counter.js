@@ -13,28 +13,32 @@ const Counter = () => {
       onExit={() => setCounter(false)}
     >
       <Counte>
-        <div>
+        <li>
           <CounterNumber>
             {counter && <CountUp end={100} duration={1} />}+
           </CounterNumber>
           <CounterDescription> Happy Clients</CounterDescription>
-        </div>
-        <div>
+        </li>
+        <li>
           <CounterNumber>
             {counter && <CountUp end={50} duration={1} />}+
           </CounterNumber>
           <CounterDescription> Companies</CounterDescription>
-        </div>
-        <div>
+        </li>
+        <li>
           <CounterNumber>
             {counter && <CountUp end={200} duration={1} />}+
           </CounterNumber>
           <CounterDescription>
-            <Link to="/portfolio/" aria-label="project Done">
+            <Link
+              to="/portfolio/"
+              aria-label="project Done"
+              className="underline"
+            >
               Projects Done
             </Link>
           </CounterDescription>
-        </div>
+        </li>
       </Counte>
     </ScrollTrigger>
   )

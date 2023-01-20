@@ -26,6 +26,7 @@ const Accessible = props => {
                   {i.listItems.description}
                 </DescriptionList>
               ))}
+
               {item.listItems.data ? (
                 <div
                   className="space-y-4 mt-5"

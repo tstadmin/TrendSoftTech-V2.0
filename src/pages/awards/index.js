@@ -40,6 +40,7 @@ const dataQuery = graphql`
                 listItem {
                   id
                   img
+                  label
                 }
               }
             }

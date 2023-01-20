@@ -11,10 +11,10 @@ h1{
     @apply 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-5xl sm:text-2xl 340Screen:text-lg text-sm font-Poppins
 }
 h2{
-    @apply  md:text-3xl text-xl font-semibold 
+    @apply  md:text-3xl text-xl font-semibold  text-[#0b6ddc]
 }
 h3{
-    @apply md:text-lg  text-sm  font-semibold
+    @apply md:text-lg  text-sm  font-semibold text-[#0b6ddc]
 }
 p{
     @apply sm:text-base  text-sm font-Poppins text-[#454545]
@@ -25,7 +25,7 @@ li{
 }
 
 a{
-    @apply focus:underline focus:text-orange-500 hover:underline hover:decoration-orange-500 hover:text-[#1273EB] font-Poppins
+    @apply focus:underline focus:text-[#bd5005] hover:underline hover:decoration-[#bd5005] hover:text-[#bd5005] font-Poppins
 }
 
 h4{

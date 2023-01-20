@@ -1,15 +1,19 @@
 import tw, { styled } from "twin.macro"
-
+import { Link } from "gatsby"
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h2`
-  ${tw` text-[#0B70E1]`}
+  ${tw` text-[#0b6ddc]`}
 `
-export const SubTitle = styled.h2`
-  ${tw` text-[#0B70E1] md:text-3xl text-xl   `}
-`
+// export const SubTitle = styled.h2`
+//   ${tw` text-[#0B70E1] md:text-3xl text-xl   `}
+// `
 export const Description = styled.p`
   ${tw`text-[16px] text-[#454545]  `}
 `
+export const Button = styled.a`
+  ${tw`bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white min-w-[122px] text-[16px] `}
+`
+
 // export const Button = styled.button`
 //   ${tw`bg-blue-600  hover:bg-white font-medium border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white hover:text-blue-400 min-w-[122px] text-[16px]`}
 // `
@@ -142,7 +146,7 @@ export const AccessibilityImage = styled.img`
 
 ///  ----- Counter component in HomePage Home folder--------------------------------
 
-export const Counte = styled.div`
+export const Counte = styled.ul`
   ${tw`md:flex md:justify-center grid justify-items-center gap-24 md:gap-40  p-6 bg-white `}
 `
 export const CounterNumber = styled.p`
@@ -180,7 +184,7 @@ export const WorkingCardNumber = styled.h3`
   ${tw`text-orange-400 `}
 `
 export const WorkingCardTitle = styled.h3`
-  ${tw`  text-[#0B70E1]  `}
+  ${tw`  text-[#0b6ddc]  `}
 `
 export const WorkingCard = styled.li`
   ${tw`border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]`}

@@ -39,8 +39,8 @@ export const RequirementIcon = styled.li`
 export const RequirementInfoDiv = styled.div`
   ${tw`space-y-3`}
 `
-export const RequirementInfoheading = styled.h1`
-  ${tw`text-2xl font-semibold font-mono`}
+export const RequirementInfoheading = styled.h2`
+  ${tw`lg:text-2xl md:text-xl sm:text-lg text-base font-semibold font-mono`}
 `
 export const Description = styled.li`
   ${tw`font-Poppins`}
@@ -49,7 +49,7 @@ export const FormDiv = styled.div`
   ${tw`grid border border-black sm:justify-items-center space-y-8 p-7`}
 `
 
-export const FormHeading = styled.div`
+export const FormHeading = styled.h3`
   ${tw`md:text-4xl text-2xl text-center font-semibold`}
 `
 
