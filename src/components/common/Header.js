@@ -38,11 +38,11 @@ export default function Header(props) {
 
       <div>
         <div className="flex space-x-4 md:space-x-12 uppercase  ">
-          <p className="md:text-xl text-md  hover:scale-105 duration-500 text-[#0074E0] px-6 py-2  hidden sm:block  group transition ">
+          <p className="md:text-xl text-md  hover:scale-105 duration-500 text-[#0b6ddc]  px-6 py-2  hidden sm:block  group transition ">
             <Link to="/contact/">{props.data.contact}</Link>
           </p>
 
-          <p className="md:text-xl text-md hover:scale-105 duration-500 text-[#0074E0]  px-6 py-2  hidden sm:block group transition focus:outline-none  ">
+          <p className="md:text-xl text-md hover:scale-105 duration-500 text-[#0b6ddc]   px-6 py-2  hidden sm:block group transition focus:outline-none  ">
             <Link to="/careers/">{props.data.careers}</Link>
           </p>
 

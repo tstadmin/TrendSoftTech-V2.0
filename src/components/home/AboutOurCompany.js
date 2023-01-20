@@ -38,7 +38,7 @@ const AboutOurCompany = props => {
           <Link
             to="/about/"
             aria-label="About Our Company Learn More"
-            className="bg-blue-600  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-3xl p-3 text-white min-w-[122px] text-[16px]"
+            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#1e6ff6] hover:duration-700  rounded-3xl p-3 text-white min-w-[122px] text-[16px]"
           >
             {props.aboutOurCompany.CTA}
           </Link>
