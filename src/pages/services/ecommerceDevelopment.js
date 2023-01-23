@@ -42,7 +42,7 @@ const EcommerceDevelopment = () => {
             <DevelopmentLayout>
               <PortfoliosButton>
                 <PortfolioLink className="button" href="#scroll">
-                  Go To Portfolio <FiChevronDown className="mt-1 text-2xl  " />
+                  Portfolio <FiChevronDown className="mt-1 text-2xl  " />
                 </PortfolioLink>
               </PortfoliosButton>
 

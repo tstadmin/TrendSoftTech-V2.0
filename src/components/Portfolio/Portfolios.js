@@ -5,10 +5,7 @@ const Portfolios = props => {
   return (
     <div className=" mt-10 1920Screen:px-44 2xl:px-24 px-8 md:py-10 py-28 bg-blue-100">
       <div className="text-center space-y-2">
-        <h2 className="2xl:text-5xl xl:text-5xl lg:text-4xl md:text-5xl sm:text-2xl text-lg ">
-          Portfolio
-        </h2>
-        <h3>Our Works</h3>
+        <h2 className="md:text-2xl sm:text-lg text-base ">Portfolio</h2>
       </div>
 
       <ul className="grid md:grid-cols-2 grid-cols-1 gap-5">

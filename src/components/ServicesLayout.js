@@ -18,7 +18,7 @@ const ServicesLayout = ({ children }) => {
         <div className="mt-8 space-y-10">
           <PortfoliosButton>
             <PortfolioLink className=" button" href="#scroll">
-              Go To Portfolio <FiChevronDown className="mt-1 text-2xl  " />
+              Portfolio <FiChevronDown className="mt-1 text-2xl  " />
             </PortfolioLink>
           </PortfoliosButton>
 

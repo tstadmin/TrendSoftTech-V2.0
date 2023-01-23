@@ -32,16 +32,16 @@ export const Description = styled.p`
   ${tw`mt-5`}
 `
 export const Title = styled.h2`
-  ${tw` text-[#0B70E1] mt-5 md:text-3xl text-xl `}
+  ${tw` text-[#0B70E1] mt-5  md:text-2xl sm:text-lg text-base `}
 `
 export const PhasesTitle = styled.h3`
-  ${tw`mt-5  md:text-lg  text-sm`}
+  ${tw`mt-5  md:text-lg  text-sm `}
 `
 export const PhasesDescription = styled.p`
   ${tw`mt-2 `}
 `
 export const DescriptionList = styled.li`
-  ${tw`mt-2 text-[16px]  ml-6 font-Poppins`}
+  ${tw`mt-2 md:text-[16px] text-[14px] ml-6 font-Poppins`}
 `
 //--------- Tabs component in Service page  --------------------------------
 ////540Screen:grid-cols-2

@@ -3,13 +3,23 @@ import { Button, Form, FormDiv } from "./Contactstyled"
 
 const ContactForm = () => {
   const [data, setData] = useState({
-    username: "",
+    firstname: "",
+    lastname: "",
     phoneNumber: "",
     email: "",
     yourWebsite: "",
     Message: "",
+    ComponyName: "",
   })
-  const { username, phoneNumber, email, yourWebsite, Message } = data
+  const {
+    ComponyName,
+    firstname,
+    lastname,
+    phoneNumber,
+    email,
+    yourWebsite,
+    Message,
+  } = data
   const changeHandler = e => {
     setData({ ...data, [e.target.name]: e.target.value })
   }
@@ -24,9 +34,17 @@ const ContactForm = () => {
           <input
             className="appearance-none bg-transparent outline-none border-b text-base  text-sm  "
             type="text"
-            name="username"
-            placeholder="Name"
-            value={username}
+            name="firstname"
+            placeholder="First Name"
+            value={firstname}
+            onChange={changeHandler}
+          />
+          <input
+            className="appearance-none bg-transparent outline-none border-b text-base  text-sm  "
+            type="text"
+            name="lastname"
+            placeholder="Last Name"
+            value={lastname}
             onChange={changeHandler}
           />
 
@@ -34,7 +52,7 @@ const ContactForm = () => {
             className="appearance-none bg-transparent outline-none border-b  text-base  text-sm "
             type="email"
             name="E-mail"
-            placeholder="email"
+            placeholder="email Address"
             value={email}
             onChange={changeHandler}
           />
@@ -49,14 +67,21 @@ const ContactForm = () => {
           />
 
           <input
-            className="appearance-none bg-transparent outline-none border-b text-base  text-sm "
+            className="appearance-none min-w-full  col-span-2  bg-transparent outline-none border-b text-base  text-sm "
             type="text"
             name="yourWebsite"
             placeholder="Your website"
             value={yourWebsite}
             onChange={changeHandler}
           />
-
+          <input
+            className="appearance-none min-w-full  col-span-2  bg-transparent outline-none border-b text-base  text-sm "
+            type="text"
+            name="ComponyName"
+            placeholder="Compony Name"
+            value={ComponyName}
+            onChange={changeHandler}
+          />
           <textarea
             className="appearance-none bg-transparent outline-none border-b min-w-full col-span-2 text-base  text-sm  "
             type="text"
@@ -65,6 +90,12 @@ const ContactForm = () => {
             value={Message}
             onChange={changeHandler}
           />
+
+          {/* <input type="checkbox" className="min-w-10" />
+          <p>
+            By using this form you agree with the storage and handling of your
+            data by this website. *
+          </p> */}
 
           <Button>Submit Now</Button>
         </FormDiv>
