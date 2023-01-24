@@ -74,13 +74,21 @@ home:
                 page: "/services/uiUXDesign/"
       - listItem:
           id: 6
-          title: "Awards & Certifications"
+          title: "About"
           page: "/awards/"     
           subTitle: 
             - listItem:
                 id: 1
                 title: "Awards & Certifications"
                 page: "/awards/"
+            - listItem:
+                id: 2
+                title: "Careers"
+                page: "/careers/" 
+            - listItem:
+                id: 3
+                title: "Contact"
+                page: "/contact/"       
     mobilelist:
           home: "Home"
           homePage: "/"

@@ -16,11 +16,11 @@ const ServicesLayout = ({ children }) => {
       <DevelopmentDiv>
         <div>{children}</div>
         <div className="mt-8 space-y-10">
-          <PortfoliosButton>
+          {/* <PortfoliosButton>
             <PortfolioLink className=" button" href="#scroll">
               Portfolio <FiChevronDown className="mt-1 text-2xl  " />
             </PortfolioLink>
-          </PortfoliosButton>
+          </PortfoliosButton> */}
 
           <Brochure />
           <GrowYourBusinnes />

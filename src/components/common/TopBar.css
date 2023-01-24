@@ -29,9 +29,9 @@
     transform: translateX(100%); 		
     }
     100% { 
-    -moz-transform: translateX(-100%); /* Firefox bug fix */
-    -webkit-transform: translateX(-100%); /* Firefox bug fix */
-    transform: translateX(-100%); 
+    -moz-transform: translateX(-50%); /* Firefox bug fix */
+    -webkit-transform: translateX(-50%); /* Firefox bug fix */
+    transform: translateX(-50%); 
     }
    }
 

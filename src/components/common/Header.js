@@ -21,7 +21,7 @@ export default function Header(props) {
     <div
       id="nav"
       role="navigation"
-      className=" flex items-center justify-between tracking-wide py-4 1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky 1920Screen:top-10   sm:top-10 top-9  bg-white z-[1] shadow-lg shadow-black/10"
+      className=" flex items-center justify-between tracking-wide py-2 1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky 1920Screen:top-10   sm:top-10 top-9  bg-white z-[1] shadow-lg shadow-black/10"
     >
       <NavBar>
         {/* Logo */}
@@ -29,7 +29,7 @@ export default function Header(props) {
           <img
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
-            className="md:w-[184px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px]"
+            className="md:w-[144px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px]"
           />
         </Link>
       </NavBar>
@@ -38,13 +38,13 @@ export default function Header(props) {
 
       <div>
         <div className="flex space-x-4 md:space-x-12 uppercase  ">
-          <p className="md:text-xl text-md  hover:scale-105 duration-500 text-[#0b6ddc]  px-6 py-2  hidden sm:block  group transition ">
+          {/* <p className="md:text-xl text-md  hover:scale-105 duration-500 text-[#0b6ddc]  px-6 py-2  hidden sm:block  group transition ">
             <Link to="/contact/">{props.data.contact}</Link>
           </p>
 
           <p className="md:text-xl text-md hover:scale-105 duration-500 text-[#0b6ddc]   px-6 py-2  hidden sm:block group transition focus:outline-none  ">
             <Link to="/careers/">{props.data.careers}</Link>
-          </p>
+          </p> */}
 
           <p
             onClick={() => setOpened(true)}
@@ -94,7 +94,7 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[167px] sm:top-[112px] 540Screen:top-[105px] top-[99px] bg-black xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
+              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[151px] sm:top-[88px]  top-[82px] bg-black xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
               : "fixed hidden "
           }
         >

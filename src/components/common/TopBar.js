@@ -9,6 +9,12 @@ const TopBar = props => {
 
         <span className=" ml-4">{props.description}</span>
       </p>
+      {/* <article>
+        <marquee scrollamount="10" behavior="scroll" direction="left">
+          {props.title}
+          <marquee className=" ml-4">{props.description}</marquee>
+        </marquee>
+      </article> */}
     </div>
   )
 }

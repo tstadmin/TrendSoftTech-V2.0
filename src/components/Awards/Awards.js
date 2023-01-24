@@ -19,7 +19,7 @@ const Awards = props => {
                     alt=""
                     width="200px"
                     height="500px"
-                    className="mt-8 shadow-2xl"
+                    className="mt-8 shadow-2xl border-8 border-black/60"
                   />
                 </center>
               </Link>
