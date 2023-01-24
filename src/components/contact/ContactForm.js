@@ -1,3 +1,4 @@
+import { Select } from "@mantine/core"
 import React, { useState } from "react"
 import { Button, Form, FormDiv } from "./Contactstyled"
 
@@ -23,13 +24,13 @@ const ContactForm = () => {
   const changeHandler = e => {
     setData({ ...data, [e.target.name]: e.target.value })
   }
-  // const submitHandler = e => {
-  //   e.preventDefault()
-  //   console.log(data)
-  // }
+  const onSubmit = e => {
+    e.preventDefault()
+  }
+
   return (
     <div>
-      <Form>
+      <Form onSubmit={onSubmit}>
         <FormDiv>
           <input
             className="appearance-none bg-transparent outline-none border-b text-base  text-sm  "
@@ -47,7 +48,6 @@ const ContactForm = () => {
             value={lastname}
             onChange={changeHandler}
           />
-
           <input
             className="appearance-none bg-transparent outline-none border-b  text-base  text-sm "
             type="email"
@@ -56,7 +56,6 @@ const ContactForm = () => {
             value={email}
             onChange={changeHandler}
           />
-
           <input
             className="appearance-none bg-transparent outline-none border-b text-base  text-sm  "
             type="number"
@@ -65,7 +64,6 @@ const ContactForm = () => {
             value={phoneNumber}
             onChange={changeHandler}
           />
-
           <input
             className="appearance-none min-w-full  col-span-2  bg-transparent outline-none border-b text-base  text-sm "
             type="text"
@@ -82,6 +80,14 @@ const ContactForm = () => {
             value={ComponyName}
             onChange={changeHandler}
           />
+          <div className="text-[16px] grid min-w-full col-span-2  ">
+            <label>Select Inquiries :</label>
+            <select className="border-2 rounded-sm border-black">
+              <option value="GeneralInquiries">Select Inquiries </option>
+              <option value="GeneralInquiries">General Inquiries </option>
+              <option value="BusinessInquiries"> Business Inquiries</option>
+            </select>
+          </div>
           <textarea
             className="appearance-none bg-transparent outline-none border-b min-w-full col-span-2 text-base  text-sm  "
             type="text"
@@ -90,13 +96,11 @@ const ContactForm = () => {
             value={Message}
             onChange={changeHandler}
           />
-
           {/* <input type="checkbox" className="min-w-10" />
           <p>
             By using this form you agree with the storage and handling of your
             data by this website. *
           </p> */}
-
           <Button>Submit Now</Button>
         </FormDiv>
       </Form>

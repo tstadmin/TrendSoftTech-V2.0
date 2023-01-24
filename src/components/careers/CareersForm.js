@@ -52,6 +52,15 @@ const CareersForm = () => {
               className="block w-full p-3 rounded border-black border-2 text-sm focus:border-blue-600 focus:outline-none"
             />
           </InputDiv>
+          <InputDiv className="grid">
+            <label className="text-lg">Select position </label>
+            <select className="border-2 rounded-sm border-black">
+              <option value="ReactJs  Developer">Select position </option>
+              <option value="ReactJs  Developer">ReactJs Developer </option>
+              <option value="Laravel Developer">Laravel Developer</option>
+              <option value="Web Designer">Web Designer</option>
+            </select>
+          </InputDiv>
           <InputDiv>
             <div className="240Screen:flex grid space-x-2">
               <input

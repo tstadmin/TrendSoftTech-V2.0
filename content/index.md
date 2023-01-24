@@ -49,7 +49,7 @@ home:
             - listItem:
                 id: 1
                 title: "Doc Accessibility"
-                page: "/services/docAccessibility/accessibleExcel/"
+                page: "/services/docAccessibility/accessiblePDFUA/"
             - listItem:
                 id: 2
                 title: "Web Accessibility"
@@ -193,7 +193,7 @@ home:
     subTitle: Services We Provide
     list:
       - listItem:
-          id: "1"
+          id: 1
           img: "/img/icons/WebDevelopment.svg"
           label: "read more Web Development"
           title: "Web Development"
@@ -201,7 +201,7 @@ home:
           page: "/services/webDevelopment/"
           CTA: "Read more.."
       - listItem:
-          id: "2"
+          id: 2
           img: "/img/icons/EcommerceDevelopment.svg"
           label: "read more E-Commerce Development"
           title: "E-Commerce Development"
@@ -209,7 +209,7 @@ home:
           page: "/services/ecommerceDevelopment/"
           CTA: "Read more..."
       - listItem:
-          id: "3"
+          id: 3
           img: "/img/icons/ProductDevelopment.svg"
           label: "read more Product Development"
           title: "Product Development"
@@ -217,7 +217,7 @@ home:
           page: "/services/productDevelopment/"
           CTA: "Read more..."
       - listItem:
-          id: "4"
+          id: 4
           img: "/img/icons/MobileDevelopment.svg"
           label: "read more Mobile Development"
           title: "Mobile Development"
@@ -225,7 +225,7 @@ home:
           page: "/services/mobileDevelopment/"
           CTA: "Read more..."
       - listItem:
-          id: "5"
+          id: 5
           img: "/img/icons/UiUXDesign.svg"
           label: "read more UI UX Design"
           title: "UI/UX Design"
@@ -233,13 +233,29 @@ home:
           page: "/services/uiUXDesign/"
           CTA: "Read more..."
       - listItem:
-          id: "6"
+          id: 6
           img: "/img/icons/DigitalMarketing.svg"
           label: "read more Digital Marketing"
           title: "Digital Marketing"
           description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built."
           page: "/services/digitalMarketing/"
           CTA: "Read more..."
+      - listItem:
+          id: 7
+          img: "/img/icons/Docaccessibility.svg"
+          label: "read more Doc Accessibility"
+          title: "Doc Accessibility"
+          description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
+          page: "/services/docAccessibility/accessiblePDFUA/"
+          CTA: "Read more..."
+      - listItem:
+          id: 8
+          img: "/img/icons/webaccessibility.svg"
+          label: "read more Web Accessibility"
+          title: "Web Accessibility"
+          description: "We offers a variety of services to help you make your new or existing website accessible to users ."
+          page: "/services/webAccessibility/"
+          CTA: "Read more..." 
   accessibilityServices:
     title: "Our Accessibility Services"
     list:
@@ -312,7 +328,7 @@ home:
           page: "/services/mobileDevelopment/"
       - listItem:
           id: 5
-          title: "UI/UX Development"
+          title: "UI/UX Design"
           page: "/services/uiUXDesign/"
       - listItem:
           id: 6
@@ -1111,7 +1127,7 @@ contact :
     addressimg : "/img/icons/locationpin.svg"
     altAddress: "Address images"
     title: "Contact Us"
-    emailTitle: "Email:"
+    emailTitle: "For General Inquiries:"
     email: "info@trendsofttech.com" 
     businessMailTitle: "For Business Inquiries:"      
     businessEmail: "service@trendsofttech.com" 

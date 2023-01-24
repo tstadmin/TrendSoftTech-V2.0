@@ -13,7 +13,7 @@ const ContactInfo = props => {
       <Info>
         <Image src={props.data.emailimg} />
         <EmailInfo>
-          <p className="md:text-lg font-semibold text-sm">
+          <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">
             {" "}
             {props.data.emailTitle}
           </p>
@@ -23,7 +23,7 @@ const ContactInfo = props => {
           >
             {props.data.email}
           </a>
-          <p className="md:text-lg font-semibold text-sm">
+          <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">
             {props.data.businessMailTitle}{" "}
           </p>
           <a
@@ -37,7 +37,7 @@ const ContactInfo = props => {
       <Info>
         <Image src={props.data.addressimg} />
         <AdderssInfo>
-          <p className="md:text-lg font-semibold text-sm">
+          <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">
             {props.data.addressOne}{" "}
           </p>
           <Link
@@ -47,7 +47,7 @@ const ContactInfo = props => {
           >
             {props.data.addressOneInfo}
           </Link>
-          <p className="md:text-lg font-semibold text-sm">
+          <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">
             {props.data.addressTwo}{" "}
           </p>
           <Link

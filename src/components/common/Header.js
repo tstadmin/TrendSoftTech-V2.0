@@ -21,7 +21,7 @@ export default function Header(props) {
     <div
       id="nav"
       role="navigation"
-      className=" flex items-center justify-between tracking-wide py-2 1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky 1920Screen:top-10   sm:top-10 top-9  bg-white z-[1] shadow-lg shadow-black/10"
+      className=" flex items-center justify-between tracking-wide py-2 1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky 1920Screen:top-10   sm:top-10 top-9  bg-[#f8f8f8] z-[1] shadow-lg shadow-black/10"
     >
       <NavBar>
         {/* Logo */}
@@ -54,7 +54,7 @@ export default function Header(props) {
             {opened ? (
               <button
                 id="navbarDropdown"
-                className="md:text-5xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
+                className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
               >
                 <span
                   data-bs-toggle="collapse"
@@ -68,7 +68,7 @@ export default function Header(props) {
             ) : (
               <button
                 aria-labelledby="navbarDropdown"
-                className="md:text-5xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
+                className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
               >
                 <span className="sr-only">menu button collapsed submenu</span>
                 <HiBars3BottomLeft />
@@ -81,7 +81,7 @@ export default function Header(props) {
               aria-label="Home Button"
               className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
             >
-              <FaHome className="sm:mt-1 mt-0" />
+              <FaHome className=" mt-0" />
             </Link>
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[151px] sm:top-[88px]  top-[82px] bg-black xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
+              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[151px] sm:top-[88px]  top-[82px] bg-[#4f8fcb] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
               : "fixed hidden "
           }
         >
@@ -108,7 +108,7 @@ export default function Header(props) {
                 <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
-                      className="hover:text-[#FFC93C] text-white/80  1920Screen:text-lg text-sm"
+                      className="hover:text-[#FFC93C] text-white/80  1920Screen:text-[16px] text-sm"
                       key={sub.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>

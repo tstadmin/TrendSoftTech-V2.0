@@ -51,9 +51,9 @@ const Index = () => {
           <AboutOurCompany aboutOurCompany={aboutOurCompany} />
           <BannerItems bannerItem={bannerItem} />
           <ServicesProvide servicesProvide={servicesProvide} />
-          <AccessibilityServices
+          {/* <AccessibilityServices
             accessibilityServices={accessibilityServices}
-          />
+          /> */}
           <ContactSupport contactUs={contactUs} />
           <WorkingProcess workingProcess={workingProcess} />
         </div>
