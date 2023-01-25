@@ -10,16 +10,16 @@ import {
 } from "./HomeStyle"
 
 const ServicesProvide = props => {
-  let timer = 0
-  let delay = 200
-  let prevent = false
-  const onDoubleClickHandler = e => {
-    clearTimeout(e.timer)
-    e.prevent = true
-    setTimeout(e => {
-      e.prevent = false
-    }, e.delay)
-  }
+  // let timer = 0
+  // let delay = 200
+  // let prevent = false
+  // const onDoubleClickHandler = e => {
+  //   clearTimeout(e.timer)
+  //   e.prevent = true
+  //   setTimeout(e => {
+  //     e.prevent = false
+  //   }, e.delay)
+  // }
 
   return (
     <Services>
@@ -27,12 +27,15 @@ const ServicesProvide = props => {
         <Title>{props.servicesProvide.subTitle}</Title>
       </ServicesTitleDiv>
       <ServicesProvideCard>
-        {props.servicesProvide.list?.map((item, id) => (
-          <Link to={item.listItem.page} onDoubleClick={onDoubleClickHandler}>
+        {props.servicesProvide.list?.map((item, idx) => (
+          <Link
+            to={item.listItem.page}
+            // onDoubleClick={onDoubleClickHandler}
+            key={item.listItem.id}
+          >
             <Card
               img={item.listItem.img}
               label={item.listItem.label}
-              key={id}
               title={item.listItem.title}
               description={item.listItem.description}
               page={item.listItem.page}

@@ -82,7 +82,7 @@ const ContactForm = () => {
           />
           <div className="text-[16px] grid min-w-full col-span-2  ">
             <label>Select Inquiries :</label>
-            <select className="border-2 rounded-sm border-black">
+            <select className="border-[1px] rounded-sm border-black">
               <option value="GeneralInquiries">Select Inquiries </option>
               <option value="GeneralInquiries">General Inquiries </option>
               <option value="BusinessInquiries"> Business Inquiries</option>
