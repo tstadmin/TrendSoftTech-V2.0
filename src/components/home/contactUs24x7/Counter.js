@@ -27,7 +27,7 @@ const Counter = () => {
         </li> */}
         <li>
           <CounterNumber>
-            {counter && <CountUp end={15} duration={1} />}+
+            {counter && <CountUp end={30} duration={1} />}+
           </CounterNumber>
           <CounterDescription>
             <Link

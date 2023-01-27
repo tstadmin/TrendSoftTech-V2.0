@@ -178,7 +178,7 @@ export const Working = styled.div`
   ${tw`lg:flex justify-center gap-4 px-8 `}
 `
 export const WorkingDescription = styled.p`
-  ${tw`sm:text-xl text-sm font-semibold text-black lg:text-2xl font-Poppins  `}
+  ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins  `}
 `
 export const WorkingCardNumber = styled.h3`
   ${tw`text-orange-400 `}
