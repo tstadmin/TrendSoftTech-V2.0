@@ -13,7 +13,7 @@ const Banner = props => {
       >
         <div className="  xl:pt-[15%] 540Screen:pt-[6%] 440Screen:pt-[15%] 340Screen:pt-[25%] pt-[4%] 1920Screen:pl-44 2xl:pl-20  pl-8 540Screen:space-y-16 space-y-6  md:text-white text-black  ">
           <div
-            className="animate__animated animate__fadeInLeft  1920Screen:w-[40vw] xl:w-[40vw] lg:w-[60vw] md:w-[80vw] sm:w-[60vw] 540Screen:w-[80vw]  324Screen:w-[250px] 240Screen:w-[200px]  "
+            className="animate__animated animate__fadeInLeft  1920Screen:w-[30vw] xl:w-[40vw] lg:w-[60vw] md:w-[80vw] sm:w-[60vw] 540Screen:w-[80vw]  324Screen:w-[250px] 240Screen:w-[200px]  "
             dangerouslySetInnerHTML={{ __html: props.banner.headers }}
           />
 

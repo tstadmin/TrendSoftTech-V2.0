@@ -31,7 +31,7 @@ export default function Header(props) {
           <img
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
-            className="md:w-[124px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px]"
+            className="md:w-[191px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px]"
           />
         </Link>
       </NavBar>
@@ -105,7 +105,7 @@ export default function Header(props) {
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.id}
-                className="uppercase  text-black mt-6 sm:text-xl text-sm sm:font-medium hidden 540Screen:block "
+                className="uppercase  text-[#0b78dd] mt-6 sm:text-xl text-sm sm:font-medium hidden 540Screen:block "
               >
                 {item.listItem.title}
                 <ul className="space-y-2 mt-4  font-normal ">

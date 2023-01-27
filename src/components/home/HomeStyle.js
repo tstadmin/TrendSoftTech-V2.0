@@ -2,7 +2,7 @@ import tw, { styled } from "twin.macro"
 import { Link } from "gatsby"
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h2`
-  ${tw` text-[#0b6ddc]`}
+  ${tw` text-[#dc1f2c]`}
 `
 // export const SubTitle = styled.h2`
 //   ${tw` text-[#0B70E1] md:text-3xl text-xl   `}

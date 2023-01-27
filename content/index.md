@@ -312,7 +312,7 @@ home:
     CTA: "Contact Us"
   workingProcess:
     title: WORKING PROCESS
-    description: "Our Working Process - How We Work For Our Customers"
+    description: "How We Work For Our Customers"
     CTA: "Contact Us"
     list:
       - listItem:
