@@ -22,7 +22,7 @@ const Index = () => {
   const [banner, setBanner] = useState([])
   const [bannerItem, setBannerItem] = useState([])
   const [aboutOurCompany, setAboutOurCompany] = useState([])
-  const [contactUs, setContactUs] = useState([])
+  const [clients, setClients] = useState([])
   const [servicesProvide, setServicesProvide] = useState([])
   const [accessibilityServices, setAccessibilityServices] = useState([])
   const [workingProcess, setWorkingProcess] = useState([])
@@ -33,7 +33,7 @@ const Index = () => {
     setAccessibilityServices(data.accessibilityServices)
     setBanner(data.banner)
     setAboutOurCompany(data.aboutOurCompany)
-    setContactUs(data.contactUs24x7)
+    setClients(data.clients)
     setWorkingProcess(data.workingProcess)
   }, [data])
 
@@ -54,7 +54,7 @@ const Index = () => {
           {/* <AccessibilityServices
             accessibilityServices={accessibilityServices}
           /> */}
-          <ContactSupport contactUs={contactUs} />
+          <ContactSupport clients={clients} />
           <WorkingProcess workingProcess={workingProcess} />
         </div>
       </Layout>
@@ -121,12 +121,13 @@ const dataQuery = graphql`
                   }
                 }
               }
-              contactUs24x7 {
-                title
-                personsImage
-                alt
-                description
-                CTA
+              clients {
+                list {
+                  listItem {
+                    id
+                    img
+                  }
+                }
               }
               workingProcess {
                 title

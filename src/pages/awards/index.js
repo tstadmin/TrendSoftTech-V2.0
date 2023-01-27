@@ -41,6 +41,7 @@ const dataQuery = graphql`
                   id
                   img
                   label
+                  title
                 }
               }
             }

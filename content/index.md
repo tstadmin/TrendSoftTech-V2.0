@@ -242,6 +242,14 @@ home:
           CTA: "Read more..."
       - listItem:
           id: 7
+          img: "/img/icons/DigitalMarketing.svg"
+          label: "read more Testing"
+          title: "Testing"
+          page: "/services/testing/"
+          description: "Trendsoft offers independent quality engineering and a wide range of software testing services and solutions..."
+          CTA: "READ MORE"
+      - listItem:
+          id: 8
           img: "/img/icons/Docaccessibility.svg"
           label: "read more Doc Accessibility"
           title: "Doc Accessibility"
@@ -249,7 +257,7 @@ home:
           page: "/services/docAccessibility/accessiblePDFUA/"
           CTA: "Read more..."
       - listItem:
-          id: 8
+          id: 9
           img: "/img/icons/webaccessibility.svg"
           label: "read more Web Accessibility"
           title: "Web Accessibility"
@@ -273,6 +281,29 @@ home:
           title: "Web Accessibility"
           description: "We offers a variety of services to help you make your new or existing website accessible to users ."
           page: ""
+  clients:
+    list:
+      - listItem:
+          id: 1
+          img: "/img/Clients/Amnet.png"
+      - listItem:
+          id: 2
+          img: "/img/Clients/HTS_BIO_Pharma.png"
+      - listItem:
+          id: 3
+          img: "/img/Clients/jio.png"
+      - listItem:
+          id: 4
+          img: "/img/Clients/Kumar_pamps.png"
+      - listItem:
+          id: 5
+          img: "/img/Clients/Nebula_Group.png"
+      - listItem:
+          id: 6
+          img: "/img/Clients/SS_Group.png"
+      - listItem:
+          id: 7
+          img: "/img/Clients/tenali_double_horse.png"
   contactUs24x7:
     personsImage: "/img/HomeImages/contactus2.svg"
     alt: "contact Frame image "
@@ -1177,14 +1208,14 @@ serviceCards:
         title: "Testing"
         link: "/services/testing/"
         label: "read more testing"
-        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
+        description: "Trendsoft offers independent quality engineering and a wide range of software testing services and solutions..."
         CTA: "READ MORE"
     - listItem:
         id: 7
         title: "Digital Marketing"
         link: "/services/digitalMarketing/"
         label: "read more Digital Marketing"
-        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built.."
+        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built..."
         CTA: "READ MORE"
 AccessibilityTabs:
   list:
@@ -1219,9 +1250,11 @@ awards&certifications:
     - listItem: 
         id: 1
         img: "/img/Awards/TRENDSOFTTECHNOLOGIESPRIVATELIMITED90013737.jpg" 
+        title: "Certificate Of Quality Management Sysytem"
         label: "TRENDSOFT TECHNOLOGIES PRIVATE LIMITED CERTIFICATE"      
     - listItem: 
         id: 2
         img: "/img/Awards/UDYAMREGISTREATIONCERTIFICATE.jpg"
-        label: "UDYAMREGISTREATION CERTIFICATE " 
+        title: "Udyam Registreation Certificate "
+        label: "UDYAM REGISTREATION CERTIFICATE " 
 ---

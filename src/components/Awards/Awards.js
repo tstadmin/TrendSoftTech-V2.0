@@ -13,14 +13,13 @@ const Awards = props => {
           {props.data.list.map((item, idx) => (
             <PhotoView src={item.listItem.img} key={item.listItem.id}>
               <Link to="" aria-label={item.listItem.label}>
-                <center>
+                <center className="space-y-4">
                   <img
                     src={item.listItem.img}
                     alt=""
-                    width="200px"
-                    height="500px"
-                    className="mt-8 shadow-2xl border-8 border-black/60"
+                    className="mt-8 shadow-2xl border-8 border-black/60 max-h-[300px]"
                   />
+                  <p>{item.listItem.title}</p>
                 </center>
               </Link>
             </PhotoView>
