@@ -31,7 +31,7 @@ export default function Header(props) {
           <img
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
-            className="md:w-[191px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px]"
+            className="md:w-[241px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px]"
           />
         </Link>
       </NavBar>
@@ -57,7 +57,7 @@ export default function Header(props) {
             {opened ? (
               <button
                 id="navbarDropdown"
-                className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
+                className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF]   "
               >
                 <span
                   data-bs-toggle="collapse"
@@ -66,7 +66,7 @@ export default function Header(props) {
                 >
                   expanded
                 </span>
-                <RxCross2 />
+                <RxCross2 className="hidden md:block" />
               </button>
             ) : (
               <button
@@ -82,7 +82,7 @@ export default function Header(props) {
             <Link
               to="/"
               aria-label="Home Button"
-              className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
+              className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF]  "
             >
               <FaHome className=" mt-0" />
             </Link>
@@ -97,7 +97,7 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[135px] sm:top-[88px]  top-[82px] bg-[#f8f8f8] xl:h-[40vh] lg:h-[60vh] h-[100vh] w-[100%] pt-6  "
+              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[134px] sm:top-[87px]  top-[81px] bg-[#f8f8f8] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
               : "fixed hidden "
           }
         >
@@ -125,7 +125,7 @@ export default function Header(props) {
 
           {/*  Mobile Menu */}
 
-          <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4 space-y-1 pb-24 ">
+          <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-24 ">
             <li className="text-sm text-black">
               <Link to={props.data.mobilelist.homePage}>
                 {props.data.mobilelist.home}
