@@ -185,7 +185,7 @@ home:
         title: "Best Security Practices"
         description: "High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices."
   aboutOurCompany:
-    img: "/img/HomeImages/AboutushomeFrame.svg"
+    img: "/img/HomeImages/aboutUS.svg"
     header: "About Our Company"
     description: "<p>Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. </p><p> Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions. </p> <p> With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals.</p>"
     CTA: "Learn more"

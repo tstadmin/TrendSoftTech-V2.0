@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
+
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
@@ -107,6 +108,13 @@ module.exports = {
             file: `https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Raleway:ital,wght@0,700;1,300&display=swap`,
           },
         ],
+      },
+    },
+
+    {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        src: `/ChatBox.js`, // Change to the script filename
       },
     },
   ],

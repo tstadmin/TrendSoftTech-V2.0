@@ -35,8 +35,8 @@ export default function OnclickTop() {
           }}
           style={{
             position: "fixed",
-            bottom: "40px",
-            right: "40px",
+            bottom: "20px",
+            left: "40px",
           }}
           aria-label="bottom to top "
         >
