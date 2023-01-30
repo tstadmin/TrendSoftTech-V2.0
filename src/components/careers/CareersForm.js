@@ -1,68 +1,89 @@
 import React from "react"
 import { FormHeading, InputDiv, Button } from "./CareersStyle"
 const CareersForm = () => {
+  function Submit(e) {
+    const formEle = document.querySelector("form")
+    const formDatab = new FormData(formEle)
+    fetch(
+      "https://script.google.com/macros/s/AKfycbxYMU27pdtpygpUe5YSq1t8F3V4IpyITbbksdvRUWOmjDmtlSw9F3WGmLzoiuwLlaLxSg/exec",
+      {
+        method: "POST",
+        body: formDatab,
+      }
+    )
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
   return (
     <div>
       <div className="grid   border border-black  space-y-8 sm:p-7 p-5">
         <FormHeading>Apply for this position</FormHeading>
+
         <div className="grid space-y-6 justify-items-center">
-          <InputDiv>
-            <label>Full Name</label>
+          <form
+            className=" md:w-[50vw] w-full space-y-6"
+            onSubmit={e => Submit(e)}
+          >
             <input
               type="text"
               className="block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none"
-              id="floatingInput"
+              name="FullName"
               placeholder="Full Name"
             />
-          </InputDiv>
 
-          <InputDiv>
-            <label>Email address</label>
             <input
               type="email"
               className="block w-full p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
-              id="floatingInput"
+              name="Email"
               placeholder="emailaddress@example.com"
             />
-          </InputDiv>
-          <InputDiv>
-            <label>Phone </label>
+
             <input
               type="number"
               className="block w-full p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
-              id="floatingInput"
+              name="PhoneNumber"
               placeholder="Phone number"
             />
-          </InputDiv>
-          <InputDiv>
-            <label>Cover Letter</label>
-            <textarea
+
+            <input
               type="text"
               className="block w-full  p-3 rounded border-black border-2 focus:border-blue-600 focus:outline-none"
-              id="floatingInput"
+              name="Letter"
               placeholder="Cover Letter"
             />
-          </InputDiv>
-          <InputDiv>
-            <label className="text-lg">Upload CV/Resume</label>
-            <input
+
+            {/* <input
               type="file"
-              id="myfile"
-              name="myfile"
+              name="file"
               className="block w-full p-3 rounded border-black border-2 text-sm focus:border-blue-600 focus:outline-none"
-            />
-          </InputDiv>
-          <InputDiv className="grid">
+            /> */}
+            {/* 
             <label className="text-lg">Select position </label>
             <select className="border-2 rounded-sm border-black">
-              <option value="ReactJs  Developer">Select position </option>
-              <option value="ReactJs  Developer">ReactJs Developer </option>
-              <option value="Laravel Developer">Laravel Developer</option>
-              <option value="Web Designer">Web Designer</option>
-            </select>
-          </InputDiv>
-          <InputDiv>
-            <div className="240Screen:flex grid space-x-2">
+              <option
+                type="text"
+                name="ReactJsDeveloper"
+                value="ReactJs Developer"
+              >
+                Select position
+              </option>
+              <option type="text" name="" value="ReactJs  Developer">
+                ReactJs Developer{" "}
+              </option>
+              <option type="text" name="" value="Laravel Developer">
+                Laravel Developer
+              </option>
+              <option type="text" value="Web Designer">
+                Web Designer
+              </option>
+            </select> */}
+
+            {/* <div className="240Screen:flex grid space-x-2">
               <input
                 type="checkbox"
                 id="vehicle2"
@@ -73,10 +94,13 @@ const CareersForm = () => {
                 By using this form you agree with the storage and handling of
                 your data by this website. *
               </p>
-            </div>
+            </div> */}
 
-            <Button>Submit</Button>
-          </InputDiv>
+            <input
+              type="submit"
+              className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-3 text-white hover:text-blue-400  text-[16px]"
+            />
+          </form>
         </div>
       </div>
     </div>

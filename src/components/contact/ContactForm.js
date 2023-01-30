@@ -73,36 +73,35 @@ const ContactForm = () => {
         onSubmit={e => Submit(e)}
       >
         <input
-          className="border-[1px] rounded-sm border-black  min-w-full p-2 bg-transparent outline-none border-b text-base  text-sm  "
+          className="border-[1px] rounded-sm border-black  min-w-full p-2 bg-transparent outline-none border-b text-base  text-sm"
           type="text"
           name="FullName"
           placeholder="Full Name"
         />
-
         <input
-          className="border-[1px] rounded-sm border-black  min-w-full  p-2 bg-transparent outline-none border-b  text-base  text-sm "
+          className="border-[1px] rounded-sm border-black  min-w-full  p-2 bg-transparent outline-none border-b  text-base  text-sm"
           type="email"
           name="Email"
           placeholder="email Address"
         />
-        <input
+        {/* <input
           className="border-[1px] rounded-sm border-black  min-w-full  col-span-2 p-2 bg-transparent outline-none border-b text-base  text-sm  "
           type="number"
           name="PhoneNumber"
           placeholder="Phone Number"
-        />
-        <input
+        /> */}
+        {/* <input
           className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base  text-sm "
           type="text"
           name="YourWebsite"
           placeholder="Your website"
-        />
-        <input
+        /> */}
+        {/* <input
           className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base  text-sm "
           type="text"
           name="ComponyName"
           placeholder="Compony Name"
-        />
+        /> */}
 
         {/* <select className=" text-[16px] grid min-w-full col-span-2 border-[1px] rounded-sm border-black">
           <option>Select Inquiries</option>
@@ -113,13 +112,13 @@ const ContactForm = () => {
             Business Inquiries
           </option>
         </select> */}
-
+        {/* 
         <textarea
           className="border-[1px] rounded-sm border-black p-2 bg-transparent outline-none border-b min-w-full col-span-2 text-base  text-sm  "
           type="text"
           name="Message"
           placeholder="Your Message Here"
-        />
+        /> */}
         <input
           type="submit"
           className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-1 text-white hover:text-blue-400  text-[16px]"
