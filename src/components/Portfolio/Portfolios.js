@@ -19,7 +19,7 @@ const Portfolios = props => {
               <img
                 src={item.listItem.img}
                 alt=""
-                className="lg:h-[500px] md:h-[400px] h-[300px] md:w-[90%] w-full object-cover  object-left-top "
+                className="lg:h-[320px] md:h-[400px] h-[300px] md:w-[90%] w-full object-cover  object-left-top "
               />
 
               <div className="grid justify-center  lg:w-72 w-52 h-auto space-y-3 bg-white shadow-xl lg:p-5 p-2   md:right-0 540Screen:right-[25%] sm:right-[32%]  340Screen:right-[20%] right-12 absolute md:top-32  top-56  ">
