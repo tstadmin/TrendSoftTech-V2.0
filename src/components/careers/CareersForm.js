@@ -57,12 +57,12 @@ const CareersForm = () => {
               placeholder="Cover Letter"
             />
 
-            {/* <input
+            <input
               type="file"
               name="file"
               className="block w-full p-3 rounded border-black border-2 text-sm focus:border-blue-600 focus:outline-none"
-            /> */}
-            {/* 
+            />
+
             <label className="text-lg">Select position </label>
             <select className="border-2 rounded-sm border-black">
               <option
@@ -81,9 +81,9 @@ const CareersForm = () => {
               <option type="text" value="Web Designer">
                 Web Designer
               </option>
-            </select> */}
+            </select>
 
-            {/* <div className="240Screen:flex grid space-x-2">
+            <div className="240Screen:flex grid space-x-2">
               <input
                 type="checkbox"
                 id="vehicle2"
@@ -94,7 +94,7 @@ const CareersForm = () => {
                 By using this form you agree with the storage and handling of
                 your data by this website. *
               </p>
-            </div> */}
+            </div>
 
             <input
               type="submit"
