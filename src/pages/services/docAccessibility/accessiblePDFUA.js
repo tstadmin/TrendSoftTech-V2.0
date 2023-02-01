@@ -16,7 +16,7 @@ const AccessiblePDFUA = () => {
   useEffect(() => {
     setAccessibleUA(data)
   }, [data])
-  console.log(accessibleUA)
+
   return (
     <div>
       <TopBar description="Accessibility-PDF/UA" />

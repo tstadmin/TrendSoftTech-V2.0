@@ -1,6 +1,5 @@
 import React from "react"
 import Clients from "./Clients"
-import ContactUs from "./ContactUs"
 import Counter from "./Counter"
 
 const ContactSupport = props => {

@@ -1,10 +1,8 @@
-import { Link } from "gatsby"
 import React from "react"
 
 import Tilt from "react-parallax-tilt"
 
 import {
-  Title,
   Working,
   WorkingDescription,
   WorkingCard,
@@ -27,12 +25,12 @@ const WorkingProcess = props => {
           {props.workingProcess.description}
         </WorkingDescription>
         <div>
-          <Link
+          {/* <Link
             to="/contact/"
             className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#1e6ff6] hover:duration-700  rounded-3xl p-3 text-white min-w-[122px] text-[16px]"
           >
             {props.workingProcess.CTA}
-          </Link>
+          </Link> */}
         </div>
       </Tilt>
 

@@ -2,9 +2,6 @@ import React from "react"
 import {
   Accessibility,
   Title,
-  SubTitle,
-  AccessibilityCard,
-  AccessibilityCardInfo,
   AccessibilityCardTitle,
   AccessibilityInfo,
   AccessibilityImage,

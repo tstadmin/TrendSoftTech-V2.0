@@ -5,9 +5,6 @@ import tw, { styled } from "twin.macro"
 export const InfoCardDiv = styled.div`
   ${tw`mt-20 space-y-16 `}
 `
-export const CareersHanding = styled.h2`
-  ${tw`text-center sm:text-6xl text-5xl font-semibold`}
-`
 export const InfoCards = styled.ul`
   ${tw`md:flex  justify-center md:space-x-10 md:px-0 px-8 md:space-y-0  space-y-6`}
 `

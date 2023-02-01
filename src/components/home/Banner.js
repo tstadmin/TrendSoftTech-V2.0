@@ -1,6 +1,5 @@
 import React from "react"
 import background from "../../../static/img/HomeImages/banner.svg"
-import { BannerTitle } from "./HomeStyle"
 import "animate.css"
 const Banner = props => {
   return (
@@ -17,9 +16,9 @@ const Banner = props => {
             dangerouslySetInnerHTML={{ __html: props.banner.headers }}
           />
 
-          <div className="animate__animated animate__fadeInLeft lg:text-2xl md:text-lg 340Screen:text-sm text-xs 2xl:w-40vw 540Screen:w-[40vw] 440Screen:w-[60vw] md:w-[35vw] w-[50vw] lg:w-[35vw] 340Screen:font-medium font-normal  ">
+          {/* <div className="animate__animated animate__fadeInLeft lg:text-2xl md:text-lg 340Screen:text-sm text-xs 2xl:w-40vw 540Screen:w-[40vw] 440Screen:w-[60vw] md:w-[35vw] w-[50vw] lg:w-[35vw] 340Screen:font-medium font-normal  ">
             {props.banner.title}
-          </div>
+          </div> */}
         </center>
       </div>
     </div>

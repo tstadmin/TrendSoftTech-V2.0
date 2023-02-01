@@ -1,10 +1,9 @@
 import { Link } from "gatsby"
-import React, { useState } from "react"
+import React from "react"
 import Card from "../common/Card"
 import {
   Services,
   ServicesTitleDiv,
-  ServicesSubTitle,
   ServicesProvideCard,
   Title,
 } from "./HomeStyle"

@@ -1,6 +1,5 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import { AiOutlineFilePdf } from "react-icons/ai"
+import { graphql, useStaticQuery } from "gatsby"
 import { BrochureDiv } from "./CommonStyle"
 const Brochure = () => {
   const query = useStaticQuery(BrochureData)

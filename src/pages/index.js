@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import BannerItems from "../components/home/BannerItems"
 
 import ServicesProvide from "../components/home/ServicesProvide"
-import AccessibilityServices from "../components/home/AccessibilityServices"
 import WorkingProcess from "../components/home/WorkingProcess"
 import AboutOurCompany from "../components/home/AboutOurCompany"
 

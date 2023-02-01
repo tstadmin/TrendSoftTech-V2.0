@@ -1,14 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import {
-  AboutOur,
-  AboutOurInfo,
-  AboutOurImage,
-  AboutOurTitle,
-  AboutOurSubTitle,
-  AboutOurDotImage,
-  Title,
-} from "./HomeStyle"
+import { AboutOur, AboutOurInfo, Title } from "./HomeStyle"
 
 const AboutOurCompany = props => {
   return (
