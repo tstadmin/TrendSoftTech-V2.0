@@ -8,7 +8,7 @@ const Banner = props => {
         style={{
           backgroundImage: `url(${background})`,
         }}
-        className=" font-Poppins xl:h-[calc(100vh-137px)] md:h-[calc(60vh-137px)] sm:h-[calc(60vh-137px)] 540Screen:h-[calc(60vh-137px)] 440Screen:h-[calc(60vh-137px)] 340Screen:h-[calc(60vh-137px)]  h-[calc(120vh-137px)] bg-no-repeat bg-cover bg-center  "
+        className=" font-Poppins 2048Screen:h-[calc(100vh-137px)] 1920Screen:h-[calc(100vh-137px)] xl:h-[calc(100vh-137px)] md:h-[calc(60vh-137px)] sm:h-[calc(60vh-137px)] 540Screen:h-[calc(60vh-137px)] 440Screen:h-[calc(60vh-137px)] 340Screen:h-[calc(60vh-137px)]  h-[calc(120vh-137px)] bg-no-repeat bg-cover bg-center  "
       >
         <center className="  xl:pt-[15%] 540Screen:pt-[10%] 440Screen:pt-[18%] 340Screen:pt-[25%] pt-[4%]  540Screen:space-y-16 space-y-6  text-white ">
           <div

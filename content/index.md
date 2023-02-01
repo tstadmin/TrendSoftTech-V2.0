@@ -1,7 +1,7 @@
 ---
 home:
   navbar:
-    logo: "/img/HomeImages/logo.svg"
+    logo: "/img/HomeImages/tstlogo.svg"
     alt: "TrendSoft tech logo"
     button: contact us
     contact: "contact us"
