@@ -23,13 +23,13 @@ const Index = () => {
   const [aboutOurCompany, setAboutOurCompany] = useState([])
   const [clients, setClients] = useState([])
   const [servicesProvide, setServicesProvide] = useState([])
-  const [accessibilityServices, setAccessibilityServices] = useState([])
+ 
   const [workingProcess, setWorkingProcess] = useState([])
 
   useEffect(() => {
     setBannerItem(data.bannerItems)
     setServicesProvide(data.servicesWeProvide)
-    setAccessibilityServices(data.accessibilityServices)
+
     setBanner(data.banner)
     setAboutOurCompany(data.aboutOurCompany)
     setClients(data.clients)
@@ -38,7 +38,7 @@ const Index = () => {
 
   return (
     <div>
-      <TopBar description="Wishing you all a very Happy Republic Day 2023!" />
+      <TopBar description="Wishing you all a very Happy Maha shivratri 2023!" />
       <Layout>
         <div id="content" role="main">
           <Seo title="Home" description="TrendSoftTech" />

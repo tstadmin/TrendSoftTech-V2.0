@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react"
+import React, { useState} from "react"
 import axios from "axios"
 const ContactForm = () => {
-  const formRef = useRef(null)
+  // const formRef = useRef(null)
 
   // function refreshPage() {
   //   window.location.reload(false)
@@ -50,7 +50,7 @@ const ContactForm = () => {
       >
         <input
           type="text"
-          className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-1  bg-transparent outline-none border-b text-base  text-sm "
+          className="border-[1px] rounded-sm border-black p-2 min-w-full col-span-2 md:col-span-1  bg-transparent outline-none border-b text-base  text-sm "
           required
           placeholder="Full Name"
           onChange={e => setName(e.target.value)}
@@ -59,7 +59,7 @@ const ContactForm = () => {
 
         <input
           type="number"
-          className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-1  bg-transparent outline-none border-b text-base  text-sm "
+          className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2 md:col-span-1  bg-transparent outline-none border-b text-base  text-sm "
           required
           placeholder="Phone Number"
           onChange={e => setNumber(e.target.value)}

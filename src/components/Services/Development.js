@@ -12,7 +12,7 @@ const Development = props => {
         {props.data.title ? <Title>{props.data.title}</Title> : ""}
         {props.data.test ? (
           <>
-            {props.data.test?.map((item, id) => (
+            {props.data.test?.map((item, idx) => (
               <div key={item.listItems.id}>
                 <PhasesTitle>{item.listItems.title}</PhasesTitle>
 

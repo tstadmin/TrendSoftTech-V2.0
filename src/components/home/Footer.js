@@ -128,7 +128,7 @@ const Footer = props => {
               <li>
                 <Link
                   to="/"
-                  aria-label="websit link http://www.trendsofttech.com"
+                  aria-label="website link: http://www.trendsofttech.com"
                 >
                   {props.data.website}{" "}
                 </Link>

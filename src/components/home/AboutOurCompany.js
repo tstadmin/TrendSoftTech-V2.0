@@ -10,12 +10,10 @@ const AboutOurCompany = props => {
         alt=""
         width="500px"
         height="508px"
+        className="rounded-md"
       />
       <AboutOurInfo>
-        {/* <AboutOurDotImage>
-          <AboutOurImage src={props.aboutOurCompany.imgDot} alt="" />
-        </AboutOurDotImage>
-        <AboutOurTitle>{props.aboutOurCompany.title}</AboutOurTitle> */}
+     
 
         <Title>{props.aboutOurCompany.header}</Title>
 

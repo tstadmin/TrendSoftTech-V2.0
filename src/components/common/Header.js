@@ -23,7 +23,7 @@ export default function Header(props) {
     <div
       id="nav"
       role="navigation"
-      className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky 1920Screen:top-10   sm:top-10 top-9  bg-[#f8f8f8] z-[1] shadow-lg shadow-black/10"
+      className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky 1920Screen:top-10   sm:top-10 top-9  bg-[#ebebeb] z-[1] shadow-lg shadow-black/10"
     >
       <NavBar>
         {/* Logo */}
@@ -31,7 +31,7 @@ export default function Header(props) {
           <img
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
-            className="md:w-[241px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px] "
+            className="md:w-[221px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px] "
           />
         </Link>
       </NavBar>
@@ -96,7 +96,7 @@ export default function Header(props) {
           <div className="xl:flex 1920Screen:pl-44 lg:pl-36 md:pl-24 pl-8  1920Screen:space-x-24 2xl:space-x-12 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
-                key={item.id}
+                key={item.listItem.id}
                 className="uppercase  text-[#0b78dd] mt-6 sm:text-lg text-sm sm:font-medium hidden 540Screen:block "
               >
                 {item.listItem.title}
@@ -105,7 +105,7 @@ export default function Header(props) {
                     <li
                       onClick={() => setOpened(false)}
                       className="hover:text-[#FFC93C] text-black/80  1920Screen:text-[16px] text-xs"
-                      key={sub.id}
+                      key={sub.listItem.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>
                     </li>
@@ -152,9 +152,9 @@ export default function Header(props) {
 
                   <ul>
                     <Disclosure.Panel className="px-4 text-sm text-black space-y-2 ">
-                      {props.data.mobilelist.itServices.map(i => (
-                        <li className="text-black">
-                          {" "}
+                      {props.data.mobilelist.itServices.map((i,idx) => (
+                        <li className="text-black" key={i.listItem.id}>
+                          
                           <Link to={i.listItem.page}>{i.listItem.title}</Link>
                         </li>
                       ))}
@@ -184,9 +184,9 @@ export default function Header(props) {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 text-black space-y-1">
-                    {props.data.mobilelist.subTest.map(i => (
-                      <li className="text-black">
-                        {" "}
+                    {props.data.mobilelist.subTest.map((i,idx) => (
+                      <li className="text-black" key={i.listItem.id}>
+                        
                         <Link to={i.listItem.page}>{i.listItem.title}</Link>
                       </li>
                     ))}

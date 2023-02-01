@@ -103,7 +103,7 @@ const CareersForm = () => {
                 </a> </label>
            </div> */}
 
-            <label className="text-lg">Select position </label>
+            <label className="text-lg" htmlFor="a">Select position </label>
             <select
               className="border-2 rounded-sm border-black"
               onChange={e => setOptions(e.target.value)}
