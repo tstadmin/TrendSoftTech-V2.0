@@ -5,7 +5,7 @@ import { PhotoProvider, PhotoView } from "react-photo-view"
 import "react-photo-view/dist/react-photo-view.css"
 
 const Awards = props => {
-  console.log(props)
+  
   return (
     <div>
       <PhotoProvider>

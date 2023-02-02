@@ -4,6 +4,7 @@ import Awards from "../../components/Awards/Awards"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import TopBar from "../../components/common/TopBar"
 import Layout from "../../components/layout"
+import Seo from "../../components/seo"
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -16,7 +17,8 @@ const Index = () => {
   return (
     <div>
       <TopBar description="Awards & Certifications" />
-      <Layout>
+      <Layout  title={{title:"Awards & Certifications"}}>
+      <Seo title="Awards & Certifications" description="TrendSoftTech" /> 
         <BreadCrumb
           img="/img/Awards/awardsFrame.svg"
           title="Awards & Certifications"

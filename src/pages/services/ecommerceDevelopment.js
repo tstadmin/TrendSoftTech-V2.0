@@ -30,7 +30,7 @@ const EcommerceDevelopment = () => {
   return (
     <div>
       <TopBar description="Ecommerce-Development" />
-      <Layout>
+      <Layout title={{title:"Ecommerce Development"}}>
         <Seo title="Ecommerce-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Ecommerce Development"
@@ -47,7 +47,7 @@ const EcommerceDevelopment = () => {
               </PortfoliosButton>
 
               <Brochure />
-              <GrowYourBusinnes />
+              {/* <GrowYourBusinnes /> */}
             </DevelopmentLayout>
           </DevelopmentDiv>
           <div id="scroll" className="top-0">

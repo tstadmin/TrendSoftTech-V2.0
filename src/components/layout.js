@@ -14,9 +14,8 @@ import Footer from "./home/Footer"
 import SkipToMainContent from "./common/SkipToMainContent"
 import BounceLoader from "react-spinners/BounceLoader"
 
-const Layout = ({ children }) => {
+const Layout = ({ children,title })=> {
   const query = useStaticQuery(layoutQuery)
-
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.home.navbar
   const footerData =
     query.allMarkdownRemark.edges[0].node.frontmatter.home.footer
@@ -28,7 +27,7 @@ const Layout = ({ children }) => {
     setFooter(footerData)
     setLoading(false)
   }, [footerData])
-
+  console.log(title)
   return (
     <div>
       <>
@@ -47,7 +46,7 @@ const Layout = ({ children }) => {
           <>
             <SkipToMainContent />
 
-            <Header data={data} />
+            <Header data={data} bar={title.title}/>
             <div id="mainContent">{children}</div>
             <Footer data={footer} />
             <OnclickTop />

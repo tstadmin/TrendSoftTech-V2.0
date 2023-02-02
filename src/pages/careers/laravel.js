@@ -18,8 +18,8 @@ const Laravel = () => {
   return (
     <div>
       <TopBar description="Laravel Developer" />
-      <Layout>
-        <Seo title="Careers" description="TrendSoftTech" />
+      <Layout title={{title:"Careers-laravel"}}>
+        <Seo title="Careers-laravel" description="TrendSoftTech" />
 
         <RequirementInfo data={laravel} />
       </Layout>

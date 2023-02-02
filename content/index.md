@@ -1,7 +1,7 @@
 ---
 home:
   navbar:
-    logo: "/img/HomeImages/tstlogo.svg"
+    logo: "/img/HomeImages/logoB.svg"
     alt: "TrendSoft tech logo"
     button: contact us
     contact: "contact us"
@@ -74,21 +74,31 @@ home:
                 page: "/services/uiUXDesign/"
       - listItem:
           id: 6
-          title: "About"
+          title: "awards"
           page: "/awards/"     
           subTitle: 
             - listItem:
                 id: 1
                 title: "Awards & Certifications"
                 page: "/awards/"
+      - listItem:
+          id: 7
+          title: "Careers"
+          page: "/awards/"     
+          subTitle: 
             - listItem:
-                id: 2
+                id: 1
                 title: "Careers"
                 page: "/careers/" 
+      - listItem:
+          id: 8
+          title: "Contact"
+          page: "/awards/"     
+          subTitle: 
             - listItem:
-                id: 3
+                id: 1
                 title: "Contact"
-                page: "/contact/"       
+                page: "/contact/"                             
     mobilelist:
           home: "Home"
           homePage: "/"
@@ -1241,7 +1251,7 @@ AccessibilityTabs:
         link: "/services/docAccessibility/accessibleExcel"      
 Brochure:
     description: "Download our company brochure here"
-    button: "Download Now PDF"      
+    button: "Download PDF"      
 Grow:
     description: "Grow Your Business and Build Your Website or Software With Us."
     button: "Contact Us"  

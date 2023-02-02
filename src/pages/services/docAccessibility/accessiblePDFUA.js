@@ -20,7 +20,7 @@ const AccessiblePDFUA = () => {
   return (
     <div>
       <TopBar description="Accessibility-PDF/UA" />
-      <Layout>
+      <Layout title={{title:"Accessible PDF / UA"}}>
         <Seo title="Accessibility-PDF/UA" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"

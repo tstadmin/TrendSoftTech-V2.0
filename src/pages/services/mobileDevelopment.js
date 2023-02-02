@@ -22,7 +22,7 @@ const MobileDevelopment = () => {
   return (
     <div>
       <TopBar description="Mobile-Development" />
-      <Layout>
+      <Layout title={{title:"Mobile Development"}}>
         <Seo title="Mobile-Development" description="TrendSoftTech" />
 
         <BreadCrumb

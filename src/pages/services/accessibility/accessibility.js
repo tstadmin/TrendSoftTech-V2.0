@@ -19,7 +19,7 @@ const Accessibility = props => {
   return (
     <div>
       <TopBar description="Accessibility-Testing" />
-      <Layout>
+      <Layout title={{title:"Accessibility"}}>
         <Seo title="Accessibility" description="TrendSoftTech" />
         <BreadCrumb
           title="Accessibility"

@@ -30,7 +30,7 @@ const UiUXDesign = () => {
   return (
     <div>
       <TopBar description="UI/UX Design" />
-      <Layout>
+      <Layout title={{ title:"UI / UX Design"}}>
         <Seo title="UI/UX Design" description="TrendSoftTech" />
         <BreadCrumb
           title="UI / UX Design"
@@ -48,7 +48,7 @@ const UiUXDesign = () => {
               </PortfoliosButton>
 
               <Brochure />
-              <GrowYourBusinnes />
+              {/* <GrowYourBusinnes /> */}
             </DevelopmentLayout>
           </DevelopmentDiv>
           <div id="scroll" className="top-0">

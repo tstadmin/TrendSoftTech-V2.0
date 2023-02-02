@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
-
+import { Link } from "gatsby"
 import { FiChevronDown } from "react-icons/fi"
 
 import { graphql, useStaticQuery } from "gatsby"
@@ -32,7 +32,7 @@ const WebDevelopment = () => {
   return (
     <div>
       <TopBar description="Web-Development" />
-      <Layout>
+      <Layout title={{title:"Web Development"}} >
         <Seo title="Web-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Web Development"
@@ -43,14 +43,14 @@ const WebDevelopment = () => {
           <DevelopmentDiv>
             <Development data={data} />
             <DevelopmentLayout>
-              <PortfoliosButton>
-                <PortfolioLink className=" button " href="#scroll">
-                  Portfolio <FiChevronDown className="mt-1 text-2xl  " />
-                </PortfolioLink>
-              </PortfoliosButton>
-
+       
+                <Link className=" bg-[#1E6ff5] text-white text-sm p-3 w-60 rounded-md flex  justify-center " href="#scroll">
+                  Portfolio 
+                </Link>
+   
+              {/* <FiChevronDown className="mt-1 text-2xl  " /> */}
               <Brochure />
-              <GrowYourBusinnes />
+              {/* <GrowYourBusinnes /> */}
             </DevelopmentLayout>
           </DevelopmentDiv>
           <div id="scroll" className="top-0">

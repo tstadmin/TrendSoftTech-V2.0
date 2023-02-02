@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <div>
       <TopBar description="Services" />
-      <Layout>
+      <Layout title={{title:"Services"}}>
         <Seo title="Services" description="TrendSoftTech" />
         <BreadCrumb
           title=" IT Services"

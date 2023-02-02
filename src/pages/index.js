@@ -39,7 +39,7 @@ const Index = () => {
   return (
     <div>
       <TopBar description="Wishing you all a very Happy Maha shivratri 2023!" />
-      <Layout>
+      <Layout  title={{title:"Home"}}>
         <div id="content" role="main">
           <Seo title="Home" description="TrendSoftTech" />
           {/* <Helmet>

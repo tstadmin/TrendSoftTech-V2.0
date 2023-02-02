@@ -20,7 +20,7 @@ const Contact = () => {
         title="service@trendsofttech.com"
         description="info@trendsofttech.com"
       />
-      <Layout>
+      <Layout  title={{title:"Contact"}}>
         <Seo title="Contact " description="TrendSoftTech" />
         <BreadCrumb title="Contact Us" img="/img/contact/contact_Frame.svg" />
         <ContactIndex data={contact} />

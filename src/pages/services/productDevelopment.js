@@ -24,7 +24,7 @@ const ProductDevelopment = () => {
   return (
     <div>
       <TopBar description="Product-Development" />
-      <Layout>
+      <Layout title={{title:"Product Development"}}>
         <Seo title="Product-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Product Development"

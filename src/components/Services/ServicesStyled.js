@@ -106,7 +106,7 @@ export const PortfoliosButton = styled.div`
 ///---- Services development style component ------
 
 export const DevelopmentDiv = styled.div`
-  ${tw` xl:flex mt-10 justify-center xl:space-x-14 lg:px-48 sm:px-24 px-12 `}
+  ${tw` xl:flex mt-10 justify-center  xl:space-x-14 2xl:px-48  sm:px-8 px-12 `}
 `
 export const DevelopmentLayout = styled.div`
   ${tw`mt-8 space-y-10`}

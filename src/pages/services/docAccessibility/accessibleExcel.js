@@ -20,7 +20,7 @@ const AccessibleExcel = () => {
   return (
     <div>
       <TopBar description="Accessibility-Excel" />
-      <Layout>
+      <Layout title={{title:"Accessible Excel"}}>
         <Seo title="Accessibility-Excel" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"

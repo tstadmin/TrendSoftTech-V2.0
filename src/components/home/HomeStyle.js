@@ -36,9 +36,14 @@ export const BannerImage = styled.img`
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
 
+// export const AboutOur = styled.div`
+//   ${tw`lg:flex grid sm:mt-16 mt-32 2xl:space-x-60 xl:space-x-40 lg:space-x-16 md:space-y-20 space-y-10  justify-center 2xl:px-48 md:px-12  px-8`}
+// `
+
 export const AboutOur = styled.div`
-  ${tw`lg:flex grid sm:mt-16 mt-32 2xl:space-x-60 xl:space-x-40 lg:space-x-16 md:space-y-20 space-y-10  justify-center 2xl:px-48 md:px-12  px-8`}
-`
+  ${tw`lg:flex grid sm:mt-16 mt-32 justify-center lg:gap-16 gap-6 2xl:px-48 md:px-12  px-8`}
+ `
+
 export const AboutOurInfo = styled.div`
   ${tw`space-y-5 relative`}
 `

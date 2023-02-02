@@ -21,8 +21,8 @@ const DigitalMarketing = () => {
 
   return (
     <div>
-      <TopBar description="Digital-Marketing" />
-      <Layout>
+      <TopBar description="Digital Marketing" />
+      <Layout title={{title:"Digital Marketing"}}>
         <Seo title="Digital-Marketing" description="TrendSoftTech" />
         <BreadCrumb
           title="Digital Marketing"

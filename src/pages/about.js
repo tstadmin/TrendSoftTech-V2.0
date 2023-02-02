@@ -20,7 +20,7 @@ const About = () => {
   return (
     <div>
       <TopBar description="About Us" />
-      <Layout>
+      <Layout  title={{title:"About Us"}}>
         <div>
           <Seo title="About" description="TrendSoftTech" />
           <BreadCrumb img="/img/AboutImages/About_Frame.svg" title="About" />

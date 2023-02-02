@@ -19,7 +19,7 @@ const AccessiblePPT = () => {
   return (
     <div>
       <TopBar description="Accessibility-PPT" />
-      <Layout>
+      <Layout title={{title:"Accessible PPT"}}>
         <Seo title="Accessibility-PPT" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"

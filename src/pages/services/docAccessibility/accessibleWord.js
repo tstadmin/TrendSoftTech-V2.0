@@ -20,7 +20,7 @@ const AccessibleWord = () => {
   return (
     <div>
       <TopBar description="Accessibility-Word" />
-      <Layout>
+      <Layout title={{title:"Accessible Word"}}>
         <Seo title="Accessibility-Word" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"

@@ -22,7 +22,7 @@ const Testing = () => {
   return (
     <div>
       <TopBar description="Testing" />
-      <Layout>
+      <Layout title={{title:"Testing"}}>
         <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img="/img/BreadCrumb/testing.svg" />
 

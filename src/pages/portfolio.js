@@ -17,7 +17,7 @@ const Portfolio = () => {
   return (
     <div>
       <TopBar description="Portfolio" />
-      <Layout>
+      <Layout  title={{title:"Portfolio"}}>
         <Seo title="About" description="TrendSoftTech" />
         <BreadCrumb img="/img/AboutImages/About_Frame.svg" title="portfolios" />
         <Portfolios data={portfolio} />

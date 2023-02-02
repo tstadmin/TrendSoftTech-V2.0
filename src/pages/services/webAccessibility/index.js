@@ -20,7 +20,7 @@ const WebAccessible = () => {
   return (
     <div>
       <TopBar description="Web-Accessibility" />
-      <Layout>
+      <Layout title={{ title:"Web Accessibility"}}>
         <Seo title="Web-Accessibility" description="TrendSoftTech" />
         <BreadCrumb
           title="Web Accessibility"

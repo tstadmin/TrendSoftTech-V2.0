@@ -25,15 +25,22 @@ export default function Header(props) {
       role="navigation"
       className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky 1920Screen:top-10   sm:top-10 top-9  bg-[#ebebeb] z-[1] shadow-lg shadow-black/10"
     >
-      <NavBar>
+      <NavBar >
         {/* Logo */}
+        <div className="grid space-y-1 p-2">
         <Link to="/">
           <img
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
-            className="md:w-[221px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px] "
+            // className="md:w-[181px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px] "
+             className="md:w-[211px]  540Screen:w-[150px]  w-[120px] 340Screen:w-[150px]  "
+       //  B  className="md:w-[141px]  540Screen:w-[150px]  w-[120px] 340Screen:w-[150px]  " 
+      // className="md:w-[221px]  540Screen:w-[150px]  w-[120px] 340Screen:w-[150px]  "
+
           />
         </Link>
+        <p className="lg:text-base sm:text-sm text-[10px] text-center  font-semibold text-black">{props.bar}</p> 
+        </div>
       </NavBar>
 
       {/* menu items */}
@@ -89,22 +96,22 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[134px] sm:top-[86px]  top-[81px] bg-[#f8f8f8] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
+              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[134px] sm:top-[86px]  top-[81px] bg-[#0f6cb3] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-44 lg:pl-36 md:pl-24 pl-8  1920Screen:space-x-24 2xl:space-x-12 xl:space-x-12 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-44 2xl:pl-28 lg:pl-16 md:pl-24 pl-8  1920Screen:space-x-18 2xl:space-x-12 xl:space-x-8 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.listItem.id}
-                className="uppercase  text-[#0b78dd] mt-6 sm:text-lg text-sm sm:font-medium hidden 540Screen:block "
+                className="uppercase  text-white mt-6 sm:text-lg text-sm sm:font-medium hidden 540Screen:block "
               >
                 {item.listItem.title}
                 <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
                       onClick={() => setOpened(false)}
-                      className="hover:text-[#FFC93C] text-black/80  1920Screen:text-[16px] text-xs"
+                      className="hover:text-[#FFC93C] text-[#ebebeb]  1920Screen:text-[16px] text-xs"
                       key={sub.listItem.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>

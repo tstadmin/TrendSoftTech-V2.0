@@ -77,7 +77,7 @@ const ContactForm = () => {
           type="text"
           className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base  text-sm "
           required
-          placeholder="Enter your Your Websits"
+          placeholder="Enter your Websits"
           onChange={e => setWebsite(e.target.value)}
           value={website}
         />
