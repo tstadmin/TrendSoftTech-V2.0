@@ -1,20 +1,5 @@
 
 
-/* *{
-    padding: 0;
-    margin: 0;
-}
-
-.main .icons{
-   
-    display: none ; rcw-widget-container
-}
-
-.main .btn:hover .icons{
-   
-    display: block; rcw-close-widget-container
-} */
-
 
 .rcw-widget-container {
     left: 0px;

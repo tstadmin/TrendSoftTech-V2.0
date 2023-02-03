@@ -39,14 +39,19 @@ export default function Header(props) {
 
           />
         </Link>
-        <p className="lg:text-base sm:text-sm text-[10px] text-center  font-semibold text-black">{props.bar}</p> 
+        {
+          props.bar ?(
+            <p className="lg:text-base sm:text-sm text-[10px] text-center  font-semibold text-black">{props.bar}</p> 
+
+          ):("")
+        }
         </div>
       </NavBar>
 
       {/* menu items */}
 
       <div>
-        <div className="flex space-x-4 md:space-x-12 uppercase  ">
+        <div className="flex space-x-4 md:space-x-0 uppercase  ">
           <p
             // onClick={() => setOpened(!opened)}
             onClick={handleNav}
@@ -65,7 +70,7 @@ export default function Header(props) {
                 >
                   expanded
                 </span>
-                <RxCross2 className="hidden md:block" />
+                <RxCross2 className="hidden md:block text-3xl" />
               </button>
             ) : (
               <button
@@ -73,7 +78,7 @@ export default function Header(props) {
                 className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
               >
                 <span className="sr-only">menu button collapsed submenu</span>
-                <HiBars3BottomLeft />
+                <HiBars3BottomLeft  className="text-3xl" />
               </button>
             )}
           </p>
@@ -83,7 +88,7 @@ export default function Header(props) {
               aria-label="Home Button"
               className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF]  "
             >
-              <FaHome className=" mt-0" />
+              <FaHome  className="text-3xl" />
             </Link>
           </p>
         </div>
@@ -100,7 +105,7 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-44 2xl:pl-28 lg:pl-16 md:pl-24 pl-8  1920Screen:space-x-18 2xl:space-x-12 xl:space-x-8 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-52 2xl:pl-32 lg:pl-16 md:pl-24 pl-8   1920Screen:space-x-18 2xl:space-x-7 xl:space-x-8 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.listItem.id}

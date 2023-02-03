@@ -169,6 +169,12 @@ home:
           careersPage: "/careers/"
           contact: "contact"
           contactPage: "/contact/"
+  carousel:
+    list:
+      -listItem:
+            id: 1
+            img: ""
+            description: ""        
   banner:
     headers: "<h1>We Increase your Business Success</h1> "
     title: "Use the modern technology and IT Services"
@@ -1226,7 +1232,7 @@ serviceCards:
         link: "/services/digitalMarketing/"
         label: "read more Digital Marketing"
         description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built..."
-        CTA: "READ MORE"
+        CTA: "READ MORE"  
 AccessibilityTabs:
   list:
     - listItem:
@@ -1248,7 +1254,7 @@ AccessibilityTabs:
     - listItem:
         id: 5
         title: "Accessible Excel"
-        link: "/services/docAccessibility/accessibleExcel"      
+        link: "/services/docAccessibility/accessibleExcel"            
 Brochure:
     description: "Download our company brochure here"
     button: "Download PDF"      

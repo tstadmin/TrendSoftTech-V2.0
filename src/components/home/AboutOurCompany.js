@@ -8,9 +8,8 @@ const AboutOurCompany = props => {
       <img
         src={props.aboutOurCompany.img}
         alt=""
-        width="300px"
-        height="300px"
-        className="rounded-md"
+ 
+        className="rounded-md lg:w-[300px] lg:h-[300px] w-[400px] h-[400px] "
       
       />
       <AboutOurInfo>

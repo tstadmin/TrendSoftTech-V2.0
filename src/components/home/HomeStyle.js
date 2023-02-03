@@ -41,7 +41,7 @@ export const BannerImage = styled.img`
 // `
 
 export const AboutOur = styled.div`
-  ${tw`lg:flex grid sm:mt-16 mt-32 justify-center lg:gap-16 gap-6 2xl:px-48 md:px-12  px-8`}
+  ${tw`lg:flex grid sm:mt-16 mt-8 justify-center lg:gap-16 gap-6 2xl:px-48 md:px-12  px-8`}
  `
 
 export const AboutOurInfo = styled.div`

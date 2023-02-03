@@ -16,7 +16,7 @@ const WebAccessible = () => {
   useEffect(() => {
     setWebAccessible(data)
   }, [data])
-  console.log(data)
+
   return (
     <div>
       <TopBar description="Web-Accessibility" />

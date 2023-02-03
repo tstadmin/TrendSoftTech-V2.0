@@ -1,24 +1,55 @@
 import React from "react"
 import { IoIosArrowForward } from "react-icons/io"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import { TabButton } from "./ServicesStyled"
 
+const data =[
+  {
+    id:1,
+    title: "Accessible PDF/UA",
+    link: "/services/docAccessibility/accessiblePDFUA",
+  },
+  {
+    id: 2,
+    title: "Accessible PDF Form",
+    link: "/services/docAccessibility/accessiblePDFForms",
+  },
+  {
+    id: 3,
+    title: "Accessible Word",
+    link: "/services/docAccessibility/accessibleWord",
+  },
+  {
+    id: 4,
+    title: "Accessible PPT",
+    link: "/services/docAccessibility/accessiblePPT",
+  },
+  {
+    id: 5,
+    title: "Accessible Excel",
+    link: "/services/docAccessibility/accessibleExcel" ,
+  }
+ 
+    
+  
+]
 const Tabs = () => {
-  const query = useStaticQuery(tabsData)
+  // const query = useStaticQuery(TabsData)
+  // const data =query.allMarkdownRemark.edges[0].node.frontmatter.services.digitalMarketing
 
-  const data =
-    query.allMarkdownRemark.edges[0].node.frontmatter.AccessibilityTabs
+
+
 
   return (
     <div className="2xl:px-24 px-8 mt-16">
       <ul className="grid 2xl:grid-cols-5 lg:grid-cols-3 gap-3 ">
-        {data.list.map((item, idx) => (
-          <TabButton key={item.listItem.id}>
+        {data.map((item, idx) => (
+          <TabButton key={item.id}>
             <Link
               className="hover:bg-blue-500 border-2 border-blue-500  duration-700   rounded-none flex space-x-3 text-xl justify-center Tab "
-              href={item.listItem.link}
+              href={item.link}
             >
-              {item.listItem.title}
+              {item.title}
               <IoIosArrowForward className="mt-1 ml-1 text-xl  " />
             </Link>
           </TabButton>
@@ -30,24 +61,23 @@ const Tabs = () => {
 
 export default Tabs
 
-const tabsData = graphql`
-  query {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            AccessibilityTabs {
-              list {
-                listItem {
-                  id
-                  link
-                  title
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// const TabsData = graphql`
+// query MyQuery {
+//   allMarkdownRemark {
+//     edges {
+//       node {
+//         frontmatter {
+//           AccessibilityTabs {
+//             list {
+//               listItem {
+//                 id
+//                 link
+//                 title
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }`

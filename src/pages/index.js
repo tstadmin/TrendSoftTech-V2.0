@@ -14,6 +14,8 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
 import TopBar from "../components/common/TopBar"
+import Carousel from "../components/home/Carousel"
+
 
 const Index = () => {
   const query = useStaticQuery(dataQuery)
@@ -46,7 +48,8 @@ const Index = () => {
           <title>Home | TrendSoftTech </title>
           <meta name="description" content="Home | TrendSoftTech" />
         </Helmet> */}
-          <Banner banner={banner} />
+        <Carousel/>
+          {/* <Banner banner={banner} /> */}
           <AboutOurCompany aboutOurCompany={aboutOurCompany} />
           <BannerItems bannerItem={bannerItem} />
           <ServicesProvide servicesProvide={servicesProvide} />

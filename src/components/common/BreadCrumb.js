@@ -11,8 +11,8 @@ const BreadCrumb = props => {
         <BreadCrumbHeader>{props.title}</BreadCrumbHeader>
       </BreadCrumInfo> */}
       <div className="bg-[#146aba] p-1 ">
-      <p className=" text-white space-x-3 2xl:ml-28 ml-8 1920Screen:ml-48 "><Link to="/" className="underline">Home</Link> <span> /</span>
-      <span>{props.title}</span></p>
+      <div className=" text-white space-x-3 2xl:ml-28 ml-8 1920Screen:ml-48 flex"><Link to="/" className="underline">Home</Link> <p className=" text-white"> /</p>
+      <p className=" text-white" aria-current="page">{props.title}</p></div>
       </div>
     </div>
   )

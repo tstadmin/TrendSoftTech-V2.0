@@ -17,7 +17,7 @@ const DigitalMarketing = () => {
   useEffect(() => {
     setDigital(data)
   }, [data])
-  console.log(data)
+
 
   return (
     <div>

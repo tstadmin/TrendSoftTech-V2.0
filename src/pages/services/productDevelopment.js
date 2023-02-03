@@ -19,7 +19,7 @@ const ProductDevelopment = () => {
   useEffect(() => {
     setproduct(data)
   }, [data])
-  console.log(data)
+
 
   return (
     <div>

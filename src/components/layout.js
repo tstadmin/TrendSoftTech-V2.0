@@ -27,7 +27,7 @@ const Layout = ({ children,title })=> {
     setFooter(footerData)
     setLoading(false)
   }, [footerData])
-  console.log(title)
+  
   return (
     <div>
       <>

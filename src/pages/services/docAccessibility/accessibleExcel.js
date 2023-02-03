@@ -16,12 +16,11 @@ const AccessibleExcel = () => {
   useEffect(() => {
     setAccessibleExcel(data)
   }, [data])
-  console.log(data)
   return (
     <div>
       <TopBar description="Accessibility-Excel" />
       <Layout title={{title:"Accessible Excel"}}>
-        <Seo title="Accessibility-Excel" description="TrendSoftTech" />
+       <Seo title="Accessibility-Excel" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible Excel"
@@ -30,7 +29,7 @@ const AccessibleExcel = () => {
         <ServicesLayout>
           <Accessible data={accessibleExcel} />
         </ServicesLayout>
-        <Tabs />
+        <Tabs /> 
       </Layout>
     </div>
   )

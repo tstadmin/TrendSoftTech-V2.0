@@ -25,7 +25,7 @@ const UiUXDesign = () => {
   useEffect(() => {
     setDesign(data)
   }, [data])
-  console.log(data)
+
 
   return (
     <div>
