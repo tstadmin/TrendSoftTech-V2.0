@@ -7,7 +7,6 @@ import Development from "../../components/Services/Development"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import Seo from "../../components/seo"
-import TopBar from "../../components/common/TopBar"
 
 const MobileDevelopment = () => {
   const query = useStaticQuery(MobileData)
@@ -21,7 +20,6 @@ const MobileDevelopment = () => {
 
   return (
     <div>
-      <TopBar description="Mobile-Development" />
       <Layout title={{title:"Mobile Development"}}>
         <Seo title="Mobile-Development" description="TrendSoftTech" />
 
@@ -31,7 +29,7 @@ const MobileDevelopment = () => {
         />
         {/* <Tabs /> */}
         <ServicesLayout>
-          <Development data={mobile} />
+          <Development data={mobile}   title="Mobile Development" />
         </ServicesLayout>
       </Layout>
     </div>

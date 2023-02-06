@@ -6,7 +6,6 @@ import ServicesLayout from "../../../components/ServicesLayout"
 import BreadCrumb from "../../../components/common/BreadCrumb"
 import Seo from "../../../components/seo"
 import Tabs from "../../../components/services/Tabs"
-import TopBar from "../../../components/common/TopBar"
 const AccessiblePPT = () => {
   const query = useStaticQuery(accessiblePPTData)
   const [accessiblePPT, setAccessiblePPT] = useState([])
@@ -18,7 +17,6 @@ const AccessiblePPT = () => {
 
   return (
     <div>
-      <TopBar description="Accessibility-PPT" />
       <Layout title={{title:"Accessible PPT"}}>
         <Seo title="Accessibility-PPT" description="TrendSoftTech" />
         <BreadCrumb
@@ -27,7 +25,7 @@ const AccessiblePPT = () => {
         />
 
         <ServicesLayout>
-          <Accessible data={accessiblePPT} />
+          <Accessible data={accessiblePPT} title="Accessible PPT" />
         </ServicesLayout>
         <Tabs />
       </Layout>

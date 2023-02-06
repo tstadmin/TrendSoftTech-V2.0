@@ -7,7 +7,6 @@ import Development from "../../components/Services/Development"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import Seo from "../../components/seo"
-import TopBar from "../../components/common/TopBar"
 
 const ProductDevelopment = () => {
   const query = useStaticQuery(productData)
@@ -23,7 +22,6 @@ const ProductDevelopment = () => {
 
   return (
     <div>
-      <TopBar description="Product-Development" />
       <Layout title={{title:"Product Development"}}>
         <Seo title="Product-Development" description="TrendSoftTech" />
         <BreadCrumb
@@ -32,7 +30,7 @@ const ProductDevelopment = () => {
         />
 
         <ServicesLayout>
-          <Development data={product} />
+          <Development data={product} title="Product Development"  />
         </ServicesLayout>
       </Layout>
     </div>

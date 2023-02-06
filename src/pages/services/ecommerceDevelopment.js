@@ -8,14 +8,12 @@ import { PortfoliosButton } from "../../components/Services/ServicesStyled"
 import { FiChevronDown } from "react-icons/fi"
 import Seo from "../../components/seo"
 import Brochure from "../../components/common/Brochure"
-import GrowYourBusinnes from "../../components/common/GrowYourBusinnes"
 import Portfolios from "../../components/Portfolio/Portfolios"
 import {
   DevelopmentDiv,
   DevelopmentLayout,
   PortfolioLink,
 } from "../../components/Services/ServicesStyled"
-import TopBar from "../../components/common/TopBar"
 const EcommerceDevelopment = () => {
   const query = useStaticQuery(ecommercData)
   const data =
@@ -29,7 +27,6 @@ const EcommerceDevelopment = () => {
 
   return (
     <div>
-      <TopBar description="Ecommerce-Development" />
       <Layout title={{title:"Ecommerce Development"}}>
         <Seo title="Ecommerce-Development" description="TrendSoftTech" />
         <BreadCrumb
@@ -38,7 +35,7 @@ const EcommerceDevelopment = () => {
         />
         <div>
           <DevelopmentDiv>
-            <Development data={ecommerc} />
+            <Development data={ecommerc}  title="Ecommerce Development" />
             <DevelopmentLayout>
               <PortfoliosButton>
                 <PortfolioLink className="button" href="#scroll">

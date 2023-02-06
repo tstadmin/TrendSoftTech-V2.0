@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { imagess} from "../../../static/img/HomeImages/banner.svg"
 import { Button } from '@mantine/core';
+import "./HomeStyle.css"
 const CarouselItem = () => {
     const data=[
         {
@@ -13,18 +14,18 @@ const CarouselItem = () => {
         },
         {
             id:2,
-            img:"http://qa.trendsofttech.co.in/img/BreadCrumb/WebDevelopment.svg",
+            img:"http://qa.trendsofttech.co.in/img/HomeImages/aboutUS.svg",
             description: "Web Development"
         },
         {
             id:3,
-            img:"http://qa.trendsofttech.co.in/img/BreadCrumb/EcommerceDevelopment.svg",
+            img:"http://qa.trendsofttech.co.in/img/HomeImages/aboutUS.svg",
             description: "Ecommerce Development"
         }
     ]
   return (
     <div>
-       <Carousel autoPlay={true} showArrows={false} showThumbs={false} infiniteLoop={true} transitionTime={200}>
+       <Carousel autoPlay={true} showArrows={true} showThumbs={false} infiniteLoop={true} transitionTime={900} showIndicators={false} >
         {
             data.map((item)=>(
                 <div className='w-[100%] lg:h-[500px] md:h-[400px] 340Screen:h-[300px] 240Screen:h-[240px] h-[300px] relative'  >

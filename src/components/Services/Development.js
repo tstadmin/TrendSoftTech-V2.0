@@ -3,9 +3,12 @@ import { PhasesTitle, Title } from "./ServicesStyled"
 const Development = props => {
   return (
     <div>
-      <div>
+      <div >
+        
+        <h1 className="text-center 2xl:text-4xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] font-semibold">{props.title}</h1>
+
         <div
-          className="space-y-4 mt-5"
+          className="space-y-4 mt-10"
           dangerouslySetInnerHTML={{ __html: props.data.description }}
         />
 

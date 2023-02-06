@@ -12,7 +12,6 @@ import { PortfoliosButton } from "../../components/Services/ServicesStyled"
 import { FiChevronDown } from "react-icons/fi"
 import Seo from "../../components/seo"
 import BreadCrumb from "../../components/common/BreadCrumb"
-import GrowYourBusinnes from "../../components/common/GrowYourBusinnes"
 import Portfolios from "../../components/Portfolio/Portfolios"
 import Brochure from "../../components/common/Brochure"
 import TopBar from "../../components/common/TopBar"
@@ -29,7 +28,6 @@ const UiUXDesign = () => {
 
   return (
     <div>
-      <TopBar description="UI/UX Design" />
       <Layout title={{ title:"UI / UX Design"}}>
         <Seo title="UI/UX Design" description="TrendSoftTech" />
         <BreadCrumb
@@ -39,7 +37,7 @@ const UiUXDesign = () => {
 
         <div className="mt-10">
           <DevelopmentDiv>
-            <Development data={design} />
+            <Development data={design}    title="UI / UX Design"/>
             <DevelopmentLayout>
               <PortfoliosButton>
                 <PortfolioLink className="button" href="#scroll">

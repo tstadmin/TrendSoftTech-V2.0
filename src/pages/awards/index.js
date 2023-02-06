@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import React, { useState, useEffect } from "react"
 import Awards from "../../components/Awards/Awards"
 import BreadCrumb from "../../components/common/BreadCrumb"
-import TopBar from "../../components/common/TopBar"
+
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
@@ -16,7 +16,7 @@ const Index = () => {
   }, [data])
   return (
     <div>
-      <TopBar description="Awards & Certifications" />
+    
       <Layout  title={{title:"Awards & Certifications"}}>
       <Seo title="Awards & Certifications" description="TrendSoftTech" /> 
         <BreadCrumb

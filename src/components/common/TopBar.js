@@ -7,7 +7,7 @@ const TopBar = props => {
       <p className="text-white  font-Poppins">
         {props.title}
 
-        <span className=" ml-4">{props.description}</span>
+      {/* <span className=" ml-4">{props.subTitle}</span>  */}
       </p>
     </div>
   )

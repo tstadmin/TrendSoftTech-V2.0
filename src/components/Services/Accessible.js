@@ -3,6 +3,7 @@ import { DescriptionList, Title } from "./ServicesStyled"
 const Accessible = props => {
   return (
     <div>
+      
       <div
         className="space-y-4 mt-5"
         dangerouslySetInnerHTML={{ __html: props.data.description }}

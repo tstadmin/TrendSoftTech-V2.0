@@ -3,7 +3,6 @@ import React from "react"
 import { useEffect } from "react"
 import { useState } from "react"
 import RequirementInfo from "../../components/careers/RequirementInfo"
-import TopBar from "../../components/common/TopBar"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
@@ -17,8 +16,8 @@ const Laravel = () => {
 
   return (
     <div>
-      <TopBar description="Laravel Developer" />
-      <Layout title={{title:"Careers-laravel"}}>
+    
+      <Layout title={{title:"Laravel Developer"}}>
         <Seo title="Careers-laravel" description="TrendSoftTech" />
 
         <RequirementInfo data={laravel} />

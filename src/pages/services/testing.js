@@ -7,7 +7,6 @@ import Development from "../../components/Services/Development"
 import ServicesLayout from "../../components/ServicesLayout"
 
 import Seo from "../../components/seo"
-import TopBar from "../../components/common/TopBar"
 
 const Testing = () => {
   const query = useStaticQuery(testData)
@@ -21,13 +20,12 @@ const Testing = () => {
 
   return (
     <div>
-      <TopBar description="Testing" />
       <Layout title={{title:"Testing"}}>
         <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img="/img/BreadCrumb/testing.svg" />
 
         <ServicesLayout>
-          <Development data={test} />
+          <Development data={test} title="Testing" />
         </ServicesLayout>
       </Layout>
     </div>

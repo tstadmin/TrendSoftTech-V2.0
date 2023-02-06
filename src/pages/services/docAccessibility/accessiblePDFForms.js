@@ -7,7 +7,6 @@ import BreadCrumb from "../../../components/common/BreadCrumb"
 
 import Seo from "../../../components/seo"
 import Tabs from "../../../components/services/Tabs"
-import TopBar from "../../../components/common/TopBar"
 const AccessiblePDFForms = () => {
   const query = useStaticQuery(accessibleFormQuery)
   const [accessibleForm, setAccessibleForm] = useState([])
@@ -20,7 +19,6 @@ const AccessiblePDFForms = () => {
 
   return (
     <div>
-      <TopBar description="Accessibility-PDFForms" />
       <Layout title={{title:"Accessible PDF Form"}}>
         <Seo title="Accessibility-PDFForms" description="TrendSoftTech" />
         <BreadCrumb
@@ -29,7 +27,7 @@ const AccessiblePDFForms = () => {
         />
 
         <ServicesLayout>
-          <Accessible data={accessibleForm} />
+          <Accessible data={accessibleForm}   title="Accessible PDF Form" />
         </ServicesLayout>
         <Tabs />
       </Layout>

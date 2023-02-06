@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React, { useState, useEffect } from "react"
 import BreadCrumb from "../components/common/BreadCrumb"
-import TopBar from "../components/common/TopBar"
+
 import Layout from "../components/layout"
 import Portfolios from "../components/Portfolio/Portfolios"
 import Seo from "../components/seo"
@@ -16,7 +16,7 @@ const Portfolio = () => {
   console.log(portfolio)
   return (
     <div>
-      <TopBar description="Portfolio" />
+    
       <Layout  title={{title:"Portfolio"}}>
         <Seo title="About" description="TrendSoftTech" />
         <BreadCrumb img="/img/AboutImages/About_Frame.svg" title="portfolios" />

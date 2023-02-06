@@ -3,7 +3,6 @@ import React from "react"
 import { useEffect } from "react"
 import { useState } from "react"
 import RequirementInfo from "../../components/careers/RequirementInfo"
-import TopBar from "../../components/common/TopBar"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
@@ -17,8 +16,7 @@ const Reactinfo = () => {
 
   return (
     <div>
-      <TopBar description="ReactJs Developer" />
-      <Layout title={{title:"Careers-ReactJs"}}>
+      <Layout title={{title:"ReactJs Developer"}}>
         <Seo title="Careers-ReactJs" description="TrendSoftTech" />
         <RequirementInfo data={react} />
       </Layout>

@@ -4,7 +4,7 @@ import AboutUs from "../components/About/AboutUs"
 import ChooseUs from "../components/About/ChooseUs"
 import OurVision from "../components/About/OurVision"
 import BreadCrumb from "../components/common/BreadCrumb"
-import TopBar from "../components/common/TopBar"
+
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <div>
-      <TopBar description="About Us" />
+ 
       <Layout  title={{title:"About Us"}}>
         <div>
           <Seo title="About" description="TrendSoftTech" />
