@@ -13,6 +13,8 @@ module.exports = {
 
       "340Screen": "340px",
 
+      "320Screen": "320px",
+
       "240Screen": "240px",
 
       sm: "640px",

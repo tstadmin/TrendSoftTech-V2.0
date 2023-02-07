@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery,Link } from "gatsby"
 import React, { useEffect, useState } from "react"
 import {
   DevelopmentDiv,
@@ -39,12 +39,14 @@ const UiUXDesign = () => {
           <DevelopmentDiv>
             <Development data={design}    title="UI / UX Design"/>
             <DevelopmentLayout>
-              <PortfoliosButton>
+              {/* <PortfoliosButton>
                 <PortfolioLink className="button" href="#scroll">
                   Portfolio <FiChevronDown className="mt-1 text-2xl  " />
                 </PortfolioLink>
-              </PortfoliosButton>
-
+              </PortfoliosButton> */}
+ <Link className=" bg-[#1E6ff5] text-white text-sm p-3 w-50 rounded-md flex  justify-center " href="#scroll">
+                  Portfolio 
+                </Link>
               <Brochure />
               {/* <GrowYourBusinnes /> */}
             </DevelopmentLayout>

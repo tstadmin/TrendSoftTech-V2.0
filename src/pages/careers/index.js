@@ -21,7 +21,7 @@ const Careers = () => {
       <Layout title={{title:"Careers"}}>
         <Seo title="Careers" description="TrendSoftTech" />
         <BreadCrumb title="Careers" img="/img/careers/career_Frame.svg" />
-        <InfoCard careers={careers} />
+        <InfoCard careers={careers} title="Careers" />
       </Layout>
     </div>
   )

@@ -16,6 +16,7 @@ const InfoCard = props => {
   return (
     <InfoCardDiv>
       {/* <CareersHanding>{props.careers.heading}</CareersHanding> */}
+      <h1 className="text-center 2xl:text-4xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 font-semibold">{props.title}</h1>
       <InfoCards>
         {props.careers.list?.map((item, idx) => (
           <CardDiv key={item.listItem.id}>

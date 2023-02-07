@@ -4,7 +4,7 @@ export const Button = styled.button`
   ${tw`bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-1 text-white hover:text-blue-400  text-[16px]`}
 `
 export const ContactHanding = styled.h1`
-  ${tw`text-center md:text-6xl mt-16 text-2xl font-semibold`}
+  ${tw`text-center 2xl:text-4xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 font-semibold`}
 `
 export const ContactDiv = styled.div`
   ${tw`xl:flex  justify-evenly  px-8 md:mt-14 mt-5 sm:space-y-14 space-y-10 2xl:space-x-44  xl:space-y-0 lg:space-y-10 lg:space-x-2`}

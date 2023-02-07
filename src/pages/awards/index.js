@@ -23,7 +23,7 @@ const Index = () => {
           img="/img/Awards/awardsFrame.svg"
           title="Awards & Certifications"
         />
-        <Awards data={awards} />
+        <Awards data={awards} title="Awards & Certifications" />
       </Layout>
     </div>
   )

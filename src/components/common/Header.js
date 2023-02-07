@@ -23,7 +23,7 @@ export default function Header(props) {
     <div
       id="nav"
       role="navigation"
-      className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky 1920Screen:top-10   sm:top-10 top-9  bg-[#ebebeb] z-10 shadow-lg shadow-black/10"
+      className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky top-10  bg-[#ebebeb] z-10 shadow-lg shadow-black/10"
     >
       <NavBar >
         {/* Logo */}
@@ -33,7 +33,7 @@ export default function Header(props) {
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
             // className="md:w-[181px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px] "
-             className="md:w-[211px]  540Screen:w-[150px]  w-[120px] 340Screen:w-[150px]  "
+             className="md:w-[211px]  540Screen:w-[150px]  w-[100px] 340Screen:w-[120px]  "
        //  B  className="md:w-[141px]  540Screen:w-[150px]  w-[120px] 340Screen:w-[150px]  " 
       // className="md:w-[221px]  540Screen:w-[150px]  w-[120px] 340Screen:w-[150px]  "
 
@@ -41,7 +41,7 @@ export default function Header(props) {
         </Link>
         {/* {
           props.bar ?(
-            <p className="lg:text-base sm:text-sm text-[10px] text-center  font-semibold text-black">{props.bar}</p> 
+            <p className="lg:text-base sm:text-sm text-[10px] text-center  font-semibold text-white">{props.bar}</p> 
 
           ):("")
         } */}
@@ -51,17 +51,17 @@ export default function Header(props) {
       {/* menu items */}
 
       <div>
-        <div className="flex space-x-4 md:space-x-0 uppercase  ">
+        <div className="flex uppercase  ">
           <p
             // onClick={() => setOpened(!opened)}
             onClick={handleNav}
             className=" block sm:text-2xl text-md  hover:text-blue-400
-           pr-8 pt-0 md:pt-0 "
+           pr-8 "
           >
             {opened ? (
               <button
                 id="navbarDropdown"
-                className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF]   "
+                className="cursor-pointer text-[#0084FF]   "
               >
                 <span
                   data-bs-toggle="collapse"
@@ -70,15 +70,15 @@ export default function Header(props) {
                 >
                   expanded
                 </span>
-                <RxCross2 className="hidden md:block text-3xl" />
+                <RxCross2 className="hidden md:block md:text-3xl sm:text-xl text-lg" />
               </button>
             ) : (
               <button
                 aria-labelledby="navbarDropdown"
-                className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF] "
+                className="cursor-pointer text-[#0084FF] "
               >
                 <span className="sr-only">menu button collapsed submenu</span>
-                <HiBars3BottomLeft  className="text-3xl" />
+                <HiBars3BottomLeft  className="md:text-3xl sm:text-xl text-lg" />
               </button>
             )}
           </p>
@@ -86,9 +86,9 @@ export default function Header(props) {
             <Link
               to="/"
               aria-label="Home Button"
-              className="md:text-4xl 540Screen:text-2xl text-lg  cursor-pointer text-[#0084FF]  "
+              className="cursor-pointer text-[#0084FF]  "
             >
-              <FaHome  className="text-3xl" />
+              <FaHome  className="md:text-3xl sm:text-xl text-lg" />
             </Link>
           </p>
         </div>
@@ -101,7 +101,7 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[116px]  top-[110px] bg-[#0f6cb3] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
+              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[117px]  340Screen:top-[106.7px] top-[100.92px] bg-[#0f6cb3] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
               : "fixed hidden "
           }
         >
@@ -130,13 +130,13 @@ export default function Header(props) {
           {/*  Mobile Menu */}
 
           <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-24 ">
-            <li className="text-sm text-black">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.homePage}>
                 {props.data.mobilelist.home}
               </Link>
             </li>
 
-            <li className="text-sm text-black">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.aboutPage}>
                 {props.data.mobilelist.about}
               </Link>
@@ -147,25 +147,25 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <li className="text-sm text-black uppercase">
+                    <li className="text-sm text-white uppercase">
                       {props.data.mobilelist.services}
                     </li>
                     {/* <Link to={props.data.mobilelist.servicesPage}>
-                      <li className="text-lg text-black uppercase">
+                      <li className="text-lg text-white uppercase">
                         {props.data.mobilelist.services}
                       </li>
                     </Link> */}
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
-                      } h-4 w-4 text-black my-[1%] ml-4`}
+                      } h-4 w-4 text-white my-[1%] ml-4`}
                     />
                   </Disclosure.Button>
 
                   <ul>
-                    <Disclosure.Panel className="px-4 text-sm text-black space-y-2 ">
+                    <Disclosure.Panel className="px-4 text-sm text-white space-y-2 ">
                       {props.data.mobilelist.itServices.map((i,idx) => (
-                        <li className="text-black" key={i.listItem.id}>
+                        <li className="text-white" key={i.listItem.id}>
                           
                           <Link to={i.listItem.page}>{i.listItem.title}</Link>
                         </li>
@@ -181,23 +181,23 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <li className="text-black text-sm uppercase">
+                    <li className="text-white text-sm uppercase">
                       {props.data.mobilelist.test}
                     </li>
                     {/* <Link to={props.data.mobilelist.testPage}>
-                      <li className="text-black text-lg uppercase">
+                      <li className="text-white text-lg uppercase">
                         {props.data.mobilelist.test}
                       </li>
                     </Link> */}
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
-                      } h-4 w-4 text-black my-[1%] ml-4 `}
+                      } h-4 w-4 text-white my-[1%] ml-4 `}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 text-black space-y-1">
+                  <Disclosure.Panel className="px-4 text-white space-y-1">
                     {props.data.mobilelist.subTest.map((i,idx) => (
-                      <li className="text-black" key={i.listItem.id}>
+                      <li className="text-white" key={i.listItem.id}>
                         
                         <Link to={i.listItem.page}>{i.listItem.title}</Link>
                       </li>
@@ -212,7 +212,7 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <li className="text-black text-sm uppercase">
+                    <li className="text-white text-sm uppercase">
                       {props.data.mobilelist.accessibility}
                     </li>
                     {/* <Link to={props.data.mobilelist.accessibilityPage}>
@@ -222,33 +222,33 @@ export default function Header(props) {
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
-                      } h-4 w-4 text-black my-[1%] ml-4 `}
+                      } h-4 w-4 text-white my-[1%] ml-4 `}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 text-black space-y-1">
+                  <Disclosure.Panel className="px-4 text-white space-y-1">
                     <Disclosure>
                       {({ open }) => (
                         <>
                           <Disclosure.Button className="flex w-full">
-                            <li className="text-black uppercase">
+                            <li className="text-white uppercase">
                               {props.data.mobilelist.docaccessibility}
                             </li>
                             {/* <Link
                               to={props.data.mobilelist.docaccessibilityPage}
                             >
-                              <li className="text-black uppercase">
+                              <li className="text-white uppercase">
                                 {props.data.mobilelist.docaccessibility}
                               </li>
                             </Link> */}
                             <IoIosArrowDown
                               className={`${
                                 open ? "rotate-180 transform" : ""
-                              } h-4 w-4 text-black my-[1%] ml-4`}
+                              } h-4 w-4 text-white my-[1%] ml-4`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="px-4 py-2 text-sm text-black space-y-1">
+                          <Disclosure.Panel className="px-4 py-2 text-sm text-white space-y-1">
                             {props.data.mobilelist.subaccessibility.map(i => (
-                              <li className="text-black">
+                              <li className="text-white">
                                 {" "}
                                 <Link to={i.listItem.page}>
                                   {i.listItem.title}
@@ -260,7 +260,7 @@ export default function Header(props) {
                       )}
                     </Disclosure>
 
-                    <li className="text-black">
+                    <li className="text-white">
                       <Link to={props.data.mobilelist.webaccessibilityPage}>
                         {props.data.mobilelist.webaccessibility}
                       </Link>
@@ -270,24 +270,24 @@ export default function Header(props) {
               )}
             </Disclosure>
 
-            <li className="text-black text-sm">
+            <li className="text-white text-sm">
               <Link to={props.data.mobilelist.digitalPage}>
                 {props.data.mobilelist.digital}
               </Link>
             </li>
 
-            <li className="text-sm text-black">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.careersPage}>
                 {props.data.mobilelist.careers}
               </Link>
             </li>
 
-            <li className="text-sm text-black">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.contactPage}>
                 {props.data.mobilelist.contact}
               </Link>
             </li>
-            <li className="text-sm text-black">
+            <li className="text-sm text-white">
               <Link to={props.data.mobilelist.awardPage}>
                 {props.data.mobilelist.award}
               </Link>

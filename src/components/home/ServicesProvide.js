@@ -25,7 +25,7 @@ const ServicesProvide = props => {
       <ServicesTitleDiv>
         <Title>{props.servicesProvide.subTitle}</Title>
       </ServicesTitleDiv>
-      <ServicesProvideCard>
+      <div className="xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  grid grid-cols-1 gap-5 justify-items-center 1920Screen:px-48 2xl:px-24  md:px-16 px-8">
         {props.servicesProvide.list?.map((item, idx) => (
           <Link
             to={item.listItem.page}
@@ -42,7 +42,7 @@ const ServicesProvide = props => {
             />
           </Link>
         ))}
-      </ServicesProvideCard>
+      </div>
     </Services>
   )
 }

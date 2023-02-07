@@ -6,7 +6,7 @@ import Counter from "./Counter"
 const ContactSupport = props => {
 
   return (
-    <div className="space-y-28  mt-24 ">
+    <div className="space-y-16 mt-8   ">
       <Counter />
       <Clients clients={props.clients} />
       {/* <ContactUs contactUs={props.contactUs} /> */}

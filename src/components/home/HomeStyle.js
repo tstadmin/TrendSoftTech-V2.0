@@ -40,9 +40,7 @@ export const BannerImage = styled.img`
 //   ${tw`lg:flex grid sm:mt-16 mt-32 2xl:space-x-60 xl:space-x-40 lg:space-x-16 md:space-y-20 space-y-10  justify-center 2xl:px-48 md:px-12  px-8`}
 // `
 
-export const AboutOur = styled.div`
-  ${tw`lg:flex grid sm:mt-16 mt-8 justify-center lg:gap-16 gap-6 2xl:px-48 md:px-12  px-8`}
- `
+
 
 export const AboutOurInfo = styled.div`
   ${tw`space-y-5 relative`}
@@ -70,17 +68,15 @@ export const AboutOurSubTitle = styled.h3`
 // `
 
 ///  ----- AboutOutCompany component in HomePage Home folder--------------------------------
-export const BannerItemDiv = styled.ul`
-  ${tw`lg:flex grid gap-5 justify-center  2xl:px-48 xl:px-28 lg:px-16 py-14 px-10 mt-20`}
-`
+
 
 ///  ----- Services  provide component in HomePage  Home folder--------------------------------
 
 export const Services = styled.div`
-  ${tw`text-center mt-16 bg-blue-50 py-14`}
+  ${tw`text-center  bg-blue-50 py-14`}
 `
 export const ServicesTitleDiv = styled.div`
-  ${tw`text-center mb-16 space-y-2`}
+  ${tw`text-center mb-8 `}
 `
 // export const ServicesTitle = styled.h2`
 //   ${tw`text-[#de1926]`}
@@ -89,7 +85,7 @@ export const ServicesSubTitle = styled.h3`
   ${tw`text-[#0B70E1] `}
 `
 export const ServicesProvideCard = styled.ul`
-  ${tw`xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  grid grid-cols-1 gap-5 justify-items-center 2xl:px-48  md:px-16 px-8`}
+  ${tw`xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  grid grid-cols-1 gap-5 justify-items-center 2xl:px-24  md:px-16 px-8`}
 `
 
 ///  ----- Accessibility Services component in HomePage Home folder--------------------------------
@@ -145,7 +141,7 @@ export const ContactHeader = styled.h2`
 ///  ----- Working Process component in HomePage Home folder--------------------------------
 
 export const Working = styled.div`
-  ${tw`lg:flex justify-center gap-4 px-8 `}
+  ${tw`lg:flex justify-center gap-4 lg:px-0 px-8 `}
 `
 export const WorkingDescription = styled.p`
   ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins  `}
@@ -167,20 +163,20 @@ export const WorkingCards = styled.ul`
 ///  ----- Footers component in HomePage Home  folder--------------------------------
 
 export const FooterDiv = styled.div`
-  ${tw`mt-20 bg-blue-50/80 py-4  `}
+  ${tw` bg-blue-50/80 py-2 mt-8 `}
 `
 export const FooterInfo = styled.div`
-  ${tw`md:flex sm:grid  px-8 xl:px-12  md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20`}
+  ${tw`md:flex sm:grid  px-8 xl:px-12  md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20 mt-8 `}
 `
 export const FooterTitle = styled.h2`
   ${tw` md:text-lg  text-sm text-[#1a71d4] `}
 `
 export const FooterTrendInfo = styled.div`
-  ${tw` basis-1/3`}
+  ${tw` basis-1/3 `}
 `
 
 export const FooterInfoDiv = styled.div`
-  ${tw`space-y-3 basis-1/4`}
+  ${tw`space-y-3 basis-1/4 mt-5 `}
 `
 export const FooterIconInfo = styled.div`
   ${tw`sm:flex grid mt-4 gap-5 `}

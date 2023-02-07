@@ -4,12 +4,12 @@ import { AboutOur, AboutOurInfo, Title } from "./HomeStyle"
 
 const AboutOurCompany = props => {
   return (
-    <AboutOur>
+    <div className="lg:flex grid sm:mt-16 mt-8 justify-center lg:gap-16 gap-6  1920Screen:px-48 2xl:px-24 md:px-12  px-8">
       <img
         src={props.aboutOurCompany.img}
         alt=""
  
-        className="rounded-md lg:w-[300px] lg:h-[300px] w-[400px] h-[400px] "
+        className="rounded-md lg:w-[300px] lg:h-[300px] w-[100%] md:h-[400px] sm:h-[250px] 340Screen:h-[200px] 240Screen:h-[170px] "
       
       />
       <AboutOurInfo>
@@ -34,7 +34,7 @@ const AboutOurCompany = props => {
           </Link>
         </div>
       </AboutOurInfo>
-    </AboutOur>
+    </div>
   )
 }
 
