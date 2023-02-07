@@ -32,26 +32,19 @@ export default function Header(props) {
           <img
             src={props.data.logo}
             alt="Trendsoft Tech Logo"
-            // className="md:w-[181px] 540Screen:w-[80px] h-[30px]  340Screen:w-[80px] md:h-[95px] "
+          
              className="md:w-[211px]  540Screen:w-[150px]  w-[100px] 340Screen:w-[120px]  "
-       //  B  className="md:w-[141px]  540Screen:w-[150px]  w-[120px] 340Screen:w-[150px]  " 
-      // className="md:w-[221px]  540Screen:w-[150px]  w-[120px] 340Screen:w-[150px]  "
-
+    
           />
         </Link>
-        {/* {
-          props.bar ?(
-            <p className="lg:text-base sm:text-sm text-[10px] text-center  font-semibold text-white">{props.bar}</p> 
-
-          ):("")
-        } */}
+       
         </div>
       </NavBar>
 
       {/* menu items */}
 
       <div>
-        <div className="flex uppercase  ">
+        <div className="flex uppercase ">
           <p
             // onClick={() => setOpened(!opened)}
             onClick={handleNav}

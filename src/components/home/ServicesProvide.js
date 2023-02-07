@@ -4,7 +4,6 @@ import Card from "../common/Card"
 import {
   Services,
   ServicesTitleDiv,
-  ServicesProvideCard,
   Title,
 } from "./HomeStyle"
 

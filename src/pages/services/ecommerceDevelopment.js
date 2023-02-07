@@ -3,16 +3,13 @@ import React, { useEffect, useState } from "react"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
-import { PortfoliosButton } from "../../components/Services/ServicesStyled"
 
-import { FiChevronDown } from "react-icons/fi"
 import Seo from "../../components/seo"
 import Brochure from "../../components/common/Brochure"
 import Portfolios from "../../components/Portfolio/Portfolios"
 import {
   DevelopmentDiv,
   DevelopmentLayout,
-  PortfolioLink,
 } from "../../components/Services/ServicesStyled"
 const EcommerceDevelopment = () => {
   const query = useStaticQuery(ecommercData)
