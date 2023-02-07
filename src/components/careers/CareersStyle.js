@@ -40,7 +40,7 @@ export const RequirementInfoheading = styled.h2`
   ${tw`lg:text-2xl md:text-xl sm:text-lg text-base font-semibold font-mono`}
 `
 export const Description = styled.li`
-  ${tw`font-Poppins`}
+  ${tw`font-serif`}
 `
 export const FormDiv = styled.div`
   ${tw`grid border border-black sm:justify-items-center space-y-8 p-7`}

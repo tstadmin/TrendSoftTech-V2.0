@@ -109,14 +109,14 @@ export default function Header(props) {
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.listItem.id}
-                className="uppercase  text-white mt-6 sm:text-lg text-sm sm:font-medium hidden 540Screen:block "
+                className="  text-white mt-6 sm:text-lg text-sm sm:font-medium hidden 540Screen:block font-roboto "
               >
                 {item.listItem.title}
                 <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
                       onClick={() => setOpened(false)}
-                      className="hover:text-[#FFC93C] text-[#ebebeb]  1920Screen:text-[16px] text-xs"
+                      className=" text-[#ebebeb]  1920Screen:text-[16px] text-xs font-['Open_Sans']"
                       key={sub.listItem.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>
@@ -130,7 +130,7 @@ export default function Header(props) {
           {/*  Mobile Menu */}
 
           <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-24 ">
-            <li className="text-sm text-white">
+            <li className="text-sm text-white ">
               <Link to={props.data.mobilelist.homePage}>
                 {props.data.mobilelist.home}
               </Link>
@@ -181,14 +181,10 @@ export default function Header(props) {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full">
-                    <li className="text-white text-sm uppercase">
+                    <li className="text-white text-sm ">
                       {props.data.mobilelist.test}
                     </li>
-                    {/* <Link to={props.data.mobilelist.testPage}>
-                      <li className="text-white text-lg uppercase">
-                        {props.data.mobilelist.test}
-                      </li>
-                    </Link> */}
+                 
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
