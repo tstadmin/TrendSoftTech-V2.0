@@ -3,18 +3,15 @@ import React, { useEffect, useState } from "react"
 import {
   DevelopmentDiv,
   DevelopmentLayout,
-  PortfolioLink,
+
 } from "../../components/Services/ServicesStyled"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
-import { PortfoliosButton } from "../../components/Services/ServicesStyled"
 
-import { FiChevronDown } from "react-icons/fi"
 import Seo from "../../components/seo"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Portfolios from "../../components/Portfolio/Portfolios"
 import Brochure from "../../components/common/Brochure"
-import TopBar from "../../components/common/TopBar"
 const UiUXDesign = () => {
   const query = useStaticQuery(UiUXDesignData)
   const data =

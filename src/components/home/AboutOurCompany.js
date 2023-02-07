@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import { AboutOur, AboutOurInfo, Title } from "./HomeStyle"
+import {  AboutOurInfo, Title } from "./HomeStyle"
 
 const AboutOurCompany = props => {
   return (
