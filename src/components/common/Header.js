@@ -143,11 +143,7 @@ export default function Header(props) {
                     <li className="text-sm text-white uppercase">
                       {props.data.mobilelist.services}
                     </li>
-                    {/* <Link to={props.data.mobilelist.servicesPage}>
-                      <li className="text-lg text-white uppercase">
-                        {props.data.mobilelist.services}
-                      </li>
-                    </Link> */}
+                   
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""

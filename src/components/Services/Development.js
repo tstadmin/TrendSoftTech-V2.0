@@ -5,7 +5,7 @@ const Development = props => {
     <div>
       <div >
         
-        <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] text-[#0B70E1] font-semibold">{props.title}</h1>
+        <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] text-[#dc1f2c] font-semibold">{props.title}</h1>
 
         <div
           className="space-y-4 mt-5"
@@ -45,7 +45,7 @@ const Development = props => {
               <div key={i.listItems.id}>
                 <PhasesTitle>{i.listItems.title}</PhasesTitle>
                 <div
-                  className="space-y-4 mt-2"
+                  className="space-y-4 mt-2 "
                   dangerouslySetInnerHTML={{ __html: i.listItems.description }}
                 />
               </div>

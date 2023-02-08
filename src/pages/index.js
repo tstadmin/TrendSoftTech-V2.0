@@ -20,7 +20,7 @@ import Carousel from "../components/home/Carousel"
 const Index = () => {
   const query = useStaticQuery(dataQuery)
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.home
-  const [banner, setBanner] = useState([])
+  const [carousel, setCarousel] = useState([])
   const [bannerItem, setBannerItem] = useState([])
   const [aboutOurCompany, setAboutOurCompany] = useState([])
   const [clients, setClients] = useState([])
@@ -32,7 +32,7 @@ const Index = () => {
     setBannerItem(data.bannerItems)
     setServicesProvide(data.servicesWeProvide)
 
-    setBanner(data.banner)
+    setCarousel(data.carousel)
     setAboutOurCompany(data.aboutOurCompany)
     setClients(data.clients)
     setWorkingProcess(data.workingProcess)
@@ -48,7 +48,7 @@ const Index = () => {
           <title>Home | TrendSoftTech </title>
           <meta name="description" content="Home | TrendSoftTech" />
         </Helmet> */}
-        <Carousel/>
+        <Carousel  carousel={carousel}/>
           {/* <Banner banner={banner} /> */}
           <AboutOurCompany aboutOurCompany={aboutOurCompany} />
           <BannerItems bannerItem={bannerItem} />
@@ -73,6 +73,17 @@ const dataQuery = graphql`
         node {
           frontmatter {
             home {
+              carousel {
+                list {
+                  listItem {
+                    id
+                    title
+                    img
+                    page
+                    CTA
+                  }
+                }
+              }
               banner {
                 headers
                 image

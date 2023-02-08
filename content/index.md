@@ -1,5 +1,61 @@
 ---
 home:
+  carousel:
+    list:
+      - listItem :
+            id: 1
+            img: "/img/carousel/homebanner1.jpg"
+            title: "We Increase your Business Success"
+            page: "/contact/"
+            CTA: "Contact" 
+      - listItem :
+            id: 2
+            img: "/img/carousel/WEBDEVELOPMENT.jpg"
+            title: "WEB DEVELOPMENT"
+            page: "/services/webDevelopment/"
+            CTA: "Learn More"    
+      - listItem :
+            id: 3
+            img: "/img/carousel/ECOMMERCEDEVELOPMENT.jpg"
+            title: "ECOMMERCE DEVELOPMENT"
+            page: "/services/ecommerceDevelopment/"
+            CTA: "Learn More" 
+      - listItem :
+            id: 4
+            img: "/img/carousel/MOBILEDEVELOPMENT.jpg"
+            title: "MOBILE DEVELOPMENT"
+            page: "/services/mobileDevelopment/"
+            CTA: "Learn More" 
+      - listItem :
+            id: 5
+            img: "/img/carousel/PRODUCTDEVELOPMENT.jpg"
+            title: "PRODUCT DEVELOPMENT"
+            page: "/services/productDevelopment/"
+            CTA: "Learn More" 
+      - listItem :
+            id: 6
+            img: "/img/carousel/UIUXDESIGN.jpg"
+            title: "UI / UX DESIGN"
+            page: "/services/uiUXDesign/"
+            CTA: "Learn More" 
+      - listItem :
+            id: 7
+            img: "/img/carousel/MANUALTESTING.jpg"
+            title: "MANUAL TESTING"
+            page: "/services/testing/"
+            CTA: "Learn More" 
+      - listItem :
+            id: 8
+            img: "/img/carousel/AUTOMATIONTESTING.jpg"
+            title: "AUTOMATION TESTING"
+            page: "/services/testing/"
+            CTA: "Learn More"  
+      - listItem :
+            id: 9
+            img: "/img/carousel/DIGITALMARKETING.jpg"
+            title: "DIGITAL MARKETING"
+            page: "/services/digitalMarketing/"
+            CTA: "Learn More"                                
   navbar:
     logo: "/img/HomeImages/logoB.svg"
     alt: "TrendSoft tech logo"
@@ -168,13 +224,7 @@ home:
           careers: "Careers"
           careersPage: "/careers/"
           contact: "contact"
-          contactPage: "/contact/"
-  carousel:
-    list:
-      -listItem:
-            id: 1
-            img: ""
-            description: ""        
+          contactPage: "/contact/"  
   banner:
     headers: "<h1>We Increase your Business Success</h1> "
     title: "Use the modern technology and IT Services"
@@ -428,15 +478,15 @@ services:
                - listItems:
                      id: 1
                      title: "Planning:"   
-                     description: "Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experiences experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients. </p>"
+                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experiences experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients. </p>"
                - listItems:
                      id: 2
                      title: "Implementation, testing and documenting:"   
-                     description: "All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
+                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
                - listItems:
                      id: 3
                      title: "Deployment and maintenance:"   
-                     description: "One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>"
+                     description: "<p>One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>"
       portfolios:
         - listItem: 
              id: 1
@@ -554,7 +604,7 @@ services:
         - listItems:
              id: 1   
              title: "The Trendsoft Transparent Development Model"
-             description: "<p>Our software development model ensures that the customer is involved at all stages of development and transparency is maintained. <br/>By keeping the customer involved we ensure a satisfactory product in all phases of software development. It allows the customer to understand the core at development and a part of the Trendsoft team. Here we make you feel not just a part of the action but also leading from the front. </p>The Trendsoft development model places the customer at the helm of the process thus raising the confidence and returns from the product delivered.</p>"
+             description: "<p>Our software development model ensures that the customer is involved at all stages of development and transparency is maintained. <br/>By keeping the customer involved we ensure a satisfactory product in all phases of software development. It allows the customer to understand the core at development and a part of the Trendsoft team. Here we make you feel not just a part of the action but also leading from the front. The Trendsoft development model places the customer at the helm of the process thus raising the confidence and returns from the product delivered.</p>"
         - listItems:
              id: 2   
              title: "Development Phases at Trendsoft"
@@ -567,7 +617,7 @@ services:
                - listItems:
                      id: 2
                      title: "Implementation, testing and documenting:"   
-                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible."
+                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
                - listItems:
                      id: 3
                      title: "Deployment and maintenance:"   
@@ -741,7 +791,7 @@ accessible:
              title: "What standards do we conform with for Accessible PDF?"
              description: "<p>We work with PDF/UA & Web Content Accessibility Guideline (WCAG) 2.0 & 2.1. Meeting these standards for PDF accessibility ensure that documents comply to the requirements as per ADA, AODA & Section 508.</p>" 
         - listItems:
-             id: 3   
+             id: 4   
              title: "How do we ensure that the PDF document is Accessible?"
              description: "<p>At TRENDSOFT TECHNOLOGIES PVT LTD., we take quality seriously. With expertise in PDF/UA & WCAG 2.0 & 2.1, we not only test with the PDF Accessibility Checker in Adobe Professional but also ensure that a manual quality check is thoroughly implemented on the tags and the content. In addition, all our documents are tested by a native Screen Reader User to ensure that it is goes beyond compliance and is usable to people with disabilities.</p>" 
    accessiblePDFForms:

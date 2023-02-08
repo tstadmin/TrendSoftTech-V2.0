@@ -119,7 +119,7 @@ export const CounterNumber = styled.p`
   ${tw`text-[50px] font-bold text-[#0B70E1]`}
 `
 export const CounterDescription = styled.p`
-  ${tw`md:text-[20px] font-[400] font-semibold mt-6 `}
+  ${tw`md:text-[20px] text-[#dc1f2c] font-[400] font-semibold mt-6 `}
 `
 ///  ----- ContactUs 24/7 Banner component in HomePage Home  folder--------------------------------
 export const Contact = styled.div`
@@ -144,7 +144,7 @@ export const Working = styled.div`
   ${tw`lg:flex justify-center gap-4 lg:px-0 px-8 `}
 `
 export const WorkingDescription = styled.p`
-  ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins  `}
+  ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins text-[#dc1f2c] `}
 `
 export const WorkingCardNumber = styled.h3`
   ${tw`text-orange-400 `}

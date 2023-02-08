@@ -17,9 +17,9 @@ const WorkingProcess = props => {
         tiltMaxAngleY={2}
         className="border 2xl:w-[22%] xl:w-[27%] lg:w-[34%] md:w-full sm:text-center lg:text-start bg-blue-50 space-y-12 sm:p-12 p-5 mt-16 rounded-md border-blue-400"
       >
-        <h2 className=" md:text-lg  text-sm font-semibold  text-[#dc1f2c]">
+        {/* <h2 className=" md:text-lg  text-sm font-semibold  text-[#dc1f2c]">
           {props.workingProcess.title}
-        </h2>
+        </h2> */}
 
         <WorkingDescription>
           {props.workingProcess.description}

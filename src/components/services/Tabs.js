@@ -46,11 +46,11 @@ const Tabs = () => {
         {data.map((item, idx) => (
           <TabButton key={item.id}>
             <Link
-              className="hover:bg-blue-500 border-2 border-blue-500  duration-700   rounded-none flex space-x-3 text-xl justify-center Tab "
+              className="hover:bg-blue-500 border-2 border-blue-500 text-[#bd5005] duration-700   rounded-none flex space-x-3 text-xl justify-center Tab "
               href={item.link}
             >
               {item.title}
-              <IoIosArrowForward className="mt-1 ml-1 text-xl  " />
+              <IoIosArrowForward className="mt-1 ml-1 text-xl text-[#bd5005] " />
             </Link>
           </TabButton>
         ))}
