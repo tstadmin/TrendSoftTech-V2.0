@@ -3,7 +3,6 @@ import React, { useRef } from "react"
 import { Carousel } from "@mantine/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
-import { Button } from "@mantine/core"
 import "./HomeStyle.css"
 import { Link } from "gatsby"
 const CarouselItem = () => {
@@ -12,16 +11,19 @@ const CarouselItem = () => {
       id: 1,
       img: "/img/HomeImages/home_banner_1.jpg",
       description: "We Increase your Business Success",
+      page: "/"
     },
     {
       id: 2,
       img: "/img/HomeImages/home_banner_2.jpg",
       description: "Web Development",
+      page: "/services/webDevelopment/"
     },
     {
       id: 3,
       img: "/img/HomeImages/home_banner_3.jpg",
       description: "Ecommerce Development",
+      page: "/services/ecommerceDevelopment/"
     },
   ]
   const autoplay = useRef(Autoplay({ delay: 6000 }))
@@ -29,24 +31,27 @@ const CarouselItem = () => {
   return (
     <div>
       <Carousel
-        withIndicators
+       
         dragFree
         loop
         align="start"
         transitionDuration="1500"
         plugins={[autoplay.current]}
+        
       >
-        {data.map(item => (
-          <Carousel.Slide className="w-[100vw] 2048Screen:h-[calc(70vh-137px)] 1920Screen:h-[calc(70vh-117px)] xl:h-[calc(70vh-137px)] md:h-[calc(60vh-60px)] sm:h-[calc(60vh-40px)] 540Screen:h-[calc(60vh-137px)] 440Screen:h-[calc(60vh-137px)] 340Screen:h-[calc(60vh-137px)] 320Screen:h-[calc(100vh-137px)] h-[calc(40vh-137px)] relative ">
-            <img src={item.img} />
+        {data.map((item,idx) => (
+          <Carousel.Slide key={item.id} className="w-[100vw] text-center 2048Screen:h-[calc(70vh-137px)] 1920Screen:h-[calc(70vh-117px)]  xl:h-[calc(70vh-197px)] md:h-[calc(60vh-220px)] sm:h-[calc(60vh-300px)] 540Screen:h-[calc(73vh-357px)] 440Screen:h-[calc(60vh-350px)] 340Screen:h-[calc(60vh-362px)]  h-[calc(60vh-387px)] relative ">
+            <img src={item.img} className="w-[100%]" />
 
-            <div className="absolute sm:top-[210px] top-[25px] 340Screen:top-[150px]   w-[100%] sm:space-y-8 space-y-4">
-              <p className="text-center text-white  lg:text-3xl md:text-lg sm:text-sm text-xs font-semibold">
+            <div className="absolute  1920Screen:top-[200px] 2xl:top-[130px] md:top-[120px] sm:top-[60px] 540Screen:top-[60px] 340Screen:top-[40px] 240Screen:top-[20px]   w-[100%] sm:space-y-8 space-y-4">
+              <h1 className="text-center text-white  lg:text-2xl md:text-lg sm:text-sm text-xs font-semibold">
                 {item.description}
-              </p>
-              {/* <p className="text-center bg-blue-700 sm:p-2 hover:cursor-pointer   p-1 rounded-lg  lg:text-xl md:text-lg sm:text-sm text-xs sm:w-[130px] w-[100px]  text-white">
+              </h1>
+              <div className="">
+              <Link to={item.page} className=" bg-white sm:p-2  hover:cursor-pointer  p-2 rounded-md  md:text-base sm:text-sm text-xs  text-blue-500">
                 Learn More
-              </p> */}
+              </Link>
+              </div>
             </div>
           </Carousel.Slide>
         ))}

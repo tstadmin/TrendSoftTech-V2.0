@@ -9,7 +9,7 @@ const Awards = props => {
   return (
     <div>
       <PhotoProvider>
-      <h1 className="text-center 2xl:text-4xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 font-semibold">{props.title}</h1>
+      <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 text-[#0B70E1] font-semibold">{props.title}</h1>
         <div className="sm:flex grid  justify-center gap-10">
           {props.data.list.map((item, idx) => (
             <PhotoView src={item.listItem.img} key={item.listItem.id}>

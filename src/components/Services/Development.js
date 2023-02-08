@@ -5,7 +5,7 @@ const Development = props => {
     <div>
       <div >
         
-        <h1 className="text-center 2xl:text-4xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] font-semibold">{props.title}</h1>
+        <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] text-[#0B70E1] font-semibold">{props.title}</h1>
 
         <div
           className="space-y-4 mt-5"

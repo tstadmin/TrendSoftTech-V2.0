@@ -5,7 +5,7 @@ const Portfolios = props => {
   return (
     <div className=" mt-10 1920Screen:px-44 2xl:px-24 px-8 md:py-10 py-28 bg-blue-100">
       <div className="text-center space-y-2">
-        <h2 className="md:text-3xl sm:text-lg text-base ">Portfolio</h2>
+        <h2 className="md:text-3xl sm:text-lg text-base text-[#0B70E1]">Portfolio</h2>
       </div>
 
       <ul className="grid md:grid-cols-2 grid-cols-1 gap-5">

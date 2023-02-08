@@ -98,18 +98,18 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-52 2xl:pl-32 lg:pl-16 md:pl-24 pl-8   1920Screen:space-x-18 2xl:space-x-7 xl:space-x-8 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-64 2xl:pl-32 lg:pl-18 md:pl-24 pl-8    1920Screen:space-x-18 2xl:space-x-16 xl:space-x-14 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.listItem.id}
-                className="  text-white mt-6 sm:text-lg text-sm sm:font-medium hidden 540Screen:block font-roboto "
+                className="  text-white mt-6 xl:text-xl sm:text-lg text-sm sm:font-medium hidden 540Screen:block font-roboto "
               >
                 {item.listItem.title}
                 <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
                       onClick={() => setOpened(false)}
-                      className=" text-[#ebebeb]  1920Screen:text-[16px] text-xs font-['Open_Sans']"
+                      className=" text-[#ebebeb]  1920Screen:text-[16px] text-xs"
                       key={sub.listItem.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>
@@ -156,7 +156,7 @@ export default function Header(props) {
                   </Disclosure.Button>
 
                   <ul>
-                    <Disclosure.Panel className="px-4 text-sm text-white space-y-2 ">
+                    <Disclosure.Panel className="px-4 text-sm  space-y-2 ">
                       {props.data.mobilelist.itServices.map((i,idx) => (
                         <li className="text-white" key={i.listItem.id}>
                           
@@ -184,7 +184,7 @@ export default function Header(props) {
                       } h-4 w-4 text-white my-[1%] ml-4 `}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 text-white space-y-1">
+                  <Disclosure.Panel className="px-4 space-y-1">
                     {props.data.mobilelist.subTest.map((i,idx) => (
                       <li className="text-white" key={i.listItem.id}>
                         
@@ -218,7 +218,7 @@ export default function Header(props) {
                     <Disclosure>
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className="flex w-full">
+                          <Disclosure.Button className="flex w-full ">
                             <li className="text-white uppercase">
                               {props.data.mobilelist.docaccessibility}
                             </li>
@@ -235,7 +235,7 @@ export default function Header(props) {
                               } h-4 w-4 text-white my-[1%] ml-4`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="px-4 py-2 text-sm text-white space-y-1">
+                          <Disclosure.Panel className="px-4 py-2 text-sm space-y-1">
                             {props.data.mobilelist.subaccessibility.map(i => (
                               <li className="text-white">
                                 {" "}
