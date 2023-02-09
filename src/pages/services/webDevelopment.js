@@ -35,7 +35,7 @@ const WebDevelopment = () => {
             <Development data={data}    title="Web Development" />
             <DevelopmentLayout>
        
-                <a className=" bg-[#1E6ff5] text-white text-sm p-3 w-52 rounded-md flex  justify-center " href="#scroll">
+                <a className=" bg-[#0b2d78] text-white text-sm p-3 w-52 rounded-md flex  justify-center " href="#scroll">
                   Portfolio 
                 </a>
    

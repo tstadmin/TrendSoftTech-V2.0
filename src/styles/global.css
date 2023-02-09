@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+  
 
 }
 h1{
@@ -22,12 +23,12 @@ h3{
 }
 p{
     font-family: sans-serif;
-    @apply sm:text-base  text-sm text-blue-900
+    @apply sm:text-base  text-sm text-[#000038]
 }
 
 li{
     font-family: sans-serif;
-    @apply sm:text-base  text-sm text-blue-900
+    @apply sm:text-base  text-sm text-[#000038]
 }
 
 a{

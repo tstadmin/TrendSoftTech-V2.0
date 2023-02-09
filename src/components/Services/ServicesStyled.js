@@ -35,7 +35,7 @@ export const Title = styled.h2`
   ${tw` text-[#0B70E1] mt-5  md:text-xl sm:text-lg text-base `}
 `
 export const PhasesTitle = styled.h3`
-  ${tw`mt-5  md:text-lg   text-sm `}
+  ${tw`mt-5  md:text-lg    text-sm `}
 `
 export const PhasesDescription = styled.p`
   ${tw`mt-2 `}

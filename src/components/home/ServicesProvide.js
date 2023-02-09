@@ -8,16 +8,7 @@ import {
 } from "./HomeStyle"
 
 const ServicesProvide = props => {
-  // let timer = 0
-  // let delay = 200
-  // let prevent = false
-  // const onDoubleClickHandler = e => {
-  //   clearTimeout(e.timer)
-  //   e.prevent = true
-  //   setTimeout(e => {
-  //     e.prevent = false
-  //   }, e.delay)
-  // }
+
 
   return (
     <Services>
@@ -28,7 +19,6 @@ const ServicesProvide = props => {
         {props.servicesProvide.list?.map((item, idx) => (
           <Link
             to={item.listItem.page}
-            // onDoubleClick={onDoubleClickHandler}
             key={item.listItem.id}
           >
             <Card

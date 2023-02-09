@@ -19,12 +19,7 @@ const Counter = () => {
           </CounterNumber>
           <CounterDescription> Happy Clients</CounterDescription>
         </li>
-        {/* <li>
-          <CounterNumber>
-            {counter && <CountUp end={50} duration={1} />}+
-          </CounterNumber>
-          <CounterDescription> Companies</CounterDescription>
-        </li> */}
+    
         <li>
           <CounterNumber>
             {counter && <CountUp end={30} duration={1} />}+

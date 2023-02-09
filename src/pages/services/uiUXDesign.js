@@ -41,7 +41,7 @@ const UiUXDesign = () => {
                   Portfolio <FiChevronDown className="mt-1 text-2xl  " />
                 </PortfolioLink>
               </PortfoliosButton> */}
- <Link className=" bg-[#1E6ff5] text-white text-sm p-3 w-50 rounded-md flex  justify-center " href="#scroll">
+ <Link className=" bg-[#0b2d78] text-white text-sm p-3 w-50 rounded-md flex  justify-center " href="#scroll">
                   Portfolio 
                 </Link>
               <Brochure />

@@ -94,22 +94,22 @@ export default function Header(props) {
           ref={ref}
           className={
             opened
-              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[117px]  340Screen:top-[106.7px] top-[100.92px] bg-[#0f6cb3] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
+              ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[117px]  340Screen:top-[106.7px] top-[100.92px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-64 2xl:pl-32 lg:pl-18 md:pl-24 pl-8    1920Screen:space-x-18 2xl:space-x-16 xl:space-x-14 grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-64 2xl:pl-32 xl:pl-18 lg:pl-16 md:pl-24 sm:pl-14 pl-8    1920Screen:space-x-18 2xl:space-x-10 xl:space-x-10  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.listItem.id}
-                className="  text-white mt-6 xl:text-xl sm:text-lg text-sm sm:font-medium hidden 540Screen:block font-roboto "
+                className="  text-[#FFD22E] mt-6 xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium hidden 540Screen:block font-roboto "
               >
                 {item.listItem.title}
                 <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
                       onClick={() => setOpened(false)}
-                      className=" text-[#ebebeb]  1920Screen:text-[16px] text-xs"
+                      className=" text-[#ebebeb] font-medium 1920Screen:text-[18px]  text-[16px]"
                       key={sub.listItem.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>

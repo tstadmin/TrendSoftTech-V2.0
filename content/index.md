@@ -148,6 +148,15 @@ home:
                 page: "/careers/" 
       - listItem:
           id: 8
+          title: "About"
+          page: ""     
+          subTitle: 
+            - listItem:
+                id: 1
+                title: "About US"
+                page: "/about/"           
+      - listItem:
+          id: 9
           title: "Contact"
           page: "/awards/"     
           subTitle: 
@@ -404,7 +413,7 @@ home:
   footer:
     logo: "/img/HomeImages/trendsoftlogo.svg"
     alt: "trendsoft tech logo"
-    description: "At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections."
+    description: "At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients data security and intellectual property protections."
     itTitle: "Services"
     itService: 
       - listItem:
@@ -436,7 +445,7 @@ home:
           title: "Digital Marketing"
           page: "/services/digitalMarketing/"           
     contactTitle : "Contact Info"
-    local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
+    local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat No.301, 3rd Floor , KPHB Colony, Road No.1 ,Kukatpally ,Hyderabad-500072."
     mail : "info@trendsofttech.com" 
     serviceMail: " service@trendsofttech.com"
     mailLink : ""    
@@ -457,9 +466,9 @@ about:
     ourVision: "Our Vision"
     ourVisionDescription: "<p>Our vision is to be the best in providing IT solutions and services with customer excellence and sound business practices.</p>"
     ourMission: " Our Mission"
-    ourMissionDescription : "<p>Our mission is to be a customer focus company, serving our business partners and clients to the best of our ability, while adding value to our clients’ businesses.</p>"
-    whychoose: "why choose Us?"
-    whychooseDescription : "<p>Vision + Hard work + Consistency </p><p>Price + Quality + Delivery + Reliability + Efficiency </p><p>At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients' data security and intellectual property protections. We believe that transparency is needed to create trust, and so it is integral part or Trendsoft culture. It gives us utmost confidence to provide a visibility regarding the development process to the clients. Being your technology partner, we make sure to deliver right combination of technologies for your need and excellent result of it.</p>"    
+    ourMissionDescription : "<p>Our mission is to be a customer focus company, serving our business partners and clients to the best of our ability, while adding value to our clients businesses.</p>"
+    whychoose: "why choose Trendsoft?"
+    whychooseDescription : "<p>Vision + Hard work + Consistency </p><p>Price + Quality + Delivery + Reliability + Efficiency </p><p>At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients data security and intellectual property protections. We believe that transparency is needed to create trust, and so it is integral part or Trendsoft culture. It gives us utmost confidence to provide a visibility regarding the development process to the clients. Being your technology partner, we make sure to deliver right combination of technologies for your need and excellent result of it.</p>"    
 services:
    webDevelopment:
       slug: "Web-development"
@@ -1306,7 +1315,7 @@ AccessibilityTabs:
         title: "Accessible Excel"
         link: "/services/docAccessibility/accessibleExcel"            
 Brochure:
-    description: "Download our company brochure here"
+    description: "Download our brochure here"
     button: "Download PDF"      
 Grow:
     description: "Grow Your Business and Build Your Website or Software With Us."

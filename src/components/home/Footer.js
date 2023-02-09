@@ -64,9 +64,7 @@ const Footer = props => {
               </li>
             ))}
           </ul>
-          <p>
-            <Link to="/about/">About</Link>
-          </p>
+         
         </FooterInfoDiv>
 
         <FooterInfoDiv>

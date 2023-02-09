@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro"
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h2`
-  ${tw` text-[#dc1f2c]`}
+  ${tw` text-[#913A1D]`}
 `
 // export const SubTitle = styled.h2`
 //   ${tw` text-[#0B70E1] md:text-3xl text-xl   `}
@@ -73,7 +73,7 @@ export const AboutOurSubTitle = styled.h3`
 ///  ----- Services  provide component in HomePage  Home folder--------------------------------
 
 export const Services = styled.div`
-  ${tw`text-center  bg-blue-50 py-14`}
+  ${tw`text-center  bg-blue-50 py-8`}
 `
 export const ServicesTitleDiv = styled.div`
   ${tw`text-center mb-8 `}
@@ -119,7 +119,7 @@ export const CounterNumber = styled.p`
   ${tw`text-[50px] font-bold text-[#0B70E1]`}
 `
 export const CounterDescription = styled.p`
-  ${tw`md:text-[20px] text-[#dc1f2c] font-[400] font-semibold mt-6 `}
+  ${tw`md:text-[20px] text-[#913A1D] font-[400] font-semibold mt-6 `}
 `
 ///  ----- ContactUs 24/7 Banner component in HomePage Home  folder--------------------------------
 export const Contact = styled.div`
@@ -144,7 +144,7 @@ export const Working = styled.div`
   ${tw`lg:flex justify-center gap-4 lg:px-0 px-8 `}
 `
 export const WorkingDescription = styled.p`
-  ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins text-[#dc1f2c] `}
+  ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins text-[#913A1D] mt-20 `}
 `
 export const WorkingCardNumber = styled.h3`
   ${tw`text-orange-400 `}
