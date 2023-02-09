@@ -130,7 +130,7 @@ home:
                 page: "/services/uiUXDesign/"
       - listItem:
           id: 6
-          title: "awards"
+          title: "Awards & Certifications"
           page: "/awards/"     
           subTitle: 
             - listItem:
