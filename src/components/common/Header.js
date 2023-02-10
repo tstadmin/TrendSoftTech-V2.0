@@ -98,7 +98,7 @@ export default function Header(props) {
               : "fixed hidden "
           }
         >
-          <div className="xl:flex 1920Screen:pl-64 2xl:pl-32 xl:pl-18 lg:pl-16 md:pl-24 sm:pl-14 pl-8    1920Screen:space-x-18 2xl:space-x-10 xl:space-x-10  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+          <div className="xl:flex 1920Screen:pl-64 2xl:pl-32 xl:pl-18 lg:pl-16 md:pl-24 sm:pl-14 pl-8    1920Screen:space-x-18 2xl:space-x-6 xl:space-x-5  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
               <h2
                 key={item.listItem.id}

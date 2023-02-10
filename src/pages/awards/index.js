@@ -20,7 +20,7 @@ const Index = () => {
       <Layout  title={{title:"Awards & Certifications"}}>
       <Seo title="Awards & Certifications" description="TrendSoftTech" /> 
         <BreadCrumb
-          img="/img/Awards/awardsFrame.svg"
+          img="/img/BreadCrumb/AwardsCertifications.svg"
           title="Awards & Certifications"
         />
         <Awards data={awards} title="Awards & Certifications" />

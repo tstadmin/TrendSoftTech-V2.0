@@ -18,7 +18,7 @@ const Contact = () => {
      
       <Layout  title={{ title:"service@trendsofttech.com   info@trendsofttech.com"}} >
         <Seo title="Contact " description="TrendSoftTech" />
-        <BreadCrumb title="Contact Us" img="/img/contact/contact_Frame.svg" />
+        <BreadCrumb title="Contact Us" img="/img/BreadCrumb/careersFrame.svg" />
         <ContactIndex data={contact}   title="Contact"/>
       </Layout>
     </div>

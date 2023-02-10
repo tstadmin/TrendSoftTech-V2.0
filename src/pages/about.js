@@ -23,7 +23,7 @@ const About = () => {
       <Layout  title={{title:"About Us"}}>
         <div>
           <Seo title="About" description="TrendSoftTech" />
-          <BreadCrumb img="/img/AboutImages/About_Frame.svg" title="About" />
+          <BreadCrumb img="/img/BreadCrumb/AboutFrame.svg" title="About" />
           <AboutUs data={about} />
           <OurVision data={about} />
           <ChooseUs data={about} />

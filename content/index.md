@@ -322,7 +322,7 @@ home:
           title: "Testing"
           page: "/services/testing/"
           description: "Trendsoft offers independent quality engineering and a wide range of software testing services and solutions..."
-          CTA: "READ MORE"
+          CTA: "Read more..."
       - listItem:
           id: 8
           img: "/img/icons/Docaccessibility.svg"
@@ -455,9 +455,9 @@ home:
     linkedinLink: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE2hU0J4z4P2gAAAYViiW5grJXhnU1sVxZd3Vt3HX2uebekQCjbXcACP3SqWZ6AlHcr8fcP6WPuusSq3zYfhd6_lHKXkaScAYFVGSvEFtEJdCzMRdWo0-YyL5CNJT_y1QnzvXg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftrendsoft-technologies-192645240"
     reserved : "© 2023 All Rights Reserved."    
 about:
-    aboutimg: "/img/AboutImages/AboutUs.svg"
+    aboutimg: "/img/AboutImages/AboutUsFrame.svg"
     altAbout: "AboutUs Image "
-    Visionimg : "/img/AboutImages/OurVision.svg"
+    Visionimg : "/img/AboutImages/targetFrame.svg"
     altVision: "Our Vision Image"
     chooseimg : "/img/AboutImages/Choose.svg"
     altChoose: "why choose image"

@@ -19,5 +19,5 @@ export const ChooseInfo = styled.div`
   ${tw`basis-1/2 space-y-4`}
 `
 export const Div = styled.div`
-  ${tw`lg:flex justify-center xl:space-x-20 lg:space-x-20 space-y-10 2xl:px-48 lg:px-16  px-8 md:mt-20 mt-10`}
+  ${tw`lg:flex justify-center xl:space-x-20 lg:space-x-20 space-x-0 lg:space-y-0 space-y-10 2xl:px-48 lg:px-16  px-8 mt-10 `}
 `

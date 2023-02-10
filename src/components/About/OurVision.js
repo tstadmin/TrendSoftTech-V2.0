@@ -23,7 +23,7 @@ const OurVision = props => {
         />
       </VisionInfo>
 
-      <img src={props.data.Visionimg} alt="" />
+      <img src={props.data.Visionimg} alt=""  className="lg:w-[450px] w-[600px]" />
     </Div>
   )
 }

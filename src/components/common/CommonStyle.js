@@ -2,7 +2,7 @@ import tw, { styled } from "twin.macro"
 //-----BreadCrumb component  in Commer Folders-----
 
 export const Image = styled.img`
-  ${tw` w-[100%]   `}
+  ${tw`   `}
 `
 // lg:h-[50vh] md:h-[30vh]
 
