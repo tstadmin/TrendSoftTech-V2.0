@@ -6,6 +6,9 @@ import { AiOutlineMail } from "react-icons/ai"
 import { MdOutlineAttachEmail } from "react-icons/md"
 
 import { BiLink } from "react-icons/bi"
+import { AiOutlineInstagram } from "react-icons/ai"
+import { BiPhoneCall } from "react-icons/bi"
+
 
 import {
   FooterDiv,
@@ -50,8 +53,18 @@ const Footer = props => {
               aria-label="Linkedin: trendsoft tech page "
             >
               <FooterIconStyles>
-                <TiSocialLinkedin />
+                <TiSocialLinkedin className="text-xl"/>
               </FooterIconStyles>
+            </a>
+            <a
+               href={props.data.instagramLink}
+               target="_blank"
+               rel="noreferrer"
+               aria-label="Instagram: trendsoft tech page "
+            >
+               <FooterIconStyles>
+               < AiOutlineInstagram  className="text-xl" />
+               </FooterIconStyles>
             </a>
           </FooterIconLogo>
         </FooterTrendInfo>
@@ -132,6 +145,7 @@ const Footer = props => {
                 </Link>
               </li>
             </FooterIconInfo>
+       
           </ul>
         </FooterInfoDiv>
       </FooterInfo>

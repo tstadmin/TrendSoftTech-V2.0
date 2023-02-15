@@ -150,11 +150,10 @@ const layoutQuery = graphql`
                 local
                 mail
                 serviceMail
-                mailLink
                 website
                 facebookLink
                 linkedinLink
-                websiteLink
+                instagramLink 
                 reserved
               }
             }

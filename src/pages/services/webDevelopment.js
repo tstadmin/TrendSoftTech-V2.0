@@ -14,6 +14,7 @@ import {
   DevelopmentDiv,
   DevelopmentLayout,
 } from "../../components/services/ServicesStyled"
+import ServicesLayout from "../../components/ServicesLayout"
 
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
@@ -29,8 +30,10 @@ const WebDevelopment = () => {
           title="Web Development"
           img="/img/BreadCrumb/WebDevelopment.svg"
         />
+        <ServicesLayout>  <Development data={data}    title="Web Development" /></ServicesLayout>
+        <Portfolios data={data} />
 
-        <div>
+        {/* <div>
           <DevelopmentDiv>
             <Development data={data}    title="Web Development" />
             <DevelopmentLayout>
@@ -47,7 +50,7 @@ const WebDevelopment = () => {
           <div id="scroll" className="top-0">
             <Portfolios data={data} />
           </div>
-        </div>
+        </div> */}
       </Layout>
     </div>
   )

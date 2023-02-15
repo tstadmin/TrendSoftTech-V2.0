@@ -3,14 +3,14 @@ import React from "react"
 import { PhotoProvider, PhotoView } from "react-photo-view"
 
 import "react-photo-view/dist/react-photo-view.css"
-
+import { AwardHeading,AwardDiv } from "./AwardStyled"
 const Awards = props => {
   
   return (
     <div>
       <PhotoProvider>
-      <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 text-[#913A1D] font-semibold">{props.title}</h1>
-        <div className="sm:flex grid  justify-center gap-10">
+      <AwardHeading>{props.title}</AwardHeading>
+        <AwardDiv>
           {props.data.list.map((item, idx) => (
             <PhotoView src={item.listItem.img} key={item.listItem.id}>
               <Link to="" aria-label={item.listItem.label}>
@@ -25,7 +25,7 @@ const Awards = props => {
               </Link>
             </PhotoView>
           ))}
-        </div>
+        </AwardDiv>
       </PhotoProvider>
     </div>
   )

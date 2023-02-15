@@ -109,7 +109,7 @@ export default function Header(props) {
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li
                       onClick={() => setOpened(false)}
-                      className=" text-[#ebebeb] font-medium 1920Screen:text-[18px]  text-[16px]"
+                      className=" text-[#ebebeb] font-medium  1920Screen:text-[18px]  text-[16px]"
                       key={sub.listItem.id}
                     >
                       <Link to={sub.listItem.page}>{sub.listItem.title}</Link>

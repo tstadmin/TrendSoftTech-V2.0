@@ -19,7 +19,7 @@ h2{
 }
 h3{
     font-family: sans-serif;
-    @apply md:text-lg  text-sm  font-semibold text-[#0b6ddc]
+    @apply md:text-lg  text-[18px]  font-semibold text-[#0b6ddc]
 }
 p{
     font-family: sans-serif;

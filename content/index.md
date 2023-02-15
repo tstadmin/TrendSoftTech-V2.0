@@ -234,12 +234,6 @@ home:
           careersPage: "/careers/"
           contact: "contact"
           contactPage: "/contact/"  
-  banner:
-    headers: "<h1>We Increase your Business Success</h1> "
-    title: "Use the modern technology and IT Services"
-    image: "/img/HomeImages/bannerImage.svg"
-    alt: ""
-    CTA: "contact"
   bannerItems:
     - card:
         id: 1
@@ -339,23 +333,6 @@ home:
           description: "We offers a variety of services to help you make your new or existing website accessible to users ."
           page: "/services/webAccessibility/"
           CTA: "Read more..." 
-  accessibilityServices:
-    title: "Our Accessibility Services"
-    list:
-      - listItem:
-          id: 1
-          img: "/img/icons/Docaccessibility.svg"
-          alt: ""
-          title: "Doc Accessibility"
-          description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
-          page: ""
-      - listItem:
-          id: 2
-          img: "/img/icons/webaccessibility.svg"
-          alt: ""
-          title: "Web Accessibility"
-          description: "We offers a variety of services to help you make your new or existing website accessible to users ."
-          page: ""
   clients:
     list:
       - listItem:
@@ -379,12 +356,6 @@ home:
       - listItem:
           id: 7
           img: "/img/Clients/tenali_double_horse.png"
-  contactUs24x7:
-    personsImage: "/img/HomeImages/contactus2.svg"
-    alt: "contact Frame image "
-    title: "CONTACT US 24/7"
-    description: "Have any idea or project for in your mind call us or schedule a appointment. Our representative will reply you shortly."
-    CTA: "Contact Us"
   workingProcess:
     title: WORKING PROCESS
     description: "How We Work For Our Customers"
@@ -399,17 +370,17 @@ home:
           id: 2
           num: "2."
           title: "Implementation"
-          description: "All plans are as good as their implementation; At Trendsoft we understand that and our ..."
+          description: "All plans are as good as their implementation, At Trendsoft we understand that and our ..."
       - listItem:
           id: 3
           num: "3."
           title: "Testing"
-          description: "All plans are as good as their implementation; At Trendsoft we understand that and our software..."
+          description: "All plans are as good as their implementation, At Trendsoft we understand that and our software..."
       - listItem:
           id: 4
           num: "4."
           title: "Deployment"
-          description: "One the product is accepted by the client we move towards deployment. Our support teams..."
+          description: "Once the product is accepted by the client we move towards deployment. Our support teams..."
   footer:
     logo: "/img/HomeImages/trendsoftlogo.svg"
     alt: "trendsoft tech logo"
@@ -450,9 +421,9 @@ home:
     serviceMail: " service@trendsofttech.com"
     mailLink : ""    
     website : "http://www.trendsofttech.com" 
-    websiteLink : ""
     facebookLink: "https://www.facebook.com/trendsofttech/"
     linkedinLink: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE2hU0J4z4P2gAAAYViiW5grJXhnU1sVxZd3Vt3HX2uebekQCjbXcACP3SqWZ6AlHcr8fcP6WPuusSq3zYfhd6_lHKXkaScAYFVGSvEFtEJdCzMRdWo0-YyL5CNJT_y1QnzvXg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftrendsoft-technologies-192645240"
+    instagramLink : "https://www.instagram.com/trendsoft_technologies/"
     reserved : "© 2023 All Rights Reserved."    
 about:
     aboutimg: "/img/AboutImages/AboutUsFrame.svg"
@@ -487,11 +458,11 @@ services:
                - listItems:
                      id: 1
                      title: "Planning:"   
-                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experiences experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients. </p>"
+                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and Experienced experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients. </p>"
                - listItems:
                      id: 2
                      title: "Implementation, testing and documenting:"   
-                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
+                     description: "<p>All plans are as good as their implementation, At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
                - listItems:
                      id: 3
                      title: "Deployment and maintenance:"   
@@ -499,11 +470,11 @@ services:
       portfolios:
         - listItem: 
              id: 1
-             title: "Quartree Technologies"
+             title: "Quadtree Technologies"
              img: "/img/portfolio/quad.jpg"
              about: "Quadtree Technologies is a Big Data Analytics company"
              link: "https://www.quadtreetech.com/"
-             label: "explore Quartree Technologies website" 
+             label: "explore Quadtree Technologies website" 
         - listItem:
              id: 2
              title: "ProTPD Digital"
@@ -515,7 +486,7 @@ services:
              id: 3
              title: "KN Technologies"
              img: "/img/portfolio/knt.jpg"
-             about: it’s not easy to get a well-paid job with a decent employer without putting in the work"
+             about: "it’s not easy to get a well-paid job with a decent employer without putting in the work"
              link: "https://kntech.co.uk/"
              label: "explore KN Technologies website" 
         - listItem:
@@ -541,11 +512,11 @@ services:
                - listItems:
                      id: 1
                      title: "Planning:"   
-                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experiences experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p> "
+                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and Experience experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p> "
                - listItems:
                      id: 2
                      title: "Implementation, testing and documenting:"   
-                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
+                     description: "<p>All plans are as good as their implementation, At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
                - listItems:
                      id: 3
                      title: "Deployment and maintenance:"   
@@ -574,11 +545,11 @@ services:
                - listItems:
                      id: 1
                      title: "Planning:"   
-                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experiences experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p>"
+                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and Experience experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p>"
                - listItems:
                      id: 2
                      title: "Implementation, testing and documenting:"   
-                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible."
+                     description: "<p>All plans are as good as their implementation, At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible."
                - listItems:
                      id: 3
                      title: "Deployment and maintenance:"   
@@ -598,11 +569,11 @@ services:
                - listItems:
                      id: 1
                      title: "Planning:"   
-                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experiences experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p> "
+                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experienced experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p> "
                - listItems:
                      id: 2
                      title: "Implementation, testing and documenting:"   
-                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
+                     description: "<p>All plans are as good as their implementation. At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
                - listItems:
                      id: 3
                      title: "Deployment and maintenance:"   
@@ -622,11 +593,11 @@ services:
                - listItems:
                      id: 1
                      title: "Planning:"   
-                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experiences experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p> "
+                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and Experienced experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p> "
                - listItems:
                      id: 2
                      title: "Implementation, testing and documenting:"   
-                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
+                     description: "<p>All plans are as good as their implementation. At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
                - listItems:
                      id: 3
                      title: "Deployment and maintenance:"   
@@ -641,11 +612,11 @@ services:
              label: "explore EA Labs website"                  
         - listItem: 
              id: 2
-             title: "Quartree Technologies"
+             title: "Quadtree Technologies"
              img: "/img/portfolio/quad.jpg"
              about: "Quadtree Technologies is a Big Data Analytics company"
              link: "https://www.quadtreetech.com/"
-             label: "explore Quartree Technologies website"     
+             label: "explore Quadtree Technologies website"     
         - listItem:
              id: 3
              title: "ProTPD Digital"
@@ -752,11 +723,11 @@ services:
                - listItems:
                      id: 1
                      title: "Planning:"   
-                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and experiences experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p> "
+                     description: "<p>Clients usually have an idea of what they want as the end result, but not what the software should go. Our skilled and Experienced experts help the clients define the software requirements and scope thereby generating a clear map for the client and our development teams. We it is this step where we generate maximum value for the clients.</p> "
                - listItems:
                      id: 2
                      title: "Implementation, testing and documenting:"   
-                     description: "<p>All plans are as good as their implementation; At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
+                     description: "<p>All plans are as good as their implementation. At Trendsoft we understand that and our software experts ensure that we follow the code to the letter. Our Quality team ensures that defects are recognized as soon as possible.</p>"
                - listItems:
                      id: 3
                      title: "Deployment and maintenance:"   
@@ -981,7 +952,7 @@ webAccessibility:
         - listItems:
              id: 9 
              title : "USER-CENTERED DESIGN WITH STANDARDS FOR USABLE ACCESSIBILITY"
-             description: "<p>WAI supports user-centered design (UCD) and other techniques to develop websites, web applications, and web tools that are highly usable by people with disabilities. “Involving Users in Web Projects for Better, Easier Accessibility” and “Involving Users in Evaluating Web Accessibility” are directly addressed to web developers and project managers without usability expertise (and suggest “getting assistance from accessibility, disability, and user-centered design specialists”).</p><p>These documents help others understand what most usability professionals already know: that involving users early in the design process results in better products for uers and more efficient project development.</p>"  
+             description: "<p>WAI supports user-centered design (UCD) and other techniques to develop websites, web applications, and web tools that are highly usable by people with disabilities. “Involving Users in Web Projects for Better, Easier Accessibility” and “Involving Users in Evaluating Web Accessibility” are directly addressed to web developers and project managers without usability expertise (and suggest “getting assistance from accessibility, disability, and user-centered design specialists”).</p><p>These documents help others understand what most usability professionals already know that involving users early in the design process results in better products for users and more efficient project development.</p>"  
         - listItems:
              id: 10 
              title : "OVERLAP WITH OLDER USERS, MOBILE USERS, AND OTHER USER GROUPS"
@@ -1135,7 +1106,7 @@ portfolio:
           img: "/img/portfolio/ea.jpg"
           about: "We believe knowledge is a key to early success in this stage"
           link: "https://ealabsipl.com/"
-          label: "explore Quartree Technologies website"
+          label: "explore EA labs website"
       - listItem:
           id: 2
           title: "vijaya pickles"
@@ -1145,11 +1116,11 @@ portfolio:
           label: "explore vijaya pickles website"
       - listItem:
           id: 3
-          title: "Quartree Technologies"
+          title: "Quadtree Technologies"
           img: "/img/portfolio/quad.jpg"
           about: "Quadtree Technologies is a Big Data Analytics company"
           link: "https://www.quadtreetech.com/"
-          label: "explore Quartree Technologies website"
+          label: "explore Quadtree Technologies website"
       - listItem:
           id: 4
           title: "ProTPD Digital"
@@ -1316,10 +1287,7 @@ AccessibilityTabs:
         link: "/services/docAccessibility/accessibleExcel"            
 Brochure:
     description: "Download our brochure here"
-    button: "Download PDF"      
-Grow:
-    description: "Grow Your Business and Build Your Website or Software With Us."
-    button: "Contact Us"  
+    button: "Download brochure"        
 awards&certifications:    
   list: 
     - listItem: 

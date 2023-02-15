@@ -1,5 +1,10 @@
 import tw, { styled } from "twin.macro"
 
+
+export const Header = styled.h1`
+${tw`text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 font-semibold text-[#913A1D] `}
+  `
+
 //------- Careers InfoCard page style Component  ------------
 
 export const InfoCardDiv = styled.div`

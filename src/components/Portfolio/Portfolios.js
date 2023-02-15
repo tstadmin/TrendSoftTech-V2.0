@@ -3,7 +3,7 @@ import React from "react"
 
 const Portfolios = props => {
   return (
-    <div className=" mt-10 1920Screen:px-44 2xl:px-24 px-8 md:py-10 py-28 bg-blue-100">
+    <div className=" mt-10 1920Screen:px-44 2xl:px-24 px-8 py-10 bg-blue-100">
       <div className="text-center space-y-2">
         <h2 className="md:text-3xl sm:text-lg text-base text-[#0B70E1]">Portfolio</h2>
       </div>
@@ -29,7 +29,7 @@ const Portfolios = props => {
                 </span>
                 <Link
                   aria-label={item.listItem.label}
-                  className="bg-[#0b2d78] p-2 rounded-md text-center lg:text-lg  text-xs text-white"
+                  className="bg-[#0b2d78] hover:text-[#f9761f] focus:text-[#f9761f] p-2 rounded-md text-center lg:text-lg  text-xs text-white"
                   to={item.listItem.link}
                   target="_blank"
                 >
@@ -40,45 +40,6 @@ const Portfolios = props => {
           </li>
         ))}
       </ul>
-
-      {/* <div className="relative mt-10 p-5 xl:ml-56 lg:ml-36 md:ml-20 ml-0">
-        <div>
-          <img
-            src="/img/port/KtTexh.svg"
-            className="lg:h-[500px] md:h-[400px] h-[300px]  w-full object-cover  object-left-top "
-          />
-        </div>
-
-        <div className="grid justify-center md:w-72 w-52 h-auto space-y-3 bg-yellow-100 p-5 xl:-left-28 lg:-left-32 md:-left-24  sm:left-[32%] 540Screen:left-[30%] 440Screen:left-[23%] 340Screen:left-[18%] left-0 absolute md:top-32  top-52">
-          <h2 className="lg:text-lg md:text-sm text-xs">KN Tech</h2>
-          <span className="lg:text-lg md:text-sm text-xs">
-            In today’s world, it’s not easy to get a well-paid job with a decent
-            employer without putting ...
-          </span>
-          <Link className="bg-blue-400 p-2 rounded-md text-center lg:text-lg md:text-sm text-xs">
-            Expolre
-          </Link>
-        </div>
-      </div> */}
-      {/* <div className="relative mt-10 p-5  ">
-        <div>
-          <img
-            src="/img/port/Annapurna.svg"
-            className="lg:h-[500px] md:h-[400px] h-[300px] md:w-[85%] w-full object-cover  object-left-top "
-          />
-        </div>
-
-        <div className="grid justify-center  md:w-72 w-52 h-auto space-y-3 bg-yellow-100 p-5  xl:right-20 lg:right-8 md:right-0 540Screen:right-[25%] sm:right-[30%] 440Screen:right-[23%] 340Screen:right-[12%] right-0 absolute md:top-32  top-52  ">
-          <h2 className="lg:text-lg md:text-sm text-xs">KN Tech</h2>
-          <span className="lg:text-lg md:text-sm text-xs">
-            In today’s world, it’s not easy to get a well-paid job with a decent
-            employer without putting ...
-          </span>
-          <Link className="bg-blue-400 p-2 rounded-md text-center lg:text-lg md:text-sm text-xs">
-            Expolre
-          </Link>
-        </div>
-      </div> */}
     </div>
   )
 }

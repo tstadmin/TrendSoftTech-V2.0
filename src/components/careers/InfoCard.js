@@ -8,6 +8,7 @@ import {
   CardTitle,
   CardInfoDiv,
   CardReadDiv,
+  Header,
 } from "./CareersStyle"
 import { BsArrowRight } from "react-icons/bs"
 import CareersForm from "./CareersForm"
@@ -15,8 +16,8 @@ import CareersForm from "./CareersForm"
 const InfoCard = props => {
   return (
     <InfoCardDiv>
-      {/* <CareersHanding>{props.careers.heading}</CareersHanding> */}
-      <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 font-semibold text-[#913A1D]">{props.title}</h1>
+
+      <Header>{props.title}</Header>
       <InfoCards>
         {props.careers.list?.map((item, idx) => (
           <CardDiv key={item.listItem.id}>
