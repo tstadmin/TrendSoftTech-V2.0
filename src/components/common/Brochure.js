@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { BrochureDiv } from "./CommonStyle"
+
 const Brochure = () => {
   const query = useStaticQuery(BrochureData)
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.Brochure
@@ -9,7 +10,7 @@ const Brochure = () => {
   
  
       
-<p className=" font-semibold text-2xl">{data.description}</p> 
+<p className=" font-semibold text-xl mt-1">{data.description}</p> 
       <a
         href="/pdf/brochure.pdf"
         target="_blank"

@@ -24,7 +24,7 @@ export const GrowBusinnesHeading = styled.h2`
 //-----Brochure component  in Commer Folders-----
 
 export const BrochureDiv = styled.div`
-  ${tw`mt-10 py-6 px-2 sm:space-x-10 space-x-0 sm:space-y-0 space-y-5 sm:flex w-[100%] justify-center bg-blue-100`}
+  ${tw`mt-10 py-4 px-2 sm:space-x-10 space-x-0 sm:space-y-0 space-y-5 sm:flex w-[100%] justify-center bg-blue-100`}
 `
 export const BrochuresHeading = styled.h2`
   ${tw`text-2xl`}
