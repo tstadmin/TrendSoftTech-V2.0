@@ -1,17 +1,13 @@
-import { graphql, useStaticQuery,Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
-import {
-  DevelopmentDiv,
-  DevelopmentLayout,
 
-} from "../../components/Services/ServicesStyled"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
 
 import Seo from "../../components/seo"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Portfolios from "../../components/Portfolio/Portfolios"
-import Brochure from "../../components/common/Brochure"
+
 import ServicesLayout from "../../components/ServicesLayout"
 const UiUXDesign = () => {
   const query = useStaticQuery(UiUXDesignData)
@@ -23,19 +19,19 @@ const UiUXDesign = () => {
     setDesign(data)
   }, [data])
 
-
   return (
     <div>
-      <Layout title={{ title:"UI / UX Design"}}>
+      <Layout title={{ title: "UI / UX Design" }}>
         <Seo title="UI/UX Design" description="TrendSoftTech" />
         <BreadCrumb
           title="UI / UX Design"
           img="/img/BreadCrumb/UiUXDesign.svg"
         />
-        <ServicesLayout>  <Development data={design}    title="UI / UX Design"/></ServicesLayout>
+        <ServicesLayout>
+          {" "}
+          <Development data={design} title="UI / UX Design" />
+        </ServicesLayout>
         <Portfolios data={data} />
-       
-
       </Layout>
     </div>
   )

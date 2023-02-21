@@ -1,16 +1,13 @@
-import { graphql, useStaticQuery,Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import React, { useEffect, useState } from "react"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Development from "../../components/Services/Development"
 
 import Seo from "../../components/seo"
-import Brochure from "../../components/common/Brochure"
+
 import Portfolios from "../../components/Portfolio/Portfolios"
-import {
-  DevelopmentDiv,
-  DevelopmentLayout,
-} from "../../components/Services/ServicesStyled"
+
 import ServicesLayout from "../../components/ServicesLayout"
 const EcommerceDevelopment = () => {
   const query = useStaticQuery(ecommercData)
@@ -25,19 +22,16 @@ const EcommerceDevelopment = () => {
 
   return (
     <div>
-      <Layout title={{title:"Ecommerce Development"}}>
+      <Layout title={{ title: "Ecommerce Development" }}>
         <Seo title="Ecommerce-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Ecommerce Development"
           img="/img/BreadCrumb/EcommerceDevelopment.svg"
         />
         <ServicesLayout>
-        <Development data={ecommerc}  title="Ecommerce Development" />
+          <Development data={ecommerc} title="Ecommerce Development" />
         </ServicesLayout>
         <Portfolios data={data} />
-      
-
-       
       </Layout>
     </div>
   )

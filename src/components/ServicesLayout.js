@@ -1,7 +1,6 @@
 import React from "react"
 import Brochure from "./common/Brochure"
 
-import { DevelopmentDiv } from "./services/ServicesStyled"
 const ServicesLayout = ({ children }) => {
   return (
     <div>

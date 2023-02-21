@@ -17,18 +17,17 @@ const DigitalMarketing = () => {
     setDigital(data)
   }, [data])
 
-
   return (
     <div>
-      <Layout title={{title:"Digital Marketing"}}>
+      <Layout title={{ title: "Digital Marketing" }}>
         <Seo title="Digital-Marketing" description="TrendSoftTech" />
         <BreadCrumb
           title="Digital Marketing"
           img="/img/BreadCrumb/digitalmarketing.svg"
         />
-        {/* <Tabs /> */}
+
         <ServicesLayout>
-          <Development data={digital} title="Digital Marketing"/>
+          <Development data={digital} title="Digital Marketing" />
         </ServicesLayout>
       </Layout>
     </div>
