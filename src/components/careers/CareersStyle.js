@@ -1,14 +1,13 @@
 import tw, { styled } from "twin.macro"
 
-
 export const Header = styled.h1`
-${tw`text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 font-semibold text-[#913A1D] `}
-  `
+  ${tw`text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4 font-semibold text-[#913A1D] `}
+`
 
 //------- Careers InfoCard page style Component  ------------
 
 export const InfoCardDiv = styled.div`
-  ${tw`mt-20 space-y-16 `}
+  ${tw`mt-10 space-y-16 `}
 `
 export const InfoCards = styled.ul`
   ${tw`md:flex  justify-center md:space-x-10 md:px-0 px-8 md:space-y-0  space-y-6`}
