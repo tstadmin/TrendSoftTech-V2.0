@@ -20,7 +20,7 @@ const Testing = () => {
 
   return (
     <div>
-      <Layout title={{title:"Testing"}}>
+      <Layout title={{ title: "Testing" }}>
         <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img="/img/BreadCrumb/testing.svg" />
 

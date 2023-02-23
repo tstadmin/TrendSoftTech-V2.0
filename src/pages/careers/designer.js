@@ -3,7 +3,6 @@ import React from "react"
 import { useEffect } from "react"
 import { useState } from "react"
 import RequirementInfo from "../../components/careers/RequirementInfo"
-import TopBar from "../../components/common/TopBar"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 
@@ -18,8 +17,7 @@ const Designer = () => {
 
   return (
     <div>
-      
-      <Layout title={{title:"Careers-designer"}}>
+      <Layout title={{ title: "Careers-designer" }}>
         <Seo title="Careers-designer" description="TrendSoftTech" />
         <RequirementInfo data={designer} />
       </Layout>

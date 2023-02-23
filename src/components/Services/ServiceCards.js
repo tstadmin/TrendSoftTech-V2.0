@@ -1,7 +1,7 @@
 import React from "react"
 // import Cards from "./Cards"
 
-import { ServiceCard, ServiceCardInfo, ServiceCardDiv } from "./ServicesStyled"
+import { ServiceCardDiv } from "./ServicesStyled"
 
 const ServiceCards = props => {
   console.log(props)

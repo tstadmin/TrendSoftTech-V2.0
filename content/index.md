@@ -91,12 +91,20 @@ home:
           subTitle: 
             - listItem:
                 id: 1
-                title: "Manual Testing"
-                page: "/services/testing/"
+                title: "Functional Testing"
+                page: "/services/testings/functionalTesting/"
             - listItem:
                 id: 2
-                title: "Automation Testing"
-                page: "/services/testing/"
+                title: "Performance Testing"
+                page: "/services/testings/performanceTesting/"
+            - listItem:
+                id: 3
+                title: "Security Testing"
+                page: "/services/testings/securityTesting/"
+            - listItem:
+                id: 3
+                title: "Usability Testing"
+                page: "/services/testings/usabilityTesting/"        
       - listItem:
           id: 3
           title: "Accessibility"
@@ -195,12 +203,20 @@ home:
           subTest:
             - listItem:
                 id: 1
-                title: "Manual Testing"
-                page: "/services/testing/"
+                title: "Functional Testing"
+                page: "/services/testings/functionalTesting/"
             - listItem:
                 id: 2
-                title: "Automation Testing"
-                page: "/services/testing/"
+                title: "Performance Testing"
+                page: "/services/testings/performanceTesting/"
+            - listItem:
+                id: 3
+                title: "Security Testing"
+                page: "/services/testings/securityTesting/"
+            - listItem:
+                id: 3
+                title: "Usability Testing"
+                page: "/services/testings/usabilityTesting/"
           accessibility: "Accessibility"
           accessibilityPage: "/services/accessibility/"
           docaccessibility: "Doc Accessibility"
@@ -708,6 +724,146 @@ services:
              id: 6   
              title: "Mobile App Testing:"
              description: "<p>Scalability, security and multi-platform support are the cornerstones of a mobile app. We provides cross platform, functional/non-functional testing with manual testing as well as automated testing approach for diverse mobile applications"  
+   functionalTesting:
+      description: "<p>Functional testing is a type of testing that seeks to establish whether each application feature works as per the software requirements. Each function is compared to the corresponding requirement to ascertain whether its output is consistent with the end user’s expectations. The testing is done by providing sample inputs, capturing resulting outputs, and verifying that actual outputs are the same as expected outputs.</p>" 
+      list:
+        - listItems:
+             id: 1   
+             title: "Decision table and state transition diagram"
+             description: "<p>State Transition is also one of the black box testing techniques. Different from the Decision table technique, in this state transition technique the outcomes are triggered by the changes to the input conditions or changes to the “state” of the system.</p>"
+        - listItems:
+             id: 2   
+             title: "Equivalence partitioning and boundary"
+             description: "<p>Equivalence Partitioning Method is also known as Equivalence class partitioning (ECP). It is a software testing technique or black-box testing that divides input domain into classes of data, and with the help of these classes of data, test cases can be derived</p>"     
+        - listItems:
+             id: 3   
+             title: "All-pairs testing"
+             description: "<p>Pairwise testing, also known as all-pairs testing is the method of finding defects by using a combinational method of two test cases. It relies on the observation that most defects are caused by interaction of at most two factors.</p>"
+        - listItems:
+             id: 4   
+             title: "Session-Based Exploratory Testing"
+             description: "<p>SBET uses uninterrupted testing sessions that are time-boxed, usually from 45 to 90 minutes, focused on a particular module, feature or scenario. </p>"
+        - listItems:
+             id: 5  
+             title: "Risk-based Testing"
+             description: "<p>Risk-based testing (RBT) is a type of software testing that functions as an organizational principle used to prioritize the tests of features and functions in software, based on the risk of failure, the function of their importance and likelihood or impact of failure.</p>"   
+        - listItems:
+             id: 6   
+             title: "Traceability matrix"
+             description: "<p>A traceability matrix is a document that details the technical requirements for a given test scenario and its current state. It helps the testing team understand the level of testing that is done for a given product. The traceability process itself is used to review the test cases that were defined for any requirement.02</p>"
+        - listItems:
+             id: 7  
+             title: "A/B Testing"
+             description: "<p>A/B testing, also known as split testing, refers to a randomized experimentation process wherein two or more versions of a variable (web page, page element, etc.) are shown to different segments of website visitors at the same time to determine which version leaves the maximum impact and drives business metrics.</p>"
+        - listItems:
+             id: 8   
+             title: "Concurrent Testing"
+             description: "<p>Concurrency testing is a type of software testing that checks the performance of software when multiple users are logged in and perform actions simultaneously. Hence, it is also referred to as multi-user testing.<p>" 
+   performanceTesting: 
+      description: "<p>Performance Testing is a type of software testing that ensures software applications to perform properly under their expected workload. It is a testing technique carried out to determine system performance in terms of sensitivity, reactivity and stability under a particular workload. </p>" 
+      list:
+        - listItems:
+             id: 1   
+             title: "Decision table and state transition diagram"
+             description: "<p>State Transition is also one of the black box testing techniques. Different from the Decision table technique, in this state transition technique the outcomes are triggered by the changes to the input conditions or changes to the “state” of the system.</p>"
+        - listItems:
+             id: 2   
+             title: "Equivalence partitioning and boundary"
+             description: "<p>Equivalence Partitioning Method is also known as Equivalence class partitioning (ECP). It is a software testing technique or black-box testing that divides input domain into classes of data, and with the help of these classes of data, test cases can be derived</p>"     
+        - listItems:
+             id: 3   
+             title: "All-pairs testing"
+             description: "<p>Pairwise testing, also known as all-pairs testing is the method of finding defects by using a combinational method of two test cases. It relies on the observation that most defects are caused by interaction of at most two factors.</p>"
+        - listItems:
+             id: 4   
+             title: "Session-Based Exploratory Testing"
+             description: "<p>SBET uses uninterrupted testing sessions that are time-boxed, usually from 45 to 90 minutes, focused on a particular module, feature or scenario. </p>"
+        - listItems:
+             id: 5  
+             title: "Risk-based Testing"
+             description: "<p>Risk-based testing (RBT) is a type of software testing that functions as an organizational principle used to prioritize the tests of features and functions in software, based on the risk of failure, the function of their importance and likelihood or impact of failure.</p>"   
+        - listItems:
+             id: 6   
+             title: "Traceability matrix"
+             description: "<p>A traceability matrix is a document that details the technical requirements for a given test scenario and its current state. It helps the testing team understand the level of testing that is done for a given product. The traceability process itself is used to review the test cases that were defined for any requirement.02</p>"
+        - listItems:
+             id: 7  
+             title: "A/B Testing"
+             description: "<p>A/B testing, also known as split testing, refers to a randomized experimentation process wherein two or more versions of a variable (web page, page element, etc.) are shown to different segments of website visitors at the same time to determine which version leaves the maximum impact and drives business metrics.</p>"
+        - listItems:
+             id: 8   
+             title: "Concurrent Testing"
+             description: "<p>Concurrency testing is a type of software testing that checks the performance of software when multiple users are logged in and perform actions simultaneously. Hence, it is also referred to as multi-user testing.<p>"  
+   securityTesting:
+      description: "<p>Security testing is a process intended to reveal flaws in the security mechanisms of an information system that protect data and maintain functionality as intended.[1] Due to the logical limitations of security testing, passing the security testing process is not an indication that no flaws exist or that the system adequately satisfies the security requirements.</p>" 
+      list:
+        - listItems:
+             id: 1   
+             title: "Decision table and state transition diagram"
+             description: "<p>State Transition is also one of the black box testing techniques. Different from the Decision table technique, in this state transition technique the outcomes are triggered by the changes to the input conditions or changes to the “state” of the system.</p>"
+        - listItems:
+             id: 2   
+             title: "Equivalence partitioning and boundary"
+             description: "<p>Equivalence Partitioning Method is also known as Equivalence class partitioning (ECP). It is a software testing technique or black-box testing that divides input domain into classes of data, and with the help of these classes of data, test cases can be derived</p>"     
+        - listItems:
+             id: 3   
+             title: "All-pairs testing"
+             description: "<p>Pairwise testing, also known as all-pairs testing is the method of finding defects by using a combinational method of two test cases. It relies on the observation that most defects are caused by interaction of at most two factors.</p>"
+        - listItems:
+             id: 4   
+             title: "Session-Based Exploratory Testing"
+             description: "<p>SBET uses uninterrupted testing sessions that are time-boxed, usually from 45 to 90 minutes, focused on a particular module, feature or scenario. </p>"
+        - listItems:
+             id: 5  
+             title: "Risk-based Testing"
+             description: "<p>Risk-based testing (RBT) is a type of software testing that functions as an organizational principle used to prioritize the tests of features and functions in software, based on the risk of failure, the function of their importance and likelihood or impact of failure.</p>"   
+        - listItems:
+             id: 6   
+             title: "Traceability matrix"
+             description: "<p>A traceability matrix is a document that details the technical requirements for a given test scenario and its current state. It helps the testing team understand the level of testing that is done for a given product. The traceability process itself is used to review the test cases that were defined for any requirement.02</p>"
+        - listItems:
+             id: 7  
+             title: "A/B Testing"
+             description: "<p>A/B testing, also known as split testing, refers to a randomized experimentation process wherein two or more versions of a variable (web page, page element, etc.) are shown to different segments of website visitors at the same time to determine which version leaves the maximum impact and drives business metrics.</p>"
+        - listItems:
+             id: 8   
+             title: "Concurrent Testing"
+             description: "<p>Concurrency testing is a type of software testing that checks the performance of software when multiple users are logged in and perform actions simultaneously. Hence, it is also referred to as multi-user testing.<p>"  
+   usabilityTesting:
+      description: "<p>Security testing is a process intended to reveal flaws in the security mechanisms of an information system that protect data and maintain functionality as intended.[1] Due to the logical limitations of security testing, passing the security testing process is not an indication that no flaws exist or that the system adequately satisfies the security requirements.</p>" 
+      list:
+        - listItems:
+             id: 1   
+             title: "Decision table and state transition diagram"
+             description: "<p>State Transition is also one of the black box testing techniques. Different from the Decision table technique, in this state transition technique the outcomes are triggered by the changes to the input conditions or changes to the “state” of the system.</p>"
+        - listItems:
+             id: 2   
+             title: "Equivalence partitioning and boundary"
+             description: "<p>Equivalence Partitioning Method is also known as Equivalence class partitioning (ECP). It is a software testing technique or black-box testing that divides input domain into classes of data, and with the help of these classes of data, test cases can be derived</p>"     
+        - listItems:
+             id: 3   
+             title: "All-pairs testing"
+             description: "<p>Pairwise testing, also known as all-pairs testing is the method of finding defects by using a combinational method of two test cases. It relies on the observation that most defects are caused by interaction of at most two factors.</p>"
+        - listItems:
+             id: 4   
+             title: "Session-Based Exploratory Testing"
+             description: "<p>SBET uses uninterrupted testing sessions that are time-boxed, usually from 45 to 90 minutes, focused on a particular module, feature or scenario. </p>"
+        - listItems:
+             id: 5  
+             title: "Risk-based Testing"
+             description: "<p>Risk-based testing (RBT) is a type of software testing that functions as an organizational principle used to prioritize the tests of features and functions in software, based on the risk of failure, the function of their importance and likelihood or impact of failure.</p>"   
+        - listItems:
+             id: 6   
+             title: "Traceability matrix"
+             description: "<p>A traceability matrix is a document that details the technical requirements for a given test scenario and its current state. It helps the testing team understand the level of testing that is done for a given product. The traceability process itself is used to review the test cases that were defined for any requirement.02</p>"
+        - listItems:
+             id: 7  
+             title: "A/B Testing"
+             description: "<p>A/B testing, also known as split testing, refers to a randomized experimentation process wherein two or more versions of a variable (web page, page element, etc.) are shown to different segments of website visitors at the same time to determine which version leaves the maximum impact and drives business metrics.</p>"
+        - listItems:
+             id: 8   
+             title: "Concurrent Testing"
+             description: "<p>Concurrency testing is a type of software testing that checks the performance of software when multiple users are logged in and perform actions simultaneously. Hence, it is also referred to as multi-user testing.<p>"       
    digitalMarketing:                     
       description: "<p>Performance Driven Digital Marketing Solutions<br/>Trendsoft is a result-driven performance marketing agency with focus on 100% measurable returns. our performance-based marketing plans will always deliver the results you pay for. Strategies built around individual mediums don’t necessarily have a huge impact. Thus, we use them in conjunction to create a more influential online presence. Our team combines technology and communication mediums to ideate, create and optimize performance-centric campaigns that reduce risks involved and deliver higher ROI. No matter the size of your organization, we make sure that every dollar spent on advertising work and maximize your overall return on investment.</p>"
       list:

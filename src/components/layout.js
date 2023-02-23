@@ -15,7 +15,7 @@ import SkipToMainContent from "./common/SkipToMainContent"
 import BounceLoader from "react-spinners/BounceLoader"
 import TopBar from "./common/TopBar"
 
-const Layout = ({ children,title})=> {
+const Layout = ({ children, title }) => {
   const query = useStaticQuery(layoutQuery)
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.home.navbar
   const footerData =
@@ -28,7 +28,7 @@ const Layout = ({ children,title})=> {
     setFooter(footerData)
     setLoading(false)
   }, [footerData])
-  
+
   return (
     <div>
       <>
@@ -46,8 +46,8 @@ const Layout = ({ children,title})=> {
         ) : (
           <>
             <SkipToMainContent />
-            <TopBar title={title.title} />
-            <Header data={data} bar={title.title}/>
+            <TopBar />
+            <Header data={data} />
             <div id="mainContent">{children}</div>
             <Footer data={footer} />
             <OnclickTop />
@@ -153,7 +153,7 @@ const layoutQuery = graphql`
                 website
                 facebookLink
                 linkedinLink
-                instagramLink 
+                instagramLink
                 reserved
               }
             }

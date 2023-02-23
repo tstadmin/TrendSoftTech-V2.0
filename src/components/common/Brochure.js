@@ -7,12 +7,9 @@ const Brochure = () => {
   const data = query.allMarkdownRemark.edges[0].node.frontmatter.Brochure
   return (
     <BrochureDiv>
-  
- 
-      
-<p className=" font-semibold text-xl mt-1">{data.description}</p> 
+      <p className=" font-semibold text-xl mt-1">{data.description}</p>
       <a
-        href="/pdf/brochure.pdf"
+        href="/pdf/brochure-test.pdf"
         target="_blank"
         aria-label=" company brochure PDF "
         className="bg-[#0b2d78] text-white text-sm p-2 rounded-md flex  justify-center"
@@ -26,7 +23,7 @@ const Brochure = () => {
 export default Brochure
 
 const BrochureData = graphql`
-  query { 
+  query {
     allMarkdownRemark {
       edges {
         node {
