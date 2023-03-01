@@ -1449,11 +1449,16 @@ awards&certifications:
     - listItem: 
         id: 1
         img: "/img/Awards/TRENDSOFTTECHNOLOGIESPRIVATELIMITED90013737.jpg" 
-        title: "Certificate Of Quality Management Sysytem"
+        title: "Certificate Of Quality Management System"
         label: "TRENDSOFT TECHNOLOGIES PRIVATE LIMITED CERTIFICATE"      
     - listItem: 
         id: 2
         img: "/img/Awards/UDYAMREGISTREATIONCERTIFICATE.jpg"
-        title: "Udyam Registreation Certificate "
-        label: "UDYAM REGISTREATION CERTIFICATE " 
+        title: "Udyam Registration Certificate "
+        label: "UDYAM REGISTRATION CERTIFICATE " 
+    - listItem: 
+        id: 3
+        img: "/img/Awards/StartUPINDIACertification.jpg"
+        title: "StartUP INDIA Certification "
+        label: "StartUP INDIA Certification "    
 ---
