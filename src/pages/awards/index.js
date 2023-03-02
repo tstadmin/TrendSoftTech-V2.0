@@ -16,9 +16,8 @@ const Index = () => {
   }, [data])
   return (
     <div>
-    
-      <Layout  title={{title:"Awards & Certifications"}}>
-      <Seo title="Awards & Certifications" description="TrendSoftTech" /> 
+      <Layout title={{ title: "Awards & Certifications" }}>
+        <Seo title="Awards & Certifications" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/AwardsCertifications.svg"
           title="Awards & Certifications"
@@ -41,7 +40,7 @@ const dataQuery = graphql`
               list {
                 listItem {
                   id
-                  img
+                  pdf
                   label
                   title
                 }
