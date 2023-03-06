@@ -138,12 +138,12 @@ home:
                 page: "/services/uiUXDesign/"
       - listItem:
           id: 6
-          title: "Awards & Certifications"
+          title: "Certifications"
           page: "/awards/"     
           subTitle: 
             - listItem:
                 id: 1
-                title: "Awards & Certifications"
+                title: "Certifications"
                 page: "/awards/"
       - listItem:
           id: 7
@@ -438,7 +438,7 @@ home:
     mailLink : ""    
     website : "http://www.trendsofttech.com" 
     facebookLink: "https://www.facebook.com/trendsofttech/"
-    linkedinLink: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE2hU0J4z4P2gAAAYViiW5grJXhnU1sVxZd3Vt3HX2uebekQCjbXcACP3SqWZ6AlHcr8fcP6WPuusSq3zYfhd6_lHKXkaScAYFVGSvEFtEJdCzMRdWo0-YyL5CNJT_y1QnzvXg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ftrendsoft-technologies-192645240"
+    linkedinLink: "https://www.linkedin.com/company/trendsoft-technologies-private-limited/"
     instagramLink : "https://www.instagram.com/trendsoft_technologies/"
     reserved : "© 2023 All Rights Reserved."    
 about:
@@ -1454,11 +1454,11 @@ awards&certifications:
     - listItem: 
         id: 2
         pdf: "/pdf/UDYAMREGISTREATION.pdf"
-        title: "Udyam Registration Certificate "
-        label: "UDYAM REGISTRATION CERTIFICATE " 
+        title: "Certificate Of Udyam Registration  "
+        label: "Certificate Of Udyam Registration  " 
     - listItem: 
         id: 3
         pdf: "/pdf/Startup.pdf"
-        title: "Startup India Certification "
-        label: "Startup India Certification "    
+        title: "Certificate Of Startup India  "
+        label: "Certificate Of Startup India"    
 ---

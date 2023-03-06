@@ -16,13 +16,13 @@ const Index = () => {
   }, [data])
   return (
     <div>
-      <Layout title={{ title: "Awards & Certifications" }}>
-        <Seo title="Awards & Certifications" description="TrendSoftTech" />
+      <Layout title={{ title: " Certifications" }}>
+        <Seo title=" Certifications" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/AwardsCertifications.svg"
-          title="Awards & Certifications"
+          title=" Certifications"
         />
-        <Awards data={awards} title="Awards & Certifications" />
+        <Awards data={awards} title="Certifications" />
       </Layout>
     </div>
   )
