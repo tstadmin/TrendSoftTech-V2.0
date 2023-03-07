@@ -179,7 +179,7 @@ home:
           aboutPage: "/about/"
           services: "IT Services"
           servicesPage: "/services/"
-          award: "Awards"
+          award: "Certifications"
           awardPage: "/awards/"
           itServices:
             - listItem:

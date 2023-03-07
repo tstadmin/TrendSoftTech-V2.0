@@ -47,7 +47,7 @@ const Index = () => {
           <Carousel carousel={carousel} />
 
           <AboutOurCompany aboutOurCompany={aboutOurCompany} />
-          <AboutBrochure />
+          {/* <AboutBrochure /> */}
           <BannerItems bannerItem={bannerItem} />
           <ServicesProvide servicesProvide={servicesProvide} />
 
