@@ -6,6 +6,7 @@ home:
             id: 1
             img: "/img/carousel/homebanner1.jpg"
             title: "We Increase your Business Success"
+            label: "Contact"
             page: "/contact/"
             CTA: "Contact" 
       - listItem :
@@ -13,47 +14,55 @@ home:
             img: "/img/carousel/WEBDEVELOPMENT.jpg"
             title: "WEB DEVELOPMENT"
             page: "/services/webDevelopment/"
+            label: "Learn More  WEB DEVELOPMENT "
             CTA: "Learn More"    
       - listItem :
             id: 3
             img: "/img/carousel/ECOMMERCEDEVELOPMENT.jpg"
             title: "ECOMMERCE DEVELOPMENT"
             page: "/services/ecommerceDevelopment/"
+            label: "Learn More  ECOMMERCE DEVELOPMENT "
             CTA: "Learn More" 
       - listItem :
             id: 4
             img: "/img/carousel/MOBILEDEVELOPMENT.jpg"
             title: "MOBILE DEVELOPMENT"
+            label: "Learn More MOBILE DEVELOPMENT"
             page: "/services/mobileDevelopment/"
             CTA: "Learn More" 
       - listItem :
             id: 5
             img: "/img/carousel/PRODUCTDEVELOPMENT.jpg"
             title: "PRODUCT DEVELOPMENT"
+            label: "Learn More PRODUCT DEVELOPMENT "
             page: "/services/productDevelopment/"
             CTA: "Learn More" 
       - listItem :
             id: 6
             img: "/img/carousel/UIUXDESIGN.jpg"
             title: "UI / UX DESIGN"
+            label: "Learn More UI / UX DESIGN"
             page: "/services/uiUXDesign/"
             CTA: "Learn More" 
       - listItem :
             id: 7
             img: "/img/carousel/MANUALTESTING.jpg"
             title: "MANUAL TESTING"
+            label: "Learn More MANUAL TESTING"
             page: "/services/testing/"
             CTA: "Learn More" 
       - listItem :
             id: 8
             img: "/img/carousel/AUTOMATIONTESTING.jpg"
             title: "AUTOMATION TESTING"
+            label: "Learn More  AUTOMATION TESTING"
             page: "/services/testing/"
             CTA: "Learn More"  
       - listItem :
             id: 9
             img: "/img/carousel/DIGITALMARKETING.jpg"
             title: "DIGITAL MARKETING"
+            label: "Learn More DIGITAL MARKETING "
             page: "/services/digitalMarketing/"
             CTA: "Learn More"                                
   navbar:

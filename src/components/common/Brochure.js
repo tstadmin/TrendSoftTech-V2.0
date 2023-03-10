@@ -11,8 +11,8 @@ const Brochure = () => {
       <a
         href="/pdf/brochure-test.pdf"
         target="_blank"
-        aria-label=" company brochure PDF "
-        className="bg-[#0b2d78] text-white text-sm p-2 rounded-md flex  justify-center"
+        aria-label="DownLoad company brochure PDF  "
+        className="bg-[#0b2d78] hover:text-[#f9761f] focus:text-[#f9761f]  text-white text-sm p-2 rounded-md flex  justify-center"
       >
         {data.button}
       </a>

@@ -25,19 +25,16 @@ export default function Header(props) {
       role="navigation"
       className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky top-10  bg-[#ebebeb] z-10 shadow-lg shadow-black/10"
     >
-      <NavBar >
+      <NavBar>
         {/* Logo */}
         <div className="p-2">
-        <Link to="/">
-          <img
-            src={props.data.logo}
-            alt="Trendsoft Tech Logo"
-          
-             className="md:w-[211px]  540Screen:w-[150px]  w-[100px] 340Screen:w-[120px]  "
-    
-          />
-        </Link>
-       
+          <Link to="/">
+            <img
+              src={props.data.logo}
+              alt="Trendsoft Tech Logo"
+              className="md:w-[211px]  540Screen:w-[150px]  w-[100px] 340Screen:w-[120px]  "
+            />
+          </Link>
         </div>
       </NavBar>
 
@@ -71,7 +68,7 @@ export default function Header(props) {
                 className="cursor-pointer text-[#0084FF] "
               >
                 <span className="sr-only">menu button collapsed submenu</span>
-                <HiBars3BottomLeft  className="md:text-3xl sm:text-xl text-lg" />
+                <HiBars3BottomLeft className="md:text-3xl sm:text-xl text-lg" />
               </button>
             )}
           </p>
@@ -81,7 +78,7 @@ export default function Header(props) {
               aria-label="Home Button"
               className="cursor-pointer text-[#0084FF]  "
             >
-              <FaHome  className="md:text-3xl sm:text-xl text-lg" />
+              <FaHome className="md:text-3xl sm:text-xl text-lg" />
             </Link>
           </p>
         </div>
@@ -100,9 +97,9 @@ export default function Header(props) {
         >
           <div className="xl:flex 1920Screen:pl-64 2xl:pl-32 xl:pl-18 lg:pl-16 md:pl-24 sm:pl-14 pl-8    1920Screen:space-x-18 2xl:space-x-6 xl:space-x-5  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
             {props.data.list.map((item, idx) => (
-              <h2
+              <div
                 key={item.listItem.id}
-                className="  text-[#FFD22E] mt-6 xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium hidden 540Screen:block font-roboto "
+                className="  text-[#FFD333] mt-6 xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium hidden 540Screen:block font-roboto "
               >
                 {item.listItem.title}
                 <ul className="space-y-2 mt-4  font-normal ">
@@ -111,12 +108,18 @@ export default function Header(props) {
                       onClick={() => setOpened(false)}
                       className=" text-[#ebebeb] font-medium  1920Screen:text-[18px]  text-[16px]"
                       key={sub.listItem.id}
+                      aria-label={sub.listItem.title}
                     >
-                      <Link to={sub.listItem.page}>{sub.listItem.title}</Link>
+                      <Link
+                        to={sub.listItem.page}
+                        className="hover:text-[#ffe793] focus:text-[#ffe793] underline-[#ffe793] "
+                      >
+                        {sub.listItem.title}
+                      </Link>
                     </li>
                   ))}
                 </ul>
-              </h2>
+              </div>
             ))}
           </div>
 
@@ -143,7 +146,7 @@ export default function Header(props) {
                     <li className="text-sm text-white uppercase">
                       {props.data.mobilelist.services}
                     </li>
-                   
+
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
@@ -153,9 +156,8 @@ export default function Header(props) {
 
                   <ul>
                     <Disclosure.Panel className="px-4 text-sm  space-y-2 ">
-                      {props.data.mobilelist.itServices.map((i,idx) => (
+                      {props.data.mobilelist.itServices.map((i, idx) => (
                         <li className="text-white" key={i.listItem.id}>
-                          
                           <Link to={i.listItem.page}>{i.listItem.title}</Link>
                         </li>
                       ))}
@@ -173,7 +175,7 @@ export default function Header(props) {
                     <li className="text-white text-sm ">
                       {props.data.mobilelist.test}
                     </li>
-                 
+
                     <IoIosArrowDown
                       className={`${
                         open ? "rotate-180 transform" : ""
@@ -181,9 +183,8 @@ export default function Header(props) {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 space-y-1">
-                    {props.data.mobilelist.subTest.map((i,idx) => (
+                    {props.data.mobilelist.subTest.map((i, idx) => (
                       <li className="text-white" key={i.listItem.id}>
-                        
                         <Link to={i.listItem.page}>{i.listItem.title}</Link>
                       </li>
                     ))}

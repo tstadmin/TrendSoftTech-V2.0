@@ -74,6 +74,7 @@ const dataQuery = graphql`
                     id
                     title
                     img
+                    label
                     page
                     CTA
                   }

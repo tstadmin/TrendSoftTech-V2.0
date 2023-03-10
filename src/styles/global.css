@@ -2,41 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Raleway:ital,wght@0,700;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Raleway:ital,wght@0,700;1,300&display=swap");
 
-body{
-    font-family: sans-serif;
-  
-
+body {
+  font-family: sans-serif;
 }
-h1{
-    font-family: sans-serif;
-    @apply 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-2xl 340Screen:text-lg text-sm
+h1 {
+  font-family: sans-serif;
+  @apply 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-3xl sm:text-2xl 340Screen:text-lg text-sm;
 }
-h2{
-    font-family: sans-serif;
-    @apply  md:text-2xl text-lg font-semibold  text-[#0b6ddc]
+h2 {
+  font-family: sans-serif;
+  @apply md:text-2xl text-lg font-semibold  text-[#0b6ddc];
 }
-h3{
-    font-family: sans-serif;
-    @apply md:text-lg  text-[18px]  font-semibold text-[#0b6ddc]
+h3 {
+  font-family: sans-serif;
+  @apply md:text-lg  text-[18px]  font-semibold text-[#0b6ddc];
 }
-p{
-    font-family: sans-serif;
-    @apply sm:text-base  text-sm text-[#000038]
+p {
+  font-family: sans-serif;
+  @apply sm:text-base  text-sm text-[#000038];
 }
 
-li{
-    font-family: sans-serif;
-    @apply sm:text-base  text-sm text-[#000038]
+li {
+  font-family: sans-serif;
+  @apply sm:text-base  text-sm text-[#000038];
 }
 
-a{
-    font-family: sans-serif;
-    @apply focus:underline focus:text-[#bd5005] hover:underline hover:decoration-[#bd5005] hover:text-[#bd5005]
+a {
+  font-family: sans-serif;
+  @apply focus:underline focus:text-[#bd5005] hover:underline hover:decoration-[#bd5005] hover:text-[#bd5005];
 }
 
-h4{
-    font-family: sans-serif;
-    @apply  md:text-lg  text-sm font-semibold 
+h4 {
+  font-family: sans-serif;
+  @apply md:text-lg  text-sm font-semibold;
 }
