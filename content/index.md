@@ -441,7 +441,7 @@ home:
           title: "Digital Marketing"
           page: "/services/digitalMarketing/"           
     contactTitle : "Contact Info"
-    local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat No.301, 3rd Floor , KPHB Colony, Road No.1 ,Kukatpally ,Hyderabad-500072."
+    local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat Number.301, 3rd Floor , KPHB Colony, Road Number.1 ,Kukatpally ,Hyderabad-500072."
     mail : "info@trendsofttech.com" 
     serviceMail: " service@trendsofttech.com"
     mailLink : ""    

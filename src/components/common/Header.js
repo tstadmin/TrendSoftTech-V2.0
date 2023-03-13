@@ -99,9 +99,11 @@ export default function Header(props) {
             {props.data.list.map((item, idx) => (
               <div
                 key={item.listItem.id}
-                className="  text-[#FFD333] mt-6 xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium hidden 540Screen:block font-roboto "
+                className="  mt-6 hidden 540Screen:block  "
               >
-                {item.listItem.title}
+                <h2 className=" text-[#FFD333] xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium font-roboto">
+                  {item.listItem.title}
+                </h2>
                 <ul className="space-y-2 mt-4  font-normal ">
                   {item.listItem.subTitle?.map((sub, idx) => (
                     <li

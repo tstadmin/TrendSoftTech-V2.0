@@ -35,10 +35,11 @@ const Awards = props => {
                 href={item.listItem.pdf}
                 target="_blank"
                 aria-label={item.listItem.label}
+                className="bg-[#0b2d78] text-white sm:text-[16px] gap-2 text-sm p-4 rounded-md flex  justify-center"
               >
-                <button className="bg-[#0b2d78] text-white sm:text-[16px] gap-2 text-sm p-4 rounded-md flex  justify-center">
-                  {item.listItem.title} <FiArrowUpRight />
-                </button>
+                {/* <button> */}
+                {item.listItem.title} <FiArrowUpRight />
+                {/* </button> */}
                 {/* <p>{item.listItem.title}</p> */}
               </a>
             </div>
