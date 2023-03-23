@@ -15,7 +15,7 @@ const BreadCrumb = props => {
             className="hover:text-[#efe9cd] focus:text-[#efe9cd] underline-[#efe9cd]"
           >
             Home
-          </Link>{" "}
+          </Link>
           <p className=" text-white"> /</p>
           <p className=" text-white">
             <Link

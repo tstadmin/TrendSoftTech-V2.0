@@ -1,4 +1,5 @@
 import React from "react"
+import BlogInfo from "../../components/Blogs/BlogInfo"
 import BreadCrumb from "../../components/common/BreadCrumb"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
@@ -8,7 +9,8 @@ const index = () => {
     <div>
       <Layout>
         <Seo title="Blogs" description="TrendSoftTech" />
-        <BreadCrumb img="/img/BreadCrumb/blog.svg" title=" Certifications" />
+        <BreadCrumb img="/img/BreadCrumb/blog.svg" title="Blogs" />
+        <BlogInfo />
       </Layout>
     </div>
   )

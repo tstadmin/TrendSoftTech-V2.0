@@ -175,12 +175,21 @@ home:
       - listItem:
           id: 9
           title: "Contact"
-          page: "/awards/"     
+          page: ""     
           subTitle: 
             - listItem:
                 id: 1
                 title: "Contact"
-                page: "/contact/"                             
+                page: "/contact/"     
+      - listItem:
+          id: 10
+          title: "Blog"
+          page: ""     
+          subTitle: 
+            - listItem:
+                id: 1
+                title: "Blogs"
+                page: "/blog/"                                  
     mobilelist:
           home: "Home"
           homePage: "/"
