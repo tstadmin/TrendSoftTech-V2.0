@@ -19,15 +19,15 @@ const AccessiblePDFForms = () => {
 
   return (
     <div>
-      <Layout title={{title:"Accessible PDF Form"}}>
+      <Layout title={{ title: "Accessible PDF Form" }}>
         <Seo title="Accessibility-PDFForms" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible PDF Form"
         />
 
-        <ServicesLayout>
-          <Accessible data={accessibleForm}   title="Accessible PDF Form" />
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
+          <Accessible data={accessibleForm} title="Accessible PDF Form" />
         </ServicesLayout>
         <Tabs />
       </Layout>

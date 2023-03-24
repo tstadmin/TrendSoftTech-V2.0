@@ -23,8 +23,7 @@ const WebDevelopment = () => {
           title="Web Development"
           img="/img/BreadCrumb/WebDevelopment.svg"
         />
-        <ServicesLayout>
-          {" "}
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           <Development data={data} title="Web Development" />
         </ServicesLayout>
         <Portfolios data={data} />

@@ -17,14 +17,14 @@ const AccessiblePPT = () => {
 
   return (
     <div>
-      <Layout title={{title:"Accessible PPT"}}>
+      <Layout title={{ title: "Accessible PPT" }}>
         <Seo title="Accessibility-PPT" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible PPT"
         />
 
-        <ServicesLayout>
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           <Accessible data={accessiblePPT} title="Accessible PPT" />
         </ServicesLayout>
         <Tabs />

@@ -181,15 +181,15 @@ home:
                 id: 1
                 title: "Contact"
                 page: "/contact/"     
-      - listItem:
-          id: 10
-          title: "Blog"
-          page: ""     
-          subTitle: 
-            - listItem:
-                id: 1
-                title: "Blogs"
-                page: "/blog/"                                  
+    #   - listItem:
+    #       id: 10
+    #       title: "Blog"
+    #       page: ""     
+    #       subTitle: 
+    #         - listItem:
+    #             id: 1
+    #             title: "Blogs"
+    #             page: "/blog/"                                  
     mobilelist:
           home: "Home"
           homePage: "/"
@@ -452,7 +452,7 @@ home:
     contactTitle : "Contact Info"
     local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat Number.301, 3rd Floor , KPHB Colony, Road Number.1 ,Kukatpally ,Hyderabad-500072."
     mail : "info@trendsofttech.com" 
-    serviceMail: " service@trendsofttech.com"
+    serviceMail: " bdm.ts@trendsofttech.com"
     mailLink : ""    
     website : "http://www.trendsofttech.com" 
     facebookLink: "https://www.facebook.com/trendsofttech/"
@@ -1381,7 +1381,7 @@ contact :
     emailTitle: "For General Inquiries:"
     email: "info@trendsofttech.com" 
     businessMailTitle: "For Business Inquiries:"      
-    businessEmail: "service@trendsofttech.com" 
+    businessEmail: "bdm.ts@trendsofttech.com" 
     addressOne: "Address 1:"   
     addressOneInfo: "MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"  
     addressTwo: "Address 2:"   

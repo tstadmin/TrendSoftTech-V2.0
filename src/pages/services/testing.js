@@ -24,7 +24,7 @@ const Testing = () => {
         <Seo title="Testing" description="TrendSoftTech" />
         <BreadCrumb title="Testing" img="/img/BreadCrumb/testing.svg" />
 
-        <ServicesLayout>
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           <Development data={test} title="Testing" />
         </ServicesLayout>
       </Layout>

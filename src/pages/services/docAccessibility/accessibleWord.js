@@ -18,15 +18,15 @@ const AccessibleWord = () => {
 
   return (
     <div>
-      <Layout title={{title:"Accessible Word"}}>
+      <Layout title={{ title: "Accessible Word" }}>
         <Seo title="Accessibility-Word" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible Word"
         />
 
-        <ServicesLayout>
-          <Accessible data={accessibleWord}  title="Accessible Word"/>
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
+          <Accessible data={accessibleWord} title="Accessible Word" />
         </ServicesLayout>
         <Tabs />
       </Layout>

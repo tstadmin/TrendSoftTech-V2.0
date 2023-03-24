@@ -19,18 +19,17 @@ const ProductDevelopment = () => {
     setproduct(data)
   }, [data])
 
-
   return (
     <div>
-      <Layout title={{title:"Product Development"}}>
+      <Layout title={{ title: "Product Development" }}>
         <Seo title="Product-Development" description="TrendSoftTech" />
         <BreadCrumb
           title="Product Development"
           img="/img/BreadCrumb/ProductDevelopment.svg"
         />
 
-        <ServicesLayout>
-          <Development data={product} title="Product Development"  />
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
+          <Development data={product} title="Product Development" />
         </ServicesLayout>
       </Layout>
     </div>

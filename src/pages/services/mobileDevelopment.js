@@ -20,16 +20,16 @@ const MobileDevelopment = () => {
 
   return (
     <div>
-      <Layout title={{title:"Mobile Development"}}>
+      <Layout title={{ title: "Mobile Development" }}>
         <Seo title="Mobile-Development" description="TrendSoftTech" />
 
         <BreadCrumb
           title="Mobile Development"
           img="/img/BreadCrumb/MobileDevelopment.svg"
         />
-        {/* <Tabs /> */}
-        <ServicesLayout>
-          <Development data={mobile}   title="Mobile Development" />
+
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
+          <Development data={mobile} title="Mobile Development" />
         </ServicesLayout>
       </Layout>
     </div>

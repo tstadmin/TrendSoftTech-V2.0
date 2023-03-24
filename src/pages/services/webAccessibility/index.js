@@ -18,13 +18,13 @@ const WebAccessible = () => {
 
   return (
     <div>
-      <Layout title={{ title:"Web Accessibility"}}>
+      <Layout title={{ title: "Web Accessibility" }}>
         <Seo title="Web-Accessibility" description="TrendSoftTech" />
         <BreadCrumb
           title="Web Accessibility"
           img="/img/BreadCrumb/Webaccessibility.svg"
         />
-        <ServicesLayout>
+        <ServicesLayout pdf={{ pdf: "/pdf/WebAccessible.pdf" }}>
           <Accessible data={webAccessible} title="Web Accessibility" />
         </ServicesLayout>
       </Layout>

@@ -25,8 +25,7 @@ const PerformanceTesting = () => {
           title="Performance Testing"
           img="/img/BreadCrumb/testing.svg"
         />
-        <ServicesLayout>
-          {" "}
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           <Development data={performance} title="Performance Testing" />
         </ServicesLayout>
       </Layout>

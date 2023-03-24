@@ -27,7 +27,7 @@ const UiUXDesign = () => {
           title="UI / UX Design"
           img="/img/BreadCrumb/UiUXDesign.svg"
         />
-        <ServicesLayout>
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           {" "}
           <Development data={design} title="UI / UX Design" />
         </ServicesLayout>

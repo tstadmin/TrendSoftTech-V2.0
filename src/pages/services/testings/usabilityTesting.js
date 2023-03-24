@@ -22,7 +22,7 @@ const UsabilityTesting = () => {
           title="Usability Testing"
           img="/img/BreadCrumb/testing.svg"
         />
-        <ServicesLayout>
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           <Development data={usability} title="Usability Testing" />
         </ServicesLayout>
       </Layout>

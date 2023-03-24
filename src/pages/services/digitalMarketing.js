@@ -26,7 +26,7 @@ const DigitalMarketing = () => {
           img="/img/BreadCrumb/digitalmarketing.svg"
         />
 
-        <ServicesLayout>
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           <Development data={digital} title="Digital Marketing" />
         </ServicesLayout>
       </Layout>

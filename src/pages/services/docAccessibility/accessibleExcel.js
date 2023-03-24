@@ -17,17 +17,17 @@ const AccessibleExcel = () => {
   }, [data])
   return (
     <div>
-      <Layout title={{title:"Accessible Excel"}}>
-       <Seo title="Accessibility-Excel" description="TrendSoftTech" />
+      <Layout title={{ title: "Accessible Excel" }}>
+        <Seo title="Accessibility-Excel" description="TrendSoftTech" />
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible Excel"
         />
 
-        <ServicesLayout>
+        <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           <Accessible data={accessibleExcel} title="Accessible Excel" />
         </ServicesLayout>
-        <Tabs /> 
+        <Tabs />
       </Layout>
     </div>
   )
