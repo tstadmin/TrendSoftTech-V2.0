@@ -56,13 +56,16 @@ const Accessible = props => {
                   __html: item.listItems.description,
                 }}
               />
-
-              {item.listItems.list?.map((i, idx) => (
-                <DescriptionList key={i.listItems.id}>
-                  {i.listItems.description}
-                </DescriptionList>
-              ))}
-
+              <ul style={{ listStyleType: "disc" }}>
+                {item.listItems.list?.map((i, idx) => (
+                  <li
+                    className="`mt-2 md:text-[16px] text-[14px] ml-6 font-Poppins"
+                    key={i.listItems.id}
+                  >
+                    {i.listItems.description}
+                  </li>
+                ))}
+              </ul>
               {item.listItems.data ? (
                 <div
                   className="space-y-4 mt-5"

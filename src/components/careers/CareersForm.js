@@ -1,25 +1,35 @@
 import axios from "axios"
 import React, { useState } from "react"
+import { useForm } from "react-hook-form"
 import { FormHeading } from "./CareersStyle"
 
 const CareersForm = () => {
-  const [name, setName] = useState("")
-  const [phoneNumber, setPhoneNumber] = useState("")
-  const [email, setEmail] = useState("")
-  const [letter, setLetter] = useState("")
-  const [file, setFile] = useState("")
-  const [position, setPosition] = useState("")
+  const {
+    register,
+    handleSubmit,
+    reset,
+    trigger,
+    watch,
+    formState: { errors },
+  } = useForm()
 
-  const onSubmit = e => {
-    e.preventDefault()
-    const data = {
-      Name: name,
-      PhoneNumber: phoneNumber,
-      Email: email,
-      Letter: letter,
-      File: file,
-      Position: position,
-    }
+  const Position = [
+    {
+      id: 1,
+      position: "ReactJs Developer",
+    },
+    {
+      id: 2,
+      position: "Laravel Developer",
+    },
+    {
+      id: 3,
+      position: "Web Designer",
+    },
+  ]
+
+  const onSubmit = data => {
+    console.log(data)
     axios
       .post(
         "https://sheet.best/api/sheets/b132641c-40b8-4c63-9a83-04abeec76923",
@@ -27,15 +37,12 @@ const CareersForm = () => {
       )
       .then(res => {
         if (res.status === 200) {
-          e.target.reset()
+          reset()
           alert("Sumbit Successfully")
-          setName("")
-          setPhoneNumber("")
-          setEmail("")
-          setLetter("")
-          setFile("")
-          setPosition("")
         }
+      })
+      .catch(err => {
+        // console.log(err)
       })
   }
 
@@ -45,83 +52,151 @@ const CareersForm = () => {
         <FormHeading>Apply for this position</FormHeading>
 
         <div className="grid space-y-6 justify-items-center">
-          <form className=" md:w-[50vw] w-full space-y-6" onSubmit={onSubmit}>
-            <input
-              placeholder="Your Name"
-              name="Name"
-              type="text"
-              className="block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none"
-              onChange={e => setName(e.target.value)}
-            />
-
-            <input
-              type="email"
-              className="block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none"
-              name="email"
-              placeholder="Email "
-              onChange={e => setEmail(e.target.value)}
-            />
-
-            <input
-              type="number"
-              className="block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none"
-              name="number"
-              placeholder="Phone Number"
-              onChange={e => setPhoneNumber(e.target.value)}
-            />
-            <input
-              type="text"
-              className="block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none"
-              name="letter"
-              placeholder="Cover Letter"
-              onChange={e => setLetter(e.target.value)}
-            />
-
-            <input
-              type="file"
-              className="block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none"
-              name="resume"
-              placeholder="Enter your file"
-              onChange={e => setFile(e.target.value)}
-            />
-
-            <label className="text-lg" htmlFor="a">
-              Select position
-            </label>
-            <select
-              className="border-2 p-1  rounded-sm ml-4 border-black"
-              onChange={e => setPosition(e.target.value)}
-            >
-              <option type="text">Select position</option>
-              <option
+          <form
+            className=" md:w-[50vw] w-full space-y-6"
+            onSubmit={handleSubmit(onSubmit)}
+          >
+            <div>
+              <p>Name</p>
+              <input
+                placeholder="Name"
                 type="text"
-                value="ReactJs Developer"
-                onChange={e => setPosition(e.target.value)}
-              >
-                ReactJs Developer{" "}
-              </option>
-              <option
+                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                  errors.Name ? "border-red-500" : ""
+                }`}
+                {...register("Name", {
+                  required: "Name is required",
+                })}
+                onKeyUp={() => {
+                  trigger("Name")
+                }}
+              />
+              {errors.Name && (
+                <small className="text-red-500">{errors.Name.message}</small>
+              )}
+            </div>
+            <div>
+              <p>Email</p>
+              <input
+                type="email"
+                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                  errors.Email ? "border-red-500" : ""
+                }`}
+                placeholder="Email "
+                {...register("Email", {
+                  required: "Email is required",
+                })}
+                onKeyUp={() => {
+                  trigger("Email")
+                }}
+              />
+              {errors.Email && (
+                <small className="text-red-500">{errors.Email.message}</small>
+              )}
+            </div>
+
+            <div>
+              <p>Phone Number</p>
+              <input
+                type="number"
+                placeholder="Phone Number"
+                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                  errors.PhoneNumber ? "border-red-500" : ""
+                }`}
+                {...register("PhoneNumber", {
+                  required: "Phone Number is required",
+                  pattern:
+                    '//"^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$"/gmi/i',
+                })}
+                onKeyUp={() => {
+                  trigger("PhoneNumber")
+                }}
+              />
+              {errors.PhoneNumber && (
+                <small className="text-red-500">
+                  {errors.PhoneNumber.message}
+                </small>
+              )}
+            </div>
+
+            <div>
+              <p> Cover Letter</p>
+              <input
                 type="text"
-                value="Laravel Developer"
-                onChange={e => setPosition(e.target.value)}
+                placeholder=" Cover Letter"
+                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                  errors.Letter ? "border-red-500" : ""
+                }`}
+                {...register("Letter", {
+                  required: "Letter is required",
+                })}
+                onKeyUp={() => {
+                  trigger("Letter")
+                }}
+              />
+              {errors.Letter && (
+                <small className="text-red-500">{errors.Letter.message}</small>
+              )}
+            </div>
+
+            <div>
+              <p>Upload Resume</p>
+              <input
+                type="file"
+                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                  errors.File ? "border-red-500" : ""
+                }`}
+                placeholder="Enter your file"
+                {...register("File", {
+                  required: "File is required",
+                })}
+                onKeyUp={() => {
+                  trigger("File")
+                }}
+              />
+              {errors.File && (
+                <small className="text-red-500">{errors.File.message}</small>
+              )}
+            </div>
+
+            <div>
+              <label className="text-lg" htmlFor="a">
+                Select position
+              </label>
+              <select
+                className="border-2 p-1  rounded-sm ml-4 border-black"
+                {...register("Position", {
+                  required: "Position is required",
+                })}
+                onKeyUp={() => {
+                  trigger("Position")
+                }}
               >
-                Laravel Developer
-              </option>
-              <option
-                type="text"
-                value="Web Designer"
-                onChange={e => setPosition(e.target.value)}
-              >
-                Web Designer
-              </option>
-            </select>
+                <option type="text">Select position</option>
+
+                {Position.map((c, idx) => (
+                  <option value={c.position} key={c.id}>
+                    {c.position}
+                  </option>
+                ))}
+              </select>
+              {errors.Position && (
+                <small className="text-red-500">
+                  {errors.Position.message}
+                </small>
+              )}
+            </div>
 
             <div className="240Screen:flex grid space-x-2">
               <input
                 type="checkbox"
-                id="vehicle2"
-                name="vehicle2"
-                value="Car"
+                {...register("checkbox", {
+                  required: "checkbox is required",
+                })}
+                onKeyUp={() => {
+                  trigger("checkbox")
+                }}
+                required="required"
               />
               <p>
                 By using this form you agree with the storage and handling of

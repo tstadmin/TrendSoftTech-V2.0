@@ -24,25 +24,9 @@ const ContactForm = () => {
     },
   ]
 
-  const [name, setName] = useState("")
-  const [phoneNumber, setPhoneNumber] = useState("")
-  const [email, setEmail] = useState("")
-  const [enteryourWebsits, setEnteryourWebsits] = useState("")
-  const [companyName, setCompanyName] = useState("")
-  const [message, setMessage] = useState("")
-  const [selectInquries, setSelectInquries] = useState("")
+  const onSubmit = data => {
+    console.log(data)
 
-  const onSubmit = e => {
-    e.preventDefault()
-    const data = {
-      Name: name,
-      PhoneNumber: phoneNumber,
-      Email: email,
-      EnteryourWebsits: enteryourWebsits,
-      CompanyName: companyName,
-      SelectInquries: selectInquries,
-      Message: message,
-    }
     axios
       .post(
         "https://sheet.best/api/sheets/b0c2741e-1e8d-46e9-96bc-66d750ae2bc8",
@@ -50,256 +34,180 @@ const ContactForm = () => {
       )
       .then(res => {
         if (res.status === 200) {
-          e.target.reset()
-          alert("Sumbit Successfully")
           reset()
-          setName("")
-          setPhoneNumber("")
-          setEmail("")
-          setEnteryourWebsits("")
-          setCompanyName("")
-          setMessage("")
-          setSelectInquries("")
+          alert("Sumbit Successfully")
         }
+      })
+      .catch(err => {
+        // console.log(err)
       })
   }
 
   return (
     <div>
       <form
-        className="md:text-3xl text-lg grid  grid-cols-2  gap-10 sm:space-y-0"
-        onSubmit={onSubmit}
+        className="grid    gap-5 sm:space-y-0"
+        onSubmit={handleSubmit(onSubmit)}
       >
-        <input
-          placeholder="Your Name"
-          name="Name"
-          value={name}
-          type="text"
-          onChange={e => setName(e.target.value)}
-          className="border-[1px] rounded-sm border-black p-2 min-w-full col-span-2 md:col-span-1  bg-transparent outline-none border-b sm:text-base  "
-        />
-        <input
-          placeholder="Phone Number"
-          name="Number"
-          value={phoneNumber}
-          type="text"
-          onChange={e => setPhoneNumber(e.target.value)}
-          className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2 md:col-span-1  bg-transparent outline-none border-b sm:text-base  "
-        />
-        <input
-          type="email"
-          value={email}
-          className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base  "
-          placeholder="Email"
-          onChange={e => setEmail(e.target.value)}
-          name="Email"
-        />
-        <input
-          type="text"
-          className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base "
-          placeholder="Enter your Websits"
-          onChange={e => setEnteryourWebsits(e.target.value)}
-          value={enteryourWebsits}
-          name="Websits"
-        />
-        <input
-          type="text"
-          className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base  "
-          placeholder="Enter your Company name"
-          onChange={e => setCompanyName(e.target.value)}
-          value={companyName}
-          name="CompanyName"
-        />
-
-        <select
-          className=" text-[16px] grid min-w-full col-span-2 border-[1px] rounded-sm border-black p-2"
-          onChange={e => setSelectInquries(e.target.value)}
-        >
-          <option>Select Inquiries</option>
-          <option
+        <div className="xl:w-[600px] w-full ">
+          <p>Name*</p>
+          <input
+            placeholder="Your Name"
             type="text"
-            value="General Inquiries"
-            onChange={e => setSelectInquries(e.target.value)}
-          >
-            General Inquiries
-          </option>
-          <option
-            type="text"
-            value="Business Inquiries"
-            onChange={e => setSelectInquries(e.target.value)}
-          >
-            Business Inquiries
-          </option>
-        </select>
-        <input
-          type="text"
-          className="border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base  "
-          placeholder="Enter your Message Here"
-          onChange={e => setMessage(e.target.value)}
-          name="Message"
-        />
+            className={`  border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base    ${
+              errors.Name ? "border-red-500" : ""
+            }`}
+            {...register("Name", {
+              required: "Name is required",
+            })}
+            onKeyUp={() => {
+              trigger("Name")
+            }}
+          />
+          {errors.Name && (
+            <small className="text-red-500">{errors.Name.message}</small>
+          )}
+        </div>
 
+        <div className="xl:w-[600px] w-full">
+          <p>Phone Number*</p>
+          <input
+            placeholder="Phone Number"
+            type="number"
+            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base     ${
+              errors.PhoneNumber ? "border-red-500" : ""
+            }`}
+            {...register("PhoneNumber", {
+              required: "Phone Number is required",
+              maxLength: 10,
+              pattern:
+                '//"^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$"/gmi/i',
+            })}
+            onKeyUp={() => {
+              trigger("PhoneNumber")
+            }}
+          />
+          {errors.PhoneNumber && (
+            <small className="text-red-500">{errors.PhoneNumber.message}</small>
+          )}
+        </div>
+
+        <div className="xl:w-[600px] w-full">
+          <p>Email*</p>
+          <input
+            type="email"
+            placeholder="Email"
+            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base     ${
+              errors.Email ? "border-red-500" : ""
+            }`}
+            {...register("Email", {
+              required: "Email is required",
+            })}
+            onKeyUp={() => {
+              trigger("Email")
+            }}
+          />
+          {errors.Email && (
+            <small className="text-red-500">{errors.Email.message}</small>
+          )}
+        </div>
+
+        <div className="xl:w-[600px] w-full">
+          <p> Websits*</p>
+          <input
+            type="text"
+            placeholder="Enter your Websits"
+            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base ${
+              errors.EnteryourWebsits ? "border-red-500" : ""
+            }`}
+            {...register("EnteryourWebsits", {
+              required: "Enter your Websitsis required",
+            })}
+            onKeyUp={() => {
+              trigger("EnteryourWebsits")
+            }}
+          />
+          {errors.EnteryourWebsits && (
+            <small className="text-red-500">
+              {errors.EnteryourWebsits.message}
+            </small>
+          )}
+        </div>
+
+        <div className="xl:w-[600px] w-full">
+          <p> Company Name*</p>
+          <input
+            type="text"
+            placeholder="Enter your Company name"
+            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base    ${
+              errors.CompanyName ? "border-red-500" : ""
+            }`}
+            {...register("CompanyName", {
+              required: "Company Name is required",
+            })}
+            onKeyUp={() => {
+              trigger("CompanyName")
+            }}
+          />
+          {errors.CompanyName && (
+            <small className="text-red-500">{errors.CompanyName.message}</small>
+          )}
+        </div>
+
+        <div>
+          <p> Inquiries*</p>
+
+          <select
+            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base   ${
+              errors.SelectInquries ? "border-red-500" : ""
+            }`}
+            {...register("SelectInquries", {
+              required: "Select Inquries is required",
+            })}
+            onKeyUp={() => {
+              trigger("SelectInquries")
+            }}
+          >
+            <option>Select Inquiries</option>
+            {InquriesData.map((c, idx) => (
+              <option value={c.InquriesData} key={c.id}>
+                {c.name}
+              </option>
+            ))}
+          </select>
+          {errors.InquriesData && (
+            <small className="text-red-500">
+              {errors.SelectInquries.message}
+            </small>
+          )}
+        </div>
+
+        <div className="xl:w-[600px] w-full">
+          <p>Message*</p>
+          <input
+            type="text"
+            placeholder="Enter your Message Here"
+            className={`border-black p-2 w-full    bg-transparent outline-none border-2 text-base   ${
+              errors.Message ? "border-red-500" : ""
+            }`}
+            {...register("Message", {
+              required: "Message is required",
+            })}
+            onKeyUp={() => {
+              trigger("Message")
+            }}
+          />
+          {errors.Message && (
+            <small className="text-red-500">{errors.Message.message}</small>
+          )}
+        </div>
         <button
           type="submit"
-          onClick={e => e.target.reset}
           className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-1 text-white hover:text-blue-400  text-[16px]"
         >
           Submit
         </button>
       </form>
-      {/* <form
-        className=" grid  grid-cols-2  gap-8 sm:space-y-0"
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <div>
-          <input
-            className={`border-[1px] rounded-sm border-black p-2 min-w-full col-span-2 md:col-span-1  bg-transparent outline-none border-b sm:text-base   ${
-              errors.name ? "border-red-500" : ""
-            }`}
-            type="text"
-            placeholder=" Name"
-            {...register("name", {
-              required: "name is required",
-            })}
-            onKeyUp={() => {
-              trigger("name")
-            }}
-          />
-          {errors.name && (
-            <small className="text-red-500">{errors.name.message}</small>
-          )}
-        </div>
-
-        <div>
-          <input
-            className={`border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2 md:col-span-1  bg-transparent outline-none border-b sm:text-base   ${
-              errors.phoneNumber ? "border-red-500" : ""
-            }`}
-            type="number"
-            placeholder="Phone Number"
-            {...register("phoneNumber", {
-              required: "Phone Number is required",
-            })}
-            onKeyUp={() => {
-              trigger("phoneNumber")
-            }}
-          />
-          {errors.phoneNumber && (
-            <small className="text-red-500">{errors.phoneNumber.message}</small>
-          )}
-        </div>
-
-        <div>
-          <input
-            className={`border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base    ${
-              errors.email ? "border-red-500" : ""
-            }`}
-            type="email"
-            placeholder="Email"
-            {...register("email", {
-              required: "email is required",
-            })}
-            onKeyUp={() => {
-              trigger("email")
-            }}
-          />
-          {errors.email && (
-            <small className="text-red-500">{errors.email.message}</small>
-          )}
-        </div>
-
-        <div>
-          <input
-            className={`border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base    ${
-              errors.enteryourWebsits ? "border-red-500" : ""
-            }`}
-            type="text"
-            placeholder="Enter your Websits"
-            {...register("enteryourWebsits", {
-              required: "Enter your Websits is required",
-            })}
-            onKeyUp={() => {
-              trigger("enteryourWebsits")
-            }}
-          />
-          {errors.enteryourWebsits && (
-            <small className="text-red-500">
-              {errors.enteryourWebsits.message}
-            </small>
-          )}
-        </div>
-
-        <div>
-          <input
-            className={`border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base    ${
-              errors.companyName ? "border-red-500" : ""
-            }`}
-            type="text"
-            placeholder="Company Name"
-            {...register("companyName", {
-              required: "Company Name is required",
-            })}
-            onKeyUp={() => {
-              trigger("companyName")
-            }}
-          />
-          {errors.companyName && (
-            <small className="text-red-500">{errors.companyName.message}</small>
-          )}
-        </div>
-
-        <div>
-          <select
-            className={`border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base  ${
-              errors.selectInquries ? "border-red-500" : ""
-            }`}
-            type="text"
-            placeholder="Select Inquries"
-            {...register("selectInquries", {
-              required: "Select Inquries is required",
-            })}
-            onKeyUp={() => {
-              trigger("selectInquries")
-            }}
-          >
-            <option value="">Select Inquries</option>
-            {InquriesData?.map((s, idx) => (
-              <option value={s.id} key={s.id}>
-                {s.name}
-              </option>
-            ))}
-          </select>
-          {errors.selectInquries && (
-            <small className="text-red-500">
-              {errors.selectInquries.message}
-            </small>
-          )}
-        </div>
-
-        <div>
-          <input
-            className={`border-[1px] rounded-sm border-black p-2 min-w-full  col-span-2  bg-transparent outline-none border-b text-base  ${
-              errors.message ? "border-red-500" : ""
-            }`}
-            type="text"
-            placeholder="Enter Your Message Here"
-            {...register("message", {
-              required: "Message is required",
-            })}
-            onKeyUp={() => {
-              trigger("message")
-            }}
-          />
-          {errors.message && (
-            <small className="text-red-500">{errors.message.message}</small>
-          )}
-        </div>
-        <div>
-          <button className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-2 text-white hover:text-blue-400  text-[16px]">
-            Submit
-          </button>
-        </div>
-      </form> */}
     </div>
   )
 }

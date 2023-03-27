@@ -127,9 +127,12 @@ export default function Header(props) {
 
           {/*  Mobile Menu */}
 
-          <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-24 ">
+          <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-28 ">
             <li className="text-sm text-white ">
-              <Link to={props.data.mobilelist.homePage}>
+              <Link
+                to={props.data.mobilelist.homePage}
+                className="hover:text-[#ffe793] focus:text-[#ffe793]"
+              >
                 {props.data.mobilelist.home}
               </Link>
             </li>
@@ -160,7 +163,12 @@ export default function Header(props) {
                     <Disclosure.Panel className="px-4 text-sm  space-y-2 ">
                       {props.data.mobilelist.itServices.map((i, idx) => (
                         <li className="text-white" key={i.listItem.id}>
-                          <Link to={i.listItem.page}>{i.listItem.title}</Link>
+                          <Link
+                            to={i.listItem.page}
+                            className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                          >
+                            {i.listItem.title}
+                          </Link>
                         </li>
                       ))}
                     </Disclosure.Panel>
@@ -187,7 +195,12 @@ export default function Header(props) {
                   <Disclosure.Panel className="px-4 space-y-1">
                     {props.data.mobilelist.subTest.map((i, idx) => (
                       <li className="text-white" key={i.listItem.id}>
-                        <Link to={i.listItem.page}>{i.listItem.title}</Link>
+                        <Link
+                          to={i.listItem.page}
+                          className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                        >
+                          {i.listItem.title}
+                        </Link>
                       </li>
                     ))}
                   </Disclosure.Panel>
@@ -238,7 +251,10 @@ export default function Header(props) {
                             {props.data.mobilelist.subaccessibility.map(i => (
                               <li className="text-white">
                                 {" "}
-                                <Link to={i.listItem.page}>
+                                <Link
+                                  to={i.listItem.page}
+                                  className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                                >
                                   {i.listItem.title}
                                 </Link>
                               </li>
@@ -249,7 +265,10 @@ export default function Header(props) {
                     </Disclosure>
 
                     <li className="text-white">
-                      <Link to={props.data.mobilelist.webaccessibilityPage}>
+                      <Link
+                        to={props.data.mobilelist.webaccessibilityPage}
+                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                      >
                         {props.data.mobilelist.webaccessibility}
                       </Link>
                     </li>
@@ -259,24 +278,36 @@ export default function Header(props) {
             </Disclosure>
 
             <li className="text-white text-sm">
-              <Link to={props.data.mobilelist.digitalPage}>
+              <Link
+                to={props.data.mobilelist.digitalPage}
+                className="hover:text-[#ffe793] focus:text-[#ffe793]"
+              >
                 {props.data.mobilelist.digital}
               </Link>
             </li>
 
             <li className="text-sm text-white">
-              <Link to={props.data.mobilelist.careersPage}>
+              <Link
+                to={props.data.mobilelist.careersPage}
+                className="hover:text-[#ffe793] focus:text-[#ffe793]"
+              >
                 {props.data.mobilelist.careers}
               </Link>
             </li>
 
             <li className="text-sm text-white">
-              <Link to={props.data.mobilelist.contactPage}>
+              <Link
+                to={props.data.mobilelist.contactPage}
+                className="hover:text-[#ffe793] focus:text-[#ffe793]"
+              >
                 {props.data.mobilelist.contact}
               </Link>
             </li>
             <li className="text-sm text-white">
-              <Link to={props.data.mobilelist.awardPage}>
+              <Link
+                to={props.data.mobilelist.awardPage}
+                className="hover:text-[#ffe793] focus:text-[#ffe793]"
+              >
                 {props.data.mobilelist.award}
               </Link>
             </li>

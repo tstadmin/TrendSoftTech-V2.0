@@ -88,7 +88,7 @@ const Footer = props => {
               <li>
                 <a
                   aria-label="location: Trendsoft Technologies Pvt. Ltd,
-                MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor KPHB Colony Road No.1 Kukatpally Hyderabad-500072"
+                MIG-37 Vasavi Srinivasam Apartment Flat Number.301 3rd Floor KPHB Colony Road Number.1 Kukatpally Hyderabad-500072"
                   href="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
                   target="_blank"
                   rel="noreferrer"
@@ -120,8 +120,8 @@ const Footer = props => {
               </IconSize>
               <li>
                 <a
-                  href="mailto:service@trendsofttech.com"
-                  aria-label="service mail: service@trendsofttech.com "
+                  href="mailto:bdm.ts@trendsofttech.com"
+                  aria-label="Business Inquries mail: bdm.ts@trendsofttech.com "
                 >
                   {props.data.serviceMail}
                 </a>

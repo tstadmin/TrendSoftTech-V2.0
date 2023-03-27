@@ -95,7 +95,7 @@ home:
                 page: "/services/mobileDevelopment/"         
       - listItem:
           id: 2
-          title: "Testing"
+          title: "TESTING"
           page: "/services/testing/"
           subTitle: 
             - listItem:
@@ -216,7 +216,7 @@ home:
                 id: 4
                 title: "Mobile  Development"
                 page: "/services/mobileDevelopment/"  
-          test: "Testing"
+          test: "TESTING"
           testPage: "/services/testing/"
           subTest:
             - listItem:
