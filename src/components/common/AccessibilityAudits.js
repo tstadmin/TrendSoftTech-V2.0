@@ -1,6 +1,7 @@
 import axios from "axios"
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 
 const AccessibilityAudits = () => {
   const {
@@ -23,6 +24,9 @@ const AccessibilityAudits = () => {
           reset()
           alert("Sumbit Successfully")
         }
+      })
+      .catch(err => {
+        // console.log(err)
       })
       .catch(err => {
         // console.log(err)
