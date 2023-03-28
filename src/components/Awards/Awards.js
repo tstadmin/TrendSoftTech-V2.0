@@ -30,7 +30,7 @@ const Awards = props => {
         <AwardHeading>{props.title}</AwardHeading>
         <AwardDiv>
           {props.data.list.map((item, idx) => (
-            <div>
+            <div key={item.listItem.id}>
               <a
                 href={item.listItem.pdf}
                 target="_blank"

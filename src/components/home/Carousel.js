@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 
 import { Carousel } from "@mantine/carousel"
 import Autoplay from "embla-carousel-autoplay"
-
+import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs"
 import "./HomeStyle.css"
 import { Link } from "gatsby"
 const CarouselItem = props => {
@@ -17,6 +17,23 @@ const CarouselItem = props => {
         align="start"
         transitionDuration="1500"
         plugins={[autoplay.current]}
+        previousControlLabel=" previous"
+        nextControlLabel="Next"
+        nextControlIcon={
+          <div className="flex items-center p-0.5 ">
+            {/* <IconArrowRight size={16} /> */}
+
+            <small className="p-0 align-top ">Next</small>
+            <BsArrowRightShort className="text-[18px]" />
+          </div>
+        }
+        previousControlIcon={
+          <div className="flex  items-center p-0.5">
+            {/* <IconArrowRight size={16} /> */}
+            <BsArrowLeftShort className="text-[18px]" />
+            <small className="p-0 align-top ">Prev</small>
+          </div>
+        }
       >
         {props.carousel.list.map((item, idx) => (
           <Carousel.Slide key={item.listItem.id}>

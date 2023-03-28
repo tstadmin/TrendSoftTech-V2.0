@@ -372,24 +372,31 @@ home:
       - listItem:
           id: 1
           img: "/img/Clients/Amnet.png"
+          label: "Amnet"
       - listItem:
           id: 2
           img: "/img/Clients/HTS_BIO_Pharma.png"
+          label: "HTS BIO Pharma"
       - listItem:
           id: 3
           img: "/img/Clients/jio.png"
+          label: "jio"
       - listItem:
           id: 4
           img: "/img/Clients/Kumar_pamps.png"
+          label: "Kumar pamps"
       - listItem:
           id: 5
           img: "/img/Clients/Nebula_Group.png"
+          label: "Nebula Group"
       - listItem:
           id: 6
           img: "/img/Clients/SS_Group.png"
+          label: "SS Group "
       - listItem:
           id: 7
           img: "/img/Clients/tenali_double_horse.png"
+          label: "Tenali Double Horse"
   workingProcess:
     title: WORKING PROCESS
     description: "How We Work For Our Customers"

@@ -1,7 +1,6 @@
 import axios from "axios"
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
-import { useForm } from "react-hook-form"
 
 const AccessibilityAudits = () => {
   const {
@@ -14,6 +13,7 @@ const AccessibilityAudits = () => {
   } = useForm()
 
   const onSubmit = data => {
+    console.log("Sumbit Successfully")
     axios
       .post(
         "https://sheet.best/api/sheets/81fbce59-2b4a-4dc8-8a5c-5f88317d2b77",
@@ -23,10 +23,8 @@ const AccessibilityAudits = () => {
         if (res.status === 200) {
           reset()
           alert("Sumbit Successfully")
+          console.log("Sumbit Successfully")
         }
-      })
-      .catch(err => {
-        // console.log(err)
       })
       .catch(err => {
         // console.log(err)
@@ -162,7 +160,7 @@ const AccessibilityAudits = () => {
                 placeholder="Phone No"
                 {...register("PhoneNumber", {
                   required: "Phone Number is required",
-                  maxLength: 10,
+
                   pattern:
                     '//"^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$"/gmi/i',
                 })}

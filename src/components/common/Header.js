@@ -127,7 +127,7 @@ export default function Header(props) {
 
           {/*  Mobile Menu */}
 
-          <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-28 ">
+          <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-28  ">
             <li className="text-sm text-white ">
               <Link
                 to={props.data.mobilelist.homePage}
@@ -248,17 +248,19 @@ export default function Header(props) {
                             />
                           </Disclosure.Button>
                           <Disclosure.Panel className="px-4 py-2 text-sm space-y-1">
-                            {props.data.mobilelist.subaccessibility.map(i => (
-                              <li className="text-white">
-                                {" "}
-                                <Link
-                                  to={i.listItem.page}
-                                  className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                                >
-                                  {i.listItem.title}
-                                </Link>
-                              </li>
-                            ))}
+                            {props.data.mobilelist.subaccessibility.map(
+                              (i, idx) => (
+                                <li className="text-white" key={i.listItem.id}>
+                                  {" "}
+                                  <Link
+                                    to={i.listItem.page}
+                                    className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                                  >
+                                    {i.listItem.title}
+                                  </Link>
+                                </li>
+                              )
+                            )}
                           </Disclosure.Panel>
                         </>
                       )}

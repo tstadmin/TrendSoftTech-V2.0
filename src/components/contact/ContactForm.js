@@ -79,7 +79,7 @@ const ContactForm = () => {
             }`}
             {...register("PhoneNumber", {
               required: "Phone Number is required",
-              maxLength: 10,
+
               pattern:
                 '//"^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$"/gmi/i',
             })}
