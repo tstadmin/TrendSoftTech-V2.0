@@ -65,6 +65,7 @@ const CareersForm = () => {
               <input
                 placeholder="Name"
                 type="text"
+                aria-label="required"
                 className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
                   errors.Name ? "border-red-500" : ""
                 }`}
@@ -87,6 +88,7 @@ const CareersForm = () => {
               <p>Email</p>
               <input
                 type="email"
+                aria-label="required"
                 className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
                   errors.Email ? "border-red-500" : ""
                 }`}
@@ -107,6 +109,7 @@ const CareersForm = () => {
               <p>Phone Number</p>
               <input
                 type="text"
+                aria-label="required"
                 placeholder="Phone Number"
                 maxLength={10}
                 className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
@@ -158,6 +161,7 @@ const CareersForm = () => {
               <p>Upload Resume / CV</p>
               <input
                 type="file"
+                aria-label="required"
                 className={`block w-full p-3 rounded border-black border-2 focus:border-2  focus:border-blue-600 focus:outline-none ${
                   errors.File ? "border-red-500" : ""
                 }`}
@@ -180,6 +184,7 @@ const CareersForm = () => {
               </label>
               <select
                 className="border-2 p-1  rounded-sm ml-4 border-black"
+                aria-label="required"
                 {...register("Position", {
                   required: "Position is required",
                 })}
@@ -205,6 +210,7 @@ const CareersForm = () => {
             <div className="240Screen:flex grid space-x-2">
               <input
                 type="checkbox"
+                aria-label="required"
                 {...register("checkbox", {
                   required: "checkbox is required",
                 })}

@@ -58,6 +58,7 @@ const ContactForm = () => {
           <input
             placeholder="Your Name"
             type="text"
+            aria-label="required"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.Name ? "border-red-500" : ""
             }`}
@@ -81,6 +82,7 @@ const ContactForm = () => {
           <p>Phone Number*</p>
           <input
             placeholder="Phone Number"
+            aria-label="required"
             type="text"
             maxlength="10"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
@@ -111,6 +113,7 @@ const ContactForm = () => {
           <p>Email*</p>
           <input
             type="email"
+            aria-label="required"
             placeholder="Email"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.Email ? "border-red-500" : ""
@@ -132,6 +135,7 @@ const ContactForm = () => {
           <p> Website*</p>
           <input
             type="text"
+            aria-label="required"
             placeholder="Enter your Website"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.EnteryourWebsits ? "border-red-500" : ""
@@ -154,6 +158,7 @@ const ContactForm = () => {
           <p> Company Name*</p>
           <input
             type="text"
+            aria-label="required"
             placeholder="Enter your Company name"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.CompanyName ? "border-red-500" : ""
@@ -174,6 +179,7 @@ const ContactForm = () => {
           <p> Inquiries *</p>
 
           <select
+            aria-label="required"
             className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base   ${
               errors.SelectInquries ? "border-red-500" : ""
             }`}
@@ -202,6 +208,7 @@ const ContactForm = () => {
           <p>Message*</p>
           <input
             type="text"
+            aria-label="required"
             placeholder="Enter your Message Here"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.Message ? "border-red-500" : ""
@@ -219,7 +226,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-1 text-white hover:text-blue-400  text-[16px]"
+          className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-2 text-white hover:text-blue-400  text-[16px]"
         >
           Submit
         </button>

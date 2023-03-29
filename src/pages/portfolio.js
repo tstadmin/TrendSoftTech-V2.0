@@ -16,10 +16,9 @@ const Portfolio = () => {
   console.log(portfolio)
   return (
     <div>
-    
-      <Layout  title={{title:"Portfolio"}}>
-        <Seo title="About" description="TrendSoftTech" />
-        <BreadCrumb img="/img/AboutImages/About_Frame.svg" title="portfolios" />
+      <Layout title={{ title: "Portfolio" }}>
+        <Seo title="Portfolios" description="TrendSoftTech" />
+        <BreadCrumb img="/img/BreadCrumb/AboutFrame.svg" title="portfolios" />
         <Portfolios data={portfolio} />
       </Layout>
     </div>

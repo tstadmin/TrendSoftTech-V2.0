@@ -73,6 +73,7 @@ const AccessibilityAudits = () => {
               <p>First Name*</p>
               <input
                 type="text"
+                aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
                   errors.FirstName ? "border-red-500" : ""
                 }`}
@@ -99,6 +100,7 @@ const AccessibilityAudits = () => {
               <p>Last Name*</p>
               <input
                 type="text"
+                aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
                   errors.LastName ? "border-red-500" : ""
                 }`}
@@ -125,6 +127,7 @@ const AccessibilityAudits = () => {
               <p>Email*</p>
               <input
                 type="email"
+                aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
                   errors.Email ? "border-red-500" : ""
                 }`}
@@ -146,6 +149,7 @@ const AccessibilityAudits = () => {
               <p>Phone No*</p>
               <input
                 type="text"
+                aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
                   errors.PhoneNumber ? "border-red-500" : ""
                 }`}
