@@ -57,7 +57,11 @@ const CareersForm = () => {
             onSubmit={handleSubmit(onSubmit)}
           >
             <div>
-              <p>Name</p>
+              <div className="flex justify-between">
+                <p>Name *</p>
+                <p className="text-red-500  text-[14px]">* Field required</p>
+              </div>
+
               <input
                 placeholder="Name"
                 type="text"
@@ -66,6 +70,10 @@ const CareersForm = () => {
                 }`}
                 {...register("Name", {
                   required: "Name is required",
+                  pattern: {
+                    value: /^[a-zA-Z ]+$/,
+                    message: "Only Alphabets are allowed",
+                  },
                 })}
                 onKeyUp={() => {
                   trigger("Name")
@@ -98,15 +106,22 @@ const CareersForm = () => {
             <div>
               <p>Phone Number</p>
               <input
-                type="number"
+                type="text"
                 placeholder="Phone Number"
+                maxLength={10}
                 className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
                   errors.PhoneNumber ? "border-red-500" : ""
                 }`}
                 {...register("PhoneNumber", {
                   required: "Phone Number is required",
-                  pattern:
-                    '//"^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$"/gmi/i',
+                  maxLength: {
+                    value: 10,
+                    message: "Only number 10  required",
+                  },
+                  pattern: {
+                    value: /^\d*(?:\.\d{1,2})?$/,
+                    message: "Only number allower",
+                  },
                 })}
                 onKeyUp={() => {
                   trigger("PhoneNumber")
@@ -119,7 +134,7 @@ const CareersForm = () => {
               )}
             </div>
 
-            <div>
+            {/* <div>
               <p> Cover Letter</p>
               <input
                 type="text"
@@ -137,13 +152,13 @@ const CareersForm = () => {
               {errors.Letter && (
                 <small className="text-red-500">{errors.Letter.message}</small>
               )}
-            </div>
+            </div> */}
 
             <div>
-              <p>Upload Resume</p>
+              <p>Upload Resume / CV</p>
               <input
                 type="file"
-                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-3 rounded border-black border-2 focus:border-2  focus:border-blue-600 focus:outline-none ${
                   errors.File ? "border-red-500" : ""
                 }`}
                 placeholder="Enter your file"

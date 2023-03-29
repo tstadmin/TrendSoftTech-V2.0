@@ -44,6 +44,7 @@ const AccessibleData = graphql`
           frontmatter {
             accessible {
               accessibleWord {
+                analysisLink
                 description
                 list {
                   listItems {

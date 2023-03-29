@@ -43,6 +43,7 @@ const accessiblePPTData = graphql`
           frontmatter {
             accessible {
               accessiblePPT {
+                analysisLink
                 description
                 list {
                   listItems {

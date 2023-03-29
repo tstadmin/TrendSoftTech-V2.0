@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 import AnalysisInfo from "../WebsiteAnalysis/AnalysisInfo"
 
-const AccessibilityAudits = () => {
+const DocAnalysis = () => {
   const {
     register,
     handleSubmit,
@@ -182,4 +182,4 @@ const AccessibilityAudits = () => {
   )
 }
 
-export default AccessibilityAudits
+export default DocAnalysis

@@ -44,9 +44,13 @@ const ContactForm = () => {
   }
 
   return (
-    <div>
+    <div className="space-y-5 ">
+      <div className="flex justify-between">
+        <p className="text-xl text-[#0b6ddc] font-semibold">Contact Form</p>
+        <small className="text-red-500 text-[14px]">* Field required</small>
+      </div>
       <form
-        className="grid    gap-5 sm:space-y-0"
+        className="grid    gap-3 sm:space-y-0"
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="xl:w-[600px] w-full ">
@@ -54,11 +58,15 @@ const ContactForm = () => {
           <input
             placeholder="Your Name"
             type="text"
-            className={`  border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base    ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.Name ? "border-red-500" : ""
             }`}
             {...register("Name", {
               required: "Name is required",
+              pattern: {
+                value: /^[a-zA-Z ]+$/,
+                message: "Only Alphabets are allowed",
+              },
             })}
             onKeyUp={() => {
               trigger("Name")
@@ -73,20 +81,27 @@ const ContactForm = () => {
           <p>Phone Number*</p>
           <input
             placeholder="Phone Number"
-            type="number"
-            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base     ${
+            type="text"
+            maxlength="10"
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.PhoneNumber ? "border-red-500" : ""
             }`}
             {...register("PhoneNumber", {
               required: "Phone Number is required",
-
-              pattern:
-                '//"^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$"/gmi/i',
+              maxLength: {
+                value: 10,
+                message: "Only number 10  required",
+              },
+              pattern: {
+                value: /^\d*(?:\.\d{1,2})?$/,
+                message: "Only number allower",
+              },
             })}
             onKeyUp={() => {
               trigger("PhoneNumber")
             }}
           />
+
           {errors.PhoneNumber && (
             <small className="text-red-500">{errors.PhoneNumber.message}</small>
           )}
@@ -97,7 +112,7 @@ const ContactForm = () => {
           <input
             type="email"
             placeholder="Email"
-            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base     ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.Email ? "border-red-500" : ""
             }`}
             {...register("Email", {
@@ -107,17 +122,18 @@ const ContactForm = () => {
               trigger("Email")
             }}
           />
+
           {errors.Email && (
             <small className="text-red-500">{errors.Email.message}</small>
           )}
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p> Websits*</p>
+          <p> Website*</p>
           <input
             type="text"
-            placeholder="Enter your Websits"
-            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base ${
+            placeholder="Enter your Website"
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.EnteryourWebsits ? "border-red-500" : ""
             }`}
             {...register("EnteryourWebsits", {
@@ -139,7 +155,7 @@ const ContactForm = () => {
           <input
             type="text"
             placeholder="Enter your Company name"
-            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base    ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.CompanyName ? "border-red-500" : ""
             }`}
             {...register("CompanyName", {
@@ -155,10 +171,10 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <p> Inquiries*</p>
+          <p> Inquiries *</p>
 
           <select
-            className={`border-black/70 p-2 w-full    bg-transparent outline-none border-2 text-base   ${
+            className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base   ${
               errors.SelectInquries ? "border-red-500" : ""
             }`}
             {...register("SelectInquries", {
@@ -168,7 +184,7 @@ const ContactForm = () => {
               trigger("SelectInquries")
             }}
           >
-            <option>Select Inquiries</option>
+            <option value="">Select Inquiries</option>
             {InquriesData.map((c, idx) => (
               <option value={c.InquriesData} key={c.id}>
                 {c.name}
@@ -187,7 +203,7 @@ const ContactForm = () => {
           <input
             type="text"
             placeholder="Enter your Message Here"
-            className={`border-black p-2 w-full    bg-transparent outline-none border-2 text-base   ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.Message ? "border-red-500" : ""
             }`}
             {...register("Message", {

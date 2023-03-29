@@ -915,6 +915,7 @@ services:
                      description: "<p>One the product is accepted by the client we move towards deployment. Our support teams ensure that the applications have the right environment for the applications and take care of any eventualities. Trendsoft CRM team keeps an eye on the latest trends and updates our clients continually on how to improve their applications, adding value to your business even after the product has been delivered.</p>"     
 accessible:
    accessiblePDFUA:
+      analysisLink: "/services/docWebsiteAnalysis/"  
       description: "<p>Yes, yes, yes! PDFs also need to be accessible so that people with disabilities using screen reader, speech to text technology or braille displayer get equal access. Providing Accessible PDFs is now a requirement as per Americans with Disabilities Act (ADA), Section 508 & AODA.</p><p>Just because a document is available as a downloadable PDF does not mean that it is an accessible PDF. As we know, PDFs are the go to format for organizations to share information.</p>"
       list:
         - listItems:
@@ -956,6 +957,7 @@ accessible:
              title: "How do we ensure that the PDF document is Accessible?"
              description: "<p>At TRENDSOFT TECHNOLOGIES PVT LTD., we take quality seriously. With expertise in PDF/UA & WCAG 2.0 & 2.1, we not only test with the PDF Accessibility Checker in Adobe Professional but also ensure that a manual quality check is thoroughly implemented on the tags and the content. In addition, all our documents are tested by a native Screen Reader User to ensure that it is goes beyond compliance and is usable to people with disabilities.</p>" 
    accessiblePDFForms:
+      analysisLink: "/services/docWebsiteAnalysis/"    
       description: "<p>An accessible PDF ensures that everyone including people with disabilities can interact with your document and access the content, images, graphs, forms that are present easily.</p><p>Forms can be newsletter subscription, event registration, job application, customer feedback, admission forms, sign up forms etc. Most of the organization use PDF forms to collect and organize data. But it is important to make these forms accessible to gather data efficiently.</p><p>Making a PDF from accessible requires a little more effort as it is more than just dropping form elements into your document. PDF forms have some inherent accessibility limitations and hence it is important to provide a text description that will make the PDF fillable and help a screen reader to access the form easily while navigating through the PDF.</p><p>Challenges generally faced by screen reader users:<li>Form controls not identified</li><li>Labels and instructions not associated with form controls</li><li>Illogical tabbing and reading order</li></p>"
       list:
         - listItems:
@@ -987,6 +989,7 @@ accessible:
              title: "How do we ensure that the PDF document is Accessible?"
              description: "<p>With expertise in WCAG 2.0,2.1 and PDF Techniques & PDF U/A standard, we not only test with the PDF Accessibility Checker in Adobe Professional but also ensure that a manual quality check is thoroughly implemented. In addition, the PDF forms are tested by a Screen Reader User to ensure that it is goes beyond compliance and is usable to people with disabilities</p>" 
    accessibleWord:
+      analysisLink: "/services/docWebsiteAnalysis/"        
       description: "<p>A large number of documents created today are developed using Microsoft Word. Accessibility options and best practices are available to ensure that documents created with Microsoft Word are accessible to people with disabilities using screen readers and assistive technology. It’s often not knowing about these features. Microsoft Word is probably the go to format for so many people to create documents.</p>"
       list:
         - listItems:
@@ -1024,6 +1027,7 @@ accessible:
              title: "What standards do we comply with for Accessible Microsoft Word documents?"
              description: "<p>We work with the Web Content Accessibility Guideline (WCAG) 2.0 and implement the Microsoft Word Accessibility best practices to make Microsoft Word documents Accessible.</p>" 
    accessibleExcel:
+      analysisLink: "/services/docWebsiteAnalysis/"    
       description: "<p>Microsoft Excel is a handy tool when it comes to storing and organizing large amount of data. If using properly and because of its in- built features, you are at an accessibility advantage when using Microsoft Excel.</p>"
       list:
         - listItems:
@@ -1054,6 +1058,7 @@ accessible:
              title: "How do we ensure that the Excel file is Accessible?"
              description: "<p>At TRENDSOFT TECHNOLOGIES PVT LTD. we take quality seriously. We work closely with your team to for a fast turnaround and cost-effective accessible Excel files remediation.</p><p>With expertise in WCAG 2.0, 2.1 we not only test with the Accessibility Checker in Excel but also ensure that a manual quality check is thoroughly implemented on the tags and the content. In addition, all our documents are tested by a Screen Reader User to ensure that it is goes beyond compliance and is usable to people with disabilities.</p>" 
    accessiblePPT:
+      analysisLink: "/services/docWebsiteAnalysis/"     
       description: "<p>Microsoft PowerPoint is surely the go to format for all of us creating presentations. The question that arises is that are the PowerPoint slides accessible to people with disabilities using screen readers and assistive technology. Microsoft has built in accessibility support into Microsoft PowerPoint, but it is up to us as content creators to ensure that our PowerPoint Presentations are accessible. Microsoft PowerPoints are used to create different types of documents.</p>"
       list:
         - listItems:
@@ -1096,6 +1101,7 @@ accessible:
              description: "<p>At TRENDSOFT TECHNOLOGIES PVT LTD. we take quality seriously. With expertise in WCAG 2.1 and 2.0, we not only test with the Microsoft PowerPoint Accessibility Checker but also ensure that a manual quality check is thoroughly implemented on the content. In addition, all our documents are tested by a Screen Reader User to ensure that it is goes beyond compliance and is usable to people with disabilities.</p>" 
 webAccessibility:
    webAccessibility:
+      analysisLink: "/services/audit/"  
       description: "Strategies, standards, and supporting resources to help you make the Web more accessible to people with disabilities.</p>"
       list:
         - listItems:

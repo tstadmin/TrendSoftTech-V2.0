@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { useForm } from "react-hook-form"
 import AnalysisInfo from "../WebsiteAnalysis/AnalysisInfo"
 
-const AccessibilityAudits = () => {
+const DocAnalysis = () => {
   const {
     register,
     handleSubmit,
@@ -45,18 +45,18 @@ const AccessibilityAudits = () => {
           >
             <div>
               <div className="flex justify-between">
-                <p>Website URL*</p>
+                <p>Upload PDF / Document *</p>
                 <p className="text-red-500  text-[14px]">* Field required</p>
               </div>
               <input
-                type="text"
+                type="file"
                 aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
                   errors.WebsiteURL ? "border-red-500" : ""
                 }`}
                 placeholder="Website URL "
                 {...register("WebsiteURL", {
-                  required: "url is required",
+                  required: "PDF or Document is required",
                 })}
                 onKeyUp={() => {
                   trigger("WebsiteURL")
@@ -182,4 +182,4 @@ const AccessibilityAudits = () => {
   )
 }
 
-export default AccessibilityAudits
+export default DocAnalysis
