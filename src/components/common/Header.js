@@ -51,7 +51,7 @@ export default function Header(props) {
             {opened ? (
               <button
                 id="navbarDropdown"
-                className="cursor-pointer text-[#0084FF]   "
+                className="cursor-pointer text-[#0084FF]  "
               >
                 <span
                   data-bs-toggle="collapse"
