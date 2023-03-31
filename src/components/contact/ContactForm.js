@@ -1,9 +1,23 @@
 import axios from "axios"
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 
 import { useForm } from "react-hook-form"
 
+import ReCAPTCHA from "react-google-recaptcha"
+
+import {
+  GoogleReCaptchaProvider,
+  GoogleReCaptcha,
+} from "react-google-recaptcha-v3"
+
 const ContactForm = () => {
+  const [captcha, setCaptcha] = useState(false)
+  const [refreshReCaptcha, setRefreshReCaptcha] = useState(false)
+  const captchaReset = useRef(null)
+  const doRefresh = () => {
+    setRefreshReCaptcha(r => !r)
+  }
+
   const {
     register,
     handleSubmit,
@@ -34,8 +48,9 @@ const ContactForm = () => {
       )
       .then(res => {
         if (res.status === 200) {
+          setRefreshReCaptcha(r => !r)
           reset()
-          alert("Sumbit Successfully")
+          alert("Submit Successfully")
         }
       })
       .catch(err => {
@@ -43,18 +58,24 @@ const ContactForm = () => {
       })
   }
 
+  function onChange(value) {
+    setCaptcha(true)
+  }
+
   return (
     <div className="space-y-5 ">
       <div className="flex justify-between">
         <p className="text-xl text-[#0b6ddc] font-semibold">Contact Form</p>
-        <small className="text-red-500 text-[14px]">* Field required</small>
+        <small className="text-red-500 text-[14px]">* Fields required</small>
       </div>
       <form
         className="grid    gap-3 sm:space-y-0"
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="xl:w-[600px] w-full ">
-          <p>Name*</p>
+          <p>
+            Name<span className="text-red-500">*</span>
+          </p>
           <input
             placeholder="Your Name"
             type="text"
@@ -79,7 +100,9 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p>Phone Number*</p>
+          <p>
+            Phone Number<span className="text-red-500">*</span>
+          </p>
           <input
             placeholder="Phone Number"
             aria-label="required"
@@ -110,7 +133,9 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p>Email*</p>
+          <p>
+            Email<span className="text-red-500">*</span>
+          </p>
           <input
             type="email"
             aria-label="required"
@@ -132,7 +157,10 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p> Website*</p>
+          <p>
+            {" "}
+            Website<span className="text-red-500">*</span>
+          </p>
           <input
             type="text"
             aria-label="required"
@@ -155,7 +183,10 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p> Company Name*</p>
+          <p>
+            {" "}
+            Company Name <span className="text-red-500">*</span>
+          </p>
           <input
             type="text"
             aria-label="required"
@@ -176,7 +207,10 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <p> Inquiries *</p>
+          <p>
+            {" "}
+            Inquiries <span className="text-red-500">*</span>
+          </p>
 
           <select
             aria-label="required"
@@ -205,7 +239,9 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p>Message*</p>
+          <p>
+            Message<span className="text-red-500">*</span>
+          </p>
           <input
             type="text"
             aria-label="required"
@@ -224,9 +260,24 @@ const ContactForm = () => {
             <small className="text-red-500">{errors.Message.message}</small>
           )}
         </div>
+        <div>
+          <small>
+            confirm you're not a robot <span className="text-red-500">*</span>{" "}
+          </small>
+          {/* <ReCAPTCHA
+            ref={captchaReset}
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+            onChange={onChange}
+          /> */}
+          <GoogleReCaptchaProvider reCaptchaKey="6Ld4ZEglAAAAACSwTInWhawv0pUboFJDqS2FBJx7">
+            <GoogleReCaptcha refreshReCaptcha={refreshReCaptcha} />
+          </GoogleReCaptchaProvider>
+        </div>
         <button
+          // disabled={!captcha}
+          onClick={doRefresh}
           type="submit"
-          className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-2 text-white hover:text-blue-400  text-[16px]"
+          className=" bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border    rounded-xl p-2 text-white   text-[16px]"
         >
           Submit
         </button>
