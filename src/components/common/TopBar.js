@@ -6,7 +6,7 @@ const TopBar = props => {
     <div className=" example5 text-center bg-[#146aba] sticky top-0 z-30">
       <p className="text-white  font-Poppins">
         {/* {props.title} */}
-        Wishing you a very happy Sri Rama Navami 2023!
+        Wishing you a very happy Easter 2023!
         {/* <span className=" ml-4">{props.subTitle}</span>  */}
       </p>
     </div>

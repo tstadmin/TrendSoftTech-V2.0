@@ -5,6 +5,7 @@ const SkipToMainContent = () => {
     <div>
       <a
         href="#mainContent"
+        tabIndex="1"
         aria-label="skip to main content"
         className="text-base absolute z-50 p-1 bg-white  text-[#146aba] opacity-0 focus:text-[#146aba] hover:underline hover:decoration-[#146aba] sm:focus:left-[14%] focus:left-[23%] focus:top-2 focus:transform focus:translate-x-[-50%] focus:opacity-100"
       >

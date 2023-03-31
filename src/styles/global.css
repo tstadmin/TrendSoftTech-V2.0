@@ -38,3 +38,7 @@ h4 {
   font-family: sans-serif;
   @apply md:text-lg  text-sm font-semibold;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

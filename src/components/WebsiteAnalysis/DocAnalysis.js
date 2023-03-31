@@ -1,7 +1,12 @@
 import axios from "axios"
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 import { useForm } from "react-hook-form"
 import AnalysisInfo from "../WebsiteAnalysis/AnalysisInfo"
+
+import {
+  GoogleReCaptchaProvider,
+  GoogleReCaptcha,
+} from "react-google-recaptcha-v3"
 
 const DocAnalysis = () => {
   const {
@@ -13,6 +18,13 @@ const DocAnalysis = () => {
     formState: { errors },
   } = useForm()
 
+  const RefCaptcha = useRef(null)
+  const [refreshReCaptcha, setRefreshReCaptcha] = useState(false)
+  function onChange(value) {
+    console.log("Captcha value:", value)
+    // setCaptcha(true)
+  }
+
   const onSubmit = data => {
     console.log("Sumbit Successfully")
     axios
@@ -22,9 +34,9 @@ const DocAnalysis = () => {
       )
       .then(res => {
         if (res.status === 200) {
+          setRefreshReCaptcha(r => !r)
           reset()
           alert("Sumbit Successfully")
-          console.log("Sumbit Successfully")
         }
       })
       .catch(err => {
@@ -173,9 +185,28 @@ const DocAnalysis = () => {
                 </small>
               )}
             </div>
+            <div>
+              <div>
+                {/* <ReCAPTCHA
+                  ref={RefCaptcha}
+                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                  onChange={onChange}
+                  type="enum"
+                /> */}
+                <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+                  <GoogleReCaptcha
+                    ref={RefCaptcha}
+                    onChange={onChange}
+                    refreshReCaptcha={() => setRefreshReCaptcha(r => !r)}
+                  />
+                </GoogleReCaptchaProvider>
+              </div>
+            </div>
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-3 text-white hover:text-blue-400  text-[16px]"
+              // disabled={!captcha}
+              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-3 text-white   text-[16px]
+              disabled:opacity-60 "
             >
               Submit
             </button>

@@ -1,7 +1,12 @@
 import axios from "axios"
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 import { useForm } from "react-hook-form"
 import { FormHeading } from "./CareersStyle"
+
+import {
+  GoogleReCaptchaProvider,
+  GoogleReCaptcha,
+} from "react-google-recaptcha-v3"
 
 const CareersForm = () => {
   const {
@@ -27,6 +32,11 @@ const CareersForm = () => {
       position: "Web Designer",
     },
   ]
+  const RefCaptcha = useRef(null)
+  const [refreshReCaptcha, setRefreshReCaptcha] = useState(false)
+  function onChange(value) {
+    console.log("Captcha value:", value)
+  }
 
   const onSubmit = data => {
     console.log(data)
@@ -37,6 +47,7 @@ const CareersForm = () => {
       )
       .then(res => {
         if (res.status === 200) {
+          setRefreshReCaptcha(r => !r)
           reset()
           alert("Sumbit Successfully")
         }
@@ -58,7 +69,9 @@ const CareersForm = () => {
           >
             <div>
               <div className="flex justify-between">
-                <p>Name *</p>
+                <p>
+                  Name <span className="text-red-500">*</span>
+                </p>
                 <p className="text-red-500  text-[14px]">* Field required</p>
               </div>
 
@@ -84,8 +97,11 @@ const CareersForm = () => {
                 <small className="text-red-500">{errors.Name.message}</small>
               )}
             </div>
+
             <div>
-              <p>Email</p>
+              <p>
+                Email <span className="text-red-500">*</span>
+              </p>
               <input
                 type="email"
                 aria-label="required"
@@ -106,7 +122,9 @@ const CareersForm = () => {
             </div>
 
             <div>
-              <p>Phone Number</p>
+              <p>
+                Phone Number <span className="text-red-500">*</span>
+              </p>
               <input
                 type="text"
                 aria-label="required"
@@ -158,7 +176,9 @@ const CareersForm = () => {
             </div> */}
 
             <div>
-              <p>Upload Resume / CV</p>
+              <p>
+                Upload Resume / CV <span className="text-red-500">*</span>
+              </p>
               <input
                 type="file"
                 aria-label="required"
@@ -180,7 +200,7 @@ const CareersForm = () => {
 
             <div>
               <label className="text-lg" htmlFor="a">
-                Select position
+                Select position <span className="text-red-500">*</span>
               </label>
               <select
                 className="border-2 p-1  rounded-sm ml-4 border-black"
@@ -207,7 +227,7 @@ const CareersForm = () => {
               )}
             </div>
 
-            <div className="240Screen:flex grid space-x-2">
+            {/* <div className="240Screen:flex grid space-x-2">
               <input
                 type="checkbox"
                 aria-label="required"
@@ -223,11 +243,30 @@ const CareersForm = () => {
                 By using this form you agree with the storage and handling of
                 your data by this website. *
               </p>
-            </div>
+              {errors.File && (
+                <small className="text-red-500">{errors.File.message}</small>
+              )}
+            </div> */}
+            <div>
+              {/* <ReCAPTCHA
+                ref={RefCaptcha}
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                onChange={onChange}
+                type="enum"
+              /> */}
 
+              <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+                <GoogleReCaptcha
+                  ref={RefCaptcha}
+                  onChange={onChange}
+                  refreshReCaptcha={() => setRefreshReCaptcha(r => !r)}
+                />
+              </GoogleReCaptchaProvider>
+            </div>
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-3 text-white hover:text-blue-400  text-[16px]"
+              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-3 text-white   text-[16px]
+              disabled:opacity-60 "
             >
               Submit
             </button>
