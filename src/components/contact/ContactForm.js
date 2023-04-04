@@ -9,6 +9,7 @@ import {
   GoogleReCaptchaProvider,
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
+import { contactForm } from "../../services/api"
 
 const ContactForm = () => {
   const [captcha, setCaptcha] = useState(false)
@@ -39,27 +40,15 @@ const ContactForm = () => {
   ]
 
   const onSubmit = data => {
-    console.log(data)
-
-    axios
-      .post(
-        "https://sheet.best/api/sheets/b0c2741e-1e8d-46e9-96bc-66d750ae2bc8",
-        data
-      )
+    contactForm(data)
       .then(res => {
-        if (res.status === 200) {
-          setRefreshReCaptcha(r => !r)
-          reset()
-          alert("Submit Successfully")
-        }
+        window.location.reload()
+
+        alert("Submit Successfully")
       })
       .catch(err => {
         // console.log(err)
       })
-  }
-
-  function onChange(value) {
-    setCaptcha(true)
   }
 
   return (
@@ -81,9 +70,9 @@ const ContactForm = () => {
             type="text"
             aria-label="required"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
-              errors.Name ? "border-red-500" : ""
+              errors.name ? "border-red-500" : ""
             }`}
-            {...register("Name", {
+            {...register("name", {
               required: "Name is required",
               pattern: {
                 value: /^[a-zA-Z ]+$/,
@@ -91,11 +80,11 @@ const ContactForm = () => {
               },
             })}
             onKeyUp={() => {
-              trigger("Name")
+              trigger("name")
             }}
           />
-          {errors.Name && (
-            <small className="text-red-500">{errors.Name.message}</small>
+          {errors.name && (
+            <small className="text-red-500">{errors.name.message}</small>
           )}
         </div>
 
@@ -109,9 +98,9 @@ const ContactForm = () => {
             type="text"
             maxlength="10"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
-              errors.PhoneNumber ? "border-red-500" : ""
+              errors.phone_no ? "border-red-500" : ""
             }`}
-            {...register("PhoneNumber", {
+            {...register("phone_no", {
               required: "Phone Number is required",
               maxLength: {
                 value: 10,
@@ -123,12 +112,12 @@ const ContactForm = () => {
               },
             })}
             onKeyUp={() => {
-              trigger("PhoneNumber")
+              trigger("phone_no")
             }}
           />
 
-          {errors.PhoneNumber && (
-            <small className="text-red-500">{errors.PhoneNumber.message}</small>
+          {errors.phone_no && (
+            <small className="text-red-500">{errors.phone_no.message}</small>
           )}
         </div>
 
@@ -139,20 +128,20 @@ const ContactForm = () => {
           <input
             type="email"
             aria-label="required"
-            placeholder="Email"
+            placeholder="email"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
-              errors.Email ? "border-red-500" : ""
+              errors.email ? "border-red-500" : ""
             }`}
-            {...register("Email", {
-              required: "Email is required",
+            {...register("email", {
+              required: "email is required",
             })}
             onKeyUp={() => {
-              trigger("Email")
+              trigger("email")
             }}
           />
 
-          {errors.Email && (
-            <small className="text-red-500">{errors.Email.message}</small>
+          {errors.email && (
+            <small className="text-red-500">{errors.email.message}</small>
           )}
         </div>
 
@@ -166,19 +155,17 @@ const ContactForm = () => {
             aria-label="required"
             placeholder="Enter your Website"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
-              errors.EnteryourWebsits ? "border-red-500" : ""
+              errors.websits ? "border-red-500" : ""
             }`}
-            {...register("EnteryourWebsits", {
+            {...register("websits", {
               required: "Enter your Websitsis required",
             })}
             onKeyUp={() => {
-              trigger("EnteryourWebsits")
+              trigger("websits")
             }}
           />
-          {errors.EnteryourWebsits && (
-            <small className="text-red-500">
-              {errors.EnteryourWebsits.message}
-            </small>
+          {errors.websits && (
+            <small className="text-red-500">{errors.websits.message}</small>
           )}
         </div>
 
@@ -192,17 +179,19 @@ const ContactForm = () => {
             aria-label="required"
             placeholder="Enter your Company name"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
-              errors.CompanyName ? "border-red-500" : ""
+              errors.company_name ? "border-red-500" : ""
             }`}
-            {...register("CompanyName", {
+            {...register("company_name", {
               required: "Company Name is required",
             })}
             onKeyUp={() => {
-              trigger("CompanyName")
+              trigger("company_name")
             }}
           />
-          {errors.CompanyName && (
-            <small className="text-red-500">{errors.CompanyName.message}</small>
+          {errors.company_name && (
+            <small className="text-red-500">
+              {errors.company_name.message}
+            </small>
           )}
         </div>
 
@@ -215,13 +204,13 @@ const ContactForm = () => {
           <select
             aria-label="required"
             className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base   ${
-              errors.SelectInquries ? "border-red-500" : ""
+              errors.inquiries ? "border-red-500" : ""
             }`}
-            {...register("SelectInquries", {
+            {...register("inquiries", {
               required: "Select Inquries is required",
             })}
             onKeyUp={() => {
-              trigger("SelectInquries")
+              trigger("inquiries")
             }}
           >
             <option value="">Select Inquiries</option>
@@ -232,9 +221,7 @@ const ContactForm = () => {
             ))}
           </select>
           {errors.InquriesData && (
-            <small className="text-red-500">
-              {errors.SelectInquries.message}
-            </small>
+            <small className="text-red-500">{errors.inquiries.message}</small>
           )}
         </div>
 
@@ -249,32 +236,23 @@ const ContactForm = () => {
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
               errors.Message ? "border-red-500" : ""
             }`}
-            {...register("Message", {
-              required: "Message is required",
+            {...register("message", {
+              required: "message is required",
             })}
             onKeyUp={() => {
-              trigger("Message")
+              trigger("message")
             }}
           />
-          {errors.Message && (
-            <small className="text-red-500">{errors.Message.message}</small>
+          {errors.message && (
+            <small className="text-red-500">{errors.message.message}</small>
           )}
         </div>
         <div>
-          <small>
-            confirm you're not a robot <span className="text-red-500">*</span>{" "}
-          </small>
-          {/* <ReCAPTCHA
-            ref={captchaReset}
-            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-            onChange={onChange}
-          /> */}
           <GoogleReCaptchaProvider reCaptchaKey="6Ld4ZEglAAAAACSwTInWhawv0pUboFJDqS2FBJx7">
             <GoogleReCaptcha refreshReCaptcha={refreshReCaptcha} />
           </GoogleReCaptchaProvider>
         </div>
         <button
-          // disabled={!captcha}
           onClick={doRefresh}
           type="submit"
           className=" bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border    rounded-xl p-2 text-white   text-[16px]"

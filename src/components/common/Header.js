@@ -59,9 +59,8 @@ export default function Header(props) {
                 >
                   expanded
                 </span>
-                <div>
-                  <RxCross2 className="hidden md:block md:text-3xl sm:text-xl text-lg" />
-                </div>
+
+                <RxCross2 className="hidden md:block md:text-3xl sm:text-xl text-lg" />
               </button>
             ) : (
               <button

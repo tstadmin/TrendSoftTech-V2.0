@@ -7,8 +7,11 @@ import {
   GoogleReCaptchaProvider,
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
+import { docAccessbilityForm } from "../../services/api"
 
 const DocAnalysis = () => {
+  const MyBackgroundImage = "/img/form/Accessibility.jpg"
+
   const {
     register,
     handleSubmit,
@@ -26,18 +29,12 @@ const DocAnalysis = () => {
   }
 
   const onSubmit = data => {
-    console.log("Sumbit Successfully")
-    axios
-      .post(
-        "https://sheet.best/api/sheets/81fbce59-2b4a-4dc8-8a5c-5f88317d2b77",
-        data
-      )
+    docAccessbilityForm(data)
       .then(res => {
-        if (res.status === 200) {
-          setRefreshReCaptcha(r => !r)
-          reset()
-          alert("Sumbit Successfully")
-        }
+        window.location.reload()
+
+        console.log(res.data.errors)
+        alert("Submit Successfully")
       })
       .catch(err => {
         // console.log(err)
@@ -45,28 +42,135 @@ const DocAnalysis = () => {
   }
 
   return (
-    <div className="mt-10 1920Screen:px-48 2xl:px-24  px-8 ">
-      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-8 justify-center">
-        <div>
+    <div className="mt-10 1920Screen:px-48 2xl:px-24  px-8  ">
+      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-8 justify-center     rounded-xl  shadow-lg shadow-black/20 ">
+        <div className="p-4 bg-[#0b6ddc] rounded-l-2xl">
           <AnalysisInfo />
         </div>
-        <div>
+        <div className="bg-white rounded-l-2xl ">
           <form
-            className=" w-full  2xl:px-24  px-2 space-y-5 "
+            className=" w-full  2xl:px-24  space-y-5  py-6 "
             onSubmit={handleSubmit(onSubmit)}
           >
+            <div className="flex justify-between">
+              <p className="text-xl text-[#0b6ddc] font-semibold">
+                Contact Here
+              </p>
+              <small className="text-red-500 text-[14px]">
+                * Fields required
+              </small>
+            </div>
+
             <div>
-              <div className="flex justify-between">
-                <p>Upload PDF / Document *</p>
-                <p className="text-red-500  text-[14px]">* Field required</p>
-              </div>
+              <p>First Name*</p>
+              <input
+                type="text"
+                aria-label="required"
+                className={`block w-full p-2 border-black/20 border-b focus:border-blue-600 focus:outline-none ${
+                  errors.first_name ? "border-red-500" : ""
+                }`}
+                {...register("first_name", {
+                  required: "First Name is required",
+                  pattern: {
+                    value: /^[a-zA-Z ]+$/,
+                    message: "Only Alphabets are allowed",
+                  },
+                })}
+                onKeyUp={() => {
+                  trigger("first_name")
+                }}
+              />
+              {errors.first_name && (
+                <small className="text-red-500">
+                  {errors.first_name.message}
+                </small>
+              )}
+            </div>
+
+            <div>
+              <p>Last Name*</p>
+              <input
+                type="text"
+                aria-label="required"
+                className={`block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none ${
+                  errors.last_name ? "border-red-500" : ""
+                }`}
+                {...register("last_name", {
+                  required: "last_name is required",
+                  pattern: {
+                    value: /^[a-zA-Z ]+$/,
+                    message: "Only Alphabets are allowed",
+                  },
+                })}
+                onKeyUp={() => {
+                  trigger("last_name")
+                }}
+              />
+              {errors.last_name && (
+                <small className="text-red-500">
+                  {errors.last_name.message}
+                </small>
+              )}
+            </div>
+
+            <div>
+              <p>Email*</p>
+              <input
+                type="email"
+                aria-label="required"
+                className={`block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none ${
+                  errors.email ? "border-red-500" : ""
+                }`}
+                {...register("email", {
+                  required: "email is required",
+                  pattern: "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$",
+                })}
+                onKeyUp={() => {
+                  trigger("email")
+                }}
+              />
+              {errors.email && (
+                <small className="text-red-500">{errors.email.message}</small>
+              )}
+            </div>
+
+            <div>
+              <p>Phone No*</p>
+              <input
+                type="text"
+                aria-label="required"
+                className={`block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none ${
+                  errors.phone_no ? "border-red-500" : ""
+                }`}
+                maxLength={10}
+                {...register("phone_no", {
+                  required: "Phone Number is required",
+
+                  pattern: {
+                    value: /^\d*(?:\.\d{1,2})?$/,
+                    message: "Only number allower",
+                  },
+                })}
+                onKeyUp={() => {
+                  trigger("phone_no")
+                }}
+              />
+              {errors.phone_no && (
+                <small className="text-red-500">
+                  {errors.phone_no.message}
+                </small>
+              )}
+            </div>
+
+            <div className="space-y-3">
+              <p>Upload PDF / Document *</p>
+
               <input
                 type="file"
                 aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black/20 border-b  focus:border-blue-600 focus:outline-none ${
                   errors.WebsiteURL ? "border-red-500" : ""
                 }`}
-                placeholder="Website URL "
                 {...register("WebsiteURL", {
                   required: "PDF or Document is required",
                 })}
@@ -82,117 +186,7 @@ const DocAnalysis = () => {
             </div>
 
             <div>
-              <p>First Name*</p>
-              <input
-                type="text"
-                aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.FirstName ? "border-red-500" : ""
-                }`}
-                placeholder="First Name"
-                {...register("FirstName", {
-                  required: "First Name is required",
-                  pattern: {
-                    value: /^[a-zA-Z ]+$/,
-                    message: "Only Alphabets are allowed",
-                  },
-                })}
-                onKeyUp={() => {
-                  trigger("FirstName")
-                }}
-              />
-              {errors.FirstName && (
-                <small className="text-red-500">
-                  {errors.FirstName.message}
-                </small>
-              )}
-            </div>
-
-            <div>
-              <p>Last Name*</p>
-              <input
-                type="text"
-                aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.LastName ? "border-red-500" : ""
-                }`}
-                placeholder="Last Name"
-                {...register("LastName", {
-                  required: "LastName is required",
-                  pattern: {
-                    value: /^[a-zA-Z ]+$/,
-                    message: "Only Alphabets are allowed",
-                  },
-                })}
-                onKeyUp={() => {
-                  trigger("LastName")
-                }}
-              />
-              {errors.LastName && (
-                <small className="text-red-500">
-                  {errors.LastName.message}
-                </small>
-              )}
-            </div>
-
-            <div>
-              <p>Email*</p>
-              <input
-                type="email"
-                aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.Email ? "border-red-500" : ""
-                }`}
-                placeholder="Email"
-                {...register("Email", {
-                  required: "Email is required",
-                  pattern: "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$",
-                })}
-                onKeyUp={() => {
-                  trigger("Email")
-                }}
-              />
-              {errors.Email && (
-                <small className="text-red-500">{errors.Email.message}</small>
-              )}
-            </div>
-
-            <div>
-              <p>Phone No*</p>
-              <input
-                type="text"
-                aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.PhoneNumber ? "border-red-500" : ""
-                }`}
-                placeholder="Phone No"
-                maxLength={10}
-                {...register("PhoneNumber", {
-                  required: "Phone Number is required",
-
-                  pattern: {
-                    value: /^\d*(?:\.\d{1,2})?$/,
-                    message: "Only number allower",
-                  },
-                })}
-                onKeyUp={() => {
-                  trigger("PhoneNumber")
-                }}
-              />
-              {errors.PhoneNumber && (
-                <small className="text-red-500">
-                  {errors.PhoneNumber.message}
-                </small>
-              )}
-            </div>
-            <div>
               <div>
-                {/* <ReCAPTCHA
-                  ref={RefCaptcha}
-                  sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                  onChange={onChange}
-                  type="enum"
-                /> */}
                 <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
                   <GoogleReCaptcha
                     ref={RefCaptcha}
@@ -204,8 +198,7 @@ const DocAnalysis = () => {
             </div>
             <button
               type="submit"
-              // disabled={!captcha}
-              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-3 text-white   text-[16px]
+              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-2 text-white   text-[16px]
               disabled:opacity-60 "
             >
               Submit

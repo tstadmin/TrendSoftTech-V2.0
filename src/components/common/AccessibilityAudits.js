@@ -7,6 +7,7 @@ import {
   GoogleReCaptchaProvider,
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
+import { webAccessbilityForm } from "../../services/api"
 
 const AccessibilityAudits = () => {
   const {
@@ -24,21 +25,13 @@ const AccessibilityAudits = () => {
     console.log("Captcha value:", value)
     // setCaptcha(true)
   }
-
   const onSubmit = data => {
-    console.log("Sumbit Successfully")
-    axios
-      .post(
-        "https://sheet.best/api/sheets/81fbce59-2b4a-4dc8-8a5c-5f88317d2b77",
-        data
-      )
+    webAccessbilityForm(data)
       .then(res => {
-        if (res.status === 200) {
-          setRefreshReCaptcha(r => !r)
-          reset()
-          alert("Sumbit Successfully")
-          console.log("Sumbit Successfully")
-        }
+        window.location.reload()
+
+        console.log(res.data.errors)
+        alert("Submit Successfully")
       })
       .catch(err => {
         // console.log(err)
@@ -51,6 +44,7 @@ const AccessibilityAudits = () => {
         <div>
           <AnalysisInfo />
         </div>
+
         <div>
           <form
             className=" w-full  2xl:px-24  px-2 space-y-5 "
@@ -65,19 +59,19 @@ const AccessibilityAudits = () => {
                 type="text"
                 aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.WebsiteURL ? "border-red-500" : ""
+                  errors.website_url ? "border-red-500" : ""
                 }`}
                 placeholder="Website URL "
-                {...register("WebsiteURL", {
+                {...register("website_url", {
                   required: "url is required",
                 })}
                 onKeyUp={() => {
-                  trigger("WebsiteURL")
+                  trigger("website_url")
                 }}
               />
-              {errors.WebsiteURL && (
+              {errors.website_url && (
                 <small className="text-red-500">
-                  {errors.WebsiteURL.message}
+                  {errors.website_url.message}
                 </small>
               )}
             </div>
@@ -88,10 +82,10 @@ const AccessibilityAudits = () => {
                 type="text"
                 aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.FirstName ? "border-red-500" : ""
+                  errors.first_name ? "border-red-500" : ""
                 }`}
                 placeholder="First Name"
-                {...register("FirstName", {
+                {...register("first_name", {
                   required: "First Name is required",
                   pattern: {
                     value: /^[a-zA-Z ]+$/,
@@ -99,12 +93,12 @@ const AccessibilityAudits = () => {
                   },
                 })}
                 onKeyUp={() => {
-                  trigger("FirstName")
+                  trigger("first_name")
                 }}
               />
-              {errors.FirstName && (
+              {errors.first_name && (
                 <small className="text-red-500">
-                  {errors.FirstName.message}
+                  {errors.first_name.message}
                 </small>
               )}
             </div>
@@ -115,23 +109,23 @@ const AccessibilityAudits = () => {
                 type="text"
                 aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.LastName ? "border-red-500" : ""
+                  errors.last_name ? "border-red-500" : ""
                 }`}
                 placeholder="Last Name"
-                {...register("LastName", {
-                  required: "LastName is required",
+                {...register("last_name", {
+                  required: "last name is required",
                   pattern: {
                     value: /^[a-zA-Z ]+$/,
                     message: "Only Alphabets are allowed",
                   },
                 })}
                 onKeyUp={() => {
-                  trigger("LastName")
+                  trigger("last_name")
                 }}
               />
-              {errors.LastName && (
+              {errors.last_name && (
                 <small className="text-red-500">
-                  {errors.LastName.message}
+                  {errors.last_name.message}
                 </small>
               )}
             </div>
@@ -142,19 +136,19 @@ const AccessibilityAudits = () => {
                 type="email"
                 aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.Email ? "border-red-500" : ""
+                  errors.email ? "border-red-500" : ""
                 }`}
-                placeholder="Email"
-                {...register("Email", {
-                  required: "Email is required",
+                placeholder="email"
+                {...register("email", {
+                  required: "email is required",
                   pattern: "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$",
                 })}
                 onKeyUp={() => {
-                  trigger("Email")
+                  trigger("email")
                 }}
               />
-              {errors.Email && (
-                <small className="text-red-500">{errors.Email.message}</small>
+              {errors.email && (
+                <small className="text-red-500">{errors.email.message}</small>
               )}
             </div>
 
@@ -164,11 +158,11 @@ const AccessibilityAudits = () => {
                 type="text"
                 aria-label="required"
                 className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.PhoneNumber ? "border-red-500" : ""
+                  errors.phone_no ? "border-red-500" : ""
                 }`}
                 placeholder="Phone No"
                 maxLength={10}
-                {...register("PhoneNumber", {
+                {...register("phone_no", {
                   required: "Phone Number is required",
 
                   pattern: {
@@ -177,12 +171,12 @@ const AccessibilityAudits = () => {
                   },
                 })}
                 onKeyUp={() => {
-                  trigger("PhoneNumber")
+                  trigger("phone_no")
                 }}
               />
-              {errors.PhoneNumber && (
+              {errors.phone_no && (
                 <small className="text-red-500">
-                  {errors.PhoneNumber.message}
+                  {errors.phone_no.message}
                 </small>
               )}
             </div>

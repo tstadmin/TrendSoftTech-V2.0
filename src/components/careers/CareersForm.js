@@ -7,6 +7,7 @@ import {
   GoogleReCaptchaProvider,
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
+import { careerForm, careerfileupLoad } from "../../services/api"
 
 const CareersForm = () => {
   const {
@@ -38,25 +39,43 @@ const CareersForm = () => {
     console.log("Captcha value:", value)
   }
 
-  const onSubmit = data => {
-    console.log(data)
-    axios
-      .post(
-        "https://sheet.best/api/sheets/b132641c-40b8-4c63-9a83-04abeec76923",
-        data
-      )
+  const [image, setImage] = useState("")
+  function handleImage(e) {
+    setImage("image", e.target.files[0])
+  }
+  function handleApi() {
+    const formData = new FormData()
+    formData.append("image", image)
+    careerfileupLoad(formData)
       .then(res => {
-        if (res.status === 200) {
-          setRefreshReCaptcha(r => !r)
-          reset()
-          alert("Sumbit Successfully")
-        }
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
+
+  const onSubmit = data => {
+    careerForm(data)
+      .then(res => {
+        // window.location.reload()
+
+        console.log(res.data.errors)
+        alert("Submit Successfully")
       })
       .catch(err => {
         // console.log(err)
       })
   }
-
+  // const handleUpload = data => {
+  //   careerfileupLoad(data)
+  //     .then(res => {
+  //       window.location.reload()
+  //     })
+  //     .catch(err => {
+  //       // console.log(err)
+  //     })
+  // }
   return (
     <div>
       <div className="grid   border border-black  space-y-8 sm:p-7 p-5">
@@ -80,9 +99,9 @@ const CareersForm = () => {
                 type="text"
                 aria-label="required"
                 className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.Name ? "border-red-500" : ""
+                  errors.name ? "border-red-500" : ""
                 }`}
-                {...register("Name", {
+                {...register("name", {
                   required: "Name is required",
                   pattern: {
                     value: /^[a-zA-Z ]+$/,
@@ -90,11 +109,11 @@ const CareersForm = () => {
                   },
                 })}
                 onKeyUp={() => {
-                  trigger("Name")
+                  trigger("name")
                 }}
               />
-              {errors.Name && (
-                <small className="text-red-500">{errors.Name.message}</small>
+              {errors.name && (
+                <small className="text-red-500">{errors.name.message}</small>
               )}
             </div>
 
@@ -106,18 +125,18 @@ const CareersForm = () => {
                 type="email"
                 aria-label="required"
                 className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.Email ? "border-red-500" : ""
+                  errors.email ? "border-red-500" : ""
                 }`}
-                placeholder="Email "
-                {...register("Email", {
+                placeholder="email "
+                {...register("email", {
                   required: "Email is required",
                 })}
                 onKeyUp={() => {
-                  trigger("Email")
+                  trigger("email")
                 }}
               />
-              {errors.Email && (
-                <small className="text-red-500">{errors.Email.message}</small>
+              {errors.email && (
+                <small className="text-red-500">{errors.email.message}</small>
               )}
             </div>
 
@@ -131,9 +150,9 @@ const CareersForm = () => {
                 placeholder="Phone Number"
                 maxLength={10}
                 className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.PhoneNumber ? "border-red-500" : ""
+                  errors.phone_no ? "border-red-500" : ""
                 }`}
-                {...register("PhoneNumber", {
+                {...register("phone_no", {
                   required: "Phone Number is required",
                   maxLength: {
                     value: 10,
@@ -145,12 +164,12 @@ const CareersForm = () => {
                   },
                 })}
                 onKeyUp={() => {
-                  trigger("PhoneNumber")
+                  trigger("phone_no")
                 }}
               />
-              {errors.PhoneNumber && (
+              {errors.phone_no && (
                 <small className="text-red-500">
-                  {errors.PhoneNumber.message}
+                  {errors.phone_no.message}
                 </small>
               )}
             </div>
@@ -182,19 +201,20 @@ const CareersForm = () => {
               <input
                 type="file"
                 aria-label="required"
+                onChange={handleImage}
                 className={`block w-full p-3 rounded border-black border-2 focus:border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.File ? "border-red-500" : ""
+                  errors.image ? "border-red-500" : ""
                 }`}
                 placeholder="Enter your file"
-                {...register("File", {
+                {...register("image", {
                   required: "File is required",
                 })}
                 onKeyUp={() => {
-                  trigger("File")
+                  trigger("image")
                 }}
               />
-              {errors.File && (
-                <small className="text-red-500">{errors.File.message}</small>
+              {errors.image && (
+                <small className="text-red-500">{errors.image.message}</small>
               )}
             </div>
 
@@ -205,11 +225,11 @@ const CareersForm = () => {
               <select
                 className="border-2 p-1  rounded-sm ml-4 border-black"
                 aria-label="required"
-                {...register("Position", {
+                {...register("position", {
                   required: "Position is required",
                 })}
                 onKeyUp={() => {
-                  trigger("Position")
+                  trigger("position")
                 }}
               >
                 <option type="text">Select position</option>
@@ -220,41 +240,14 @@ const CareersForm = () => {
                   </option>
                 ))}
               </select>
-              {errors.Position && (
+              {errors.position && (
                 <small className="text-red-500">
-                  {errors.Position.message}
+                  {errors.position.message}
                 </small>
               )}
             </div>
 
-            {/* <div className="240Screen:flex grid space-x-2">
-              <input
-                type="checkbox"
-                aria-label="required"
-                {...register("checkbox", {
-                  required: "checkbox is required",
-                })}
-                onKeyUp={() => {
-                  trigger("checkbox")
-                }}
-                required="required"
-              />
-              <p>
-                By using this form you agree with the storage and handling of
-                your data by this website. *
-              </p>
-              {errors.File && (
-                <small className="text-red-500">{errors.File.message}</small>
-              )}
-            </div> */}
             <div>
-              {/* <ReCAPTCHA
-                ref={RefCaptcha}
-                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                onChange={onChange}
-                type="enum"
-              /> */}
-
               <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
                 <GoogleReCaptcha
                   ref={RefCaptcha}
@@ -265,6 +258,7 @@ const CareersForm = () => {
             </div>
             <button
               type="submit"
+              onClick={handleApi}
               className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-3 text-white   text-[16px]
               disabled:opacity-60 "
             >
