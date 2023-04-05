@@ -1,4 +1,5 @@
 import axios from "axios"
+import { useEffect, useState } from "react"
 
 const devUrls = {
   tst: "dev.tst.trendsofttech.work",
@@ -34,9 +35,11 @@ export const careerForm = args =>
     position: args.position,
   })
 
+export const getCareerData = args => api.get("api/career-show")
+
 export const careerfileupLoad = args =>
-  api.post(`api/career-image-update/${args.id}`, {
-    id: args.id,
+  api.post(`api/career-image-update/${args.state}`, {
+    id: args,
     image: args.image,
   })
 

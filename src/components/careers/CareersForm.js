@@ -1,13 +1,13 @@
-import axios from "axios"
-import React, { useRef, useState } from "react"
-import { useForm } from "react-hook-form"
+import React, { useEffect, useRef, useState } from "react"
+import { set, useForm } from "react-hook-form"
 import { FormHeading } from "./CareersStyle"
 
 import {
   GoogleReCaptchaProvider,
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
-import { careerForm, careerfileupLoad } from "../../services/api"
+import { careerForm, careerfileupLoad, getCareerData } from "../../services/api"
+import useApi from "../../Hook/useApi"
 
 const CareersForm = () => {
   const {
@@ -39,6 +39,7 @@ const CareersForm = () => {
     console.log("Captcha value:", value)
   }
 
+  const [state, setState] = useState("")
   const [image, setImage] = useState("")
   function handleImage(e) {
     setImage("image", e.target.files[0])
@@ -56,26 +57,26 @@ const CareersForm = () => {
   }
 
   const onSubmit = data => {
-    careerForm(data)
-      .then(res => {
-        // window.location.reload()
+    console.log(data)
+    careerForm(data, { id: state }).then(res => {
+      console.log("res", res)
+      // window.location.reload()
+      localStorage.setItem("careerId", res.data?.id)
 
-        console.log(res.data.errors)
-        alert("Submit Successfully")
-      })
-      .catch(err => {
-        // console.log(err)
-      })
+      alert("Submit Successfully")
+    })
   }
-  // const handleUpload = data => {
-  //   careerfileupLoad(data)
-  //     .then(res => {
-  //       window.location.reload()
-  //     })
-  //     .catch(err => {
-  //       // console.log(err)
-  //     })
-  // }
+
+  useEffect(() => {
+    const careerId = localStorage.getItem("careerId")
+    setState(careerId)
+    console.log(careerId)
+  })
+  console.log(state)
+
+  const { data: getCareer } = useApi(getCareerData, { id: state })
+  // console.log(getCareer[0]?.id)
+
   return (
     <div>
       <div className="grid   border border-black  space-y-8 sm:p-7 p-5">
@@ -174,38 +175,18 @@ const CareersForm = () => {
               )}
             </div>
 
-            {/* <div>
-              <p> Cover Letter</p>
-              <input
-                type="text"
-                placeholder=" Cover Letter"
-                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.Letter ? "border-red-500" : ""
-                }`}
-                {...register("Letter", {
-                  required: "Letter is required",
-                })}
-                onKeyUp={() => {
-                  trigger("Letter")
-                }}
-              />
-              {errors.Letter && (
-                <small className="text-red-500">{errors.Letter.message}</small>
-              )}
-            </div> */}
-
             <div>
               <p>
                 Upload Resume / CV <span className="text-red-500">*</span>
               </p>
+
               <input
                 type="file"
-                aria-label="required"
-                onChange={handleImage}
+                name="file"
+                onChange={e => setImage(e.target.files[0])}
                 className={`block w-full p-3 rounded border-black border-2 focus:border-2  focus:border-blue-600 focus:outline-none ${
                   errors.image ? "border-red-500" : ""
                 }`}
-                placeholder="Enter your file"
                 {...register("image", {
                   required: "File is required",
                 })}
