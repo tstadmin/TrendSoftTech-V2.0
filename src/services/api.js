@@ -38,8 +38,7 @@ export const careerForm = args =>
 export const getCareerData = args => api.get("api/career-show")
 
 export const careerfileupLoad = args =>
-  api.post(`api/career-image-update/${args.state}`, {
-    id: args,
+  api.post(`api/career-image-update/19`, {
     image: args.image,
   })
 

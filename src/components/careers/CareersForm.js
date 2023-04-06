@@ -8,6 +8,7 @@ import {
 } from "react-google-recaptcha-v3"
 import { careerForm, careerfileupLoad, getCareerData } from "../../services/api"
 import useApi from "../../Hook/useApi"
+import axios from "axios"
 
 const CareersForm = () => {
   const {
@@ -39,43 +40,78 @@ const CareersForm = () => {
     console.log("Captcha value:", value)
   }
 
-  const [state, setState] = useState("")
-  const [image, setImage] = useState("")
-  function handleImage(e) {
-    setImage("image", e.target.files[0])
+  // const [image, setImage] = useState("")
+
+  // const handleApi = () => {
+  //   axios
+  //     .post("https://enquiries.trendsofttech.work/api/career-image-update/19", {
+  //       formData,
+  //     })
+  //     .then(res => {
+  //       if (res.status === 500) {
+  //         console.log(res.image)
+  //       }
+  //     })
+  //     .catch(res => {
+  //       console.log(res)
+  //     })
+  // }
+
+  // function handleApi() {
+  //   const formData = new FormData()
+  //   formData.append("image", image)
+  //   careerfileupLoad(formData)
+  //     .then(res => {
+  //       console.log(res)
+  //     })
+  //     .catch(err => {
+  //       console.log(err)
+  //     })
+  // }
+
+  let formData = new FormData()
+
+  const handleImage = e => {
+    console.log(e.target.files)
+    if (e.target && e.target.files[0]) {
+      formData.append("file", e.target.files[0])
+    }
   }
-  function handleApi() {
-    const formData = new FormData()
-    formData.append("image", image)
-    careerfileupLoad(formData)
+
+  const onSubmit = data => {
+    console.log(data)
+    careerForm(data)
       .then(res => {
-        console.log(res)
+        if (res.status === 200) {
+          console.log("res", res)
+          axios
+            .post(
+              `https://enquiries.trendsofttech.work/api/career-image-update/${res.data.id}`,
+              {
+                formData,
+
+                id: res.id,
+                image: res.image,
+              }
+            )
+            .then(res => {
+              console.log(res)
+            })
+
+          alert("Submit Successfully")
+        }
       })
       .catch(err => {
         console.log(err)
       })
   }
 
-  const onSubmit = data => {
-    console.log(data)
-    careerForm(data, { id: state }).then(res => {
-      console.log("res", res)
-      // window.location.reload()
-      localStorage.setItem("careerId", res.data?.id)
-
-      alert("Submit Successfully")
-    })
-  }
-
-  useEffect(() => {
-    const careerId = localStorage.getItem("careerId")
-    setState(careerId)
-    console.log(careerId)
-  })
-  console.log(state)
-
-  const { data: getCareer } = useApi(getCareerData, { id: state })
-  // console.log(getCareer[0]?.id)
+  // useEffect(() => {
+  //   const careerId = localStorage.getItem("careerId")
+  //   setState(careerId)
+  //   console.log(careerId)
+  // })
+  // console.log(state)
 
   return (
     <div>
@@ -183,7 +219,7 @@ const CareersForm = () => {
               <input
                 type="file"
                 name="file"
-                onChange={e => setImage(e.target.files[0])}
+                onChange={handleImage}
                 className={`block w-full p-3 rounded border-black border-2 focus:border-2  focus:border-blue-600 focus:outline-none ${
                   errors.image ? "border-red-500" : ""
                 }`}
@@ -228,7 +264,7 @@ const CareersForm = () => {
               )}
             </div>
 
-            <div>
+            {/* <div>
               <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
                 <GoogleReCaptcha
                   ref={RefCaptcha}
@@ -236,10 +272,10 @@ const CareersForm = () => {
                   refreshReCaptcha={() => setRefreshReCaptcha(r => !r)}
                 />
               </GoogleReCaptchaProvider>
-            </div>
+            </div> */}
             <button
               type="submit"
-              onClick={handleApi}
+              // onClick={handleApi}
               className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-3 text-white   text-[16px]
               disabled:opacity-60 "
             >
@@ -247,6 +283,12 @@ const CareersForm = () => {
             </button>
           </form>
         </div>
+        {/* <div>
+          <form>
+            <input type="file" name="file" onChange={handleImage} />
+            <button onClick={handleApi}>Submit</button>
+          </form>
+        </div> */}
       </div>
     </div>
   )
