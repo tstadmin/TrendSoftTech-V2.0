@@ -1,17 +1,13 @@
 import React from "react"
 import Clients from "./Clients"
 
-
 import Counter from "./Counter"
 
 const ContactSupport = props => {
-
   return (
     <div className="space-y-16 mt-8   ">
       <Counter />
-      <Clients clients={props.clients} />
- 
-      
+      {/* <Clients clients={props.clients} /> */}
     </div>
   )
 }

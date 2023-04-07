@@ -34,6 +34,7 @@ const Accessible = props => {
 
                 <Link
                   to={props.data.analysisLink}
+                  aria-label="Get Started with a analysis of your website's accessibility "
                   className="bg-[#0b2d78] hover:text-[#f9761f] focus:text-[#f9761f] p-2 rounded-md text-center lg:text-lg  text-xs text-white"
                 >
                   Get Started

@@ -16,22 +16,22 @@ const CarouselItem = props => {
         loop
         align="start"
         transitionDuration="1500"
-        plugins={[autoplay.current]}
+        // plugins={[autoplay.current]}
         previousControlLabel=" previous"
         nextControlLabel="Next"
         nextControlIcon={
           <div className="flex items-center p-0.5 ">
             {/* <IconArrowRight size={16} /> */}
 
-            <small className="p-0 align-top ">Next</small>
-            <BsArrowRightShort className="text-[18px]" />
+            <small className="p-0 mb-1 align-top text-[14px]">Next</small>
+            <BsArrowRightShort className="text-[30px]" />
           </div>
         }
         previousControlIcon={
           <div className="flex  items-center p-0.5">
             {/* <IconArrowRight size={16} /> */}
-            <BsArrowLeftShort className="text-[18px]" />
-            <small className="p-0 align-top ">Prev</small>
+            <BsArrowLeftShort className="text-[30px]" />
+            <small className="p-0 align-top text-[14px] mb-1">Prev</small>
           </div>
         }
       >

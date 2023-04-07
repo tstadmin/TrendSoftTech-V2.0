@@ -38,7 +38,7 @@ export const careerForm = args =>
 export const getCareerData = args => api.get("api/career-show")
 
 export const careerfileupLoad = args =>
-  api.post(`api/career-image-update/19`, {
+  api.post(`api/career-image-update/10`, {
     image: args.image,
   })
 
@@ -69,3 +69,10 @@ export const docAccessbilityForm = args =>
     email: args.email,
     phone_no: args.phone_no,
   })
+
+export const uploadDocAccessbilityForm = args =>
+  api.post(
+    `
+  api/doc-image-update/${args.id}`,
+    { image: args.image }
+  )

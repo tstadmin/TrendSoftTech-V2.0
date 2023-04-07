@@ -7,7 +7,10 @@ import {
   GoogleReCaptchaProvider,
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
-import { docAccessbilityForm } from "../../services/api"
+import {
+  docAccessbilityForm,
+  uploadDocAccessbilityForm,
+} from "../../services/api"
 
 const DocAnalysis = () => {
   const MyBackgroundImage = "/img/form/Accessibility.jpg"
@@ -28,18 +31,79 @@ const DocAnalysis = () => {
     // setCaptcha(true)
   }
 
-  const onSubmit = data => {
+  // const onSubmit = data => {
+  //   docAccessbilityForm(data)
+  //     .then(res => {
+  //       // window.location.reload()
+  //       console.log(res)
+  //       uploadDocAccessbilityForm()
+
+  //       alert("Submit Successfully")
+  //     })
+  //     .catch(err => {
+  //       // console.log(err)
+  //     })
+  // }
+
+  const [image, setImage] = useState("")
+
+  const onSubmit = async (data, event) => {
+    console.log(data)
     docAccessbilityForm(data)
       .then(res => {
-        window.location.reload()
+        if (res.status === 200) {
+          console.log("res", res)
+          const file = event.target.elements.fileInput.files[0]
+          const formData = new FormData()
+          formData.append("image", file)
 
-        console.log(res.data.errors)
-        alert("Submit Successfully")
+          axios
+            .post(
+              `https://enquiries.trendsofttech.work/api/doc-image-update/${res.data.id}`,
+              formData,
+              {
+                headers: {
+                  "Content-Type": "multipart/form-data",
+                },
+              }
+            )
+            .then(res => {
+              if (res.status === 200) {
+                console.log("image", res)
+                // window.location.reload()
+              }
+            })
+
+          alert("Submit Successfully")
+        }
       })
       .catch(err => {
-        // console.log(err)
+        console.log(err)
       })
   }
+
+  // const handleSubmits = async event => {
+  //   event.preventDefault()
+
+  //   const file = event.target.elements.fileInput.files[0]
+
+  //   const formData = new FormData()
+
+  //   try {
+  //     const response = await axios.post(
+  //       "https://enquiries.trendsofttech.work/api/doc-image-update/8",
+  //       formData,
+  //       {
+  //         headers: {
+  //           "Content-Type": "multipart/form-data",
+  //         },
+  //       }
+  //     )
+  //     console.log("Response:", response.data)
+  //   } catch (error) {
+  //     console.error("Error:", error)
+  //   }
+  // }
 
   return (
     <div className="mt-10 1920Screen:px-48 2xl:px-24  px-8  ">
@@ -165,24 +229,7 @@ const DocAnalysis = () => {
             <div className="space-y-3">
               <p>Upload PDF / Document *</p>
 
-              <input
-                type="file"
-                aria-label="required"
-                className={`block w-full p-2  border-black/20 border-b  focus:border-blue-600 focus:outline-none ${
-                  errors.WebsiteURL ? "border-red-500" : ""
-                }`}
-                {...register("WebsiteURL", {
-                  required: "PDF or Document is required",
-                })}
-                onKeyUp={() => {
-                  trigger("WebsiteURL")
-                }}
-              />
-              {errors.WebsiteURL && (
-                <small className="text-red-500">
-                  {errors.WebsiteURL.message}
-                </small>
-              )}
+              <input type="file" name="fileInput" />
             </div>
 
             <div>
@@ -205,6 +252,14 @@ const DocAnalysis = () => {
             </button>
           </form>
         </div>
+
+        {/* <div>
+          <form onSubmit={handleSubmits}>
+          
+            <input type="file" name="fileInput" />
+            <button type="submit">Upload</button>
+          </form>
+        </div> */}
       </div>
     </div>
   )

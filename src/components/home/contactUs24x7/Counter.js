@@ -10,7 +10,7 @@ const Counter = () => {
   return (
     <ScrollTrigger
       onEnter={() => setCounter(true)}
-      onExit={() => setCounter(false)}
+      // onExit={() => setCounter(false)}
     >
       <Counte>
         <li>
@@ -19,7 +19,7 @@ const Counter = () => {
           </CounterNumber>
           <CounterDescription> Happy Clients</CounterDescription>
         </li>
-    
+
         <li>
           <CounterNumber>
             {counter && <CountUp end={30} duration={1} />}+

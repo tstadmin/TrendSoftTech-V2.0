@@ -11,10 +11,12 @@ const AboutOurCompany = props => {
         className="rounded-md lg:w-[400px] lg:h-[400px] w-[100%] md:h-[400px] sm:h-[250px] 340Screen:h-[200px] 240Screen:h-[170px] "
       />
       <AboutOurInfo>
-        <Title>{props.aboutOurCompany.header}</Title>
+        <h1 className=" text-[#913A1D] md:text-2xl text-lg font-semibold">
+          {props.aboutOurCompany.header}
+        </h1>
 
         <div
-          className="space-y-4"
+          className="space-y-4 "
           dangerouslySetInnerHTML={{
             __html: props.aboutOurCompany.description,
           }}
@@ -24,7 +26,7 @@ const AboutOurCompany = props => {
           <Link
             to="/about/"
             aria-label="About Our Company Learn More"
-            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#3773f1] hover:duration-700  rounded-3xl p-3 text-white min-w-[122px] text-[16px]"
+            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#3773f1] hover:duration-700  rounded-3xl p-3 text-center text-white min-w-[120px] text-[16px]"
           >
             {props.aboutOurCompany.CTA}
           </Link>
@@ -32,7 +34,7 @@ const AboutOurCompany = props => {
             href="/pdf/trends.pdf"
             target="_blank"
             aria-label=" company brochure PDF "
-            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#3773f1] hover:duration-700  rounded-3xl p-3 text-white min-w-[122px] text-[16px]"
+            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#3773f1] hover:duration-700  rounded-3xl p-3 text-center text-white min-w-[122px] text-[16px]"
           >
             View Brochure
           </a>

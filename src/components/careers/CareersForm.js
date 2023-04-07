@@ -33,92 +33,86 @@ const CareersForm = () => {
       id: 3,
       position: "Web Designer",
     },
+
+    {
+      id: 3,
+      position: "Business Development",
+    },
   ]
   const RefCaptcha = useRef(null)
   const [refreshReCaptcha, setRefreshReCaptcha] = useState(false)
   function onChange(value) {
     console.log("Captcha value:", value)
   }
-
-  // const [image, setImage] = useState("")
-
-  // const handleApi = () => {
-  //   axios
-  //     .post("https://enquiries.trendsofttech.work/api/career-image-update/19", {
-  //       formData,
-  //     })
+  const [image, setImage] = useState("")
+  // const onSubmit = async (data, event) => {
+  //   console.log(data)
+  //   careerForm(data)
   //     .then(res => {
-  //       if (res.status === 500) {
-  //         console.log(res.image)
+  //       if (res.status === 200) {
+  //         console.log("res", res)
+  //         const file = event.target.elements.fileInput.files[0]
+  //         const formData = new FormData()
+  //         formData.append("image", file)
+
+  //         axios
+  //           .post(
+  //             `https://enquiries.trendsofttech.work/api/career-image-update/${res.data.id}`,
+  //             formData,
+  //             {
+  //               headers: {
+  //                 "Content-Type": "application/json",
+  //               },
+  //             }
+  //           )
+  //           .then(res => {
+  //             if (res.status === 200) {
+  //               console.log("image", res)
+  //               // window.location.reload()
+  //             }
+  //           })
+
+  //         alert("Submit Successfully")
   //       }
-  //     })
-  //     .catch(res => {
-  //       console.log(res)
-  //     })
-  // }
-
-  // function handleApi() {
-  //   const formData = new FormData()
-  //   formData.append("image", image)
-  //   careerfileupLoad(formData)
-  //     .then(res => {
-  //       console.log(res)
   //     })
   //     .catch(err => {
   //       console.log(err)
   //     })
   // }
 
-  let formData = new FormData()
+  const handleSubmits = async event => {
+    event.preventDefault()
 
-  const handleImage = e => {
-    console.log(e.target.files)
-    if (e.target && e.target.files[0]) {
-      formData.append("file", e.target.files[0])
+    const file = event.target.elements.fileInput.files[0]
+
+    const formData = new FormData()
+
+    try {
+      const response = await axios
+        .post(
+          "https://enquiries.trendsofttech.work/api/career-image-update/119",
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        )
+        .then(res => {
+          if (res.data === 200) {
+            console.log("Response:", response.data)
+          }
+        })
+    } catch (error) {
+      console.error("Error:", error)
     }
   }
-
-  const onSubmit = data => {
-    console.log(data)
-    careerForm(data)
-      .then(res => {
-        if (res.status === 200) {
-          console.log("res", res)
-          axios
-            .post(
-              `https://enquiries.trendsofttech.work/api/career-image-update/${res.data.id}`,
-              {
-                formData,
-
-                id: res.id,
-                image: res.image,
-              }
-            )
-            .then(res => {
-              console.log(res)
-            })
-
-          alert("Submit Successfully")
-        }
-      })
-      .catch(err => {
-        console.log(err)
-      })
-  }
-
-  // useEffect(() => {
-  //   const careerId = localStorage.getItem("careerId")
-  //   setState(careerId)
-  //   console.log(careerId)
-  // })
-  // console.log(state)
-
   return (
     <div>
       <div className="grid   border border-black  space-y-8 sm:p-7 p-5">
         <FormHeading>Apply for this position</FormHeading>
 
-        <div className="grid space-y-6 justify-items-center">
+        {/* <div className="grid space-y-6 justify-items-center">
           <form
             className=" md:w-[50vw] w-full space-y-6"
             onSubmit={handleSubmit(onSubmit)}
@@ -212,35 +206,12 @@ const CareersForm = () => {
             </div>
 
             <div>
-              <p>
-                Upload Resume / CV <span className="text-red-500">*</span>
-              </p>
-
-              <input
-                type="file"
-                name="file"
-                onChange={handleImage}
-                className={`block w-full p-3 rounded border-black border-2 focus:border-2  focus:border-blue-600 focus:outline-none ${
-                  errors.image ? "border-red-500" : ""
-                }`}
-                {...register("image", {
-                  required: "File is required",
-                })}
-                onKeyUp={() => {
-                  trigger("image")
-                }}
-              />
-              {errors.image && (
-                <small className="text-red-500">{errors.image.message}</small>
-              )}
-            </div>
-
-            <div>
               <label className="text-lg" htmlFor="a">
                 Select position <span className="text-red-500">*</span>
               </label>
               <select
-                className="border-2 p-1  rounded-sm ml-4 border-black"
+                className="block w-full p-3 rounded border-black border-2
+                focus:border-2 focus:border-blue-600 focus:outline-none"
                 aria-label="required"
                 {...register("position", {
                   required: "Position is required",
@@ -264,31 +235,33 @@ const CareersForm = () => {
               )}
             </div>
 
-            {/* <div>
-              <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
-                <GoogleReCaptcha
-                  ref={RefCaptcha}
-                  onChange={onChange}
-                  refreshReCaptcha={() => setRefreshReCaptcha(r => !r)}
-                />
-              </GoogleReCaptchaProvider>
-            </div> */}
+            <div>
+              <p>
+                Upload Resume / CV <span className="text-red-500">*</span>
+              </p>
+              <input
+                type="file"
+                name="fileInput"
+                className="block w-full p-3 rounded border-black border-2
+              focus:border-2 focus:border-blue-600 focus:outline-none"
+              />
+            </div>
+
             <button
               type="submit"
-              // onClick={handleApi}
               className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-3 text-white   text-[16px]
               disabled:opacity-60 "
             >
               Submit
             </button>
           </form>
-        </div>
-        {/* <div>
-          <form>
-            <input type="file" name="file" onChange={handleImage} />
-            <button onClick={handleApi}>Submit</button>
-          </form>
         </div> */}
+        <div>
+          <form onSubmit={handleSubmits}>
+            <input type="file" name="fileInput" />
+            <button type="submit">Upload</button>
+          </form>
+        </div>
       </div>
     </div>
   )

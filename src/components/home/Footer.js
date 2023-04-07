@@ -32,43 +32,62 @@ const Footer = props => {
           </Link>
 
           <p>{props.data.description}</p>
-          <FooterIconLogo>
-            <a
-              href={props.data.facebookLink}
-              aria-label="facebook: trendsoft tech page "
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FooterIconStyles>
-                <FaFacebookF />
-              </FooterIconStyles>
-            </a>
+          <div className="">
+            <FooterIconLogo>
+              <h2 className=" mt-1 mr-5" id="FollowUs">
+                Follow Us
+              </h2>
+              <ul aria-labelledby="FollowUs" className="flex gap-2 text-start ">
+                <li>
+                  <a
+                    href={props.data.facebookLink}
+                    aria-label="facebook: trendsoft tech page "
+                    target="_blank"
+                    rel="noreferrer"
+                    className="focus:text-white"
+                  >
+                    <div className="text-blue-500 text-center hover:text-white focus:text-white shadow-black/50 border-black/10  bg-white focus:bg-blue-600 hover:cursor-pointer hover:bg-blue-600   rounded-full w-9 h-9 p-2 shadow-xl">
+                      <FaFacebookF />
+                    </div>
+                  </a>
+                </li>
 
-            <a
-              href={props.data.linkedinLink}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Linkedin: trendsoft tech page "
-            >
-              <FooterIconStyles>
-                <TiSocialLinkedin className="text-xl" />
-              </FooterIconStyles>
-            </a>
-            <a
-              href={props.data.instagramLink}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram: trendsoft tech page "
-            >
-              <FooterIconStyles>
-                <AiOutlineInstagram className="text-xl" />
-              </FooterIconStyles>
-            </a>
-          </FooterIconLogo>
+                <li>
+                  <a
+                    href={props.data.linkedinLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Linkedin: trendsoft tech page "
+                    className="text-white"
+                  >
+                    <FooterIconStyles>
+                      <TiSocialLinkedin className="text-xl" />
+                    </FooterIconStyles>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href={props.data.instagramLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Instagram: trendsoft tech page "
+                    className="text-white"
+                  >
+                    <FooterIconStyles>
+                      <AiOutlineInstagram className="text-xl" />
+                    </FooterIconStyles>
+                  </a>
+                </li>
+              </ul>
+            </FooterIconLogo>
+          </div>
         </FooterTrendInfo>
         <FooterInfoDiv>
-          <FooterTitle>{props.data.itTitle}</FooterTitle>
-          <ul children=" space-y-3">
+          <FooterTitle id={props.data.itTitle}>
+            {props.data.itTitle}
+          </FooterTitle>
+          <ul children=" space-y-3" aria-labelledby={props.data.itTitle}>
             {props.data.itService?.map((item, idx) => (
               <li key={item.listItem.id}>
                 <Link to={item.listItem.page}>{item.listItem.title}</Link>
@@ -78,8 +97,10 @@ const Footer = props => {
         </FooterInfoDiv>
 
         <FooterInfoDiv>
-          <FooterTitle>{props.data.contactTitle}</FooterTitle>
-          <ul>
+          <FooterTitle id={props.data.contactName}>
+            {props.data.contactTitle}
+          </FooterTitle>
+          <ul aria-labelledby={props.data.contactName}>
             <FooterIconInfo>
               <IconSize>
                 <SlLocationPin />

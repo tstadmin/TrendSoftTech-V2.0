@@ -77,6 +77,7 @@ const layoutQuery = graphql`
                   listItem {
                     id
                     title
+                    name
                     page
                     subTitle {
                       listItem {
@@ -146,6 +147,7 @@ const layoutQuery = graphql`
                   }
                 }
                 contactTitle
+                contactName
                 itTitle
                 local
                 mail

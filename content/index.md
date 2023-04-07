@@ -76,6 +76,7 @@ home:
           id: 1
           page: "/services/"
           title: "IT Services"
+          name: "ITServices"
           subTitle: 
             - listItem:
                 id: 1
@@ -95,7 +96,8 @@ home:
                 page: "/services/mobileDevelopment/"         
       - listItem:
           id: 2
-          title: "TESTING"
+          title: "Testing"
+          name: "Testing"
           page: "/services/testing/"
           subTitle: 
             - listItem:
@@ -117,6 +119,7 @@ home:
       - listItem:
           id: 3
           title: "Accessibility"
+          name: "Accessibility"
           page: "/services/accessibility/accessibility/"
           subTitle: 
             - listItem:
@@ -130,6 +133,7 @@ home:
       - listItem:
           id: 4
           title: "Marketing"
+          name: "Marketing"
           page: "/services/digitalMarketing/"
           subTitle: 
             - listItem:
@@ -139,6 +143,7 @@ home:
       - listItem:
           id: 5
           title: "Design"
+          name: "Design"
           page: "/services/uiUXDesign/"
           subTitle: 
             - listItem:
@@ -148,6 +153,7 @@ home:
       - listItem:
           id: 6
           title: "Certifications"
+          name: "Certifications"
           page: "/awards/"     
           subTitle: 
             - listItem:
@@ -157,6 +163,7 @@ home:
       - listItem:
           id: 7
           title: "Careers"
+          name: "Careers"
           page: "/awards/"     
           subTitle: 
             - listItem:
@@ -166,6 +173,7 @@ home:
       - listItem:
           id: 8
           title: "About"
+          name: "About"
           page: ""     
           subTitle: 
             - listItem:
@@ -175,6 +183,7 @@ home:
       - listItem:
           id: 9
           title: "Contact"
+          name: "Contact"
           page: ""     
           subTitle: 
             - listItem:
@@ -216,7 +225,7 @@ home:
                 id: 4
                 title: "Mobile  Development"
                 page: "/services/mobileDevelopment/"  
-          test: "TESTING"
+          test: "Testing"
           testPage: "/services/testing/"
           subTest:
             - listItem:
@@ -274,7 +283,7 @@ home:
         img: "/img/icons/AgileProcess.svg"
         alt: ""
         title: "Agile Process"
-        description: "We develop enterprise-grade applications employing Agile and Scrum that enables the delivery of  high-priority feature first..."
+        description: "We develop enterprise-grade applications employing Agile and Scrum that enables the delivery of  high-priority feature first."
     - card:
         id: 2
         img: "/img/icons/FlexibilityinTeamScaling.svg"
@@ -349,7 +358,7 @@ home:
           label: "read more Testing"
           title: "Testing"
           page: "/services/testing/"
-          description: "Trendsoft offers independent quality engineering and a wide range of software testing services and solutions..."
+          description: "Trendsoft offers independent quality engineering and a wide range of software testing services and solutions."
           CTA: "Read more..."
       - listItem:
           id: 8
@@ -364,7 +373,7 @@ home:
           img: "/img/icons/webaccessibility.svg"
           label: "read more Web Accessibility"
           title: "Web Accessibility"
-          description: "We offers a variety of services to help you make your new or existing website accessible to users ."
+          description: "We offers a variety of services to help you make your new or existing website accessible to users."
           page: "/services/webAccessibility/"
           CTA: "Read more..." 
   clients:
@@ -406,22 +415,22 @@ home:
           id: 1
           num: "1."
           title: "Planning"
-          description: "Clients usually have an idea of what they want as the end result, but not what the software should go..."
+          description: "Clients usually have an idea of what they want as the end result, but not what the software should go."
       - listItem:
           id: 2
           num: "2."
           title: "Implementation"
-          description: "All plans are as good as their implementation, At Trendsoft we understand that and our ..."
+          description: "All plans are as good as their implementation, At Trendsoft we understand that and our ."
       - listItem:
           id: 3
           num: "3."
           title: "Testing"
-          description: "All plans are as good as their implementation, At Trendsoft we understand that and our software..."
+          description: "All plans are as good as their implementation, At Trendsoft we understand that and our software."
       - listItem:
           id: 4
           num: "4."
           title: "Deployment"
-          description: "Once the product is accepted by the client we move towards deployment. Our support teams..."
+          description: "Once the product is accepted by the client we move towards deployment. Our support teams."
   footer:
     logo: "/img/HomeImages/trendsoftlogo.svg"
     alt: "trendsoft tech logo"
@@ -457,6 +466,7 @@ home:
           title: "Digital Marketing"
           page: "/services/digitalMarketing/"           
     contactTitle : "Contact Info"
+    contactName: "ContactInfo"
     local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat Number.301, 3rd Floor , KPHB Colony, Road Number.1 ,Kukatpally ,Hyderabad-500072."
     mail : "info@trendsofttech.com" 
     serviceMail: " bdm.ts@trendsofttech.com"
@@ -1048,7 +1058,13 @@ accessible:
                - listItems:
                     id: 3
                     description: "Specify Column Header in tables"
-             data: "– Creating meaningful Hyperlink text<br/>– Correct the colour contrast for textual content (optional).<br/>"          
+               - listItems:
+                    id: 4
+                    description:  "Creating meaningful Hyperlink text"    
+               - listItems:
+                    id: 5
+                    description: "Correct the colour contrast for textual content (optional)"
+             data: ""          
         - listItems:
              id: 3   
              title: "What standards do we comply with Accessible Excel?"
@@ -1441,14 +1457,14 @@ serviceCards:
         title: "Testing"
         link: "/services/testing/"
         label: "read more testing"
-        description: "Trendsoft offers independent quality engineering and a wide range of software testing services and solutions..."
+        description: "Trendsoft offers independent quality engineering and a wide range of software testing services and solutions."
         CTA: "READ MORE"
     - listItem:
         id: 7
         title: "Digital Marketing"
         link: "/services/digitalMarketing/"
         label: "read more Digital Marketing"
-        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built..."
+        description: "our performance-based marketing plans will always deliver the results you pay for.Strategies built."
         CTA: "READ MORE"  
 AccessibilityTabs:
   list:

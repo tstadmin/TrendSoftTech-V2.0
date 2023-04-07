@@ -41,7 +41,7 @@ export default function Header(props) {
       {/* menu items */}
 
       <div>
-        <div className="flex uppercase ">
+        <div className="flex  ">
           <p
             onClick={handleNav}
             className=" block sm:text-2xl text-md  hover:text-blue-400
@@ -81,26 +81,32 @@ export default function Header(props) {
                   : "fixed hidden "
               }
             >
-              <div className="xl:flex 1920Screen:pl-52 2xl:pl-28 xl:pl-14 lg:pl-16 md:pl-24 sm:pl-14 pl-8 1920Screen:space-x-18 2xl:space-x-3 xl:space-x-2  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+              <div className="xl:flex 1920Screen:pl-52 2xl:pl-28 xl:pl-14 lg:pl-16 md:pl-18 sm:pl-14 pl-8 1920Screen:space-x-18 2xl:space-x-8 xl:space-x-4  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
                 {props.data.list.map((item, idx) => (
                   <div
                     key={item.listItem.id}
-                    className="  mt-6 hidden 540Screen:block  "
+                    className="mt-6 hidden 540Screen:block"
                   >
-                    <h2 className=" text-[#FFD333]  xl:text-[18px] font-bold sm:text-xl text-sm sm:font-medium font-roboto">
+                    <h2
+                      className=" text-[#FFD333]  xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium font-roboto"
+                      id={item.listItem.name}
+                    >
                       {item.listItem.title}
                     </h2>
-                    <ul className="space-y-2 mt-4  font-normal ">
+                    <ul
+                      className="space-y-2 mt-4  font-normal "
+                      aria-labelledby={item.listItem.name}
+                    >
                       {item.listItem.subTitle?.map((sub, idx) => (
                         <li
                           onClick={() => setOpened(false)}
-                          className=" text-[#ebebeb] font-medium  1920Screen:text-[18px]  text-[16px] "
+                          className=" text-[#ebebeb] font-medium  1920Screen:text-[18px]  text-[16px]   hover:underline-[#ffe793] "
                           key={sub.listItem.id}
                           aria-label={sub.listItem.title}
                         >
                           <Link
                             to={sub.listItem.page}
-                            className="hover:text-[#ffe793] focus:text-[#ffe793] underline-[#ffe793] "
+                            className="hover:text-[#ffe793] focus:text-[#ffe793]  hover:underline focus:underline hover:decoration-[#ffe793]    focus:decoration-[#ffe793] "
                           >
                             {sub.listItem.title}
                           </Link>
@@ -308,7 +314,7 @@ export default function Header(props) {
           <p>
             <Link
               to="/"
-              aria-label="Home Button"
+              aria-label="Home "
               className="cursor-pointer text-[#0084FF]  "
             >
               <FaHome
