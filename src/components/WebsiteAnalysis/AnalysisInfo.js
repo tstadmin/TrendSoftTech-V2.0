@@ -5,20 +5,21 @@ const AnalysisInfo = () => {
     <div className="space-y-16 p-5">
       <div>
         <p className="text-white font-semibold mt-5  md:text-xl sm:text-lg text-base ">
-          How do you know if your website is compliant?
+          How do I know if your website is WCAG compliant?
         </p>
       </div>
       <div className="space-y-4 text-[18px]">
         <p className="text-white ">
-          Accessibility compliance: Your website should be accessible to all
-          users, including those with disabilities. Make sure it complies with
-          the Web Content Accessibility Guidelines (WCAG) 2.1 AA.
+          To check WCAG compliance, you'll usually start with an automated
+          analysis. The Trendsoft Technologies Pvt. Ltd provides a free,
+          confidential graded report, which tests content against WCAG 2.1 Level
+          AA success criteria.
         </p>
         <p className="text-white">
-          Review legal requirements: Make sure your website complies with
-          relevant laws and regulations,
+          This report gives you an overview of how your website fares when
+          tested against the WCAG A/AA checkpoints.
         </p>
-        <p className="text-white">
+        {/* <p className="text-white">
           such as the General Data Protection Regulation (GDPR), the Americans
           with Disabilities Act (ADA), and the California Consumer Privacy Act
           (CCPA).
@@ -29,7 +30,7 @@ const AnalysisInfo = () => {
           standards, such as the World Wide Web Consortium's Web Content
           Accessibility Guidelines (WCAG) and the General Data Protection
           Regulation's (GDPR) technical requirements.
-        </p>
+        </p> */}
       </div>
     </div>
   )

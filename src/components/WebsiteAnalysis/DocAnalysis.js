@@ -31,20 +31,6 @@ const DocAnalysis = () => {
     // setCaptcha(true)
   }
 
-  // const onSubmit = data => {
-  //   docAccessbilityForm(data)
-  //     .then(res => {
-  //       // window.location.reload()
-  //       console.log(res)
-  //       uploadDocAccessbilityForm()
-
-  //       alert("Submit Successfully")
-  //     })
-  //     .catch(err => {
-  //       // console.log(err)
-  //     })
-  // }
-
   const [image, setImage] = useState("")
 
   const onSubmit = async (data, event) => {
@@ -70,40 +56,16 @@ const DocAnalysis = () => {
             .then(res => {
               if (res.status === 200) {
                 console.log("image", res)
-                // window.location.reload()
+                alert("Submit Successfully")
+                window.location.reload()
               }
             })
-
-          alert("Submit Successfully")
         }
       })
       .catch(err => {
         console.log(err)
       })
   }
-
-  // const handleSubmits = async event => {
-  //   event.preventDefault()
-
-  //   const file = event.target.elements.fileInput.files[0]
-
-  //   const formData = new FormData()
-
-  //   try {
-  //     const response = await axios.post(
-  //       "https://enquiries.trendsofttech.work/api/doc-image-update/8",
-  //       formData,
-  //       {
-  //         headers: {
-  //           "Content-Type": "multipart/form-data",
-  //         },
-  //       }
-  //     )
-  //     console.log("Response:", response.data)
-  //   } catch (error) {
-  //     console.error("Error:", error)
-  //   }
-  // }
 
   return (
     <div className="mt-10 1920Screen:px-48 2xl:px-24  px-8  ">
@@ -113,7 +75,7 @@ const DocAnalysis = () => {
         </div>
         <div className="bg-white rounded-l-2xl ">
           <form
-            className=" w-full  2xl:px-24  space-y-5  py-6 "
+            className=" w-full  2xl:px-24  space-y-5 px-5 py-6 "
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="flex justify-between">
@@ -229,7 +191,12 @@ const DocAnalysis = () => {
             <div className="space-y-3">
               <p>Upload PDF / Document *</p>
 
-              <input type="file" name="fileInput" />
+              <input
+                type="file"
+                name="fileInput"
+                className="block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none "
+                required
+              />
             </div>
 
             <div>
@@ -252,14 +219,6 @@ const DocAnalysis = () => {
             </button>
           </form>
         </div>
-
-        {/* <div>
-          <form onSubmit={handleSubmits}>
-          
-            <input type="file" name="fileInput" />
-            <button type="submit">Upload</button>
-          </form>
-        </div> */}
       </div>
     </div>
   )

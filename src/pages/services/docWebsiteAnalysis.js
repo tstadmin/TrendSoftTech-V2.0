@@ -12,7 +12,7 @@ const docWebsiteAnalysis = () => {
         <Seo title="Website Analysis" description="TrendSoftTech" />
         <BreadCrumb img="/img/BreadCrumb/blog.svg" title="Website Analysis" />
         <p className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] font-semibold text-[#913A1D] mt-8">
-          WCAG 2.1 AA Compliance Summary of Your Website
+          Free WCAG 2.1 AA Compliance Summary of Your Website
         </p>
         <DocAnalysis />
       </Layout>

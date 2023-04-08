@@ -106,7 +106,7 @@ export default function Header(props) {
                         >
                           <Link
                             to={sub.listItem.page}
-                            className="hover:text-[#ffe793] focus:text-[#ffe793]  hover:underline focus:underline hover:decoration-[#ffe793]    focus:decoration-[#ffe793] "
+                            className="hover:text-[#ffe793] focus:text-[#ffe793]  hover:underline focus:underline hover:decoration-[#ffe793]  focus:decoration-[#ffe793] "
                           >
                             {sub.listItem.title}
                           </Link>
@@ -320,6 +320,7 @@ export default function Header(props) {
               <FaHome
                 className="md:text-3xl sm:text-xl text-lg"
                 onFocus={() => setOpened(false)}
+                tabIndex={() => setOpened(false)}
               />
             </Link>
           </p>

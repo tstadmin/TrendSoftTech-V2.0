@@ -61,11 +61,10 @@ const ContactInfo = props => {
           </AdderssInfo>
         </Info>
       </ContactInfoDiv>
-      <div className="border-2 border-black/40 rounded-md mt-5 ">
+      <div className=" rounded-md mt-5 ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d237.83395558414188!2d78.4019202!3d17.4911187!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91949a17dd21%3A0x9bb114860820bc25!2sMIG-37%2C%20K%20P%20H%20B%20Phase%201%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500072!5e0!3m2!1sen!2sin!4v1680866173236!5m2!1sen!2sin"
-          width="600"
-          height="350"
+          className="2xl:w-[500px] w-[100%] h-[280px] shadow-xl shadow-black/50"
         ></iframe>
       </div>
     </div>

@@ -45,74 +45,49 @@ const CareersForm = () => {
     console.log("Captcha value:", value)
   }
   const [image, setImage] = useState("")
-  // const onSubmit = async (data, event) => {
-  //   console.log(data)
-  //   careerForm(data)
-  //     .then(res => {
-  //       if (res.status === 200) {
-  //         console.log("res", res)
-  //         const file = event.target.elements.fileInput.files[0]
-  //         const formData = new FormData()
-  //         formData.append("image", file)
+  const onSubmit = async (data, event) => {
+    console.log(data)
+    careerForm(data)
+      .then(res => {
+        if (res.status === 200) {
+          console.log("res", res)
 
-  //         axios
-  //           .post(
-  //             `https://enquiries.trendsofttech.work/api/career-image-update/${res.data.id}`,
-  //             formData,
-  //             {
-  //               headers: {
-  //                 "Content-Type": "application/json",
-  //               },
-  //             }
-  //           )
-  //           .then(res => {
-  //             if (res.status === 200) {
-  //               console.log("image", res)
-  //               // window.location.reload()
-  //             }
-  //           })
+          const file = event.target.elements.fileInput.files[0]
+          console.log("file", file)
 
-  //         alert("Submit Successfully")
-  //       }
-  //     })
-  //     .catch(err => {
-  //       console.log(err)
-  //     })
-  // }
+          const formData = new FormData()
+          formData.append("image", file)
+          console.log("formData", formData)
 
-  const handleSubmits = async event => {
-    event.preventDefault()
-
-    const file = event.target.elements.fileInput.files[0]
-
-    const formData = new FormData()
-
-    try {
-      const response = await axios
-        .post(
-          "https://enquiries.trendsofttech.work/api/career-image-update/119",
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        )
-        .then(res => {
-          if (res.data === 200) {
-            console.log("Response:", response.data)
-          }
-        })
-    } catch (error) {
-      console.error("Error:", error)
-    }
+          axios
+            .post(
+              `https://enquiries.trendsofttech.work/api/career-image-update/${res.data.id}`,
+              formData,
+              {
+                headers: {
+                  "Content-Type": "multipart/form-data",
+                },
+              }
+            )
+            .then(res => {
+              if (res.status === 200) {
+                console.log("image", res)
+                alert("Submit Successfully")
+                window.location.reload()
+              }
+            })
+        }
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
+
   return (
     <div>
       <div className="grid   border border-black  space-y-8 sm:p-7 p-5">
         <FormHeading>Apply for this position</FormHeading>
-
-        {/* <div className="grid space-y-6 justify-items-center">
+        <div className="grid space-y-6 justify-items-center">
           <form
             className=" md:w-[50vw] w-full space-y-6"
             onSubmit={handleSubmit(onSubmit)}
@@ -243,7 +218,8 @@ const CareersForm = () => {
                 type="file"
                 name="fileInput"
                 className="block w-full p-3 rounded border-black border-2
-              focus:border-2 focus:border-blue-600 focus:outline-none"
+               focus:border-2 focus:border-blue-600 focus:outline-none"
+                required
               />
             </div>
 
@@ -255,13 +231,14 @@ const CareersForm = () => {
               Submit
             </button>
           </form>
-        </div> */}
-        <div>
+        </div>
+
+        {/* <div>
           <form onSubmit={handleSubmits}>
             <input type="file" name="fileInput" />
             <button type="submit">Upload</button>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   )
