@@ -41,24 +41,31 @@ const AccessibilityAudits = () => {
   return (
     <div className="mt-10 1920Screen:px-48 2xl:px-24  px-8 ">
       <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-8 justify-center">
-        <div>
+        <div className="p-4 bg-[#0b6ddc] -l-2xl">
           <AnalysisInfo />
         </div>
 
-        <div>
+        <div className="bg-white -l-2xl ">
           <form
             className=" w-full  2xl:px-24  px-2 space-y-5 "
             onSubmit={handleSubmit(onSubmit)}
           >
+            <div className="flex justify-between">
+              <p className="text-xl text-[#0b6ddc] font-semibold">
+                Contact Here
+              </p>
+              <small className="text-red-500 text-[14px]">
+                * Fields required
+              </small>
+            </div>
             <div>
               <div className="flex justify-between">
                 <p>Website URL*</p>
-                <p className="text-red-500  text-[14px]">* Field required</p>
               </div>
               <input
                 type="text"
                 aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.website_url ? "border-red-500" : ""
                 }`}
                 placeholder="Website URL "
@@ -81,7 +88,7 @@ const AccessibilityAudits = () => {
               <input
                 type="text"
                 aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.first_name ? "border-red-500" : ""
                 }`}
                 placeholder="First Name"
@@ -108,7 +115,7 @@ const AccessibilityAudits = () => {
               <input
                 type="text"
                 aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.last_name ? "border-red-500" : ""
                 }`}
                 placeholder="Last Name"
@@ -135,7 +142,7 @@ const AccessibilityAudits = () => {
               <input
                 type="email"
                 aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.email ? "border-red-500" : ""
                 }`}
                 placeholder="email"
@@ -157,7 +164,7 @@ const AccessibilityAudits = () => {
               <input
                 type="text"
                 aria-label="required"
-                className={`block w-full p-2 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
                 placeholder="Phone No"
@@ -193,7 +200,7 @@ const AccessibilityAudits = () => {
 
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  rounded-xl p-3 text-white hover:text-blue-400  text-[16px]"
+              className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  -xl p-3 text-white hover:text-blue-400  text-[16px]"
             >
               Submit
             </button>

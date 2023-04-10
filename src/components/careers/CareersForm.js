@@ -104,7 +104,7 @@ const CareersForm = () => {
                 placeholder="Name"
                 type="text"
                 aria-label="required"
-                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.name ? "border-red-500" : ""
                 }`}
                 {...register("name", {
@@ -130,7 +130,7 @@ const CareersForm = () => {
               <input
                 type="email"
                 aria-label="required"
-                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.email ? "border-red-500" : ""
                 }`}
                 placeholder="email "
@@ -155,7 +155,7 @@ const CareersForm = () => {
                 aria-label="required"
                 placeholder="Phone Number"
                 maxLength={10}
-                className={`block w-full p-3 rounded border-black border-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
                 {...register("phone_no", {
@@ -185,8 +185,8 @@ const CareersForm = () => {
                 Select position <span className="text-red-500">*</span>
               </label>
               <select
-                className="block w-full p-3 rounded border-black border-2
-                focus:border-2 focus:border-blue-600 focus:outline-none"
+                className="block w-full p-3  border-black border-b-2
+                focus:border-b-2 focus:border-blue-600 focus:outline-none"
                 aria-label="required"
                 {...register("position", {
                   required: "Position is required",
@@ -217,15 +217,15 @@ const CareersForm = () => {
               <input
                 type="file"
                 name="fileInput"
-                className="block w-full p-3 rounded border-black border-2
-               focus:border-2 focus:border-blue-600 focus:outline-none"
+                className="block w-full p-3  border-black border-b-2
+               focus:border-b-2 focus:border-blue-600 focus:outline-none"
                 required
               />
             </div>
 
             <button
               type="submit"
-              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-3 text-white   text-[16px]
+              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   -xl p-3 text-white   text-[16px]
               disabled:opacity-60 "
             >
               Submit

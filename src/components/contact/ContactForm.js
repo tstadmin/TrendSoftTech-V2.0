@@ -69,7 +69,7 @@ const ContactForm = () => {
             placeholder="Your Name"
             type="text"
             aria-label="required"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.name ? "border-red-500" : ""
             }`}
             {...register("name", {
@@ -97,7 +97,7 @@ const ContactForm = () => {
             aria-label="required"
             type="text"
             maxlength="10"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.phone_no ? "border-red-500" : ""
             }`}
             {...register("phone_no", {
@@ -129,7 +129,7 @@ const ContactForm = () => {
             type="email"
             aria-label="required"
             placeholder="email"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.email ? "border-red-500" : ""
             }`}
             {...register("email", {
@@ -154,7 +154,7 @@ const ContactForm = () => {
             type="text"
             aria-label="required"
             placeholder="Enter your Website"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.websits ? "border-red-500" : ""
             }`}
             {...register("websits", {
@@ -178,7 +178,7 @@ const ContactForm = () => {
             type="text"
             aria-label="required"
             placeholder="Enter your Company name"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.company_name ? "border-red-500" : ""
             }`}
             {...register("company_name", {
@@ -203,7 +203,7 @@ const ContactForm = () => {
 
           <select
             aria-label="required"
-            className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base   ${
+            className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base   ${
               errors.inquiries ? "border-red-500" : ""
             }`}
             {...register("inquiries", {
@@ -233,7 +233,7 @@ const ContactForm = () => {
             type="text"
             aria-label="required"
             placeholder="Enter your Message Here"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.Message ? "border-red-500" : ""
             }`}
             {...register("message", {
