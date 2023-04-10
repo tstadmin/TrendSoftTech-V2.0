@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react"
 import { set, useForm } from "react-hook-form"
 import { FormHeading } from "./CareersStyle"
+import * as yup from "yup"
+import { yupResolver } from "@hookform/resolvers/yup"
 
 import {
   GoogleReCaptchaProvider,
@@ -9,6 +11,18 @@ import {
 import { careerForm, careerfileupLoad, getCareerData } from "../../services/api"
 import useApi from "../../Hook/useApi"
 import axios from "axios"
+
+const messageRequired = "Por favor, preencha este campo"
+const messagePositive = "Por favor, informe um valor positivo"
+
+// const UploadSchema = yup.object().shape({
+//   fileInput: yup.mixed().test("file", "You need to provide a file", value => {
+//     if (value.length > 0) {
+//       return true
+//     }
+//     return false
+//   }),
+// })
 
 const CareersForm = () => {
   const {
@@ -94,9 +108,9 @@ const CareersForm = () => {
           >
             <div>
               <div className="flex justify-between">
-                <p>
+                <label>
                   Name <span className="text-red-500">*</span>
-                </p>
+                </label>
                 <p className="text-red-500  text-[14px]">* Field required</p>
               </div>
 
@@ -124,9 +138,9 @@ const CareersForm = () => {
             </div>
 
             <div>
-              <p>
+              <label>
                 Email <span className="text-red-500">*</span>
-              </p>
+              </label>
               <input
                 type="email"
                 aria-label="required"
@@ -147,20 +161,20 @@ const CareersForm = () => {
             </div>
 
             <div>
-              <p>
+              <label>
                 Phone Number <span className="text-red-500">*</span>
-              </p>
+              </label>
               <input
                 type="text"
                 aria-label="required"
                 placeholder="Phone Number"
-                maxLength={10}
+                minLength={10}
                 className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
                 {...register("phone_no", {
                   required: "Phone Number is required",
-                  maxLength: {
+                  minLength: {
                     value: 10,
                     message: "Only number 10  required",
                   },
@@ -211,9 +225,9 @@ const CareersForm = () => {
             </div>
 
             <div>
-              <p>
+              <label>
                 Upload Resume / CV <span className="text-red-500">*</span>
-              </p>
+              </label>
               <input
                 type="file"
                 name="fileInput"
@@ -221,24 +235,28 @@ const CareersForm = () => {
                focus:border-b-2 focus:border-blue-600 focus:outline-none"
                 required
               />
+              {errors.fileInput && <p>{errors.fileInput.message}</p>}
             </div>
-
+            {/* <div>
+              <div>
+                <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+                  <GoogleReCaptcha
+                    ref={RefCaptcha}
+                    onChange={onChange}
+                    refreshReCaptcha={() => setRefreshReCaptcha(r => !r)}
+                  />
+                </GoogleReCaptchaProvider>
+              </div>
+            </div> */}
             <button
               type="submit"
-              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   -xl p-3 text-white   text-[16px]
+              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border rounded-xl p-2 text-white   text-[16px]
               disabled:opacity-60 "
             >
               Submit
             </button>
           </form>
         </div>
-
-        {/* <div>
-          <form onSubmit={handleSubmits}>
-            <input type="file" name="fileInput" />
-            <button type="submit">Upload</button>
-          </form>
-        </div> */}
       </div>
     </div>
   )

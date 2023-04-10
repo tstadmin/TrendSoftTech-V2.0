@@ -12,12 +12,9 @@ const AnalysisInfo = () => {
         <p className="text-white ">
           To check WCAG compliance, you'll usually start with an automated
           analysis. The Trendsoft Technologies Pvt. Ltd provides a free,
-          confidential graded report, which tests content against WCAG 2.1 Level
-          AA success criteria.
-        </p>
-        <p className="text-white">
-          This report gives you an overview of how your website fares when
-          tested against the WCAG A/AA checkpoints.
+          confidential graded report of your website, which tests content
+          against WCAG 2.1 Level A and Level AA success criteria and gives you
+          an overview report of how your website.
         </p>
         {/* <p className="text-white">
           such as the General Data Protection Regulation (GDPR), the Americans

@@ -42,9 +42,11 @@ const ContactForm = () => {
   const onSubmit = data => {
     contactForm(data)
       .then(res => {
-        window.location.reload()
-
-        alert("Submit Successfully")
+        if (res.status === 200) {
+          alert("Submit Successfully")
+          window.location.reload()
+          reset()
+        }
       })
       .catch(err => {
         // console.log(err)
@@ -62,9 +64,9 @@ const ContactForm = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="xl:w-[600px] w-full ">
-          <p>
-            Name<span className="text-red-500">*</span>
-          </p>
+          <label>
+            Name <span className="text-red-500">*</span>
+          </label>
           <input
             placeholder="Your Name"
             type="text"
@@ -89,20 +91,20 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p>
-            Phone Number<span className="text-red-500">*</span>
-          </p>
+          <label>
+            Phone Number <span className="text-red-500">*</span>
+          </label>
           <input
             placeholder="Phone Number"
             aria-label="required"
             type="text"
-            maxlength="10"
+            minLength={10}
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.phone_no ? "border-red-500" : ""
             }`}
             {...register("phone_no", {
               required: "Phone Number is required",
-              maxLength: {
+              minLength: {
                 value: 10,
                 message: "Only number 10  required",
               },
@@ -122,9 +124,9 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p>
+          <label>
             Email<span className="text-red-500">*</span>
-          </p>
+          </label>
           <input
             type="email"
             aria-label="required"
@@ -146,10 +148,10 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p>
+          <label>
             {" "}
             Website<span className="text-red-500">*</span>
-          </p>
+          </label>
           <input
             type="text"
             aria-label="required"
@@ -170,10 +172,9 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p>
-            {" "}
+          <label>
             Company Name <span className="text-red-500">*</span>
-          </p>
+          </label>
           <input
             type="text"
             aria-label="required"
@@ -196,10 +197,9 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <p>
-            {" "}
+          <label>
             Inquiries <span className="text-red-500">*</span>
-          </p>
+          </label>
 
           <select
             aria-label="required"
@@ -226,9 +226,9 @@ const ContactForm = () => {
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <p>
-            Message<span className="text-red-500">*</span>
-          </p>
+          <label>
+            Message <span className="text-red-500">*</span>
+          </label>
           <input
             type="text"
             aria-label="required"
@@ -247,15 +247,15 @@ const ContactForm = () => {
             <small className="text-red-500">{errors.message.message}</small>
           )}
         </div>
-        <div>
+        {/* <div>
           <GoogleReCaptchaProvider reCaptchaKey="6Ld4ZEglAAAAACSwTInWhawv0pUboFJDqS2FBJx7">
             <GoogleReCaptcha refreshReCaptcha={refreshReCaptcha} />
           </GoogleReCaptchaProvider>
-        </div>
+        </div> */}
         <button
           onClick={doRefresh}
           type="submit"
-          className=" bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border    rounded-xl p-2 text-white   text-[16px]"
+          className=" bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border rounded-xl p-2 text-white   text-[16px]"
         >
           Submit
         </button>

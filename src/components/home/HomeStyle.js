@@ -150,7 +150,7 @@ export const WorkingCardTitle = styled.h3`
   ${tw`  text-[#0b6ddc]  `}
 `
 export const WorkingCard = styled.li`
-  ${tw`border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  hover:border-none hover:duration-[2s]`}
+  ${tw`border border-blue-400 min-h-full p-8 rounded-md space-y-4 shadow-sm shadow-blue-400 hover:bg-black/5  `}
 `
 
 export const WorkingCards = styled.ul`

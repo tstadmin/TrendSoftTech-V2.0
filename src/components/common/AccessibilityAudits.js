@@ -28,10 +28,11 @@ const AccessibilityAudits = () => {
   const onSubmit = data => {
     webAccessbilityForm(data)
       .then(res => {
-        window.location.reload()
-
-        console.log(res.data.errors)
-        alert("Submit Successfully")
+        if (res.status === 200) {
+          console.log(res.data.errors)
+          alert("Submit Successfully")
+          window.location.reload()
+        }
       })
       .catch(err => {
         // console.log(err)
@@ -40,27 +41,27 @@ const AccessibilityAudits = () => {
 
   return (
     <div className="mt-10 1920Screen:px-48 2xl:px-24  px-8 ">
-      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-8 justify-center">
+      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-8 justify-center rounded-xl  shadow-lg shadow-black/20 ">
         <div className="p-4 bg-[#0b6ddc] -l-2xl">
           <AnalysisInfo />
         </div>
 
         <div className="bg-white -l-2xl ">
           <form
-            className=" w-full  2xl:px-24  px-2 space-y-5 "
+            className=" w-full  2xl:px-24  px-2 space-y-5 py-6 "
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="flex justify-between">
-              <p className="text-xl text-[#0b6ddc] font-semibold">
+              <label className="text-xl text-[#0b6ddc] font-semibold">
                 Contact Here
-              </p>
+              </label>
               <small className="text-red-500 text-[14px]">
                 * Fields required
               </small>
             </div>
             <div>
               <div className="flex justify-between">
-                <p>Website URL*</p>
+                <label>Website URL*</label>
               </div>
               <input
                 type="text"
@@ -84,7 +85,7 @@ const AccessibilityAudits = () => {
             </div>
 
             <div>
-              <p>First Name*</p>
+              <label>First Name*</label>
               <input
                 type="text"
                 aria-label="required"
@@ -111,7 +112,7 @@ const AccessibilityAudits = () => {
             </div>
 
             <div>
-              <p>Last Name*</p>
+              <label>Last Name*</label>
               <input
                 type="text"
                 aria-label="required"
@@ -138,7 +139,7 @@ const AccessibilityAudits = () => {
             </div>
 
             <div>
-              <p>Email*</p>
+              <label>Email*</label>
               <input
                 type="email"
                 aria-label="required"
@@ -160,7 +161,7 @@ const AccessibilityAudits = () => {
             </div>
 
             <div>
-              <p>Phone No*</p>
+              <label>Phone No*</label>
               <input
                 type="text"
                 aria-label="required"
@@ -168,7 +169,7 @@ const AccessibilityAudits = () => {
                   errors.phone_no ? "border-red-500" : ""
                 }`}
                 placeholder="Phone No"
-                maxLength={10}
+                minLength={10}
                 {...register("phone_no", {
                   required: "Phone Number is required",
 
@@ -188,7 +189,7 @@ const AccessibilityAudits = () => {
               )}
             </div>
 
-            <div>
+            {/* <div>
               <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
                 <GoogleReCaptcha
                   ref={RefCaptcha}
@@ -196,11 +197,11 @@ const AccessibilityAudits = () => {
                   refreshReCaptcha={() => setRefreshReCaptcha(r => !r)}
                 />
               </GoogleReCaptchaProvider>
-            </div>
+            </div> */}
 
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-white sm:w-44 font-medium mt-2 border-blue-400 border hover:border hover:border-[#f37c05] hover:duration-700  -xl p-3 text-white hover:text-blue-400  text-[16px]"
+              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border rounded-xl p-2 text-white   text-[16px]"
             >
               Submit
             </button>

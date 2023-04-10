@@ -84,7 +84,7 @@ home:
                 page: "/services/webDevelopment/"
             - listItem:
                 id: 2
-                title: "Ecommerce Development"
+                title: "E-commerce Development"
                 page: "/services/ecommerceDevelopment/"
             - listItem:
                 id: 3
@@ -215,7 +215,7 @@ home:
                 page: "/services/webDevelopment/"
             - listItem:
                 id: 2
-                title: "Ecommerce Development"
+                title: "E-commerce Development"
                 page: "/services/ecommerceDevelopment/"
             - listItem:
                 id: 3
@@ -309,7 +309,7 @@ home:
           img: "/img/icons/WebDevelop.svg"
           label: "read more Web Development"
           title: "Web Development"
-          description: "A strong base in the field of website designing development services and made us one of  best Web  Development Company spanned across India."
+          description: "A strong base in the field of website designing development services and made us one of best Web Development Company across India."
           page: "/services/webDevelopment/"
           CTA: "Read more.."
       - listItem:
@@ -1411,9 +1411,9 @@ contact :
     email: "info@trendsofttech.com" 
     businessMailTitle: "For Business Inquiries:"      
     businessEmail: "bdm.ts@trendsofttech.com" 
-    addressOne: "Address 1:"   
+    addressOne: " Hyderabad:"   
     addressOneInfo: "MIG-37 Vasavi Srinivasam Apartment Flat No.301 3rd Floor  KPHB Colony Road No.1 Kukatpally Hyderabad-500072"  
-    addressTwo: "Address 2:"   
+    addressTwo: "Mangalagiri:"   
     addressTwoInfo: "Unit No: 301-302 NRT Tech Park Mangalagiri Bypass Amaravati-522503"          
 serviceCards:
   list:
@@ -1426,7 +1426,7 @@ serviceCards:
         CTA: "READ MORE"
     - listItem:
         id: 2
-        title: "Ecommerce Development"
+        title: "E-commerce Development"
         link: "/services/ecommerceDevelopment/"
         label: "read more ecommerce Development"
         description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small.."

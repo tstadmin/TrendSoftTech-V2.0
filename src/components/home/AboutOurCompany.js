@@ -26,7 +26,7 @@ const AboutOurCompany = props => {
           <Link
             to="/about/"
             aria-label="About Our Company Learn More"
-            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#3773f1] hover:duration-700  rounded-3xl p-3 text-center text-white min-w-[120px] text-[16px]"
+            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#3773f1] hover:duration-700  rounded-3xl sm:p-3 p-2 text-center text-white min-w-[120px] text-[16px]"
           >
             {props.aboutOurCompany.CTA}
           </Link>
@@ -34,7 +34,7 @@ const AboutOurCompany = props => {
             href="/pdf/trends.pdf"
             target="_blank"
             aria-label=" company brochure PDF "
-            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#3773f1] hover:duration-700  rounded-3xl p-3 text-center text-white min-w-[122px] text-[16px]"
+            className="bg-[#0b2d78] focus:bg-white  hover:bg-white font-medium  border-blue-400 border hover:border hover:border-[#3773f1] hover:duration-700  rounded-3xl sm:p-3 p-2 text-center text-white min-w-[122px] text-[16px]"
           >
             View Brochure
           </a>

@@ -11,6 +11,7 @@
     "@emotion/styled": "^11.10.5",
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^2.0.13",
+    "@hookform/resolvers": "^3.0.1",
     "@mantine/carousel": "^5.10.3",
     "@mantine/core": "^5.10.0",
     "@mantine/hooks": "^5.10.0",
@@ -52,7 +53,8 @@
     "react-slick": "^0.29.0",
     "react-spinners": "^0.13.7",
     "tailwind.macro": "^0.5.10",
-    "twin.macro": "^3.1.0"
+    "twin.macro": "^3.1.0",
+    "yup": "^1.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

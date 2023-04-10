@@ -22,7 +22,9 @@ const BreadCrumb = props => {
               Home
             </Link>
           </li>
-          <li className=" text-white"> /</li>
+          <li className=" text-white" aria-hidden="true">
+            /
+          </li>
           <li className=" text-white">
             <Link
               aria-label={props.title}

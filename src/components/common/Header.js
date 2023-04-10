@@ -14,7 +14,7 @@ export default function Header(props) {
   const NavBar = tw.div`flex items-center space-x-14 sticky top-6 z-10`
 
   const [opened, setOpened] = useState(false)
-  const ref = useClickOutside(() => setOpened(false))
+  // const ref = useClickOutside(() => setOpened(false))
   const handleNav = () => {
     setOpened(!opened)
   }
@@ -23,7 +23,7 @@ export default function Header(props) {
     <div
       id="nav"
       role="navigation"
-      className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky top-10  bg-[#ebebeb] z-10 shadow-lg shadow-black/10"
+      className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky top-8 sm:top-10    bg-[#ebebeb] z-10 shadow-lg shadow-black/10"
     >
       <NavBar>
         {/* Logo */}
@@ -42,15 +42,15 @@ export default function Header(props) {
 
       <div>
         <div className="flex  ">
-          <p
+          <div
             onClick={handleNav}
-            className=" block sm:text-2xl text-md  hover:text-blue-400
-           pr-8 "
+            className=" block sm:text-2xl text-md  hover:text-blue-400 pr-8 "
           >
             {opened ? (
               <button
                 id="navbarDropdown"
                 className="cursor-pointer text-[#0084FF]  "
+                aria-expanded="true"
               >
                 <span
                   data-bs-toggle="collapse"
@@ -60,24 +60,25 @@ export default function Header(props) {
                   expanded
                 </span>
 
-                <RxCross2 className="hidden md:block md:text-3xl sm:text-xl text-lg" />
+                <RxCross2 className="  md:text-3xl sm:text-xl text-lg" />
               </button>
             ) : (
               <button
                 aria-labelledby="navbarDropdown"
                 className="cursor-pointer text-[#0084FF] "
+                aria-expanded="false"
               >
-                <span className="sr-only">menu button collapsed submenu</span>
+                <span className="sr-only">menu </span>
                 <HiBars3BottomLeft className="md:text-3xl sm:text-xl text-lg" />
               </button>
             )}
-          </p>
+          </div>
           {opened && (
             <div
-              ref={ref}
+              // ref={ref}
               className={
                 opened
-                  ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[117px]  340Screen:top-[106.7px] top-[100.92px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
+                  ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[115px]  340Screen:top-[97.7px] top-[92.92px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
                   : "fixed hidden "
               }
             >
@@ -94,7 +95,7 @@ export default function Header(props) {
                       {item.listItem.title}
                     </h2>
                     <ul
-                      className="space-y-2 mt-4  font-normal "
+                      className="mobile space-y-2 mt-4  font-normal sm:mb-10 "
                       aria-labelledby={item.listItem.name}
                     >
                       {item.listItem.subTitle?.map((sub, idx) => (
@@ -119,7 +120,7 @@ export default function Header(props) {
 
               {/*  Mobile Menu */}
 
-              <ul className="uppercase font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-28  ">
+              <ul className="mobile  font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-28  ">
                 <li className="text-sm text-white ">
                   <Link
                     to={props.data.mobilelist.homePage}

@@ -20,7 +20,7 @@ const CarouselItem = props => {
         previousControlLabel=" previous"
         nextControlLabel="Next"
         nextControlIcon={
-          <div className="flex items-center p-0.5 ">
+          <div className="flex items-center p-0.5  ">
             {/* <IconArrowRight size={16} /> */}
 
             <small className="p-0 mb-1 align-top text-[14px]">Next</small>
@@ -31,10 +31,16 @@ const CarouselItem = props => {
           <div className="flex  items-center p-0.5">
             {/* <IconArrowRight size={16} /> */}
             <BsArrowLeftShort className="text-[30px]" />
-            <small className="p-0 align-top text-[14px] mb-1">Prev</small>
+            <small
+              className="p-0 align-top text-[14px] mb-1"
+              aria-label="3 next"
+            >
+              Prev
+            </small>
           </div>
         }
       >
+        <span class="sr-only w-auto">Carousel</span>
         {props.carousel.list.map((item, idx) => (
           <Carousel.Slide key={item.listItem.id}>
             <div className="w-[100vw] text-center 2048Screen:h-[calc(100%-137px)] 1920Screen:h-[calc(100%-117px)]  xl:h-[calc(100%-300px)] lg:h-[calc(100%-400px)]  md:h-[calc(100%-408px)] sm:h-[calc(100%-630px)] 540Screen:h-[calc(100%-500px)] 440Screen:h-[calc(100%-350px)] 340Screen:h-[calc(100%-362px)]  h-[calc(100%-457px)] relative ">

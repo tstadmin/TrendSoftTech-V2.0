@@ -83,12 +83,14 @@ const DocAnalysis = () => {
                 Contact Here
               </p>
               <small className="text-red-500 text-[14px]">
-                * Fields required
+                <span className="text-red-500">*</span> Fields required
               </small>
             </div>
 
             <div>
-              <p>First Name*</p>
+              <label>
+                First Name <span className="text-red-500">*</span>
+              </label>
               <input
                 type="text"
                 aria-label="required"
@@ -114,7 +116,9 @@ const DocAnalysis = () => {
             </div>
 
             <div>
-              <p>Last Name*</p>
+              <label>
+                Last Name <span className="text-red-500">*</span>
+              </label>
               <input
                 type="text"
                 aria-label="required"
@@ -140,7 +144,9 @@ const DocAnalysis = () => {
             </div>
 
             <div>
-              <p>Email*</p>
+              <label>
+                Email <span className="text-red-500">*</span>
+              </label>
               <input
                 type="email"
                 aria-label="required"
@@ -161,20 +167,22 @@ const DocAnalysis = () => {
             </div>
 
             <div>
-              <p>Phone No*</p>
+              <label>
+                Phone No <span className="text-red-500">*</span>
+              </label>
               <input
                 type="text"
                 aria-label="required"
                 className={`block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
-                maxLength={10}
+                minLength={10}
                 {...register("phone_no", {
                   required: "Phone Number is required",
 
                   pattern: {
                     value: /^\d*(?:\.\d{1,2})?$/,
-                    message: "Only number allower",
+                    message: "Only number allowed",
                   },
                 })}
                 onKeyUp={() => {
@@ -189,7 +197,9 @@ const DocAnalysis = () => {
             </div>
 
             <div className="space-y-3">
-              <p>Upload PDF / Document *</p>
+              <label>
+                Upload PDF / XL / Word <span className="text-red-500">*</span>
+              </label>
 
               <input
                 type="file"
@@ -199,7 +209,7 @@ const DocAnalysis = () => {
               />
             </div>
 
-            <div>
+            {/* <div>
               <div>
                 <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
                   <GoogleReCaptcha
@@ -209,11 +219,10 @@ const DocAnalysis = () => {
                   />
                 </GoogleReCaptchaProvider>
               </div>
-            </div>
+            </div> */}
             <button
               type="submit"
-              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border   rounded-xl p-2 text-white   text-[16px]
-              disabled:opacity-60 "
+              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border rounded-xl p-2 text-white   text-[16px] "
             >
               Submit
             </button>

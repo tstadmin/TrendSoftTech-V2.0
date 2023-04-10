@@ -23,3 +23,9 @@
     left: 0;
   }
 }
+
+.mobile a[aria-current="page"] {
+  color: #ffe793 !important;
+
+  @apply decoration-[#ffe793] hover:text-[#ffe793] focus:text-[#ffe793] hover:underline focus:underline hover:decoration-[#ffe793];
+}
