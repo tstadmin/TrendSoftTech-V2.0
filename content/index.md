@@ -9,13 +9,15 @@ home:
             label: "Contact"
             page: "/contact/"
             CTA: "Contact" 
+            hidden: true 
       - listItem :
             id: 2
             img: "/img/carousel/WEBDEVELOPMENT.jpg"
             title: "WEB DEVELOPMENT"
             page: "/services/webDevelopment/"
             label: "Learn More  WEB DEVELOPMENT "
-            CTA: "Learn More"    
+            CTA: "Learn More"  
+            hidden: false
       - listItem :
             id: 3
             img: "/img/carousel/ECOMMERCEDEVELOPMENT.jpg"
@@ -23,6 +25,7 @@ home:
             page: "/services/ecommerceDevelopment/"
             label: "Learn More  ECOMMERCE DEVELOPMENT "
             CTA: "Learn More" 
+            hidden: false
       - listItem :
             id: 4
             img: "/img/carousel/MOBILEDEVELOPMENT.jpg"
@@ -30,6 +33,7 @@ home:
             label: "Learn More MOBILE DEVELOPMENT"
             page: "/services/mobileDevelopment/"
             CTA: "Learn More" 
+            hidden: false
       - listItem :
             id: 5
             img: "/img/carousel/PRODUCTDEVELOPMENT.jpg"
@@ -37,6 +41,7 @@ home:
             label: "Learn More PRODUCT DEVELOPMENT "
             page: "/services/productDevelopment/"
             CTA: "Learn More" 
+            hidden: false
       - listItem :
             id: 6
             img: "/img/carousel/UIUXDESIGN.jpg"
@@ -44,6 +49,7 @@ home:
             label: "Learn More UI / UX DESIGN"
             page: "/services/uiUXDesign/"
             CTA: "Learn More" 
+            hidden: false
       - listItem :
             id: 7
             img: "/img/carousel/MANUALTESTING.jpg"
@@ -51,6 +57,7 @@ home:
             label: "Learn More MANUAL TESTING"
             page: "/services/testing/"
             CTA: "Learn More" 
+            hidden: false
       - listItem :
             id: 8
             img: "/img/carousel/AUTOMATIONTESTING.jpg"
@@ -58,13 +65,15 @@ home:
             label: "Learn More  AUTOMATION TESTING"
             page: "/services/testing/"
             CTA: "Learn More"  
+            hidden: false
       - listItem :
             id: 9
             img: "/img/carousel/DIGITALMARKETING.jpg"
             title: "DIGITAL MARKETING"
             label: "Learn More DIGITAL MARKETING "
             page: "/services/digitalMarketing/"
-            CTA: "Learn More"                                
+            CTA: "Learn More" 
+            hidden: false                               
   navbar:
     logo: "/img/HomeImages/logoB.svg"
     alt: "TrendSoft tech logo"

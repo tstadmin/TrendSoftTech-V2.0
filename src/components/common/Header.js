@@ -19,6 +19,12 @@ export default function Header(props) {
     setOpened(!opened)
   }
 
+  const handleKeyPress = event => {
+    if (event.key === "Enter") {
+      setOpened(true)
+    }
+  }
+
   return (
     <div
       id="nav"
@@ -78,7 +84,7 @@ export default function Header(props) {
               // ref={ref}
               className={
                 opened
-                  ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[115px]  340Screen:top-[97.7px] top-[92.92px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
+                  ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[115px]  340Screen:top-[100px] 240Screen:top-[115px] top-[100px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
                   : "fixed hidden "
               }
             >
@@ -95,7 +101,7 @@ export default function Header(props) {
                       {item.listItem.title}
                     </h2>
                     <ul
-                      className="mobile space-y-2 mt-4  font-normal sm:mb-10 "
+                      className=" space-y-2 mt-4  font-normal sm:mb-10 "
                       aria-labelledby={item.listItem.name}
                     >
                       {item.listItem.subTitle?.map((sub, idx) => (
@@ -141,7 +147,7 @@ export default function Header(props) {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full">
-                        <li className="text-sm text-white uppercase">
+                        <li className="text-sm text-white">
                           {props.data.mobilelist.services}
                         </li>
 
@@ -206,13 +212,10 @@ export default function Header(props) {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full">
-                        <li className="text-white text-sm uppercase">
+                        <li className="text-white text-sm lowercase ">
                           {props.data.mobilelist.accessibility}
                         </li>
-                        {/* <Link to={props.data.mobilelist.accessibilityPage}>
-                     
-                        {props.data.mobilelist.accessibility}
-                    </Link> */}
+
                         <IoIosArrowDown
                           className={`${
                             open ? "rotate-180 transform" : ""
@@ -224,7 +227,7 @@ export default function Header(props) {
                           {({ open }) => (
                             <>
                               <Disclosure.Button className="flex w-full ">
-                                <li className="text-white uppercase">
+                                <li className="text-white lowercase ">
                                   {props.data.mobilelist.docaccessibility}
                                 </li>
                                 {/* <Link
@@ -312,17 +315,18 @@ export default function Header(props) {
               </ul>
             </div>
           )}
-          <p>
+          <p
+          // onClick={() => setOpened(false)}
+          // onFocus={handleKeyPress}
+          // onKeyPress={handleKeyPress}
+          // tabIndex={0}
+          >
             <Link
               to="/"
               aria-label="Home "
               className="cursor-pointer text-[#0084FF]  "
             >
-              <FaHome
-                className="md:text-3xl sm:text-xl text-lg"
-                onFocus={() => setOpened(false)}
-                tabIndex={() => setOpened(false)}
-              />
+              <FaHome className="md:text-3xl sm:text-xl text-lg" />
             </Link>
           </p>
         </div>

@@ -13,7 +13,7 @@ const Brochure = props => {
         href={props.pdf.pdf}
         target="_blank"
         aria-label="Download company brochure PDF  "
-        className="bg-[#0b2d78] hover:text-[#f9761f] focus:text-[#f9761f]  text-white text-sm p-2 rounded-md flex  justify-center"
+        className="bg-[#0b2d78] hover:text-[#f9761f] focus:text-[#f9761f]  hover:underline focus:decoration-[#f9761f] hover:decoration-[#f9761f] text-white text-sm p-2 rounded-md flex  justify-center"
       >
         {data.button}
       </a>

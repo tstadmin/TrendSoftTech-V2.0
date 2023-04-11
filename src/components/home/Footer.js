@@ -44,9 +44,9 @@ const Footer = props => {
                     aria-label="facebook: trendsoft tech page "
                     target="_blank"
                     rel="noreferrer"
-                    className="focus:text-white"
+                    className="focus:text-white focus:rounded-full  "
                   >
-                    <div className="text-blue-500 text-center hover:text-white focus:text-white shadow-black/50 border-black/10  bg-white focus:bg-blue-600 hover:cursor-pointer hover:bg-blue-600   rounded-full w-9 h-9 p-2 shadow-xl">
+                    <div className="text-blue-500 text-center hover:text-white  shadow-black/50 border-black/10  bg-white focus:bg-blue-600 hover:cursor-pointer hover:bg-blue-600  rounded-full w-9 h-9 p-2 shadow-xl">
                       <FaFacebookF />
                     </div>
                   </a>
@@ -58,7 +58,7 @@ const Footer = props => {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Linkedin: trendsoft tech page "
-                    className="text-white"
+                    className=" focus:rounded-full"
                   >
                     <FooterIconStyles>
                       <TiSocialLinkedin className="text-xl" />
@@ -72,7 +72,7 @@ const Footer = props => {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Instagram: trendsoft tech page "
-                    className="text-white"
+                    className="focus:rounded-full"
                   >
                     <FooterIconStyles>
                       <AiOutlineInstagram className="text-xl" />

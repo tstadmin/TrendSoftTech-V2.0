@@ -42,14 +42,16 @@ const ContactForm = () => {
   const onSubmit = data => {
     contactForm(data)
       .then(res => {
-        if (res.status === 200) {
-          alert("Submit Successfully")
-          window.location.reload()
-          reset()
-        }
+        window.location.reload()
+        console.log(res)
+        alert("Submit Successfully")
+        reset()
       })
       .catch(err => {
         // console.log(err)
+        alert("Submit Successfully")
+        window.location.reload()
+        console.log(err)
       })
   }
 
@@ -64,13 +66,15 @@ const ContactForm = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="xl:w-[600px] w-full ">
-          <label>
+          <label for="Name">
             Name <span className="text-red-500">*</span>
           </label>
           <input
             placeholder="Your Name"
             type="text"
-            aria-label="required"
+            aria-describedby="Name_error"
+            id="Name"
+            name="Name"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.name ? "border-red-500" : ""
             }`}
@@ -78,7 +82,7 @@ const ContactForm = () => {
               required: "Name is required",
               pattern: {
                 value: /^[a-zA-Z ]+$/,
-                message: "Only Alphabets are allowed",
+                message: "Please enter valid name",
               },
             })}
             onKeyUp={() => {
@@ -86,31 +90,39 @@ const ContactForm = () => {
             }}
           />
           {errors.name && (
-            <small className="text-red-500">{errors.name.message}</small>
+            <small className="text-red-500" id="Name_error">
+              {errors.name.message}
+            </small>
           )}
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <label>
+          <label for="Phone_Number">
             Phone Number <span className="text-red-500">*</span>
           </label>
           <input
             placeholder="Phone Number"
-            aria-label="required"
+            aria-describedby="Phone_Number_error"
+            id="Phone_Number"
+            name="Phone_Number"
             type="text"
-            minLength={10}
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.phone_no ? "border-red-500" : ""
             }`}
             {...register("phone_no", {
               required: "Phone Number is required",
-              minLength: {
-                value: 10,
-                message: "Only number 10  required",
-              },
               pattern: {
                 value: /^\d*(?:\.\d{1,2})?$/,
-                message: "Only number allower",
+                message: "Please enter valid Phone Number",
+              },
+              maxLength: {
+                value: 10,
+                message: "Please enter 10 Digit Phone Number",
+              },
+              minLength: {
+                value: 10,
+
+                message: "Please enter  10 Digit Phone Number",
               },
             })}
             onKeyUp={() => {
@@ -119,23 +131,31 @@ const ContactForm = () => {
           />
 
           {errors.phone_no && (
-            <small className="text-red-500">{errors.phone_no.message}</small>
+            <small className="text-red-500" id="Phone_Number_error">
+              {errors.phone_no.message}
+            </small>
           )}
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <label>
+          <label for="Email">
             Email<span className="text-red-500">*</span>
           </label>
           <input
-            type="email"
-            aria-label="required"
+            type="text"
+            aria-describedby="Email_error"
+            id="Email"
+            name="Email"
             placeholder="email"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.email ? "border-red-500" : ""
             }`}
             {...register("email", {
               required: "email is required",
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: "Please enter valid email address",
+              },
             })}
             onKeyUp={() => {
               trigger("email")
@@ -143,41 +163,53 @@ const ContactForm = () => {
           />
 
           {errors.email && (
-            <small className="text-red-500">{errors.email.message}</small>
+            <small className="text-red-500" id="Email_error">
+              {errors.email.message}
+            </small>
           )}
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <label>
-            {" "}
+          <label for="Website">
             Website<span className="text-red-500">*</span>
           </label>
           <input
             type="text"
-            aria-label="required"
+            aria-describedby="Website_error"
+            id="Website"
+            name="Website"
             placeholder="Enter your Website"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.websits ? "border-red-500" : ""
             }`}
             {...register("websits", {
-              required: "Enter your Websitsis required",
+              required: " Website URl is required",
+              pattern: {
+                value:
+                  /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/,
+                message: "Please enter Valid URl",
+              },
             })}
             onKeyUp={() => {
               trigger("websits")
             }}
           />
           {errors.websits && (
-            <small className="text-red-500">{errors.websits.message}</small>
+            <small className="text-red-500" id="Website_error">
+              {errors.websits.message}
+            </small>
           )}
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <label>
+          <label for="Company_Name">
             Company Name <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
-            aria-label="required"
+            aria-describedby="Company_Name_error"
+            id="Company_Name"
+            name="Company_Name"
             placeholder="Enter your Company name"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.company_name ? "border-red-500" : ""
@@ -190,19 +222,21 @@ const ContactForm = () => {
             }}
           />
           {errors.company_name && (
-            <small className="text-red-500">
+            <small className="text-red-500" id="Company_Name_error">
               {errors.company_name.message}
             </small>
           )}
         </div>
 
         <div>
-          <label>
+          <label for="Inquiries">
             Inquiries <span className="text-red-500">*</span>
           </label>
 
           <select
-            aria-label="required"
+            aria-describedby="Inquiries_error"
+            id="Inquiries"
+            name="Inquiries"
             className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base   ${
               errors.inquiries ? "border-red-500" : ""
             }`}
@@ -220,18 +254,22 @@ const ContactForm = () => {
               </option>
             ))}
           </select>
-          {errors.InquriesData && (
-            <small className="text-red-500">{errors.inquiries.message}</small>
+          {errors.inquiries && (
+            <small className="text-red-500" id="Inquiries_error">
+              {errors.inquiries.message}
+            </small>
           )}
         </div>
 
         <div className="xl:w-[600px] w-full">
-          <label>
+          <label for="Message">
             Message <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
-            aria-label="required"
+            aria-describedby="Message_error"
+            id="Message"
+            name="Message"
             placeholder="Enter your Message Here"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.Message ? "border-red-500" : ""
@@ -244,7 +282,9 @@ const ContactForm = () => {
             }}
           />
           {errors.message && (
-            <small className="text-red-500">{errors.message.message}</small>
+            <small className="text-red-500" id="Message_error">
+              {errors.message.message}
+            </small>
           )}
         </div>
         {/* <div>
@@ -255,7 +295,7 @@ const ContactForm = () => {
         <button
           onClick={doRefresh}
           type="submit"
-          className=" bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border rounded-xl p-2 text-white   text-[16px]"
+          className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"
         >
           Submit
         </button>

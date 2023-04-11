@@ -6,7 +6,7 @@ const Card = props => {
     <li
       className={`${
         props.CTA
-          ? "lg:flex grid  max-w-[500px] 2xl:gap-8 gap-4 min-h-[300px] lg:justify-items-start justify-items-center rounded-lg"
+          ? "lg:flex grid  max-w-[500px] 2xl:gap-8 gap-4 min-h-[220px] lg:justify-items-start justify-items-center rounded-lg"
           : "grid  rounded-lg max-w-[530px]  min-h-[300px] justify-items-center"
       }
           ${

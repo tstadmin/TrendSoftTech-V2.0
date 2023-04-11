@@ -34,7 +34,7 @@ const CareersForm = () => {
     formState: { errors },
   } = useForm()
 
-  const Position = [
+  const position = [
     {
       id: 1,
       position: "ReactJs Developer",
@@ -99,25 +99,31 @@ const CareersForm = () => {
 
   return (
     <div>
-      <div className="grid   border border-black  space-y-8 sm:p-7 p-5">
-        <FormHeading>Apply for this position</FormHeading>
-        <div className="grid space-y-6 justify-items-center">
+      <div className="grid   space-y-8 sm:p-7 p-5">
+        <div className="grid space-y-6 justify-items-center ">
           <form
-            className=" md:w-[50vw] w-full space-y-6"
+            className=" md:w-[50vw] w-full space-y-6 "
             onSubmit={handleSubmit(onSubmit)}
           >
+            <div className="items-start flex justify-between">
+              <p className="md:text-[29px] sm:text-[20px] 340Screen:text-[18px] text-[16px] font-semibold text-[#0b6ddc]">
+                Apply for this position
+              </p>
+              <p className="text-red-500  sm:text-[16px] text-[14px]">
+                * Field required
+              </p>
+            </div>
             <div>
-              <div className="flex justify-between">
-                <label>
-                  Name <span className="text-red-500">*</span>
-                </label>
-                <p className="text-red-500  text-[14px]">* Field required</p>
-              </div>
+              <label for="Name">
+                Name <span className="text-red-500">*</span>
+              </label>
 
               <input
                 placeholder="Name"
+                id="Name"
+                name="Name"
                 type="text"
-                aria-label="required"
+                aria-describedby="Name_error"
                 className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.name ? "border-red-500" : ""
                 }`}
@@ -125,7 +131,7 @@ const CareersForm = () => {
                   required: "Name is required",
                   pattern: {
                     value: /^[a-zA-Z ]+$/,
-                    message: "Only Alphabets are allowed",
+                    message: "Please enter valid name",
                   },
                 })}
                 onKeyUp={() => {
@@ -133,54 +139,72 @@ const CareersForm = () => {
                 }}
               />
               {errors.name && (
-                <small className="text-red-500">{errors.name.message}</small>
+                <small className="text-red-500" id="Name_error">
+                  {errors.name.message}
+                </small>
               )}
             </div>
 
             <div>
-              <label>
+              <label for="Email">
                 Email <span className="text-red-500">*</span>
               </label>
               <input
-                type="email"
-                aria-label="required"
+                type="text"
+                id="Email"
+                name="Email"
+                placeholder="Email"
+                aria-describedby="Email_career_error"
                 className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.email ? "border-red-500" : ""
                 }`}
-                placeholder="email "
                 {...register("email", {
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "invalid email address",
+                  },
                   required: "Email is required",
                 })}
                 onKeyUp={() => {
                   trigger("email")
                 }}
               />
+              <span id="Email_career" class="d-none con-error"></span>
               {errors.email && (
-                <small className="text-red-500">{errors.email.message}</small>
+                <small className="text-red-500" id="Email_career_error">
+                  {errors.email.message}
+                </small>
               )}
             </div>
 
             <div>
-              <label>
+              <label for="Phone_Number">
                 Phone Number <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
-                aria-label="required"
+                name="Phone_Number"
+                id="Phone_Number"
                 placeholder="Phone Number"
+                aria-describedby="Phone_Number_error"
                 minLength={10}
                 className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
                 {...register("phone_no", {
                   required: "Phone Number is required",
-                  minLength: {
-                    value: 10,
-                    message: "Only number 10  required",
-                  },
                   pattern: {
                     value: /^\d*(?:\.\d{1,2})?$/,
-                    message: "Only number allower",
+                    message: "Please enter valid Phone Number",
+                  },
+                  maxLength: {
+                    value: 10,
+                    message: "Please enter 10 Digit Phone Number",
+                  },
+                  minLength: {
+                    value: 10,
+
+                    message: "Please enter  10 Digit Phone Number",
                   },
                 })}
                 onKeyUp={() => {
@@ -188,20 +212,22 @@ const CareersForm = () => {
                 }}
               />
               {errors.phone_no && (
-                <small className="text-red-500">
+                <small className="text-red-500" id="Phone_Number_error">
                   {errors.phone_no.message}
                 </small>
               )}
             </div>
 
             <div>
-              <label className="text-lg" htmlFor="a">
+              <label className="text-lg" for="Select_position">
                 Select position <span className="text-red-500">*</span>
               </label>
               <select
+                name="Select_position"
+                id="Select_position"
+                aria-describedby="Select_position_error"
                 className="block w-full p-3  border-black border-b-2
                 focus:border-b-2 focus:border-blue-600 focus:outline-none"
-                aria-label="required"
                 {...register("position", {
                   required: "Position is required",
                 })}
@@ -209,33 +235,45 @@ const CareersForm = () => {
                   trigger("position")
                 }}
               >
-                <option type="text">Select position</option>
+                <option value="">Select position</option>
 
-                {Position.map((c, idx) => (
+                {position.map((c, idx) => (
                   <option value={c.position} key={c.id}>
                     {c.position}
                   </option>
                 ))}
               </select>
               {errors.position && (
-                <small className="text-red-500">
+                <small className="text-red-500" id="Select_position_error">
                   {errors.position.message}
                 </small>
               )}
             </div>
 
             <div>
-              <label>
+              <label for="file-upload" class="button">
                 Upload Resume / CV <span className="text-red-500">*</span>
               </label>
               <input
                 type="file"
-                name="fileInput"
+                name="file-upload"
+                id="file-upload"
+                accept=".doc,.docx,.pdf"
+                aria-describedby="file-upload_error"
                 className="block w-full p-3  border-black border-b-2
-               focus:border-b-2 focus:border-blue-600 focus:outline-none"
-                required
+                 focus:border-b-2 focus:border-blue-600 focus:outline-none"
+                {...register("fileInput", {
+                  required: "File is required",
+                })}
+                onKeyUp={() => {
+                  trigger("fileInput")
+                }}
               />
-              {errors.fileInput && <p>{errors.fileInput.message}</p>}
+              {errors.fileInput && (
+                <small className="text-red-500" id="file-upload_error">
+                  {errors.fileInput.message}
+                </small>
+              )}
             </div>
             {/* <div>
               <div>
@@ -250,8 +288,8 @@ const CareersForm = () => {
             </div> */}
             <button
               type="submit"
-              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border rounded-xl p-2 text-white   text-[16px]
-              disabled:opacity-60 "
+              className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]
+               "
             >
               Submit
             </button>

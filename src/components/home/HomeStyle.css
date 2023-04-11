@@ -7,5 +7,5 @@
   background-color: white;
   padding: 2px;
   border-radius: 3px;
-  @apply focus:underline focus:text-[#bd5005] hover:underline hover:decoration-[#bd5005] hover:text-[#bd5005];
+  @apply focus:underline sm:rounded-none rounded-full  focus:text-[#bd5005] hover:underline hover:decoration-[#bd5005] hover:text-[#bd5005];
 }

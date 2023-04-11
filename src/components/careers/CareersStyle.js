@@ -28,20 +28,20 @@ export const CardReadDiv = styled.div`
 //-------------- Requirement component page form  Careers component --------------------------------
 
 export const Requirement = styled.div`
-  ${tw`space-y-8 lg:px-52 sm:px-28 px-8  pt-8`}
+  ${tw`space-y-2 lg:px-52 sm:px-28 px-8  pt-8`}
 `
 
-export const RequirementDiv = styled.div`
+export const RequirementDiv = styled.ul`
   ${tw`space-y-3`}
 `
 export const RequirementIcon = styled.li`
   ${tw`flex gap-3`}
 `
-export const RequirementInfoDiv = styled.div`
+export const RequirementInfoDiv = styled.ul`
   ${tw`space-y-3`}
 `
 export const RequirementInfoheading = styled.h2`
-  ${tw`lg:text-2xl md:text-xl sm:text-lg text-base font-semibold font-mono`}
+  ${tw` md:text-xl sm:text-lg text-base font-semibold font-mono`}
 `
 export const Description = styled.li`
   ${tw`font-serif`}

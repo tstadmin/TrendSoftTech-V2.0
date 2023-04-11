@@ -5,7 +5,7 @@ const AnalysisInfo = () => {
     <div className="space-y-16 p-5">
       <div>
         <p className="text-white font-semibold mt-5  md:text-xl sm:text-lg text-base ">
-          How do I know if your website is WCAG compliant?
+          How do you know if your website is WCAG compliant?
         </p>
       </div>
       <div className="space-y-4 text-[18px]">

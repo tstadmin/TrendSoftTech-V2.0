@@ -28,14 +28,12 @@ const AccessibilityAudits = () => {
   const onSubmit = data => {
     webAccessbilityForm(data)
       .then(res => {
-        if (res.status === 200) {
-          console.log(res.data.errors)
-          alert("Submit Successfully")
-          window.location.reload()
-        }
+        // window.location.reload()
+        // alert("Submit Successfully")
       })
       .catch(err => {
-        // console.log(err)
+        window.location.reload(true)
+        alert("Submit Successfully")
       })
   }
 
@@ -61,34 +59,45 @@ const AccessibilityAudits = () => {
             </div>
             <div>
               <div className="flex justify-between">
-                <label>Website URL*</label>
+                <label for="url">Website URL*</label>
               </div>
               <input
                 type="text"
-                aria-label="required"
+                aria-describedby="url_error"
+                id="url"
+                name="url"
                 className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.website_url ? "border-red-500" : ""
                 }`}
                 placeholder="Website URL "
                 {...register("website_url", {
                   required: "url is required",
+                  pattern: {
+                    value:
+                      /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/,
+                    message: "Please enter Valid URl",
+                  },
                 })}
                 onKeyUp={() => {
                   trigger("website_url")
                 }}
               />
               {errors.website_url && (
-                <small className="text-red-500">
+                <small className="text-red-500" id="url_error">
                   {errors.website_url.message}
                 </small>
               )}
             </div>
 
             <div>
-              <label>First Name*</label>
+              <label for="First_Name">
+                First Name <span className="text-red-500">*</span>
+              </label>
               <input
                 type="text"
-                aria-label="required"
+                id="First_Name"
+                name="First_Name"
+                aria-describedby="First_Name_error"
                 className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.first_name ? "border-red-500" : ""
                 }`}
@@ -97,7 +106,7 @@ const AccessibilityAudits = () => {
                   required: "First Name is required",
                   pattern: {
                     value: /^[a-zA-Z ]+$/,
-                    message: "Only Alphabets are allowed",
+                    message: "Please enter valid First Name",
                   },
                 })}
                 onKeyUp={() => {
@@ -105,17 +114,21 @@ const AccessibilityAudits = () => {
                 }}
               />
               {errors.first_name && (
-                <small className="text-red-500">
+                <small className="text-red-500" id="First_Name_error">
                   {errors.first_name.message}
                 </small>
               )}
             </div>
 
             <div>
-              <label>Last Name*</label>
+              <label for="Last_Name">
+                Last Name <span className="text-red-500">*</span>
+              </label>
               <input
                 type="text"
-                aria-label="required"
+                id="Last_Name"
+                name="Last_Name"
+                aria-describedby="Last_Name_error"
                 className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.last_name ? "border-red-500" : ""
                 }`}
@@ -124,7 +137,7 @@ const AccessibilityAudits = () => {
                   required: "last name is required",
                   pattern: {
                     value: /^[a-zA-Z ]+$/,
-                    message: "Only Alphabets are allowed",
+                    message: "Please enter valid Last Name",
                   },
                 })}
                 onKeyUp={() => {
@@ -132,50 +145,73 @@ const AccessibilityAudits = () => {
                 }}
               />
               {errors.last_name && (
-                <small className="text-red-500">
+                <small className="text-red-500" id="Last_Name_error">
                   {errors.last_name.message}
                 </small>
               )}
             </div>
 
             <div>
-              <label>Email*</label>
+              <label for="Email">
+                Email <span className="text-red-500">*</span>
+              </label>
               <input
-                type="email"
-                aria-label="required"
+                type="text"
+                id="Email"
+                name="Email"
+                aria-describedby="Email_error"
                 className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.email ? "border-red-500" : ""
                 }`}
                 placeholder="email"
                 {...register("email", {
                   required: "email is required",
-                  pattern: "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "Please enter valid  email address",
+                  },
                 })}
                 onKeyUp={() => {
                   trigger("email")
                 }}
               />
               {errors.email && (
-                <small className="text-red-500">{errors.email.message}</small>
+                <small className="text-red-500" id="Email_error">
+                  {errors.email.message}
+                </small>
               )}
             </div>
 
             <div>
-              <label>Phone No*</label>
+              <label for="Phone_Number">
+                Phone Number <span className="text-red-500">*</span>
+              </label>
               <input
                 type="text"
-                aria-label="required"
+                id="Phone_Number"
+                name="Phone_Number"
+                aria-describedby="Phone_Number_error"
                 className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
-                placeholder="Phone No"
-                minLength={10}
+                placeholder="Phone Number"
+                // minLength={10}
+                // maxLength={10}
                 {...register("phone_no", {
                   required: "Phone Number is required",
 
                   pattern: {
                     value: /^\d*(?:\.\d{1,2})?$/,
-                    message: "Only number allower",
+                    message: "Please enter valid Phone Number",
+                  },
+                  maxLength: {
+                    value: 10,
+                    message: "Please enter 10 Digit Phone Number",
+                  },
+                  minLength: {
+                    value: 10,
+
+                    message: "Please enter  10 Digit Phone Number",
                   },
                 })}
                 onKeyUp={() => {
@@ -183,7 +219,7 @@ const AccessibilityAudits = () => {
                 }}
               />
               {errors.phone_no && (
-                <small className="text-red-500">
+                <small className="text-red-500" id="Phone_Number_error">
                   {errors.phone_no.message}
                 </small>
               )}
@@ -201,7 +237,8 @@ const AccessibilityAudits = () => {
 
             <button
               type="submit"
-              className="bg-blue-600  sm:w-44 font-medium mt-2 border-blue-400 border hover:border rounded-xl p-2 text-white   text-[16px]"
+              className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]
+              "
             >
               Submit
             </button>

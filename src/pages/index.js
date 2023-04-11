@@ -77,6 +77,7 @@ const dataQuery = graphql`
                     label
                     page
                     CTA
+                    hidden
                   }
                 }
               }
