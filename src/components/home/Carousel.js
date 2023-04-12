@@ -18,23 +18,20 @@ const CarouselItem = props => {
         // plugins={[autoplay.current]}
         previousControlLabel=" previous"
         nextControlLabel="Next"
+        previousControlIcon={
+          <div className="flex  items-center p-0.5">
+            <BsArrowLeftShort className=" md:text-[30px] sm:text-[16px] text-[16px]" />
+            <small className="p-0 align-top sm:text-[14px] text[12px] mb-1 sm:block hidden">
+              Prev
+            </small>
+          </div>
+        }
         nextControlIcon={
           <div className="flex items-center p-0.5  ">
             <small className="p-0 align-top sm:text-[14px] text[12px] mb-1 sm:block hidden">
               Next
             </small>
             <BsArrowRightShort className=" md:text-[30px] sm:text-[16px] text-[16px]" />
-          </div>
-        }
-        previousControlIcon={
-          <div className="flex  items-center p-0.5">
-            <BsArrowLeftShort className=" md:text-[30px] sm:text-[16px] text-[16px]" />
-            <small
-              className="p-0 align-top sm:text-[14px] text[12px] mb-1 sm:block hidden"
-              aria-label="3 next"
-            >
-              Prev
-            </small>
           </div>
         }
       >
@@ -53,7 +50,7 @@ const CarouselItem = props => {
                   {item.listItem.title}
                 </p>
 
-                <div>
+                <div tabIndex="1">
                   <Link
                     to={item.listItem.page}
                     aria-label={item.listItem.label}

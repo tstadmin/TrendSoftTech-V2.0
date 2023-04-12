@@ -39,7 +39,7 @@ const ContactInfo = props => {
           <Image src={props.data.addressimg} />
           <AdderssInfo>
             <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">
-              {props.data.addressOne}{" "}
+              {props.data.addressOne}
             </p>
             <Link
               aria-label="Adderss 1: MIG-37, K P H B Phase 1, Kukatpally, Hyderabad, Telangana 500072"
@@ -52,7 +52,7 @@ const ContactInfo = props => {
               {props.data.addressTwo}{" "}
             </p>
             <Link
-              aria-label="Adderss 2: #301-302 3rd Floor, NRT Techpark, Atmakur Rural, Andhra Pradesh 522503"
+              aria-label="Adderss 2: Unit No: 301-302 NRT Tech Park Mangalagiri Bypass Amaravati-522503"
               to="https://goo.gl/maps/rFv1H2FcnZuejCss6"
               target="_blank"
             >
@@ -65,7 +65,6 @@ const ContactInfo = props => {
         <div>
           <div>
             <p className="text-center text-white p-3 rounded-md  bg-blue-500">
-              {" "}
               Hyderabad
             </p>
           </div>

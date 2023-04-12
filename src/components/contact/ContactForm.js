@@ -60,11 +60,8 @@ const ContactForm = () => {
         <h2 className="text-xl text-[#0b6ddc] font-semibold">Contact Form</h2>
         <small className="text-red-500 text-[14px]">* Fields required</small>
       </div>
-      <form
-        className="grid    gap-3 sm:space-y-0"
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <div className="xl:w-[600px] w-full ">
+      <form className="grid  gap-3 " onSubmit={handleSubmit(onSubmit)}>
+        <div className="2xl:w-[600px] w-full ">
           <label for="Name">
             Name <span className="text-red-500">*</span>
           </label>
@@ -95,7 +92,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="xl:w-[600px] w-full">
+        <div className="2xl:w-[600px] w-full">
           <label for="Phone_Number">
             Phone Number <span className="text-red-500">*</span>
           </label>
@@ -136,7 +133,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="xl:w-[600px] w-full">
+        <div className="2xl:w-[600px] w-full">
           <label for="Email">
             Email<span className="text-red-500">*</span>
           </label>
@@ -168,7 +165,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="xl:w-[600px] w-full">
+        <div className="2xl:w-[600px] w-full">
           <label for="Website">
             Website<span className="text-red-500">*</span>
           </label>
@@ -200,7 +197,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="xl:w-[600px] w-full">
+        <div className="2xl:w-[600px] w-full">
           <label for="Company_Name">
             Company Name <span className="text-red-500">*</span>
           </label>
@@ -211,7 +208,7 @@ const ContactForm = () => {
             name="Company_Name"
             placeholder="Enter your Company name"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
-              errors.company_name ? "border-red-500" : ""
+              errors.websits ? "border-red-500" : ""
             }`}
             {...register("company_name", {
               required: "Company Name is required",
@@ -227,7 +224,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div>
+        <div className="2xl:w-[600px] w-full ">
           <label for="Inquiries">
             Inquiries <span className="text-red-500">*</span>
           </label>
@@ -236,7 +233,7 @@ const ContactForm = () => {
             aria-describedby="Inquiries_error"
             id="Inquiries"
             name="Inquiries"
-            className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black/70 p-2 w-full  focus:border-blue-600  bg-transparent outline-none border-b-2 text-base ${
               errors.inquiries ? "border-red-500" : ""
             }`}
             {...register("inquiries", {
@@ -260,7 +257,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="xl:w-[600px] w-full">
+        <div className="2xl:w-[600px] w-full">
           <label for="Message">
             Message <span className="text-red-500">*</span>
           </label>
@@ -270,7 +267,7 @@ const ContactForm = () => {
             id="Message"
             name="Message"
             placeholder="Enter your Message Here"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black p-2  w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.Message ? "border-red-500" : ""
             }`}
             {...register("message", {

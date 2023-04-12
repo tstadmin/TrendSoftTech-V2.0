@@ -46,7 +46,7 @@ const Footer = props => {
                     rel="noreferrer"
                     className="focus:text-white focus:rounded-full  "
                   >
-                    <div className="text-blue-500 text-center hover:text-white  shadow-black/50 border-black/10  bg-white focus:bg-blue-600 hover:cursor-pointer hover:bg-blue-600  rounded-full w-9 h-9 p-2 shadow-xl">
+                    <div className="text-blue-500 text-center hover:text-white  shadow-black/50 border-black/10  bg-white focus:bg-blue-600 hover:cursor-pointer hover:bg-blue-600  rounded-full w-9 h-9 p-[10px] shadow-xl">
                       <FaFacebookF />
                     </div>
                   </a>
@@ -87,7 +87,7 @@ const Footer = props => {
           <FooterTitle id={props.data.itTitle}>
             {props.data.itTitle}
           </FooterTitle>
-          <ul children=" space-y-3" aria-labelledby={props.data.itTitle}>
+          <ul className="space-y-1" aria-labelledby={props.data.itTitle}>
             {props.data.itService?.map((item, idx) => (
               <li key={item.listItem.id}>
                 <Link to={item.listItem.page}>{item.listItem.title}</Link>

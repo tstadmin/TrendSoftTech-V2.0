@@ -25,7 +25,7 @@ const Portfolios = props => {
             />
 
             <div className="grid justify-center  lg:w-72 w-52 h-auto space-y-3 bg-white shadow-xl lg:p-5 p-2   md:right-0 540Screen:right-[25%] sm:right-[32%]  340Screen:right-[20%] right-12 absolute md:top-32  top-56  ">
-              <h4 className="lg:text-lg  text-xs">{item.listItem.title}</h4>
+              <h3 className="lg:text-lg  text-xs">{item.listItem.title}</h3>
               <span className="lg:text-lg  text-xs">{item.listItem.about}</span>
               <Link
                 aria-label={item.listItem.label}

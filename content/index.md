@@ -186,7 +186,7 @@ home:
           subTitle: 
             - listItem:
                 id: 1
-                title: "Careers Us"
+                title: "Careers "
                 page: "/careers/" 
       - listItem:
           id: 8
@@ -201,12 +201,12 @@ home:
       - listItem:
           id: 9
           title: "Contact"
-          name: "Contact"
+          name: "Contact "
           page: ""     
           subTitle: 
             - listItem:
                 id: 1
-                title: "Contact"
+                title: "Contact Us"
                 page: "/contact/"     
     #   - listItem:
     #       id: 10
@@ -303,7 +303,7 @@ home:
         img: "/img/icons/AgileProcess.svg"
         alt: ""
         title: "Agile Process"
-        description: "We develop enterprise-grade applications employing Agile and Scrum that enables the delivery of  high-priority feature first."
+        description: "We develop enterprise - grade applications employing Agile and Scrum that enables the delivery of  high - priority feature first."
     - card:
         id: 2
         img: "/img/icons/FlexibilityinTeamScaling.svg"
@@ -315,7 +315,7 @@ home:
         img: "/img/icons/BestSecurityPractices.svg"
         alt: ""
         title: "Best Security Practices"
-        description: "   High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices.  "
+        description: " High-level security is not an option for enterprise - grade apps - it's a must. We comply with the highest security practices.  "
   aboutOurCompany:
     img: "/img/HomeImages/aboutUS.svg"
     header: "About Our Company"
