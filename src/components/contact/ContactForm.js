@@ -42,9 +42,8 @@ const ContactForm = () => {
   const onSubmit = data => {
     contactForm(data)
       .then(res => {
-        window.location.reload()
-        console.log(res)
         alert("Submit Successfully")
+        window.location.reload()
         reset()
       })
       .catch(err => {
@@ -58,7 +57,7 @@ const ContactForm = () => {
   return (
     <div className="space-y-5 ">
       <div className="flex justify-between">
-        <p className="text-xl text-[#0b6ddc] font-semibold">Contact Form</p>
+        <h2 className="text-xl text-[#0b6ddc] font-semibold">Contact Form</h2>
         <small className="text-red-500 text-[14px]">* Fields required</small>
       </div>
       <form
@@ -102,10 +101,10 @@ const ContactForm = () => {
           </label>
           <input
             placeholder="Phone Number"
-            aria-describedby="Phone_Number_error"
-            id="Phone_Number"
             name="Phone_Number"
             type="text"
+            id="Phone_Number"
+            aria-describedby="Phone_Number_error"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.phone_no ? "border-red-500" : ""
             }`}
@@ -146,12 +145,12 @@ const ContactForm = () => {
             aria-describedby="Email_error"
             id="Email"
             name="Email"
-            placeholder="email"
+            placeholder="Email"
             className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.email ? "border-red-500" : ""
             }`}
             {...register("email", {
-              required: "email is required",
+              required: "Email is required",
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                 message: "Please enter valid email address",
@@ -183,11 +182,11 @@ const ContactForm = () => {
               errors.websits ? "border-red-500" : ""
             }`}
             {...register("websits", {
-              required: " Website URl is required",
+              required: " Website URL is required",
               pattern: {
                 value:
                   /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/,
-                message: "Please enter Valid URl",
+                message: "Please enter Valid URL",
               },
             })}
             onKeyUp={() => {
@@ -237,11 +236,11 @@ const ContactForm = () => {
             aria-describedby="Inquiries_error"
             id="Inquiries"
             name="Inquiries"
-            className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base   ${
+            className={`border-black/70 p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
               errors.inquiries ? "border-red-500" : ""
             }`}
             {...register("inquiries", {
-              required: "Select Inquries is required",
+              required: "Select Inquiries is required",
             })}
             onKeyUp={() => {
               trigger("inquiries")
@@ -275,7 +274,7 @@ const ContactForm = () => {
               errors.Message ? "border-red-500" : ""
             }`}
             {...register("message", {
-              required: "message is required",
+              required: "Message is required",
             })}
             onKeyUp={() => {
               trigger("message")
@@ -293,7 +292,6 @@ const ContactForm = () => {
           </GoogleReCaptchaProvider>
         </div> */}
         <button
-          onClick={doRefresh}
           type="submit"
           className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"
         >

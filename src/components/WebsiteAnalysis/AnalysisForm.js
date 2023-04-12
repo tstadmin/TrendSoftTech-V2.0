@@ -22,7 +22,6 @@ const DocAnalysis = () => {
       )
       .then(res => {
         if (res.status === 200) {
-          reset()
           alert("Sumbit Successfully")
           console.log("Sumbit Successfully")
         }

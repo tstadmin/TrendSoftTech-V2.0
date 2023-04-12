@@ -28,8 +28,8 @@ const AccessibilityAudits = () => {
   const onSubmit = data => {
     webAccessbilityForm(data)
       .then(res => {
-        // window.location.reload()
-        // alert("Submit Successfully")
+        alert("Submit Successfully")
+        window.location.reload()
       })
       .catch(err => {
         window.location.reload(true)
@@ -50,9 +50,9 @@ const AccessibilityAudits = () => {
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="flex justify-between">
-              <label className="text-xl text-[#0b6ddc] font-semibold">
+              <h2 className="text-xl text-[#0b6ddc] font-semibold">
                 Contact Here
-              </label>
+              </h2>
               <small className="text-red-500 text-[14px]">
                 * Fields required
               </small>
@@ -165,7 +165,7 @@ const AccessibilityAudits = () => {
                 }`}
                 placeholder="email"
                 {...register("email", {
-                  required: "email is required",
+                  required: "Email is required",
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                     message: "Please enter valid  email address",

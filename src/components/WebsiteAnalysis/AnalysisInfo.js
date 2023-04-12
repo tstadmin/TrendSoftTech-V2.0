@@ -4,9 +4,9 @@ const AnalysisInfo = () => {
   return (
     <div className="space-y-16 p-5">
       <div>
-        <p className="text-white font-semibold mt-5  md:text-xl sm:text-lg text-base ">
+        <h2 className="text-white font-semibold mt-5  md:text-xl sm:text-lg text-base ">
           How do you know if your website is WCAG compliant?
-        </p>
+        </h2>
       </div>
       <div className="space-y-4 text-[18px]">
         <p className="text-white ">

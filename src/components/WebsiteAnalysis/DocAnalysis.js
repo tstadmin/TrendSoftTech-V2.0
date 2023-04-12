@@ -79,9 +79,9 @@ const DocAnalysis = () => {
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="flex justify-between">
-              <p className="text-xl text-[#0b6ddc] font-semibold">
+              <h2 className="text-xl text-[#0b6ddc] font-semibold">
                 Contact Here
-              </p>
+              </h2>
               <small className="text-red-500 text-[14px]">
                 <span className="text-red-500">*</span> Fields required
               </small>
@@ -160,7 +160,7 @@ const DocAnalysis = () => {
                   errors.email ? "border-red-500" : ""
                 }`}
                 {...register("email", {
-                  required: "email is required",
+                  required: "Email is required",
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                     message: "Please enter valid email address",
@@ -225,7 +225,7 @@ const DocAnalysis = () => {
                 type="file"
                 name="file-upload"
                 id="file-upload"
-                accept=".doc,.docx,.pdf"
+                accept=".pdf or .xlsx or .docx "
                 aria-describedby="file-upload_error"
                 className="block w-full p-3  border-black border-b-2
                  focus:border-b-2 focus:border-blue-600 focus:outline-none"

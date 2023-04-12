@@ -94,6 +94,8 @@ const layoutQuery = graphql`
                   services
                   award
                   awardPage
+                  uiuxDesignLink
+                  uiuxDesign
                   itServices {
                     listItem {
                       id

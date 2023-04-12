@@ -76,6 +76,7 @@ const dataQuery = graphql`
                     img
                     label
                     page
+                    slidescount
                     CTA
                     hidden
                   }

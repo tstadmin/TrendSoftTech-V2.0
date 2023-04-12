@@ -106,11 +106,11 @@ const CareersForm = () => {
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="items-start flex justify-between">
-              <p className="md:text-[29px] sm:text-[20px] 340Screen:text-[18px] text-[16px] font-semibold text-[#0b6ddc]">
+              <h3 className="md:text-[29px] sm:text-[20px] 340Screen:text-[18px] text-[16px] font-semibold text-[#0b6ddc]">
                 Apply for this position
-              </p>
+              </h3>
               <p className="text-red-500  sm:text-[16px] text-[14px]">
-                * Field required
+                * Fields required
               </p>
             </div>
             <div>
@@ -217,6 +217,34 @@ const CareersForm = () => {
                 </small>
               )}
             </div>
+            <div>
+              <label for="file-upload" class="button">
+                Upload Resume / CV (pdf or docx ){" "}
+                <span className="text-red-500">*</span>
+              </label>
+
+              <input
+                type="file"
+                name="file-upload"
+                id="file-upload"
+                accept=".docx,.pdf"
+                aria-describedby="file-upload_error"
+                className="block w-full p-3  border-black border-b-2
+                 focus:border-b-2 focus:border-blue-600 focus:outline-none"
+                {...register("fileInput", {
+                  required: ".pdf  or .docx  is required",
+                })}
+                onKeyUp={() => {
+                  trigger("fileInput")
+                }}
+              />
+
+              {errors.fileInput && (
+                <small className="text-red-500" id="file-upload_error">
+                  {errors.fileInput.message}
+                </small>
+              )}
+            </div>
 
             <div>
               <label className="text-lg" for="Select_position">
@@ -250,31 +278,6 @@ const CareersForm = () => {
               )}
             </div>
 
-            <div>
-              <label for="file-upload" class="button">
-                Upload Resume / CV <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="file"
-                name="file-upload"
-                id="file-upload"
-                accept=".doc,.docx,.pdf"
-                aria-describedby="file-upload_error"
-                className="block w-full p-3  border-black border-b-2
-                 focus:border-b-2 focus:border-blue-600 focus:outline-none"
-                {...register("fileInput", {
-                  required: "File is required",
-                })}
-                onKeyUp={() => {
-                  trigger("fileInput")
-                }}
-              />
-              {errors.fileInput && (
-                <small className="text-red-500" id="file-upload_error">
-                  {errors.fileInput.message}
-                </small>
-              )}
-            </div>
             {/* <div>
               <div>
                 <GoogleReCaptchaProvider reCaptchaKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
@@ -288,8 +291,7 @@ const CareersForm = () => {
             </div> */}
             <button
               type="submit"
-              className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]
-               "
+              className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"
             >
               Submit
             </button>

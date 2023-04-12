@@ -14,15 +14,28 @@ export default function Header(props) {
   const NavBar = tw.div`flex items-center space-x-14 sticky top-6 z-10`
 
   const [opened, setOpened] = useState(false)
+  const timeOutId = null
+
   // const ref = useClickOutside(() => setOpened(false))
+
   const handleNav = () => {
     setOpened(!opened)
   }
 
-  const handleKeyPress = event => {
-    if (event.key === "Enter") {
-      setOpened(true)
-    }
+  const onBlurHandler = e => {
+    setTimeout(() => {
+      setOpened(false)
+    })
+  }
+
+  // const handleKeyPress = event => {
+  //   if (event.key === "Enter") {
+  //     setOpened(true)
+  //   }
+  // }
+
+  const onFocusHandler = () => {
+    clearTimeout(timeOutId)
   }
 
   return (
@@ -47,7 +60,7 @@ export default function Header(props) {
       {/* menu items */}
 
       <div>
-        <div className="flex  ">
+        <div className="flex">
           <div
             onClick={handleNav}
             className=" block sm:text-2xl text-md  hover:text-blue-400 pr-8 "
@@ -55,8 +68,11 @@ export default function Header(props) {
             {opened ? (
               <button
                 id="navbarDropdown"
-                className="cursor-pointer text-[#0084FF]  "
+                className="cursor-pointer text-[#0084FF] ml-5 "
                 aria-expanded="true"
+                aria-haspopup="true"
+
+                // aria-expanded={opened}
               >
                 <span
                   data-bs-toggle="collapse"
@@ -79,12 +95,29 @@ export default function Header(props) {
               </button>
             )}
           </div>
+
+          {/* <div className="mr-0">
+            {!opened ? (
+              <button
+                aria-labelledby="navbarDropdown"
+                className="cursor-pointer text-[#0084FF] "
+                aria-expanded="false"
+                onClick={() => setOpened(!opened)}
+              >
+                <span className="sr-only">menu </span>
+                <HiBars3BottomLeft className="md:text-3xl sm:text-xl text-lg" />
+              </button>
+            ) : (
+              ""
+            )}
+          </div> */}
+
           {opened && (
             <div
               // ref={ref}
               className={
                 opened
-                  ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[115px]  340Screen:top-[100px] 240Screen:top-[115px] top-[100px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
+                  ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[115px]  340Screen:top-[100px] 240Screen:top-[95px] top-[100px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
                   : "fixed hidden "
               }
             >
@@ -280,13 +313,28 @@ export default function Header(props) {
 
                 <li className="text-white text-sm">
                   <Link
+                    to={props.data.mobilelist.uiuxDesignLink}
+                    className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                  >
+                    {props.data.mobilelist.uiuxDesign}
+                  </Link>
+                </li>
+                <li className="text-white text-sm">
+                  <Link
                     to={props.data.mobilelist.digitalPage}
                     className="hover:text-[#ffe793] focus:text-[#ffe793]"
                   >
                     {props.data.mobilelist.digital}
                   </Link>
                 </li>
-
+                <li className="text-sm text-white">
+                  <Link
+                    to={props.data.mobilelist.awardPage}
+                    className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                  >
+                    {props.data.mobilelist.award}
+                  </Link>
+                </li>
                 <li className="text-sm text-white">
                   <Link
                     to={props.data.mobilelist.careersPage}
@@ -304,23 +352,33 @@ export default function Header(props) {
                     {props.data.mobilelist.contact}
                   </Link>
                 </li>
-                <li className="text-sm text-white">
-                  <Link
-                    to={props.data.mobilelist.awardPage}
-                    className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                  >
-                    {props.data.mobilelist.award}
-                  </Link>
-                </li>
               </ul>
             </div>
           )}
-          <p
-          // onClick={() => setOpened(false)}
-          // onFocus={handleKeyPress}
-          // onKeyPress={handleKeyPress}
-          // tabIndex={0}
-          >
+          {/* <div className="mr-10">
+            {opened ? (
+              <button
+                id="navbarDropdown"
+                className="cursor-pointer text-[#0084FF] ml-5  "
+                aria-expanded="true"
+                aria-haspopup="true"
+                onClick={() => setOpened(!opened)}
+              >
+                <span
+                  data-bs-toggle="collapse"
+                  aria-expanded="true"
+                  className="sr-only"
+                >
+                  expanded
+                </span>
+
+                <RxCross2 className="  md:text-3xl sm:text-xl text-lg" />
+              </button>
+            ) : (
+              ""
+            )}
+          </div> */}
+          <div>
             <Link
               to="/"
               aria-label="Home "
@@ -328,7 +386,7 @@ export default function Header(props) {
             >
               <FaHome className="md:text-3xl sm:text-xl text-lg" />
             </Link>
-          </p>
+          </div>
         </div>
       </div>
 

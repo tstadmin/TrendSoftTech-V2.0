@@ -8,6 +8,7 @@ home:
             title: "We Increase your Business Success"
             label: "Contact"
             page: "/contact/"
+            slidescount: "slide 1 of 9"
             CTA: "Contact" 
             hidden: true 
       - listItem :
@@ -16,6 +17,7 @@ home:
             title: "WEB DEVELOPMENT"
             page: "/services/webDevelopment/"
             label: "Learn More  WEB DEVELOPMENT "
+            slidescount: "slide 2 of 9"
             CTA: "Learn More"  
             hidden: false
       - listItem :
@@ -24,6 +26,7 @@ home:
             title: "ECOMMERCE DEVELOPMENT"
             page: "/services/ecommerceDevelopment/"
             label: "Learn More  ECOMMERCE DEVELOPMENT "
+            slidescount: "slide 3 of 9"
             CTA: "Learn More" 
             hidden: false
       - listItem :
@@ -32,6 +35,7 @@ home:
             title: "MOBILE DEVELOPMENT"
             label: "Learn More MOBILE DEVELOPMENT"
             page: "/services/mobileDevelopment/"
+            slidescount: "slide 4 of 9"
             CTA: "Learn More" 
             hidden: false
       - listItem :
@@ -40,6 +44,7 @@ home:
             title: "PRODUCT DEVELOPMENT"
             label: "Learn More PRODUCT DEVELOPMENT "
             page: "/services/productDevelopment/"
+            slidescount: "slide 5 of 9"
             CTA: "Learn More" 
             hidden: false
       - listItem :
@@ -48,6 +53,7 @@ home:
             title: "UI / UX DESIGN"
             label: "Learn More UI / UX DESIGN"
             page: "/services/uiUXDesign/"
+            slidescount: "slide 6 of 9"
             CTA: "Learn More" 
             hidden: false
       - listItem :
@@ -56,6 +62,7 @@ home:
             title: "MANUAL TESTING"
             label: "Learn More MANUAL TESTING"
             page: "/services/testing/"
+            slidescount: "slide 7 of 9"
             CTA: "Learn More" 
             hidden: false
       - listItem :
@@ -64,6 +71,7 @@ home:
             title: "AUTOMATION TESTING"
             label: "Learn More  AUTOMATION TESTING"
             page: "/services/testing/"
+            slidescount: "slide 8 of 9"
             CTA: "Learn More"  
             hidden: false
       - listItem :
@@ -72,6 +80,7 @@ home:
             title: "DIGITAL MARKETING"
             label: "Learn More DIGITAL MARKETING "
             page: "/services/digitalMarketing/"
+            slidescount: "slide 9 of 9"
             CTA: "Learn More" 
             hidden: false                               
   navbar:
@@ -177,7 +186,7 @@ home:
           subTitle: 
             - listItem:
                 id: 1
-                title: "Careers"
+                title: "Careers Us"
                 page: "/careers/" 
       - listItem:
           id: 8
@@ -217,6 +226,8 @@ home:
           servicesPage: "/services/"
           award: "Certifications"
           awardPage: "/awards/"
+          uiuxDesign: "UI / UX Design"
+          uiuxDesignLink: "/services/uiUXDesign/"
           itServices:
             - listItem:
                 id: 1
@@ -304,7 +315,7 @@ home:
         img: "/img/icons/BestSecurityPractices.svg"
         alt: ""
         title: "Best Security Practices"
-        description: "High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices."
+        description: "   High-level security is not an option for enterprise-grade apps - it's a must. We comply with the highest security practices.  "
   aboutOurCompany:
     img: "/img/HomeImages/aboutUS.svg"
     header: "About Our Company"
