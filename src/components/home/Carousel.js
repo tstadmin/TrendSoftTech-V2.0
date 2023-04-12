@@ -50,7 +50,7 @@ const CarouselItem = props => {
                   {item.listItem.title}
                 </p>
 
-                <div tabIndex="1">
+                <div>
                   <Link
                     to={item.listItem.page}
                     aria-label={item.listItem.label}
