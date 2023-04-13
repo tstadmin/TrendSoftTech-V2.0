@@ -413,7 +413,7 @@ home:
       - listItem:
           id: 4
           img: "/img/Clients/Kumar_pamps.png"
-          label: "Kumar pamps"
+          label: "Kumar pumps"
       - listItem:
           id: 5
           img: "/img/Clients/Nebula_Group.png"

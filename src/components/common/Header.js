@@ -336,265 +336,269 @@ export default function Header(props) {
               {/* </ul> */}
             </div>
           )}
-          <div>
-            <Popover className="relative">
-              <Popover.Button className=" block sm:text-2xl text-md  hover:text-blue-400 pr-8">
-                <div
-                  aria-labelledby="navbarDropdown"
-                  className="cursor-pointer text-[#0084FF] "
-                  aria-expanded="false"
-                >
-                  <span className="sr-only">menu </span>
-                  <HiBars3BottomLeft className="md:text-3xl sm:text-xl text-lg" />
-                </div>
-              </Popover.Button>
-
-              <Popover.Panel className="absolute z-10  bg-blue-600">
-                <div className="fixed  overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[100px]  340Screen:top-[100px] 240Screen:top-[95px] top-[100px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[70vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6 ">
-                  <div className="xl:flex 1920Screen:pl-52 2xl:pl-28 xl:pl-14 lg:pl-16 md:pl-18 sm:pl-14 pl-8 1920Screen:space-x-18 2xl:space-x-8 xl:space-x-4  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
-                    {props.data.list.map((item, idx) => (
-                      <div
-                        key={item.listItem.id}
-                        className="mt-6 hidden 540Screen:block"
-                      >
-                        <h2
-                          className=" text-[#FFD333]  xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium"
-                          id={item.listItem.name}
-                        >
-                          {item.listItem.title}
-                        </h2>
-                        <ul
-                          className=" space-y-2 mt-4  font-normal sm:mb-10 "
-                          aria-labelledby={item.listItem.name}
-                        >
-                          {item.listItem.subTitle?.map((sub, idx) => (
-                            <li
-                              onClick={() => setOpened(false)}
-                              className=" text-[#ebebeb] font-medium  1920Screen:text-[18px]  text-[16px]   hover:underline-[#ffe793] "
-                              key={sub.listItem.id}
-                              aria-label={sub.listItem.title}
-                            >
-                              <Link
-                                to={sub.listItem.page}
-                                className="hover:text-[#ffe793] focus:text-[#ffe793]  hover:underline focus:underline hover:decoration-[#ffe793]  focus:decoration-[#ffe793] "
-                              >
-                                {sub.listItem.title}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
+          <ul className="flex">
+            <li>
+              <Popover className="relative">
+                <Popover.Button className=" block sm:text-2xl text-md  hover:text-blue-400 pr-8">
+                  <div
+                    aria-labelledby="navbarDropdown"
+                    className="cursor-pointer text-[#0084FF] "
+                    aria-expanded="false"
+                  >
+                    <span className="sr-only">menu </span>
+                    <HiBars3BottomLeft className="md:text-3xl sm:text-xl text-lg" />
                   </div>
+                </Popover.Button>
 
-                  {/*  Mobile Menu */}
-
-                  <ul className="mobile  font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-28  ">
-                    <li className="text-sm text-white ">
-                      <Link
-                        to={props.data.mobilelist.homePage}
-                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                      >
-                        {props.data.mobilelist.home}
-                      </Link>
-                    </li>
-
-                    <li className="text-sm text-white">
-                      <Link
-                        to={props.data.mobilelist.aboutPage}
-                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                      >
-                        {props.data.mobilelist.about}
-                      </Link>
-                    </li>
-
-                    {/* IT Services */}
-                    <Disclosure>
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button className="flex w-full">
-                            <li className="text-sm text-white">
-                              {props.data.mobilelist.services}
-                            </li>
-
-                            <IoIosArrowDown
-                              className={`${
-                                open ? "rotate-180 transform" : ""
-                              } h-4 w-4 text-white my-[1%] ml-4`}
-                            />
-                          </Disclosure.Button>
-
-                          <ul>
-                            <Disclosure.Panel className="px-4 text-sm  space-y-2 ">
-                              {props.data.mobilelist.itServices.map(
-                                (i, idx) => (
-                                  <li
-                                    className="text-white"
-                                    key={i.listItem.id}
-                                  >
-                                    <Link
-                                      to={i.listItem.page}
-                                      className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                                    >
-                                      {i.listItem.title}
-                                    </Link>
-                                  </li>
-                                )
-                              )}
-                            </Disclosure.Panel>
-                          </ul>
-                        </>
-                      )}
-                    </Disclosure>
-                    {/* Testing */}
-                    <Disclosure>
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button className="flex w-full">
-                            <li className="text-white text-sm ">
-                              {props.data.mobilelist.test}
-                            </li>
-
-                            <IoIosArrowDown
-                              className={`${
-                                open ? "rotate-180 transform" : ""
-                              } h-4 w-4 text-white my-[1%] ml-4 `}
-                            />
-                          </Disclosure.Button>
-                          <Disclosure.Panel className="px-4 space-y-1">
-                            {props.data.mobilelist.subTest.map((i, idx) => (
-                              <li className="text-white" key={i.listItem.id}>
+                <Popover.Panel className="absolute z-10  bg-blue-600">
+                  <div className="fixed  overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[100px]  340Screen:top-[100px] 240Screen:top-[95px] top-[100px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[70vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6 ">
+                    <div className="xl:flex 1920Screen:pl-52 2xl:pl-28 xl:pl-14 lg:pl-16 md:pl-18 sm:pl-14 pl-8 1920Screen:space-x-18 2xl:space-x-8 xl:space-x-4  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
+                      {props.data.list.map((item, idx) => (
+                        <div
+                          key={item.listItem.id}
+                          className="mt-6 hidden 540Screen:block"
+                        >
+                          <h2
+                            className=" text-[#FFD333]  xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium"
+                            id={item.listItem.name}
+                          >
+                            {item.listItem.title}
+                          </h2>
+                          <ul
+                            className=" space-y-2 mt-4  font-normal sm:mb-10 "
+                            aria-labelledby={item.listItem.name}
+                          >
+                            {item.listItem.subTitle?.map((sub, idx) => (
+                              <li
+                                onClick={() => setOpened(false)}
+                                className=" text-[#ebebeb] font-medium  1920Screen:text-[18px]  text-[16px]   hover:underline-[#ffe793] "
+                                key={sub.listItem.id}
+                                aria-label={sub.listItem.title}
+                              >
                                 <Link
-                                  to={i.listItem.page}
-                                  className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                                  to={sub.listItem.page}
+                                  className="hover:text-[#ffe793] focus:text-[#ffe793]  hover:underline focus:underline hover:decoration-[#ffe793]  focus:decoration-[#ffe793] "
                                 >
-                                  {i.listItem.title}
+                                  {sub.listItem.title}
                                 </Link>
                               </li>
                             ))}
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
-                    {/* Accessibility */}
-                    <Disclosure>
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button className="flex w-full">
-                            <li className="text-white text-sm  ">
-                              {props.data.mobilelist.accessibility}
-                            </li>
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
 
-                            <IoIosArrowDown
-                              className={`${
-                                open ? "rotate-180 transform" : ""
-                              } h-4 w-4 text-white my-[1%] ml-4 `}
-                            />
-                          </Disclosure.Button>
-                          <Disclosure.Panel className="px-4 text-white space-y-1">
-                            <Disclosure>
-                              {({ open }) => (
-                                <>
-                                  <Disclosure.Button className="flex w-full ">
-                                    <li className="text-white ">
-                                      {props.data.mobilelist.docaccessibility}
+                    {/*  Mobile Menu */}
+
+                    <ul className="mobile  font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-28  ">
+                      <li className="text-sm text-white ">
+                        <Link
+                          to={props.data.mobilelist.homePage}
+                          className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                        >
+                          {props.data.mobilelist.home}
+                        </Link>
+                      </li>
+
+                      <li className="text-sm text-white">
+                        <Link
+                          to={props.data.mobilelist.aboutPage}
+                          className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                        >
+                          {props.data.mobilelist.about}
+                        </Link>
+                      </li>
+
+                      {/* IT Services */}
+                      <Disclosure>
+                        {({ open }) => (
+                          <>
+                            <Disclosure.Button className="flex w-full">
+                              <li className="text-sm text-white">
+                                {props.data.mobilelist.services}
+                              </li>
+
+                              <IoIosArrowDown
+                                className={`${
+                                  open ? "rotate-180 transform" : ""
+                                } h-4 w-4 text-white my-[1%] ml-4`}
+                              />
+                            </Disclosure.Button>
+
+                            <ul>
+                              <Disclosure.Panel className="px-4 text-sm  space-y-2 ">
+                                {props.data.mobilelist.itServices.map(
+                                  (i, idx) => (
+                                    <li
+                                      className="text-white"
+                                      key={i.listItem.id}
+                                    >
+                                      <Link
+                                        to={i.listItem.page}
+                                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                                      >
+                                        {i.listItem.title}
+                                      </Link>
                                     </li>
+                                  )
+                                )}
+                              </Disclosure.Panel>
+                            </ul>
+                          </>
+                        )}
+                      </Disclosure>
+                      {/* Testing */}
+                      <Disclosure>
+                        {({ open }) => (
+                          <>
+                            <Disclosure.Button className="flex w-full">
+                              <li className="text-white text-sm ">
+                                {props.data.mobilelist.test}
+                              </li>
 
-                                    <IoIosArrowDown
-                                      className={`${
-                                        open ? "rotate-180 transform" : ""
-                                      } h-4 w-4 text-white my-[1%] ml-4`}
-                                    />
-                                  </Disclosure.Button>
-                                  <Disclosure.Panel className="px-4 py-2 text-sm space-y-1">
-                                    {props.data.mobilelist.subaccessibility.map(
-                                      (i, idx) => (
-                                        <li
-                                          className="text-white"
-                                          key={i.listItem.id}
-                                        >
-                                          {" "}
-                                          <Link
-                                            to={i.listItem.page}
-                                            className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                              <IoIosArrowDown
+                                className={`${
+                                  open ? "rotate-180 transform" : ""
+                                } h-4 w-4 text-white my-[1%] ml-4 `}
+                              />
+                            </Disclosure.Button>
+                            <Disclosure.Panel className="px-4 space-y-1">
+                              {props.data.mobilelist.subTest.map((i, idx) => (
+                                <li className="text-white" key={i.listItem.id}>
+                                  <Link
+                                    to={i.listItem.page}
+                                    className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                                  >
+                                    {i.listItem.title}
+                                  </Link>
+                                </li>
+                              ))}
+                            </Disclosure.Panel>
+                          </>
+                        )}
+                      </Disclosure>
+                      {/* Accessibility */}
+                      <Disclosure>
+                        {({ open }) => (
+                          <>
+                            <Disclosure.Button className="flex w-full">
+                              <li className="text-white text-sm  ">
+                                {props.data.mobilelist.accessibility}
+                              </li>
+
+                              <IoIosArrowDown
+                                className={`${
+                                  open ? "rotate-180 transform" : ""
+                                } h-4 w-4 text-white my-[1%] ml-4 `}
+                              />
+                            </Disclosure.Button>
+                            <Disclosure.Panel className="px-4 text-white space-y-1">
+                              <Disclosure>
+                                {({ open }) => (
+                                  <>
+                                    <Disclosure.Button className="flex w-full ">
+                                      <li className="text-white ">
+                                        {props.data.mobilelist.docaccessibility}
+                                      </li>
+
+                                      <IoIosArrowDown
+                                        className={`${
+                                          open ? "rotate-180 transform" : ""
+                                        } h-4 w-4 text-white my-[1%] ml-4`}
+                                      />
+                                    </Disclosure.Button>
+                                    <Disclosure.Panel className="px-4 py-2 text-sm space-y-1">
+                                      {props.data.mobilelist.subaccessibility.map(
+                                        (i, idx) => (
+                                          <li
+                                            className="text-white"
+                                            key={i.listItem.id}
                                           >
-                                            {i.listItem.title}
-                                          </Link>
-                                        </li>
-                                      )
-                                    )}
-                                  </Disclosure.Panel>
-                                </>
-                              )}
-                            </Disclosure>
+                                            {" "}
+                                            <Link
+                                              to={i.listItem.page}
+                                              className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                                            >
+                                              {i.listItem.title}
+                                            </Link>
+                                          </li>
+                                        )
+                                      )}
+                                    </Disclosure.Panel>
+                                  </>
+                                )}
+                              </Disclosure>
 
-                            <li className="text-white">
-                              <Link
-                                to={props.data.mobilelist.webaccessibilityPage}
-                                className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                              >
-                                {props.data.mobilelist.webaccessibility}
-                              </Link>
-                            </li>
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
-                    <li className="text-white text-sm">
-                      <Link
-                        to={props.data.mobilelist.uiuxDesignLink}
-                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                      >
-                        {props.data.mobilelist.uiuxDesign}
-                      </Link>
-                    </li>
-                    <li className="text-white text-sm">
-                      <Link
-                        to={props.data.mobilelist.digitalPage}
-                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                      >
-                        {props.data.mobilelist.digital}
-                      </Link>
-                    </li>
-                    <li className="text-sm text-white">
-                      <Link
-                        to={props.data.mobilelist.awardPage}
-                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                      >
-                        {props.data.mobilelist.award}
-                      </Link>
-                    </li>
-                    <li className="text-sm text-white">
-                      <Link
-                        to={props.data.mobilelist.careersPage}
-                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                      >
-                        {props.data.mobilelist.careers}
-                      </Link>
-                    </li>
-                    <li className="text-sm text-white">
-                      <Link
-                        to={props.data.mobilelist.contactPage}
-                        className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                      >
-                        {props.data.mobilelist.contact}
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <img src="/solutions.jpg" alt="" />
-              </Popover.Panel>
-            </Popover>
-          </div>
-          <div>
-            <Link
-              to="/"
-              aria-label="Home "
-              className="cursor-pointer text-[#0084FF]  "
-            >
-              <FaHome className="md:text-3xl sm:text-xl text-lg" />
-            </Link>
-          </div>
+                              <li className="text-white">
+                                <Link
+                                  to={
+                                    props.data.mobilelist.webaccessibilityPage
+                                  }
+                                  className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                                >
+                                  {props.data.mobilelist.webaccessibility}
+                                </Link>
+                              </li>
+                            </Disclosure.Panel>
+                          </>
+                        )}
+                      </Disclosure>
+                      <li className="text-white text-sm">
+                        <Link
+                          to={props.data.mobilelist.uiuxDesignLink}
+                          className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                        >
+                          {props.data.mobilelist.uiuxDesign}
+                        </Link>
+                      </li>
+                      <li className="text-white text-sm">
+                        <Link
+                          to={props.data.mobilelist.digitalPage}
+                          className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                        >
+                          {props.data.mobilelist.digital}
+                        </Link>
+                      </li>
+                      <li className="text-sm text-white">
+                        <Link
+                          to={props.data.mobilelist.awardPage}
+                          className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                        >
+                          {props.data.mobilelist.award}
+                        </Link>
+                      </li>
+                      <li className="text-sm text-white">
+                        <Link
+                          to={props.data.mobilelist.careersPage}
+                          className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                        >
+                          {props.data.mobilelist.careers}
+                        </Link>
+                      </li>
+                      <li className="text-sm text-white">
+                        <Link
+                          to={props.data.mobilelist.contactPage}
+                          className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                        >
+                          {props.data.mobilelist.contact}
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <img src="/solutions.jpg" alt="" />
+                </Popover.Panel>
+              </Popover>
+            </li>
+            <li>
+              <Link
+                to="/"
+                aria-label="Home "
+                className="cursor-pointer text-[#0084FF]  "
+              >
+                <FaHome className="md:text-3xl sm:text-xl text-lg" />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
 

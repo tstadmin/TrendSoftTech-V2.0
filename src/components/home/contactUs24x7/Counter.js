@@ -27,7 +27,7 @@ const Counter = () => {
           <CounterDescription>
             <Link
               to="/portfolio/"
-              aria-label="project Done"
+              aria-label="projects Done"
               className="underline"
             >
               Projects Done

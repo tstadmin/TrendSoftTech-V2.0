@@ -12,8 +12,8 @@ const Clients = props => {
             {/* <Link to="#" aria-label={i.listItem.label}> */}
             <img
               src={i.listItem.img}
-              alt=""
-              aria-label={i.listItem.label}
+              alt={i.listItem.label}
+              // aria-label={i.listItem.label}
               className="h-[60px] z-0  opacity-100 "
             />
             {/* </Link> */}
