@@ -1,5 +1,5 @@
 import axios from "axios"
-import React, { useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { useForm } from "react-hook-form"
 import AnalysisInfo from "../WebsiteAnalysis/AnalysisInfo"
 import "./Style.css"
@@ -19,6 +19,17 @@ const AccessibilityAudits = () => {
     formState: { errors },
   } = useForm()
 
+  const [fileUploaded, setFileUploaded] = useState(false)
+
+  useEffect(() => {
+    if (fileUploaded) {
+      const timeout = setTimeout(() => {
+        setFileUploaded(false)
+      }, 5000) // 5 seconds
+      return () => clearTimeout(timeout)
+    }
+  }, [fileUploaded])
+
   const RefCaptcha = useRef(null)
   const [refreshReCaptcha, setRefreshReCaptcha] = useState(false)
   function onChange(value) {
@@ -28,8 +39,13 @@ const AccessibilityAudits = () => {
   const onSubmit = data => {
     webAccessbilityForm(data)
       .then(res => {
-        alert("Submit Successfully")
-        window.location.reload()
+        if (res.status === 200) {
+          setFileUploaded(true)
+          setFileUploaded(false)
+          alert("Submit Successfully")
+
+          window.location.reload()
+        }
       })
       .catch(err => {
         window.location.reload(true)
@@ -66,7 +82,7 @@ const AccessibilityAudits = () => {
                 aria-describedby="url_error"
                 id="url"
                 name="url"
-                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
                   errors.website_url ? "border-red-500" : ""
                 }`}
                 placeholder="Website URL "
@@ -98,7 +114,7 @@ const AccessibilityAudits = () => {
                 id="First_Name"
                 name="First_Name"
                 aria-describedby="First_Name_error"
-                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
                   errors.first_name ? "border-red-500" : ""
                 }`}
                 placeholder="First Name"
@@ -129,7 +145,7 @@ const AccessibilityAudits = () => {
                 id="Last_Name"
                 name="Last_Name"
                 aria-describedby="Last_Name_error"
-                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
                   errors.last_name ? "border-red-500" : ""
                 }`}
                 placeholder="Last Name"
@@ -160,7 +176,7 @@ const AccessibilityAudits = () => {
                 id="Email"
                 name="Email"
                 aria-describedby="Email_error"
-                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
                   errors.email ? "border-red-500" : ""
                 }`}
                 placeholder="email"
@@ -191,7 +207,7 @@ const AccessibilityAudits = () => {
                 id="Phone_Number"
                 name="Phone_Number"
                 aria-describedby="Phone_Number_error"
-                className={`block w-full p-2  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
                 placeholder="Phone Number"
@@ -237,11 +253,14 @@ const AccessibilityAudits = () => {
 
             <button
               type="submit"
-              className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]
-              "
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+              className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"
             >
-              Submit
+              {fileUploaded ? "Please wait..." : "Submit"}
             </button>
+            <span class="sr-only">Please Wait</span>
           </form>
         </div>
       </div>

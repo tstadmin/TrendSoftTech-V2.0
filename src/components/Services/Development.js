@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import { PhasesTitle, Title } from "./ServicesStyled"
+import ContactForm from "../contact/ContactForm"
 
 const Development = props => {
   const MyBackgroundImage = "/img/services/tabsIcons/closeuphandwheel.svg"
@@ -58,6 +59,11 @@ const Development = props => {
           </div>
         ))}
       </div>
+      {/* <div className="grid justify-center p-6 bg-blue-50">
+        <div className="bg-white shadow-md rounded-md p-5">
+          <ContactForm />
+        </div>
+      </div> */}
     </div>
   )
 }

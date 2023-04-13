@@ -7,10 +7,10 @@ export const ContactHanding = styled.h1`
   ${tw`text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[#913A1D] text-[16px] mt-4 font-semibold  mt-10`}
 `
 export const ContactDiv = styled.div`
-  ${tw`2xl:flex  justify-evenly  px-8 md:mt-14 mt-5 sm:space-y-14 space-y-10 2xl:space-x-20 xl:space-y-10 lg:space-y-10 lg:space-x-2`}
+  ${tw`2xl:flex grid 2xl:justify-evenly  justify-center px-8 md:mt-14 mt-5 gap-10  `}
 `
 export const ContactInfoDiv = styled.ul`
-  ${tw`space-y-6 text-sm sm:text-lg sm:w-[700px] w-[100%]`}
+  ${tw`space-y-6 text-sm px-8 sm:text-lg sm:w-[700px] w-[100%]`}
 `
 export const EmailDiv = styled.div`
   ${tw`sm:flex  grid sm:space-x-4`}

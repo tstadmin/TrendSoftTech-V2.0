@@ -350,7 +350,7 @@ export default function Header(props) {
               </Popover.Button>
 
               <Popover.Panel className="absolute z-10  bg-blue-600">
-                <div className="fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[115px]  340Screen:top-[100px] 240Screen:top-[95px] top-[100px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6 ">
+                <div className="fixed  overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[100px]  340Screen:top-[100px] 240Screen:top-[95px] top-[100px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[70vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6 ">
                   <div className="xl:flex 1920Screen:pl-52 2xl:pl-28 xl:pl-14 lg:pl-16 md:pl-18 sm:pl-14 pl-8 1920Screen:space-x-18 2xl:space-x-8 xl:space-x-4  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
                     {props.data.list.map((item, idx) => (
                       <div
@@ -481,7 +481,7 @@ export default function Header(props) {
                       {({ open }) => (
                         <>
                           <Disclosure.Button className="flex w-full">
-                            <li className="text-white text-sm lowercase ">
+                            <li className="text-white text-sm  ">
                               {props.data.mobilelist.accessibility}
                             </li>
 
@@ -496,7 +496,7 @@ export default function Header(props) {
                               {({ open }) => (
                                 <>
                                   <Disclosure.Button className="flex w-full ">
-                                    <li className="text-white lowercase ">
+                                    <li className="text-white ">
                                       {props.data.mobilelist.docaccessibility}
                                     </li>
 

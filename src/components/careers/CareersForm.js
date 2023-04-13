@@ -59,6 +59,17 @@ const CareersForm = () => {
     console.log("Captcha value:", value)
   }
   const [image, setImage] = useState("")
+  const [fileUploaded, setFileUploaded] = useState(false)
+
+  useEffect(() => {
+    if (fileUploaded) {
+      const timeout = setTimeout(() => {
+        setFileUploaded(false)
+      }, 5000) // 5 seconds
+      return () => clearTimeout(timeout)
+    }
+  }, [fileUploaded])
+
   const onSubmit = async (data, event) => {
     console.log(data)
     careerForm(data)
@@ -72,7 +83,7 @@ const CareersForm = () => {
           const formData = new FormData()
           formData.append("image", file)
           console.log("formData", formData)
-
+          setFileUploaded(true)
           axios
             .post(
               `https://enquiries.trendsofttech.work/api/career-image-update/${res.data.id}`,
@@ -86,6 +97,7 @@ const CareersForm = () => {
             .then(res => {
               if (res.status === 200) {
                 console.log("image", res)
+                setFileUploaded(false)
                 alert("Submit Successfully")
                 window.location.reload()
               }
@@ -124,7 +136,7 @@ const CareersForm = () => {
                 name="Name"
                 type="text"
                 aria-describedby="Name_error"
-                className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.name ? "border-red-500" : ""
                 }`}
                 {...register("name", {
@@ -155,7 +167,7 @@ const CareersForm = () => {
                 name="Email"
                 placeholder="Email"
                 aria-describedby="Email_career_error"
-                className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.email ? "border-red-500" : ""
                 }`}
                 {...register("email", {
@@ -188,7 +200,7 @@ const CareersForm = () => {
                 placeholder="Phone Number"
                 aria-describedby="Phone_Number_error"
                 minLength={10}
-                className={`block w-full p-3  border-black border-b-2  focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-3  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
                 {...register("phone_no", {
@@ -219,7 +231,7 @@ const CareersForm = () => {
             </div>
             <div>
               <label for="file-upload" class="button">
-                Upload Resume / CV (pdf or docx ){" "}
+                Upload Resume / CV
                 <span className="text-red-500">*</span>
               </label>
 
@@ -227,12 +239,12 @@ const CareersForm = () => {
                 type="file"
                 name="file-upload"
                 id="file-upload"
-                accept=".docx,.pdf"
+                accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf"
                 aria-describedby="file-upload_error"
-                className="block w-full p-3  border-black border-b-2
-                 focus:border-b-2 focus:border-blue-600 focus:outline-none"
+                className="block w-full p-3  border-black border-2 
+                 focus:border-2 rounded-md focus:border-blue-600 focus:outline-none"
                 {...register("fileInput", {
-                  required: ".pdf  or .docx  is required",
+                  required: "Upload file  is required",
                 })}
                 onKeyUp={() => {
                   trigger("fileInput")
@@ -254,8 +266,8 @@ const CareersForm = () => {
                 name="Select_position"
                 id="Select_position"
                 aria-describedby="Select_position_error"
-                className="block w-full p-3  border-black border-b-2
-                focus:border-b-2 focus:border-blue-600 focus:outline-none"
+                className="block w-full p-3  border-black border-2
+                focus:border-2 rounded-md focus:border-blue-600 focus:outline-none"
                 {...register("position", {
                   required: "Position is required",
                 })}
@@ -291,10 +303,14 @@ const CareersForm = () => {
             </div> */}
             <button
               type="submit"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
               className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"
             >
-              Submit
+              {fileUploaded ? "Please wait..." : "Submit"}
             </button>
+            <span class="sr-only">Please Wait</span>
           </form>
         </div>
       </div>

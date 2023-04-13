@@ -9,13 +9,12 @@ import {
 } from "./Contactstyled"
 const ContactInfo = props => {
   return (
-    <div>
+    <div className="">
       <ContactInfoDiv>
         <Info>
           <Image src={props.data.emailimg} />
           <EmailInfo>
             <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">
-              {" "}
               {props.data.emailTitle}
             </p>
             <a
@@ -35,7 +34,7 @@ const ContactInfo = props => {
             </a>
           </EmailInfo>
         </Info>
-        <Info>
+        {/* <Info>
           <Image src={props.data.addressimg} />
           <AdderssInfo>
             <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">
@@ -49,7 +48,7 @@ const ContactInfo = props => {
               {props.data.addressOneInfo}
             </Link>
             <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">
-              {props.data.addressTwo}{" "}
+              {props.data.addressTwo}
             </p>
             <Link
               aria-label="Adderss 2: Unit No: 301-302 NRT Tech Park Mangalagiri Bypass Amaravati-522503"
@@ -59,9 +58,9 @@ const ContactInfo = props => {
               {props.data.addressTwoInfo}
             </Link>
           </AdderssInfo>
-        </Info>
+        </Info> */}
       </ContactInfoDiv>
-      <div className="md:flex 2xl:justify-between justify-around mt-10">
+      <div className="md:flex 2xl:justify-between  justify-around px-8 gap-7 mt-10">
         <div>
           <div>
             <p className="text-center text-white p-3 rounded-md  bg-blue-500">

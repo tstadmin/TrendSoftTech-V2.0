@@ -20,18 +20,18 @@ const CarouselItem = props => {
         nextControlLabel="Next"
         previousControlIcon={
           <div className="flex  items-center p-0.5">
-            <BsArrowLeftShort className=" md:text-[30px] sm:text-[16px] text-[16px]" />
-            <small className="p-0 align-top sm:text-[14px] text[12px] mb-1 sm:block hidden">
+            <BsArrowLeftShort className=" lg:text-[30px] sm:text-[16px] text-[16px]" />
+            <small className="p-0 align-top md:text-[14px] text[12px] mb-1 md:block hidden">
               Prev
             </small>
           </div>
         }
         nextControlIcon={
           <div className="flex items-center p-0.5  ">
-            <small className="p-0 align-top sm:text-[14px] text[12px] mb-1 sm:block hidden">
+            <small className="p-0 align-top md:text-[14px] text[12px] mb-1 md:block hidden">
               Next
             </small>
-            <BsArrowRightShort className=" md:text-[30px] sm:text-[16px] text-[16px]" />
+            <BsArrowRightShort className=" lg:text-[30px] sm:text-[16px] text-[16px]" />
           </div>
         }
       >

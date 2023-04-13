@@ -23,13 +23,13 @@ const EcommerceDevelopment = () => {
   return (
     <div>
       <Layout title={{ title: "Ecommerce Development" }}>
-        <Seo title="Ecommerce-Development" description="TrendSoftTech" />
+        <Seo title="E-commerce-Development" description="TrendSoftTech" />
         <BreadCrumb
-          title="Ecommerce Development"
+          title="E-commerce Development"
           img="/img/BreadCrumb/EcommerceDevelopment.svg"
         />
         <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
-          <Development data={ecommerc} title="Ecommerce Development" />
+          <Development data={ecommerc} title="E-commerce Development" />
         </ServicesLayout>
         <Portfolios data={data} />
       </Layout>

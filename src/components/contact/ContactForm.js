@@ -1,5 +1,5 @@
 import axios from "axios"
-import React, { useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 
 import { useForm } from "react-hook-form"
 
@@ -10,6 +10,7 @@ import {
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
 import { contactForm } from "../../services/api"
+import BounceLoader from "react-spinners/BounceLoader"
 
 const ContactForm = () => {
   const [captcha, setCaptcha] = useState(false)
@@ -39,15 +40,29 @@ const ContactForm = () => {
     },
   ]
 
+  const [fileUploaded, setFileUploaded] = useState(false)
+
+  useEffect(() => {
+    if (fileUploaded) {
+      const timeout = setTimeout(() => {
+        setFileUploaded(false)
+      }, 5000) // 5 seconds
+      return () => clearTimeout(timeout)
+    }
+  }, [fileUploaded])
+
   const onSubmit = data => {
     contactForm(data)
       .then(res => {
+        setFileUploaded(true)
+        setFileUploaded(false)
         alert("Submit Successfully")
         window.location.reload()
         reset()
       })
       .catch(err => {
         // console.log(err)
+
         alert("Submit Successfully")
         window.location.reload()
         console.log(err)
@@ -55,7 +70,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="space-y-5 ">
+    <div className="space-y-5 px-8">
       <div className="flex justify-between">
         <h2 className="text-xl text-[#0b6ddc] font-semibold">Contact Form</h2>
         <small className="text-red-500 text-[14px]">* Fields required</small>
@@ -71,7 +86,7 @@ const ContactForm = () => {
             aria-describedby="Name_error"
             id="Name"
             name="Name"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
               errors.name ? "border-red-500" : ""
             }`}
             {...register("name", {
@@ -102,7 +117,7 @@ const ContactForm = () => {
             type="text"
             id="Phone_Number"
             aria-describedby="Phone_Number_error"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
               errors.phone_no ? "border-red-500" : ""
             }`}
             {...register("phone_no", {
@@ -143,7 +158,7 @@ const ContactForm = () => {
             id="Email"
             name="Email"
             placeholder="Email"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
               errors.email ? "border-red-500" : ""
             }`}
             {...register("email", {
@@ -175,7 +190,7 @@ const ContactForm = () => {
             id="Website"
             name="Website"
             placeholder="Enter your Website"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
               errors.websits ? "border-red-500" : ""
             }`}
             {...register("websits", {
@@ -207,7 +222,7 @@ const ContactForm = () => {
             id="Company_Name"
             name="Company_Name"
             placeholder="Enter your Company name"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
               errors.websits ? "border-red-500" : ""
             }`}
             {...register("company_name", {
@@ -233,7 +248,7 @@ const ContactForm = () => {
             aria-describedby="Inquiries_error"
             id="Inquiries"
             name="Inquiries"
-            className={`border-black/70 p-2 w-full  focus:border-blue-600  bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black/70 p-2 w-full  focus:border-blue-600  bg-transparent outline-none border-2 rounded-md text-base ${
               errors.inquiries ? "border-red-500" : ""
             }`}
             {...register("inquiries", {
@@ -267,7 +282,7 @@ const ContactForm = () => {
             id="Message"
             name="Message"
             placeholder="Enter your Message Here"
-            className={`border-black p-2  w-full  focus:border-blue-600    bg-transparent outline-none border-b-2 text-base ${
+            className={`border-black p-2  w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
               errors.Message ? "border-red-500" : ""
             }`}
             {...register("message", {
@@ -290,10 +305,14 @@ const ContactForm = () => {
         </div> */}
         <button
           type="submit"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
           className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"
         >
-          Submit
+          {fileUploaded ? "Please wait..." : "Submit"}
         </button>
+        <span class="sr-only">Please Wait</span>
       </form>
     </div>
   )

@@ -42,6 +42,7 @@ const WebAccessibleData = graphql`
           frontmatter {
             webAccessibility {
               webAccessibility {
+                webaccessibility
                 analysisLink
                 description
                 list {

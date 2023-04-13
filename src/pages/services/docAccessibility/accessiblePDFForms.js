@@ -45,8 +45,15 @@ const accessibleFormQuery = graphql`
           frontmatter {
             accessible {
               accessiblePDFForms {
+                docaccessibility
                 analysisLink
                 description
+                accesibilityList {
+                  listItems {
+                    id
+                    description
+                  }
+                }
                 list {
                   listItems {
                     id

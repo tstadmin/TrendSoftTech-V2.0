@@ -1,5 +1,5 @@
 import axios from "axios"
-import React, { useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { useForm } from "react-hook-form"
 import AnalysisInfo from "../WebsiteAnalysis/AnalysisInfo"
 
@@ -32,6 +32,16 @@ const DocAnalysis = () => {
   }
 
   const [image, setImage] = useState("")
+  const [fileUploaded, setFileUploaded] = useState(false)
+
+  useEffect(() => {
+    if (fileUploaded) {
+      const timeout = setTimeout(() => {
+        setFileUploaded(false)
+      }, 5000) // 5 seconds
+      return () => clearTimeout(timeout)
+    }
+  }, [fileUploaded])
 
   const onSubmit = async (data, event) => {
     console.log(data)
@@ -42,7 +52,7 @@ const DocAnalysis = () => {
           const file = event.target.elements.fileInput.files[0]
           const formData = new FormData()
           formData.append("image", file)
-
+          setFileUploaded(true)
           axios
             .post(
               `https://enquiries.trendsofttech.work/api/doc-image-update/${res.data.id}`,
@@ -56,6 +66,7 @@ const DocAnalysis = () => {
             .then(res => {
               if (res.status === 200) {
                 console.log("image", res)
+                setFileUploaded(false)
                 alert("Submit Successfully")
                 window.location.reload()
               }
@@ -68,7 +79,7 @@ const DocAnalysis = () => {
   }
 
   return (
-    <div className="mt-10 1920Screen:px-48 2xl:px-24  px-8  ">
+    <div className="mt-10 1920Screen:px-48 2xl:px-24  ">
       <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-8 justify-center     rounded-xl  shadow-lg shadow-black/20 ">
         <div className="p-4 bg-[#0b6ddc] rounded-l-2xl">
           <AnalysisInfo />
@@ -96,7 +107,7 @@ const DocAnalysis = () => {
                 aria-describedby="First_Name_error"
                 id="First_Name"
                 name="First_Name"
-                className={`block w-full p-2 border-black/20 border-b focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2 border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.first_name ? "border-red-500" : ""
                 }`}
                 {...register("first_name", {
@@ -126,7 +137,7 @@ const DocAnalysis = () => {
                 aria-describedby="Last_Name_error"
                 id="Last_Name"
                 name="Last_Name"
-                className={`block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.last_name ? "border-red-500" : ""
                 }`}
                 {...register("last_name", {
@@ -156,7 +167,7 @@ const DocAnalysis = () => {
                 aria-describedby="Email_error"
                 id="Email"
                 name="Email"
-                className={`block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.email ? "border-red-500" : ""
                 }`}
                 {...register("email", {
@@ -186,7 +197,7 @@ const DocAnalysis = () => {
                 aria-describedby="Phone_Number_error"
                 id="Phone_Number"
                 name="Phone_Number"
-                className={`block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none ${
+                className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
                 {...register("phone_no", {
@@ -218,19 +229,24 @@ const DocAnalysis = () => {
             </div>
             <div>
               <label for="file-upload" class="button">
-                Upload PDF / Excel / Word
+                Upload file
                 <span className="text-red-500">*</span>
               </label>
               <input
                 type="file"
                 name="file-upload"
                 id="file-upload"
-                accept=".pdf or .xlsx or .docx "
+                accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf"
                 aria-describedby="file-upload_error"
-                className="block w-full p-3  border-black border-b-2
-                 focus:border-b-2 focus:border-blue-600 focus:outline-none"
+                className="block w-full p-3 border-black border-2 rounded-md
+                 focus:border-2 focus:border-blue-600 focus:outline-none"
                 {...register("fileInput", {
-                  required: ".pdf or .xlsx or .docx  is required",
+                  required: "Upload file  is required",
+
+                  pattern: {
+                    value: /(\.pdf|\.xlsx|\.docx)$/i,
+                    message: ".pdf or .xlsx or .docx  is required",
+                  },
                 })}
                 onKeyUp={() => {
                   trigger("fileInput")
@@ -242,19 +258,6 @@ const DocAnalysis = () => {
                 </small>
               )}
             </div>
-
-            {/* <div className="space-y-3">
-              <label for="">
-                Upload PDF / XL / Word <span className="text-red-500">*</span>
-              </label>
-
-              <input
-                type="file"
-                name="fileInput"
-                className="block w-full p-2  border-black/20 border-b focus:border-blue-600 focus:outline-none "
-                required
-              />
-            </div> */}
 
             {/* <div>
               <div>
@@ -269,11 +272,14 @@ const DocAnalysis = () => {
             </div> */}
             <button
               type="submit"
-              className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]
-              "
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+              className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"
             >
-              Submit
+              {fileUploaded ? "Please wait..." : "Submit"}
             </button>
+            <span class="sr-only">Please Wait</span>
           </form>
         </div>
       </div>

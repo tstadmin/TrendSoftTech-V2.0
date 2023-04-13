@@ -43,6 +43,7 @@ const AccessibleData = graphql`
           frontmatter {
             accessible {
               accessibleExcel {
+                docaccessibility
                 analysisLink
                 description
                 list {

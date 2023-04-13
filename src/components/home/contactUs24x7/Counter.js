@@ -12,7 +12,7 @@ const Counter = () => {
       onEnter={() => setCounter(true)}
       // onExit={() => setCounter(false)}
     >
-      <Counte>
+      <ul className="320Screen:flex justify-center grid justify-items-center gap-24 md:gap-40  p-6 bg-white ">
         <li>
           <CounterNumber>
             {counter && <CountUp end={20} duration={1} />}+
@@ -34,7 +34,7 @@ const Counter = () => {
             </Link>
           </CounterDescription>
         </li>
-      </Counte>
+      </ul>
     </ScrollTrigger>
   )
 }
