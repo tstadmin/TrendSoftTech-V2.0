@@ -41,6 +41,8 @@ const CarouselItem = props => {
             <div
               role="group"
               aria-label={item.listItem.slidescount}
+              // aria-live="polite"
+              // aria-controls="IDREF"
               className="w-[100vw] text-center 2048Screen:h-[calc(100%-137px)] 1920Screen:h-[calc(100%-117px)]  xl:h-[calc(100%-300px)] lg:h-[calc(100%-400px)]  md:h-[calc(100%-408px)] sm:h-[calc(100%-630px)] 540Screen:h-[calc(100%-500px)] 440Screen:h-[calc(100%-350px)] 340Screen:h-[calc(100%-362px)]  h-[calc(100%-457px)] relative "
             >
               <img src={item.listItem.img} className="w-[100%]" />

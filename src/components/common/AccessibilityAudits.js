@@ -8,6 +8,7 @@ import {
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
 import { webAccessbilityForm } from "../../services/api"
+import "../Services/AccessibleStyle.css"
 
 const AccessibilityAudits = () => {
   const {
@@ -25,7 +26,7 @@ const AccessibilityAudits = () => {
     if (fileUploaded) {
       const timeout = setTimeout(() => {
         setFileUploaded(false)
-      }, 5000) // 5 seconds
+      }, 50000) // 5 seconds
       return () => clearTimeout(timeout)
     }
   }, [fileUploaded])
@@ -37,10 +38,9 @@ const AccessibilityAudits = () => {
     // setCaptcha(true)
   }
   const onSubmit = data => {
-    webAccessbilityForm(data)
+    webAccessbilityForm(data, setFileUploaded(true))
       .then(res => {
         if (res.status === 200) {
-          setFileUploaded(true)
           setFileUploaded(false)
           alert("Submit Successfully")
 
@@ -55,9 +55,24 @@ const AccessibilityAudits = () => {
 
   return (
     <div className="mt-10 1920Screen:px-48 2xl:px-24  px-8 ">
-      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-8 justify-center rounded-xl  shadow-lg shadow-black/20 ">
-        <div className="p-4 bg-[#0b6ddc] -l-2xl">
-          <AnalysisInfo />
+      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-2 justify-center rounded-xl  shadow-lg shadow-black/20 ">
+        <div className="p-4  -l-2xl bg-[#0b6ddc] web_access rounded-md">
+          <div className="xl:space-y-8 space-y-3  p-5 lg:h-auto sm:h-[500px]  ">
+            <div>
+              <h2 className="text-white font-semibold mt-5  md:text-xl sm:text-lg text-base ">
+                How do you know if your website is WCAG compliant?
+              </h2>
+            </div>
+            <div className="space-y-4 text-[18px]">
+              <p className="text-white ">
+                To check WCAG compliance, you'll usually start with an automated
+                analysis. The Trendsoft Technologies Pvt. Ltd provides a free,
+                confidential graded report of your website, which tests content
+                against WCAG 2.1 Level A and Level AA success criteria and gives
+                you an overview report of how your website.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="bg-white -l-2xl ">

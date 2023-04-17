@@ -17,7 +17,15 @@ const Counter = () => {
           <CounterNumber>
             {counter && <CountUp end={20} duration={1} />}+
           </CounterNumber>
-          <CounterDescription> Happy Clients</CounterDescription>
+          <CounterDescription>
+            <Link
+              to="/client/"
+              aria-label="Happy Clients"
+              className="underline"
+            >
+              Happy Clients
+            </Link>
+          </CounterDescription>
         </li>
 
         <li>

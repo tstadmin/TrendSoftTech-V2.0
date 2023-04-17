@@ -1,0 +1,48 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.access {
+  background-image: none;
+  background-size: cover;
+
+  background-position: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 548px) {
+  .access {
+    background-image: url("/img/accessibilityForm/docaccesibility.svg");
+    background-size: cover;
+
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.web_access {
+  background-image: none;
+  background-size: cover;
+
+  background-position: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 662px) {
+  .web_access {
+    background-image: url("/img/accessibilityForm/webaccessibility.svg");
+    background-size: cover;
+
+    background-position: center;
+
+    width: 100%;
+    height: 100%;
+  }
+}

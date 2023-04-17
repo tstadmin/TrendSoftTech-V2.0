@@ -31,7 +31,7 @@ li {
 
 a {
   font-family: sans-serif;
-  @apply focus:underline hover:text-[#f9761f] focus:text-[#f9761f]  hover:underline focus:decoration-[#f9761f]  hover:decoration-[#f9761f];
+  @apply focus:underline focus:text-[#bd5005] hover:underline hover:decoration-[#bd5005] hover:text-[#bd5005];
 }
 
 h4 {

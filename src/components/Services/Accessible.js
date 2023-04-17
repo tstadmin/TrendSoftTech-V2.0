@@ -4,7 +4,7 @@ import { DescriptionList, Title } from "./ServicesStyled"
 import DocAnalysis from "../WebsiteAnalysis/DocAnalysis"
 import AccessibilityAudits from "../common/AccessibilityAudits"
 const Accessible = props => {
-  const MyBackgroundImage = "/img/services/tabsIcons/closeuphandwheel.svg"
+  const MyBackgroundImage = "/img/accessibilityForm/docaccesibility.svg"
   console.log(props)
   return (
     <div>

@@ -46,19 +46,19 @@ const ContactForm = () => {
     if (fileUploaded) {
       const timeout = setTimeout(() => {
         setFileUploaded(false)
-      }, 5000) // 5 seconds
+      }, 50000) // 5 seconds
       return () => clearTimeout(timeout)
     }
   }, [fileUploaded])
 
   const onSubmit = data => {
-    contactForm(data)
+    contactForm(data, setFileUploaded(true))
       .then(res => {
-        setFileUploaded(true)
-        setFileUploaded(false)
-        alert("Submit Successfully")
-        window.location.reload()
-        reset()
+        if (res.status === 200) {
+          alert("Submit Successfully")
+          setFileUploaded(false)
+          window.location.reload()
+        }
       })
       .catch(err => {
         // console.log(err)

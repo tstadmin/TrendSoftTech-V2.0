@@ -13,7 +13,7 @@ import {
 } from "../../services/api"
 
 const DocAnalysis = () => {
-  const MyBackgroundImage = "/img/form/Accessibility.jpg"
+  const MyBackgroundImage = "/img/accessibilityForm/docaccesibility.svg"
 
   const {
     register,
@@ -38,7 +38,7 @@ const DocAnalysis = () => {
     if (fileUploaded) {
       const timeout = setTimeout(() => {
         setFileUploaded(false)
-      }, 5000) // 5 seconds
+      }, 50000) // 5 seconds
       return () => clearTimeout(timeout)
     }
   }, [fileUploaded])
@@ -80,10 +80,9 @@ const DocAnalysis = () => {
 
   return (
     <div className="mt-10 1920Screen:px-48 2xl:px-24  ">
-      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-8 justify-center     rounded-xl  shadow-lg shadow-black/20 ">
-        <div className="p-4 bg-[#0b6ddc] rounded-l-2xl">
-          <AnalysisInfo />
-        </div>
+      <div className="grid lg:grid-cols-2 grid-cols-1 xl:gap-2 gap-2 justify-center      rounded-xl  shadow-lg shadow-black/20 ">
+        <AnalysisInfo />
+
         <div className="bg-white rounded-l-2xl ">
           <form
             className=" w-full  2xl:px-24  space-y-5 px-5 py-6 "
@@ -107,6 +106,7 @@ const DocAnalysis = () => {
                 aria-describedby="First_Name_error"
                 id="First_Name"
                 name="First_Name"
+                placeholder="First Name"
                 className={`block w-full p-2 border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.first_name ? "border-red-500" : ""
                 }`}
@@ -137,6 +137,7 @@ const DocAnalysis = () => {
                 aria-describedby="Last_Name_error"
                 id="Last_Name"
                 name="Last_Name"
+                placeholder="Last Name"
                 className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.last_name ? "border-red-500" : ""
                 }`}
@@ -167,6 +168,7 @@ const DocAnalysis = () => {
                 aria-describedby="Email_error"
                 id="Email"
                 name="Email"
+                placeholder="Email"
                 className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.email ? "border-red-500" : ""
                 }`}
@@ -197,6 +199,7 @@ const DocAnalysis = () => {
                 aria-describedby="Phone_Number_error"
                 id="Phone_Number"
                 name="Phone_Number"
+                placeholder="Phone Number"
                 className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
                   errors.phone_no ? "border-red-500" : ""
                 }`}
@@ -227,6 +230,7 @@ const DocAnalysis = () => {
                 </small>
               )}
             </div>
+
             <div>
               <label for="file-upload" class="button">
                 Upload file

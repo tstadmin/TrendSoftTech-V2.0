@@ -65,7 +65,7 @@ const CareersForm = () => {
     if (fileUploaded) {
       const timeout = setTimeout(() => {
         setFileUploaded(false)
-      }, 5000) // 5 seconds
+      }, 50000) // 5 seconds
       return () => clearTimeout(timeout)
     }
   }, [fileUploaded])
@@ -99,6 +99,7 @@ const CareersForm = () => {
                 console.log("image", res)
                 setFileUploaded(false)
                 alert("Submit Successfully")
+
                 window.location.reload()
               }
             })
