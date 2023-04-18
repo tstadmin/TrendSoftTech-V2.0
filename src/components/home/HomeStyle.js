@@ -138,7 +138,7 @@ export const ContactHeader = styled.h2`
 ///  ----- Working Process component in HomePage Home folder--------------------------------
 
 export const Working = styled.div`
-  ${tw`lg:flex justify-center gap-4 lg:px-0 px-8 `}
+  ${tw`lg:flex justify-center gap-4  px-8 `}
 `
 export const WorkingDescription = styled.h2`
   ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins text-[#913A1D] md:mt-20 mt-10 `}

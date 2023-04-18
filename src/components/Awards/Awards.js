@@ -16,7 +16,7 @@ const Awards = props => {
                 href={item.listItem.pdf}
                 target="_blank"
                 aria-label={item.listItem.label}
-                className="bg-[#0b2d78] text-white sm:text-[16px] gap-2 text-sm p-4 rounded-md flex  justify-center hover:text-[#f9761f] focus:text-[#f9761f]  hover:underline focus:decoration-[#f9761f]  hover:decoration-[#f9761f] "
+                className="bg-[#0b2d78]  text-white sm:text-[16px] gap-2 text-sm p-4 rounded-md flex  justify-center hover:text-[#F9761F] focus:text-[#F9761F]   hover:underline focus:decoration-[#f9761f]  hover:decoration-[#f9761f] "
               >
                 {/* <button> */}
                 {item.listItem.title} <FiArrowUpRight />

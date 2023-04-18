@@ -1155,7 +1155,7 @@ webAccessibility:
       webaccessibility: "form"  
       analysisLink: "/services/audit/"  
       description: "Strategies, standards, and supporting resources to help you make the Web more accessible to people with disabilities.</p>"
-      list:
+      wthreec:
         - listItems:
              id: 1
              title : "W3C"
@@ -1163,53 +1163,54 @@ webAccessibility:
         - listItems:
              id: 2 
              title : "WAI"
-             description: "<p>You can use W3C WAI resources to make your websites, applications, and other digital creations more accessible and usable to everyone.</p>"  
+             description: "<p>You can use W3C WAI resources to make your websites, applications, and other digital creations more accessible and usable to everyone.</p>"
+      list:
         - listItems:
-             id: 3 
+             id: 1 
              title : "SECTION 508 TESTING SOLUTIONS"
              description: "<p>Expert guidance to make your website or product Section 508 compliant and create detailed Voluntary Product Accessibility Templates (VPAT).</p><p>Section 508 standard of the Rehabilitation Act 1973 requires all electronic and information technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities. The Section 508 Standards apply to electronic and information technology procured by the federal government, including computer hardware and software, websites, multimedia such as video, phone systems, and copiers.</p><p>Section 508 compliance does not apply to federal agencies alone but also private companies, financial industries, healthcare, legal, or any other organization that does business with a federal agency.</p><p>TRENDSOFT TECHNOLOGIES PVT LTD. Section 508 Testing solutions, assist your organization to ensure that your websites, products and services are fully Section 508 compliant. With a proper evaluation of your accessibility needs, our team works with you closely to chart a path to make your website or product Section 508 compliant.</p><p>We go beyond automated Section 508 testing and ensure a thorough manual check of your website and other digital products. We provide you an in-depth report of accessibility vulnerabilities to ensure that your website or product meets Section 508 compliance.</p><p>In addition, our testing team also help you with a detailed VPAT creation. Based on your needs, we perform an audit to identify the accessibility issues and prioritizing them. We help you improve the overall Section 508 compliance of your website or product and create a VPAT that discloses the state of accessibility.</p>"  
         - listItems:
-             id: 4
+             id: 2
              title : "ASSESSMENT" 
              description: "<p>The Section 508 testing team includes accessibility experts and people with disabilities who evaluate the existing state to understand your accessibility requirements. We provide you a comprehensive report addressing the accessibility issues and the changes to be implemented to help you make your website or product meet Section 508 compliance.</p>" 
         - listItems:
-             id: 5
+             id: 3
              title : "REMEDIATION" 
              description: "<p>The team extends technical assistance to your internal teams by guiding them in implementing accessibility in your websites or products. Technical assistance can be by providing the solution or assisting your team to think of how to integrate accessibility to make your website or product Section 508 compliant.</p>"  
         - listItems:
-             id: 6
+             id: 4
              title: "MONITORING" 
              description: "<p>Our testing model helps you set up a team that will regularly monitor Section 508 compliance of websites or products that are subject to change. We can also set up a dedicated team for periodic monitoring and provide you a detailed accessibility status report as the progress is made.</p>"
         - listItems:
-             id: 7
+             id: 5
              title : "ASSISTIVE TECHNOLOGIES USED FOR WEB BROWSING" 
              description: "<p>Individuals living with a disability use assistive technologies such as the following to enable and assist web browsing:</p><p>Screen reader software, which can read out, using synthesized speech, either selected elements of what is being displayed on the monitor (helpful for users with reading or learning difficulties), or which can read out everything that is happening on the computer (used by blind and vision impaired users).</p><p>Braille terminals, consisting of a refreshable braille display which renders text as braille characters (usually by means of raising pegs through holes in a flat surface) and either a mainstream keyboard or a braille keyboard.<br/>Screen magnification software, which enlarges what is displayed on the computer monitor, making it easier to read for vision impaired users.</p><p>Speech recognition software that can accept spoken commands to the computer, or turn dictation into grammatically correct text – useful for those who have difficulty using a mouse or a keyboard.<br/>Keyboard overlays, which can make typing easier or more accurate for those who have motor control difficulties.<br/>Access to subtitled or sign language videos for deaf people.</p>" 
         - listItems:
-             id: 8 
+             id: 6 
              title : "GUIDELINES ON ACCESSIBLE WEB DESIGN"
              description: "<p>Web Content Accessibility Guidelines</p><p>In 1999 the Web Accessibility Initiative, a project by the World Wide Web Consortium (W3C), published the Web Content Accessibility Guidelines WCAG 1.0.</p><p>On 11 December 2008, the WAI released the WCAG 2.0 as a Recommendation. WCAG 2.0 aims to be up to date and more technology neutral. Though web designers can choose either standard to follow, the WCAG 2.0 have been widely accepted as the definitive guidelines on how to create accessible websites. Governments are steadily adopting the WCAG 2.0 as the accessibility standard for their own websites. In 2012, the Web Content Accessibility Guidelines were also published as an ISO/IEC standard: “ISO/IEC 40500:2012: Information technology – W3C Web Content Accessibility Guidelines (WCAG) 2.0”.</p>"  
         - listItems:
-             id: 9 
+             id: 7 
              title : "USER-CENTERED DESIGN WITH STANDARDS FOR USABLE ACCESSIBILITY"
              description: "<p>WAI supports user-centered design (UCD) and other techniques to develop websites, web applications, and web tools that are highly usable by people with disabilities. “Involving Users in Web Projects for Better, Easier Accessibility” and “Involving Users in Evaluating Web Accessibility” are directly addressed to web developers and project managers without usability expertise (and suggest “getting assistance from accessibility, disability, and user-centered design specialists”).</p><p>These documents help others understand what most usability professionals already know that involving users early in the design process results in better products for users and more efficient project development.</p>"  
         - listItems:
-             id: 10 
+             id: 8 
              title : "OVERLAP WITH OLDER USERS, MOBILE USERS, AND OTHER USER GROUPS"
              description: "<p>WAI’s recent work explores in detail the relationship between designing for people with disabilities and designing for other “non-disabled” user populations who benefit from accessibility, such as:</p><p>Older users – Gaining a better understanding the needs of older web users and how existing accessibility guidelines address those needs is one goal of the WAI-AGE Project, funded by the European Commission.</p><p>Mobile devices – There is significant overlap between designing for mobile devices and designing for accessibility. Understanding this overlap helps designers more efficiently meet both goals.</p><p>People with low bandwidth connections or older technology, people with low literacy or not fluent in the language, and new users.</p>"  
         - listItems:
-             id: 11 
+             id: 9 
              title : "TEXT RESIZING EXAMPLE"
              description: "<p>An example of how accessibility overlaps with other issues and the different components of web accessibility is resizing text in websites.</p><p>For years, common browsers have provided settings for text sizes. However, it only worked if website developers coded relative text sizes (for example, % or em) instead of absolute sizes (e.g., pt), and didn’t put text in images. Also, most browsers offered only five text sizes. That meant that many users were not able to increase the text size sufficiently or at all for most websites.</p><p>Now, many browsers provide zoom functionality. With zoom, users can change the text size (no matter how website developers code it) and images within a significant range, often 10-1000 percent. (Still many users aren’t aware of this functionality or are stuck using browsers without it.)</p><p>Text resizing through zoom illustrates where accessibility can be provided through the browser. This is an example of the shared responsibility of web accessibility-what we call the “Essential Components of Web Accessibility.”</p><p>WAI covers these components with guidelines for “user agents” (such as browsers and media players) and for authoring tools (such as WYSIWYG editors, content management systems [CMS], blog software, and social networking sites).</p><p>Text resizing benefits others as well: older users often need to resize text, and when designing for mobile device users, the W3C Mobile Web Best Practices (MWBP) says, “Do not use pixel measures and do not use absolute units”</p>" 
         - listItems:
-             id: 12 
+             id: 10 
              title: "COMPREHENSIVE INTERNATIONAL STANDARDS"
              description: "<p>These additional benefits are not always realized when designers use only limited standards. For example, current U.S. Section 508 web standards do not cover text resizing at all (and were published in 2000).</p><p>WAI’s accessibility standards are developed through the W3C process, with a goal of meeting the needs of individuals, organizations, and governments internationally.</p><p>As many national governments update their accessibility policies and standards (including the U.S. Section 508 and 255), adopting WCAG 2.0 and WAI’s other accessibility standards provides international harmony.</p>"  
         - listItems:
-             id: 13 
+             id: 11 
              title : "SUPPORTING AWARENESS, ADVOCACY, EDUCATION"
              description: "<p>Accessibility standards are just part of a broad range of topics covered in WAI’s education and outreach materials, including presentations and handouts for anyone to use.</p><p>“Developing a Web Accessibility Business Case for Your Organization” presents benefits and costs of web accessibility covering social, technical, financial, and legal factors.</p><p>A new resources appendix provides statistics, case studies, and other articles.</p>"  
         - listItems:
-             id: 14 
+             id: 12 
              title : "PARTICIPATING IN WAI"
              description: "<p>WAI provides an international forum for collaboration among industry, disability organizations, accessibility researchers, government, and individuals interested in web accessibility.</p><p>Your contributions to improving usable accessibility of the web-through your own work or through WAI -are greatly appreciated.</p>"                                                                                            
 careers:

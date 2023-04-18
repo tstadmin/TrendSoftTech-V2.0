@@ -45,6 +45,13 @@ const WebAccessibleData = graphql`
                 webaccessibility
                 analysisLink
                 description
+                wthreec {
+                  listItems {
+                    id
+                    description
+                    title
+                  }
+                }
                 list {
                   listItems {
                     id
