@@ -80,13 +80,14 @@ const ContactForm = () => {
           <label for="Name">
             Name <span className="text-red-500">*</span>
           </label>
+
           <input
-            placeholder="Your Name"
-            type="text"
-            aria-describedby="Name_error"
+            placeholder="Name"
             id="Name"
             name="Name"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
+            type="text"
+            aria-describedby="Name_error"
+            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.name ? "border-red-500" : ""
             }`}
             {...register("name", {
@@ -111,13 +112,14 @@ const ContactForm = () => {
           <label for="Phone_Number">
             Phone Number <span className="text-red-500">*</span>
           </label>
+
           <input
             placeholder="Phone Number"
             name="Phone_Number"
             type="text"
             id="Phone_Number"
             aria-describedby="Phone_Number_error"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
+            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.phone_no ? "border-red-500" : ""
             }`}
             {...register("phone_no", {
@@ -158,7 +160,7 @@ const ContactForm = () => {
             id="Email"
             name="Email"
             placeholder="Email"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
+            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.email ? "border-red-500" : ""
             }`}
             {...register("email", {
@@ -190,7 +192,7 @@ const ContactForm = () => {
             id="Website"
             name="Website"
             placeholder="Enter your Website"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
+            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.websits ? "border-red-500" : ""
             }`}
             {...register("websits", {
@@ -222,7 +224,7 @@ const ContactForm = () => {
             id="Company_Name"
             name="Company_Name"
             placeholder="Enter your Company name"
-            className={`border-black p-2 w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
+            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.websits ? "border-red-500" : ""
             }`}
             {...register("company_name", {
@@ -248,7 +250,7 @@ const ContactForm = () => {
             aria-describedby="Inquiries_error"
             id="Inquiries"
             name="Inquiries"
-            className={`border-black/70 p-2 w-full  focus:border-blue-600  bg-transparent outline-none border-2 rounded-md text-base ${
+            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.inquiries ? "border-red-500" : ""
             }`}
             {...register("inquiries", {
@@ -282,7 +284,7 @@ const ContactForm = () => {
             id="Message"
             name="Message"
             placeholder="Enter your Message Here"
-            className={`border-black p-2  w-full  focus:border-blue-600    bg-transparent outline-none border-2 rounded-md text-base ${
+            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.Message ? "border-red-500" : ""
             }`}
             {...register("message", {
@@ -312,7 +314,7 @@ const ContactForm = () => {
         >
           {fileUploaded ? "Please wait..." : "Submit"}
         </button>
-        <span class="sr-only">Please Wait</span>
+        {/* <span class="sr-only">Please Wait</span> */}
       </form>
     </div>
   )

@@ -4,7 +4,7 @@ import Brochure from "./common/Brochure"
 const ServicesLayout = ({ children, pdf }) => {
   return (
     <div>
-      <div className="mt-8 justify-center 2xl:px-28 1920Screen:px-48 sm:px-8 px-12">
+      <div className="mt-8 justify-center 1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4">
         <div>{children}</div>
         <div>
           <Brochure pdf={pdf} />

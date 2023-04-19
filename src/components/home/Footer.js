@@ -25,7 +25,7 @@ import { Link } from "gatsby"
 const Footer = props => {
   return (
     <FooterDiv id="footer" role="footer">
-      <FooterInfo>
+      <div className="md:flex sm:grid  1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4   md:space-y-0 space-y-12 md:space-x-6   sm:justify-between my-10 mt-8 ">
         <FooterTrendInfo>
           <Link to="/">
             <img src={props.data.logo} className="h-32" alt={props.data.alt} />
@@ -83,11 +83,12 @@ const Footer = props => {
             </FooterIconLogo>
           </div>
         </FooterTrendInfo>
+
         <FooterInfoDiv>
           <FooterTitle id={props.data.itTitle}>
             {props.data.itTitle}
           </FooterTitle>
-          <ul className="space-y-1" aria-labelledby={props.data.itTitle}>
+          <ul className="space-y-2" aria-labelledby={props.data.itTitle}>
             {props.data.itService?.map((item, idx) => (
               <li key={item.listItem.id}>
                 <Link to={item.listItem.page}>{item.listItem.title}</Link>
@@ -165,7 +166,7 @@ const Footer = props => {
             </FooterIconInfo>
           </ul>
         </FooterInfoDiv>
-      </FooterInfo>
+      </div>
 
       <FooterHr />
       <p className="text-center">{props.data.reserved}.</p>

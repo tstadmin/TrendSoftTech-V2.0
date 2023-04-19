@@ -42,7 +42,7 @@ export default function Header(props) {
     <div
       id="nav"
       role="navigation"
-      className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-44  2xl:px-24 440Screen:px-8 px-4 sticky top-8 sm:top-10    bg-[#ebebeb] z-10 shadow-lg shadow-black/10"
+      className=" flex items-center justify-between tracking-wide md:py-0 py-2  1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4 sticky top-8 sm:top-10    bg-[#ebebeb] z-10 shadow-lg shadow-black/10"
     >
       <NavBar>
         {/* Logo */}

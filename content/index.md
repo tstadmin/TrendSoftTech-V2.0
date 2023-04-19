@@ -426,6 +426,38 @@ home:
           id: 7
           img: "/img/Clients/tenali_double_horse.png"
           label: "Tenali Double Horse"
+      - listItem:
+          id: 8
+          img: "/img/Clients/acade.jpeg"
+          label: "Acadecraft"
+      - listItem:
+          id: 9
+          img: "/img/Clients/ace.jpeg"
+          label: "ACE pro india LLP"
+      - listItem:
+          id: 10
+          img: "/img/Clients/arions.jpeg"
+          label: "Arinos"
+      - listItem:
+          id: 11
+          img: "/img/Clients/codemate.jpeg"
+          label: "CodeMantra"
+      - listItem:
+          id: 12
+          img: "/img/Clients/dtraive.jpeg"
+          label: "Straive TM"
+      - listItem:
+          id: 13
+          img: "/img/Clients/jou.jpeg"
+          label: "Jouve  "
+      - listItem:
+          id: 14
+          img: "/img/Clients/mps.jpeg"
+          label: "MPS"
+      - listItem:
+          id: 14
+          img: "/img/Clients/puresoftware.jpeg"
+          label: "PureSoftware"        
   workingProcess:
     title: WORKING PROCESS
     description: "How We Work For Our Customers"

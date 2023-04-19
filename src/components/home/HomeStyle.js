@@ -163,7 +163,7 @@ export const FooterDiv = styled.div`
   ${tw` bg-blue-50/80 py-2 mt-14 `}
 `
 export const FooterInfo = styled.div`
-  ${tw`md:flex sm:grid  px-8 xl:px-12  md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20 mt-8 `}
+  ${tw`md:flex sm:grid  px-8 xl:px-16  md:space-y-0 space-y-12 md:space-x-6 lg:justify-center md:justify-center sm:justify-center my-20 mt-8 `}
 `
 export const FooterTitle = styled.h2`
   ${tw` md:text-lg  text-sm text-[#1a71d4] `}

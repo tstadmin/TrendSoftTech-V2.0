@@ -4,7 +4,7 @@ import { AboutOurInfo, Title } from "./HomeStyle"
 
 const AboutOurCompany = props => {
   return (
-    <div className="lg:flex grid  mt-8 justify-center lg:gap-16 gap-6  1920Screen:px-48 2xl:px-24 md:px-12  px-8">
+    <div className="lg:flex grid  mt-8  lg:gap-16 gap-6  1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4">
       <img
         src={props.aboutOurCompany.img}
         alt=""

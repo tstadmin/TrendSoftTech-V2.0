@@ -11,7 +11,7 @@ import {
 } from "./HomeStyle"
 const WorkingProcess = props => {
   return (
-    <Working>
+    <div className="lg:flex  gap-4 justify-center  px-8  ">
       <Tilt
         tiltMaxAngleX={2}
         tiltMaxAngleY={2}
@@ -34,7 +34,7 @@ const WorkingProcess = props => {
           </WorkingCard>
         ))}
       </WorkingCards>
-    </Working>
+    </div>
   )
 }
 

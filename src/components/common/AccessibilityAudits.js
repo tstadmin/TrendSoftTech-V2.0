@@ -275,7 +275,7 @@ const AccessibilityAudits = () => {
             >
               {fileUploaded ? "Please wait..." : "Submit"}
             </button>
-            <span class="sr-only">Please Wait</span>
+            {/* <span class="sr-only">Please Wait</span> */}
           </form>
         </div>
       </div>
