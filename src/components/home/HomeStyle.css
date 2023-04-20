@@ -9,3 +9,19 @@
   border-radius: 3px;
   @apply focus:underline md:rounded-none rounded-full  focus:text-[#bd5005] hover:underline hover:decoration-[#bd5005] hover:text-[#bd5005];
 }
+
+.slid .slider {
+  display: none;
+}
+.slid:hover .slider {
+  display: block;
+}
+
+.slider {
+  position: absolute;
+  margin-top: 10px;
+  color: white;
+}
+.slid:focus .slider {
+  display: block;
+}

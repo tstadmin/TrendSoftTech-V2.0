@@ -2,30 +2,92 @@ import { Link } from "gatsby"
 import React, { useRef, useState } from "react"
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs"
 import { RxDotFilled } from "react-icons/rx"
-
+import "./HomeStyle.css"
 function App(props) {
   console.log(props.data.carousel.list?.listItem)
   const ref = useRef(null)
+
   const slides = [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
+      img: "/img/carousel/homebanner1.jpg",
+      title: "We Increase your Business Success",
+      label: "Contact",
+      page: "/contact/",
+      slidescount: "slide 1 of 9",
+      CTA: "Contact",
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+      img: "/img/carousel/WEBDEVELOPMENT.jpg",
+      title: "WEB DEVELOPMENT",
+      page: "/services/webDevelopment/",
+      label: "Learn More  WEB DEVELOPMENT ",
+      slidescount: "slide 2 of 9",
+      CTA: "Learn More",
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80",
+      img: "/img/carousel/ECOMMERCEDEVELOPMENT.jpg",
+      title: "E-COMMERCE DEVELOPMENT",
+      page: "/services/ecommerceDevelopment/",
+      label: "Learn More  ECOMMERCE DEVELOPMENT ",
+      slidescount: "slide 3 of 9",
+      CTA: "Learn More",
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2253&q=80",
+      img: "/img/carousel/MOBILEDEVELOPMENT.jpg",
+      title: "MOBILE DEVELOPMENT",
+      label: "Learn More MOBILE DEVELOPMENT",
+      page: "/services/mobileDevelopment/",
+      slidescount: "slide 4 of 9",
+      CTA: "Learn More",
     },
     {
       id: 5,
-      url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
+      img: "/img/carousel/PRODUCTDEVELOPMENT.jpg",
+      title: "PRODUCT DEVELOPMENT",
+      label: "Learn More PRODUCT DEVELOPMENT ",
+      page: "/services/productDevelopment/",
+      slidescount: "slide 5 of 9",
+      CTA: "Learn More",
+    },
+    {
+      id: 6,
+      img: "/img/carousel/UIUXDESIGN.jpg",
+      title: "UI / UX DESIGN",
+      label: "Learn More UI / UX DESIGN",
+      page: "/services/uiUXDesign/",
+      slidescount: "slide 6 of 9",
+      CTA: "Learn More",
+    },
+    {
+      id: 7,
+      img: "/img/carousel/MANUALTESTING.jpg",
+      title: "MANUAL TESTING",
+      label: "Learn More MANUAL TESTING",
+      page: "/services/testing/",
+      slidescount: "slide 7 of 9",
+      CTA: "Learn More",
+    },
+    {
+      id: 8,
+      img: "/img/carousel/AUTOMATIONTESTING.jpg",
+      title: "AUTOMATION TESTING",
+      label: "Learn More  AUTOMATION TESTING",
+      page: "/services/testing/",
+      slidescount: "slide 8 of 9",
+      CTA: "Learn More",
+    },
+    {
+      id: 9,
+      img: "/img/carousel/DIGITALMARKETING.jpg",
+      title: "DIGITAL MARKETING",
+      label: "Learn More DIGITAL MARKETING ",
+      page: "/services/digitalMarketing/",
+      slidescount: "slide 9 of 9",
+      CTA: "Learn More",
     },
   ]
 
@@ -51,44 +113,49 @@ function App(props) {
 
   return (
     <div
-      className="max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group"
+      className="max-w-full xl:h-[580px] md:h-[450px] 440Screen:h-[300px] h-[200px] w-full m-auto  relative group"
       aria-roledescription="carousel"
       id="myCarousel"
     >
+      <span class="sr-only w-auto">Carousel</span>
       {/* Left Arrow */}
       <button
-        className="  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+        className="slid  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
         onClick={prevSlide}
         aria-controls="myCarousel-items"
         aria-label="Previous Slide"
+        title="Previous"
         ref={ref}
         tabIndex={0}
       >
         <BsChevronCompactLeft size={30} />
+        <p className="slider">Prev</p>
       </button>
 
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-        aria-label="Highlighted television shows"
-        id="myCarousel-items"
+        style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
+        className="w-full h-full flex justify-center items-center bg-center bg-cover duration-500"
         aria-live="polite"
       >
         <div
-          className=" grid justify-items-center justify-center"
+          className=" grid justify-center gap-4 "
           role="group"
-          aria-label=" 1 of 9 "
+          aria-label={slides[currentIndex].slidescount}
           aria-roledescription="slide"
         >
-          <p>{slides[currentIndex].id}</p>
-          <Link
-            to=""
-            className="text-center text-red-600"
-            ref={ref}
-            tabIndex={0}
-          >
-            Grenent
-          </Link>
+          <p className=" text-center text-white  xl:text-2xl lg:text-xl md:text-lg sm:text-sm text-xs font-semibold">
+            {slides[currentIndex].title}
+          </p>
+          <div className="text-center">
+            <Link
+              to={slides[currentIndex].page}
+              className="bg-white sm:p-2  hover:cursor-pointer  p-2 rounded-md  md:text-base sm:text-sm text-xs   text-blue-500"
+              ref={ref}
+              tabIndex={0}
+            >
+              {slides[currentIndex].CTA}
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -96,11 +163,14 @@ function App(props) {
       <button
         onClick={nextSlide}
         aria-controls="myCarousel-items"
+        title="Next"
         aria-label="Next Slide"
-        className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+        className="slid group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
       >
         <BsChevronCompactRight size={30} />
+        <p className="slider">Next</p>
       </button>
+
       {/* <div className="flex top-4 justify-center py-2">
         {slides.map((slide, slideIndex) => (
           <div
