@@ -11,11 +11,11 @@ import {
 } from "./HomeStyle"
 const WorkingProcess = props => {
   return (
-    <div className="lg:flex  gap-4 justify-center  px-8  ">
+    <div className="lg:flex  gap-4 justify-center   1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4  ">
       <Tilt
         tiltMaxAngleX={2}
         tiltMaxAngleY={2}
-        className="border 2xl:w-[22%] xl:w-[27%] lg:w-[34%] md:w-full sm:text-center lg:text-start bg-blue-50 space-y-12 sm:p-12 p-5 mt-16 rounded-md border-blue-400"
+        className="border 2xl:w-[22%] xl:w-[30%] lg:w-[34%] md:w-full sm:text-center lg:text-start bg-blue-50 space-y-12 sm:p-12 p-5 mt-16 rounded-md border-blue-400"
       >
         <WorkingDescription>
           {props.workingProcess.description}

@@ -154,7 +154,7 @@ export const WorkingCard = styled.li`
 `
 
 export const WorkingCards = styled.ul`
-  ${tw`mt-16 md:grid md:grid-cols-2 gap-4 w-full lg:w-[60%] md:w-full md:space-y-0 space-y-6`}
+  ${tw`mt-16 md:grid md:grid-cols-2 gap-4 w-full  md:space-y-0 space-y-6`}
 `
 
 ///  ----- Footers component in HomePage Home  folder--------------------------------

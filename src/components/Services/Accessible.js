@@ -8,7 +8,7 @@ const Accessible = props => {
   console.log(props)
   return (
     <div>
-      <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] font-semibold text-[#913A1D]">
+      <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] font-semibold text-[#B8000C]">
         {props.title}
       </h1>
       <div

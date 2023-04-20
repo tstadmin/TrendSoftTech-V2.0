@@ -15,22 +15,7 @@ const Counter = () => {
       <ul className="320Screen:flex justify-center grid justify-items-center gap-24 md:gap-40  p-6 bg-white ">
         <li>
           <CounterNumber>
-            {counter && <CountUp end={20} duration={1} />}+
-          </CounterNumber>
-          <CounterDescription>
-            <Link
-              to="/client/"
-              aria-label="Happy Clients"
-              className="underline"
-            >
-              Happy Clients
-            </Link>
-          </CounterDescription>
-        </li>
-
-        <li>
-          <CounterNumber>
-            {counter && <CountUp end={30} duration={1} />}+
+            {counter && <CountUp end={15} duration={1} />}+
           </CounterNumber>
           <CounterDescription>
             <Link
@@ -41,6 +26,13 @@ const Counter = () => {
               Projects Done
             </Link>
           </CounterDescription>
+        </li>
+
+        <li>
+          <CounterNumber>
+            {counter && <CountUp end={30} duration={1} />}+
+          </CounterNumber>
+          <CounterDescription>Happy Clients</CounterDescription>
         </li>
       </ul>
     </ScrollTrigger>

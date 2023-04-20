@@ -14,9 +14,7 @@ const Client = () => {
 
   return (
     <div>
-      <Layout>
-        <Clients clients={clients} />
-      </Layout>
+      <Layout>{/* <Clients clients={clients} /> */}</Layout>
     </div>
   )
 }

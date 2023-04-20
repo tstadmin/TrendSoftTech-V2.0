@@ -4,7 +4,6 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs"
 import { RxDotFilled } from "react-icons/rx"
 import "./HomeStyle.css"
 function App(props) {
-  console.log(props.data.carousel.list?.listItem)
   const ref = useRef(null)
 
   const slides = [
@@ -113,45 +112,44 @@ function App(props) {
 
   return (
     <div
-      className="max-w-full xl:h-[580px] md:h-[450px] 440Screen:h-[300px] h-[200px] w-full m-auto  relative group"
+      className="max-w-full 2xl:h-[480px] xl:h-[450px] md:h-[400px] 440Screen:h-[300px] h-[200px] w-[100vw] m-auto  relative group"
       aria-roledescription="carousel"
-      id="myCarousel"
+      role="region"
     >
       <span class="sr-only w-auto">Carousel</span>
+
       {/* Left Arrow */}
       <button
-        className="slid  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+        className="slid  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white text-black cursor-pointer"
         onClick={prevSlide}
         aria-controls="myCarousel-items"
         aria-label="Previous Slide"
-        title="Previous"
         ref={ref}
         tabIndex={0}
       >
-        <BsChevronCompactLeft size={30} />
+        <BsChevronCompactLeft className="md:text-[30px] text-[20px] " />
         <p className="slider">Prev</p>
       </button>
 
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
         className="w-full h-full flex justify-center items-center bg-center bg-cover duration-500"
-        aria-live="polite"
+        // aria-live="polite" /// main dev
+        role="group"
+        aria-roledescription="slide"
+        aria-label={slides[currentIndex].slidescount}
       >
-        <div
-          className=" grid justify-center gap-4 "
-          role="group"
-          aria-label={slides[currentIndex].slidescount}
-          aria-roledescription="slide"
-        >
-          <p className=" text-center text-white  xl:text-2xl lg:text-xl md:text-lg sm:text-sm text-xs font-semibold">
+        <div className=" grid justify-center gap-4 ">
+          <h2 className=" text-center text-white  xl:text-2xl lg:text-xl md:text-lg sm:text-sm text-xs font-semibold">
             {slides[currentIndex].title}
-          </p>
+          </h2>
           <div className="text-center">
             <Link
               to={slides[currentIndex].page}
               className="bg-white sm:p-2  hover:cursor-pointer  p-2 rounded-md  md:text-base sm:text-sm text-xs   text-blue-500"
               ref={ref}
               tabIndex={0}
+              aria-label={slides[currentIndex].label}
             >
               {slides[currentIndex].CTA}
             </Link>
@@ -163,11 +161,10 @@ function App(props) {
       <button
         onClick={nextSlide}
         aria-controls="myCarousel-items"
-        title="Next"
         aria-label="Next Slide"
-        className="slid group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+        className="slid group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-white text-black cursor-pointer"
       >
-        <BsChevronCompactRight size={30} />
+        <BsChevronCompactRight className="md:text-[30px] text-[20px] " />
         <p className="slider">Next</p>
       </button>
 

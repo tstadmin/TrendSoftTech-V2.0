@@ -400,64 +400,68 @@ home:
     list:
       - listItem:
           id: 1
-          img: "/img/Clients/Amnet.png"
-          label: "Amnet"
+          img: "/img/Clients/mps.jpeg"
+          label: "MPS"    
       - listItem:
           id: 2
-          img: "/img/Clients/HTS_BIO_Pharma.png"
-          label: "HTS BIO Pharma"
-      - listItem:
-          id: 3
-          img: "/img/Clients/jio.png"
-          label: "jio"
-      - listItem:
-          id: 4
           img: "/img/Clients/Kumar_pamps.png"
           label: "Kumar pumps"
       - listItem:
-          id: 5
-          img: "/img/Clients/Nebula_Group.png"
-          label: "Nebula Group"
-      - listItem:
-          id: 6
-          img: "/img/Clients/SS_Group.png"
-          label: "SS Group "
-      - listItem:
-          id: 7
-          img: "/img/Clients/tenali_double_horse.png"
-          label: "Tenali Double Horse"
-      - listItem:
-          id: 8
-          img: "/img/Clients/acade.jpeg"
-          label: "Acadecraft"
-      - listItem:
-          id: 9
-          img: "/img/Clients/ace.jpeg"
-          label: "ACE pro india LLP"
-      - listItem:
-          id: 10
+          id: 3
           img: "/img/Clients/arions.jpeg"
           label: "Arinos"
       - listItem:
-          id: 11
+          id: 4
+          img: "/img/Clients/dtraive.jpeg"
+          label: "Straive"
+      - listItem:
+          id: 5
+          img: "/img/Clients/Amnet.png"
+          label: "Amnet"    
+      - listItem:
+          id: 6
+          img: "/img/Clients/jou.jpeg"
+          label: "Jouve India"    
+      - listItem:
+          id: 7
+          img: "/img/Clients/tenali_double_horse.png"
+          label: "Tenali Double Horse"    
+      - listItem:
+          id: 8
           img: "/img/Clients/codemate.jpeg"
           label: "CodeMantra"
       - listItem:
+          id: 9
+          img: "/img/Clients/acade.jpeg"
+          label: "Acadecraft"    
+      - listItem:
+          id: 10
+          img: "/img/Clients/HTS_BIO_Pharma.png"
+          label: "HTS BIO Pharma"        
+      - listItem:
+          id: 11
+          img: "/img/Clients/SS_Group.png"
+          label: "SS Group "
+      - listItem:
           id: 12
-          img: "/img/Clients/dtraive.jpeg"
-          label: "Straive TM"
+          img: "/img/Clients/ace.jpeg"
+          label: "ACE pro india LLP"
       - listItem:
           id: 13
-          img: "/img/Clients/jou.jpeg"
-          label: "Jouve  "
-      - listItem:
-          id: 14
-          img: "/img/Clients/mps.jpeg"
-          label: "MPS"
-      - listItem:
-          id: 14
           img: "/img/Clients/puresoftware.jpeg"
-          label: "PureSoftware"        
+          label: "PureSoftware"
+      - listItem:
+          id: 14
+          img: "/img/Clients/Apex.png"
+          label: "Apex"    
+      - listItem:
+          id: 15
+          img: "/img/Clients/jio.png"
+          label: "jio"   
+      - listItem:
+          id: 16
+          img: "/img/Clients/Nebula_Group.png"
+          label: "Nebula Group"             
   workingProcess:
     title: WORKING PROCESS
     description: "How We Work For Our Customers"
@@ -1189,18 +1193,18 @@ webAccessibility:
       description: "Strategies, standards, and supporting resources to help you make the Web more accessible to people with disabilities.</p>"
       wthreec:
         - listItems:
+             id: 1 
+             title : "SECTION 508 TESTING SOLUTIONS"
+             description: "<p>Expert guidance to make your website or product Section 508 compliant and create detailed Voluntary Product Accessibility Templates (VPAT).</p><p>Section 508 standard of the Rehabilitation Act 1973 requires all electronic and information technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities. The Section 508 Standards apply to electronic and information technology procured by the federal government, including computer hardware and software, websites, multimedia such as video, phone systems, and copiers.</p><p>Section 508 compliance does not apply to federal agencies alone but also private companies, financial industries, healthcare, legal, or any other organization that does business with a federal agency.</p><p>TRENDSOFT TECHNOLOGIES PVT LTD. Section 508 Testing solutions, assist your organization to ensure that your websites, products and services are fully Section 508 compliant. With a proper evaluation of your accessibility needs, our team works with you closely to chart a path to make your website or product Section 508 compliant.</p><p>We go beyond automated Section 508 testing and ensure a thorough manual check of your website and other digital products. We provide you an in-depth report of accessibility vulnerabilities to ensure that your website or product meets Section 508 compliance.</p><p>In addition, our testing team also help you with a detailed VPAT creation. Based on your needs, we perform an audit to identify the accessibility issues and prioritizing them. We help you improve the overall Section 508 compliance of your website or product and create a VPAT that discloses the state of accessibility.</p>"
+      list:
+        - listItems:
              id: 1
              title : "W3C"
              description: "<p>The World Wide Web Consortium (W3C) develops international standards for the Web: HTML, CSS, and many more.</p>" 
         - listItems:
              id: 2 
              title : "WAI"
-             description: "<p>You can use W3C WAI resources to make your websites, applications, and other digital creations more accessible and usable to everyone.</p>"
-      list:
-        - listItems:
-             id: 1 
-             title : "SECTION 508 TESTING SOLUTIONS"
-             description: "<p>Expert guidance to make your website or product Section 508 compliant and create detailed Voluntary Product Accessibility Templates (VPAT).</p><p>Section 508 standard of the Rehabilitation Act 1973 requires all electronic and information technology developed, procured, maintained, or used by the federal government be accessible to people with disabilities. The Section 508 Standards apply to electronic and information technology procured by the federal government, including computer hardware and software, websites, multimedia such as video, phone systems, and copiers.</p><p>Section 508 compliance does not apply to federal agencies alone but also private companies, financial industries, healthcare, legal, or any other organization that does business with a federal agency.</p><p>TRENDSOFT TECHNOLOGIES PVT LTD. Section 508 Testing solutions, assist your organization to ensure that your websites, products and services are fully Section 508 compliant. With a proper evaluation of your accessibility needs, our team works with you closely to chart a path to make your website or product Section 508 compliant.</p><p>We go beyond automated Section 508 testing and ensure a thorough manual check of your website and other digital products. We provide you an in-depth report of accessibility vulnerabilities to ensure that your website or product meets Section 508 compliance.</p><p>In addition, our testing team also help you with a detailed VPAT creation. Based on your needs, we perform an audit to identify the accessibility issues and prioritizing them. We help you improve the overall Section 508 compliance of your website or product and create a VPAT that discloses the state of accessibility.</p>"  
+             description: "<p>You can use W3C WAI resources to make your websites, applications, and other digital creations more accessible and usable to everyone.</p>"  
         - listItems:
              id: 2
              title : "ASSESSMENT" 

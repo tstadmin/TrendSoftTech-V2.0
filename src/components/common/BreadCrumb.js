@@ -14,7 +14,7 @@ const BreadCrumb = props => {
         role="navigation"
         aria-label="breadcrumb"
       >
-        <ul className=" text-white  space-x-3 2xl:ml-28 ml-8 1920Screen:ml-48 flex">
+        <ul className=" text-white  space-x-3 2xl:ml-24 ml-8 1920Screen:ml-48 flex">
           <li className="text-white breadcrumb">
             <Link
               to="/"
