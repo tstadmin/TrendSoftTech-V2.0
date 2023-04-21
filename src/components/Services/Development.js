@@ -9,7 +9,7 @@ const Development = props => {
   return (
     <div>
       <div>
-        <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] text-[#913A1D] font-semibold">
+        <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] text-[#B8000C] font-semibold">
           {props.title}
         </h1>
 

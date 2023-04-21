@@ -27,13 +27,13 @@ const BreadCrumb = props => {
             /
           </li>
           <li className=" text-white ">
-            <Link
-              aria-label={props.title}
-              to=""
-              className="hover:text-[#efe9cd]  focus:text-[#efe9cd]    hover:underline-none focus:underline hover:decoration-[#146aba] focus:decoration-[#146aba]"
+            <a
+              aria-current="page"
+              href=""
+              className="hover:text-[#efe9cd]  focus:text-[#efe9cd] font-bold   hover:underline-none focus:underline hover:decoration-[#146aba] focus:decoration-[#146aba]"
             >
               {props.title}
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

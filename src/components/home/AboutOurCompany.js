@@ -11,7 +11,7 @@ const AboutOurCompany = props => {
         className="rounded-md lg:w-[400px] lg:h-[400px] w-[100%] md:h-[400px] sm:h-[250px] 340Screen:h-[200px] 240Screen:h-[170px] "
       />
       <AboutOurInfo>
-        <h1 className=" text-[#913A1D] md:text-2xl text-lg font-semibold">
+        <h1 className=" text-[#B8000C] md:text-2xl text-lg font-semibold">
           {props.aboutOurCompany.header}
         </h1>
 

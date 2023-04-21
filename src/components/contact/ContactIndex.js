@@ -7,10 +7,10 @@ const ContactIndex = props => {
     <div>
       <ContactHanding>{props.data.title}</ContactHanding>
 
-      <ContactDiv>
+      <div className="xl:flex grid   md:mt-14 mt-5 gap-10 1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4">
         <ContactInfo data={props.data} />
         <ContactForm />
-      </ContactDiv>
+      </div>
     </div>
   )
 }

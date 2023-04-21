@@ -1,4 +1,3 @@
-import axios from "axios"
 import React, { useEffect, useRef, useState } from "react"
 
 import { useForm } from "react-hook-form"
@@ -10,7 +9,6 @@ import {
   GoogleReCaptcha,
 } from "react-google-recaptcha-v3"
 import { contactForm } from "../../services/api"
-import BounceLoader from "react-spinners/BounceLoader"
 
 const ContactForm = () => {
   const [captcha, setCaptcha] = useState(false)
@@ -70,13 +68,13 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="space-y-5 px-8">
+    <div className="space-y-5  w-full">
       <div className="flex justify-between">
         <h2 className="text-xl text-[#0b6ddc] font-semibold">Contact Form</h2>
         <small className="text-red-500 text-[14px]">* Fields required</small>
       </div>
-      <form className="grid  gap-3 " onSubmit={handleSubmit(onSubmit)}>
-        <div className="2xl:w-[600px] w-full ">
+      <form className="grid  gap-3 w-[100%] " onSubmit={handleSubmit(onSubmit)}>
+        <div className=" w-full ">
           <label for="Name">
             Name <span className="text-red-500">*</span>
           </label>
@@ -108,7 +106,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="2xl:w-[600px] w-full">
+        <div className=" w-full">
           <label for="Phone_Number">
             Phone Number <span className="text-red-500">*</span>
           </label>
@@ -150,7 +148,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="2xl:w-[600px] w-full">
+        <div className=" w-full">
           <label for="Email">
             Email<span className="text-red-500">*</span>
           </label>
@@ -182,7 +180,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="2xl:w-[600px] w-full">
+        <div className=" w-full">
           <label for="Website">
             Website<span className="text-red-500">*</span>
           </label>
@@ -214,7 +212,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="2xl:w-[600px] w-full">
+        <div className=" w-full">
           <label for="Company_Name">
             Company Name <span className="text-red-500">*</span>
           </label>
@@ -241,7 +239,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="2xl:w-[600px] w-full ">
+        <div className=" w-full ">
           <label for="Inquiries">
             Inquiries <span className="text-red-500">*</span>
           </label>
@@ -274,7 +272,7 @@ const ContactForm = () => {
           )}
         </div>
 
-        <div className="2xl:w-[600px] w-full">
+        <div className=" w-full">
           <label for="Message">
             Message <span className="text-red-500">*</span>
           </label>

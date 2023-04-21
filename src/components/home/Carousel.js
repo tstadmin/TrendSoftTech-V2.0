@@ -1,15 +1,12 @@
 import React, { useRef, useState } from "react"
 
-import { Carousel } from "@mantine/carousel"
 import Autoplay from "embla-carousel-autoplay"
-import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs"
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs"
-import { RxDotFilled } from "react-icons/rx"
+
 import "./HomeStyle.css"
 import { Link } from "gatsby"
-import Demo from "./Demo"
-import { carouselItems } from "./carouselItems"
+
 const CarouselItem = props => {
   const autoplay = useRef(Autoplay({ delay: 6000 }))
 
@@ -20,84 +17,84 @@ const CarouselItem = props => {
   const slides = [
     {
       id: 1,
-      img: "/img/carousel/homebanner1.jpg",
-      title: "We Increase your Business Success",
-      label: "Contact",
-      page: "/contact/",
-      slidescount: "slide 1 of 9",
-      CTA: "Contact",
-    },
-    {
-      id: 2,
       img: "/img/carousel/WEBDEVELOPMENT.jpg",
       title: "WEB DEVELOPMENT",
       page: "/services/webDevelopment/",
       label: "Learn More  WEB DEVELOPMENT ",
-      slidescount: "slide 2 of 9",
+      slidescount: " 1 of 9",
       CTA: "Learn More",
     },
     {
-      id: 3,
+      id: 2,
       img: "/img/carousel/ECOMMERCEDEVELOPMENT.jpg",
       title: "E-COMMERCE DEVELOPMENT",
       page: "/services/ecommerceDevelopment/",
       label: "Learn More  ECOMMERCE DEVELOPMENT ",
-      slidescount: "slide 3 of 9",
+      slidescount: "2 of 9",
       CTA: "Learn More",
     },
     {
-      id: 4,
+      id: 3,
       img: "/img/carousel/MOBILEDEVELOPMENT.jpg",
       title: "MOBILE DEVELOPMENT",
       label: "Learn More MOBILE DEVELOPMENT",
       page: "/services/mobileDevelopment/",
-      slidescount: "slide 4 of 9",
+      slidescount: " 3 of 9",
       CTA: "Learn More",
     },
     {
-      id: 5,
+      id: 4,
       img: "/img/carousel/PRODUCTDEVELOPMENT.jpg",
       title: "PRODUCT DEVELOPMENT",
       label: "Learn More PRODUCT DEVELOPMENT ",
       page: "/services/productDevelopment/",
-      slidescount: "slide 5 of 9",
+      slidescount: " 4 of 9",
       CTA: "Learn More",
     },
     {
-      id: 6,
+      id: 5,
       img: "/img/carousel/UIUXDESIGN.jpg",
       title: "UI / UX DESIGN",
       label: "Learn More UI / UX DESIGN",
       page: "/services/uiUXDesign/",
-      slidescount: "slide 6 of 9",
+      slidescount: " 5 of 9",
       CTA: "Learn More",
     },
     {
-      id: 7,
+      id: 6,
       img: "/img/carousel/MANUALTESTING.jpg",
       title: "MANUAL TESTING",
       label: "Learn More MANUAL TESTING",
       page: "/services/testing/",
-      slidescount: "slide 7 of 9",
+      slidescount: "6 of 9",
       CTA: "Learn More",
     },
     {
-      id: 8,
+      id: 7,
       img: "/img/carousel/AUTOMATIONTESTING.jpg",
       title: "AUTOMATION TESTING",
       label: "Learn More  AUTOMATION TESTING",
       page: "/services/testing/",
-      slidescount: "slide 8 of 9",
+      slidescount: " 7 of 9",
       CTA: "Learn More",
     },
     {
-      id: 9,
+      id: 8,
       img: "/img/carousel/DIGITALMARKETING.jpg",
       title: "DIGITAL MARKETING",
       label: "Learn More DIGITAL MARKETING ",
       page: "/services/digitalMarketing/",
-      slidescount: "slide 9 of 9",
+      slidescount: " 8 of 9",
       CTA: "Learn More",
+    },
+    {
+      id: 9,
+      img: "/img/carousel/homebanner1.jpg",
+      title: "We Increase your Business Success",
+      label: "Contact Us We Increase your Business Success ",
+      page: "/contact/",
+      slidescount: " 9 of 9",
+      CTA: "Contact",
     },
   ]
 

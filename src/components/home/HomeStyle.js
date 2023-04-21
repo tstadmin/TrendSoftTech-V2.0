@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro"
 //-----All  Commer style component  in HomePage -- Home folder --------------------------------
 export const Title = styled.h2`
-  ${tw` text-[#913A1D]`}
+  ${tw` text-[#B8000C]`}
 `
 // export const SubTitle = styled.h2`
 //   ${tw` text-[#0B70E1] md:text-3xl text-xl   `}
@@ -116,7 +116,7 @@ export const CounterNumber = styled.p`
   ${tw`text-[50px] font-bold text-[#0B70E1]`}
 `
 export const CounterDescription = styled.p`
-  ${tw`md:text-[20px] text-[#913A1D] font-[400] font-semibold mt-6 `}
+  ${tw`md:text-[20px] text-[#B8000C] font-[400] font-semibold mt-6 `}
 `
 ///  ----- ContactUs 24/7 Banner component in HomePage Home  folder--------------------------------
 export const Contact = styled.div`
@@ -141,7 +141,7 @@ export const Working = styled.div`
   ${tw`lg:flex justify-center gap-4  px-8 `}
 `
 export const WorkingDescription = styled.h2`
-  ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins text-[#913A1D] md:mt-20 mt-10 `}
+  ${tw`sm:text-lg text-sm font-semibold text-black lg:text-xl font-Poppins text-[#B8000C] md:mt-20 mt-10 `}
 `
 export const WorkingCardNumber = styled.h3`
   ${tw`text-orange-400 `}
