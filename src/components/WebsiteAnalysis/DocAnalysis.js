@@ -92,14 +92,14 @@ const DocAnalysis = () => {
               <h2 className="text-xl text-[#0b6ddc] font-semibold">
                 Contact Here
               </h2>
-              <small className="text-red-500 text-[14px]">
-                <span className="text-red-500">*</span> Fields required
+              <small className="text-[#EB1414] text-[14px]">
+                <span className="text-[#EB1414]">*</span> Fields required
               </small>
             </div>
 
             <div>
               <label for="First_Name">
-                First Name <span className="text-red-500">*</span>
+                First Name <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -108,7 +108,7 @@ const DocAnalysis = () => {
                 name="First_Name"
                 placeholder="First Name"
                 className={`block w-full p-2 border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-                  errors.first_name ? "border-red-500" : ""
+                  errors.first_name ? "border-[#EB1414]" : ""
                 }`}
                 {...register("first_name", {
                   required: "First Name is required",
@@ -122,7 +122,7 @@ const DocAnalysis = () => {
                 }}
               />
               {errors.first_name && (
-                <small className="text-red-500" id="First_Name_error">
+                <small className="text-[#EB1414]" id="First_Name_error">
                   {errors.first_name.message}
                 </small>
               )}
@@ -130,7 +130,7 @@ const DocAnalysis = () => {
 
             <div>
               <label for="Last_Name">
-                Last Name <span className="text-red-500">*</span>
+                Last Name <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -139,7 +139,7 @@ const DocAnalysis = () => {
                 name="Last_Name"
                 placeholder="Last Name"
                 className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-                  errors.last_name ? "border-red-500" : ""
+                  errors.last_name ? "border-[#EB1414]" : ""
                 }`}
                 {...register("last_name", {
                   required: "last name is required",
@@ -153,7 +153,7 @@ const DocAnalysis = () => {
                 }}
               />
               {errors.last_name && (
-                <small className="text-red-500" id="Last_Name_error">
+                <small className="text-[#EB1414]" id="Last_Name_error">
                   {errors.last_name.message}
                 </small>
               )}
@@ -161,7 +161,7 @@ const DocAnalysis = () => {
 
             <div>
               <label for="">
-                Email <span className="text-red-500">*</span>
+                Email <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -170,7 +170,7 @@ const DocAnalysis = () => {
                 name="Email"
                 placeholder="Email"
                 className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-                  errors.email ? "border-red-500" : ""
+                  errors.email ? "border-[#EB1414]" : ""
                 }`}
                 {...register("email", {
                   required: "Email is required",
@@ -184,7 +184,7 @@ const DocAnalysis = () => {
                 }}
               />
               {errors.email && (
-                <small className="text-red-500" id="Email_error">
+                <small className="text-[#EB1414]" id="Email_error">
                   {errors.email.message}
                 </small>
               )}
@@ -192,7 +192,7 @@ const DocAnalysis = () => {
 
             <div>
               <label for="Phone_Number">
-                Phone Number <span className="text-red-500">*</span>
+                Phone Number <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -201,7 +201,7 @@ const DocAnalysis = () => {
                 name="Phone_Number"
                 placeholder="Phone Number"
                 className={`block w-full p-2  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-                  errors.phone_no ? "border-red-500" : ""
+                  errors.phone_no ? "border-[#EB1414]" : ""
                 }`}
                 {...register("phone_no", {
                   required: "Phone Number is required",
@@ -225,7 +225,7 @@ const DocAnalysis = () => {
                 }}
               />
               {errors.phone_no && (
-                <small className="text-red-500" id="Phone_Number_error">
+                <small className="text-[#EB1414]" id="Phone_Number_error">
                   {errors.phone_no.message}
                 </small>
               )}
@@ -234,7 +234,7 @@ const DocAnalysis = () => {
             <div>
               <label for="file-upload" class="button">
                 Upload file
-                <span className="text-red-500">*</span>
+                <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="file"
@@ -257,7 +257,7 @@ const DocAnalysis = () => {
                 }}
               />
               {errors.fileInput && (
-                <small className="text-red-500" id="file-upload_error">
+                <small className="text-[#EB1414]" id="file-upload_error">
                   {errors.fileInput.message}
                 </small>
               )}

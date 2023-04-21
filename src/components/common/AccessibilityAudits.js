@@ -84,13 +84,15 @@ const AccessibilityAudits = () => {
               <h2 className="text-xl text-[#0b6ddc] font-semibold">
                 Contact Here
               </h2>
-              <small className="text-red-500 text-[14px]">
+              <small className="text-[#EB1414] text-[14px]">
                 * Fields required
               </small>
             </div>
             <div>
               <div className="flex justify-between">
-                <label for="url">Website URL*</label>
+                <label for="url">
+                  Website URL <span className="text-[#EB1414]">*</span>
+                </label>
               </div>
               <input
                 type="text"
@@ -98,7 +100,7 @@ const AccessibilityAudits = () => {
                 id="url"
                 name="url"
                 className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
-                  errors.website_url ? "border-red-500" : ""
+                  errors.website_url ? "border-[#EB1414]" : ""
                 }`}
                 placeholder="Website URL "
                 {...register("website_url", {
@@ -114,7 +116,7 @@ const AccessibilityAudits = () => {
                 }}
               />
               {errors.website_url && (
-                <small className="text-red-500" id="url_error">
+                <small className="text-[#EB1414]" id="url_error">
                   {errors.website_url.message}
                 </small>
               )}
@@ -122,7 +124,7 @@ const AccessibilityAudits = () => {
 
             <div>
               <label for="First_Name">
-                First Name <span className="text-red-500">*</span>
+                First Name <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -130,7 +132,7 @@ const AccessibilityAudits = () => {
                 name="First_Name"
                 aria-describedby="First_Name_error"
                 className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
-                  errors.first_name ? "border-red-500" : ""
+                  errors.first_name ? "border-[#EB1414]" : ""
                 }`}
                 placeholder="First Name"
                 {...register("first_name", {
@@ -145,7 +147,7 @@ const AccessibilityAudits = () => {
                 }}
               />
               {errors.first_name && (
-                <small className="text-red-500" id="First_Name_error">
+                <small className="text-[#EB1414]" id="First_Name_error">
                   {errors.first_name.message}
                 </small>
               )}
@@ -153,7 +155,7 @@ const AccessibilityAudits = () => {
 
             <div>
               <label for="Last_Name">
-                Last Name <span className="text-red-500">*</span>
+                Last Name <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -161,7 +163,7 @@ const AccessibilityAudits = () => {
                 name="Last_Name"
                 aria-describedby="Last_Name_error"
                 className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
-                  errors.last_name ? "border-red-500" : ""
+                  errors.last_name ? "border-[#EB1414]" : ""
                 }`}
                 placeholder="Last Name"
                 {...register("last_name", {
@@ -176,7 +178,7 @@ const AccessibilityAudits = () => {
                 }}
               />
               {errors.last_name && (
-                <small className="text-red-500" id="Last_Name_error">
+                <small className="text-[#EB1414]" id="Last_Name_error">
                   {errors.last_name.message}
                 </small>
               )}
@@ -184,7 +186,7 @@ const AccessibilityAudits = () => {
 
             <div>
               <label for="Email">
-                Email <span className="text-red-500">*</span>
+                Email <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -192,7 +194,7 @@ const AccessibilityAudits = () => {
                 name="Email"
                 aria-describedby="Email_error"
                 className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
-                  errors.email ? "border-red-500" : ""
+                  errors.email ? "border-[#EB1414]" : ""
                 }`}
                 placeholder="email"
                 {...register("email", {
@@ -207,7 +209,7 @@ const AccessibilityAudits = () => {
                 }}
               />
               {errors.email && (
-                <small className="text-red-500" id="Email_error">
+                <small className="text-[#EB1414]" id="Email_error">
                   {errors.email.message}
                 </small>
               )}
@@ -215,7 +217,7 @@ const AccessibilityAudits = () => {
 
             <div>
               <label for="Phone_Number">
-                Phone Number <span className="text-red-500">*</span>
+                Phone Number <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -223,7 +225,7 @@ const AccessibilityAudits = () => {
                 name="Phone_Number"
                 aria-describedby="Phone_Number_error"
                 className={`block w-full p-2  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
-                  errors.phone_no ? "border-red-500" : ""
+                  errors.phone_no ? "border-[#EB1414]" : ""
                 }`}
                 placeholder="Phone Number"
                 // minLength={10}
@@ -250,7 +252,7 @@ const AccessibilityAudits = () => {
                 }}
               />
               {errors.phone_no && (
-                <small className="text-red-500" id="Phone_Number_error">
+                <small className="text-[#EB1414]" id="Phone_Number_error">
                   {errors.phone_no.message}
                 </small>
               )}

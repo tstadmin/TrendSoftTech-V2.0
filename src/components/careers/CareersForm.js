@@ -122,13 +122,13 @@ const CareersForm = () => {
               <h3 className="md:text-[29px] sm:text-[20px] 340Screen:text-[18px] text-[16px] font-semibold text-[#0b6ddc]">
                 Apply for this position
               </h3>
-              <p className="text-red-500  sm:text-[16px] text-[14px]">
+              <p className="text-[#EB1414]  sm:text-[16px] text-[14px]">
                 * Fields required
               </p>
             </div>
             <div>
               <label for="Name">
-                Name <span className="text-red-500">*</span>
+                Name <span className="text-[#EB1414]">*</span>
               </label>
 
               <input
@@ -138,7 +138,7 @@ const CareersForm = () => {
                 type="text"
                 aria-describedby="Name_error"
                 className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-                  errors.name ? "border-red-500" : ""
+                  errors.name ? "border-[#EB1414]" : ""
                 }`}
                 {...register("name", {
                   required: "Name is required",
@@ -152,7 +152,7 @@ const CareersForm = () => {
                 }}
               />
               {errors.name && (
-                <small className="text-red-500" id="Name_error">
+                <small className="text-[#EB1414]" id="Name_error">
                   {errors.name.message}
                 </small>
               )}
@@ -160,7 +160,7 @@ const CareersForm = () => {
 
             <div>
               <label for="Email">
-                Email <span className="text-red-500">*</span>
+                Email <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -169,7 +169,7 @@ const CareersForm = () => {
                 placeholder="Email"
                 aria-describedby="Email_career_error"
                 className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-                  errors.email ? "border-red-500" : ""
+                  errors.email ? "border-[#EB1414]" : ""
                 }`}
                 {...register("email", {
                   pattern: {
@@ -184,7 +184,7 @@ const CareersForm = () => {
               />
               <span id="Email_career" class="d-none con-error"></span>
               {errors.email && (
-                <small className="text-red-500" id="Email_career_error">
+                <small className="text-[#EB1414]" id="Email_career_error">
                   {errors.email.message}
                 </small>
               )}
@@ -192,7 +192,7 @@ const CareersForm = () => {
 
             <div>
               <label for="Phone_Number">
-                Phone Number <span className="text-red-500">*</span>
+                Phone Number <span className="text-[#EB1414]">*</span>
               </label>
               <input
                 type="text"
@@ -202,7 +202,7 @@ const CareersForm = () => {
                 aria-describedby="Phone_Number_error"
                 minLength={10}
                 className={`block w-full p-3  border-black border-2 rounded-md  focus:border-blue-600 focus:outline-none ${
-                  errors.phone_no ? "border-red-500" : ""
+                  errors.phone_no ? "border-[#EB1414]" : ""
                 }`}
                 {...register("phone_no", {
                   required: "Phone Number is required",
@@ -225,7 +225,7 @@ const CareersForm = () => {
                 }}
               />
               {errors.phone_no && (
-                <small className="text-red-500" id="Phone_Number_error">
+                <small className="text-[#EB1414]" id="Phone_Number_error">
                   {errors.phone_no.message}
                 </small>
               )}
@@ -233,7 +233,7 @@ const CareersForm = () => {
             <div>
               <label for="file-upload" class="button">
                 Upload Resume / CV
-                <span className="text-red-500">*</span>
+                <span className="text-[#EB1414]">*</span>
               </label>
 
               <input
@@ -253,7 +253,7 @@ const CareersForm = () => {
               />
 
               {errors.fileInput && (
-                <small className="text-red-500" id="file-upload_error">
+                <small className="text-[#EB1414]" id="file-upload_error">
                   {errors.fileInput.message}
                 </small>
               )}
@@ -261,7 +261,7 @@ const CareersForm = () => {
 
             <div>
               <label className="text-lg" for="Select_position">
-                Select position <span className="text-red-500">*</span>
+                Select position <span className="text-[#EB1414]">*</span>
               </label>
               <select
                 name="Select_position"
@@ -285,7 +285,7 @@ const CareersForm = () => {
                 ))}
               </select>
               {errors.position && (
-                <small className="text-red-500" id="Select_position_error">
+                <small className="text-[#EB1414]" id="Select_position_error">
                   {errors.position.message}
                 </small>
               )}

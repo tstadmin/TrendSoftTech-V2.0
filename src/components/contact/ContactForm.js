@@ -71,12 +71,12 @@ const ContactForm = () => {
     <div className="space-y-5  w-full">
       <div className="flex justify-between">
         <h2 className="text-xl text-[#0b6ddc] font-semibold">Contact Form</h2>
-        <small className="text-red-500 text-[14px]">* Fields required</small>
+        <small className="text-[#EB1414] text-[14px]">* Fields required</small>
       </div>
       <form className="grid  gap-3 w-[100%] " onSubmit={handleSubmit(onSubmit)}>
         <div className=" w-full ">
           <label for="Name">
-            Name <span className="text-red-500">*</span>
+            Name <span className="text-[#EB1414]">*</span>
           </label>
 
           <input
@@ -86,7 +86,7 @@ const ContactForm = () => {
             type="text"
             aria-describedby="Name_error"
             className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-              errors.name ? "border-red-500" : ""
+              errors.name ? "border-[#EB1414]" : ""
             }`}
             {...register("name", {
               required: "Name is required",
@@ -100,7 +100,7 @@ const ContactForm = () => {
             }}
           />
           {errors.name && (
-            <small className="text-red-500" id="Name_error">
+            <small className="text-[#EB1414]" id="Name_error">
               {errors.name.message}
             </small>
           )}
@@ -108,7 +108,7 @@ const ContactForm = () => {
 
         <div className=" w-full">
           <label for="Phone_Number">
-            Phone Number <span className="text-red-500">*</span>
+            Phone Number <span className="text-[#EB1414]">*</span>
           </label>
 
           <input
@@ -118,7 +118,7 @@ const ContactForm = () => {
             id="Phone_Number"
             aria-describedby="Phone_Number_error"
             className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-              errors.phone_no ? "border-red-500" : ""
+              errors.phone_no ? "border-[#EB1414]" : ""
             }`}
             {...register("phone_no", {
               required: "Phone Number is required",
@@ -142,7 +142,7 @@ const ContactForm = () => {
           />
 
           {errors.phone_no && (
-            <small className="text-red-500" id="Phone_Number_error">
+            <small className="text-[#EB1414]" id="Phone_Number_error">
               {errors.phone_no.message}
             </small>
           )}
@@ -150,7 +150,7 @@ const ContactForm = () => {
 
         <div className=" w-full">
           <label for="Email">
-            Email<span className="text-red-500">*</span>
+            Email<span className="text-[#EB1414]">*</span>
           </label>
           <input
             type="text"
@@ -159,7 +159,7 @@ const ContactForm = () => {
             name="Email"
             placeholder="Email"
             className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-              errors.email ? "border-red-500" : ""
+              errors.email ? "border-[#EB1414]" : ""
             }`}
             {...register("email", {
               required: "Email is required",
@@ -174,7 +174,7 @@ const ContactForm = () => {
           />
 
           {errors.email && (
-            <small className="text-red-500" id="Email_error">
+            <small className="text-[#EB1414]" id="Email_error">
               {errors.email.message}
             </small>
           )}
@@ -182,7 +182,7 @@ const ContactForm = () => {
 
         <div className=" w-full">
           <label for="Website">
-            Website<span className="text-red-500">*</span>
+            Website<span className="text-[#EB1414]">*</span>
           </label>
           <input
             type="text"
@@ -191,7 +191,7 @@ const ContactForm = () => {
             name="Website"
             placeholder="Enter your Website"
             className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-              errors.websits ? "border-red-500" : ""
+              errors.websits ? "border-[#EB1414]" : ""
             }`}
             {...register("websits", {
               required: " Website URL is required",
@@ -206,7 +206,7 @@ const ContactForm = () => {
             }}
           />
           {errors.websits && (
-            <small className="text-red-500" id="Website_error">
+            <small className="text-[#EB1414]" id="Website_error">
               {errors.websits.message}
             </small>
           )}
@@ -214,7 +214,7 @@ const ContactForm = () => {
 
         <div className=" w-full">
           <label for="Company_Name">
-            Company Name <span className="text-red-500">*</span>
+            Company Name <span className="text-[#EB1414]">*</span>
           </label>
           <input
             type="text"
@@ -223,7 +223,7 @@ const ContactForm = () => {
             name="Company_Name"
             placeholder="Enter your Company name"
             className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-              errors.websits ? "border-red-500" : ""
+              errors.websits ? "border-[#EB1414]" : ""
             }`}
             {...register("company_name", {
               required: "Company Name is required",
@@ -233,7 +233,7 @@ const ContactForm = () => {
             }}
           />
           {errors.company_name && (
-            <small className="text-red-500" id="Company_Name_error">
+            <small className="text-[#EB1414]" id="Company_Name_error">
               {errors.company_name.message}
             </small>
           )}
@@ -241,7 +241,7 @@ const ContactForm = () => {
 
         <div className=" w-full ">
           <label for="Inquiries">
-            Inquiries <span className="text-red-500">*</span>
+            Inquiries <span className="text-[#EB1414]">*</span>
           </label>
 
           <select
@@ -249,7 +249,7 @@ const ContactForm = () => {
             id="Inquiries"
             name="Inquiries"
             className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-              errors.inquiries ? "border-red-500" : ""
+              errors.inquiries ? "border-[#EB1414]" : ""
             }`}
             {...register("inquiries", {
               required: "Select Inquiries is required",
@@ -266,7 +266,7 @@ const ContactForm = () => {
             ))}
           </select>
           {errors.inquiries && (
-            <small className="text-red-500" id="Inquiries_error">
+            <small className="text-[#EB1414]" id="Inquiries_error">
               {errors.inquiries.message}
             </small>
           )}
@@ -274,7 +274,7 @@ const ContactForm = () => {
 
         <div className=" w-full">
           <label for="Message">
-            Message <span className="text-red-500">*</span>
+            Message <span className="text-[#EB1414]">*</span>
           </label>
           <input
             type="text"
@@ -283,7 +283,7 @@ const ContactForm = () => {
             name="Message"
             placeholder="Enter your Message Here"
             className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-              errors.Message ? "border-red-500" : ""
+              errors.Message ? "border-[#EB1414]" : ""
             }`}
             {...register("message", {
               required: "Message is required",
@@ -293,7 +293,7 @@ const ContactForm = () => {
             }}
           />
           {errors.message && (
-            <small className="text-red-500" id="Message_error">
+            <small className="text-[#EB1414]" id="Message_error">
               {errors.message.message}
             </small>
           )}
