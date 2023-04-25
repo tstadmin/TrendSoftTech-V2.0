@@ -439,7 +439,7 @@ home:
           label: "jio"   
       - listItem:
           id: 16
-          img: "/img/Clients/Nebula_Group.png"
+          img: "/img/Clients/Nebula_Group.jpg"
           label: "Nebula Group"             
   workingProcess:
     title: WORKING PROCESS
