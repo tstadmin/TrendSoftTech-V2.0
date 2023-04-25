@@ -22,6 +22,7 @@ const AccessibleExcel = () => {
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible Excel"
+          subTitle="Doc Accessibility"
         />
 
         <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>

@@ -26,6 +26,23 @@ const BreadCrumb = props => {
           <li className=" text-white" aria-hidden="true">
             /
           </li>
+          {props.subTitle ? (
+            <>
+              <li className="text-white breadcrumb">
+                <Link
+                  to="/services/docAccessibility/docAccessibilityCards/"
+                  className="hover:text-[#efe9cd] focus:text-[#efe9cd] underline-[#efe9cd] hover:underline focus:underline hover:decoration-[#ffe793]    focus:decoration-[#ffe793] "
+                >
+                  {props.subTitle}
+                </Link>
+              </li>
+              <li className=" text-white" aria-hidden="true">
+                /
+              </li>
+            </>
+          ) : (
+            ""
+          )}
           <li className=" text-white ">
             <a
               aria-current="page"

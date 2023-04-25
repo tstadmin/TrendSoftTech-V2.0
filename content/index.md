@@ -143,7 +143,7 @@ home:
             - listItem:
                 id: 1
                 title: "Doc Accessibility"
-                page: "/services/docAccessibility/accessiblePDFUA/"
+                page: "/services/docAccessibility/docAccessibilityCards/"
             - listItem:
                 id: 2
                 title: "Web Accessibility"
@@ -267,28 +267,7 @@ home:
           accessibility: "Accessibility"
           accessibilityPage: "/services/accessibility/"
           docaccessibility: "Doc Accessibility"
-          docaccessibilityPage: "/services/docAccessibility/accessiblePDFUA/"
-          subaccessibility:
-            - listItem:
-                id: 1
-                title: "Accessible PDF/UA"
-                page: "/services/docAccessibility/accessiblePDFUA/"
-            - listItem:
-                id: 2
-                title: "Accessible PDF Forms"
-                page: "/services/docAccessibility/accessiblePDFForms/"
-            - listItem:
-                id: 3
-                title: "Accessible Word"
-                page: "/services/docAccessibility/accessibleWord/"
-            - listItem:
-                id: 4
-                title: "Accessible Excel"
-                page: "/services/docAccessibility/accessibleExcel/"
-            - listItem:
-                id: 5
-                title: "Accessible PPT"
-                page: "/services/docAccessibility/accessiblePPT/"      
+          docaccessibilityPage: "/services/docAccessibility/docAccessibilityCards/"  
           webaccessibility: "Web Accessibility"
           webaccessibilityPage: "/services/webAccessibility/"
           digital: "Digital Marketing"
@@ -386,7 +365,7 @@ home:
           label: "read more Doc Accessibility"
           title: "Doc Accessibility"
           description: "We provide document accessibility services in order to assure all documents are compliant with the regulations."
-          page: "/services/docAccessibility/accessiblePDFUA/"
+          page: "/services/docAccessibility/docAccessibilityCards/"
           CTA: "Read more..."
       - listItem:
           id: 9
@@ -1581,4 +1560,36 @@ awards&certifications:
         pdf: "/pdf/Startup.pdf"
         title: "Certificate Of Startup India  "
         label: "Certificate Of Startup India"    
+docAccessibilityCards:
+  list:
+    - listItem:
+        id: 1
+        title: "Accessible PDF / UA"
+        label: "Read more Accessible PDF/UA"
+        description: "yes PDFs also need to be accessible so that people with disabilities using screen reader, speech to text technology or braille displayer get equal access."
+        link: "/services/docAccessibility/accessiblePDFUA/"
+    - listItem:
+        id: 2
+        title: "Accessible PDF Form"
+        label: "Read more Accessible PDF Form"
+        description: "An accessible PDF ensures that everyone including people with disabilities can interact with your document and access the content, images, graphs."
+        link: "/services/docAccessibility/accessiblePDFForms/"
+    - listItem:
+        id: 3
+        title: "Accessible Word"
+        label: "Read more Accessible Word"
+        description: "A large number of documents created today are developed using Microsoft Word. Accessibility options and best practices are available."
+        link: "/services/docAccessibility/accessibleWord/"
+    - listItem:
+        id: 4
+        title: "Accessible PPT"
+        label: "Accessible PPT"
+        description: "Microsoft PowerPoint is surely the go to format for all of us creating presentations. The question that arises is that are the PowerPoint slides accessible. "
+        link: "/services/docAccessibility/accessiblePPT/"
+    - listItem:
+        id: 5
+        title: "Accessible Excel"
+        label: "Read more Accessible Excel"
+        description: "Microsoft Excel is a handy tool when it comes to storing and organizing large amount of data. If using properly and because of its in- built features."
+        link: "/services/docAccessibility/accessibleExcel/"        
 ---

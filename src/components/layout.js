@@ -110,13 +110,6 @@ const layoutQuery = graphql`
                       title
                     }
                   }
-                  subaccessibility {
-                    listItem {
-                      id
-                      page
-                      title
-                    }
-                  }
                   test
                   accessibility
                   docaccessibility

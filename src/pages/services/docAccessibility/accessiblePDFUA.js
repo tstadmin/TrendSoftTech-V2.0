@@ -23,6 +23,7 @@ const AccessiblePDFUA = () => {
         <BreadCrumb
           img="/img/BreadCrumb/docaccessibility.svg"
           title="Accessible PDF / UA"
+          subTitle="Doc Accessibility"
         />
 
         <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>

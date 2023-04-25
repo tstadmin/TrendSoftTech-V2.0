@@ -447,6 +447,7 @@ export default function Header(props) {
                           </>
                         )}
                       </Disclosure>
+
                       {/* Testing */}
                       <Disclosure>
                         {({ open }) => (
@@ -477,6 +478,7 @@ export default function Header(props) {
                           </>
                         )}
                       </Disclosure>
+
                       {/* Accessibility */}
                       <Disclosure>
                         {({ open }) => (
@@ -493,7 +495,7 @@ export default function Header(props) {
                               />
                             </Disclosure.Button>
                             <Disclosure.Panel className="px-4 text-white space-y-1">
-                              <Disclosure>
+                              {/* <Disclosure>
                                 {({ open }) => (
                                   <>
                                     <Disclosure.Button className="flex w-full ">
@@ -527,8 +529,18 @@ export default function Header(props) {
                                     </Disclosure.Panel>
                                   </>
                                 )}
-                              </Disclosure>
+                              </Disclosure> */}
 
+                              <li className="text-white">
+                                <Link
+                                  to={
+                                    props.data.mobilelist.docaccessibilityPage
+                                  }
+                                  className="hover:text-[#ffe793] focus:text-[#ffe793]"
+                                >
+                                  {props.data.mobilelist.docaccessibility}
+                                </Link>
+                              </li>
                               <li className="text-white">
                                 <Link
                                   to={
