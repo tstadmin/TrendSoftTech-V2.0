@@ -10,7 +10,7 @@ export const InfoCardDiv = styled.div`
   ${tw`sm:mt-10 mt-6 sm:space-y-16 space-y-6 `}
 `
 export const InfoCards = styled.ul`
-  ${tw`md:flex  justify-center md:space-x-10 md:px-0 px-8 md:space-y-0  space-y-6`}
+  ${tw`md:flex  justify-center md:space-x-10 md:px-0 px-8 md:space-y-0 mt-8 space-y-6`}
 `
 export const CardDiv = styled.li`
   ${tw`space-y-4  hover:shadow-lg shadow-blue-100 hover:duration-500 cursor-pointer bg-black/5 hover:bg-blue-50    min-w-[20%] p-6`}

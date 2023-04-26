@@ -30,11 +30,11 @@ const ContactForm = () => {
   const InquriesData = [
     {
       id: 1,
-      name: "General Inquries",
+      name: "General Enquries",
     },
     {
       id: 2,
-      name: "Business Inquries",
+      name: "Business Enquries",
     },
   ]
 
@@ -240,25 +240,25 @@ const ContactForm = () => {
         </div>
 
         <div className=" w-full ">
-          <label for="Inquiries">
-            Inquiries <span className="text-[#EB1414]">*</span>
+          <label for="Enquiries">
+            Enquiries <span className="text-[#EB1414]">*</span>
           </label>
 
           <select
-            aria-describedby="Inquiries_error"
-            id="Inquiries"
-            name="Inquiries"
+            aria-describedby="Enquiries_error"
+            id="Enquiries"
+            name="Enquiries"
             className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.inquiries ? "border-[#EB1414]" : ""
             }`}
             {...register("inquiries", {
-              required: "Select Inquiries is required",
+              required: "Select Enquiries is required",
             })}
             onKeyUp={() => {
               trigger("inquiries")
             }}
           >
-            <option value="">Select Inquiries</option>
+            <option value="">Select Enquiries</option>
             {InquriesData.map((c, idx) => (
               <option value={c.InquriesData} key={c.id}>
                 {c.name}
@@ -266,7 +266,7 @@ const ContactForm = () => {
             ))}
           </select>
           {errors.inquiries && (
-            <small className="text-[#EB1414]" id="Inquiries_error">
+            <small className="text-[#EB1414]" id="Enquiries_error">
               {errors.inquiries.message}
             </small>
           )}
@@ -305,7 +305,7 @@ const ContactForm = () => {
         </div> */}
         <button
           type="submit"
-          role="status"
+          // role="status"
           aria-live="polite"
           aria-atomic="true"
           className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"

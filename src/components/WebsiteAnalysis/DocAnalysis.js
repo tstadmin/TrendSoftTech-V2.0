@@ -276,7 +276,7 @@ const DocAnalysis = () => {
             </div> */}
             <button
               type="submit"
-              role="status"
+              // role="status"
               aria-live="polite"
               aria-atomic="true"
               className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"

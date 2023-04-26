@@ -4,8 +4,8 @@ import React from "react"
 const ServiceCards = props => {
   console.log(props)
   return (
-    <div className="space-y-5">
-      <div className="text-center mt-8">
+    <div className="space-y-5" id="mainContent">
+      <div className="text-center mt-8" id="content" role="main">
         <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] font-semibold text-[#B8000C]">
           {props.title}
         </h1>

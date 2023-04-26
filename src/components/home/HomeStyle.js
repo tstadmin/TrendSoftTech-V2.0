@@ -175,7 +175,7 @@ export const FooterTrendInfo = styled.div`
 export const FooterInfoDiv = styled.div`
   ${tw`space-y-3 basis-1/4 mt-5 `}
 `
-export const FooterIconInfo = styled.div`
+export const FooterIconInfo = styled.li`
   ${tw`flex mt-4 gap-5 `}
 `
 export const FooterHr = styled.div`

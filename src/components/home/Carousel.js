@@ -188,7 +188,7 @@ const CarouselItem = props => {
           <button
             className="slid  absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white text-black cursor-pointer"
             onClick={prevSlide}
-            aria-controls="myCarousel-items"
+            // aria-controls="myCarousel-items"
             aria-label="Previous Slide"
             ref={ref}
             tabIndex={0}
@@ -212,7 +212,7 @@ const CarouselItem = props => {
               <div className="text-center">
                 <Link
                   to={slides[currentIndex].page}
-                  className="bg-white sm:p-2  hover:cursor-pointer  p-2 rounded-md  md:text-base sm:text-sm text-xs   text-blue-500"
+                  className="bg-white sm:p-2  hover:cursor-pointer  p-2 rounded-md  md:text-base sm:text-sm text-xs   text-[#3B6BF6]"
                   ref={ref}
                   tabIndex={0}
                   aria-label={slides[currentIndex].label}
@@ -226,7 +226,7 @@ const CarouselItem = props => {
           {/* Right Arrow */}
           <button
             onClick={nextSlide}
-            aria-controls="myCarousel-items"
+            // aria-controls="myCarousel-items"
             aria-label="Next Slide"
             className="slid group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-white text-black cursor-pointer"
           >

@@ -5,7 +5,6 @@ import ChooseUs from "../components/About/ChooseUs"
 import OurVision from "../components/About/OurVision"
 import BreadCrumb from "../components/common/BreadCrumb"
 
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -19,14 +18,17 @@ const About = () => {
 
   return (
     <div>
- 
-      <Layout  title={{title:"About Us"}}>
+      <Layout title={{ title: "About Us" }}>
         <div>
           <Seo title="About" description="TrendSoftTech" />
           <BreadCrumb img="/img/BreadCrumb/AboutFrame.svg" title="About" />
-          <AboutUs data={about} />
-          <OurVision data={about} />
-          <ChooseUs data={about} />
+          <div id="mainContent">
+            <div id="content" role="main">
+              <AboutUs data={about} />
+              <OurVision data={about} />
+              <ChooseUs data={about} />
+            </div>
+          </div>
         </div>
       </Layout>
     </div>

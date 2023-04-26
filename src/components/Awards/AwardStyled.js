@@ -7,5 +7,5 @@ export const AwardHeading = styled.h1`
 `
 
 export const AwardDiv = styled.ul`
-  ${tw`sm:flex grid  justify-center mt-5 gap-10`}
+  ${tw`sm:flex grid  justify-center mt-8 gap-10`}
 `

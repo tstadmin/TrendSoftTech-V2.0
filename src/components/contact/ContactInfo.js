@@ -5,7 +5,12 @@ const ContactInfo = props => {
     <div className="">
       <ContactInfoDiv>
         <Info>
-          <Image src={props.data.emailimg} />
+          <img
+            className="text-4xl sm:w-10 h-14"
+            src={props.data.emailimg}
+            alt=""
+            aria-hidden="true"
+          />
           <div className=" ">
             <div>
               <p className="md:text-lg text-[#0b6ddc] font-semibold text-sm">

@@ -23,7 +23,7 @@ import { Link } from "gatsby"
 
 const Footer = props => {
   return (
-    <FooterDiv id="footer" role="footer">
+    <FooterDiv id="footer" role="contentinfo">
       <div className="md:flex sm:grid  1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4   md:space-y-0 space-y-12 md:space-x-6   sm:justify-between my-10 mt-8 ">
         <FooterTrendInfo>
           <Link to="/">
@@ -108,7 +108,7 @@ const Footer = props => {
                 <SlLocationPin />
               </IconSize>
 
-              <li>
+              <div>
                 <a
                   aria-label="location: Trendsoft Technologies Pvt. Ltd,
                 MIG-37 Vasavi Srinivasam Apartment Flat Number.301 3rd Floor KPHB Colony Road Number.1 Kukatpally Hyderabad-500072"
@@ -119,7 +119,7 @@ const Footer = props => {
                 >
                   <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
                 </a>
-              </li>
+              </div>
             </FooterIconInfo>
 
             <FooterIconInfo>
@@ -127,7 +127,7 @@ const Footer = props => {
                 <AiOutlineMail />
               </IconSize>
 
-              <li>
+              <div>
                 <a
                   className="focus:p-[1px]"
                   href="mailto:info@trendsofttech.com"
@@ -135,14 +135,14 @@ const Footer = props => {
                 >
                   {props.data.mail}
                 </a>
-              </li>
+              </div>
             </FooterIconInfo>
 
             <FooterIconInfo>
               <IconSize>
                 <MdOutlineAttachEmail />
               </IconSize>
-              <li>
+              <div>
                 <a
                   href="mailto:bdm.ts@trendsofttech.com"
                   aria-label="Business Inquries mail: bdm.ts@trendsofttech.com "
@@ -150,7 +150,7 @@ const Footer = props => {
                 >
                   {props.data.serviceMail}
                 </a>
-              </li>
+              </div>
             </FooterIconInfo>
 
             <FooterIconInfo>
@@ -158,15 +158,15 @@ const Footer = props => {
                 <BiLink />
               </IconSize>
 
-              <li>
+              <div>
                 <Link
                   to="/"
-                  aria-label="website link: http://www.trendsofttech.com"
+                  aria-label="Trendsofttech link"
                   className="focus:p-[1px]"
                 >
                   {props.data.website}
                 </Link>
-              </li>
+              </div>
             </FooterIconInfo>
           </ul>
         </FooterInfoDiv>

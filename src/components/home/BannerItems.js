@@ -8,7 +8,7 @@ const BannerItems = props => {
         <Card
           key={id}
           img={item.card.img}
-          title={item.card.title}
+          titles={item.card.title}
           description={item.card.description}
         />
       ))}

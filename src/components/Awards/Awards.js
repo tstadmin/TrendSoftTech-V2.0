@@ -6,9 +6,13 @@ import "react-photo-view/dist/react-photo-view.css"
 import { AwardHeading, AwardDiv } from "./AwardStyled"
 const Awards = props => {
   return (
-    <div>
-      <div className="px-2">
-        <AwardHeading>{props.title}</AwardHeading>
+    <div id="mainContent">
+      <div className="px-2" id="content" role="main">
+        <div>
+          <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] mt-4  font-semibold text-[#B8000C]">
+            Certifications
+          </h1>
+        </div>
         <AwardDiv>
           {props.data.list.map((item, idx) => (
             <li key={item.listItem.id}>

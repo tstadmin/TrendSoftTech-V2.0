@@ -7,8 +7,8 @@ const Development = props => {
   const MyBackgroundImage = "/img/services/tabsIcons/closeuphandwheel.svg"
 
   return (
-    <div>
-      <div>
+    <div id="mainContent">
+      <div id="content" role="main">
         <h1 className="text-center 2xl:text-3xl xl:text-2xl lg:text-xl sm:text-lg text-[16px] text-[#B8000C] font-semibold">
           {props.title}
         </h1>
