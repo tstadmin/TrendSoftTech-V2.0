@@ -28,12 +28,6 @@ export default function Header(props) {
     })
   }
 
-  // const handleKeyPress = event => {
-  //   if (event.key === "Enter") {
-  //     setOpened(true)
-  //   }
-  // }
-
   const onFocusHandler = () => {
     clearTimeout(timeOutId)
   }
@@ -46,12 +40,12 @@ export default function Header(props) {
     >
       <NavBar>
         {/* Logo */}
-        <div className="p-2">
-          <Link to="/">
+        <div className="p-2 ">
+          <Link to="/" className="">
             <img
               src={props.data.logo}
               alt="Trendsoft Tech Logo"
-              className="md:w-[211px]  540Screen:w-[150px]  w-[100px] 340Screen:w-[120px]  "
+              className="md:w-[211px]  540Screen:w-[150px]   w-[100px] 340Screen:w-[120px]"
             />
           </Link>
         </div>
@@ -61,41 +55,6 @@ export default function Header(props) {
 
       <div>
         <div className="flex">
-          {/* <div
-            onClick={handleNav}
-            className=" block sm:text-2xl text-md  hover:text-blue-400 pr-8 "
-          >
-            {opened ? (
-              <button
-                id="navbarDropdown"
-                className="cursor-pointer text-[#0084FF] ml-5 "
-                aria-expanded="true"
-                aria-haspopup="true"
-
-                // aria-expanded={opened}
-              >
-                <span
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  className="sr-only"
-                >
-                  expanded
-                </span>
-
-                <RxCross2 className="  md:text-3xl sm:text-xl text-lg" />
-              </button>
-            ) : (
-              <button
-                aria-labelledby="navbarDropdown"
-                className="cursor-pointer text-[#0084FF] "
-                aria-expanded="false"
-              >
-                <span className="sr-only">menu </span>
-                <HiBars3BottomLeft className="md:text-3xl sm:text-xl text-lg" />
-              </button>
-            )}
-          </div> */}
-
           {opened && (
             <div
             // ref={ref}

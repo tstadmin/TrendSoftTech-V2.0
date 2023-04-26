@@ -25,7 +25,7 @@ const ServiceCards = props => {
                   to={item.listItem.link}
                   className="text-[#1472E6] "
                 >
-                  read more...
+                  Read more...
                 </Link>
               </div>
             </div>

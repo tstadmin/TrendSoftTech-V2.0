@@ -8,7 +8,7 @@ const TopBar = props => {
       <p className="text-white sm:text-[16px] text-[12px]">
         {/* {props.title} */}
         {/* Wishing you a very happy Ambedkar Jayanti 2023! */}
-        Wishing you very happy Ramzan 2023!
+        Wishing you happy May Day 2023!
         {/* <span className=" ml-4">{props.subTitle}</span>  */}
       </p>
     </div>

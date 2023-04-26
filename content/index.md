@@ -502,7 +502,7 @@ home:
           page: "/services/digitalMarketing/"           
     contactTitle : "Contact Info"
     contactName: "ContactInfo"
-    local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat Number.301, 3rd Floor , KPHB Colony, Road Number.1 ,Kukatpally ,Hyderabad-500072."
+    local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat Number.301, 3rd Floor, KPHB Colony, Road Number.1,Kukatpally ,Hyderabad-500072."
     mail : "info@trendsofttech.com" 
     serviceMail: " bdm.ts@trendsofttech.com"
     mailLink : ""    
@@ -1357,98 +1357,98 @@ portfolio:
     portfolios:
       - listItem:
           id: 1
-          title: "EA labs"
+          titles: "EA labs"
           img: "/img/portfolio/ea.jpg"
           about: "We believe knowledge is a key to early success in this stage"
           link: "https://ealabsipl.com/"
           label: "explore EA labs website"
       - listItem:
           id: 2
-          title: "vijaya pickles"
+          titles: "vijaya pickles"
           img: "/img/portfolio/vijaya.jpg"
           about: "Spicy & tasty chicken pickle. Contact us to place the order now!"
           link: "https://vijayapickles.com/"
           label: "explore vijaya pickles website"
       - listItem:
           id: 3
-          title: "Quadtree Technologies"
+          titles: "Quadtree Technologies"
           img: "/img/portfolio/quad.jpg"
           about: "Quadtree Technologies is a Big Data Analytics company"
           link: "https://www.quadtreetech.com/"
           label: "explore Quadtree Technologies website"
       - listItem:
           id: 4
-          title: "ProTPD Digital"
+          titles: "ProTPD Digital"
           img: "/img/portfolio/pro.jpg"
           about: "Our team developed TPD2 submission tools for multi large organizations "
           link: "https://protpd.com/"
           label: "explore ProTPD Digital website"     
       - listItem:
           id: 5
-          title: "Lantrans"
+          titles: "Lantrans"
           img: "/img/portfolio/lantrans.jpg"
           about: "Working with a group of professional translators with 10+ years of experience "
           link: "https://lantrans.in/"
           label: "explore Lantrans website"
       - listItem:
           id: 6
-          title: "KN Technologies"
+          titles: "KN Technologies"
           img: "/img/portfolio/knt.jpg"
           about: "it’s not easy to get a well-paid job with a decent employer without putting in the work"
           link: "https://kntech.co.uk/"
           label: "explore KN Technologies website"
       - listItem:
           id: 7
-          title: "SS Companies"
+          titles: "SS Companies"
           img: "/img/portfolio/sscom.jpg"
           about: "Stalin Swarna Group of companies was started by its chairman"
           link: "https://sscompanies.in/"
           label: "explore SS Companies website"
       - listItem:
           id: 8
-          title: "Annapurna de Royal"
+          titles: "Annapurna de Royal"
           img: "/img/portfolio/annapurna.jpg"
           about: "Our hotel signifies warmth and friendliness, simplicity with style for all executives and travelers"
           link: "https://www.annapurnaderoyal.com/"
           label: "explore Annapurna de Royal website"
       - listItem:
           id: 9
-          title: "Global Pharma Solutions"
+          titles: "Global Pharma Solutions"
           img: "/img/portfolio/globalpharma.jpg"
           about: "Global pharma consultancy is a pharmaceutical service company"
           link: "https://gpconsultancy.in/"
           label: "explore Global Pharma Solutions website"
       - listItem:
           id: 10
-          title: "Chachapoya USA"
+          titles: "Chachapoya USA"
           img: "/img/portfolio/chachapoya.jpg"
           about: "LLC Founded with focus on Digital Transformation Strategies"
           link: "https://chachapoyahxm.com/"
           label: "explore Chachapoya USA website"
       - listItem:
           id: 11
-          title: "AL Kasur"
+          titles: "AL Kasur"
           img: "/img/portfolio/akkasur.jpg"
           about: "AL KASUR STEEL WORK AND WELDING WORKSHOP Engraving Services."
           link: "https://alkasur.com/"
           label: "explore AL Kasur website"
       - listItem:
           id: 12
-          title: "A1 Event Planner"
+          titles: "A1 Event Planner"
           img: "/img/portfolio/eventplanner.jpg"
           about: "Event Planner Ltd is an event logistics and marketing company"
           link: "https://a1eventdecors.com/"
           label: "explore A1 Event Plannerr website"
       - listItem:
           id: 13
-          title: "Kumar Pumps & Motors"
+          titles: "Kumar Pumps & Motors"
           img: "/img/portfolio/kumarpumps.jpg"
           about: "Kumar Pumps is the pioneer in the manufacturer of Pumpsets & Electric Motors"
           link: "https://kumarpumps.co.in/"
           label: "explore Kumar Pumps & Motors website"
       - listItem:
           id: 14
-          title: "Trendsoft Technologies"
+          titles: "Trendsoft Technologies"
           img: "/img/portfolio/trendsofttech.jpg"
           about: "Trendsoft Technologies is a Professional, Website and Mobile App Development Company"
           link: "https://trendsofttech.com/" 

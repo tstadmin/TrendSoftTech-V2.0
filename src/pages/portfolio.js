@@ -17,9 +17,9 @@ const Portfolio = () => {
   return (
     <div>
       <Layout title={{ title: "Portfolio" }}>
-        <Seo title="Portfolios" description="TrendSoftTech" />
-        <BreadCrumb img="/img/BreadCrumb/AboutFrame.svg" title="portfolios" />
-        <Portfolios data={portfolio} />
+        <Seo title="Portfolio" description="TrendSoftTech" />
+        <BreadCrumb img="/img/BreadCrumb/AboutFrame.svg" title="Portfolio" />
+        <Portfolios data={portfolio} titles=" Portfolio" />
       </Layout>
     </div>
   )
@@ -38,7 +38,7 @@ const dataQuery = graphql`
                 listItem {
                   id
                   img
-                  title
+                  titles
                   link
                   about
                   label

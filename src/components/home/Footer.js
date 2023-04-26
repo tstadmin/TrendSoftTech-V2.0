@@ -90,7 +90,9 @@ const Footer = props => {
           <ul className="space-y-2" aria-labelledby={props.data.itTitle}>
             {props.data.itService?.map((item, idx) => (
               <li key={item.listItem.id}>
-                <Link to={item.listItem.page}>{item.listItem.title}</Link>
+                <Link to={item.listItem.page} className="focus:p-[1px]">
+                  {item.listItem.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -113,6 +115,7 @@ const Footer = props => {
                   href="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
                   target="_blank"
                   rel="noreferrer"
+                  className="focus:p-[1px]"
                 >
                   <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
                 </a>
@@ -125,8 +128,8 @@ const Footer = props => {
               </IconSize>
 
               <li>
-                {" "}
                 <a
+                  className="focus:p-[1px]"
                   href="mailto:info@trendsofttech.com"
                   aria-label="company mail: info@trendsofttech.com"
                 >
@@ -143,6 +146,7 @@ const Footer = props => {
                 <a
                   href="mailto:bdm.ts@trendsofttech.com"
                   aria-label="Business Inquries mail: bdm.ts@trendsofttech.com "
+                  className="focus:p-[1px]"
                 >
                   {props.data.serviceMail}
                 </a>
@@ -158,8 +162,9 @@ const Footer = props => {
                 <Link
                   to="/"
                   aria-label="website link: http://www.trendsofttech.com"
+                  className="focus:p-[1px]"
                 >
-                  {props.data.website}{" "}
+                  {props.data.website}
                 </Link>
               </li>
             </FooterIconInfo>
