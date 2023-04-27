@@ -506,7 +506,7 @@ home:
     mail : "info@trendsofttech.com" 
     serviceMail: " bdm.ts@trendsofttech.com"
     mailLink : ""    
-    website : "http://www.trendsofttech.com" 
+    website : "https://www.trendsofttech.com" 
     facebookLink: "https://www.facebook.com/trendsofttech/"
     linkedinLink: "https://www.linkedin.com/company/trendsoft-technologies-private-limited/"
     instagramLink : "https://www.instagram.com/trendsoft_technologies/"
