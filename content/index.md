@@ -380,67 +380,67 @@ home:
       - listItem:
           id: 1
           img: "/img/Clients/mps.jpeg"
-          label: "MPS"    
+          label: "MPS Logo"    
       - listItem:
           id: 2
           img: "/img/Clients/Kumar_pamps.png"
-          label: "Kumar pumps"
+          label: "Kumar pumps Logo"
       - listItem:
           id: 3
           img: "/img/Clients/arions.jpeg"
-          label: "Arinos"
+          label: "Arinos Logo"
       - listItem:
           id: 4
           img: "/img/Clients/dtraive.jpeg"
-          label: "Straive"
+          label: "Straive Logo"
       - listItem:
           id: 5
           img: "/img/Clients/Amnet.png"
-          label: "Amnet"    
+          label: "Amnet Logo"    
       - listItem:
           id: 6
           img: "/img/Clients/jou.jpeg"
-          label: "Jouve India"    
+          label: "Jouve India Logo"    
       - listItem:
           id: 7
           img: "/img/Clients/tenali_double_horse.png"
-          label: "Tenali Double Horse"    
+          label: "Tenali Double Horse Logo"    
       - listItem:
           id: 8
           img: "/img/Clients/codemate.jpeg"
-          label: "CodeMantra"
+          label: "CodeMantra Logo"
       - listItem:
           id: 9
           img: "/img/Clients/acade.jpeg"
-          label: "Acadecraft"    
+          label: "Acadecraft Logo"    
       - listItem:
           id: 10
           img: "/img/Clients/HTS_BIO_Pharma.png"
-          label: "HTS BIO Pharma"        
+          label: "HTS BIO Pharma Logo"        
       - listItem:
           id: 11
           img: "/img/Clients/SS_Group.png"
-          label: "SS Group "
+          label: "SS Group Logo"
       - listItem:
           id: 12
           img: "/img/Clients/ace.jpeg"
-          label: "ACE pro india LLP"
+          label: "ACE pro india LLP Logo"
       - listItem:
           id: 13
           img: "/img/Clients/puresoftware.jpeg"
-          label: "PureSoftware"
+          label: "PureSoftware Logo"
       - listItem:
           id: 14
           img: "/img/Clients/Apex.png"
-          label: "Apex"    
+          label: "Apex Logo"    
       - listItem:
           id: 15
           img: "/img/Clients/jio.png"
-          label: "jio"   
+          label: "jio Logo"   
       - listItem:
           id: 16
           img: "/img/Clients/Nebula_Group.jpg"
-          label: "Nebula Group"             
+          label: "Nebula Group Logo"             
   workingProcess:
     title: WORKING PROCESS
     description: "How We Work For Our Customers"

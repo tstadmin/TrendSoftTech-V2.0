@@ -19,13 +19,15 @@ const RequirementInfo = props => {
           Designation
         </h1>
       </div>
+      <h2 className="md:text-xl sm:text-lg text-base font-semibold font-mono">
+        {props.data.title}
+      </h2>
 
-      <RequirementInfoDiv>
-        <RequirementInfoheading>{props.data.title}</RequirementInfoheading>
+      <ul className="space-y-3">
         {props.data.list?.map((item, idx) => (
           <li key={item.listItem.id}>{item.listItem.description}</li>
         ))}
-      </RequirementInfoDiv>
+      </ul>
       <div>
         <CareersForm />
       </div>

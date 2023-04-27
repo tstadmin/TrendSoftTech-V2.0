@@ -40,7 +40,7 @@ const Footer = props => {
                 <li>
                   <a
                     href={props.data.facebookLink}
-                    aria-label="Facebook: trendsoft tech page "
+                    aria-label="Facebook trendsofttech page "
                     target="_blank"
                     rel="noreferrer"
                     className="focus:text-white focus:rounded-full  "
@@ -56,7 +56,7 @@ const Footer = props => {
                     href={props.data.linkedinLink}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label="Linkedin: trendsoft tech page "
+                    aria-label="Linkedin trendsofttech page "
                     className=" focus:rounded-full"
                   >
                     <FooterIconStyles>
@@ -70,7 +70,7 @@ const Footer = props => {
                     href={props.data.instagramLink}
                     target="_blank"
                     rel="noreferrer"
-                    aria-label="Instagram: trendsoft tech page "
+                    aria-label="Instagram trendsofttech page "
                     className="focus:rounded-full"
                   >
                     <FooterIconStyles>
