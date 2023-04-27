@@ -4,7 +4,7 @@ import ContactInfo from "./ContactInfo"
 import { ContactDiv, ContactHanding } from "./Contactstyled"
 const ContactIndex = props => {
   return (
-    <div id="mainContent">
+    <div>
       <div id="content" role="main">
         <ContactHanding>{props.data.title}</ContactHanding>
 

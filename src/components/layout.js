@@ -50,7 +50,7 @@ const Layout = ({ children, title }) => {
             <Header data={data} />
             <div id="mainContent">{children}</div>
             <Footer data={footer} />
-            <OnclickTop />
+            {/* <OnclickTop /> */}
           </>
         )}
       </>

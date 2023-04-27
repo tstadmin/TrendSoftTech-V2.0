@@ -15,7 +15,7 @@ import CareersForm from "./CareersForm"
 
 const InfoCard = props => {
   return (
-    <InfoCardDiv id="mainContent">
+    <InfoCardDiv>
       <div id="content" role="main">
         <Header>{props.title}</Header>
         <InfoCards>

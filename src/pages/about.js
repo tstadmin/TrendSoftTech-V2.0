@@ -22,7 +22,7 @@ const About = () => {
         <div>
           <Seo title="About" description="TrendSoftTech" />
           <BreadCrumb img="/img/BreadCrumb/AboutFrame.svg" title="About" />
-          <div id="mainContent">
+          <div>
             <div id="content" role="main">
               <AboutUs data={about} />
               <OurVision data={about} />

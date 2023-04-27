@@ -14,7 +14,7 @@ import CareersForm from "./CareersForm"
 const RequirementInfo = props => {
   return (
     <Requirement>
-      <div>
+      <div id="content" role="main">
         <h1 className="text-[#0b6ddc] font-semibold text-[28px]">
           Designation
         </h1>

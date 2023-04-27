@@ -302,7 +302,6 @@ export default function Header(props) {
                   <div
                     aria-labelledby="navbarDropdown"
                     className="cursor-pointer text-[#0084FF] "
-                    aria-expanded="false"
                   >
                     <span className="sr-only">menu </span>
                     <HiBars3BottomLeft className="md:text-3xl sm:text-xl text-lg" />
