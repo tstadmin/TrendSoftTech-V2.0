@@ -4,7 +4,7 @@ import tw from "twin.macro"
 import { Disclosure } from "@headlessui/react"
 import { IoIosArrowDown } from "react-icons/io"
 
-import { RxCross2 } from "react-icons/rx"
+import { RxAccessibility, RxCross2 } from "react-icons/rx"
 import { HiBars3BottomLeft } from "react-icons/hi2"
 import { FaHome } from "react-icons/fa"
 
@@ -569,6 +569,10 @@ export default function Header(props) {
               </Link>
             </li>
           </ul>
+          <div className="ml-8">
+            <span className="sr-only">Accessibility Icon</span>
+            <RxAccessibility className="md:text-3xl sm:text-xl text-lg text-[#0084FF] " />
+          </div>
         </div>
       </div>
 

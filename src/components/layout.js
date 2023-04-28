@@ -141,6 +141,8 @@ const layoutQuery = graphql`
                     title
                   }
                 }
+                contact
+                contactUs
                 contactTitle
                 contactName
                 itTitle

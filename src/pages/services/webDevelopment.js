@@ -9,6 +9,7 @@ import Portfolios from "../../components/Portfolio/Portfolios"
 import BreadCrumb from "../../components/common/BreadCrumb"
 
 import ServicesLayout from "../../components/ServicesLayout"
+import ContactForm from "../../components/contact/ContactForm"
 
 const WebDevelopment = () => {
   const query = useStaticQuery(webDevelopmentData)
@@ -26,7 +27,17 @@ const WebDevelopment = () => {
         <ServicesLayout pdf={{ pdf: "/pdf/brochure-test.pdf" }}>
           <Development data={data} title="Web Development" />
         </ServicesLayout>
+
         <Portfolios data={data} />
+
+        {/* <div className="flex justify-between items-center  p-6 bg-blue-50 px-48">
+          <div>
+            <h1>Contact From</h1>
+          </div>
+          <div className="bg-white shadow-md w-[40%]  rounded-md p-5">
+            <ContactForm />
+          </div>
+        </div> */}
       </Layout>
     </div>
   )

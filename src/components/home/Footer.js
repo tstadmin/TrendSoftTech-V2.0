@@ -170,6 +170,17 @@ const Footer = props => {
             </FooterIconInfo>
           </ul>
         </FooterInfoDiv>
+
+        {/* <FooterInfoDiv>
+          <FooterTitle id="Contact">{props.data.contact}</FooterTitle>
+          <ul aria-labelledby="Contact">
+            <li>
+              <Link to="/contact/" className="focus:p-[1px]">
+                {props.data.contactUs}
+              </Link>
+            </li>
+          </ul>
+        </FooterInfoDiv> */}
       </div>
 
       <FooterHr />

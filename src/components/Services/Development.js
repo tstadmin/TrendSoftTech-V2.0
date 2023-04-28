@@ -59,11 +59,6 @@ const Development = props => {
           </div>
         ))}
       </div>
-      {/* <div className="grid justify-center p-6 bg-blue-50">
-        <div className="bg-white shadow-md rounded-md p-5">
-          <ContactForm />
-        </div>
-      </div> */}
     </div>
   )
 }

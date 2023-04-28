@@ -499,7 +499,17 @@ home:
       - listItem:
           id: 7
           title: "Digital Marketing"
-          page: "/services/digitalMarketing/"           
+          page: "/services/digitalMarketing/"     
+      - listItem:
+          id: 8
+          title: "Web Accessibility"
+          page: "/services/webAccessibility/"
+      - listItem:
+          id: 9
+          title: "Doc Accessibility"
+          page: "/services/docAccessibility/docAccessibilityCards/"
+    contact: "Contact Us"
+    contactUs: "Contact"
     contactTitle : "Contact Info"
     contactName: "ContactInfo"
     local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat Number.301, 3rd Floor, KPHB Colony, Road Number.1,Kukatpally ,Hyderabad-500072."
