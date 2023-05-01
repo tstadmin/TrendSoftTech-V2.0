@@ -85,7 +85,7 @@ const ContactForm = () => {
             name="Name"
             type="text"
             aria-describedby="Name_error"
-            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
+            className={`block w-full 540Screen:p-2 p-1  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.name ? "border-[#EB1414]" : ""
             }`}
             {...register("name", {
@@ -117,7 +117,7 @@ const ContactForm = () => {
             type="text"
             id="Phone_Number"
             aria-describedby="Phone_Number_error"
-            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
+            className={`block w-full 540Screen:p-2 p-1  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.phone_no ? "border-[#EB1414]" : ""
             }`}
             {...register("phone_no", {
@@ -158,7 +158,7 @@ const ContactForm = () => {
             id="Email"
             name="Email"
             placeholder="Email"
-            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
+            className={`block w-full 540Screen:p-2 p-1 border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.email ? "border-[#EB1414]" : ""
             }`}
             {...register("email", {
@@ -190,7 +190,7 @@ const ContactForm = () => {
             id="Website"
             name="Website"
             placeholder="Enter your Website"
-            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
+            className={`block w-full 540Screen:p-2 p-1  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.websits ? "border-[#EB1414]" : ""
             }`}
             {...register("websits", {
@@ -222,7 +222,7 @@ const ContactForm = () => {
             id="Company_Name"
             name="Company_Name"
             placeholder="Enter your Company name"
-            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
+            className={`block w-full 540Screen:p-2 p-1  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.websits ? "border-[#EB1414]" : ""
             }`}
             {...register("company_name", {
@@ -248,7 +248,7 @@ const ContactForm = () => {
             aria-describedby="Enquiries_error"
             id="Enquiries"
             name="Enquiries"
-            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
+            className={`block w-full 540Screen:p-2 p-1  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.inquiries ? "border-[#EB1414]" : ""
             }`}
             {...register("inquiries", {
@@ -282,7 +282,7 @@ const ContactForm = () => {
             id="Message"
             name="Message"
             placeholder="Enter your Message Here"
-            className={`block w-full p-3  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
+            className={`block w-full 540Screen:p-2 p-1  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
               errors.Message ? "border-[#EB1414]" : ""
             }`}
             {...register("message", {
@@ -308,7 +308,7 @@ const ContactForm = () => {
           // role="status"
           aria-live="polite"
           aria-atomic="true"
-          className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl p-3 text-white   text-[16px]"
+          className=" bg-blue-600  hover:text-blue-600 focus:text-blue-600 hover:bg-white focus:bg-white  sm:w-44 font-medium mt-4 border-blue-400 border-2 rounded-3xl 540Screen:p-2 p-1 text-white   text-[16px]"
         >
           {fileUploaded ? "Please wait..." : "Submit"}
         </button>

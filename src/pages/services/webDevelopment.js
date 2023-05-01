@@ -16,6 +16,8 @@ const WebDevelopment = () => {
   const data =
     query.allMarkdownRemark.edges[0].node.frontmatter.services.webDevelopment
 
+  const contactImage = "/img/services/ContactFormImage.svg"
+
   return (
     <div>
       <Layout title={{ title: "Web Development" }}>
@@ -30,14 +32,12 @@ const WebDevelopment = () => {
 
         <Portfolios data={data} />
 
-        {/* <div className="flex justify-between items-center  p-6 bg-blue-50 px-48">
-          <div>
-            <h1>Contact From</h1>
-          </div>
-          <div className="bg-white shadow-md w-[40%]  rounded-md p-5">
+        <div className="xl:flex xl:justify-between xl:items-center  p-6 bg-blue-50 1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4">
+          <div className="bg-white shadow-md xl:w-[40%]  rounded-md p-5">
             <ContactForm />
           </div>
-        </div> */}
+          <img src={contactImage} alt="image" width="700px" />
+        </div>
       </Layout>
     </div>
   )
