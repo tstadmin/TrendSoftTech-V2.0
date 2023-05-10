@@ -20,7 +20,7 @@ const CarouselItem = props => {
       img: "/img/carousel/WEBDEVELOPMENT.jpg",
       title: "WEB DEVELOPMENT",
       page: "/services/webDevelopment/",
-      label: "Learn More  WEB DEVELOPMENT ",
+      label: "WEB DEVELOPMENT ",
       slidescount: " 1 of 9",
       CTA: "Learn More",
     },
@@ -29,7 +29,7 @@ const CarouselItem = props => {
       img: "/img/carousel/ECOMMERCEDEVELOPMENT.jpg",
       title: "E-COMMERCE DEVELOPMENT",
       page: "/services/ecommerceDevelopment/",
-      label: "Learn More  ECOMMERCE DEVELOPMENT ",
+      label: "ECOMMERCE DEVELOPMENT ",
       slidescount: "2 of 9",
       CTA: "Learn More",
     },
@@ -37,7 +37,7 @@ const CarouselItem = props => {
       id: 3,
       img: "/img/carousel/MOBILEDEVELOPMENT.jpg",
       title: "MOBILE DEVELOPMENT",
-      label: "Learn More MOBILE DEVELOPMENT",
+      label: "MOBILE DEVELOPMENT",
       page: "/services/mobileDevelopment/",
       slidescount: " 3 of 9",
       CTA: "Learn More",
@@ -46,7 +46,7 @@ const CarouselItem = props => {
       id: 4,
       img: "/img/carousel/PRODUCTDEVELOPMENT.jpg",
       title: "PRODUCT DEVELOPMENT",
-      label: "Learn More PRODUCT DEVELOPMENT ",
+      label: "PRODUCT DEVELOPMENT ",
       page: "/services/productDevelopment/",
       slidescount: " 4 of 9",
       CTA: "Learn More",
@@ -55,7 +55,7 @@ const CarouselItem = props => {
       id: 5,
       img: "/img/carousel/UIUXDESIGN.jpg",
       title: "UI / UX DESIGN",
-      label: "Learn More UI / UX DESIGN",
+      label: "UI / UX DESIGN",
       page: "/services/uiUXDesign/",
       slidescount: " 5 of 9",
       CTA: "Learn More",
@@ -64,7 +64,7 @@ const CarouselItem = props => {
       id: 6,
       img: "/img/carousel/MANUALTESTING.jpg",
       title: "MANUAL TESTING",
-      label: "Learn More MANUAL TESTING",
+      label: "MANUAL TESTING",
       page: "/services/testing/",
       slidescount: "6 of 9",
       CTA: "Learn More",
@@ -73,7 +73,7 @@ const CarouselItem = props => {
       id: 7,
       img: "/img/carousel/AUTOMATIONTESTING.jpg",
       title: "AUTOMATION TESTING",
-      label: "Learn More  AUTOMATION TESTING",
+      label: "AUTOMATION TESTING",
       page: "/services/testing/",
       slidescount: " 7 of 9",
       CTA: "Learn More",
@@ -82,7 +82,7 @@ const CarouselItem = props => {
       id: 8,
       img: "/img/carousel/DIGITALMARKETING.jpg",
       title: "DIGITAL MARKETING",
-      label: "Learn More DIGITAL MARKETING ",
+      label: "DIGITAL MARKETING ",
       page: "/services/digitalMarketing/",
       slidescount: " 8 of 9",
       CTA: "Learn More",
@@ -206,10 +206,16 @@ const CarouselItem = props => {
             aria-label={slides[currentIndex].slidescount}
           >
             <div className=" grid justify-center gap-4 ">
-              <h2 className=" text-center text-white  xl:text-2xl lg:text-xl md:text-lg sm:text-sm text-xs font-semibold">
+              <Link
+                to={slides[currentIndex].page}
+                className=" text-center text-white focus:text-black focus:decoration-black hover:text-black hover:decoration-black  xl:text-2xl lg:text-xl md:text-lg sm:text-sm text-xs font-semibold"
+                ref={ref}
+                tabIndex={0}
+                aria-label={slides[currentIndex].label}
+              >
                 {slides[currentIndex].title}
-              </h2>
-              <div className="text-center">
+              </Link>
+              {/* <div className="text-center">
                 <Link
                   to={slides[currentIndex].page}
                   className="bg-white sm:p-2  hover:cursor-pointer  p-2 rounded-md  md:text-base sm:text-sm text-xs   text-[#3B6BF6]"
@@ -219,7 +225,7 @@ const CarouselItem = props => {
                 >
                   {slides[currentIndex].CTA}
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 

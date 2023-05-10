@@ -467,7 +467,7 @@ home:
           title: "Deployment"
           description: "Once the product is accepted by the client we move towards deployment. Our support teams."
   footer:
-    logo: "/img/HomeImages/trendsoftlogo.svg"
+    logo: "/img/iconTST.svg"
     alt: "trendsoft tech logo"
     description: "At Trendsoft Quality is our ultimate business plan. We consider every aspect which matters to clients data security and intellectual property protections."
     itTitle: "Services"
@@ -488,26 +488,68 @@ home:
           id: 4
           title: "Mobile Development"
           page: "/services/mobileDevelopment/"
+    AccessibilityTitle: "Accessibility"
+    Accessibility:
       - listItem:
-          id: 5
-          title: "UI/UX Design"
-          page: "/services/uiUXDesign/"
-      - listItem:
-          id: 6
-          title: "Testing"
-          page: "/services/testing/"  
-      - listItem:
-          id: 7
-          title: "Digital Marketing"
-          page: "/services/digitalMarketing/"     
-      - listItem:
-          id: 8
+          id: 1
           title: "Web Accessibility"
           page: "/services/webAccessibility/"
       - listItem:
-          id: 9
+          id: 2
           title: "Doc Accessibility"
           page: "/services/docAccessibility/docAccessibilityCards/"
+    TestingTitle: "Testing-Services"
+    Testing:
+      - listItem:
+          id: 1
+          title: "Testing"
+          page: "/services/testing/"
+      - listItem:
+          id: 2
+          title: "Functional Testing"
+          page: "/services/testings/functionalTesting/"
+      - listItem:
+          id: 3
+          title: "Performance Testing"
+          page: "/services/testings/performanceTesting/"
+      - listItem:
+          id: 4
+          title: "Security Testing"
+          page: "/services/testings/securityTesting/"
+      - listItem:
+          id: 5
+          title: "Usability Testing"
+          page: "/services/testings/usabilityTesting/"
+    DesigningTitle: "Designing"
+    Designing:
+      - listItem:
+          id: 1
+          title: "UI/UX Design"
+          page: "/services/uiUXDesign/"
+    PagesTitle: "Pages"
+    Pages:
+      - listItem:
+          id: 1
+          title: "Certifications"
+          page: "/awards/"
+      - listItem:
+          id: 2
+          title: "Careers"
+          page: "/careers/"
+      - listItem:
+          id: 3
+          title: "About Us"
+          page: "/about/"
+      - listItem:
+          id: 4
+          title: "Contact Us"
+          page: "/contact/"
+    DgmTitle: "Marketing"
+    DigitalMarketing:
+      - listItem:
+          id: 1
+          title: "Digital Marketing"
+          page: "/services/digitalMarketing/"     
     contact: "Contact Us"
     contactUs: "Contact"
     contactTitle : "Contact Info"

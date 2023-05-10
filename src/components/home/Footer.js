@@ -22,169 +22,261 @@ import {
 import { Link } from "gatsby"
 
 const Footer = props => {
+  console.log(props.data)
+
   return (
     <FooterDiv id="footer" role="contentinfo">
-      <div className="md:flex sm:grid  1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4   md:space-y-0 space-y-12 md:space-x-6   sm:justify-between my-10 mt-8 ">
-        <FooterTrendInfo>
-          <Link to="/">
-            <img src={props.data.logo} className="h-32" alt={props.data.alt} />
-          </Link>
+      <div className="md:flex  justify-between sm:grid  1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4   md:space-y-0 space-y-12 md:space-x-6    my-10 mt-8 ">
+        <div className="w-[30%] grid gap-8">
+          <FooterTrendInfo>
+            <Link to="/">
+              <img
+                src={props.data.logo}
+                className="h-[66px]"
+                alt={props.data.alt}
+              />
+            </Link>
+          </FooterTrendInfo>
 
-          <p>{props.data.description}</p>
-          <div className="">
-            <FooterIconLogo>
-              <h2 className=" mt-1 mr-5" id="FollowUs">
-                Follow Us
-              </h2>
-              <ul aria-labelledby="FollowUs" className="flex gap-2 text-start ">
-                <li>
+          {/* contact */}
+          <FooterInfoDiv>
+            <FooterTitle id={props.data.contactName}>
+              {props.data.contactTitle}
+            </FooterTitle>
+            <ul aria-labelledby={props.data.contactName}>
+              <FooterIconInfo>
+                <IconSize>
+                  <AiOutlineMail />
+                </IconSize>
+
+                <div>
                   <a
-                    href={props.data.facebookLink}
-                    aria-label="Facebook trendsofttech page "
-                    target="_blank"
-                    rel="noreferrer"
-                    className="focus:text-white focus:rounded-full  "
+                    className="focus:p-[1px]"
+                    href="mailto:info@trendsofttech.com"
+                    aria-label="company mail: info@trendsofttech.com"
                   >
-                    <div className="text-blue-500 text-center hover:text-white  shadow-black/50 border-black/10  bg-white focus:bg-blue-600 hover:cursor-pointer hover:bg-blue-600  rounded-full w-9 h-9 p-[10px] shadow-xl">
-                      <FaFacebookF />
-                    </div>
+                    {props.data.mail}
                   </a>
-                </li>
+                </div>
+              </FooterIconInfo>
 
-                <li>
+              <FooterIconInfo>
+                <IconSize>
+                  <MdOutlineAttachEmail />
+                </IconSize>
+                <div>
                   <a
-                    href={props.data.linkedinLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Linkedin trendsofttech page "
-                    className=" focus:rounded-full"
+                    href="mailto:bdm.ts@trendsofttech.com"
+                    aria-label="Business Inquries mail: bdm.ts@trendsofttech.com "
+                    className="focus:p-[1px]"
                   >
-                    <FooterIconStyles>
-                      <TiSocialLinkedin className="text-xl" />
-                    </FooterIconStyles>
+                    {props.data.serviceMail}
                   </a>
-                </li>
+                </div>
+              </FooterIconInfo>
 
-                <li>
+              <FooterIconInfo>
+                <IconSize>
+                  <BiLink />
+                </IconSize>
+
+                <div>
+                  <Link
+                    to="/"
+                    aria-label="Trendsofttech link"
+                    className="focus:p-[1px]"
+                  >
+                    {props.data.website}
+                  </Link>
+                </div>
+              </FooterIconInfo>
+
+              <FooterIconInfo>
+                <IconSize>
+                  <SlLocationPin />
+                </IconSize>
+
+                <div>
                   <a
-                    href={props.data.instagramLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Instagram trendsofttech page "
-                    className="focus:rounded-full"
-                  >
-                    <FooterIconStyles>
-                      <AiOutlineInstagram className="text-xl" />
-                    </FooterIconStyles>
-                  </a>
-                </li>
-              </ul>
-            </FooterIconLogo>
-          </div>
-        </FooterTrendInfo>
-
-        <FooterInfoDiv>
-          <FooterTitle id={props.data.itTitle}>
-            {props.data.itTitle}
-          </FooterTitle>
-          <ul className="space-y-2" aria-labelledby={props.data.itTitle}>
-            {props.data.itService?.map((item, idx) => (
-              <li key={item.listItem.id}>
-                <Link to={item.listItem.page} className="focus:p-[1px]">
-                  {item.listItem.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </FooterInfoDiv>
-
-        <FooterInfoDiv>
-          <FooterTitle id={props.data.contactName}>
-            {props.data.contactTitle}
-          </FooterTitle>
-          <ul aria-labelledby={props.data.contactName}>
-            <FooterIconInfo>
-              <IconSize>
-                <SlLocationPin />
-              </IconSize>
-
-              <div>
-                <a
-                  aria-label="location: Trendsoft Technologies Pvt. Ltd,
+                    aria-label="location: Trendsoft Technologies Pvt. Ltd,
                 MIG-37 Vasavi Srinivasam Apartment Flat Number.301 3rd Floor KPHB Colony Road Number.1 Kukatpally Hyderabad-500072"
-                  href="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="focus:p-[1px]"
-                >
-                  <div dangerouslySetInnerHTML={{ __html: props.data.local }} />
-                </a>
-              </div>
-            </FooterIconInfo>
+                    href="https://www.google.com/maps/place/MIG-37,+K+P+H+B+Phase+1,+Kukatpally,+Hyderabad,+Telangana+500072/@17.4911187,78.4019202,21z/data=!4m5!3m4!1s0x3bcb91949a17dd21:0x9bb114860820bc25!8m2!3d17.4910755!4d78.4019303"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="focus:p-[1px]"
+                  >
+                    <div
+                      dangerouslySetInnerHTML={{ __html: props.data.local }}
+                    />
+                  </a>
+                </div>
+              </FooterIconInfo>
+            </ul>
+          </FooterInfoDiv>
+        </div>
 
-            <FooterIconInfo>
-              <IconSize>
-                <AiOutlineMail />
-              </IconSize>
+        <div className=" grid gap-2">
+          {/* services */}
+          <FooterInfoDiv>
+            <FooterTitle id={props.data.itTitle}>
+              {props.data.itTitle}
+            </FooterTitle>
+            <ul className="space-y-2" aria-labelledby={props.data.itTitle}>
+              {props.data.itService?.map((item, idx) => (
+                <li key={item.listItem.id}>
+                  <Link to={item.listItem.page} className="focus:p-[1px]">
+                    {item.listItem.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </FooterInfoDiv>
 
-              <div>
-                <a
-                  className="focus:p-[1px]"
-                  href="mailto:info@trendsofttech.com"
-                  aria-label="company mail: info@trendsofttech.com"
-                >
-                  {props.data.mail}
-                </a>
-              </div>
-            </FooterIconInfo>
+          {/* Accessibility */}
+          <FooterInfoDiv>
+            <FooterTitle id={props.data.AccessibilityTitle}>
+              {props.data.AccessibilityTitle}
+            </FooterTitle>
+            <ul
+              className="space-y-2"
+              aria-labelledby={props.data.AccessibilityTitle}
+            >
+              {props.data.Accessibility?.map((item, idx) => (
+                <li key={item.listItem.id}>
+                  <Link to={item.listItem.page} className="focus:p-[1px]">
+                    {item.listItem.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </FooterInfoDiv>
+        </div>
 
-            <FooterIconInfo>
-              <IconSize>
-                <MdOutlineAttachEmail />
-              </IconSize>
-              <div>
-                <a
-                  href="mailto:bdm.ts@trendsofttech.com"
-                  aria-label="Business Inquries mail: bdm.ts@trendsofttech.com "
-                  className="focus:p-[1px]"
-                >
-                  {props.data.serviceMail}
-                </a>
-              </div>
-            </FooterIconInfo>
+        <div className="space-y-8">
+          {/* testing */}
+          <FooterInfoDiv>
+            <FooterTitle id={props.data.TestingTitle}>
+              {props.data.TestingTitle}
+            </FooterTitle>
+            <ul className="space-y-2" aria-labelledby={props.data.TestingTitle}>
+              {props.data.Testing?.map((item, idx) => (
+                <li key={item.listItem.id}>
+                  <Link to={item.listItem.page} className="focus:p-[1px]">
+                    {item.listItem.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </FooterInfoDiv>
 
-            <FooterIconInfo>
-              <IconSize>
-                <BiLink />
-              </IconSize>
+          {/* design */}
+          <FooterInfoDiv>
+            <FooterTitle id={props.data.DesigningTitle}>
+              {props.data.DesigningTitle}
+            </FooterTitle>
+            <ul
+              className="space-y-2"
+              aria-labelledby={props.data.DesigningTitle}
+            >
+              {props.data.Designing?.map((item, idx) => (
+                <li key={item.listItem.id}>
+                  <Link to={item.listItem.page} className="focus:p-[1px]">
+                    {item.listItem.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </FooterInfoDiv>
+        </div>
 
-              <div>
-                <Link
-                  to="/"
-                  aria-label="Trendsofttech link"
-                  className="focus:p-[1px]"
-                >
-                  {props.data.website}
-                </Link>
-              </div>
-            </FooterIconInfo>
-          </ul>
-        </FooterInfoDiv>
+        <div className=" grid gap-2">
+          {/* pages */}
+          <FooterInfoDiv>
+            <FooterTitle id={props.data.PagesTitle}>
+              {props.data.PagesTitle}
+            </FooterTitle>
+            <ul className="space-y-2" aria-labelledby={props.data.PagesTitle}>
+              {props.data.Pages?.map((item, idx) => (
+                <li key={item.listItem.id}>
+                  <Link to={item.listItem.page} className="focus:p-[1px]">
+                    {item.listItem.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </FooterInfoDiv>
 
-        {/* <FooterInfoDiv>
-          <FooterTitle id="Contact">{props.data.contact}</FooterTitle>
-          <ul aria-labelledby="Contact">
+          {/* dgm */}
+          <FooterInfoDiv>
+            <FooterTitle id={props.data.DgmTitle}>
+              {props.data.DgmTitle}
+            </FooterTitle>
+            <ul className="space-y-2" aria-labelledby={props.data.DgmTitle}>
+              {props.data.DigitalMarketing?.map((item, idx) => (
+                <li key={item.listItem.id}>
+                  <Link to={item.listItem.page} className="focus:p-[1px]">
+                    {item.listItem.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </FooterInfoDiv>
+        </div>
+      </div>
+
+      <div className="grid justify-items-center mb-4">
+        <FooterIconLogo>
+          <h2 className=" mt-1 mr-5" id="FollowUs">
+            Follow Us
+          </h2>
+          <ul aria-labelledby="FollowUs" className="flex gap-2 text-start ">
             <li>
-              <Link to="/contact/" className="focus:p-[1px]">
-                {props.data.contactUs}
-              </Link>
+              <a
+                href={props.data.facebookLink}
+                aria-label="Facebook trendsofttech page "
+                target="_blank"
+                rel="noreferrer"
+                className="focus:text-white focus:rounded-full  "
+              >
+                <div className="text-blue-500 text-center hover:text-white  shadow-black/50 border-black/10  bg-white focus:bg-blue-600 hover:cursor-pointer hover:bg-blue-600  rounded-full w-9 h-9 p-[10px] shadow-xl">
+                  <FaFacebookF />
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href={props.data.linkedinLink}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Linkedin trendsofttech page "
+                className=" focus:rounded-full"
+              >
+                <FooterIconStyles>
+                  <TiSocialLinkedin className="text-xl" />
+                </FooterIconStyles>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href={props.data.instagramLink}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram trendsofttech page "
+                className="focus:rounded-full"
+              >
+                <FooterIconStyles>
+                  <AiOutlineInstagram className="text-xl" />
+                </FooterIconStyles>
+              </a>
             </li>
           </ul>
-        </FooterInfoDiv> */}
+        </FooterIconLogo>
       </div>
 
       <FooterHr />
-      <p className="text-center">{props.data.reserved}.</p>
+      <p className="text-center mt-4">{props.data.reserved}.</p>
     </FooterDiv>
   )
 }

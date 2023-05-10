@@ -32,7 +32,7 @@ const WebDevelopment = () => {
 
         <Portfolios data={data} />
 
-        <div className="xl:flex xl:justify-between xl:items-center  p-6 bg-blue-50 1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4">
+        <div className="xl:flex xl:justify-between xl:items-center  p-6 bg-blue-50 1920Screen:px-48  2xl:px-24 440Screen:px-8 px-4 mt-12">
           <div className="bg-white shadow-md xl:w-[40%]  rounded-md p-5">
             <ContactForm />
           </div>

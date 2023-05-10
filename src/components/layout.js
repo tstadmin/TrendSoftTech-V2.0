@@ -130,10 +130,52 @@ const layoutQuery = graphql`
                 }
               }
               footer {
-                logo
-                alt
-                itTitle
-                description
+                Accessibility {
+                  listItem {
+                    id
+                    page
+                    title
+                  }
+                }
+                AccessibilityTitle
+                Designing {
+                  listItem {
+                    id
+                    page
+                    title
+                  }
+                }
+                DesigningTitle
+                DgmTitle
+                DigitalMarketing {
+                  listItem {
+                    id
+                    page
+                    title
+                  }
+                }
+                Pages {
+                  listItem {
+                    id
+                    page
+                    title
+                  }
+                }
+                PagesTitle
+                Testing {
+                  listItem {
+                    id
+                    page
+                    title
+                  }
+                }
+                TestingTitle
+                contact
+                contactName
+                contactTitle
+                contactUs
+                facebookLink
+                instagramLink
                 itService {
                   listItem {
                     id
@@ -141,19 +183,15 @@ const layoutQuery = graphql`
                     title
                   }
                 }
-                contact
-                contactUs
-                contactTitle
-                contactName
                 itTitle
+                linkedinLink
                 local
+                logo
                 mail
+                mailLink
+                reserved
                 serviceMail
                 website
-                facebookLink
-                linkedinLink
-                instagramLink
-                reserved
               }
             }
           }

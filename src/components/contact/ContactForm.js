@@ -283,7 +283,7 @@ const ContactForm = () => {
             name="Message"
             placeholder="Enter your Message Here"
             className={`block w-full 540Screen:p-2 p-1  border-black border-2 rounded-md focus:border-blue-600 focus:outline-none ${
-              errors.Message ? "border-[#EB1414]" : ""
+              errors.message ? "border-[#EB1414]" : ""
             }`}
             {...register("message", {
               required: "Message is required",
