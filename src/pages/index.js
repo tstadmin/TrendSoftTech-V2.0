@@ -41,9 +41,11 @@ const Index = () => {
       <Layout
         title={{ title: "Wishing you all a very Happy Maha shivratri 2023!" }}
       >
+        <Seo
+          title="Home"
+          description="Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions."
+        />
         <div id="content" role="main">
-          <Seo title="Home" description="TrendSoftTech" />
-
           <Carousel carousel={carousel} />
 
           <AboutOurCompany aboutOurCompany={aboutOurCompany} />

@@ -86,7 +86,7 @@ const CareersForm = () => {
           setFileUploaded(true)
           axios
             .post(
-              `https://enquiries.trendsofttech.work/api/career-image-update/${res.data.id}`,
+              `https://tsenquries.cresolinfoserv.co.in/api/career-image-update/${res.data.id}`,
               formData,
               {
                 headers: {
@@ -99,7 +99,6 @@ const CareersForm = () => {
                 console.log("image", res)
                 setFileUploaded(false)
                 alert("Submit Successfully")
-
                 window.location.reload()
               }
             })

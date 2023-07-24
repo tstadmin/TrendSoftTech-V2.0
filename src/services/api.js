@@ -3,12 +3,12 @@ import { useEffect, useState } from "react"
 
 const devUrls = {
   tst: "dev.tst.trendsofttech.work",
-  api: "https://enquiries.trendsofttech.work/",
+  api: "https://tsenquries.cresolinfoserv.co.in/",
 }
 
 const prodUrls = {
   tst: "dev.tst.trendsofttech.work",
-  api: "https://enquiries.trendsofttech.work/",
+  api: "https://tsenquries.cresolinfoserv.co.in/",
 }
 let urls = devUrls
 const isBrowser = () => typeof window !== "undefined"

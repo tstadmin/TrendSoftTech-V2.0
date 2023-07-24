@@ -297,8 +297,8 @@ home:
         description: " High-level security is not an option for enterprise - grade apps - it's a must. We comply with the highest security practices.  "
   aboutOurCompany:
     img: "/img/HomeImages/aboutUS.svg"
-    header: "About Our Company"
-    description: "<p>Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. </p><p> Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions. </p> <p> With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals.</p>"
+    header: "About Trendsoft Technologies"
+    description: "<p>Trendsoft Technologies is a leading website and mobile app development company that specializes in creating innovative and user-friendly digital solutions for businesses of all sectors including MSMEs,SMEs and MNCs. Our team of experienced developers and designers work closely with clients to understand their unique ideas and create custom solutions that exceed their expectations.</p><p> Trendsoft Technologies is committed to delivering high-quality software solutions that meet the unique needs of each client. We work closely with their clients to understand their business requirements and develop custom solutions that are tailored to their specific needs. The company also provides ongoing support and maintenance services to ensure that their clients' software solutions continue to perform at their best.</p>"
     CTA: "Learn more"
   servicesWeProvide:
     subTitle: Services We Provide
@@ -308,7 +308,7 @@ home:
           img: "/img/icons/WebDevelop.svg"
           label: "read more Web Development"
           title: "Web Development"
-          description: "A strong base in the field of website designing development services and made us one of best Web Development Company across India."
+          description: "We create beautiful, responsive websites that are optimized for search engines and designed to convert visitors into customers"
           page: "/services/webDevelopment/"
           CTA: "Read more.."
       - listItem:
@@ -316,7 +316,7 @@ home:
           img: "/img/icons/EcommerceDevelopment.svg"
           label: "read more E-Commerce Development"
           title: "E-Commerce Development"
-          description: "We offer effectual and prosperous e-commerce web design, module development, plug-in & solutions for small."
+          description: "We create secure and scalable e-commerce solutions that help businesses sell their products and services online."
           page: "/services/ecommerceDevelopment/"
           CTA: "Read more..."
       - listItem:
@@ -332,7 +332,7 @@ home:
           img: "/img/icons/MobileDevelopment.svg"
           label: "read more Mobile Development"
           title: "Mobile Development"
-          description: "we offer full-cycle of mobile app development services including planning, design, integration, and management."
+          description: "We develop custom mobile apps for iOS and Android platforms that are user-friendly and designed to enhance the user experience."
           page: "/services/mobileDevelopment/"
           CTA: "Read more..."
       - listItem:
@@ -401,10 +401,10 @@ home:
           id: 6
           img: "/img/Clients/jou.jpeg"
           label: "Jouve India Logo"    
-      - listItem:
-          id: 7
-          img: "/img/Clients/tenali_double_horse.png"
-          label: "Tenali Double Horse Logo"    
+    #   - listItem:
+    #       id: 7
+    #       img: "/img/Clients/tenali_double_horse.png"
+    #       label: "Tenali Double Horse Logo"    
       - listItem:
           id: 8
           img: "/img/Clients/codemate.jpeg"
@@ -443,29 +443,29 @@ home:
           label: "Nebula Group Logo"             
   workingProcess:
     title: WORKING PROCESS
-    description: "How We Work For Our Customers"
+    description: "At Trendsoft Technologies, we follow a rigorous development process to ensure that our solutions are of the highest quality. Our process includes"
     CTA: "Contact Us"
     list:
       - listItem:
           id: 1
           num: "1."
-          title: "Planning"
-          description: "Clients usually have an idea of what they want as the end result, but not what the software should go."
+          title: "Design(UI/UX):"
+          description: "We create custom designs that are tailored to each client's brand and objectives."
       - listItem:
           id: 2
           num: "2."
-          title: "Implementation"
-          description: "All plans are as good as their implementation, At Trendsoft we understand that and our ."
+          title: "Development:"
+          description: "We use the latest technologies and best practices to develop high-quality solutions."
       - listItem:
           id: 3
           num: "3."
-          title: "Testing"
-          description: "All plans are as good as their implementation, At Trendsoft we understand that and our software."
+          title: "Testing:"
+          description: "We thoroughly test our solutions to ensure that they are bug-free and user-friendly."
       - listItem:
           id: 4
           num: "4."
-          title: "Deployment"
-          description: "Once the product is accepted by the client we move towards deployment. Our support teams."
+          title: "Launch:"
+          description: "We launch our solutions and provide ongoing support to ensure that they continue to meet our clients' needs."
   footer:
     logo: "/img/iconTST.svg"
     alt: "trendsoft tech logo"
@@ -554,7 +554,8 @@ home:
     contactUs: "Contact"
     contactTitle : "Contact Info"
     contactName: "ContactInfo"
-    local : "Trendsoft Technologies Pvt. Ltd,<br/>MIG-37, Vasavi Srinivasam , Flat Number.301, 3rd Floor, KPHB Colony, Road Number.1,Kukatpally ,Hyderabad-500072."
+    local : "Trendsoft Technologies Pvt Ltd, #301-302, <br/>NRT Tech Park,  
+     Mangalagiri Bypass,<br/>  Amaravathi, Andhra Pradesh 522503"
     mail : "info@trendsofttech.com" 
     serviceMail: " bdm.ts@trendsofttech.com"
     mailLink : ""    
@@ -571,7 +572,7 @@ about:
     chooseimg : "/img/AboutImages/Choose.svg"
     altChoose: "why choose image"
     aboutUs: "About Us"
-    aboutUsDescription: "<p>Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective Software solutions. Since our Inception, we have been helping companies across all the industries to achieve their Business Goals with Impactful, Business Centric Software Solutions.</p><p>With our cutting-edge technologies, Agile Methodologies and in-depth industry knowledge, we support the Digital Transformation of our clients across all Business Verticals.</p>"
+    aboutUsDescription: "<p>Trendsoft Technologies is a leading website and mobile app development company that specializes in creating innovative and user-friendly digital solutions for businesses of all sectors including MSMEs,SMEs and MNCs.. Our team of experienced developers and designers work closely with clients to understand their unique ideas and create custom solutions that exceed their expectations..</p><p>Trendsoft Technologies is committed to delivering high-quality software solutions that meet the unique needs of each client. We work closely with their clients to understand their business requirements and develop custom solutions that are tailored to their specific needs. The company also provides ongoing support and maintenance services to ensure that their clients' software solutions continue to perform at their best.</p><p>In addition to website and mobile app development, Trendsoft Technologies also offers other services such as e-commerce development, Doc and PDF Accessibility testing and cloud computing. The company serves clients from around the world.</p>  <p>Overall, Trendsoft Technologies is dedicated to providing innovative and effective software solutions that help businesses achieve their goals and grow their operations exponentially.</p>"
     ourVision: "Our Vision"
     ourVisionDescription: "<p>Our vision is to be the best in providing IT solutions and services with customer excellence and sound business practices.</p>"
     ourMission: " Our Mission"

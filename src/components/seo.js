@@ -30,6 +30,10 @@ function Seo({ description, title, children }) {
   return (
     <Helmet>
       <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
+      <html lang="en-US" />
+      <link rel="canonical" href="#" hreflang="en-us" />
+      <link rel="canonical" href="#" hreflang="en" />
+      <link rel="canonical" href="#" hreflang="x-default" />
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />

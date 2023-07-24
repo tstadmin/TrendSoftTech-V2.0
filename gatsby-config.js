@@ -12,6 +12,7 @@ module.exports = {
     title: `TrendSoft Tech`,
     description: `Trendsoft Technologies is a Professional, Website and Mobile App Development Company that Endeavor on Highly Proficient, Intuitive and Cost-Effective...`,
     author: `@gatsbyjs`,
+    siteUrl: `https://trendsofttech.com/`,
   },
   plugins: [
     `gatsby-plugin-scroll-reveal`,
@@ -20,6 +21,14 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://trendsofttech.com/",
+        sitemap: "https://trendsofttech.com/sitemap-index.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
 
     {
       resolve: `gatsby-plugin-scroll-reveal`,
@@ -55,8 +64,7 @@ module.exports = {
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
+        // theme_color: `#663399`,        display: `minimal-ui`,
         icon: `static/img/HomeImages/fav.png`,
       },
     },
@@ -110,11 +118,17 @@ module.exports = {
         ],
       },
     },
-
     {
       resolve: "gatsby-plugin-load-script",
       options: {
-        src: `/ChatBox.js`, // Change to the script filename
+        src: `/ChatBox.js`,
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/sitemap.xml",
       },
     },
   ],

@@ -15,7 +15,7 @@ const WorkingProcess = props => {
       <Tilt
         tiltMaxAngleX={2}
         tiltMaxAngleY={2}
-        className="border 2xl:w-[22%] xl:w-[30%] lg:w-[34%] md:w-full sm:text-center lg:text-start bg-blue-50 space-y-12 sm:p-12 p-5 mt-16 rounded-md border-blue-400"
+        className="border 2xl:w-[22%] xl:w-[30%] lg:w-[34%] md:w-full sm:text-start lg:text-start bg-blue-50 sm:p-6 p-2 mt-16 rounded-md border-blue-400"
       >
         <WorkingDescription>
           {props.workingProcess.description}

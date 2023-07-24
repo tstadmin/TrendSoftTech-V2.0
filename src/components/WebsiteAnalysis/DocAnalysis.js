@@ -55,7 +55,7 @@ const DocAnalysis = () => {
           setFileUploaded(true)
           axios
             .post(
-              `https://enquiries.trendsofttech.work/api/doc-image-update/${res.data.id}`,
+              `https://tsenquries.cresolinfoserv.co.in/api/doc-image-update/${res.data.id}`,
               formData,
               {
                 headers: {

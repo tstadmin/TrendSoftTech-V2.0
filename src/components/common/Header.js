@@ -56,70 +56,8 @@ export default function Header(props) {
       <div>
         <div className="flex">
           {opened && (
-            <div
-            // ref={ref}
-            // className={
-            //   opened
-            //     ? "fixed overflow-scroll sm:overflow-hidden   z-20 right-0 md:top-[117px] sm:top-[115px]  340Screen:top-[100px] 240Screen:top-[95px] top-[100px] bg-[#0D61A0] xl:h-[40vh]  lg:h-[60vh] h-[100vh]  540Screen:w-[100vw] w-[80vw] pt-6  "
-            //     : "fixed hidden "
-            // }
-            >
-              {/* <div className="xl:flex 1920Screen:pl-52 2xl:pl-28 xl:pl-14 lg:pl-16 md:pl-18 sm:pl-14 pl-8 1920Screen:space-x-18 2xl:space-x-8 xl:space-x-4  grid lg:grid-cols-3 340Screen:grid-cols-2 grid-cols-1 ">
-                {props.data.list.map((item, idx) => (
-                  <div
-                    key={item.listItem.id}
-                    className="mt-6 hidden 540Screen:block"
-                  >
-                    <h2
-                      className=" text-[#FFD333]  xl:text-[20px] font-bold sm:text-xl text-sm sm:font-medium"
-                      id={item.listItem.name}
-                    >
-                      {item.listItem.title}
-                    </h2>
-                    <ul
-                      className=" space-y-2 mt-4  font-normal sm:mb-10 "
-                      aria-labelledby={item.listItem.name}
-                    >
-                      {item.listItem.subTitle?.map((sub, idx) => (
-                        <li
-                          onClick={() => setOpened(false)}
-                          className=" text-[#ebebeb] font-medium  1920Screen:text-[18px]  text-[16px]   hover:underline-[#ffe793] "
-                          key={sub.listItem.id}
-                          aria-label={sub.listItem.title}
-                        >
-                          <Link
-                            to={sub.listItem.page}
-                            className="hover:text-[#ffe793] focus:text-[#ffe793]  hover:underline focus:underline hover:decoration-[#ffe793]  focus:decoration-[#ffe793] "
-                          >
-                            {sub.listItem.title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div> */}
-              {/*  Mobile Menu */}
-              {/*       <ul className="mobile  font-medium ml-8 540Screen:hidden block 340Screen:space-y-4  space-y-1 pb-28  ">
-                <li className="text-sm text-white ">
-                  <Link
-                    to={props.data.mobilelist.homePage}
-                    className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                  >
-                    {props.data.mobilelist.home}
-                  </Link>
-                </li>
-
-                <li className="text-sm text-white">
-                  <Link
-                    to={props.data.mobilelist.aboutPage}
-                    className="hover:text-[#ffe793] focus:text-[#ffe793]"
-                  >
-                    {props.data.mobilelist.about}
-                  </Link>
-                </li>
-
-                {/* IT Services */}
+            <div>
+              {/* IT Services */}
               <Disclosure>
                 {({ open }) => (
                   <>
@@ -575,8 +513,6 @@ export default function Header(props) {
           </div>
         </div>
       </div>
-
-      {/*  Menu bar */}
     </div>
   )
 }
